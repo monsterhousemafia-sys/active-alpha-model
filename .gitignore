@@ -167,4 +167,6 @@ evidence/publish_public_git_preflight_latest.json
 live_pilot/activity/
 control/preview_federation.json
 control/r3_https_mirror.json
+evidence/preview_federation.json
+evidence/h1_federation_dispatch_latest.json
 .git.legacy-backup*/

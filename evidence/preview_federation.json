@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-06-09T21:52:32+00:00",
+  "updated_at_utc": "2026-06-09T21:53:02+00:00",
   "workers": {
     "king": {
       "cpus": 32,
@@ -28,7 +28,7 @@
       "headline_de": "Hardware optimal für Preview",
       "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
       "join_token": "5cc9e36934b54b83a874ab3cff395388",
-      "last_seen_utc": "2026-06-09T21:52:32+00:00",
+      "last_seen_utc": "2026-06-09T21:53:02+00:00",
       "load_per_cpu": null,
       "mem_free_gb": null,
       "nvme_mounted": true,
@@ -36,7 +36,7 @@
       "preview_passed": 9,
       "preview_total": 10,
       "role": "compute",
-      "updated_at_utc": "2026-06-09T21:52:32+00:00",
+      "updated_at_utc": "2026-06-09T21:53:02+00:00",
       "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b"
     }
   }

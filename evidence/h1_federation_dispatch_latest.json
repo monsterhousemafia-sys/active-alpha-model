@@ -42,7 +42,7 @@
     ],
     "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
     "total_bytes": 717816086,
-    "updated_at_utc": "2026-06-09T21:52:32+00:00"
+    "updated_at_utc": "2026-06-09T21:53:02+00:00"
   },
   "blockers": [],
   "chunks": [
@@ -1309,7 +1309,7 @@
   },
   "headline_de": "H1-Dispatch: 76 Chunks für Worker",
   "schema_version": 1,
-  "updated_at_utc": "2026-06-09T21:52:32+00:00",
+  "updated_at_utc": "2026-06-09T21:53:02+00:00",
   "workers_h1_capable": 0,
   "workers_online": 2
 }
