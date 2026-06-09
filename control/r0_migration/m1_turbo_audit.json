@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "audited_utc": "2026-06-04T18:00:00+00:00",
+  "cpu_logical": 32,
+  "goal": "3/3 integrity_pass + M1 seal",
+  "configured_turbo": {
+    "profile": "turbo",
+    "parallel_backend": "process",
+    "reserve_cpu_cores": 0,
+    "max_variant_parallel": 2,
+    "process_priority": "high",
+    "n_jobs_per_variant": 32,
+    "cpu_cores": 32,
+    "parallel_jobs": 2,
+    "plain_progress_quiet": true,
+    "race_mode_no_exe_throttle": true,
+    "post_r0_relaunch": "no_warm_cache R3+M1 parallel"
+  },
+  "live_r0_session_153044Z": {
+    "still_legacy_thread_n_jobs_4": true,
+    "reason": "do_not_restart_mid_path",
+    "priority_high": true
+  },
+  "cleanup": {
+    "orphan_matrix_3680_killed": true
+  }
+}

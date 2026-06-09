@@ -1,0 +1,9 @@
+{
+  "credentials_configured": false,
+  "demo_read_only_status": "CLIENT_TESTED_READY",
+  "live_read_only_observation_status": "AWAITING_LOCAL_CREDENTIAL_CONFIGURATION",
+  "order_api_enabled": false,
+  "order_endpoints_blocked": true,
+  "secrets_excluded": true,
+  "write_methods_blocked": true
+}

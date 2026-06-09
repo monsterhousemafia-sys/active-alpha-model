@@ -1,0 +1,20 @@
+{
+  "backups": [
+    {
+      "backup": "control\\quarantine\\g0r_remediation_backup\\control__champion_lineage_policy.json",
+      "path": "control/champion_lineage_policy.json",
+      "sha256": "9a6f4b11809ec571c7161ffc3ac7ef6faba1617ff6887f11a175ba8ce4713b79"
+    },
+    {
+      "backup": "control\\quarantine\\g0r_remediation_backup\\model_output_sp500_pit_t212__background_research_status.json",
+      "path": "model_output_sp500_pit_t212/background_research_status.json",
+      "sha256": "93b3f6523e04322cbe8f5baabdf29e1c9c1004e59a98c7db5d53c835d18de55f"
+    },
+    {
+      "backup": "control\\quarantine\\g0r_remediation_backup\\model_output_sp500_pit_t212__latest_validated_run.json",
+      "path": "model_output_sp500_pit_t212/latest_validated_run.json",
+      "sha256": "bd8fba0f972984292864562cc13668d5cbb7ff26d7d5edd08e269f07dd927482"
+    }
+  ],
+  "generated_at_utc": "2026-05-31T21:22:13+00:00"
+}

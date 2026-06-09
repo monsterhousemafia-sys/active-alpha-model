@@ -1,0 +1,76 @@
+{
+  "dimensions": [
+    {
+      "detail_de": "http://127.0.0.1:17890",
+      "id": "local_runtime",
+      "label_de": "Lokal-first Runtime",
+      "ok": true,
+      "weight": 12
+    },
+    {
+      "detail_de": "OK",
+      "id": "r3_stack",
+      "label_de": "R3 Stack (/r3)",
+      "ok": true,
+      "weight": 14
+    },
+    {
+      "detail_de": "Cognitive Kernel v2",
+      "id": "cognitive_v2",
+      "label_de": "Cognitive Kernel v2",
+      "ok": true,
+      "weight": 12
+    },
+    {
+      "detail_de": "Stealth: /home/machinax7/.config/autostart/xdg-user-session.desktop",
+      "id": "session_autostart",
+      "label_de": "Login-Autostart R3",
+      "ok": true,
+      "weight": 10
+    },
+    {
+      "detail_de": "127.0.0.1:11434",
+      "id": "ollama_local",
+      "label_de": "Ollama lokal (32B)",
+      "ok": true,
+      "weight": 12
+    },
+    {
+      "detail_de": "/mnt/active-alpha-nvme",
+      "id": "nvme_tier",
+      "label_de": "NVMe Fast-Data",
+      "ok": true,
+      "weight": 14
+    },
+    {
+      "detail_de": "H1-Prep · GPU=OFF · NVMe=nein",
+      "id": "gpu_ready",
+      "label_de": "GPU/H1-Prep bereit",
+      "ok": true,
+      "weight": 10
+    },
+    {
+      "detail_de": "maintain",
+      "id": "maintain_ok",
+      "label_de": "Linux Maintain",
+      "ok": true,
+      "weight": 8
+    },
+    {
+      "detail_de": "turbo",
+      "id": "lean_mode",
+      "label_de": "Lean/Turbo aktiv",
+      "ok": true,
+      "weight": 8
+    }
+  ],
+  "dimensions_ok": 9,
+  "dimensions_total": 9,
+  "headline_de": "Linux 100% — 9/9 Dimensionen",
+  "local_only": true,
+  "next_de": "Linux-Potenzial voll — R3 nutzt die Umgebung",
+  "policy_ref": "control/linux_potential.json",
+  "potential_pct": 100,
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T14:22:45+00:00"
+}

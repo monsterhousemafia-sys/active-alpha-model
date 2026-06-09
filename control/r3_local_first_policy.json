@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Lokal-first — nur 127.0.0.1:17890",
+  "local_authoritative_de": "Cockpit lokal http://127.0.0.1:17890 — kein Tunnel",
+  "mirror_rule_de": "deaktiviert",
+  "remote_workers_expected": false,
+  "tunnel_required": false,
+  "eliminate_duplicate_tunnels": true,
+  "apply_command_de": "bash tools/king_ops.sh r3-local",
+  "safety_de": "fail-closed, read-only, keine Auto-Orders"
+}

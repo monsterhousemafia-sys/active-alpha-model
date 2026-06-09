@@ -1,0 +1,132 @@
+{
+  "note": "Historical id MOM_63_TOP12 maps to internal variant mom_63_top12 but legacy runs used top_k=15. Strict top_k=12 research uses MOM_63_TOP12_STRICT.",
+  "resolution": "ALIAS_INCONSISTENCY_DOCUMENTED",
+  "schema_version": 1,
+  "strategies": [
+    {
+      "canonical_or_research_variant": "canonical_champion",
+      "cost_model_reference": "trading212_us+slippage_2bps",
+      "display_name": "Champion R3",
+      "family": "ensemble_rank",
+      "identity_hash": "a8b38959477b330d72df6bafd3e54eea697c56babff9080dc3d34d0b580aa1ee",
+      "internal_variant": "R3_w075_q065_noexit",
+      "legacy_aliases": [],
+      "lookback": "train_7y",
+      "parameter_set": {
+        "internal_variant": "R3_w075_q065_noexit",
+        "lookback": "train_7y",
+        "rebalance_every": 5,
+        "top_k": 15,
+        "weighting_rule": "ensemble_lcb_caps"
+      },
+      "rebalance_every": 5,
+      "status": "LOCKED_CHAMPION",
+      "strategy_id": "R3_w075_q065_noexit",
+      "top_k": 15,
+      "universe_reference": "diy_pit_liquidity_top100",
+      "version": "1",
+      "weighting_rule": "ensemble_lcb_caps"
+    },
+    {
+      "canonical_or_research_variant": "canonical_control",
+      "cost_model_reference": "trading212_us+slippage_2bps",
+      "display_name": "M1 Matched Controls",
+      "family": "naive_momentum_matched",
+      "identity_hash": "b3fa658b3e36a2758bbeaf18c9cff85e9009c693751f6ab7ffc416b56549030b",
+      "internal_variant": "mom_blend_matched_controls",
+      "legacy_aliases": [],
+      "lookback": "mom_blend",
+      "parameter_set": {
+        "internal_variant": "mom_blend_matched_controls",
+        "lookback": "mom_blend",
+        "rebalance_every": 5,
+        "top_k": 15,
+        "weighting_rule": "matched_controls_caps"
+      },
+      "rebalance_every": 5,
+      "status": "CANONICAL_CONTROL",
+      "strategy_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+      "top_k": 15,
+      "universe_reference": "diy_pit_liquidity_top100",
+      "version": "1",
+      "weighting_rule": "matched_controls_caps"
+    },
+    {
+      "canonical_or_research_variant": "alias_inconsistent_top_k15",
+      "cost_model_reference": "trading212_us+threshold+slippage_2bps",
+      "display_name": "MOM 63 TOP12 (historical alias)",
+      "family": "naive_momentum",
+      "identity_hash": "8bd57b00be7bff24c6c3f46f2d14f13d6083f45712bfebaec78270cd3ed6f15a",
+      "internal_variant": "mom_63_top12",
+      "legacy_aliases": [
+        "MOM_63_TOP12",
+        "NAIVE_MOMENTUM_MOM_63_TOP12"
+      ],
+      "lookback": "mom_63_21",
+      "parameter_set": {
+        "internal_variant": "mom_63_top12",
+        "lookback": "mom_63_21",
+        "rebalance_every": 5,
+        "top_k": 15,
+        "weighting_rule": "momentum_score_caps"
+      },
+      "rebalance_every": 5,
+      "status": "ALIAS_INCONSISTENCY_DOCUMENTED",
+      "strategy_id": "MOM_63_TOP12",
+      "top_k": 15,
+      "universe_reference": "diy_pit_liquidity_top100",
+      "version": "1",
+      "weighting_rule": "momentum_score_caps"
+    },
+    {
+      "canonical_or_research_variant": "research_strict_top12",
+      "cost_model_reference": "trading212_us+threshold+slippage_2bps",
+      "display_name": "MOM 63 strict top-12 research variant",
+      "family": "naive_momentum",
+      "identity_hash": "6efda590053ac9fc0e4e8a1c7cfb3b66f60a74dbf215b6f00c28046c76c44568",
+      "internal_variant": "mom_63_top12",
+      "legacy_aliases": [],
+      "lookback": "mom_63_21",
+      "parameter_set": {
+        "internal_variant": "mom_63_top12",
+        "lookback": "mom_63_21",
+        "rebalance_every": 5,
+        "top_k": 12,
+        "weighting_rule": "momentum_score_caps"
+      },
+      "rebalance_every": 5,
+      "status": "RESEARCH_VARIANT",
+      "strategy_id": "MOM_63_TOP12_STRICT",
+      "top_k": 12,
+      "universe_reference": "diy_pit_liquidity_top100",
+      "version": "1",
+      "weighting_rule": "momentum_score_caps"
+    },
+    {
+      "canonical_or_research_variant": "research_legacy_aligned",
+      "cost_model_reference": "trading212_us+threshold+slippage_2bps",
+      "display_name": "MOM 63 top-15 reconstructed (legacy-aligned)",
+      "family": "naive_momentum",
+      "identity_hash": "714c922dfdb2779cfe248b3951e321e15d194d359107bb53e042eef49f72e5b5",
+      "internal_variant": "mom_63_top12",
+      "legacy_aliases": [
+        "MOM_63_TOP12_legacy_run"
+      ],
+      "lookback": "mom_63_21",
+      "parameter_set": {
+        "internal_variant": "mom_63_top12",
+        "lookback": "mom_63_21",
+        "rebalance_every": 5,
+        "top_k": 15,
+        "weighting_rule": "momentum_score_caps"
+      },
+      "rebalance_every": 5,
+      "status": "RESEARCH_VARIANT",
+      "strategy_id": "MOM_63_TOP15_RECONSTRUCTED",
+      "top_k": 15,
+      "universe_reference": "diy_pit_liquidity_top100",
+      "version": "1",
+      "weighting_rule": "momentum_score_caps"
+    }
+  ]
+}

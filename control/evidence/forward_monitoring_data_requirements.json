@@ -1,0 +1,39 @@
+{
+  "V3P_PAPER_SIMULATION": {
+    "activation_triggers_jobs": false,
+    "additional_to_v3s": true,
+    "minimum_required": [
+      "externally reviewed Shadow evidence",
+      "simulated order schema",
+      "simulated fill/slippage model",
+      "verified cost-treatment model",
+      "paper-only storage isolation",
+      "explicit no-broker-connectivity guarantee"
+    ]
+  },
+  "V3S_SHADOW_OBSERVATION": {
+    "activation_triggers_jobs": false,
+    "minimum_required": [
+      "externally approved activation artifact",
+      "challenger-specific signal ledger",
+      "challenger-specific turnover or position-change evidence",
+      "immutable prediction timestamps before outcome maturity",
+      "data-quality evidence source",
+      "outcome maturity rule",
+      "incident/stop conditions",
+      "no-order guarantee"
+    ]
+  },
+  "candidate_variant_id": "MOM_63_TOP12",
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "control_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "description": "Data requirements for future V3S/V3P activation — does not trigger activation.",
+  "generated_at_utc": "2026-05-30T21:13:41+00:00",
+  "mode": "READ_ONLY_MONITORING_FOUNDATION",
+  "observation_types": [
+    "FORWARD_MONITORING",
+    "SHADOW_OBSERVATION",
+    "PAPER_SIMULATION"
+  ],
+  "schema_version": 1
+}

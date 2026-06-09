@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "mode": "snapshot",
+  "generated_at_utc": "2026-06-09T17:51:08+00:00",
+  "ok": true,
+  "skipped": false,
+  "traffic": "ROT",
+  "summary_de": "⚠ 3 kritisch — vor US-Handel beheben: Live-Kurse unvollständig",
+  "quote_coverage": {
+    "ok": false,
+    "label_de": "3/11 Kurse",
+    "n_ok": null,
+    "n_total": null
+  }
+}

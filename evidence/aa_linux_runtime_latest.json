@@ -1,0 +1,28 @@
+{
+  "api_query_de": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/analytics/runtime_api_server.py --query h1.status",
+  "errors": [],
+  "headline_de": "Linux Runtime installiert — Slices, Limits, API, Watch",
+  "installed": [
+    "aa-runtime.slice",
+    "aa-h1.slice",
+    "aa-hub.slice",
+    "aa-tunnel.slice",
+    "aa-agent.slice",
+    "active-alpha-preview-hub.service",
+    "active-alpha-remote-tunnel.service",
+    "active-alpha-preview-worker.service",
+    "active-alpha-runtime-api.service",
+    "active-alpha-evidence-watch.service",
+    "active-alpha-evidence-watch.timer",
+    "active-alpha-spread-tick.service",
+    "active-alpha-spread-tick.timer",
+    "active-alpha-tunnel-stable.service",
+    "active-alpha-tunnel-stable.timer",
+    "active-alpha-h1-resume.service",
+    "active-alpha-h1-resume.timer"
+  ],
+  "installed_at_utc": "2026-06-09T21:16:17+00:00",
+  "journal_de": "journalctl --user -t aa-hub -t aa-runtime-api -t aa-evidence-watch -f",
+  "schema_version": 1,
+  "unit_dir": "/home/machinax7/.config/systemd/user"
+}

@@ -1,0 +1,2 @@
+{"type": "POST_BASELINE_BASELINE_MARK", "portfolio_value_eur": 498.9438, "subsequent_market_price_pnl_eur": 0.0, "note": "establishes_post_baseline_reference_no_performance_claim"}
+{"subsequent_market_price_pnl_eur": 0.5886, "market_move_eur": 0.5886, "cumulative_net_pnl_eur": -0.4676, "initial_execution_cost_eur": 0.6912, "initial_post_fill_portfolio_value_eur": 499.3088, "portfolio_value_eur": 499.5324, "independent_post_baseline_mark": true}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "enabled": true,
+  "max_picks": 12,
+  "bad_day_underperform_bps": 50,
+  "bad_day_portfolio_pct": -0.01,
+  "voice_on_bad_day": true,
+  "voice_on_stale_sync": true,
+  "portfolio_csv_rel": "model_output_sp500_pit_t212/target_portfolio_explained.csv",
+  "benchmark_ticker": "SPY",
+  "exclude_tickers": ["SPY"],
+  "read_only_de": "Kein Backtest, keine Orders — nur Tagesreturn vs. Benchmark aus OHLCV"
+}

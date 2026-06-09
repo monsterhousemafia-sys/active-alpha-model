@@ -1,0 +1,18 @@
+{
+  "absolute_paths_in_manifest": false,
+  "expected_zip_sha256": "6cff2d493d7d52257a0bcaef07c4a72bcd01b7fc7d0e706ae9f5918618b3f200",
+  "imported_manifest_coverage": "INCOMPLETE",
+  "manifest_entries_verified": "56/59",
+  "manifest_mismatches": [
+    "E:/active_alpha_model/research/p16/p15_import_verification.py",
+    "E:/active_alpha_model/tests/test_p16_forward_observation_scaling.py",
+    "E:/active_alpha_model/tools/run_p16_forward_observation_scaling.py"
+  ],
+  "p16_package_sha256": "6cff2d493d7d52257a0bcaef07c4a72bcd01b7fc7d0e706ae9f5918618b3f200",
+  "p16_preserved": true,
+  "sidecar_verified": true,
+  "unsafe_zip_paths": [],
+  "verification_status": "VERIFIED",
+  "zip_entry_count": 59,
+  "zip_sha256_match": true
+}

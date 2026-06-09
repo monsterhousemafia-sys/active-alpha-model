@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "program": "R0_LONG_TERM_MIGRATION",
+  "checklist_doc": "docs/R0_MIGRATION_MASTER_CHECKLIST.md",
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "phase_order": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8",
+    "M9",
+    "M10",
+    "M11",
+    "M12"
+  ],
+  "optional_phases": ["M4"],
+  "global_invariants": [
+    "authoritative_champion_unchanged",
+    "auto_promotion_disabled",
+    "no_champion_change_without_m9_approval"
+  ],
+  "phases": {
+    "M0": {
+      "title": "Mandat & Zielfunktion",
+      "required_files": [
+        "docs/R0_MIGRATION_MANDATE.md",
+        "control/r0_migration/mandate.json",
+        "control/champion_decision_charter_r0_target_draft.md"
+      ],
+      "json_checks": [
+        {
+          "path": "control/r0_migration/mandate.json",
+          "equals": { "status": "COMPLETE", "phase": "M0" }
+        }
+      ]
+    },
+    "M1": {
+      "title": "Evidenz-Baseline & Matrix",
+      "required_files": [
+        "evidence/r0_migration/pointer_audit.json",
+        "evidence/r0_migration/env_alpha_model_mode_audit.json",
+        "evidence/r0_migration/returns_manifest.json",
+        "evidence/r0_migration/validation_runs_status.json"
+      ],
+      "custom_checks": ["m1_returns_integrity", "m1_env_audit_pass"]
+    },
+    "M2": {
+      "title": "Einheitlicher Vergleichsrahmen",
+      "required_files": [
+        "evidence/r0_migration/aligned_comparison.json",
+        "evidence/canonical_model_comparison.json"
+      ],
+      "custom_checks": ["m2_go_criteria_documented"]
+    },
+    "M3": {
+      "title": "R0* Tuning (Research)",
+      "required_files": ["research_evidence/r0_tuning_trial_ledger.json"],
+      "custom_checks": ["m3_candidate_selected"]
+    },
+    "M4": {
+      "title": "MOM/Hybrid (optional)",
+      "optional": true,
+      "required_files": ["evidence/r0_migration/hybrid_research_summary.md"]
+    },
+    "M5": {
+      "title": "Statistische Gates",
+      "required_files": [
+        "evidence/r0_migration/gate_matrix.json",
+        "control/evidence/cost_stress_status.json",
+        "control/evidence/multiple_testing_status.json",
+        "control/evidence/robustness_status.json"
+      ],
+      "custom_checks": ["m5_all_gates_pass"]
+    },
+    "M6": {
+      "title": "Shadow-Monitoring",
+      "required_files": ["control/evidence/shadow_monitor_status.json"],
+      "json_checks": [
+        {
+          "path": "control/evidence/shadow_monitor_status.json",
+          "equals": { "status": "PASS" }
+        }
+      ]
+    },
+    "M7": {
+      "title": "Paper-Forward",
+      "required_files": ["control/evidence/paper_monitor_status.json"],
+      "json_checks": [
+        {
+          "path": "control/evidence/paper_monitor_status.json",
+          "equals": { "status": "PASS" }
+        }
+      ]
+    },
+    "M8": {
+      "title": "Operative Vorbereitung",
+      "required_files": [
+        "docs/R0_PRODUCTION_CUTOVER_RUNBOOK.md",
+        "control/rollback/r3_last_known_good/latest_validated_run.json"
+      ]
+    },
+    "M9": {
+      "title": "Externe Freigabe & Champion-Wechsel",
+      "required_files": ["docs/CHAMPION_STRATEGIC_DECISION_RECORD.md"],
+      "custom_checks": [
+        "m9_external_approval_file",
+        "m9_champion_change_executed"
+      ]
+    },
+    "M10": {
+      "title": "Stabilisierung",
+      "custom_checks": ["m10_stabilization_window"]
+    },
+    "M11": {
+      "title": "EXE Marktanalyse",
+      "required_files": [
+        "Marktanalyse.exe.sha256",
+        "evidence/v5r_final_validation_summary.json"
+      ],
+      "custom_checks": ["m11_runtime_verify_pass"]
+    },
+    "M12": {
+      "title": "OS / Desktop Rollout",
+      "required_files": ["docs/R0_OS_ROLLOUT_RUNBOOK.md"],
+      "custom_checks": ["m12_rollout_documented"]
+    }
+  }
+}

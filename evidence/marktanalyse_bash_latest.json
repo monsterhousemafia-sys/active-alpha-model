@@ -1,0 +1,28 @@
+{
+  "blockers": [
+    "FORWARD_MONITORING_NOT_EXTERNALLY_APPROVED",
+    "NO_OPERATIONAL_AUTHORIZATION",
+    "PAPER_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+    "PAPER_NOT_ELIGIBLE",
+    "PROMOTION_NOT_ELIGIBLE",
+    "REAL_MONEY_NOT_ELIGIBLE",
+    "SHADOW_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+    "V5R_EXTERNAL_REVIEW_PENDING"
+  ],
+  "generated_at_utc": "2026-06-08T13:58:57+00:00",
+  "governance_champion": "R0_LEGACY_ENSEMBLE",
+  "h1_sealed": false,
+  "h1_status": "COMPLETE",
+  "network_phase": "ready",
+  "next_action_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+  "prediction_ok": true,
+  "product": "Alpha Model",
+  "profile_used": "daily_alpha_h1",
+  "safety": {
+    "dry_run": true,
+    "no_orders": true
+  },
+  "schema_version": 1,
+  "signal_date": "2026-06-05",
+  "status_line_de": "Alpha Model · Alpha Model Cockpit · Auto: Lernen und vorbereiten — kein autonomer Trader."
+}

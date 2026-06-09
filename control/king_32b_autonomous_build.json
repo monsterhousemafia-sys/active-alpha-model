@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Bau über Cursor oder König — kein Tunnel-Zwang",
+  "autonomous_build_enabled": false,
+  "build_owner_de": "Cursor IDE oder qwen2.5-coder:32b auf Anfrage",
+  "cursor_build_fallback": true,
+  "cursor_fallback_de": "Cursor darf bauen wenn Operator es anfragt",
+  "primary_paths_de": [
+    "bash tools/king_ops.sh r3-bau",
+    "bash tools/king_ops.sh r3-sync",
+    "bash tools/king_ops.sh verify"
+  ],
+  "post_build_de": [
+    "bash tools/r3_sync.sh --repair",
+    "bash tools/king_ops.sh verify"
+  ],
+  "forbidden_de": [
+    "Stiller Runtime-Apply ohne Operator-Freigabe",
+    "auto_execute_real_money ohne externe Freigabe"
+  ],
+  "evidence_de": [
+    "evidence/r3_local_build_mandate_latest.json"
+  ]
+}

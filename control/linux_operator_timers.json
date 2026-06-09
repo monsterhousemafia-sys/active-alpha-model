@@ -1,0 +1,29 @@
+{
+  "control_plane": "v2",
+  "generated_at_utc": "2026-06-09T21:17:13+00:00",
+  "schema_version": 3,
+  "source": "linux_runtime_unified",
+  "timers": [
+    {
+      "command": "ai_kernel cognitive-scheduler",
+      "id": "cognitive-scheduler",
+      "label_de": "Cognitive Scheduler v2",
+      "plane": "v2",
+      "schedule_de": "alle 5 min — H1, Hub, Prioritäten"
+    },
+    {
+      "command": "ai_kernel cognitive-observe",
+      "id": "cognitive-observe",
+      "label_de": "Kernel Observer",
+      "plane": "v2",
+      "schedule_de": "alle 10 min — ebpf_observer"
+    },
+    {
+      "command": "tools/linux_boot_services.sh",
+      "id": "boot",
+      "label_de": "Boot-Services",
+      "plane": "v2",
+      "schedule_de": "3 min nach Anmeldung/Boot"
+    }
+  ]
+}

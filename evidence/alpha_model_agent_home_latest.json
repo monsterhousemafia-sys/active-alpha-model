@@ -1,0 +1,27 @@
+{
+  "chamber_active": false,
+  "entry_commands_de": [
+    "alpha-model-agent",
+    "bash tools/alpha_model_agent.sh"
+  ],
+  "headline_de": "König — Schicht 3: entscheiden, erklären, autonom bauen (32B /bau)",
+  "label_de": "Alpha Model — König",
+  "launch_cli": "alpha-model-agent",
+  "local_only": true,
+  "manifest": {
+    "agent_name": "König",
+    "continuity_messages": 0,
+    "headline_de": "König — Schicht 3: entscheiden, erklären, autonom bauen (32B /bau)",
+    "journal": "/tmp/pytest-of-machinax7/pytest-5/test_ensure_agent_home0/.local/share/alpha-model/agent/agent_journal.jsonl",
+    "label_de": "Alpha Model — König",
+    "local_only": true,
+    "ollama_base_url": "http://127.0.0.1:11434",
+    "opened_at_utc": "2026-06-08T13:49:56+00:00",
+    "schema_version": 1,
+    "share_dir": "/tmp/pytest-of-machinax7/pytest-5/test_ensure_agent_home0/.local/share/alpha-model/agent"
+  },
+  "ok": true,
+  "ran_at_utc": "2026-06-08T13:49:56+00:00",
+  "schema_version": 1,
+  "share_dir": "/tmp/pytest-of-machinax7/pytest-5/test_ensure_agent_home0/.local/share/alpha-model/agent"
+}

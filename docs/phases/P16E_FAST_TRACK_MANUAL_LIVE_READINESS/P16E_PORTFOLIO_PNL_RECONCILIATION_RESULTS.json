@@ -1,0 +1,12 @@
+{
+  "cumulative_net_pnl_eur": -0.4676,
+  "current_portfolio_value_eur": 499.5324,
+  "historical_to_validated_epoch_adjustment_eur": -0.365,
+  "initial_capital_eur": 500.0,
+  "initial_execution_cost_impact_eur": -0.6912,
+  "pnl_reconciliation_gate": "PASS",
+  "reconciliation_delta_eur": 0.0,
+  "subsequent_fx_pnl_eur": 0.0,
+  "subsequent_market_price_pnl_eur": 0.5886,
+  "subsequent_virtual_trading_cost_eur": 0.0
+}

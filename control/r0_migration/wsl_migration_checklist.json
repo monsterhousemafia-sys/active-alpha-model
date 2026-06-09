@@ -1,0 +1,61 @@
+{
+  "updated_at_utc": "2026-06-05T19:34:47+00:00",
+  "canonical_entry": "bash tools/wsl_conductor.sh",
+  "steps": [
+    {
+      "id": "preflight",
+      "label": "Preflight manifest erzeugt",
+      "done": true,
+      "command": "python tools/preflight_wsl_migration.py"
+    },
+    {
+      "id": "wsl_feature",
+      "label": "WSL2 Feature installiert",
+      "done": true,
+      "command": "powershell -File tools/prepare_wsl_migration.ps1 -InstallWsl",
+      "needs_admin": true,
+      "needs_reboot": true
+    },
+    {
+      "id": "ubuntu",
+      "label": "Ubuntu-Distribution installiert",
+      "done": true,
+      "command": "wsl --install -d Ubuntu",
+      "needs_admin": true,
+      "after_reboot": true
+    },
+    {
+      "id": "wsl_setup",
+      "label": "WSL Host Setup (rsync, venv, caches)",
+      "done": false,
+      "command": "bash tools/wsl_conductor.sh setup",
+      "in_wsl": true
+    },
+    {
+      "id": "smoke",
+      "label": "WSL Smoke-Test bestanden",
+      "done": false,
+      "command": "bash tools/wsl_conductor.sh status",
+      "in_wsl": true
+    },
+    {
+      "id": "m1_complete_or_switch",
+      "label": "M1 auf Windows fertig ODER WSL-Resume bereit",
+      "done": true,
+      "command": "python tools/r0_migration_status.py"
+    },
+    {
+      "id": "autoseal_m2",
+      "label": "Autoseal + M2 auf WSL",
+      "done": true,
+      "command": "bash tools/wsl_conductor.sh autoseal",
+      "in_wsl": true
+    }
+  ],
+  "pending": [
+    "wsl_setup",
+    "smoke"
+  ],
+  "next_step": "wsl_setup",
+  "reboot_safe": true
+}

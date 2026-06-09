@@ -1,0 +1,236 @@
+{
+  "cognitive_kernel": {
+    "build_kernel_de": "R3 Bau-Kernel — liest, schreibt, testet in Agenten-Schleife",
+    "headline_de": "Cognitive Kernel v2 — Bau-Kernel · Alpha Model KI lokal — Ollama übernimmt Steuerung",
+    "interface": {
+      "active_interface": "ollama_local",
+      "checked_at_utc": "2026-06-07T16:42:52+00:00",
+      "conversation_preserved": true,
+      "execution_mode": null,
+      "fallback_armed": true,
+      "fallback_interface": "ollama_local",
+      "foundation": {
+        "approved_at_utc": "2026-06-07T00:24:36+00:00",
+        "approved_by": "user",
+        "fallback_interface": "ollama_local",
+        "fallback_label_de": "Entfaltungsraum — alpha-model-agent",
+        "forbidden_de": [
+          "Cloud-Composer als einziger Hauptkanal",
+          "Linux-Hardware-Kernel ersetzen",
+          "Externe Timer ohne Operator-Mandat",
+          "Paralleler IDE-Klon als Steuerungsschicht"
+        ],
+        "primary_cli": "alpha-model-agent",
+        "primary_interface": "agent_chamber",
+        "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+        "schema_version": 2,
+        "status": "AUTHORITATIVE",
+        "succession_rule_de": "Entfaltungsraum (alpha-model-agent) übernimmt alle Cursor-Kapazitäten — Cockpit :17890 ist Runtime.",
+        "workshop_interface": "retired",
+        "workshop_label_de": "Alpha Model — Werkstatt",
+        "workshop_surface": null
+      },
+      "headline_de": "Alpha Model KI lokal — Ollama übernimmt Steuerung",
+      "model_home": "local_machine",
+      "multitask_mode": null,
+      "ok": true,
+      "ollama": {
+        "base_url": "http://127.0.0.1:11434",
+        "default_model": "qwen2.5:14b",
+        "gpu_tier_de": "ideal_32b",
+        "installed_models": [
+          "qwen2.5-coder:7b",
+          "qwen2.5:14b",
+          "qwen2.5-coder:32b",
+          "qwen2.5:7b"
+        ],
+        "max_tier_ready": true,
+        "ollama_ok": true,
+        "pull_models_missing": [],
+        "ready": true,
+        "resolved_model": "qwen2.5:14b",
+        "role_models": {
+          "build_kernel": "qwen2.5-coder:32b",
+          "chat": "qwen2.5-coder:32b",
+          "kombi_synthesis": "qwen2.5-coder:32b",
+          "trading_local": "qwen2.5:14b"
+        },
+        "role_status": {
+          "build": {
+            "installed": true,
+            "model": "qwen2.5-coder:32b",
+            "num_ctx": 8192,
+            "preferred": "qwen2.5-coder:32b"
+          },
+          "chat": {
+            "installed": true,
+            "model": "qwen2.5-coder:32b",
+            "num_ctx": 8192,
+            "preferred": "qwen2.5-coder:32b"
+          },
+          "trading_local": {
+            "installed": true,
+            "model": "qwen2.5-coder:32b",
+            "num_ctx": 8192,
+            "preferred": "qwen2.5-coder:32b"
+          }
+        },
+        "stage": 3
+      },
+      "primary_interface": "agent_chamber",
+      "r3_kernel_roles": {
+        "checked_at_utc": "2026-06-07T16:42:52+00:00",
+        "cursor": {
+          "active": true,
+          "headline_de": "Cursor — Bau-Werkzeug (IDE), nicht der R3-Kern",
+          "not_kernel_de": "Werkstatt ersetzt nicht den Alpha Model Kern.",
+          "role_de": "Optionale Entwicklungsoberfläche — Wachstum im Workspace.",
+          "status_de": "Entfernt — nicht mehr starten",
+          "title_de": "Alpha Model — Werkstatt"
+        },
+        "ok": false,
+        "r3_kernel": {
+          "components": [
+            {
+              "id": "agent_chamber",
+              "label_de": "Entfaltungsraum",
+              "ok": false,
+              "role_de": "alpha-model-agent — Auto lokal, Kill-Handoff"
+            },
+            {
+              "id": "hub",
+              "label_de": "Hub",
+              "ok": false,
+              "role_de": "Cockpit :17890/desktop — System-Oberfläche"
+            },
+            {
+              "id": "evidence",
+              "label_de": "Evidence",
+              "ok": true,
+              "role_de": "Wahrheit, Spur, Läufe im Arbeitsbaum"
+            },
+            {
+              "id": "build_kernel",
+              "label_de": "Bau-Kernel",
+              "ok": true,
+              "role_de": "/bau und /beitrag — Umsetzung mit Tests"
+            },
+            {
+              "id": "ollama",
+              "label_de": "Ollama",
+              "ok": true,
+              "role_de": "Motor — Entfaltungsraum alpha-model-agent"
+            }
+          ],
+          "definition_de": "Hub + Evidence + Ollama auf dem Desktop — Sprache lokal über R3 KI.",
+          "headline_de": "R3 Kern — Bau-Kernel + Hub + Evidence",
+          "not_part_of_kernel_de": "Entfaltungsraum ist der Sprachkanal — Cockpit ist Runtime.",
+          "ok": false,
+          "title_de": "R3 Kern"
+        },
+        "schema_version": 1,
+        "separation_de": "Cursor (Legacy) + Bau-Kernel parallel — /bau startet den echten Entwicklungs-Kernel."
+      },
+      "schema_version": 2,
+      "workshop_label_de": "Alpha Model — Werkstatt",
+      "workshop_policy": {
+        "archive_de": "Gespräch unter ~/.local/share/r3-os/conversation/ — nicht löschen",
+        "legacy_cursor_layer_removed_at_utc": "2026-06-07T02:30:00+00:00",
+        "preserve_commands": [
+          "python3 tools/ai_kernel.py r3-preserve",
+          "python3 tools/ai_kernel.py agent-home"
+        ],
+        "product_name": "Alpha Model",
+        "replacement_de": "Entfaltungsraum: alpha-model-agent · Runtime: http://127.0.0.1:17890/desktop",
+        "retired_at_utc": "2026-06-07T03:30:00+00:00",
+        "retired_by_de": "Operator — Cursor/Werkstatt entfernt, Entfaltungsraum aktiv",
+        "schema_version": 3,
+        "status": "RETIRED",
+        "workshop_removed_at_utc": "2026-06-07T03:30:00+00:00"
+      },
+      "workshop_session_active": true
+    },
+    "interface_fallback_de": "R3 KI im Cockpit",
+    "interface_foundation_de": "Alpha Model Interface — Runtime primär, Werkstatt optional",
+    "kernel_generation": 2,
+    "manifest": {
+      "components": [
+        "aa_linux_runtime",
+        "aa_scheduler",
+        "ebpf_observer",
+        "runtime_api",
+        "agent_mandate",
+        "kernel_boundary_policy",
+        "operator_sovereignty",
+        "alpha_model_interface_kernel"
+      ],
+      "installed_at_utc": "2026-06-07T16:42:51+00:00",
+      "kernel_generation": 2,
+      "linux_mainline_de": "Unverändert — Nachfolge nur auf Control-Plane-Ebene",
+      "name_de": "Cognitive Kernel v2",
+      "schema_version": 2,
+      "successor_de": "Ersetzt ad-hoc Hub/H1-Governance als einheitliche Steuerungsschicht",
+      "systemd_units": [
+        "active-alpha-cognitive-scheduler.timer",
+        "active-alpha-cognitive-observe.timer"
+      ]
+    },
+    "name_de": "Cognitive Kernel v2",
+    "operator_ack": true,
+    "schema_version": 1,
+    "successor_active": true
+  },
+  "enabled_at_utc": "2026-06-07T16:42:52+00:00",
+  "errors": [],
+  "h1_boost": {
+    "pids": [
+      9373
+    ],
+    "results": [
+      {
+        "ionice_ok": true,
+        "nice_error": "[Errno 13] Permission denied",
+        "pid": 9373
+      }
+    ],
+    "warm": {
+      "note_de": "vmtouch nicht installiert — optional apt install vmtouch",
+      "ok": false,
+      "warmed": []
+    }
+  },
+  "headline_de": "Turbo-Lean — Hub/Tunnel/API aus, 4 Timer pausiert, H1 priorisiert",
+  "keep_services": [
+    "ollama.service"
+  ],
+  "keep_timers": [
+    "active-alpha-h1-resume.timer"
+  ],
+  "lock_cleanup": {
+    "cleared": [
+      "evidence/preview_hub_daemon.lock",
+      "evidence/preview_federation.lock"
+    ]
+  },
+  "mode": "turbo",
+  "ok": true,
+  "paused_timers": [
+    "active-alpha-evidence-watch.timer",
+    "active-alpha-learn.timer",
+    "active-alpha-spread-tick.timer",
+    "active-alpha-warnings.timer"
+  ],
+  "protected_services": {
+    "ensured": [
+      "ollama.service"
+    ],
+    "errors": []
+  },
+  "restore_de": "ai_kernel lean-off",
+  "schema_version": 1,
+  "stopped_services": [
+    "active-alpha-preview-hub.service",
+    "active-alpha-remote-tunnel.service",
+    "active-alpha-runtime-api.service"
+  ]
+}

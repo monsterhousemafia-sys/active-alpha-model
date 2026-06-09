@@ -1,0 +1,69 @@
+{
+  "enabled": true,
+  "headline_de": "Entlohnung aktiv — 1 Worker · Legion-Rang + CPU-Sekunden (kein Echtgeld)",
+  "legion": {
+    "campaign_goal_cpu_hours": 10000.0,
+    "campaign_pct": 0,
+    "enabled": true,
+    "headline_de": "Legion: 1 Krieger · 0.0h CPU geliefert · 0 Jobs · Feldzug 0%",
+    "leaderboard": [
+      {
+        "bundle_kind": "lite",
+        "cpu_seconds": 0.0,
+        "cpus": 32,
+        "headline_de": "Legion #1 · Rang Tiro · 32 Kerne",
+        "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+        "last_job_kind": null,
+        "last_seen_utc": "2026-06-08T13:02:30+00:00",
+        "legion_number": 1,
+        "rank": {
+          "cpu_seconds": 0.0,
+          "id": "tiro",
+          "name_de": "Tiro",
+          "next_rank_at_cpu_seconds": 60.0,
+          "next_rank_de": "Auxilia"
+        },
+        "tasks_failed": 0,
+        "tasks_ok": 0,
+        "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b"
+      }
+    ],
+    "legionnaires": 1,
+    "schema_version": 1,
+    "total_cpu_hours": 0.0,
+    "total_cpu_seconds": 0,
+    "total_tasks_ok": 0,
+    "updated_at_utc": "2026-06-08T13:02:53+00:00",
+    "utilization": {
+      "active_cpus": 0,
+      "active_tasks": 0,
+      "cpu_seconds_total": 0.0,
+      "headline_de": "32 CPUs · Warte auf Worker-Jobs · 0 Jobs erledigt",
+      "measurement": "cpu_seconds",
+      "pending_tasks": 51,
+      "tasks_completed_ok": 0,
+      "total_cpus": 32,
+      "utilization_pct": 0,
+      "workers_online": 1
+    }
+  },
+  "legionnaires": 1,
+  "ok": true,
+  "policy_de": "Pilot-Entlohnung: sichtbare Legion-Ränge + gemessene CPU-Sekunden — kein Echtgeld, kein Broker.",
+  "schema_version": 1,
+  "under_served_de": [
+    "Rang Tiro · 0 CPU-Sek. · 0 Jobs"
+  ],
+  "updated_at_utc": "2026-06-08T13:02:53+00:00",
+  "workers": [
+    {
+      "cpu_seconds": 0.0,
+      "entlohnung_de": "Rang Tiro · 0 CPU-Sek. · 0 Jobs",
+      "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+      "legion_number": 1,
+      "rank_de": "Tiro",
+      "tasks_ok": 0,
+      "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b"
+    }
+  ]
+}

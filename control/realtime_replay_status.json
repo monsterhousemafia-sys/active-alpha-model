@@ -1,0 +1,20 @@
+{
+  "behavioral_features_allowed": true,
+  "data_quality_passed": true,
+  "data_quality_status": "PASS",
+  "last_bar_timestamp_utc": "2020-01-02T14:55:00+00:00",
+  "last_processed_at_utc": "2026-05-30T18:03:09+00:00",
+  "live_provider_enabled": false,
+  "provider_mode": "REPLAY",
+  "provider_status": "REPLAY",
+  "quality_errors": [],
+  "quality_warnings": [
+    "stale quotes (2)"
+  ],
+  "spy_available": true,
+  "tickers_loaded": [
+    "SPY",
+    "AAPL"
+  ],
+  "updated_at_utc": "2026-05-30T18:03:09+00:00"
+}

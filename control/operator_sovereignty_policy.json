@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "policy_id": "OPERATOR_SOVEREIGNTY",
+  "status": "AUTHORITATIVE",
+  "principle_de": "Nur der Mensch hat Macht. Er spricht in normaler Sprache mit dem Agenten — nicht über Roh-Computercode, Cron oder unbeaufsichtigte Systemd-Timer.",
+  "authority_chain_de": [
+    "Operator (alleinige Souveränität — Sprache, GUI, Mandat)",
+    "Lokale Evidence + ai_kernel (Wahrheit auf der Maschine)",
+    "R3 Cockpit :17890 und Ollama (gleichwertige lokale Kanäle)",
+    "Cursor-Chat optional (kein Abhängigkeit von Entwickler-Label oder Usage-Limit)",
+    "Agent Auto (Werkzeug — übersetzt, baut, protokolliert; kein Eigentümer)",
+    "Linux-Subsysteme (Routine-Timer, nie privilegiert ohne Mandat)"
+  ],
+  "interface_foundation_de": "R3-Kern im Cursor-Workspace integriert — Cursor-Fähigkeiten adaptieren, parallele Cursor-Schicht nicht nachbauen; Modell über Ollama/ai_kernel weiterentwickelbar.",
+  "external_sources_de": [
+    "systemd-Timer und -Services ohne conversational-Kanal",
+    "Direktes Terminal / Roh-CLI ohne Mandat",
+    "Cron und Hintergrund-Skripte",
+    "Fremde Prozesse ohne Operator-Mandat"
+  ],
+  "forbidden_for_external_de": [
+    "H1 erzwingen oder Prozesse killen (h1-force)",
+    "Lean/Turbo/Maximum oder Lean aus",
+    "Kernel-Grenze anwenden oder Ack schreiben",
+    "Cognitive-Kernel-Nachfolge ohne Sprach-Mandat",
+    "Server-Bootstrap und System-Level-D",
+    "Operator-Scope oder Souveränität abschalten"
+  ],
+  "routine_from_external_de": [
+    "status, h1-status, lean-status, mandate, warnings, refresh, learn",
+    "h1-resume bei Zombie, h1-watch, trading-day",
+    "kernel-boundary audit (nur lesen)"
+  ],
+  "mandate_ttl_minutes": 120,
+  "fail_closed": true
+}

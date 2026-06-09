@@ -1,0 +1,28 @@
+{
+  "consumed_at_utc": "2026-06-02T14:54:21+00:00",
+  "expires_at_utc": "2026-06-02T14:55:21+00:00",
+  "issued_at_utc": "2026-06-02T14:54:21+00:00",
+  "payload": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T14:54:21+00:00",
+    "draft_id": "2508827c-9cb3-4c5e-8f8a-dc4bf5771810",
+    "expires_at_utc": "2026-06-02T15:09:21+00:00",
+    "instrument": "STX",
+    "limit_price": 187.0,
+    "max_notional_eur": 56.1,
+    "order_type": "LIMIT_BUY",
+    "quantity": 0.3,
+    "side": "BUY",
+    "source": "MANAGED_CORE_LIVE_DRAFT",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "STX_US_EQ",
+    "updated_at_utc": "2026-06-02T14:54:21+00:00"
+  },
+  "payload_hash_sha256": "20ed6b49cded5049343f72e7ae70c2ebe59d21b6bdb59a09c544191aac005eee",
+  "profile": "T212_PROFILE_CONFIRMED_EXECUTION",
+  "status": "SUBMISSION_IN_PROGRESS",
+  "token_id": "02376c15-6af1-43b6-ac71-b121360e9e55",
+  "token_secret_hash": "5dd77bfc40ad4bb1aea74bfccd1462a141b52c24c49bb39d50f22a7908c96670",
+  "used": true
+}

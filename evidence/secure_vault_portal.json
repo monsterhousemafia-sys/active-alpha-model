@@ -1,0 +1,14 @@
+{
+  "hub_port": 17890,
+  "localhost_only": true,
+  "message_de": "Schlüssel-Tresor geöffnet — nur auf diesem Gerät.",
+  "mode": "setup",
+  "ok": true,
+  "portal_opened": true,
+  "portal_url": "http://127.0.0.1:17890/local/vault?session=Z310ORqCP0XRnz48E6bREip1MspHD525puB6Gxg6CGQ",
+  "reason_de": "Cloudflare-Anmeldung und Tunnel-Token einrichten",
+  "security_de": "Privatsphäre zuerst. Nicht im Chat.",
+  "session_ttl_s": 900,
+  "updated_at_utc": "2026-06-08T16:19:31+00:00",
+  "vault_direct_url": "http://127.0.0.1:17891/vault?session=Z310ORqCP0XRnz48E6bREip1MspHD525puB6Gxg6CGQ"
+}

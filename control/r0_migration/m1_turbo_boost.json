@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "applied_utc": "2026-06-04T17:50:00+00:00",
+  "cpu_logical": 32,
+  "current_r0_session": "20260604T153044Z",
+  "note": "R0 path-only relaunch 32c process on 153044Z after orphan cleanup; R3+M1 via matrix turbo --no-warm-cache parallel.",
+  "r0_recovery_path_only_pid": 12060
+  "goal": "3/3 strategy_daily_returns integrity_pass + M1 seal before sla_deadline_utc"
+}

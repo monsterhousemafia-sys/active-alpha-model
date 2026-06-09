@@ -1,0 +1,117 @@
+{
+  "community_spread_ok": true,
+  "doctrine_de": "Orchestrator = König auf diesem Host. Bash weltweit ist normal, aber ohne König-Orchestrierung nutzlos isoliert.",
+  "evidence_refs": [
+    "evidence/world_spread_latest.json",
+    "evidence/community_spread_sustain_latest.json",
+    "evidence/king_distribute_latest.json",
+    "evidence/glasfaser_offline_latest.json",
+    "control/h1_orchestrator_model.json"
+  ],
+  "federation_worker_count": 1,
+  "federation_workers": [
+    {
+      "host": "machinax7-X470-AORUS-GAMING-7-WIFI",
+      "remote_join": false,
+      "role": "king",
+      "worker_id": "king"
+    }
+  ],
+  "headline_de": "Bash weltweit — 104 König-Skripte · 3/3 Worker-Plattformen · 1 Federation-Knoten",
+  "isolation_de": "Worker-Bash läuft isoliert — Rechenleistung nur mit gültiger Join-URL + Token. mom_1-Seal und Orders bleiben beim König.",
+  "layers": [
+    {
+      "entry_de": "bash tools/king_ops.sh",
+      "id": "koenig",
+      "label_de": "König-Host (Orchestrator)",
+      "primary_commands_de": [
+        "verify",
+        "status",
+        "maintain",
+        "pipeline",
+        "distribute",
+        "community-spread",
+        "glasfaser",
+        "series-ready",
+        "r3-stealth",
+        "pulse",
+        "h1-seal",
+        "workers",
+        "connect"
+      ],
+      "role_de": "Bash = König-Orchestrator: king_ops pipeline (status→maintain→h1-seal); distribute für Spread/Worker.",
+      "scripts_in_tools": 104
+    },
+    {
+      "chains_de": [
+        "world-spread → Tunnel + Lite-ZIP",
+        "spread-intensify → Forum + Timer",
+        "h1-distribute → Worker-Queue"
+      ],
+      "entry_de": "bash tools/king_distribute.sh",
+      "id": "verteilen",
+      "label_de": "König verteilt",
+      "last_headline_de": "Welt aktiv — https://uni-consists-policies-individually.trycloudflare.com/join"
+    },
+    {
+      "entry_de": "Doppelklick START-Skript — kein König-Bash nötig",
+      "id": "worker_weltweit",
+      "join_url": "https://uni-consists-policies-individually.trycloudflare.com/join",
+      "label_de": "Worker weltweit (ZIP)",
+      "lite_zip": "/home/machinax7/active_alpha_worker_LITE.zip",
+      "platforms": [
+        {
+          "os": "linux",
+          "path": "/home/machinax7/active_alpha_worker_LITE/Linux_START.sh",
+          "present": true,
+          "script": "Linux_START.sh"
+        },
+        {
+          "os": "windows",
+          "path": "/home/machinax7/active_alpha_worker_LITE/Windows_START.bat",
+          "present": true,
+          "script": "Windows_START.bat"
+        },
+        {
+          "os": "macos",
+          "path": "/home/machinax7/active_alpha_worker_LITE/Mac_START.command",
+          "present": true,
+          "script": "Mac_START.command"
+        }
+      ]
+    },
+    {
+      "entry_de": "bash tools/king_ops.sh community-spread",
+      "forum_ref": "evidence/community_spread_forum_de.txt",
+      "gates_ok": 6,
+      "id": "community_linux",
+      "label_de": "Linux-Community",
+      "share_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com/"
+    },
+    {
+      "active_phase": "before_offline",
+      "blockers_de": [
+        "tunnel_token_set: Tunnel-Token fehlt — bash tools/setup_cloudflare_tunnel_token.sh",
+        "session_autostart: Autostart fehlt — bash tools/king_ops.sh r3-stealth",
+        "zip_backup: Backup fehlt — Repair legt evidence/glasfaser_offline/worker_LITE_backup.zip an"
+      ],
+      "entry_de": "bash tools/king_ops.sh glasfaser",
+      "id": "glasfaser",
+      "label_de": "Glasfaser-Umzug"
+    }
+  ],
+  "next_de": "Tunnel-Token stabilisieren — bash tools/setup_cloudflare_tunnel_token.sh",
+  "public_base_url": "https://uni-consists-policies-individually.trycloudflare.com",
+  "schema_version": 1,
+  "spread_map_de": [
+    "König: king_ops.sh → verify/maintain/distribute/pulse",
+    "Welt: king_distribute.sh → ai_kernel world-spread",
+    "Community: community-spread → Forum + Timer",
+    "Worker: Lite-ZIP → Linux/Win/Mac START (Python 3)",
+    "H1-Welt: Full-Worker → Prep-Chunks zurück zum König"
+  ],
+  "tunnel_stable": false,
+  "tunnel_token_set": false,
+  "updated_at_utc": "2026-06-08T10:44:41+00:00",
+  "world_spread_ok": true
+}

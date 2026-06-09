@@ -1,0 +1,20 @@
+{
+  "smoke_test_mode": true,
+  "launcher_initialized": true,
+  "gui_initialization_reached": true,
+  "read_only_verified": true,
+  "fail_closed_verified": true,
+  "operative_ui_actions_present": false,
+  "operative_import_path_found": false,
+  "operative_jobs_executed": false,
+  "result": "PASS_SELF_EXIT",
+  "timestamp_utc": "2026-06-08T13:52:28+00:00",
+  "build_provenance": {
+    "build_source_commit": "26551e6f2e82e47e646e6f475458ebab52a45c90",
+    "validated_source_base": "a47a8fef276358d63a5ed9a55d8b64dc5dccf194",
+    "build_scope": "V5R_NEUTRAL_READ_ONLY_RELEASE",
+    "release_snapshot_scope": "V5R_READ_ONLY_NEUTRAL",
+    "generated_at_utc": "2026-06-05T17:23:59+00:00"
+  },
+  "source_commit": "26551e6f2e82e47e646e6f475458ebab52a45c90"
+}

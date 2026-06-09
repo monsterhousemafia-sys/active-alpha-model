@@ -1,0 +1,8 @@
+{
+  "command": "E:\\active_alpha_model\\.venv\\Scripts\\python.exe -m pytest tests/test_p16_forward_observation_scaling.py tests/test_p15_paper_runtime_validation.py -q --tb=no",
+  "output_excerpt": ".................................                                        [100%]\n33 passed in 2.22s\n",
+  "passed": true,
+  "returncode": 0,
+  "tests_failed": 0,
+  "tests_passed": 33
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 — zentrale Handelsplattform",
+  "r3_role_de": "Präsentiert nur die täglichen Handelsergebnisse (Prognose, Zielportfolio, Budget T212)",
+  "alpha_model_role_de": "Active Alpha Model — trainiert täglich im Hintergrund; Operator sieht nur Ergebnisse auf R3",
+  "training_schedule_de": "Täglich (EOD / Marktschluss) — Signal und Zielgewichte",
+  "presentation_rules_de": [
+    "Keine Trainings-Oberfläche für den Operator",
+    "Keine Modell-Parameter in der Hauptansicht",
+    "Keine Ubuntu-Duplikate (Dateien, Terminal, System-Panels)",
+    "Ergebnis-Artefakte: prediction_readiness, T212-Portfolio, Lern-Ledger",
+    "Active Alpha Model: nur Plan/Signal — keine Order-Ausführung",
+    "Orders ausschließlich über R3 mit GUI-Bestätigung — fail-closed"
+  ],
+  "broker_de": "Trading212",
+  "engine_ref_de": "analytics/alpha_model_background_engine.py — Plan/Monitor im Hintergrund; Orders nur R3",
+  "order_execution_policy_ref": "control/r3_order_execution_policy.json",
+  "safety_de": "R3 startet keine Berechnungen — auto_model_training_enabled bleibt governance-gesteuert"
+}

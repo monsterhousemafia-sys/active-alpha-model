@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "aktien",
+  "label_de": "Aktien",
+  "detail_de": "DAILY_ALPHA_H1 — Prognose & Order-Desk",
+  "category": "markt",
+  "allowed_profile": "daily_alpha_h1",
+  "allowed_variant": "DAILY_ALPHA_H1",
+  "disclaimer_de": "Nur unser bestes Modell. Keine Anlageberatung — Orders nur mit deiner Bestätigung.",
+  "launcher_rel": "run_marktanalyse_linux.sh",
+  "desktop_icon": "r3-os"
+}

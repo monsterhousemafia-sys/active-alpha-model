@@ -1,0 +1,256 @@
+{
+  "api_route_de": "GET /api/r3/engine",
+  "closed_loop_ref": "evidence/r3_closed_loop_latest.json",
+  "confirmation_de": "Active Alpha · Hintergrund · Prognose 2026-06-09 · Rebalance OK · H1 COMPLETE",
+  "engine_de": "Active Alpha Model",
+  "h1_backtest": {
+    "metrics_strategy": {
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531
+    },
+    "operational_ok": true,
+    "pass_full_seal": false,
+    "progress_pct": null,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "sealed": false,
+    "status": "COMPLETE"
+  },
+  "king_trading": {
+    "agrees_with_model": null,
+    "detail_de": null,
+    "evidence_ref": "evidence/king_trading_assist_latest.json",
+    "model": null,
+    "ok": true,
+    "skipped": true
+  },
+  "ok": false,
+  "order_prep": {
+    "detail_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 er",
+    "evidence_ref": "evidence/r3_freigabe_latest.json",
+    "ok": true,
+    "package_ready": false
+  },
+  "policy_ref": "control/alpha_model_background_engine_policy.json",
+  "predict": {
+    "ok": true,
+    "signal_date": "2026-06-09",
+    "skipped": true
+  },
+  "presentation_de": "R3 zeigt Ergebnisse und führt Orders aus — Engine nur Plan/Signal",
+  "r3_display": {
+    "ok": false,
+    "positions": 11,
+    "signal_date": "2026-06-09"
+  },
+  "rebalance": {
+    "cash_source": "r3_t212_api_bond",
+    "closed_loop": false,
+    "investable_eur": null,
+    "is_due": null,
+    "ok": false,
+    "partial": null,
+    "pipeline_run_id": null,
+    "pipeline_synced": null,
+    "planning_cash_eur": null,
+    "r3_investable_eur": null,
+    "skipped": null,
+    "stale_plan": null
+  },
+  "schema_version": 1,
+  "steps": [
+    {
+      "ok": true,
+      "reason_de": "prognose_bereit",
+      "signal_date": "2026-06-09",
+      "skipped": true,
+      "step": "predict"
+    },
+    {
+      "advice_de": "Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX.",
+      "ok": true,
+      "reason_de": "cooldown_after_worthwhile_changed",
+      "skipped": true,
+      "step": "king_trading"
+    },
+    {
+      "growth_phase": "forschung_reif",
+      "headline_de": "Stufe A — Phase forschung_reif · FORSCHUNG_REIF",
+      "kpis": {
+        "blockers": [],
+        "checks": [
+          {
+            "detail_de": "signal=2026-06-09 ok=True",
+            "id": "prediction_ready",
+            "pass": true
+          },
+          {
+            "detail_de": "status=COMPLETE",
+            "id": "h1_complete",
+            "pass": true
+          },
+          {
+            "detail_de": "sharpe=0.782267724738531 min=0.5",
+            "id": "h1_sharpe",
+            "pass": true,
+            "value": 0.782267724738531
+          },
+          {
+            "age_s": 7.65948,
+            "detail_de": "age_s=7.7 max=900.0",
+            "id": "prognosis_fresh",
+            "pass": true
+          },
+          {
+            "detail_de": "score=63.0 min=40.0",
+            "id": "learn_score",
+            "pass": true
+          }
+        ],
+        "evaluated_at_utc": "2026-06-09T21:16:53+00:00",
+        "forschung_reif_ok": true,
+        "ok": true,
+        "wachstum_ok": true
+      },
+      "next_de": [
+        "python3 tools/ai_kernel.py evolve",
+        "H1-Seal prüfen"
+      ],
+      "ok": true,
+      "rag_ref": "evidence/king_evidence_rag_latest.json",
+      "schema_version": 1,
+      "step": "stufe_a",
+      "steps": [
+        {
+          "kpis": {
+            "blockers": [],
+            "checks": [
+              {
+                "detail_de": "signal=2026-06-09 ok=True",
+                "id": "prediction_ready",
+                "pass": true
+              },
+              {
+                "detail_de": "status=COMPLETE",
+                "id": "h1_complete",
+                "pass": true
+              },
+              {
+                "detail_de": "sharpe=0.782267724738531 min=0.5",
+                "id": "h1_sharpe",
+                "pass": true,
+                "value": 0.782267724738531
+              },
+              {
+                "age_s": 6.090048,
+                "detail_de": "age_s=6.1 max=900.0",
+                "id": "prognosis_fresh",
+                "pass": true
+              },
+              {
+                "detail_de": "score=63.0 min=40.0",
+                "id": "learn_score",
+                "pass": true
+              }
+            ],
+            "evaluated_at_utc": "2026-06-09T21:16:52+00:00",
+            "forschung_reif_ok": true,
+            "ok": true,
+            "wachstum_ok": true
+          },
+          "ok": true,
+          "step": "kpis"
+        },
+        {
+          "chunks": 13,
+          "ok": true,
+          "step": "evidence_rag"
+        },
+        {
+          "detail": "cooldown_after_worthwhile_changed",
+          "ok": true,
+          "step": "king_trading"
+        },
+        {
+          "detail_de": "n3 tools/ai_kernel.py learn\"\n  ],\n  \"message_de\": \"Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.\"\n}\n",
+          "ok": true,
+          "step": "learn"
+        },
+        {
+          "ok": true,
+          "stage": null,
+          "step": "evolve"
+        },
+        {
+          "ok": true,
+          "step": "teacher_student",
+          "teacher_available": true
+        },
+        {
+          "compute_boost": false,
+          "headline_de": "Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading",
+          "ok": true,
+          "provider": "ollama_keyless",
+          "step": "teacher_consult"
+        }
+      ],
+      "teacher_ref": "evidence/king_teacher_student_latest.json",
+      "updated_at_utc": "2026-06-09T21:17:08+00:00"
+    },
+    {
+      "cash_source": "r3_t212_api_bond",
+      "closed_loop": false,
+      "error_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr",
+      "forced_stale_rebuild": false,
+      "ok": false,
+      "stale_reasons": [
+        "bond_sync_newer",
+        "king_evidence_newer",
+        "plan_behind_bond"
+      ],
+      "step": "rebalance_plan"
+    },
+    {
+      "detail_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 er",
+      "freigabe_ready": false,
+      "ok": true,
+      "package_ready": false,
+      "step": "order_prep"
+    },
+    {
+      "detail_de": "H1 COMPLETE · Sharpe 0.78",
+      "evaluated": true,
+      "h1_status": "COMPLETE",
+      "ok": true,
+      "operational_ok": true,
+      "pass_full_seal": false,
+      "progress_pct": null,
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "step": "h1_monitor"
+    },
+    {
+      "detail_de": "Predict bereit · König: Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf ",
+      "ok": false,
+      "pipeline_ok": false,
+      "positions": 11,
+      "reason_de": "coalesced",
+      "refreshed": true,
+      "signal_date": "2026-06-09",
+      "skipped": false,
+      "step": "r3_refresh",
+      "worthwhile_buys": 0
+    }
+  ],
+  "steps_ok": 5,
+  "steps_total": 7,
+  "stufe_a": {
+    "detail_de": "Stufe A — Phase forschung_reif · FORSCHUNG_REIF",
+    "evidence_ref": "evidence/king_stufe_a_latest.json",
+    "growth_phase": "forschung_reif",
+    "ok": true,
+    "skipped": null
+  },
+  "updated_at_utc": "2026-06-09T21:17:13+00:00"
+}

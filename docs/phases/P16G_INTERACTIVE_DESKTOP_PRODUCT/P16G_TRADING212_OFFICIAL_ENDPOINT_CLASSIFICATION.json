@@ -1,0 +1,28 @@
+{
+  "blocked_order_paths": [
+    "/equity/history/exports",
+    "/equity/orders",
+    "/equity/orders/limit",
+    "/equity/orders/market",
+    "/equity/orders/stop",
+    "/equity/orders/stop_limit",
+    "/equity/pies"
+  ],
+  "blocked_write_methods": [
+    "DELETE",
+    "PATCH",
+    "POST",
+    "PUT"
+  ],
+  "generated_at_utc": "2026-06-02T11:33:13+00:00",
+  "readonly_get_allowlist": [
+    "/equity/account/cash",
+    "/equity/account/summary",
+    "/equity/history/dividends",
+    "/equity/history/orders",
+    "/equity/history/transactions",
+    "/equity/metadata/exchanges",
+    "/equity/metadata/instruments",
+    "/equity/positions"
+  ]
+}

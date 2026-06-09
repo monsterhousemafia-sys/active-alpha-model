@@ -1,0 +1,80 @@
+{
+  "generated_at_utc": "2026-06-07T21:53:17+00:00",
+  "t212_connected": true,
+  "model_plan_ready": true,
+  "order_path_ok": true,
+  "live_trading_ready": true,
+  "pilot_core_ready": true,
+  "overall_pass": true,
+  "blockers": [],
+  "steps": [
+    {
+      "name": "champion_runtime_guard",
+      "pass": true,
+      "status_de": "Governance OK — R0_LEGACY_ENSEMBLE | Signal DAILY_ALPHA_H1 | Signale aktuell (2026-06-05)",
+      "champion_ok": true,
+      "signals_ok": true,
+      "signal_date": "2026-06-05",
+      "blockers": [],
+      "warnings": []
+    },
+    {
+      "name": "t212_sync",
+      "pass": true,
+      "status": "LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE",
+      "cash_eur": 674.66,
+      "positions_count": 0,
+      "last_error": null
+    },
+    {
+      "name": "model_plan",
+      "pass": true,
+      "signal_date": "2026-06-05",
+      "primary": {
+        "symbol": "MU",
+        "model_weight_pct": 4.64,
+        "target_eur": 53.63,
+        "target_eur_gross": 53.74,
+        "estimated_one_way_cost_eur": 0.1075,
+        "alpha_lcb": 0.0023335700334962,
+        "signal_date": "2026-06-05",
+        "side": "BUY",
+        "pick_rationale": {
+          "status": "OK",
+          "symbol": "MU",
+          "summary_de": "MU: Alpha LCB 0.0023 · Rang 0.9316 · Gewicht 4.6 %",
+          "factors_de": [
+            "Signal-Datum (eingefroren): 2026-06-05",
+            "eligible=true — im Champion-Universum",
+            "Zielgewicht im Modell: 4.64 %",
+            "alpha_lcb: 0.0023 (höher = stärkeres Signal)",
+            "rank_score: 0.9316 (Portfolio-Rang)",
+            "mu_hat: 0.0025 (erwartete Überrendite-Schätzung)",
+            "selection_score: 0.4478",
+            "Sektor (Modell): Technology",
+            "Risk-on — Nachkäufe erlaubt",
+            "Ziel-Exposure Modell: 100.0 %",
+            "Live-Ziel (Cash-Skalierung): 53.63 € netto nach Gebührenpuffer"
+          ],
+          "signal_date": "2026-06-05",
+          "champion_id": "R3_w075_q065_noexit"
+        },
+        "rationale_de": "MU: Alpha LCB 0.0023 · Rang 0.9316 · Gewicht 4.6 %"
+      },
+      "allocation_count": 12
+    },
+    {
+      "name": "order_dry_run",
+      "pass": true,
+      "draft_status": null,
+      "submission_status": null,
+      "scaled_down": null,
+      "executed_notional_eur": null,
+      "blockers": [
+        "US_REGULAR_SESSION_CLOSED"
+      ],
+      "error": null,
+      "note_de": "US-Session zu — Pfad OK, echte Order erst Mo–Fr."
+    }
+  ]
+}

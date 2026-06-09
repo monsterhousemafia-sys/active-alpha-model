@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-06-04T19:02:40+00:00",
+  "progress": {
+    "log_idle_min": 1.4,
+    "path_pct": 74,
+    "returns": false
+  },
+  "returns_pass": 0,
+  "sla_enforce": {
+    "actions": [
+      {
+        "removed_junk_dir": "20260604T190010Z_R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "path_only_turbo": {
+          "backend": "thread",
+          "cores": 32,
+          "log": "E:\\active_alpha_model\\validation_runs\\20260604T153044Z_R0_LEGACY_ENSEMBLE\\validation_run_path_turbo.log",
+          "n_jobs": "16",
+          "pid": 26448
+        }
+      }
+    ],
+    "at_utc": "2026-06-04T19:02:41+00:00",
+    "batch_active": true,
+    "killer_pack": {
+      "affinity_mask": 4294967295,
+      "boosted": [],
+      "cpus": 32,
+      "executive_deduped": [],
+      "power": {
+        "/change disk-timeout-ac 0": 0,
+        "/change disk-timeout-dc 0": 0,
+        "/setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c": 0
+      }
+    },
+    "matrix_n": 0,
+    "sla_h_left": 2.25,
+    "verdict": "PATH_ONLY_R0_STARTED"
+  },
+  "verdict": "PATH_ONLY_R0_STARTED"
+}

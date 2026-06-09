@@ -1,0 +1,178 @@
+{
+  "actions": [
+    {
+      "prevent_sleep": "on"
+    },
+    {
+      "matrix": {
+        "launcher_pid": 33800,
+        "started": true
+      }
+    },
+    {
+      "watch_loop": {
+        "ok": true,
+        "pid": 8296,
+        "started": true
+      }
+    },
+    {
+      "outage": {
+        "finish_hint": "run_r0_migration_m1_finish.bat",
+        "foreground_matrix": "run_r0_migration_m1_matrix.bat",
+        "m1_completion_summary": {
+          "authoritative_champion_unchanged": "R3_w075_q065_noexit",
+          "blockers": [
+            "M1_VARIANT_RETURNS_MISSING",
+            "MATRIX_INCOMPLETE_OR_CRASHED"
+          ],
+          "completed_at_utc": "2026-06-04T14:51:49+00:00",
+          "phase": "M1",
+          "returns_complete": false,
+          "status": "IN_PROGRESS",
+          "synced_by": "tools/r0_migration_status_sync.py"
+        },
+        "primary_entry": "run_r0_migration_m1.bat",
+        "repair_actions": [
+          {
+            "action": "detect_matrix_stall",
+            "reason": "batch_not_active",
+            "stalled": false
+          },
+          {
+            "action": "ensure_m1_unblocked",
+            "unblocked": true
+          },
+          {
+            "action": "sync_m1_status_artifacts",
+            "m1_completion_summary": {
+              "authoritative_champion_unchanged": "R3_w075_q065_noexit",
+              "blockers": [
+                "M1_VARIANT_RETURNS_MISSING",
+                "MATRIX_INCOMPLETE_OR_CRASHED"
+              ],
+              "completed_at_utc": "2026-06-04T14:51:49+00:00",
+              "phase": "M1",
+              "returns_complete": false,
+              "status": "IN_PROGRESS",
+              "synced_by": "tools/r0_migration_status_sync.py"
+            },
+            "phase_status_m1": {
+              "blockers": [
+                "M1_VARIANT_RETURNS_MISSING",
+                "MATRIX_INCOMPLETE_OR_CRASHED"
+              ],
+              "status": "IN_PROGRESS",
+              "updated_at_utc": "2026-06-04T14:51:49+00:00"
+            },
+            "program_focus": {
+              "blocked_until_m1_sealed": [
+                "M2",
+                "M3",
+                "M4",
+                "M5",
+                "M6",
+                "M7",
+                "M8",
+                "M9",
+                "M10",
+                "M11",
+                "M12"
+              ],
+              "current_execution_phase": "M1",
+              "execution_focus": "M1_IN_PROGRESS",
+              "m1_sealed": false,
+              "program": "R0_LONG_TERM_MIGRATION",
+              "schema_version": 1,
+              "scope_doc": "docs/R0_MIGRATION_M1_ACTIVE_SCOPE.md"
+            }
+          }
+        ],
+        "resume_hint": "run_r0_migration_m1.bat",
+        "schema_version": 1,
+        "snapshot": {
+          "actions": [
+            {
+              "action": "cleanup_stale_batch_lock",
+              "path": "E:\\active_alpha_model\\.active_alpha_batch.lock",
+              "reason": "no_lock",
+              "removed": false
+            },
+            {
+              "action": "reconcile_matrix_job",
+              "status": "INCOMPLETE"
+            },
+            {
+              "action": "reconcile_m1_phase_status",
+              "m1_status": "IN_PROGRESS"
+            }
+          ],
+          "authoritative_champion_unchanged": "R3_w075_q065_noexit",
+          "batch_active": false,
+          "batch_lock_line": null,
+          "batch_lock_present": false,
+          "finish_hint": "run_r0_migration_m1_finish.bat",
+          "foreground_matrix": "run_r0_migration_m1_matrix.bat",
+          "log_summary_present": false,
+          "m1_blockers": [
+            "M1_VARIANT_RETURNS_MISSING",
+            "MATRIX_INCOMPLETE_OR_CRASHED"
+          ],
+          "matrix_job": {
+            "batch_active": false,
+            "cmd": [
+              "E:\\active_alpha_model\\.venv\\Scripts\\python.exe",
+              "E:\\active_alpha_model\\tools\\run_validation_matrix.py",
+              "--phase",
+              "matrix",
+              "--run-mode",
+              "backtest",
+              "--variant",
+              "R0_LEGACY_ENSEMBLE",
+              "--variant",
+              "R3_w075_q065_noexit",
+              "--variant",
+              "M1_MOM_BLEND_MATCHED_CONTROLS",
+              "--parallel-jobs",
+              "1",
+              "--runtime-profile",
+              "turbo"
+            ],
+            "foreground": false,
+            "lock_pid": 30180,
+            "log_path": "evidence\\r0_migration\\validation_matrix_run.log",
+            "log_summary_ok": false,
+            "pid": 30180,
+            "reason": "work_stopped_early",
+            "resolved_at_utc": "2026-06-04T14:51:49+00:00",
+            "returncode": null,
+            "returns_ok": false,
+            "schema_version": 2,
+            "session": "2026-06-04T145108+0000",
+            "started_at_utc": "2026-06-04T14:51:08+00:00",
+            "status": "INCOMPLETE",
+            "updated_at_utc": "2026-06-04T14:51:49+00:00"
+          },
+          "primary_entry": "run_r0_migration_m1.bat",
+          "resume_hint": "run_r0_migration_m1.bat",
+          "returns_complete": false,
+          "schema_version": 1,
+          "status_hint": "run_r0_migration_m1_status.bat",
+          "updated_at_utc": "2026-06-04T14:51:49+00:00"
+        },
+        "stall": {
+          "reason": "batch_not_active",
+          "stalled": false
+        },
+        "status_hint": "run_r0_migration_m1_status.bat",
+        "unblocked": true,
+        "updated_at_utc": "2026-06-04T14:51:49+00:00"
+      }
+    }
+  ],
+  "at_utc": "2026-06-04T14:51:47+00:00",
+  "processes_after": 2,
+  "processes_before": 0,
+  "returns_done": "0/3",
+  "verdict": "RESET_AND_STARTED_MATRIX"
+}

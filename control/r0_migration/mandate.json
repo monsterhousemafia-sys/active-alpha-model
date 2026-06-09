@@ -1,0 +1,63 @@
+{
+  "approval_mode": "PROGRAM_MANDATE_CURSOR_SESSION",
+  "approved_at_utc": "2026-06-04T10:41:46+00:00",
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "charter_target_draft": "control/champion_decision_charter_r0_target_draft.md",
+  "decisions": {
+    "auto_promotion": false,
+    "excluded_variants": [
+      "R5_rank_only_train5",
+      "rank_only_production"
+    ],
+    "exe_os_rollout": "POST_M9_SEPARATE",
+    "hybrid_mom_track": "DEFERRED_M4",
+    "paper_forward_required": true,
+    "primary_track": "R0_LEGACY_ENSEMBLE",
+    "risk_off_episode_tradeoff_accepted": "CONDITIONAL_ON_M2",
+    "shadow_required": true,
+    "tuning_track": "R0_STAR_validation_runs_only"
+  },
+  "mandate_doc": "docs/R0_MIGRATION_MANDATE.md",
+  "next_phase": "M1",
+  "next_phase_doc": "docs/R0_LONG_TERM_MIGRATION_PLAN.md#m1--evidenz-baseline--sanierung-1-2-wochen",
+  "objective_function": {
+    "gates_required": [
+      "matrix_comparison",
+      "cost_stress_plus_25_bps",
+      "dsr",
+      "robustness",
+      "shadow",
+      "paper_forward",
+      "external_champion_change_approval"
+    ],
+    "primary": [
+      "aligned_sharpe_0rf",
+      "aligned_cagr"
+    ],
+    "secondary": [
+      "max_drawdown_vs_champion",
+      "beat_m1_control"
+    ],
+    "stability_optional": [
+      "subperiod_segment_2_sharpe_min_0.5"
+    ]
+  },
+  "phase": "M0",
+  "program_doc": "docs/R0_LONG_TERM_MIGRATION_PLAN.md",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "stop_rules": [
+    "M2_risk_off_episode_catastrophic_for_R0",
+    "M0_mandate_revoked",
+    "switch_gates_not_all_pass"
+  ],
+  "target_champion_primary": "R0_LEGACY_ENSEMBLE",
+  "target_champion_research": "R0_STAR",
+  "thresholds": {
+    "criteria_yaml": "control/champion_change_criteria.yaml",
+    "max_drawdown_degradation_vs_champion": 0.02,
+    "min_sharpe_delta_vs_champion": 0.02,
+    "paper_forward_min_days": 60,
+    "shadow_min_outcomes": 30
+  }
+}

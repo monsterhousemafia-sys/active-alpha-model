@@ -1,0 +1,83 @@
+{
+  "components": {
+    "active_alpha_chat": {
+      "ok": true,
+      "path": "/home/machinax7/.local/bin/active-alpha-chat"
+    },
+    "cockpit_hub": {
+      "ki_chat_api_ok": true,
+      "ok": true,
+      "port": 17890,
+      "url": "http://127.0.0.1:17890/desktop"
+    },
+    "context": {
+      "context_chars": 12000,
+      "r3_os_files": [
+        "/home/machinax7/.local/share/r3-os/operator_latest.json",
+        "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+        "/home/machinax7/.local/share/r3-os/r3_identity_de.md",
+        "/home/machinax7/.local/share/r3-os/dev_trail.json"
+      ],
+      "repo_context_files": [
+        "control/AI_KERNEL.json",
+        "control/active_alpha_unified.json",
+        "control/active_alpha_public_capabilities.json",
+        "control/cursor_anchor_policy.json",
+        "control/r3_model_team.json",
+        "control/r3_phase_b_master_prompt_de.md",
+        "evidence/r3_step_b_latest.json",
+        "evidence/operator_public_latest.json",
+        "evidence/public_learning_report_latest.json",
+        "evidence/closed_loop_score_latest.json",
+        "control/h1_governance_status.json",
+        "evidence/chat_evolution_preview_latest.json",
+        "evidence/gui_preview_latest.json",
+        "evidence/r3_continuity_latest.json",
+        "evidence/r3_continuity_brief_de.md"
+      ],
+      "repo_context_files_loaded": 15
+    },
+    "evolution": {
+      "next_after_h1_seal_de": "Phase B 100% — Pilot Day Trading Montag",
+      "pre_seal_allowed": true,
+      "stage": "sportwagen"
+    },
+    "h1_backtest": {
+      "progress_pct": 99,
+      "sealed": false,
+      "status": "RUNNING",
+      "untouched": true
+    },
+    "learn_loop": {
+      "grade": "C",
+      "last_cycle_utc": "2026-06-07T00:04:24+00:00",
+      "ok": true,
+      "quality_score": 63
+    },
+    "ollama": {
+      "base_url": "http://127.0.0.1:11434",
+      "default_model": "qwen2.5:7b",
+      "ok": true
+    },
+    "systemd_timers": {
+      "cognitive-observe": "enabled",
+      "cognitive-scheduler": "enabled",
+      "learn": "enabled",
+      "warnings": "enabled"
+    }
+  },
+  "cursor_cloud_required": false,
+  "generated_at_utc": "2026-06-07T00:04:24+00:00",
+  "headline_de": "Lokale KI entfaltet — Ollama + Cockpit + Lernloop aktiv",
+  "local_ki_unfolded": true,
+  "message_de": "R3 KI läuft lokal auf dieser Maschine — kein Cursor-Cloud-Gate.",
+  "operator_channels_de": [
+    "Terminal: active-alpha-chat",
+    "Browser: http://127.0.0.1:17890/desktop",
+    "CLI: python3 tools/ai_kernel.py status|learn|warnings",
+    "Öffentlich: active-alpha-show"
+  ],
+  "primary_interface": "r3_ki",
+  "safety_unchanged_de": "Kein Autotrading, kein Champion-Wechsel, H1 unangetastet.",
+  "schema_version": 1
+}

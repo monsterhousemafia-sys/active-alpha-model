@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "roadmap_id": "REVENUE_FUNDED_PRODUCT_AND_AGENT_EXPANSION",
+  "status": "AUTHORITATIVE_PLANNING_ARTIFACT",
+  "saved_at_utc": "2026-06-02T00:00:00+00:00",
+  "purpose_de": "Klare, umsetzbare Roadmap: Nutzer-Einnahmen finanzieren schrittweise Produktausbau und kontrollierte Erweiterung der Marktanalyse-Fähigkeiten (inkl. agentischer Automatisierung innerhalb der Governance.",
+  "north_star_de": "Professionelle EXE mit nachweisbarem Mehrwert (Mensch vs. Basisportfolio) → Einnahmen → jede Phase finanziert den nächsten Ausbau ohne Safety zu opfern.",
+  "expansion_definition": {
+    "product_expansion": "Mehr Nutzer, bessere Charts, Reports, Installer, Signing, optionale Execution-Stufen.",
+    "agent_expansion": "Mehr autonom umsetzbare Pipeline-Phasen, bessere Evidence, Learning-Auswertung, Setup-Assistent — immer fail-closed und phasenweise freigegeben.",
+    "not_in_scope": "Ungeprüftes Auto-Trading, Champion-Wechsel ohne Review, Cloud-Speicherung von API-Secrets."
+  },
+  "revenue_principles": [
+    "Erst Mehrwert beweisen (Vergleich, Reports), dann monetarisieren.",
+    "Monetarisierung nie an Auto-Trading ohne explizite Stufe und Einwilligung koppeln.",
+    "Jede Stufe hat messbare KPIs — ohne KPI kein nächster Ausbau.",
+    "Einnahmen fließen in definierte Engineering-Blöcke (siehe funding_allocation), nicht in undokumentierte Features.",
+    "Lokale EXE bleibt Standard — kein Pflicht-Abo für Read-only."
+  ],
+  "funding_allocation": {
+    "engineering_blocks": [
+      {"id": "E1", "share_pct": 40, "label_de": "Produkt & EXE (UI, Charts, Installer, Signing)"},
+      {"id": "E2", "share_pct": 25, "label_de": "Vergleichs-Engine & Reports (Vision-Kern)"},
+      {"id": "E3", "share_pct": 20, "label_de": "Multi-User Onboarding & Support-Bundle"},
+      {"id": "E4", "share_pct": 10, "label_de": "Evidence, Tests, CI, Integrität"},
+      {"id": "E5", "share_pct": 5, "label_de": "Reserviert für Governance/Review-Kosten"}
+    ],
+    "note_de": "Anteile sind Planungsrichtwerte pro freigeschalteter Umsatzphase — keine Buchhaltung."
+  },
+  "product_tiers": [
+    {
+      "tier_id": "T0_PILOT",
+      "name_de": "Pilot (intern)",
+      "price_model": "kostenlos",
+      "includes": ["Read-only T212", "Review Mode AN", "Learning lokal", "17-Ansichten Cockpit"],
+      "status": "ACTIVE"
+    },
+    {
+      "tier_id": "T1_INSIGHT",
+      "name_de": "Insight",
+      "price_model": "einmalig oder geringes Jahresentgelt — lokal freischaltbar (Lizenzdatei)",
+      "includes": ["Mensch vs. Basisportfolio Dashboard", "Wöchentlicher PDF/JSON-Report", "Drift-Charts", "Export ohne Secrets"],
+      "unlocks_when": "Phase R1 complete"
+    },
+    {
+      "tier_id": "T2_PRO",
+      "name_de": "Pro",
+      "price_model": "Jahreslizenz pro Windows-Benutzer",
+      "includes": ["T1 + Multi-User Onboarding", "Erweiterte Trade-Timeline", "Kosten-Slippage-Attribution", "Priority Support-Paket"],
+      "unlocks_when": "Phase R2 complete"
+    },
+    {
+      "tier_id": "T3_ADVISOR",
+      "name_de": "Advisor",
+      "price_model": "höhere Jahreslizenz oder Revenue-Share auf dokumentiertem Mehrwert",
+      "includes": ["T2 + Bestätigte Orders (manuell)", "Execution-Profil", "Review Mode nutzersteuerbar", "Audit-Ledger Export"],
+      "unlocks_when": "Phase R3 complete + explizite Nutzer-Einwilligung"
+    },
+    {
+      "tier_id": "T4_MANAGED",
+      "name_de": "Managed (optional, spät)",
+      "price_model": "monatlich + harte Caps",
+      "includes": ["Begrenztes Auto-Trading nach Regeln", "500-EUR-Pilot-Limits", "Kill-Switch", "Volle Evidence"],
+      "unlocks_when": "Phase R4 complete + EXTERNAL_REVIEW oder dokumentierte Ausnahme"
+    }
+  ],
+  "phases": [
+    {
+      "phase_id": "R0",
+      "name_de": "Fundament (erreicht)",
+      "duration_estimate": "abgeschlossen",
+      "revenue_target_eur": 0,
+      "engineering_deliverables": [
+        "Marktanalyse.exe mit T212 Read-only + DPAPI",
+        "Review Mode Schalter",
+        "Permission-Fragebogen gespeichert",
+        "Produkt-Vision dokumentiert",
+        "Preflight 17/17 PASS"
+      ],
+      "agent_expansion_deliverables": [
+        "Autonome Build/Preflight/Evidence-Pipeline",
+        "Setup-Assistent (Anzeige)",
+        "Governance fail-closed durchsetzbar"
+      ],
+      "kpi_gate": ["pilot_day1_ready=true", "t212_live=ACTIVE"],
+      "status": "COMPLETE"
+    },
+    {
+      "phase_id": "R1",
+      "name_de": "Wertbeweis — Vergleich sichtbar",
+      "duration_estimate": "2–4 Wochen Engineering",
+      "revenue_target_eur": 0,
+      "monetization_ready": false,
+      "status": "COMPLETE",
+      "engineering_deliverables": [
+        "Modul analytics/human_vs_base_comparison.py",
+        "Nav-Ansicht Portfolio-Vergleich: Dashboard (Allokation, Drift, Equity, Timeline)",
+        "Basisportfolio aus paper/config + champion ref",
+        "T212 trade history sync + Position-createdAt-Fallback",
+        "JSON + PDF export in EXE",
+        "Fail-closed: NOT_EVALUABLE bei fehlenden Daten"
+      ],
+      "agent_expansion_deliverables": [
+        "Agent kann Vergleichs-Reports autonom generieren (read-only Jobs)",
+        "Wöchentlicher Autopilot-Hook nur für Report-Refresh",
+        "Tests test_human_vs_base_comparison.py"
+      ],
+      "kpi_gate": [
+        "Nutzer versteht Abweichung ohne Erklärung in <2 Min",
+        "Chart rendert in EXE smoke test",
+        "Mindestens 4 Vergleichsmetriken belegt"
+      ],
+      "funds_next_phase_when": "3+ Wochen stabile Nutzung + Nutzer-Feedback „würde dafür zahlen“"
+    },
+    {
+      "phase_id": "R2",
+      "name_de": "Monetarisierung Insight — erste Einnahmen",
+      "duration_estimate": "2–3 Wochen",
+      "revenue_target_eur": 500,
+      "monetization_ready": true,
+      "engineering_deliverables": [
+        "Lokale Lizenzdatei control/license/tier_insight.lic (signiert, offline)",
+        "Tier-Gate in EXE: Insight-Charts ohne Lizenz = Preview mit Wasserzeichen",
+        "Distribution ZIP + MARKTANALYSE_EXE_MULTI_USER_SETUP.md im Paket",
+        "Zahlungs-Flow dokumentiert (Stripe/PayPal/manuell — Owner entscheidet)",
+        "Invoice/Evidence template für B2C"
+      ],
+      "agent_expansion_deliverables": [
+        "Agent pflegt Lizenz-Validator + Release-ZIP",
+        "Automatisierte Release-Notes aus Evidence",
+        "Support-Checkliste generierbar"
+      ],
+      "kpi_gate": [
+        "Erste zahlende Nutzer (≥1) oder Owner-Budget-Freigabe equivalent",
+        "Umsatz ≥500 EUR ODER dokumentiertes Sponsoring",
+        "0 Safety-Regressions in Preflight"
+      ],
+      "funds_next_phase_when": "Umsatz ≥500 EUR → 40% E1, 25% E2 laut funding_allocation"
+    },
+    {
+      "phase_id": "R3",
+      "name_de": "Pro & Multi-User — skalierbare EXE",
+      "duration_estimate": "4–6 Wochen",
+      "revenue_target_eur": 2500,
+      "monetization_ready": true,
+      "engineering_deliverables": [
+        "Vollständiger Onboarding-Wizard pro Nutzer (Fragebogen → Schalter anwenden)",
+        "Paper + Real getrennte Panels (Nutzerentscheidung B)",
+        "Authenticode-Signing (wenn Zertifikat vorhanden)",
+        "Installer (Inno Setup oder MSIX)",
+        "Erweiterte Analytics: timing_delta, cost attribution",
+        "Pro-Tier Lizenz + 3–10 Nutzer Support-Prozess"
+      ],
+      "agent_expansion_deliverables": [
+        "Agent onboarding für Fremdnutzer reproduzierbar (Scripts only)",
+        "Regression-Suite pro Release",
+        "Aggregate Learning lokal (keine Cloud-Secrets)"
+      ],
+      "kpi_gate": [
+        "Neuer Nutzer Setup <30 Min ohne Entwickler",
+        "≥3 aktive Installationen",
+        "Umsatz ≥2500 EUR kumuliert oder Run-Rate equivalent"
+      ],
+      "funds_next_phase_when": "Umsatz reinvestiert in Signing + Installer + Analytics"
+    },
+    {
+      "phase_id": "R4",
+      "name_de": "Advisor — manuelle Execution",
+      "duration_estimate": "4–8 Wochen",
+      "revenue_target_eur": 5000,
+      "monetization_ready": true,
+      "engineering_deliverables": [
+        "Execution-Profil + bestätigte Limit-Orders (Review Mode AUS nur mit Dialog)",
+        "Vollständiger Audit-Ledger Export",
+        "Human vs System Report inkl. „was hätte System getan“",
+        "Advisor-Tier Pricing live"
+      ],
+      "agent_expansion_deliverables": [
+        "Agent darf Execution-Pfad testen (Dry-run + Evidence)",
+        "Kein Auto-Routing ohne R5"
+      ],
+      "kpi_gate": [
+        "Manuelle Orders mit 0 unbestätigten Sends",
+        "Audit-Ledger vollständig",
+        "Nutzer-Einwilligung pro Execution dokumentiert"
+      ],
+      "funds_next_phase_when": "Nur bei expliziter Owner-Freigabe für R5"
+    },
+    {
+      "phase_id": "R5",
+      "name_de": "Managed — begrenztes Auto (optional)",
+      "duration_estimate": "8+ Wochen",
+      "revenue_target_eur": 10000,
+      "monetization_ready": true,
+      "engineering_deliverables": [
+        "Auto-Trading nur innerhalb 500-EUR-Cap + Kill-Switch",
+        "Promotion-Pipeline nur mit Gate-PASS",
+        "Externes Review oder dokumentierte Ausnahme",
+        "Managed-Tier monatlich"
+      ],
+      "agent_expansion_deliverables": [
+        "Agent autonom: Observation → Report → vorgeschlagene Aktion → menschliche oder regelbasierte Freigabe",
+        "Volle Evidence-Kette"
+      ],
+      "kpi_gate": [
+        "EXTERNAL_REVIEW oder schriftliche Owner-Ausnahme",
+        "30 Tage Paper/Shadow parallel ohne Incident",
+        "Umsatz deckt Support + Haftungs-Reserve"
+      ],
+      "status": "NOT_STARTED_BLOCKED_BY_GOVERNANCE"
+    }
+  ],
+  "revenue_to_expansion_loop": {
+    "description_de": "Jede Phase endet mit KPI-Review. Einnahmen oder äquivalentes Owner-Budget lösen den nächsten Engineering-Block frei.",
+    "steps": [
+      "1. Mehrwert liefern (R1 Vergleich)",
+      "2. Monetarisieren (R2 Lizenz Insight)",
+      "3. Skalieren (R3 Pro/Multi-User)",
+      "4. Execution optional (R4 Advisor)",
+      "5. Auto optional (R5 Managed — nur mit Freigabe)"
+    ],
+    "reinvestment_rule_de": "Mindestens 65% der Netto-Einnahmen einer Phase fließen in E1+E2+E3 des folgenden Blocks, bis KPI-Gate PASS."
+  },
+  "metrics_dashboard": {
+    "track_weekly": [
+      "active_installations",
+      "t212_sync_success_rate",
+      "comparison_reports_generated",
+      "license_activations",
+      "mrr_eur",
+      "preflight_pass_rate",
+      "support_tickets_count"
+    ],
+    "evidence_path": "evidence/revenue_expansion_metrics_weekly.json"
+  },
+  "immediate_next_actions": [
+    {
+      "priority": 1,
+      "action_de": "R1 starten: human_vs_base_portfolio Vergleichsmodul + Chart-Ansicht",
+      "owner": "engineering_agent",
+      "blocks_revenue": false
+    },
+    {
+      "priority": 2,
+      "action_de": "Paper vs Real Entscheidung (Option B: getrennte Panels) umsetzen",
+      "owner": "product_owner",
+      "blocks_revenue": false
+    },
+    {
+      "priority": 3,
+      "action_de": "Nach R1 Demo: Preis für Tier Insight festlegen",
+      "owner": "product_owner",
+      "blocks_revenue": true
+    }
+  ],
+  "links": {
+    "product_vision": "control/PRODUCT_VISION_PROFESSIONAL_EXE.json",
+    "owner_permissions": "control/exe_setup_permissions_questionnaire.json",
+    "multi_user_setup": "control/MARKTANALYSE_EXE_MULTI_USER_SETUP.md",
+    "loader": "aa_revenue_expansion_roadmap.py"
+  },
+  "governance": "Champion, auto_execute, auto_promote bleiben gesperrt bis R5 und explizite Freigabe. Roadmap autorisiert keine Phase automatisch."
+}

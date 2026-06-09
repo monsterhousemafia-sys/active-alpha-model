@@ -1,0 +1,177 @@
+{
+  "zip": "codex_sector_reference_automation_review.zip",
+  "files": [
+    {
+      "path": "docs/SECTOR_REFERENCE_AUTOMATION_PLAN.md",
+      "sha256": "a407d74706e113026a502fb1c1b8028e5b534d9e5546a84f159f330175b636cf"
+    },
+    {
+      "path": "SECTOR_REFERENCE_AUTOMATION_STATUS.md",
+      "sha256": "5b824781f10d0fac733db58227a45712227d744fc6519610e2a141544b54bd3f"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "aa023d153819f704c26b0df296d79cf84c7e80941bc4c1041bbf0cf63bce8a51"
+    },
+    {
+      "path": "aa_sector_reference.py",
+      "sha256": "852499ab1efbc367a0a05d497d2b2c9cab9f6b7ad42b1c151350804509ad3812"
+    },
+    {
+      "path": "aa_constants.py",
+      "sha256": "bd6e9cf38a6fa44ba04dcc06acaff66f194e0ec602e003d4b2845f2e0d125ecb"
+    },
+    {
+      "path": "aa_universe.py",
+      "sha256": "0b64645088c02e4a7307830f4082bf2b57dddc02dc020d802586d0b2be3e8e99"
+    },
+    {
+      "path": "aa_ops_refresh.py",
+      "sha256": "9c330cc230608fde2cf8a69d851364a29568bfcdf76a6ff4b33069440af89c0e"
+    },
+    {
+      "path": "aa_config_env.py",
+      "sha256": "b7f9a7b53bcb2e863be9ada4bcbf2dc1d1c8f81a94b5484a0c052951b8db5d4f"
+    },
+    {
+      "path": "config/gics_to_coarse.json",
+      "sha256": "d0e5044d06c8a3991debdd366e7a21e385908be38a2a03f50998ba3dc259e03c"
+    },
+    {
+      "path": "sector_reference.csv.example",
+      "sha256": "c9b475dae95676ed64bfe93ba7730f2e5f0653a2effab8ea73fd3d426af90d06"
+    },
+    {
+      "path": "active_alpha_marktanalyse_os.bat",
+      "sha256": "e3b3085d83063ea0d357a5e2988a9d2c3b434c00f9c1a447f25aaafb7153cf8c"
+    },
+    {
+      "path": "active_alpha_settings.bat",
+      "sha256": "8a1283866309dc0bc0040a5c2285213c9e4ebeb7b755759e35011a8689fedc8f"
+    },
+    {
+      "path": "1_live_daily_sync.bat",
+      "sha256": "bd404480ea98114b399d3731d2bdbe8318473847bdc40525ef759b00c79cde3d"
+    },
+    {
+      "path": "analytics/live_trading_operations.py",
+      "sha256": "571863ecbe52ea2cec898478a3678767e6c9beb76ed5b936ab88a13a0938c5c9"
+    },
+    {
+      "path": "ui/live_trading_dashboard/service.py",
+      "sha256": "42d93366f4f7515baddaa75b608134150190c0f399d9d5364330e71b7e90dbcb"
+    },
+    {
+      "path": "ui/live_trading_dashboard/window.py",
+      "sha256": "3bd2e6083480a290638a91fc438abc8cb09f5c4668739dda45c484260cd6d1b1"
+    },
+    {
+      "path": "ui/interactive_cockpit/services/cockpit_state_service.py",
+      "sha256": "09f093fc8ad2f4c2c5c82e15b8135854f6cfa2916cf900ec202c9cf7d9a295b6"
+    },
+    {
+      "path": "build/decision_cockpit/Marktanalyse.spec",
+      "sha256": "3c45f2ac6085415899fc1df678e7874483988102e4b0b19150a0c37bc3722613"
+    },
+    {
+      "path": "tools/run_sector_reference_phase_s0.py",
+      "sha256": "83e530c062e344eefafb034b7626e0040a0f18b0bd1d6d6f0cf851c0a2897406"
+    },
+    {
+      "path": "tools/run_ensure_sector_reference.py",
+      "sha256": "11e7691b4dbe5c6b9bdbf25a36fb9c87f4d3af0b0312d892baa578de86e4760a"
+    },
+    {
+      "path": "tools/verify_sector_reference_coverage.py",
+      "sha256": "ebbe02fa2700ab967b9426f293b76a0377aa4b884d3a618b72db374b90f978cc"
+    },
+    {
+      "path": "tools/check_sector_matrix_smoke.py",
+      "sha256": "2f1ec3c54c56c8cd29969f6a814a056e38892cbaca8e5cd03a90e5827fb8bc8f"
+    },
+    {
+      "path": "tools/run_sector_reference_rollout_s7.py",
+      "sha256": "9b4632a91d8d3111abfca40c41f83fca71ed2ff5ab730b7dbd5c84651ed71ba6"
+    },
+    {
+      "path": "tools/run_sector_reference_acceptance_s8.py",
+      "sha256": "39d119d44557c4139cae4c10c75f200eb7ca1c49cbb1c24279b35b6f7c3c6e86"
+    },
+    {
+      "path": "tools/seed_sector_reference_from_constants.py",
+      "sha256": "5dc4f251b364d0078856221a622be6b78aa2b697732604fffefe46d017694d38"
+    },
+    {
+      "path": "tools/build_sector_reference_review_zip.py",
+      "sha256": "5baf83bbbfcf02fb8611031d618492648663f3cd0fd8d3587da31c4d72869edf"
+    },
+    {
+      "path": "evidence/sector_map_gap_analysis.json",
+      "sha256": "97820b92e4ee39630e0b9298dc1a142dcebc7f7c8098903e0f9043f0d9931412"
+    },
+    {
+      "path": "evidence/sector_reference_governance_note.json",
+      "sha256": "5e26dbe3709729f96e68466bd2dc3d61b575931a16ab837290309cfae6b21046"
+    },
+    {
+      "path": "evidence/sector_wikipedia_parser_alignment.json",
+      "sha256": "53c791ea69d36e3f78cebae71ea071593d3549b53f15d1a22b72731aef11a7d2"
+    },
+    {
+      "path": "evidence/sector_reference_rollout_summary.json",
+      "sha256": "2332149117ef6dae78d145088f9d5f80f6cafe023804fa64646f55fadb2bff0f"
+    },
+    {
+      "path": "evidence/sector_reference_matrix_smoke_s7.json",
+      "sha256": "b542cdb5957214825728e970c369629c4c6438cecc37fa1d140b46d7bdb4db53"
+    },
+    {
+      "path": "evidence/sector_reference_acceptance_s8.json",
+      "sha256": "b21da26642050b02d8abeed214e808ddf0f49310bc06d4ca2cec4d286b6bfac8"
+    },
+    {
+      "path": "evidence/sector_reference_acceptance_s8.md",
+      "sha256": "ebc2ddac25f0fb6b01be898f5bda246c6c46f6ac88b33910a78bf7491e16cf1f"
+    },
+    {
+      "path": "evidence/sector_reference_refresh_latest.json",
+      "sha256": "5e9503eb624df1c016db6ebe520404adefc466f5f927bfcf55721a9fa4260973"
+    },
+    {
+      "path": "tests/test_sector_reference.py",
+      "sha256": "aa4256abb6548d1eac8caba751279c9ca2a17f9115d0088bae84be2fdc35a1e4"
+    },
+    {
+      "path": "tests/test_sector_reference_phase_s0.py",
+      "sha256": "f3333fb35f053721c0122516e813acadf5436c5d6d06c02be85f04a0d6a36986"
+    },
+    {
+      "path": "tests/test_sector_reference_s2.py",
+      "sha256": "e6c38a723e4a471dba9a2d8adbb811f97d880a6c395ec042b72a3894e1d2c457"
+    },
+    {
+      "path": "tests/test_sector_reference_s3.py",
+      "sha256": "d492ae8159a9b35dbf539be5f371e1d2b2aed7eeb50d4a107146434e84d81836"
+    },
+    {
+      "path": "tests/test_sector_reference_s4.py",
+      "sha256": "c281f3fa848c72f6d62a97aff8d641c8258bedf644354f71294eee08d72a27f4"
+    },
+    {
+      "path": "tests/test_sector_reference_s5.py",
+      "sha256": "b6b151074f1e89ca88dfa18343b341b5fd3d0ae7973db361b0a9c6b5969520fc"
+    },
+    {
+      "path": "tests/test_sector_reference_s6.py",
+      "sha256": "241e949ccda950c65cd811ec1db052e1fb4bbfe89f4b3ab184345d978503dac8"
+    },
+    {
+      "path": "tests/test_sector_reference_s7.py",
+      "sha256": "e33dd7eca95296165af3633e787f98b3282cae37c116d4e35bbaac24f830f59c"
+    },
+    {
+      "path": "tests/test_sector_reference_s8.py",
+      "sha256": "fb3991b564651a00bee667d369dd593eb7d9e92a8d5873a8f81f18580a37448b"
+    }
+  ]
+}

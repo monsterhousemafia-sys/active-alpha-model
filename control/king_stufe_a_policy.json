@@ -1,0 +1,45 @@
+{
+  "enabled": true,
+  "evidence_rag_max_chars": 4500,
+  "evidence_rag_paths": [
+    "evidence/king_network_pulse_latest.json",
+    "evidence/r3_t212_prognosis_latest.json",
+    "evidence/pilot_investment_plan_latest.json",
+    "evidence/king_trading_assist_latest.json",
+    "evidence/daily_alpha_h1_evaluation_latest.json",
+    "control/prediction_readiness.json",
+    "evidence/king_32b_forschung_latest.json",
+    "evidence/king_cloud_teacher_latest.json",
+    "evidence/r3_daytrading_data_care_latest.json",
+    "evidence/r3_daily_postmortem_latest.json",
+    "evidence/pilot_portfolio_reevaluation_latest.json",
+    "evidence/t212_trust_latest.json",
+    "evidence/public_learning_report_latest.json"
+  ],
+  "headline_de": "Stufe A — Wachstum, Evidence-RAG, Teacher-Student, H1-Live-KPIs",
+  "kpi_thresholds": {
+    "h1_sharpe_min": 0.5,
+    "prognosis_max_stale_s": 900,
+    "learn_min_score": 40,
+    "require_prediction_ready": true,
+    "require_king_trading_tick": false
+  },
+  "schema_version": 1,
+  "teacher_consult_on_tick": true,
+  "steps_de": [
+    "KPIs messen",
+    "Evidence-RAG bauen",
+    "king-trading (wenn Event)",
+    "learn",
+    "evolve (nur forschung_reif)",
+    "Teacher-Student-Snapshot",
+    "Cloud-Teacher-Consult (Gemini oder Ollama 3× parallel)",
+    "Wachstumsphase aktualisieren"
+  ],
+  "teacher_student_de": {
+    "enabled": true,
+    "student_executes_de": "König 32B + king_ops — nur lokal",
+    "teacher_role_de": "Gemini Cloud /kombi /tipp — Parallel-Compute, Berater, keine Orders"
+  },
+  "tick_cooldown_min": 45
+}

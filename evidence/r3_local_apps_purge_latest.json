@@ -1,0 +1,33 @@
+{
+  "functional_technical_executive_de": [
+    "bash tools/r3_cockpit.sh oder Befehl r3 → natives Qt-Fenster /r3",
+    "Ergebnis-Spiegel: Paket, T212, Kurse, letzter Auftrag (Evidence read-only)",
+    "Button „Auftrag an T212“ → POST /api/r3/order (confirm true)",
+    "auto_prepare: T212, Kurse, Order-Zeilen",
+    "GET /api/r3/mirror — JSON-Spiegel für Refresh"
+  ],
+  "headline_de": "R3-Lokal-Anwendungen entfernt",
+  "message_de": "13 Einträge gelöscht (Desktop, Menü, Autostart, ~/.local/bin). Hub weiterhin: python3 tools/preview_hub.py",
+  "ok": true,
+  "removed": [
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/share/applications/Alpha-Model.desktop",
+    "/home/machinax7/active_alpha_model/Alpha-Model.desktop",
+    "/home/machinax7/active_alpha_model/R3-OS.desktop",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/alpha-model",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/active-alpha-show",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/active-alpha-preview",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/active-alpha-chat",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/alpha-model-agent",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/r3-order-desk",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/r3-show",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/r3-welt",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/r3-cockpit",
+    "/tmp/pytest-of-machinax7/pytest-5/test_purge_r3_local_apps0/.local/bin/r3"
+  ],
+  "removed_count": 13,
+  "removed_non_functional_de": [
+    "Gutachter, Freigabe-Layer, Shell-Kacheln, Einzelaktien-Grid",
+    "Autostart r3-os-session, 42× ~/.local/bin-Hilfsapps",
+    "install_desktop_os (volles Desktop-OS) — blockiert bei PURGED/EXEC_MIRROR_ONLY"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "growth_phase": "forschung_reif",
+  "headline_de": "Stufe A — Phase forschung_reif · FORSCHUNG_REIF",
+  "kpis": {
+    "blockers": [],
+    "checks": [
+      {
+        "detail_de": "signal=2026-06-09 ok=True",
+        "id": "prediction_ready",
+        "pass": true
+      },
+      {
+        "detail_de": "status=COMPLETE",
+        "id": "h1_complete",
+        "pass": true
+      },
+      {
+        "detail_de": "sharpe=0.782267724738531 min=0.5",
+        "id": "h1_sharpe",
+        "pass": true,
+        "value": 0.782267724738531
+      },
+      {
+        "age_s": 7.65948,
+        "detail_de": "age_s=7.7 max=900.0",
+        "id": "prognosis_fresh",
+        "pass": true
+      },
+      {
+        "detail_de": "score=63.0 min=40.0",
+        "id": "learn_score",
+        "pass": true
+      }
+    ],
+    "evaluated_at_utc": "2026-06-09T21:16:53+00:00",
+    "forschung_reif_ok": true,
+    "ok": true,
+    "wachstum_ok": true
+  },
+  "next_de": [
+    "python3 tools/ai_kernel.py evolve",
+    "H1-Seal prüfen"
+  ],
+  "ok": true,
+  "rag_ref": "evidence/king_evidence_rag_latest.json",
+  "schema_version": 1,
+  "steps": [
+    {
+      "kpis": {
+        "blockers": [],
+        "checks": [
+          {
+            "detail_de": "signal=2026-06-09 ok=True",
+            "id": "prediction_ready",
+            "pass": true
+          },
+          {
+            "detail_de": "status=COMPLETE",
+            "id": "h1_complete",
+            "pass": true
+          },
+          {
+            "detail_de": "sharpe=0.782267724738531 min=0.5",
+            "id": "h1_sharpe",
+            "pass": true,
+            "value": 0.782267724738531
+          },
+          {
+            "age_s": 6.090048,
+            "detail_de": "age_s=6.1 max=900.0",
+            "id": "prognosis_fresh",
+            "pass": true
+          },
+          {
+            "detail_de": "score=63.0 min=40.0",
+            "id": "learn_score",
+            "pass": true
+          }
+        ],
+        "evaluated_at_utc": "2026-06-09T21:16:52+00:00",
+        "forschung_reif_ok": true,
+        "ok": true,
+        "wachstum_ok": true
+      },
+      "ok": true,
+      "step": "kpis"
+    },
+    {
+      "chunks": 13,
+      "ok": true,
+      "step": "evidence_rag"
+    },
+    {
+      "detail": "cooldown_after_worthwhile_changed",
+      "ok": true,
+      "step": "king_trading"
+    },
+    {
+      "detail_de": "n3 tools/ai_kernel.py learn\"\n  ],\n  \"message_de\": \"Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.\"\n}\n",
+      "ok": true,
+      "step": "learn"
+    },
+    {
+      "ok": true,
+      "stage": null,
+      "step": "evolve"
+    },
+    {
+      "ok": true,
+      "step": "teacher_student",
+      "teacher_available": true
+    },
+    {
+      "compute_boost": false,
+      "headline_de": "Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading",
+      "ok": true,
+      "provider": "ollama_keyless",
+      "step": "teacher_consult"
+    }
+  ],
+  "teacher_ref": "evidence/king_teacher_student_latest.json",
+  "updated_at_utc": "2026-06-09T21:17:08+00:00"
+}

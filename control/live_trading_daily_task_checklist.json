@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "title": "Automatisierung — Tages-Mark (Mo–Fr 15:25)",
+  "subtitle": "Konto synchronisieren · Mark zählen · Orders vormerken — ohne blindes Live-POST",
+  "updated_at_utc": "2026-06-05T20:00:00+00:00",
+  "purpose": "Pflicht-Checkliste vor headless 1_live_daily_sync (Mark + Vormerkung, kein blindes Live-POST).",
+  "scheduled_task": {
+    "name": "Active Alpha Tages-Mark Mo-Fr",
+    "script": "run_live_daily_mark_scheduled.bat",
+    "install": "setup_live_daily_mark_task.bat",
+    "status_check": "check_live_daily_setup.bat",
+    "full_setup": "setup_live_daily_automation.bat",
+    "schedule_local": "Mo–Fr 15:25 (Europe/Berlin, vor US-Eröffnung)",
+    "mode": "enqueue_only",
+    "armed_auto": false
+  },
+  "companion_tasks": [
+    {
+      "id": "eod_predict",
+      "label": "Signal-Update (predict)",
+      "schedule": "22:15 täglich",
+      "install": "setup_live_daily_predict_task.bat",
+      "required_for": "Frisches Modell-Signal vor dem Tages-Mark am Folgetag"
+    }
+  ],
+  "items": [
+    {
+      "id": "venv_ready",
+      "label": ".venv + Python lauffähig",
+      "required": true,
+      "category": "infra"
+    },
+    {
+      "id": "project_root",
+      "label": "Projektroot intakt (active_alpha_model.py)",
+      "required": true,
+      "category": "infra"
+    },
+    {
+      "id": "live_trading_enabled",
+      "label": "Live-Trading Policy aktiv",
+      "required": true,
+      "category": "policy"
+    },
+    {
+      "id": "rebalance_daily",
+      "label": "Rebalance-Rhythmus = 1 Mark-Tag (daily_alpha_h1)",
+      "required": true,
+      "category": "policy"
+    },
+    {
+      "id": "safety_no_auto_real_money",
+      "label": "auto_execute_real_money = false (Governance)",
+      "required": true,
+      "category": "safety"
+    },
+    {
+      "id": "safety_enqueue_only",
+      "label": "Geplanter Lauf: armed_auto=false (nur Vormerkung)",
+      "required": true,
+      "category": "safety"
+    },
+    {
+      "id": "t212_readonly_credentials",
+      "label": "T212 Read-only API (Konto-Sync)",
+      "required": true,
+      "category": "broker"
+    },
+    {
+      "id": "portfolio_csv",
+      "label": "Champion-Portfolio CSV vorhanden",
+      "required": true,
+      "category": "signal"
+    },
+    {
+      "id": "champion_guard_ok",
+      "label": "Champion-Guard ohne Hard-Blocker",
+      "required": true,
+      "category": "signal"
+    },
+    {
+      "id": "signal_fresh",
+      "label": "Predict bereit (prediction_readiness ok + Signal aktuell)",
+      "required": true,
+      "category": "signal"
+    },
+    {
+      "id": "prediction_profile",
+      "label": "Profil daily_alpha_h1 aktiv",
+      "required": false,
+      "category": "signal"
+    },
+    {
+      "id": "live_outcome_bridge",
+      "label": "Live-Fill → Outcome-Ledger Sync",
+      "required": false,
+      "category": "learning"
+    }
+  ],
+  "user_setup": [
+    "Einmalig: setup_live_daily_automation.bat (Signal 22:15 + Tages-Mark Mo–Fr 15:25)",
+    "T212 Read-only API in Marktanalyse speichern (Pflicht für Konto-Sync)",
+    "Optional: KI-unterstützt + Order-API + Auto-US-Open im Dashboard",
+    "Status jederzeit: check_live_daily_setup.bat"
+  ]
+}

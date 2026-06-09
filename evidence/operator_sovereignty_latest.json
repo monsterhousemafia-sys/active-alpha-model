@@ -1,0 +1,9 @@
+{
+  "action": "h1-force",
+  "checked_at_utc": "2026-06-07T16:42:49+00:00",
+  "headline_de": "Erlaubt — Sprach-Mandat für h1-force",
+  "mandate_expires_at_utc": "2026-06-07T18:42:24+00:00",
+  "ok": true,
+  "privileged": true,
+  "source": "conversational"
+}

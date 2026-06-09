@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 wächst lokal mit der Zeit",
+  "mission_de": "Alles funktioniert unter 127.0.0.1:17890 — Fähigkeiten und Laufzeitprofile wachsen per Evidence und Operator-Bestätigung, nicht per Remote-Zwang.",
+  "local_primary_de": "http://127.0.0.1:17890/r3",
+  "growth_rules_de": [
+    "Kern immer lokal: Hub, Mirror, Cache, König 32B (Ollama localhost)",
+    "HTTPS-Spiegel optional — nie Ersatz für lokale Oberfläche",
+    "Neue Laufzeitprofile nur nach Bestätigung in /r3",
+    "Meilensteine in evidence/r3_local_growth_latest.json — reproduzierbar",
+    "Kein Champion-Wechsel, keine Auto-Orders beim Wachstum"
+  ],
+  "capabilities": [
+    {"id": "hub_local", "label_de": "Hub lokal", "weight": 15},
+    {"id": "mirror_api", "label_de": "Mirror-API", "weight": 15},
+    {"id": "surface_r3", "label_de": "Oberfläche /r3", "weight": 15},
+    {"id": "plan_evidence", "label_de": "Modell-Plan Evidence", "weight": 10},
+    {"id": "trading_functions", "label_de": "3 Handelsfunktionen", "weight": 10},
+    {"id": "runtime_profile", "label_de": "Laufzeitprofil", "weight": 10},
+    {"id": "upgrade_gate", "label_de": "Upgrade mit Bestätigung", "weight": 10},
+    {"id": "stack_integrity", "label_de": "Stack-Integrität", "weight": 10},
+    {"id": "king_local", "label_de": "König 32B lokal", "weight": 5}
+  ],
+  "milestones": [
+    {"id": "local_first", "label_de": "Lokal wirksam", "capability_ids": ["hub_local", "mirror_api", "surface_r3"]},
+    {"id": "full_mirror", "label_de": "Voller R3-Spiegel", "capability_ids": ["plan_evidence", "trading_functions"]},
+    {"id": "runtime_evolution", "label_de": "Laufzeit wächst", "capability_ids": ["runtime_profile", "upgrade_gate"]},
+    {"id": "operational_loop", "label_de": "Geschlossener Kreis", "capability_ids": ["stack_integrity", "king_local"]}
+  ],
+  "sync_triggers_de": [
+    "bash tools/r3_sync.sh",
+    "bash tools/king_ops.sh r3-local",
+    "repair_stack / align_r3_surface"
+  ]
+}

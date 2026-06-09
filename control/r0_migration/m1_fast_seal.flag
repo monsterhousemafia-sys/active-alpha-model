@@ -1,0 +1,14 @@
+{
+  "mode": "FAST_SEAL",
+  "created": "2026-06-05T07:31Z",
+  "reason": "User directive 'M1 zu ende bringe, zur not mit Gewalt' + FAST option. The slow naive-detailed matched-controls baseline is treated as OPTIONAL for the M1 seal.",
+  "rationale": [
+    "Official M1 seal gate needs only the three strategy CSVs (R0, R3, M1) >= 1800 rows.",
+    "run_r0_migration_phase_m1.py and seal_r0_migration_phase.py do NOT reference matched-controls (verified).",
+    "M2 Go/No-Go is R0 vs R3 (Sharpe/Drawdown); it does NOT read the matched-controls series.",
+    "The matched-controls control series is M1's robustness deliverable; it is backfilled out-of-band after the seal."
+  ],
+  "effect": "_m1_autoseal.py treats mom_blend_matched_controls_daily_returns.csv as optional and skips the calendar check when that CSV is absent.",
+  "revert": "Delete this file to restore strict both-CSV behaviour.",
+  "backfill_todo": "Run M1 with --naive-detailed-reporting --naive-detailed-variants mom_blend_matched_controls afterwards to produce the control series."
+}

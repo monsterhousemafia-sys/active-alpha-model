@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "title": "Post-M2 roadmap - registered next steps for the single conductor",
+  "registered_at_utc": "2026-06-04T23:04:00+00:00",
+  "registered_by": "user-approved proposal (scaffold M3/M5 after M2 seal, then real-test)",
+  "trigger": "after_M2_sealed",
+  "principle": "Scaffold + test against REAL data (M2 sealed outputs). Never fabricate gate outcomes. Heavy tuning/statistical runs require an explicit go.",
+  "heavy_runs_autostart": false,
+  "user_phase_go": "control/r0_migration/user_phase_go.json",
+  "user_go_active": true,
+  "steps": [
+    {
+      "id": "py_consolidation",
+      "when": "M2_sealed",
+      "status": "PLANNED",
+      "action": "Execute the disentangled .py consolidation per control/r0_migration/py_consolidation_plan.json (ONE driver -> ONE conductor -> phase runners -> ONE guard -> ONE executor + small core lib; retire rival drivers, merge duplicate friction).",
+      "gated_by": "M1_seal AND M2_seal AND explicit go (live-risky: import-entangled cluster).",
+      "verify_gate": "canonical chain import+compile clean AND verify-only PASS for M0/M1/M2 after every step (fail-closed)."
+    },
+    {
+      "id": "M3_scaffold",
+      "when": "M2_sealed",
+      "status": "SCAFFOLD_COMPLETE",
+      "action": "Build tools/run_r0_migration_phase_m3.py: produce research_evidence/r0_tuning_trial_ledger.json + evidence/r0_migration/m3_candidate_decision.json (selected_variant_id).",
+      "optimization_target": "control/r0_migration/alpha_objective.json (daily-reinvested alpha beating daily momentum, net of cost)",
+      "gated_by": "M2_seal AND a real R0 tuning run (heavy compute, explicit go).",
+      "verify_gate": "m3_candidate_selected (kept, fail-closed)"
+    },
+    {
+      "id": "M5_scaffold",
+      "when": "M3_sealed",
+      "status": "PLANNED",
+      "action": "Build tools/run_r0_migration_phase_m5.py: aggregate cost_stress/multiple_testing/robustness into evidence/r0_migration/gate_matrix.json (status PASS only if genuinely passing).",
+      "gated_by": "M3_seal AND real statistical analyses (heavy compute, explicit go).",
+      "verify_gate": "m5_all_gates_pass (kept, fail-closed)"
+    }
+  ],
+  "hard_gates_unchanged": [
+    "M6_shadow_monitoring_time_window",
+    "M7_paper_forward_calendar_time",
+    "M9_external_human_approval_for_champion_change",
+    "M10_stabilization_time_window"
+  ],
+  "notes": "B-gates (integrity, M9 human approval, prerequisite seal chain) remain intact. This plan only removes friction by pre-registering automatable scaffolding work; it does not auto-advance past any safety gate."
+}

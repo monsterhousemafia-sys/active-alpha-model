@@ -1,0 +1,137 @@
+{
+  "checks": [
+    {
+      "detail_de": "13/13",
+      "id": "migration",
+      "label_de": "Chat-Migration (ohne Cursor)",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "[Errno 13] Permission denied: '/home/machinax7/.local/share/alpha-model/agent/.m",
+      "id": "agent_home",
+      "label_de": "Entfaltungsraum",
+      "ok": false,
+      "weight": "required"
+    },
+    {
+      "detail_de": "476 Archiv · 5931 Zeichen Kontext",
+      "id": "continuity",
+      "label_de": "Gesprächskontinuität",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "qwen2.5-coder:32b",
+      "id": "ollama",
+      "label_de": "Ollama bereit",
+      "ok": false,
+      "weight": "required"
+    },
+    {
+      "detail_de": "8000 Zeichen",
+      "id": "project_context",
+      "label_de": "Projekt-Kontext",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "12328 Zeichen",
+      "id": "system_prompt",
+      "label_de": "System-Prompt inkl. Kontinuität",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "8000 B Antwort",
+      "id": "kernel_bridge",
+      "label_de": "Slash → ai_kernel",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "degraded",
+      "id": "interface_stack",
+      "label_de": "Primärkanal r3_ki",
+      "ok": false,
+      "weight": "required"
+    },
+    {
+      "detail_de": "max 128 · reduziert — nur im Entfaltungsraum",
+      "id": "coding_kernel",
+      "label_de": "Coding-Kernel (/bau)",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "[Errno 111] Connection refused",
+      "id": "cockpit_ki",
+      "label_de": "Cockpit KI-API",
+      "ok": false,
+      "weight": "required"
+    },
+    {
+      "detail_de": "3380 B",
+      "id": "cfg:control/alpha_model_agent_home.json",
+      "label_de": "Config control/alpha_model_agent_home.json",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "3009 B",
+      "id": "cfg:control/alpha_model_human_interface.json",
+      "label_de": "Config control/alpha_model_human_interface.json",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "1775 B",
+      "id": "cfg:control/r3_continuity.json",
+      "label_de": "Config control/r3_continuity.json",
+      "ok": true,
+      "weight": "required"
+    },
+    {
+      "detail_de": "2107 B",
+      "id": "cfg:control/agent_mandate.json",
+      "label_de": "Config control/agent_mandate.json",
+      "ok": true,
+      "weight": "required"
+    }
+  ],
+  "checks_passed": 10,
+  "checks_total": 14,
+  "headline_de": "Schnittstelle unvollständig — 10/14 Checks",
+  "ok": false,
+  "operator_next_de": "python3 tools/ai_kernel.py human-interface",
+  "parity_matrix_de": {
+    "besser_lokal": [
+      "100% lokal — kein Cursor-Konto, kein Usage-Limit",
+      "400+ Archiv + Agent-Journal — dauerhafte Kontinuität",
+      "Direkte H1-/Trading-Evidence — nicht nur IDE",
+      "/bau sicherer als Composer (König 128 Schritte, volle Pfade)",
+      "33 Kernel-Befehle — gesamtes ai_kernel ohne Middleware"
+    ],
+    "ehrliche_luecken": [
+      "Kein MCP/Glass im Terminal-Chat (Cockpit-Web hat Anhänge)",
+      "Kein vollautonomer Multitask-Subagent wie Cursor Composer — König-Modus 128 Schritte"
+    ],
+    "gleichwertig": [
+      "Freitext-Gespräch mit Projekt-Kontext",
+      "400+ Nachrichten Archiv",
+      "Slash → ai_kernel (Status, Learn, H1, Warnings)",
+      "Mandat + Wachstums-Prioritäten",
+      "Kein Usage-Limit / kein Konto-Gate",
+      "/bau im Entfaltungsraum: read/write/grep/pytest (auditierbar, lokal)"
+    ],
+    "teilweise": [
+      "IDE-ähnliches Coding: /bau und bau/fix/implementiere im Entfaltungsraum — nicht 1:1 Cursor, aber Werkstatt war nie Produkt-Kern"
+    ]
+  },
+  "parity_ok": false,
+  "primary_channel": "agent_chamber",
+  "primary_label_de": "Alpha Model — Entfaltungsraum",
+  "schema_version": 1,
+  "unfold_equivalent_de": false,
+  "verified_at_utc": "2026-06-08T13:50:38+00:00"
+}

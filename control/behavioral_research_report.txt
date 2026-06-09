@@ -1,0 +1,17 @@
+Behavioral Feature Research (P6)
+Updated: 2026-05-30T18:05:01+00:00
+Research status: PASS
+Production active: False
+Data quality: PASS
+Champion: R3_w075_q065_noexit (unchanged)
+
+Feature groups available: attention, continuation, liquidity_stress
+
+Behavioral challengers (research only):
+  B0_DAILY_REFERENCE: RESEARCH_ONLY groups=[—]
+  B1_REALTIME_EXECUTION_ONLY: RESEARCH_ONLY groups=[—]
+  B2_ATTENTION_CONTINUATION: RESEARCH_ONLY groups=[attention, continuation]
+  B3_LIQUIDITY_STRESS: RESEARCH_ONLY groups=[liquidity_stress]
+
+Signal rule: intraday features finalize after session close; earliest use next trading day.
+Auto-promotion: DISABLED

@@ -1,0 +1,53 @@
+{
+  "cost_risk": {},
+  "generated_at_utc": "2026-06-09T20:28:45+00:00",
+  "reevaluation_urgency": "NONE",
+  "refresh_status": {
+    "all_ok": false,
+    "generated_at_utc": "2026-06-09T20:28:45+00:00",
+    "rows": [
+      {
+        "detail_de": "CONNECTION_FAILED_RETRY_AVAILABLE",
+        "key": "broker",
+        "label_de": "T212 Konto (frei handelbar)",
+        "status": "FAIL",
+        "updated_utc": "2026-06-09T20:28:45+00:00",
+        "value_de": "—"
+      },
+      {
+        "detail_de": "No module named 'research'",
+        "key": "quotes",
+        "label_de": "Live-Kurse (US-Aktien)",
+        "status": "WARN",
+        "updated_utc": "2026-06-09T20:28:45+00:00",
+        "value_de": "ERROR"
+      },
+      {
+        "detail_de": "READONLY_YFINANCE",
+        "key": "fx",
+        "label_de": "Wechselkurs EUR/USD",
+        "status": "OK",
+        "updated_utc": "2026-06-09T20:28:42",
+        "value_de": "1 EUR = 1.1547 USD"
+      },
+      {
+        "detail_de": "Signal 2026-06-09",
+        "key": "champion",
+        "label_de": "Champion & Signal",
+        "status": "OK",
+        "updated_utc": "2026-06-09T20:28:45+00:00",
+        "value_de": "Governance OK — R0_LEGACY_ENSEMBLE | Signal DAILY_ALPHA_H1 | Signale aktuell (20"
+      },
+      {
+        "detail_de": "Kein Broker-Sync — zuerst «Aktualisieren».",
+        "key": "reeval",
+        "label_de": "Portfolio-Abgleich (Ist vs Modell)",
+        "status": "WARN",
+        "updated_utc": "2026-06-09T20:28:42",
+        "value_de": "NONE"
+      }
+    ],
+    "summary_de": "Refresh: 1 Blocker — T212 Konto (frei handelbar)",
+    "us_session_open": false
+  }
+}

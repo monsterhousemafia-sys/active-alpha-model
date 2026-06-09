@@ -1,0 +1,790 @@
+ticker,company,first_seen,last_seen,active,source_first_seen,source_last_seen
+A,Agilent Technologies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AA,Alcoa,2012-01-01,2016-11-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AAL,American Airlines Group,2015-03-23,2024-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AAP,Advance Auto Parts,2015-07-08,2023-08-25,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AAPL,Apple Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ABBV,AbbVie,2013-01-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ABMD,Abiomed,2018-05-31,2022-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ABNB,Airbnb,2023-09-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ABT,Abbott Laboratories,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ACE,Chubb,2012-01-01,2016-01-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ACGL,Arch Capital Group,2022-11-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ACN,Accenture,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADBE,Adobe Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADI,Analog Devices,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADM,Archer Daniels Midland,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADP,Automatic Data Processing,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADS,Alliance Data Systems,2013-12-23,2020-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADSK,Autodesk,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADT,ADT,2012-10-01,2016-05-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AEE,Ameren,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AEP,American Electric Power,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AES,AES Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AET,Aetna,2012-01-01,2018-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AFL,Aflac,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AGN,Allergan,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AIG,American International Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AIV,Apartment Investment & Management,2012-01-01,2020-12-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AIZ,Assurant,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AJG,Arthur J. Gallagher & Co.,2016-05-31,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AKAM,Akamai Technologies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALB,Albemarle Corporation,2016-07-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALGN,Align Technology,2017-06-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALK,Alaska Air Group,2016-05-13,2023-12-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALL,Allstate,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALLE,Allegion,2013-12-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALTR,Altera,2012-01-01,2015-12-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALXN,Alexion Pharmaceuticals,2012-05-21,2021-07-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMAT,Applied Materials,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMCR,Amcor,2019-06-11,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMD,Advanced Micro Devices,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AME,Ametek,2013-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMG,Affiliated Managers Group,2014-07-01,2019-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMGN,Amgen,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMP,Ameriprise Financial,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMT,American Tower,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMTM,Amentum,2024-09-30,2024-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMZN,Amazon,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AN,Amoco,2012-01-01,2017-08-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANDV,Andeavor,2012-01-01,2018-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANET,Arista Networks,2018-08-28,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANF,Abercrombie & Fitch,2012-01-01,2013-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANR,Alpha Natural Resources,2012-01-01,2012-10-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANSS,Ansys,2017-06-19,2025-07-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AON,Aon plc,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AOS,A. O. Smith,2017-07-26,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APA,APA Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APC,Anadarko Petroleum,2012-01-01,2019-08-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APD,Air Products,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APH,Amphenol,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APO,Apollo Global Management,2024-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APOL,Apollo Education Group,2012-01-01,2013-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APP,AppLovin,2025-09-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APTV,Aptiv,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ARE,Alexandria Real Estate Equities,2017-03-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ARES,Ares Management,2025-12-11,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ARG,Airgas,2012-01-01,2016-05-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ARNC,Arconic,2016-11-01,2020-04-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ATI,Allegheny Technologies,2012-01-01,2015-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ATO,Atmos Energy,2019-02-15,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ATVI,Activision Blizzard,2015-08-28,2023-10-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AVB,AvalonBay Communities,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AVGO,Broadcom,2014-05-08,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AVP,Avon Products,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AVY,Avery Dennison,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AWK,American Water Works,2016-03-04,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AXON,Axon Enterprise,2023-05-04,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AXP,American Express,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AYI,Acuity Brands,2016-05-03,2018-06-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AZO,AutoZone,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BA,Boeing,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BAC,Bank of America,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BALL,Ball Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BAX,Baxter International,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BBBY,Bed Bath & Beyond,2012-01-01,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BBWI,"Bath & Body Works, Inc.",2012-01-01,2024-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BBY,Best Buy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BCR,CR Bard,2012-01-01,2018-01-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BDX,Becton Dickinson,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BEAM,Suntory Global Spirits,2012-01-01,2014-05-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BEN,Franklin Resources,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BF-B,Brown–Forman,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BG,Bunge Global,2023-03-15,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BHF,Brighthouse Financial,2017-08-08,2019-04-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BHI,Baker Hughes,2012-01-01,2017-07-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BIG,Big Lots,2012-01-01,2013-02-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BIIB,Biogen,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BIO,Bio-Rad Laboratories,2020-06-22,2024-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BKNG,Booking Holdings,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BKR,Baker Hughes,2017-07-07,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BLDR,Builders FirstSource,2023-12-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BLK,BlackRock,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BMC,BMC Software,2012-01-01,2013-09-10,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BMS,Bemis Company,2012-01-01,2019-06-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BMY,Bristol Myers Squibb,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BNY,BNY Mellon,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BR,Broadridge Financial Solutions,2018-06-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BRCM,Broadcom Corporation,2012-01-01,2016-02-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BRK-B,Berkshire Hathaway,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BRO,Brown & Brown,2021-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BSX,Boston Scientific,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BTU,Peabody Energy,2012-01-01,2014-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BWA,BorgWarner,2012-01-01,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BX,Blackstone Inc.,2023-09-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BXLT,Baxalta,2015-07-01,2016-06-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BXP,"BXP, Inc.",2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+C,Citigroup,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CA,CA Technologies,2012-01-01,2018-11-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CAG,Conagra Brands,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CAH,Cardinal Health,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CAM,Cameron International,2012-01-01,2016-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CARR,Carrier Global,2020-04-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CASY,Casey's,2026-04-09,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CAT,Caterpillar Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CB,Chubb Limited,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CBE,Cooper Industries,2012-01-01,2012-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CBOE,Cboe Global Markets,2017-03-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CBRE,CBRE Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CCE,Coca-Cola Enterprises,2012-01-01,2016-05-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CCI,Crown Castle,2012-03-13,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CCL,Carnival Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CDAY,Ceridian,2021-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CDNS,Cadence Design Systems,2017-09-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CDW,CDW Corporation,2019-09-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CE,Celanese,2018-12-24,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CEG,Constellation Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CELG,Celgene,2012-01-01,2019-11-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CERN,Cerner,2012-01-01,2022-06-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CF,CF Industries,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CFG,Citizens Financial Group,2016-02-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CFN,Carefusion,2012-01-01,2015-03-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CHD,Church & Dwight,2015-12-29,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CHK,Chesapeake Energy,2012-01-01,2018-03-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CHRW,C.H. Robinson,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CHTR,Charter Communications,2016-09-08,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CI,Cigna,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CIEN,Ciena,2026-02-09,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CINF,Cincinnati Financial,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CL,Colgate-Palmolive,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CLF,Cliffs Natural Resources,2012-01-01,2014-04-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CLX,Clorox,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMA,Comerica,2012-01-01,2024-06-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMCSA,Comcast,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMCSK,Comcast Class K Special,2015-09-18,2015-12-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CME,CME Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMG,Chipotle Mexican Grill,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMI,Cummins,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMS,CMS Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CNC,Centene Corporation,2016-03-30,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CNP,CenterPoint Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CNX,Consol Energy,2012-01-01,2016-03-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COF,Capital One,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COHR,Coherent Corp.,2026-03-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COIN,Coinbase,2025-05-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COL,Rockwell Collins,2012-01-01,2018-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COO,Cooper Companies (The),2016-09-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COP,ConocoPhillips,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COR,Cencora,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COST,Costco,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COTY,Coty,2016-09-30,2020-09-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COV,Covidien,2012-01-01,2015-01-27,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPAY,Corpay,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPB,Campbell's Company (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPGX,Columbia Pipeline Group,2015-07-02,2016-07-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPRI,Capri Holdings,2012-01-01,2020-05-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPRT,Copart,2018-07-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPT,Camden Property Trust,2022-04-04,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CRH,CRH plc,2025-12-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CRL,Charles River Laboratories,2021-05-14,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CRM,Salesforce,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CRWD,CrowdStrike,2024-06-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSC,Computer Sciences Corporation,2012-01-01,2015-12-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSCO,Cisco,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSGP,CoStar Group,2022-09-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSRA,CSRA,2015-12-01,2018-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSX,CSX Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTAS,Cintas,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTLT,Catalent,2020-09-21,2024-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTRA,Coterra Energy,2012-01-01,2026-05-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTSH,Cognizant,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTVA,Corteva,2019-06-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTXS,Citrix Systems,2012-01-01,2022-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVC,Cablevision,2012-01-01,2016-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVH,Coventry Health Care,2012-01-01,2013-05-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVNA,Carvana,2025-12-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVS,CVS Health,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVX,Chevron Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CXO,Concho Resources,2016-02-22,2021-01-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CZR,Caesars Entertainment,2021-03-22,2025-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+D,Dominion Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DAL,Delta Air Lines,2013-09-10,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DASH,DoorDash,2025-03-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DAY,Dayforce,2012-01-01,2026-02-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DD,DuPont,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DDOG,Datadog,2025-07-09,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DE,Deere & Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DECK,Deckers Brands,2024-03-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DELL,Dell Technologies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DF,Dean Foods,2012-01-01,2013-05-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DFS,Discover Financial,2012-01-01,2025-05-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DG,Dollar General,2012-12-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DGX,Quest Diagnostics,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DHI,D. R. Horton,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DHR,Danaher Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DIS,Walt Disney Company (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DISCA,"Discovery, Inc.",2012-01-01,2022-04-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DISCK,Discovery Communications,2014-08-06,2022-04-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DISH,Dish Network,2017-03-13,2023-06-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DLPH,Delphi Automotive,2012-12-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DLR,Digital Realty,2016-05-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DLTR,Dollar Tree,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DNB,Dun & Bradstreet,2012-01-01,2017-04-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DNR,Denbury Resources,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DO,Diamond Offshore Drilling,2012-01-01,2016-09-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DOC,Healthpeak Properties,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DOV,Dover Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DOW,Dow Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DPS,Dr Pepper Snapple Group,2012-01-01,2018-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DPZ,Domino's,2020-05-12,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DRE,Duke Realty Corp,2017-07-26,2022-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DRI,Darden Restaurants,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DTE,DTE Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DTV,DirecTV,2012-01-01,2015-07-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DUK,Duke Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DV,DeVry,2012-01-01,2012-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DVA,DaVita,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DVN,Devon Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DWDP,DuPont,2017-09-01,2019-06-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DXC,DXC Technology,2017-04-04,2023-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DXCM,Dexcom,2020-05-12,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EA,Electronic Arts,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EBAY,eBay Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ECL,Ecolab,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ED,Consolidated Edison,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EFX,Equifax,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EG,Everest Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EIX,Edison International,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EL,Estée Lauder Companies (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ELV,Elevance Health,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EMC,EMC Corporation,2012-01-01,2016-09-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EME,Emcor,2025-09-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EMN,Eastman Chemical Co.,2012-01-01,2025-11-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EMR,Emerson Electric,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ENDP,Endo International,2015-01-27,2017-03-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ENPH,Enphase Energy,2021-01-07,2025-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EOG,EOG Resources,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EP,El Paso Corporation,2012-01-01,2012-05-17,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EPAM,EPAM Systems,2021-12-14,2026-06-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EQIX,Equinix,2015-03-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EQR,Equity Residential,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EQT,EQT Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ERIE,Erie Indemnity,2024-09-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ES,Eversource Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ESRX,Express Scripts,2012-01-01,2018-12-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ESS,Essex Property Trust,2014-04-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ESV,Ensco,2012-07-31,2016-03-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ETFC,E-Trade,2012-01-01,2020-10-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ETN,Eaton Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ETR,Entergy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ETSY,Etsy,2020-09-21,2024-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EVHC,Envision Healthcare,2016-12-02,2018-10-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EVRG,Evergy,2018-06-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EW,Edwards Lifesciences,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EXC,Exelon,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EXE,Expand Energy,2025-03-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EXPD,Expeditors International,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EXPE,Expedia Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EXR,Extra Space Storage,2016-01-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+F,Ford Motor Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FANG,Diamondback Energy,2018-12-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FAST,Fastenal,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FB,Facebook,2013-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FBHS,Fortune Brands Home & Security,2016-06-22,2022-12-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FCX,Freeport-McMoRan,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FDO,Family Dollar,2012-01-01,2015-07-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FDS,FactSet,2021-12-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FDX,FedEx,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FDXF,FedEx Freight,2026-06-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FE,FirstEnergy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FFIV,"F5, Inc.",2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FHN,First Horizon,2012-01-01,2013-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FICO,Fair Isaac,2023-03-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FII,Federated Investors,2012-01-01,2013-01-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FIS,Fidelity National Information Services,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FISV,Fiserv,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FITB,Fifth Third Bancorp,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FIX,Comfort Systems USA,2025-12-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FL,Foot Locker,2016-04-04,2019-08-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLIR,FLIR Systems,2012-01-01,2021-05-14,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLR,Fluor Corporation,2012-01-01,2019-06-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLS,Flowserve,2012-01-01,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLT,FleetCor Technologies,2018-06-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FMC,FMC Corporation,2012-01-01,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FOSL,Fossil,2012-04-03,2016-01-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FOX,Fox Corporation (Class B),2015-09-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FOXA,Fox Corporation (Class A),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FRC,First Republic Bank,2019-01-02,2023-05-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FRT,Federal Realty Investment Trust,2016-02-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FRX,Forest Laboratories,2012-01-01,2014-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FSLR,First Solar,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FTI,FMC Technologies,2012-01-01,2021-02-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FTNT,Fortinet,2018-10-11,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FTR,Frontier Communications,2012-01-01,2017-03-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FTV,Fortive,2016-07-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GAS,AGL Resources.,2012-01-01,2016-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GD,General Dynamics,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GDDY,GoDaddy,2024-06-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GE,GE Aerospace,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GEHC,GE HealthCare,2023-01-04,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GEN,Gen Digital,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GEV,GE Vernova,2024-04-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GGP,General Growth Properties,2013-12-10,2018-08-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GHC,Graham Holdings,2012-01-01,2014-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GILD,Gilead Sciences,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GIS,General Mills,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GL,Globe Life,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GLW,Corning Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GM,General Motors,2013-06-06,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GMCR,Keurig Green Mountain,2014-03-21,2016-03-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GME,GameStop,2012-01-01,2016-04-25,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GNRC,Generac,2021-03-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GNW,Genworth Financial,2012-01-01,2015-11-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GOOG,Alphabet Inc. (Class C),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GOOGL,Alphabet Inc. (Class A),2014-04-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GPC,Genuine Parts Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GPN,Global Payments,2016-04-25,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GPS,Gap,2012-01-01,2022-02-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GR,Goodrich Corporation,2012-01-01,2012-07-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GRMN,Garmin,2012-12-11,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GS,Goldman Sachs,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GT,The Goodyear Tire & Rubber Company,2012-01-01,2019-02-27,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GWW,W. W. Grainger,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HAL,Halliburton,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HAR,Harman International,2012-01-01,2017-03-16,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HAS,Hasbro,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HBAN,Huntington Bancshares,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HBI,Hanesbrands,2015-03-23,2021-12-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HCA,HCA Healthcare,2015-01-27,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HCBK,Hudson City Bancorp,2012-01-01,2015-11-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HD,Home Depot (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HES,Hess Corporation,2012-01-01,2025-07-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HFC,HollyFrontier,2018-06-18,2021-06-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HIG,Hartford (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HII,Huntington Ingalls Industries,2018-01-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HLT,Hilton Worldwide,2017-06-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HNZ,Heinz,2012-01-01,2013-06-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HOG,Harley-Davidson,2012-01-01,2020-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HOLX,Hologic,2016-03-30,2026-04-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HON,Honeywell,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HOOD,Robinhood Markets,2025-09-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HOT,Starwood,2012-01-01,2016-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HP,Helmerich & Payne,2012-01-01,2020-05-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HPE,Hewlett Packard Enterprise,2015-11-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HPQ,HP Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HRB,H&R Block,2012-01-01,2020-09-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HRL,Hormel Foods,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HSIC,Henry Schein,2015-03-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HSP,Hospira,2012-01-01,2015-09-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HST,Host Hotels & Resorts,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HSY,Hershey Company (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HUBB,Hubbell Incorporated,2023-10-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HUM,Humana,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HWM,Howmet Aerospace,2020-04-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IBKR,Interactive Brokers,2025-08-28,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IBM,IBM,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ICE,Intercontinental Exchange,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IDXX,Idexx Laboratories,2017-01-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IEX,IDEX Corporation,2019-08-09,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IFF,International Flavors & Fragrances,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IGT,International Game Technology,2012-01-01,2014-06-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ILMN,Illumina,2015-11-19,2024-06-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INCY,Incyte,2017-02-28,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INFO,IHS Markit,2017-06-02,2022-03-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INTC,Intel,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INTU,Intuit,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INVH,Invitation Homes,2022-09-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IP,International Paper,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IPG,Interpublic Group,2012-01-01,2025-11-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IPGP,IPG Photonics,2018-03-07,2022-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IQV,IQVIA,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IR,Ingersoll Rand,2020-03-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IRM,Iron Mountain,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ISRG,Intuitive Surgical,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IT,Gartner,2017-04-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ITW,Illinois Tool Works,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IVZ,Invesco,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+J,Jacobs Solutions,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JBHT,J.B. Hunt,2015-07-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JBL,Jabil,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JCI,Johnson Controls,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JCP,JCPenney,2012-01-01,2013-12-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JDSU,JDS Uniphase,2012-01-01,2013-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JEF,Jefferies Financial Group,2012-01-01,2019-09-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JKHY,Jack Henry & Associates,2018-11-13,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JNJ,Johnson & Johnson,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JNPR,Juniper Networks,2012-01-01,2025-07-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JOY,Joy Global,2012-01-01,2015-10-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JPM,JPMorgan Chase,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JWN,Nordstrom,2012-01-01,2020-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+K,Kellanova,2012-01-01,2025-12-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KDP,Keurig Dr Pepper,2022-06-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KEY,KeyCorp,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KEYS,Keysight Technologies,2018-11-06,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KFT,Kraft Foods,2012-01-01,2012-10-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KHC,Kraft Heinz,2015-07-06,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KIM,Kimco Realty,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KKR,KKR & Co.,2024-06-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KLAC,KLA Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KMB,Kimberly-Clark,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KMI,Kinder Morgan,2012-05-17,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KMX,CarMax,2012-01-01,2025-10-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KO,Coca-Cola Company (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KORS,Michael Kors,2013-11-13,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KR,Kroger,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KRFT,Kraft Foods,2012-10-02,2015-07-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KSS,Kohl's,2012-01-01,2020-09-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KSU,Kansas City Southern,2013-05-23,2021-12-14,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KVUE,Kenvue,2023-08-25,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+L,Loews Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LDOS,Leidos,2019-08-09,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LEG,Leggett & Platt,2012-01-01,2021-12-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LEN,Lennar,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LH,Labcorp,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LHX,L3Harris,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LIFE,Life Technologies,2012-01-01,2014-01-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LII,Lennox International,2024-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LIN,Linde plc,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LITE,Lumentum,2026-03-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LKQ,LKQ Corporation,2016-05-23,2025-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LLL,L3 Technologies,2012-01-01,2019-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LLTC,Linear Technology,2012-01-01,2017-03-13,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LLY,Lilly (Eli),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LM,Legg Mason,2012-01-01,2016-12-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LMT,Lockheed Martin,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LNC,Lincoln National Corporation,2012-01-01,2023-09-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LNT,Alliant Energy,2016-07-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LO,Lorillard Tobacco Company,2012-01-01,2015-06-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LOW,Lowe's,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LRCX,Lam Research,2012-06-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LSI,LSI Corporation,2012-01-01,2014-05-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LULU,Lululemon Athletica,2023-10-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LUMN,Lumen Technologies,2012-01-01,2023-03-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LUV,Southwest Airlines,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LVLT,Level 3 Communications,2014-11-05,2017-10-13,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LVS,Las Vegas Sands,2019-10-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LW,Lamb Weston,2018-12-03,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LXK,Lexmark,2012-01-01,2012-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LYB,LyondellBasell,2012-09-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LYV,Live Nation Entertainment,2019-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+M,Macy's,2012-01-01,2020-04-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MA,Mastercard,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MAA,Mid-America Apartment Communities,2016-12-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MAC,Macerich,2013-05-08,2019-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MAR,Marriott International,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MAS,Masco,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MAT,Mattel,2012-01-01,2019-06-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MBC,MasterBrand,2022-12-15,2022-12-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MCD,McDonald's,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MCHP,Microchip Technology,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MCK,McKesson Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MCO,Moody's Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MDLZ,Mondelez International,2012-10-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MDT,Medtronic,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MET,MetLife,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+META,Meta Platforms,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MGM,MGM Resorts,2017-07-26,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MHK,Mohawk Industries,2013-12-23,2025-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MHS,Medco Health Solutions,2012-01-01,2012-04-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MJN,Mead Johnson Nutrition,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MKC,McCormick & Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MKTX,MarketAxess,2019-07-01,2025-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MLM,Martin Marietta Materials,2014-07-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MMI,Motorola Mobility,2012-01-01,2012-05-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MMM,3M,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MNK,Mallinckrodt,2014-08-18,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MNST,Monster Beverage,2012-06-29,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MO,Altria,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MOH,Molina Healthcare,2022-03-02,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MOLX,Molex,2012-01-01,2013-12-10,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MON,Monsanto,2012-01-01,2018-06-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MOS,Mosaic Company (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MPC,Marathon Petroleum,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MPWR,Monolithic Power Systems,2021-02-12,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MRK,Merck & Co.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MRNA,Moderna,2021-07-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MRO,Marathon Oil,2012-01-01,2024-11-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MRSH,Marsh McLennan,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MS,Morgan Stanley,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MSCI,MSCI Inc.,2018-04-04,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MSFT,Microsoft,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MSI,Motorola Solutions,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MTB,M&T Bank,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MTCH,Match Group,2021-09-20,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MTD,Mettler Toledo,2016-09-06,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MU,Micron Technology,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MUR,Murphy Oil,2012-01-01,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MXIM,Maxim Integrated Products,2018-12-03,2021-08-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NAVI,Navient,2014-05-01,2018-06-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NBL,Noble Energy,2012-01-01,2020-10-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NBR,Nabors Industries,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NCLH,Norwegian Cruise Line Holdings,2017-10-13,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NDAQ,"Nasdaq, Inc.",2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NDSN,Nordson Corporation,2022-02-15,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NE,Noble Corporation,2012-01-01,2015-07-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NEE,NextEra Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NEM,Newmont,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NFLX,Netflix,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NFX,Newfield Exploration,2012-01-01,2019-02-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NI,NiSource,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NKE,"Nike, Inc.",2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NKTR,Nektar Therapeutics,2018-03-19,2019-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NLSN,Nielsen Holdings,2013-07-08,2022-10-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NOC,Northrop Grumman,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NOV,Nov,2012-01-01,2021-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NOW,ServiceNow,2019-11-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NRG,NRG Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NSC,Norfolk Southern,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NTAP,NetApp,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NTRS,Northern Trust,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NUE,Nucor,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NVDA,Nvidia,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NVLS,Novellus Systems,2012-01-01,2012-06-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NVR,"NVR, Inc.",2019-09-26,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NWL,Newell Brands,2012-01-01,2023-09-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NWS,News Corp (Class B),2015-09-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NWSA,News Corp (Class A),2013-07-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NXPI,NXP Semiconductors,2021-03-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NYX,NYSE Euronext,2012-01-01,2013-11-13,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+O,Realty Income,2015-04-07,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ODFL,Old Dominion,2019-12-09,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OGN,Organon & Co.,2021-06-03,2023-10-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OI,Owens-Illinois,2012-01-01,2016-12-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OKE,Oneok,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OMC,Omnicom Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ON,ON Semiconductor,2022-06-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ORCL,Oracle Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ORLY,O’Reilly Automotive,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OTIS,Otis Worldwide,2020-04-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OXY,Occidental Petroleum,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PANW,Palo Alto Networks,2023-06-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PAYC,Paycom,2020-01-28,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PAYX,Paychex,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PBCT,People's United Financial,2012-01-01,2022-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PBI,Pitney Bowes,2012-01-01,2017-03-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCAR,Paccar,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCG,PG&E Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCL,Plum Creek Timber,2012-01-01,2016-02-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCP,Precision Castparts Corporation,2012-01-01,2016-02-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCS,MetroPCS,2012-01-01,2013-04-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PDCO,Patterson Companies,2012-01-01,2018-03-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PEG,Public Service Enterprise Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PENN,Penn National Gaming,2021-03-22,2022-09-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PEP,PepsiCo,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PETM,PetSmart,2012-10-10,2015-03-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PFE,Pfizer,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PFG,Principal Financial Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PG,Procter & Gamble,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PGN,Progress Energy,2012-01-01,2012-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PGR,Progressive Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PH,Parker Hannifin,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PHM,PulteGroup,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PKG,Packaging Corporation of America,2017-07-26,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PLD,Prologis,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PLL,Pall Corporation,2012-01-01,2015-08-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PLTR,Palantir Technologies,2024-09-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PM,Philip Morris International,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PNC,PNC Financial Services,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PNR,Pentair,2012-10-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PNW,Pinnacle West Capital,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PODD,Insulet Corporation,2023-03-15,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+POM,Pepco Holdings,2012-01-01,2016-03-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+POOL,Pool Corporation,2020-10-07,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PPG,PPG Industries,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PPL,PPL Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PRGO,Perrigo,2012-01-01,2021-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PRU,Prudential Financial,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PSA,Public Storage,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PSKY,Paramount Skydance Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PSX,Phillips 66,2012-04-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PTC,PTC Inc.,2021-04-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PVH,PVH,2013-02-15,2022-09-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PWR,Quanta Services,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PXD,Pioneer Natural Resources,2012-01-01,2024-05-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PYPL,PayPal,2015-07-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+Q,Qnity Electronics,2017-08-29,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+QCOM,Qualcomm,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+QEP,QEP Resources,2012-01-01,2015-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+QRVO,Qorvo,2015-06-11,2024-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+R,Ryder System,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RAI,Reynolds American,2012-01-01,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RCL,Royal Caribbean Group,2014-12-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RDC,Rowan Companies,2012-01-01,2014-08-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RE,Everest Re,2017-06-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+REG,Regency Centers,2017-03-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+REGN,Regeneron Pharmaceuticals,2013-04-30,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RF,Regions Financial Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RHI,Robert Half,2012-01-01,2024-06-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RHT,Red Hat,2012-01-01,2019-07-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RIG,Transocean,2013-10-29,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RJF,Raymond James Financial,2017-03-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RL,Ralph Lauren Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RMD,ResMed,2017-07-26,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ROK,Rockwell Automation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ROL,"Rollins, Inc.",2018-10-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ROP,Roper Technologies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ROST,Ross Stores,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RRC,Range Resources,2012-01-01,2018-06-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RRD,RR Donnelley,2012-01-01,2012-12-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RSG,Republic Services,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RTN,Raytheon Company,2012-01-01,2020-04-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RTX,RTX Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RVTY,Revvity,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+S,Sprint Nextel,2012-01-01,2013-07-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SAI,SAIC,2012-01-01,2013-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SATS,EchoStar,2026-03-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SBAC,SBA Communications,2017-09-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SBNY,Signature Bank,2021-12-20,2023-03-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SBUX,Starbucks,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SCG,SCANA,2012-01-01,2019-01-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SCHW,Charles Schwab Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SE,Spectra Energy,2012-01-01,2017-02-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SEDG,SolarEdge,2021-12-20,2023-12-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SEE,Sealed Air,2012-01-01,2023-12-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SHLD,Sears Holdings,2012-01-01,2012-09-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SHW,Sherwin-Williams,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SIAL,Sigma-Aldrich,2012-01-01,2015-11-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SIG,Signet Jewelers,2015-07-29,2018-03-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SIVB,SVB Financial Group,2018-03-19,2023-03-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SJM,J.M. Smucker Company (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SLB,Schlumberger,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SLE,Sara Lee Corporation,2012-01-01,2012-06-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SLG,SL Green Realty,2015-03-23,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SLM,SLM Corporation,2012-01-01,2014-05-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SMCI,Supermicro,2024-03-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SNA,Snap-on,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SNDK,Sandisk,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SNI,Scripps Networks Interactive,2012-01-01,2018-03-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SNPS,Synopsys,2017-03-16,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SO,Southern Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SOLS,Solstice Advanced Materials,2025-10-30,2025-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SOLV,Solventum,2024-04-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SPG,Simon Property Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SPGI,S&P Global,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SPLS,Staples,2012-01-01,2017-09-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SRCL,Stericycle,2012-01-01,2018-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SRE,Sempra,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STE,Steris,2019-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STI,SunTrust Banks,2012-01-01,2019-12-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STJ,St Jude Medical,2012-01-01,2017-01-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STLD,Steel Dynamics,2022-12-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STT,State Street Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STX,Seagate Technology,2012-07-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STZ,Constellation Brands,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SUN,SunAmerica,2012-01-01,2012-10-10,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SVU,Supervalu,2012-01-01,2012-04-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SW,Smurfit Westrock,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SWK,Stanley Black & Decker,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SWKS,Skyworks Solutions,2015-03-12,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SWN,Southwestern Energy,2012-01-01,2017-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SWY,Safeway,2012-01-01,2015-01-27,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SYF,Synchrony Financial,2015-11-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SYK,Stryker Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SYY,Sysco,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+T,AT&T,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TAP,Molson Coors Beverage Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TDC,Teradata,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TDG,TransDigm Group,2016-06-03,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TDY,Teledyne Technologies,2020-06-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TE,TECO Energy,2012-01-01,2016-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TECH,Bio-Techne,2021-08-30,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TEG,Integrys Energy Group,2012-01-01,2015-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TEL,TE Connectivity,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TER,Teradyne,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TFC,Truist Financial,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TFX,Teleflex,2019-01-18,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TGNA,Tegna,2012-01-01,2017-06-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TGT,Target Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+THC,Tenet Healthcare,2012-01-01,2016-04-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TIE,Titanium Metals,2012-01-01,2012-12-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TIF,Tiffany & Co,2012-01-01,2021-01-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TJX,TJX Companies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TKO,TKO Group Holdings,2025-03-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TMO,Thermo Fisher Scientific,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TMUS,T-Mobile US,2019-07-15,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TPL,Texas Pacific Land Corporation,2024-11-26,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TPR,"Tapestry, Inc.",2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TRGP,Targa Resources,2022-10-12,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TRIP,TripAdvisor,2012-01-01,2019-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TRMB,Trimble Inc.,2021-01-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TROW,T. Rowe Price,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TRV,Travelers Companies (The),2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TSCO,Tractor Supply,2014-01-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TSLA,"Tesla, Inc.",2020-12-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TSN,Tyson Foods,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TSS,TSYS,2012-01-01,2019-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TT,Trane Technologies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TTD,Trade Desk (The),2025-07-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TTWO,Take-Two Interactive,2018-03-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TWC,Time Warner Cable,2012-01-01,2016-05-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TWTR,Twitter,2018-06-07,2022-11-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TWX,Time Warner,2012-01-01,2018-06-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TXN,Texas Instruments,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TXT,Textron,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TYC,Tyco International,2012-01-01,2016-09-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TYL,Tyler Technologies,2020-06-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UA,Under Armour,2014-05-01,2022-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UAA,Under Armour (Class A),2012-01-01,2022-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UAL,United Airlines Holdings,2015-09-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UBER,Uber,2023-12-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UDR,"UDR, Inc.",2016-03-07,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UHS,Universal Health Services,2014-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ULTA,Ulta Beauty,2016-04-18,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UNH,UnitedHealth Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UNM,Unum,2012-01-01,2021-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UNP,Union Pacific Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UPS,United Parcel Service,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+URBN,Urban Outfitters,2012-01-01,2017-03-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+URI,United Rentals,2014-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+USB,U.S. Bancorp,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+V,Visa Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VAR,Varian Medical Systems,2012-01-01,2021-04-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VEEV,Veeva Systems,2026-05-07,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VFC,VF Corporation,2012-01-01,2024-04-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VIAB,Viacom,2012-01-01,2019-12-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VICI,Vici Properties,2022-06-08,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VLO,Valero Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VLTO,Veralto,2023-10-02,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VMC,Vulcan Materials Company,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VNO,Vornado Realty Trust,2012-01-01,2023-01-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VNT,Vontier,2020-10-09,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VRSK,Verisk Analytics,2015-10-07,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VRSN,Verisign,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VRT,Vertiv,2026-03-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VRTX,Vertex Pharmaceuticals,2013-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VST,Vistra Corp.,2024-05-08,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VTR,Ventas,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VTRS,Viatris,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VZ,Verizon,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WAB,Wabtec,2019-02-27,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WAT,Waters Corporation,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WBA,Walgreens Boots Alliance,2012-01-01,2025-08-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WBD,Warner Bros. Discovery,2022-04-11,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WCG,WellCare,2018-09-14,2020-01-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WDAY,"Workday, Inc.",2024-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WDC,Western Digital,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WEC,WEC Energy Group,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WELL,Welltower,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WFC,Wells Fargo,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WFM,Whole Foods Market,2012-01-01,2017-08-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WHR,Whirlpool Corporation,2012-01-01,2024-03-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WIN,Windstream Communications,2012-01-01,2015-04-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WLTW,Willis Towers Watson,2016-01-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WM,Waste Management,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WMB,Williams Companies,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WMT,Walmart,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WPX,WPX Energy,2012-01-01,2014-03-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WRB,W. R. Berkley Corporation,2019-12-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WSM,"Williams-Sonoma, Inc.",2025-03-24,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WST,West Pharmaceutical Services,2020-05-22,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WTW,Willis Towers Watson,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WU,Western Union,2012-01-01,2021-12-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WY,Weyerhaeuser,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WYN,Wyndham Worldwide,2012-01-01,2018-05-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WYNN,Wynn Resorts,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+X,United States Steel,2012-01-01,2014-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XEC,Cimarex Energy,2014-06-20,2020-03-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XEL,Xcel Energy,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XL,XL Group,2012-01-01,2018-09-14,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XLNX,Xilinx,2012-01-01,2022-02-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XOM,ExxonMobil,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XRAY,Dentsply Sirona,2012-01-01,2024-04-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XRX,Xerox,2012-01-01,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XYL,Xylem Inc.,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XYZ,"Block, Inc.",2025-07-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+YHOO,Yahoo!,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+YUM,Yum! Brands,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ZBH,Zimmer Biomet,2012-01-01,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ZBRA,Zebra Technologies,2019-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ZION,Zions Bancorporation,2012-01-01,2024-03-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ZTS,Zoetis,2013-06-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed

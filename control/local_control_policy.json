@@ -1,0 +1,9 @@
+{
+  "controller": "king_ops",
+  "entrypoint_de": "bash tools/king_ops.sh local-control",
+  "safety_de": "Kein Echtgeld, kein Champion-Wechsel, Operator-Souveränität unverändert",
+  "schema_version": 1,
+  "scope_de": "Hub :17890, Tunnel, lokaler Worker, Spread-Tick, Tunnel-Stable-Timer",
+  "status": "ACTIVE",
+  "updated_at_utc": "2026-06-08T15:25:04+00:00"
+}

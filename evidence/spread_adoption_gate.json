@@ -1,0 +1,21 @@
+{
+  "blocked_until_de": "mindestens 1 Compute-Worker auf fremdem Host (nicht nur König-PC)",
+  "compute_workers": 1,
+  "dependency_headline_de": "Nur lokaler Compute — Abhängigkeit von zu wenigen (gleicher PC)",
+  "dependency_risk": "high",
+  "done": false,
+  "join_remote": "https://pole-holidays-behavior-merchandise.trycloudflare.com/join",
+  "next_real_jump_de": "Welt-ZIP + Link an Menschen mit eigenem PC — nicht nur König-Host",
+  "ok": false,
+  "ready_to_share": true,
+  "schema_version": 1,
+  "steps_de": [
+    "1. ~/world_worker_LITE.zip + Join-Link per WhatsApp/E-Mail/USB senden",
+    "2. Empfänger: PC mit Python 3 (Win/Mac/Linux)",
+    "3. Entpacken → Windows_START.bat oder ./Linux_START.sh",
+    "4. Prüfen: Hub zeigt dann ≥2 Knoten — https://pole-holidays-behavior-merchandise.trycloudflare.com/join"
+  ],
+  "updated_at_utc": "2026-06-09T21:23:11+00:00",
+  "whatsapp_ref": "evidence/spread_whatsapp_de.txt",
+  "world_zip": "/home/machinax7/world_worker_LITE.zip"
+}

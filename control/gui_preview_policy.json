@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "mode": "stable",
+  "defaults_de": {
+    "refresh_snap": false,
+    "chat_fallback": "evolve-only wenn Ollama offline",
+    "chat_timeout_s": 75,
+    "dedup_minutes": 20,
+    "gui": "offscreen Qt, AA_GUI_PREVIEW=1"
+  },
+  "product_de": "R3 Cockpit — primäre Oberfläche",
+  "command_de": "r3-cockpit",
+  "hub_de": "http://127.0.0.1:17890 — Cockpit + Arbeitsfläche + Operator",
+  "commands_alt_de": [
+    "python3 tools/ai_kernel.py gui-preview",
+    "python3 tools/run_gui_preview.py --open-html",
+    "bash tools/r3_session_browser.sh"
+  ],
+  "visual_html_de": "~/.local/share/r3-os/gui_preview_latest.html",
+  "flags_de": {
+    "--force": "Dedup ignorieren",
+    "--refresh": "T212-Snapshot erzwingen (nur bei Bedarf)",
+    "--skip-chat": "Nur evolve, kein Ollama",
+    "--backend-only": "Ohne Qt (~2 s)"
+  },
+  "architecture_de": "R3 Hub aggregiert Worker — Federation über /join",
+  "federation_de": "Export: ai_kernel preview-export-lite · Worker: START-Skript",
+  "timer_de": "learn → gui-preview (Aggregator)",
+  "autostart_de": "~/.config/autostart/r3-os-session.desktop — R3-Vollbild nach Anmeldung",
+  "known_partial_de": [
+    "h1_evaluation — bis H1 COMPLETE+Seal",
+    "learning_report — bis erster ai_kernel learn",
+    "trading_day_cockpit — bis erster ai_kernel trading-day"
+  ],
+  "avoid_de": [
+    "--refresh ohne Grund (T212 kann hängen)",
+    "Zweiter Lauf <20 min ohne --force (Dedup-Skip ist normal)"
+  ]
+}

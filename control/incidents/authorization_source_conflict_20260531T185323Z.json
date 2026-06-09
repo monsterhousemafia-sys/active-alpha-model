@@ -1,0 +1,25 @@
+{
+  "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+  "blocked_capabilities": [
+    "shadow_monitoring_activation",
+    "paper_monitoring_activation",
+    "promotion_execution",
+    "champion_change",
+    "real_money_execution",
+    "operative_jobs"
+  ],
+  "champion_modified": false,
+  "conflict_summary": "Informational progress and automation state claimed operational authorizations (FULL_USER_APPROVED, REAL_MONEY_AUTHORIZED, etc.) that are not granted by final external review approval.",
+  "conflicting_sources_remediated": [
+    "VISION_PROGRESS.json",
+    "control/operational_safety_flags.json",
+    "control/vision_automation/automation_state.json"
+  ],
+  "containment_action": "BLOCKED_FOR_SAFETY",
+  "detected_at_utc": "2026-05-31T18:53:23+00:00",
+  "incident_type": "AUTHORIZATION_SOURCE_CONFLICT",
+  "production_state_modified": false,
+  "real_money_activity_detected": false,
+  "remediation_phase": "G0_AUTHORIZATION_SOURCE_CONFLICT_REMEDIATION",
+  "severity": "CRITICAL_GOVERNANCE_BLOCKER"
+}

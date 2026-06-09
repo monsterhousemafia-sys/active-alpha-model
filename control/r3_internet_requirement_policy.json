@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 und Active Alpha Model benötigen Internet",
+  "required_consumers_de": {
+    "r3": "Kurse, T212-API, Desktop-Anzeige, Browser-Ingest",
+    "active_alpha_model": "Predict, Preisfeed, Rebalance-Plan, H1-Pipeline"
+  },
+  "rules_de": [
+    "Lokal-first = Hub bindet loopback — kein Offline-Betrieb ohne Internet",
+    "Fail-closed: ohne Internet kein Hintergrund-Tick und kein neuer Ingest",
+    "Anzeige darf letzte Evidence zeigen — Chip Internet = warn/fail"
+  ],
+  "probe_ref_de": "aa_adaptive_runtime.probe_internet_prices + r3_ki_web fallback",
+  "evidence_ref": "evidence/r3_internet_latest.json",
+  "safety_de": "fail-closed, read-only bei Offline"
+}

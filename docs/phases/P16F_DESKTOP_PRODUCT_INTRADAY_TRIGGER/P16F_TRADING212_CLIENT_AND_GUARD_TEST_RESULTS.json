@@ -1,0 +1,8 @@
+{
+  "credentials_configured": false,
+  "demo_read_only_status": "CLIENT_TESTED_READY",
+  "live_read_only_status": "AWAITING_CREDENTIALS",
+  "order_endpoints_blocked": true,
+  "secret_safety": "PASS",
+  "write_methods_blocked": true
+}

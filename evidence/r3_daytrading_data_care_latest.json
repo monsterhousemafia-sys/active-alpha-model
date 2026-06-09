@@ -1,0 +1,42 @@
+{
+  "command_de": "bash tools/king_ops.sh daytrading-refresh",
+  "headline_de": "Daytrading-Datenpflege — 1/4 (Blocker prüfen)",
+  "ok": false,
+  "orders_allowed": false,
+  "policy_ref": "control/r3_daytrading_data_care_policy.json",
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail_de": "Kurse aktualisieren — quotes_missing",
+      "id": "quotes",
+      "ok": false,
+      "price_latest": "2026-06-09",
+      "quote_status": "MISSING"
+    },
+    {
+      "blocks_execute": true,
+      "detail_de": "Snapshot aktualisiert",
+      "id": "daytrading_snapshot",
+      "ok": false,
+      "reevaluation_urgency": "NONE"
+    },
+    {
+      "closed": false,
+      "cycle_pct": 71,
+      "detail_de": "Trading-Kreislauf · 71% — Hintergrund-Tick ausstehend",
+      "id": "trading_cycle",
+      "ok": false
+    },
+    {
+      "detail_de": "Learning-Ledger aktualisiert",
+      "id": "learning_capture",
+      "learning_healthy": true,
+      "ok": true
+    }
+  ],
+  "steps_ok": 1,
+  "steps_total": 4,
+  "t212_message_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 113 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p",
+  "t212_trusted": false,
+  "updated_at_utc": "2026-06-09T20:28:48+00:00"
+}

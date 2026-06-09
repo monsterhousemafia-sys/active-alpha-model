@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "apps": {
+    "files": {"label_de": "Dateien", "native": true},
+    "terminal": {"label_de": "Terminal", "native": true, "fallback_exec": ["ptyxis", "gnome-terminal", "kgx", "xterm"]},
+    "settings": {"label_de": "R3 Einstellungen", "native": true}
+  },
+  "terminal_actions": {
+    "cockpit": {
+      "label_de": "Cockpit im Browser",
+      "exec": ["xdg-open", "http://127.0.0.1:17890/"]
+    },
+    "hub": {
+      "label_de": "Cockpit-API Status",
+      "exec": ["python3", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:17890/api/health')"]
+    },
+    "trading-day": {
+      "label_de": "Trading-Day starten",
+      "exec": ["python3", "tools/ai_kernel.py", "trading-day"]
+    },
+    "system": {
+      "label_de": "System-Terminal",
+      "exec": ["ptyxis"],
+      "fallback_exec": ["gnome-terminal", "kgx", "xterm"]
+    }
+  }
+}

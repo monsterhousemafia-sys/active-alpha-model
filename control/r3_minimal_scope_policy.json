@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "mission_de": "R3 = KI-Modell für Aktienprognosen — jeden Tag von Kursen lernen. Alles was Ubuntu schon kann, bleibt bei Ubuntu.",
+  "r3_only_de": [
+    "Tägliche Aktienprognose (Handelsergebnis T212)",
+    "Lernen aus Kursen (EOD, Intraday, Broker-Snapshots)",
+    "Präsentation der Modell-Ergebnisse",
+    "Order-Desk mit Bestätigung (Trading212)"
+  ],
+  "ubuntu_delegates_de": [
+    "Dateien, Terminal, Rechner, Screenshot",
+    "WLAN, Bluetooth, Ton, Display, Energie, Einstellungen",
+    "Programmübersicht, Updates, Sperren/Abmelden",
+    "Benachrichtigungen, Dock, Control-Center"
+  ],
+  "desktop_sections_de": ["r3_only", "r3_status_bar"],
+  "forbidden_on_desktop_de": [
+    "ubuntu_shell_tiles",
+    "local_apps_panel",
+    "fusion_chrome",
+    "native_system_panels",
+    "network_pulse",
+    "weltneuheit_strip",
+    "r3_flow_strip",
+    "duplicate_status_lines",
+    "render_time_sync"
+  ],
+  "safety_de": "fail-closed, keine auto_orders, kein Champion-Wechsel"
+}

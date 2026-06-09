@@ -1,0 +1,20 @@
+{
+  "active": true,
+  "auto_promotion": "DISABLED",
+  "integrity_status": "PASS",
+  "phase_b_repaired_at_utc": "2026-06-03T20:42:49+00:00",
+  "previous_champion_variant_id": "R3_w075_q065_noexit",
+  "prior_registry": {
+    "promotion_source": "",
+    "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+    "variant_id": "R3_w075_q065_noexit"
+  },
+  "promoted_at_utc": "2026-05-31T17:20:36+00:00",
+  "promotion_source": "",
+  "repair_note": "Phase B: replaced erroneous R5 operational registry with authoritative R3.",
+  "role": "CHAMPION",
+  "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+  "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+  "updated_at_utc": "2026-05-31T17:20:36+00:00",
+  "variant_id": "R3_w075_q065_noexit"
+}

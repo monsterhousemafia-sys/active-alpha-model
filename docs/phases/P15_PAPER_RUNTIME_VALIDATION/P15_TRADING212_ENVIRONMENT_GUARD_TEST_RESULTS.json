@@ -1,0 +1,8 @@
+{
+  "exact_allowlist": true,
+  "live_host_blocked": true,
+  "lookalike_host_blocked": true,
+  "order_endpoints_blocked": true,
+  "tests_passed": true,
+  "write_methods_blocked": true
+}

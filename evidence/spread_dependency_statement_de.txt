@@ -1,0 +1,19 @@
+=== Active Alpha — Worker nur Rechenleistung (so vorgesehen) ===
+
+Freundlich und ehrlich: Wir fangen nur freiwillige CPU an — kein Broker, kein Echtgeld,
+kein Hintergrund-Install, kein Browser-only-Klick.
+
+Was ein Worker ist:
+- ~100 KB ZIP, Python 3, START (Win/Mac/Linux)
+- Meldet Kerne/RAM, nimmt Jobs wenn idle
+- Jederzeit stoppen (Dienst aus / Ordner löschen)
+
+Was noch fehlt (nicht erzwingbar):
+- Externer PC: jemand muss ZIP auf eigenem Rechner starten (Adoption 25%, 0 remote Hosts)
+- Stabile URL: Quick-Tunnel bis tunnel-stable setup (Cloudflare-Token)
+- Reichweite: Forum/Reddit noch offen (Öffentlich 86%)
+
+Was bewusst nicht eingefangen wird:
+- Gefakte Remote-Worker, Echtgeld, beliebige Rollen ohne Bundle
+
+Nächster Schritt: Welt-ZIP + Link an Menschen mit eigenem PC — freundlich fragen, nicht drängen.

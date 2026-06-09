@@ -1,0 +1,51 @@
+{
+  "artifact_hashes": {
+    "control/evidence/shadow_monitor_status.json": "d195834fe18311945f000c07e60ead5b725b2061324bf4028d93070cf84ec23f"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M7",
+  "phase": "M6",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:07+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M5 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m5_phase_seal.json"
+      },
+      {
+        "check": "file_exists:control/evidence/shadow_monitor_status.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/evidence/shadow_monitor_status.json"
+      },
+      {
+        "check": "json_equals:control/evidence/shadow_monitor_status.json",
+        "detail": "ok",
+        "pass": true,
+        "path": "control/evidence/shadow_monitor_status.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M6",
+    "title": "Shadow-Monitoring",
+    "verified_at_utc": "2026-06-05T15:39:07+00:00"
+  }
+}

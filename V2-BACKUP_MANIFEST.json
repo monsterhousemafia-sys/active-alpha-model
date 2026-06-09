@@ -1,0 +1,84 @@
+{
+  "created_at_utc": "20260530T204703Z",
+  "phase": "V2_COST_STRESS_AND_ROBUSTNESS_ENGINE",
+  "files": [
+    {
+      "original_path": "aa_cost_stress.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_cost_stress.py",
+      "size_bytes": 12277,
+      "sha256": "fc410dd397d4d4b59c9fd5098dc0a82bebd6ff1b6116c86c5d8ede533cc73e97"
+    },
+    {
+      "original_path": "aa_robustness_evidence.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_robustness_evidence.py",
+      "size_bytes": 5426,
+      "sha256": "3885a0695de4969a5160b268fd63b3c12f4b6a5bbc783221c9ad855dfa9b8819"
+    },
+    {
+      "original_path": "aa_multiple_testing_adjustment.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_multiple_testing_adjustment.py",
+      "size_bytes": 5415,
+      "sha256": "a2ebbd8807d38434243b7c6a80bbc556c0e7bb37037a7767663d61792a030c26"
+    },
+    {
+      "original_path": "aa_v2_source_inventory.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_v2_source_inventory.py",
+      "size_bytes": 4660,
+      "sha256": "b649560b7ed1bed98d5a5b59ec0e47af31eb7534aa8c4c6dbc09dd44489d1ea2"
+    },
+    {
+      "original_path": "aa_v2_bypass_audit.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_v2_bypass_audit.py",
+      "size_bytes": 3731,
+      "sha256": "90e8255157a101f4bf4bf75670fb085af29df7a19097aa96b02b9fd0385ed662"
+    },
+    {
+      "original_path": "aa_evidence_status.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_evidence_status.py",
+      "size_bytes": 16248,
+      "sha256": "894ee93957e4b77aa007d0e30f24ba12316c56a2eb63ad2834d189f459d34c63"
+    },
+    {
+      "original_path": "aa_evidence_schema.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/aa_evidence_schema.py",
+      "size_bytes": 5001,
+      "sha256": "f5db1fc085dfd296e53f2c841a0a71078742ca5b304ff96f201b3ca7206f5373"
+    },
+    {
+      "original_path": "control/evidence/current_evidence_status.json",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/control__evidence__current_evidence_status.json",
+      "size_bytes": 3050,
+      "sha256": "f07cd1ea879c5e64f1bcebf2f1eda3b4f975b3584d55f89387463f547dcb64cf"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/VISION_PROGRESS.json",
+      "size_bytes": 788,
+      "sha256": "0bf91ae102af5e8ed60338b16ae6fe8e9b29470756c270336441c3e4f3b90495"
+    },
+    {
+      "original_path": "tests/test_cost_stress.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/tests__test_cost_stress.py",
+      "size_bytes": 3056,
+      "sha256": "bb1029cebe76c6680b8b4d9d1834bf391108a03525fb2021698588c01f3619fb"
+    },
+    {
+      "original_path": "tests/test_robustness_evidence.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/tests__test_robustness_evidence.py",
+      "size_bytes": 1664,
+      "sha256": "2290ab06fbc4f22070d5aec4d205792b817c7420152893b4454781dc371e14c2"
+    },
+    {
+      "original_path": "tests/test_multiple_testing_adjustment.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/tests__test_multiple_testing_adjustment.py",
+      "size_bytes": 1855,
+      "sha256": "6bdfd09085c0c1fc3750c454b721f2e1179189687e882fd303734994bff178bd"
+    },
+    {
+      "original_path": "tests/test_v2_helper_bypass_preflight.py",
+      "backup_path": "control/repair_backups/20260530T204703Z_V2/tests__test_v2_helper_bypass_preflight.py",
+      "size_bytes": 897,
+      "sha256": "5bd0d452d4cf97a295ce0802461d3563b20098940a766caa7a3051a2e6397796"
+    }
+  ]
+}

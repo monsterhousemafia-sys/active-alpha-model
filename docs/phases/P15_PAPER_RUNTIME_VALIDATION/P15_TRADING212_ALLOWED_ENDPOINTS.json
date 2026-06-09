@@ -1,0 +1,10 @@
+{
+  "allowed_get_paths": [
+    "/equity/account/cash",
+    "/equity/account/summary",
+    "/equity/metadata/exchanges",
+    "/equity/metadata/instruments",
+    "/equity/positions"
+  ],
+  "demo_base_url": "https://demo.trading212.com/api/v0"
+}

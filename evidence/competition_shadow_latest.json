@@ -1,0 +1,305 @@
+{
+  "benchmark_method_de": "Unabhängiges mom_1_top12 auf eligible Universum (positive 1d-Returns, gleicher Preis-Stand) — informative only, nicht identisch mit Backtest-Pipeline.",
+  "benchmark_mom_1_top12": {
+    "n_picks": 7,
+    "top_picks": [
+      {
+        "mom_1": 0.014018878624231235,
+        "target_weight": 0.2641840690434278,
+        "ticker": "APD"
+      },
+      {
+        "mom_1": 0.012724054166102006,
+        "target_weight": 0.2397849994641583,
+        "ticker": "AME"
+      },
+      {
+        "mom_1": 0.00862329361546621,
+        "target_weight": 0.16251217582021346,
+        "ticker": "CHTR"
+      },
+      {
+        "mom_1": 0.00663149809722996,
+        "target_weight": 0.12497970789993793,
+        "ticker": "PFE"
+      },
+      {
+        "mom_1": 0.003804854945075542,
+        "target_weight": 0.0717157596386995,
+        "ticker": "TDY"
+      },
+      {
+        "mom_1": 0.003748258210807487,
+        "target_weight": 0.0706492771138321,
+        "ticker": "GHC"
+      },
+      {
+        "mom_1": 0.003510762105619847,
+        "target_weight": 0.06617401101973087,
+        "ticker": "NWSA"
+      }
+    ]
+  },
+  "benchmark_variant": "mom_1_top12",
+  "comparison": {
+    "benchmark_vs_live": {
+      "jaccard": 0.0,
+      "only_a": [
+        "AME",
+        "APD",
+        "CHTR",
+        "GHC",
+        "NWSA",
+        "PFE",
+        "TDY"
+      ],
+      "only_b": [
+        "AMD",
+        "CAT",
+        "CIEN",
+        "GOOGL",
+        "INTC",
+        "ON",
+        "STX",
+        "WDC"
+      ],
+      "shared": []
+    },
+    "model_vs_benchmark": {
+      "jaccard": 0.4666666666666667,
+      "only_a": [
+        "BHI",
+        "COV",
+        "DNR",
+        "EPAM",
+        "GM",
+        "GR",
+        "MUR",
+        "OMC"
+      ],
+      "only_b": [],
+      "shared": [
+        "AME",
+        "APD",
+        "CHTR",
+        "GHC",
+        "NWSA",
+        "PFE",
+        "TDY"
+      ]
+    },
+    "model_vs_live": {
+      "jaccard": 0.0,
+      "only_a": [
+        "AME",
+        "APD",
+        "BHI",
+        "CHTR",
+        "COV",
+        "DNR",
+        "EPAM",
+        "GHC",
+        "GM",
+        "GR",
+        "MUR",
+        "NWSA",
+        "OMC",
+        "PFE",
+        "TDY"
+      ],
+      "only_b": [
+        "AMD",
+        "CAT",
+        "CIEN",
+        "GOOGL",
+        "INTC",
+        "ON",
+        "STX",
+        "WDC"
+      ],
+      "shared": []
+    }
+  },
+  "generated_at_utc": "2026-06-09T18:48:15+00:00",
+  "live_orders_recent": [
+    {
+      "draft_id": "d4162547-7ac7-4ff1-a041-237f40002ce6",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:54:01+00:00",
+      "ticker": "WDC"
+    },
+    {
+      "draft_id": "7bba0e48-2923-45fd-8f0f-92eab7b5093c",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:53:57+00:00",
+      "ticker": "STX"
+    },
+    {
+      "draft_id": "bc0fa496-c694-4404-8df3-6579c941ffe5",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:41:06+00:00",
+      "ticker": "ON"
+    },
+    {
+      "draft_id": "034f3fbe-4c07-41ff-aa9f-4068699948f2",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:41:03+00:00",
+      "ticker": "CIEN"
+    },
+    {
+      "draft_id": "1a5c4f31-1383-4c1d-999f-92c60132649c",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:41:01+00:00",
+      "ticker": "GOOGL"
+    },
+    {
+      "draft_id": "a770a918-064a-4081-ac6f-272f992ef66f",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:40:58+00:00",
+      "ticker": "AMD"
+    },
+    {
+      "draft_id": "f015f32c-2d1f-40ad-a7e5-c729ea3f0eca",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:40:55+00:00",
+      "ticker": "CAT"
+    },
+    {
+      "draft_id": "0e50435c-4efc-4b98-ba0b-e9106f4a6d9e",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:40:52+00:00",
+      "ticker": "INTC"
+    },
+    {
+      "draft_id": "2e7a6403-953e-4b68-b810-f50a18258f1d",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:40:50+00:00",
+      "ticker": "WDC"
+    },
+    {
+      "draft_id": "d1839aa9-f14b-4f68-aa2b-225dbeb4419a",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T19:40:48+00:00",
+      "ticker": "STX"
+    },
+    {
+      "draft_id": "aa5ef904-8713-4c3d-a492-2a676ecf0280",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T16:34:03+00:00",
+      "ticker": "INTC"
+    },
+    {
+      "draft_id": "8af1ba82-6b05-4a3a-861e-48dcec697788",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T16:33:58+00:00",
+      "ticker": "WDC"
+    },
+    {
+      "draft_id": "1345add5-98f4-423a-8784-acbfafc45ffd",
+      "side": "BUY",
+      "status": "NEW",
+      "submitted_at_utc": "2026-06-02T16:33:55+00:00",
+      "ticker": "STX"
+    },
+    {
+      "draft_id": "84f4fd30-5ce1-4a45-8762-b2122aab5740",
+      "side": "BUY",
+      "status": "SUBMITTED_AWAITING_READONLY_RECONCILIATION",
+      "submitted_at_utc": "2026-06-02T15:15:14+00:00",
+      "ticker": "INTC"
+    }
+  ],
+  "message_de": "Shadow: Modell 15 | mom_1 7 | Overlap Modell/Benchmark 7 | Modell/Live 0 — Signal 2026-06-09.",
+  "model": {
+    "n_picks": 15,
+    "profile_ref": "control/prediction_operations.json",
+    "top_picks": [
+      {
+        "mu_hat": 0.0011329664055688,
+        "rank_score": 0.92919475,
+        "target_weight": 0.1143614412750685,
+        "ticker": "OMC"
+      },
+      {
+        "mu_hat": 0.0011024897791668,
+        "rank_score": 0.8840965,
+        "target_weight": 0.1006338056376121,
+        "ticker": "PFE"
+      },
+      {
+        "mu_hat": 0.0010348075182303,
+        "rank_score": 0.89408594,
+        "target_weight": 0.0811762812714739,
+        "ticker": "CHTR"
+      },
+      {
+        "mu_hat": 0.001021992083494,
+        "rank_score": 0.845,
+        "target_weight": 0.0721875217411356,
+        "ticker": "EPAM"
+      },
+      {
+        "mu_hat": 0.0008877524771721,
+        "rank_score": 0.80906844,
+        "target_weight": 0.0584354519738266,
+        "ticker": "GM"
+      },
+      {
+        "mu_hat": 0.0008511361204935,
+        "rank_score": 0.8162,
+        "target_weight": 0.0573321409747144,
+        "ticker": "GHC"
+      },
+      {
+        "mu_hat": 0.0009912188204341,
+        "rank_score": 0.8458719,
+        "target_weight": 0.0533261520255586,
+        "ticker": "TDY"
+      },
+      {
+        "mu_hat": 0.0007991024489731,
+        "rank_score": 0.9311,
+        "target_weight": 0.0480377033065067,
+        "ticker": "GR"
+      },
+      {
+        "mu_hat": 0.0008363827808695,
+        "rank_score": 0.79237545,
+        "target_weight": 0.0414965778093244,
+        "ticker": "APD"
+      },
+      {
+        "mu_hat": 0.0008662135255205,
+        "rank_score": 0.7882912,
+        "target_weight": 0.0410465684279082,
+        "ticker": "NWSA"
+      },
+      {
+        "mu_hat": 0.0008854627034406,
+        "rank_score": 0.7922,
+        "target_weight": 0.0405636121113217,
+        "ticker": "DNR"
+      },
+      {
+        "mu_hat": 0.0008591263294604,
+        "rank_score": 0.7923,
+        "target_weight": 0.0216402483102857,
+        "ticker": "BHI"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "signal_date": "2026-06-09"
+}

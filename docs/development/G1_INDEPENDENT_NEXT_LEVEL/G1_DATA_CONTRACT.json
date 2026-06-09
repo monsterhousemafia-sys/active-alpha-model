@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-01T11:25:20+00:00",
+  "champion_id": "R3_w075_q065_noexit",
+  "challenger_id": "MOM_63_TOP12",
+  "control_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "input_dataset_paths": {
+    "feature_cache_parquet": "model_output_sp500_pit_t212/features/fp_3b6435bd59f1e44d6d2ecbbf/feature_cache.parquet",
+    "returns_cache_parquet": "model_output_sp500_pit_t212/features/fp_3b6435bd59f1e44d6d2ecbbf/returns_cache.parquet",
+    "champion_returns": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+    "champion_decisions": "model_output_sp500_pit_t212/backtest_decisions.csv",
+    "control_returns": "validation_runs\\20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+    "control_decisions": "validation_runs\\20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv"
+  },
+  "input_dataset_hashes": {
+    "feature_cache_parquet": "45be6e8a30b5c5a04d1d2421b670171e8e961a59a307f058269283d32dc370de",
+    "returns_cache_parquet": "5f8e6b20dabcb8377ecf3db66a949848dc91ed3a7d07c557fb79be9b20099f03",
+    "champion_returns": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653",
+    "champion_decisions": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1",
+    "control_returns": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07",
+    "control_decisions": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+  },
+  "date_range": {
+    "start": "2012-01-01",
+    "train_years": 7
+  },
+  "trading_calendar_reference": "rebalance_every=5, benchmark=SPY",
+  "universe_reference": "diy_pit_liquidity, top_n=100, membership=strict",
+  "point_in_time_guarantee_status": "VERIFIED_EXISTING_CODE_PATH (diy_pit_liquidity + strict membership)",
+  "rebalance_definition": "every N trading dates after train_years warm-up",
+  "missing_required_inputs": [],
+  "assumptions": [
+    "Frozen feature cache from model_output_sp500_pit_t212"
+  ],
+  "reproducibility_status": "DETERMINISTIC_WITH_FROZEN_CACHE",
+  "backtest_config_fingerprint": {
+    "start": "2012-01-01",
+    "benchmark": "SPY",
+    "rebalance_every": 5,
+    "top_k": 15,
+    "horizon": 10,
+    "train_years": 7,
+    "slippage_bps": 2.0,
+    "fee_model": "trading212_us",
+    "trading212_fx_bps": 15.0,
+    "universe_mode": "diy_pit_liquidity",
+    "universe_top_n": 100,
+    "membership_mode": "strict",
+    "membership_file": "ticker_membership.csv"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "compute_demand": [],
+  "health": {
+    "local": {
+      "body": {
+        "first_started_utc": "2026-06-06T13:31:17+00:00",
+        "ok": true,
+        "port": 17890,
+        "product": "preview-hub"
+      },
+      "ok": true,
+      "status": 200
+    },
+    "remote": {
+      "error": "<urlopen error [Errno -2] Name or service not known>",
+      "ok": false
+    },
+    "status": {
+      "cloudflared_installed": true,
+      "join_token_locked": true,
+      "public_base_url": "https://vii-consumption-expansys-suggestion.trycloudflare.com",
+      "public_base_url_locked": true,
+      "remote_access_mode": "cloudflared",
+      "remote_ready": true,
+      "remote_workers_expected": true,
+      "stable": false,
+      "tailscale_ip": null,
+      "tailscale_online": false,
+      "tunnel": {
+        "local_url": "http://127.0.0.1:17890",
+        "mode": "cloudflared",
+        "note_de": "URL ändert sich nach Neustart — erneut ai_kernel spread-remote",
+        "ok": true,
+        "pid": 61897,
+        "public_url": "https://vii-consumption-expansys-suggestion.trycloudflare.com",
+        "started_at_utc": "2026-06-06T13:39:56+00:00"
+      },
+      "tunnel_pid_alive": false,
+      "tunnel_token_set": false
+    }
+  },
+  "ok": false,
+  "public_base_url": "https://vii-consumption-expansys-suggestion.trycloudflare.com",
+  "stable": false,
+  "tunnel_token_set": false,
+  "updated_at_utc": "2026-06-06T15:44:50+00:00"
+}

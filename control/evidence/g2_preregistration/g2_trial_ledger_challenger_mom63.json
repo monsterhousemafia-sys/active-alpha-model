@@ -1,0 +1,33 @@
+{
+  "acceptance_criteria": [
+    "CHALLENGER_TURNOVER_VERIFIED",
+    "COST_STRESS_GATE pass at PLUS_25_BPS vs champion and M1",
+    "DSR probability >= 0.95 with preregistered trial count",
+    "ROBUSTNESS_EVIDENCE gate pass or documented fail-closed block"
+  ],
+  "champion_reference": "R5_rank_only_train5",
+  "control_reference": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "created_at_utc": "2026-05-31T19:43:43+00:00",
+  "created_before_execution": true,
+  "execution_authorized": false,
+  "g1_prerequisite": true,
+  "predefined_parameters": {
+    "calendar_alignment_min_observations": 200,
+    "cost_model": "trading212_us+fx_0bps+slippage_2bps",
+    "dsr_required_probability": 0.95,
+    "incremental_stress_bps": [
+      0,
+      10,
+      25,
+      50
+    ]
+  },
+  "primary_benchmark": "R5_rank_only_train5",
+  "reason_for_trial": "Pre-registered cost-stress, DSR, PBO/CSCV and robustness for MOM_63_TOP12 after G1 turnover artefacts exist.",
+  "schema_version": 1,
+  "secondary_benchmarks": [
+    "M1_MOM_BLEND_MATCHED_CONTROLS"
+  ],
+  "trial_id": "G2_MOM63_CHALLENGER_VS_CHAMPION_M1",
+  "variant": "MOM_63_TOP12"
+}

@@ -1,0 +1,32 @@
+schema_version: 1
+experiment_id: EXP_INITIAL_MOM_63_TOP12
+created_at_utc: '2026-05-30T19:36:50+00:00'
+hypothesis: Existing momentum challenger carried forward for evidence normalization
+  only.
+candidate_variant: MOM_63_TOP12
+champion_reference: R3_w075_q065_noexit
+control_reference: M1_MOM_BLEND_MATCHED_CONTROLS
+data_cutoff_utc: null
+feature_set_version: UNKNOWN
+cost_model_version: NOT_VALIDATED
+evaluation_protocol_version: EVIDENCE_V1
+source_classification: PREEXISTING_UNREVIEWED
+current_evidence_stage: BACKTESTED
+promotion_eligible: false
+paper_eligible: false
+real_money_eligible: false
+decision_status: RESEARCH_ONLY
+blockers:
+- COST_STRESS_NOT_EVALUATED
+- P9_NOT_EXTERNALLY_REVIEWED
+provenance:
+  source_files:
+  - control/auto_promotion_status.json
+  - model_output_sp500_pit_t212/background_research_status.json
+  source_hashes:
+    control/auto_promotion_status.json: e2901234d1f4bceb3606a55095da804c6baacc1a454c3342f394626dbff100e7
+    model_output_sp500_pit_t212/background_research_status.json: 2401c9cd2340d186c98eced96356315cd0c03dab41607c94c60c1df9b5a53d70
+notes:
+- Historical or pre-existing preparation evidence must not be interpreted as externally
+  reviewed forward readiness.
+updated_at_utc: '2026-05-30T19:36:50+00:00'

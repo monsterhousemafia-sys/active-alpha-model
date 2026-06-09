@@ -1,0 +1,68 @@
+{
+  "live_aa_universe": {
+    "module": "aa_universe._component_records_from_tables",
+    "fields_emitted": [
+      "ticker",
+      "source_symbol",
+      "company",
+      "source"
+    ],
+    "sector_gics_emitted": false,
+    "symbol_column_candidates": [
+      "symbol",
+      "ticker",
+      "ticker symbol"
+    ],
+    "company_column_candidates": [
+      "company name",
+      "name",
+      "security",
+      "company"
+    ],
+    "sector_column_candidates": []
+  },
+  "build_sp500_membership_wikipedia": {
+    "module": "build_sp500_membership_wikipedia.parse_current_constituents",
+    "fields_emitted": [
+      "ticker",
+      "company",
+      "sector",
+      "sub_industry",
+      "date_added_raw",
+      "source"
+    ],
+    "sector_gics_emitted": true,
+    "sector_column_candidates": [
+      "gics sector",
+      "sector (fallback find_col)"
+    ],
+    "sub_industry_column_candidates": [
+      "gics sub-industry"
+    ]
+  },
+  "alignment_gap": {
+    "summary_de": "Live-Universe-Fetch verwirft GICS; Build-Skript liest GICS Sector. Phase S2 muss _component_records_from_tables um sector_gics erweitern und save_universe_snapshot persistieren.",
+    "required_s2_fields": [
+      "sector_gics"
+    ],
+    "column_names_to_support": [
+      "GICS Sector",
+      "gics sector",
+      "Sector",
+      "GICS Sub-Industry",
+      "gics sub-industry"
+    ]
+  },
+  "universe_snapshot_current": {
+    "path": "universe_snapshots/sp500_latest.csv",
+    "columns_observed": [
+      "ticker",
+      "source_symbol",
+      "company",
+      "source",
+      "source_detail",
+      "fetched_at_utc"
+    ],
+    "has_sector_column": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "portfolio_identity_policy_version": "P16D",
+  "reference_portfolio_id": "REFERENCE_PORTFOLIO_8_POSITION_500_EUR",
+  "executable_portfolio_id": "PROVISIONAL_EXECUTABLE_PORTFOLIO_6_POSITION_500_EUR",
+  "option_a_new_8_position_portfolio": {
+    "trigger": "VUSD_and_SNDK_fully_validated",
+    "new_portfolio_id": "REFERENCE_PORTFOLIO_8_POSITION_500_EUR_V2",
+    "requires_new_forward_start": true
+  },
+  "option_b_continue_6_position": {
+    "trigger": "identity_or_currency_not_fully_validated",
+    "performance_classification": "LIMITED_EXECUTABLE_SUBSET_PERFORMANCE"
+  },
+  "reserved_cash_policy": "transparent_uninvested_cash_after_cost_adjusted_allocation",
+  "tracking_error_method": "absolute_eur_deviation_vs_reference_targets",
+  "no_retroactive_portfolio_identity_change": true
+}

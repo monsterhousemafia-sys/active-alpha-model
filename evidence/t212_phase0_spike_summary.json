@@ -1,0 +1,59 @@
+{
+  "artifacts": {
+    "decision_md": "E:\\active_alpha_model\\docs\\T212_QUOTE_SOURCE_DECISION.md",
+    "instruments": "E:\\active_alpha_model\\evidence\\t212_instruments_sample.json",
+    "positions": "E:\\active_alpha_model\\evidence\\t212_positions_sample.json"
+  },
+  "champion_instruments_matched": 13,
+  "champion_tickers_requested": [
+    "STX_US_EQ",
+    "WDC_US_EQ",
+    "INTC_US_EQ",
+    "CIEN_US_EQ",
+    "GOOGL_US_EQ",
+    "GOOG_US_EQ",
+    "AMD_US_EQ",
+    "CAT_US_EQ",
+    "ON_US_EQ",
+    "MU_US_EQ",
+    "VRT_US_EQ",
+    "TXN_US_EQ",
+    "OXY_US_EQ"
+  ],
+  "credential_profile": "CONFIRMED_EXECUTION",
+  "generated_at_utc": "2026-06-02T16:53:17+00:00",
+  "instruments_fetch_status": "OK",
+  "instruments_price_fields": [
+    {
+      "path": "[0].maxOpenQuantity",
+      "sample": 34899.0
+    },
+    {
+      "path": "[1].maxOpenQuantity",
+      "sample": 54071.0
+    },
+    {
+      "path": "[2].maxOpenQuantity",
+      "sample": 34585.0
+    }
+  ],
+  "instruments_total": 15609,
+  "positions_count": 0,
+  "positions_fetch_status": "OK",
+  "positions_price_unit_warnings": [],
+  "positions_pricing_summary": [],
+  "strategy": {
+    "instruments_usable_for_live_quote": false,
+    "notes_de": [
+      "Instrument-Metadaten für Champion-Ticker vorhanden, aber kein klares Live-Preisfeld — Felder in Sample prüfen.",
+      "metadata/instruments: nur Ticker/ISIN/Währung — alle 13 Champion-Ticker verifiziert, kein Live-Preis.",
+      "Offizielle Public API v0 dokumentiert kein REST /equity/quote; Stop-Orders referenzieren LTP intern.",
+      "metadata/instruments Rate-Limit: 1 req / 50s — Cache Pflicht."
+    ],
+    "official_rest_quote_endpoint": false,
+    "positions_usable_for_live_quote": false,
+    "primary_for_held_positions": "T212_POSITIONS_CURRENT_PRICE_FOR_HELD",
+    "primary_for_pre_buy_champion": "T212_METADATA_NO_PRICE_USE_YAHOO_VALIDATED",
+    "websocket_bid_ask_optional_phase": 4
+  }
+}

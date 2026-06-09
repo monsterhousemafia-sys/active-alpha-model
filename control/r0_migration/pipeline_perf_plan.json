@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "title": "Pipeline bottleneck elimination - numerically-neutral, validated against M1 reference",
+  "registered_at_utc": "2026-06-04T23:24:00+00:00",
+  "registered_by": "user directive: adapt pipelines so there is no more bottleneck",
+  "principle": "Time-axis path simulation stays mathematically serial (prev_weights + compounding equity dependency). We do NOT parallelize across time (would change numbers). Instead we shrink per-step cost and parallelize across variants. Every change MUST reproduce strategy_daily_returns.csv bit-identically vs the M1 reference before use.",
+  "hard_invariant": "strategy_daily_returns.csv MUST be byte/float-identical to full-mode M1 reference. Fail-closed: if it differs, the optimization is rejected.",
+  "diagnosis": {
+    "phase_a_ml": "already parallel (32 workers); not the bottleneck",
+    "phase_b_serial": "the bottleneck. Per-rebalance work = (A) constraint application -> executed weights (REQUIRED, affects returns, serially dependent on prev_weights) + (B) decision_rows + diagnostics (NOT affecting returns).",
+    "returns_source": "_accumulate_vectorized_period_returns + executed weights + tx_cost only"
+  },
+  "optimizations": [
+    {
+      "id": "returns_fast_path",
+      "status": "IMPLEMENTED",
+      "flag": "--returns-fast-path",
+      "change": "Skip decision_rows / weight_rows / portfolio_diagnostics overhead in Phase B; returns path unchanged.",
+      "validate": "bit-identical strategy_daily_returns.csv vs M1 reference before AA_POST_M1_PERF=1 in production"
+    },
+    {
+      "id": "path_sim_checkpoint",
+      "status": "IMPLEMENTED",
+      "flag": "--path-sim-checkpoint",
+      "change": "Save path_sim_checkpoint.pkl every 25 rebalances; resume after hang/kill.",
+      "validate": "resume produces identical CSV vs uninterrupted run"
+    },
+    {
+      "id": "shared_multivariant_harness",
+      "status": "PLANNED",
+      "change": "Load prices/features/returns once; fan out N variants across the idle cores instead of N independent processes each re-loading data.",
+      "biggest_win_for": "M3 tuning (many variants)",
+      "validate": "each variant's returns identical to its standalone run"
+    },
+    {
+      "id": "phase_b_micro_opts",
+      "status": "PLANNED",
+      "change": "Profile-driven numerically-neutral hot-loop cleanups (cache invariants, avoid per-rebalance rebuilds).",
+      "validate": "bit-identical returns"
+    }
+  ],
+  "gating": {
+    "do_not_edit_core_until_m1_m2_sealed": true,
+    "reference_returns_needed_first": "M1 sealed -> provides the per-variant reference CSVs to validate against",
+    "execution_order": ["M1 seal", "M2 seal", "implement optimizations", "validate bit-identical vs reference", "use for M3 / daily-alpha heavy runs"]
+  }
+}

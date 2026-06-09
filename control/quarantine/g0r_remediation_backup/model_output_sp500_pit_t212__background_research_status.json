@@ -1,0 +1,98 @@
+{
+  "auto_promotion": "DISABLED",
+  "best_research_candidate": {
+    "active": false,
+    "note": "Research candidate only — not promoted in P3.",
+    "sharpe_0rf": 1.011797,
+    "variant_id": "MOM_63_TOP12"
+  },
+  "challenger_variants_compared": 8,
+  "champion_variant_id": "R5_rank_only_train5",
+  "checked_variant_ids": [
+    "R0_LEGACY_ENSEMBLE",
+    "R5_rank_only_train5",
+    "M1_MOM_BLEND_MATCHED_CONTROLS",
+    "MOM_63_TOP12"
+  ],
+  "entries": [
+    {
+      "integrity_pass": true,
+      "is_active_champion": false,
+      "is_research_candidate": true,
+      "metrics": {
+        "annual_vol": 0.20611463973376845,
+        "cagr": 0.19886060836438446,
+        "daily_hit_rate": 0.553763440860215,
+        "max_drawdown": -0.2408384910599507,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9835553716218849,
+        "total_return": 2.814063806818209
+      },
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R0_LEGACY_ENSEMBLE",
+      "status": "PASS",
+      "variant_id": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "integrity_pass": true,
+      "is_active_champion": true,
+      "is_research_candidate": false,
+      "metrics": {
+        "annual_vol": 0.29890165388996914,
+        "cagr": 0.24525625702147913,
+        "daily_hit_rate": 0.5195918367346939,
+        "max_drawdown": -0.5436688199844164,
+        "n_days": 2450,
+        "sharpe_0rf": 0.8833124373370502,
+        "total_return": 7.435805676683101
+      },
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260531T163000Z_R5_rank_only_train5",
+      "status": "PASS",
+      "variant_id": "R5_rank_only_train5"
+    },
+    {
+      "integrity_pass": true,
+      "is_active_champion": false,
+      "is_research_candidate": true,
+      "metrics": {
+        "annual_vol": 0.20611769628565293,
+        "cagr": 0.19882328332198096,
+        "daily_hit_rate": 0.553763440860215,
+        "max_drawdown": -0.2408384910599507,
+        "n_days": 1860,
+        "sharpe_0rf": 0.983392657770786,
+        "total_return": 2.8131874341228964
+      },
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS",
+      "status": "PASS",
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "integrity_pass": true,
+      "is_active_champion": false,
+      "is_research_candidate": true,
+      "metrics": {
+        "cagr": 0.208006,
+        "information_ratio": -0.14674,
+        "max_drawdown": -0.252272,
+        "sharpe_0rf": 1.011797
+      },
+      "note": "Embedded matched-control reference from M1 backtest_report (not a separate walk-forward run).",
+      "reference_source": "E:\\active_alpha_model\\validation_runs\\20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS",
+      "reference_type": "M1_EMBEDDED_CONTROL",
+      "status": "PASS",
+      "variant_id": "MOM_63_TOP12"
+    }
+  ],
+  "last_comparison_run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R0_LEGACY_ENSEMBLE",
+  "m1_comparison": {
+    "champion_sharpe": 0.8833124373370502,
+    "champion_vs_m1_sharpe_delta": -0.10008022043373577,
+    "m1_sharpe": 0.983392657770786
+  },
+  "promotion_status": "BLOCKED",
+  "research_status": "PASS",
+  "updated_at_utc": "2026-05-31T17:21:06+00:00",
+  "variants_checked": 4,
+  "variants_fail": 0,
+  "variants_pass": 4
+}

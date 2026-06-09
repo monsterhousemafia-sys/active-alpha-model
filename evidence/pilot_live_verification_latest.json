@@ -1,0 +1,86 @@
+{
+  "generated_at_utc": "2026-06-01T23:58:25+00:00",
+  "pilot_day1_ready": false,
+  "pilot_operational_without_t212": false,
+  "overall_pass": false,
+  "blockers": [
+    "exe_function_matrix"
+  ],
+  "steps": [
+    {
+      "name": "governance",
+      "pass": true,
+      "flags": {
+        "auto_research_enabled": false,
+        "auto_promote_paper_enabled": false,
+        "auto_promote_signal_enabled": false,
+        "auto_execute_real_money_enabled": false
+      },
+      "p17_review_mode": false,
+      "pilot_live_trading": true,
+      "active_champion": "R3_w075_q065_noexit",
+      "reason": null
+    },
+    {
+      "name": "exe_integrity",
+      "pass": true,
+      "sha256": "b4f1a6ef31062d04130aba26034f06899bc88d2247c58ad6409bab574b35dc4f",
+      "hash_sidecar_match": true,
+      "authenticode": {
+        "platform": "win32",
+        "signed": false,
+        "status": "NotSigned"
+      },
+      "exe_exists": true
+    },
+    {
+      "name": "pilot_500eur_config",
+      "pass": true,
+      "initial_capital_eur": 500.0,
+      "allocation_config": "paper/config/p16c_cost_adjusted_initial_allocation_500eur.json",
+      "gap_targets_config": "paper/config/pilot_gap_targets_eur.json"
+    },
+    {
+      "name": "market_data",
+      "pass": true,
+      "freshness_status": "FRESH",
+      "calculation_allowed": true,
+      "symbol_count": 6,
+      "reason": "Live-Preise aktuell — Berechnung freigegeben."
+    },
+    {
+      "name": "t212_live",
+      "pass": true,
+      "mode": "live_sync",
+      "status": "LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE",
+      "cash_eur": 444.02,
+      "positions_count": 1,
+      "last_sync_utc": "2026-06-01T23:50:15+00:00",
+      "last_error": null
+    },
+    {
+      "name": "learning_capture",
+      "pass": true,
+      "learning_collection_active": true,
+      "learning_healthy": true,
+      "capture_errors": [],
+      "intraday_rows": 114,
+      "eod_rows": 888
+    },
+    {
+      "name": "learning_eod_task",
+      "pass": true,
+      "task_name": "Marktanalyse Learning EOD Catchup",
+      "scheduled_time_local": "22:15",
+      "registered": true
+    },
+    {
+      "name": "exe_function_matrix",
+      "pass": false,
+      "total": null,
+      "passed": null,
+      "exit_code": 1
+    }
+  ],
+  "next_actions": []
+}

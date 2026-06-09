@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "min_trade_eur": 12.0,
+  "min_investable_eur_initial": 50.0,
+  "min_drift_pct_rebalance": 4.0,
+  "max_single_buy_pct": 0.12,
+  "execution_source": "pilot_investment_plan",
+  "evidence_ref": "evidence/r3_trading_functions_latest.json"
+}

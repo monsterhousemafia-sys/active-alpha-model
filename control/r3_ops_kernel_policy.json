@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "title": "R3 Ops Kernel — harmonisierte Orchestrierung und Schnittstellen",
+  "sync_owner_default": "r3_ops_kernel",
+  "evidence_ref": "evidence/r3_ops_latest.json",
+  "interfaces": {
+    "live_basis": "analytics.t212_live_portfolio_basis.build_plan_on_live_basis",
+    "capital": "analytics.r3_live_capital.compute_worthwhile_positions",
+    "prognosis": "analytics.r3_prognosis_pipeline.ensure_r3_prognosis_fresh",
+    "quotes": "analytics.r3_quote_keepalive.tick_quote_keepalive",
+    "cycle": "analytics.r3_trading_cycle.run_trading_cycle",
+    "surface": "analytics.r3_full_refresh.run_r3_full_refresh",
+    "reeval_policy": "analytics.pilot_portfolio_reevaluation.load_policy"
+  },
+  "phases": {
+    "pre_us": {
+      "steps": ["quotes", "signal_check", "capital", "prognosis", "top_picks", "gui_light"],
+      "description_de": "Vor US-Open: Kurse, Signal, Kapital, Freigabe vorbereiten"
+    },
+    "intraday": {
+      "steps": ["quotes", "cycle_status", "prognosis_if_stale"],
+      "description_de": "Handelstag: Kurse, Kreislauf-Status, stale Prognose"
+    },
+    "eod": {
+      "steps": ["eod_signal", "capital", "prognosis", "postmortem", "learning_capture"],
+      "description_de": "Nach Close: Signal, Kapital, Prognose, Bilanz, Learning"
+    },
+    "full": {
+      "steps": [
+        "quotes",
+        "daytrading_snapshot",
+        "signal_check",
+        "capital",
+        "prognosis",
+        "top_picks",
+        "cycle",
+        "gui_full",
+        "learning_capture"
+      ],
+      "description_de": "Vollständiger Tages-Durchlauf"
+    },
+    "data_care": {
+      "steps": ["quotes", "daytrading_snapshot", "cycle", "learning_capture"],
+      "description_de": "Daytrading-Datenpflege (ohne Doppel-Kreislauf)"
+    },
+    "prognosis_run": {
+      "steps": ["capital", "prognosis", "top_picks", "gui_light"],
+      "description_de": "Prognose-Freischaltung (king_ops prognosis run)"
+    },
+    "surface_data": {
+      "steps": ["quotes", "daytrading_snapshot"],
+      "description_de": "Leichte Datenpflege für r3-aktuell (ohne Kreislauf-Doppelung)"
+    }
+  },
+  "automation": {
+    "max_top_picks": 12,
+    "min_priority_score": 8.0
+  },
+  "governance": {
+    "auto_execute_real_money_enabled": false,
+    "orders_require_gui_confirmation": true
+  },
+  "bash_entry_de": "bash tools/king_ops.sh daily-alpha [pre-us|intraday|eod|full|data-care]"
+}

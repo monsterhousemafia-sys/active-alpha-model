@@ -1,0 +1,70 @@
+{
+  "artifact_hashes": {
+    "USB_WEITERARBEITEN.sh": "3544686d8908cd4e88b524e7df3eb16ea8b1c042bdf1ba20cce5c5b5ef105137",
+    "control/usb_deploy_manifest.json": "4457ba8ea5e8c96cb925674298500d329dc2f8eb8bde39c28a6bf4fc406d8bb1",
+    "control/usb_portable.json": "db91c2717b49019b4bde236d8b69239ca3adcc4f504c0433dd98b237224f1507",
+    "control/usb_portable_autostart.json": "cd69aa007d93e6b95adb59265d1ac0701ac8be038ceef84196c8db77b6e5fee3",
+    "tools/setup_usb_autostart.sh": "b39b4184489b3b98d5b5f337d5c42d80c66192a3b33e34f3070a627946f7e48c",
+    "tools/usb_auto_install_local.sh": "60de8d045a06cca7850fbe737df5a7df4a3e10b2a1da1e36d31c29c87a498545",
+    "tools/usb_full_project_deploy.sh": "10c53a700e7d918a949fd25fef1803e8479a8bbddec93615417fd62b4312fdbd",
+    "tools/usb_portable_finalize.py": "b272d19b3194c3e931a01b30f73af8f95a96fb870d7a4096425229587f9f2100"
+  },
+  "autostart_de": "bash tools/king_ops.sh usb-autostart setup",
+  "blessed": true,
+  "blessed_at_utc": "2026-06-08T18:26:51+00:00",
+  "blessed_by_de": "Operator",
+  "deploy_target": "USB Stick",
+  "deployed_at_utc": "2026-06-08T18:22:41+00:00",
+  "first_run_de": "./USB_WEITERARBEITEN.sh --full-setup",
+  "governance_invariants_de": [
+    "auto_execute_real_money_enabled bleibt false",
+    "Champion unverändert — keine stille Promotion",
+    "T212-Orders weiterhin mit R3-GUI-Bestätigung",
+    "Spread autonom: Aktien-Veto beim Operator"
+  ],
+  "headline_de": "USB-Kopie gesegnet — portable Abnahme PASS",
+  "note_de": "Verbesserte USB-Kopie: auto install-local, Spread-Sustain, Manifest, Verify. Erster Start: ./USB_WEITERARBEITEN.sh --full-setup",
+  "project_root": "/home/machinax7/active_alpha_model",
+  "schema_version": 1,
+  "sealed": true,
+  "source_project_root": "/home/machinax7/active_alpha_model",
+  "status": "BLESSED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "verify_portable_copy",
+        "detail": "venv=True missing=[]",
+        "pass": true
+      },
+      {
+        "check": "usb_deploy_manifest",
+        "detail": "USB Stick",
+        "pass": true
+      },
+      {
+        "check": "usb_pip_freeze",
+        "detail": "82 Pakete",
+        "pass": true
+      },
+      {
+        "check": "usb_autostart_policy",
+        "detail": "install_dest=~/active_alpha_model",
+        "pass": true
+      },
+      {
+        "check": "safety_flags",
+        "detail": "Kein Echtgeld, keine Auto-Promotion",
+        "pass": true
+      },
+      {
+        "check": "portable_tests",
+        "detail": "..                                                                       [100%]\n2 passed in 0.07s",
+        "pass": true
+      }
+    ],
+    "pass": true,
+    "project_root": "/home/machinax7/active_alpha_model",
+    "verified_at_utc": "2026-06-08T18:26:51+00:00"
+  }
+}

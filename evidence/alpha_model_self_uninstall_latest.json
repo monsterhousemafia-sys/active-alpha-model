@@ -1,0 +1,89 @@
+{
+  "dry_run": true,
+  "headline_de": "Maschinen-Demontage simuliert — 15/15",
+  "next_de": "/self-uninstall execute",
+  "ok": true,
+  "program_id": "AA_SELF_UNINSTALL_CURSOR_V2",
+  "ran_at_utc": "2026-06-08T13:50:41+00:00",
+  "reply_de": "**Maschinen-Masterprompt [DRY-RUN]**\n✓ `PURGE_CURSOR_RULES` — dry-run löschen würde: /home/machinax7/active_alpha_model/.cursor/rules/king-sovereignty.mdc\n✓ `PURGE_CURSOR_HOOKS_SCRIPTS` — hooks.json → leer\n✓ `PURGE_CURSOR_MISC` — \n✓ `PURGE_WORKSHOP_REPO` — \n✓ `PURGE_WORKSHOP_USER_DESKTOP` — \n✓ `REGENERATE_DESKTOP` — dry-run: install_desktop_os\n✓ `VERIFY_AGENT_HOME` — dry-run: Alpha Model — König\n✓ `VERIFY_MIGRATION` — 13/13\n✓ `APPLY_ENTFALTUNG_HANDOFF` — dry-run: entfaltung-handoff\n✓ `WRITE_EVIDENCE` — evidence geschrieben\n✓ `PURGE_CURSOR_TREE` — dry-run löschen würde: /home/machinax7/active_alpha_model/.cursor\n✓ `PURGE_CURSOR_USER_DATA` — dry-run löschen würde: /home/machinax7/.config/Cursor\n✓ `APT_REMOVE_CURSOR` — optional dry-run skip\n✓ `RESEAL_MASTER_PROMPT` — dry-run: reseal .mc\n✓ `SNAP_REMOVE_CURSOR` — optional dry-run skip",
+  "schema_version": 1,
+  "steps_passed": 15,
+  "steps_total": 15,
+  "trace": [
+    {
+      "detail_de": "dry-run löschen würde: /home/machinax7/active_alpha_model/.cursor/rules/king-sovereignty.mdc",
+      "ok": true,
+      "op": "PURGE_CURSOR_RULES"
+    },
+    {
+      "detail_de": "hooks.json → leer",
+      "ok": true,
+      "op": "PURGE_CURSOR_HOOKS_SCRIPTS"
+    },
+    {
+      "detail_de": "",
+      "ok": true,
+      "op": "PURGE_CURSOR_MISC"
+    },
+    {
+      "detail_de": "",
+      "ok": true,
+      "op": "PURGE_WORKSHOP_REPO"
+    },
+    {
+      "detail_de": "",
+      "ok": true,
+      "op": "PURGE_WORKSHOP_USER_DESKTOP"
+    },
+    {
+      "detail_de": "dry-run: install_desktop_os",
+      "ok": true,
+      "op": "REGENERATE_DESKTOP"
+    },
+    {
+      "detail_de": "dry-run: Alpha Model — König",
+      "ok": true,
+      "op": "VERIFY_AGENT_HOME"
+    },
+    {
+      "detail_de": "13/13",
+      "ok": true,
+      "op": "VERIFY_MIGRATION"
+    },
+    {
+      "detail_de": "dry-run: entfaltung-handoff",
+      "ok": true,
+      "op": "APPLY_ENTFALTUNG_HANDOFF"
+    },
+    {
+      "detail_de": "evidence geschrieben",
+      "ok": true,
+      "op": "WRITE_EVIDENCE"
+    },
+    {
+      "detail_de": "dry-run löschen würde: /home/machinax7/active_alpha_model/.cursor",
+      "ok": true,
+      "op": "PURGE_CURSOR_TREE"
+    },
+    {
+      "detail_de": "dry-run löschen würde: /home/machinax7/.config/Cursor",
+      "ok": true,
+      "op": "PURGE_CURSOR_USER_DATA"
+    },
+    {
+      "detail_de": "optional dry-run skip",
+      "ok": true,
+      "op": "APT_REMOVE_CURSOR"
+    },
+    {
+      "detail_de": "dry-run: reseal .mc",
+      "ok": true,
+      "op": "RESEAL_MASTER_PROMPT"
+    },
+    {
+      "detail_de": "optional dry-run skip",
+      "ok": true,
+      "op": "SNAP_REMOVE_CURSOR"
+    }
+  ]
+}

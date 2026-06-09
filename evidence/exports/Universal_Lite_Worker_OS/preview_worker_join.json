@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "role": "ulwo_worker",
+  "hub_join_url": "http://127.0.0.1:17890",
+  "join_token": "5cc9e36934b54b83a874ab3cff395388",
+  "auto_start": true,
+  "auto_start_de": "./ACTIVE_ALPHA_WORKER_START.sh",
+  "king_hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+  "worker_interval_s": 120,
+  "worker_preview_on_heartbeat": false,
+  "exported_at_utc": "2026-06-08T14:10:33+00:00",
+  "note_de": "Worker-Bundle — cd <ordner> && ./ACTIVE_ALPHA_WORKER_START.sh",
+  "product": "Universal Lite Worker OS"
+}

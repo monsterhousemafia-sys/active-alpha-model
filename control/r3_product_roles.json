@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "r3_de": {
+    "role": "Zentrale Handelsplattform",
+    "delivers_de": "Präsentiert Handelsergebnisse und führt als einzige Oberfläche T212-Orders aus (GUI-Bestätigung)",
+    "order_execution_de": "Einzig erlaubte Order-Ausführung — Order-Desk, Cockpit, bestätigter Klick",
+    "surfaces_de": ["Hub /desktop", "Qt-Cockpit", "Order-Desk mit Bestätigung"],
+    "browser_mode_de": "Lokaler Browser — Marktdaten aus dem Internet (Pflicht), Ergebnis vom Alpha Model",
+    "internet_required_de": true,
+    "presentation_only_de": "Keine Trainings-UI — nur Ergebnisse",
+    "trading_functions_de": [
+      "initial_order — Initial Bestellung aufgeben (Depot leer)",
+      "rebalance_notice — Meldung wenn Umschichtung notwendig",
+      "sell_notice — Meldung wenn Verkauf notwendig"
+    ],
+    "trading_functions_policy_ref": "control/r3_trading_functions_policy.json",
+    "not_de": "Kein Ubuntu-Ersatz — Dateien, Terminal, WLAN, Ton etc. bleiben bei Ubuntu",
+    "scope_de": "Nur KI-Aktienprognosen und tägliches Lernen aus Kursen"
+  },
+  "active_alpha_model_de": {
+    "role": "Algorithmus",
+    "delivers_de": "Rechnet mit R3 investierbar — Signal, Zielgewichte, Rebalance-Plan (keine Orders)",
+    "cash_source_de": "evidence/r3_t212_api_bond_latest.json — geschlossener Kreislauf",
+    "internet_required_de": true,
+    "forbidden_de": ["order_execution", "broker_orders", "auto_execute_rebalance", "eigener_kontostand_sync"],
+    "schedule_de": "Täglich (EOD) — Ergebnis erscheint auf R3",
+    "visibility_de": "Nicht in der Operator-Hauptansicht — nur Ergebnis auf R3 sichtbar",
+    "forbidden_as_product_label": true
+  },
+  "trading_cycle_ref": "control/r3_trading_cycle_policy.json",
+  "trading_cycle_de": "Internet → Konto R3 → Kurse → Modell → Plan → Anzeige → Orders (nur R3)",
+  "broker_de": "Trading212 (T212)",
+  "portfolio_artifact": "model_output_sp500_pit_t212/latest_target_portfolio.csv",
+  "readiness_artifact": "control/prediction_readiness.json",
+  "plan_artifact": "evidence/pilot_investment_plan_latest.json"
+}

@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "ran_at_utc": "2026-06-08T13:50:39+00:00",
+  "tier": {
+    "build_32b_active": true,
+    "build_pick": {
+      "model": "qwen2.5-coder:32b",
+      "num_ctx": 8192,
+      "preferred": "qwen2.5-coder:32b",
+      "role": "build_kernel",
+      "role_de": "Code schreiben/testen"
+    },
+    "chat_32b_active": true,
+    "chat_pick": {
+      "model": "qwen2.5-coder:32b",
+      "num_ctx": 8192,
+      "preferred": "qwen2.5-coder:32b",
+      "role": "chat",
+      "role_de": "Lokaler Chat + Kontext"
+    },
+    "headline_de": "Coder-32B — Forschungsprojekt-Bestandteil, wächst mit Evidence",
+    "ideal_build_model": "qwen2.5-coder:32b",
+    "ideal_chat_model": "qwen2.5-coder:32b",
+    "missing_models": [
+      "qwen2.5-coder:32b",
+      "qwen2.5-coder:7b",
+      "qwen2.5:7b"
+    ],
+    "operator_hints_de": [
+      "Operativ → Slash oder ai_kernel.py",
+      "Code → /bau",
+      "H1 → /h1-benchmark · /h1-watch · /könig-puls"
+    ],
+    "resolved_build_model": "qwen2.5-coder:32b",
+    "resolved_chat_model": "qwen2.5-coder:32b",
+    "setup_command": "bash tools/setup_ideal_32b.sh",
+    "tier_de": "Ideal-32B — RTX 3090",
+    "tier_id": "ideal_32b",
+    "tier_ready": false
+  }
+}

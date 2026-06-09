@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "title_de": "Linux-Operator-Scope — Auto (Active Alpha)",
+  "approved_at_utc": "2026-06-06T12:35:00+00:00",
+  "approved_by": "user",
+  "approved_levels": ["A", "B", "C", "D"],
+  "max_level": "D",
+  "agent_name": "Auto",
+  "principle_de": "Auto operiert Active Alpha auf Ubuntu — kein Root-Autotrader, keine Live-Orders ohne GUI. Souveränität: nur der Benutzer (natürliche Sprache) autorisiert privilegierte Eingriffe; systemd/Cron/Roh-Terminal sind fail-closed.",
+  "sovereignty_policy": "control/operator_sovereignty_policy.json",
+  "levels": {
+    "A": {
+      "id": "A",
+      "label_de": "App-Ebene",
+      "autonomous": true,
+      "capabilities": [
+        "ai_kernel_cli",
+        "repo_code_changes",
+        "dashboard_launch",
+        "backtests_via_kernel",
+        "evidence_writes",
+        "activity_log"
+      ],
+      "commands": [
+        "python3 tools/ai_kernel.py status",
+        "python3 tools/ai_kernel.py learn",
+        "python3 tools/ai_kernel.py evolve",
+        "python3 tools/ai_kernel.py warnings",
+        "bash run_marktanalyse_linux.sh"
+      ]
+    },
+    "B": {
+      "id": "B",
+      "label_de": "User-Services",
+      "autonomous": true,
+      "capabilities": [
+        "systemd_user_timers",
+        "xdg_autostart",
+        "background_h1_backtest",
+        "log_tail_evidence"
+      ],
+      "commands": [
+        "python3 tools/ai_kernel.py timers",
+        "python3 tools/ai_kernel.py autostart",
+        "python3 tools/ai_kernel.py refresh",
+        "python3 tools/ai_kernel.py h1"
+      ]
+    },
+    "C": {
+      "id": "C",
+      "label_de": "Wartung",
+      "autonomous": true,
+      "capabilities": [
+        "venv_setup",
+        "nvme_symlink_repair",
+        "batch_lock_cleanup",
+        "stale_state_refresh",
+        "kernel_ready_tests"
+      ],
+      "commands": [
+        "python3 tools/ai_kernel.py setup",
+        "python3 tools/ai_kernel.py maintain",
+        "python3 tools/ai_kernel.py nvme-setup",
+        "python3 tools/ai_kernel.py storage"
+      ]
+    },
+    "D": {
+      "id": "D",
+      "label_de": "System (mit Freigabe)",
+      "autonomous": false,
+      "requires_explicit_approval_each_action": true,
+      "capabilities": [
+        "apt_install_project_deps",
+        "system_reboot_when_user_asked",
+        "nvme_mount_relink",
+        "firewall_read_only"
+      ],
+      "forbidden_even_with_d": [
+        "live_orders_without_gui",
+        "auto_execute_real_money",
+        "champion_auto_promotion",
+        "credential_exfiltration",
+        "disable_review_mode_silently"
+      ],
+      "commands": [
+        "python3 tools/ai_kernel.py system --approve apt",
+        "python3 tools/ai_kernel.py system --approve reboot",
+        "python3 tools/ai_kernel.py system --approve nvme"
+      ]
+    }
+  },
+  "always_forbidden": [
+    "place_live_orders_without_user",
+    "auto_execute_real_money",
+    "auto_promote_champion",
+    "auto_model_training_without_seal",
+    "rennwagen_auto_execute"
+  ],
+  "evidence_file": "evidence/linux_operator_actions.jsonl"
+}

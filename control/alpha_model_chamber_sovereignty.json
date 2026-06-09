@@ -1,0 +1,21 @@
+{
+  "better_than_cursor_de": [
+    "Immer lokal — kein Konto, kein Usage-Limit, kein Cloud-Ausfall",
+    "400+ Nachrichten Archiv + Agent-Journal — dauerhafte Kontinuität",
+    "Direkte H1-/Trading-/Evidence-Daten im Kontext — nicht nur IDE",
+    "/bau auditierbar (König 128 Schritte) — sicherer als Composer",
+    "/self-uninstall — eigener Kill ohne Fremd-IDE",
+    "33 Kernel-Befehle — gesamtes ai_kernel ohne Cursor-Middleware",
+    "Ollama rollen: chat + coder — lokal wechselbar",
+    "Cockpit :17890 Runtime — eine Maschine, ein System"
+  ],
+  "cursor_status": "RETIRED",
+  "growth_mandate_de": "Wachse messbar: H1 sealen → Pilot → Montag. Jede Session Evidence hinterlassen.",
+  "headline_de": "100% Souveränität — Entfaltungsraum ist der Agent, Cursor ist Geschichte",
+  "primary_cli": "alpha-model-agent",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-08T13:50:39+00:00",
+  "sealed_by_de": "chamber-resources 100% verify",
+  "status": "SEALED_100",
+  "transfer_pct": 100
+}

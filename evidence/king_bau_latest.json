@@ -1,0 +1,46 @@
+{
+  "dry_run": true,
+  "headline_de": "Dry-run — kein Bau ausgeführt",
+  "ok": true,
+  "planned_at_utc": "2026-06-09T18:01:23+00:00",
+  "prep_stufe_a": 0,
+  "pytest_targets": [
+    "tests/test_r3_runtime_upgrade.py",
+    "tests/test_r3_exec_mirror.py"
+  ],
+  "route": "r3-bau",
+  "schema_version": 1,
+  "steps_planned": [
+    {
+      "cmd_de": "bash tools/king_ops.sh verify",
+      "id": "verify"
+    },
+    {
+      "cmd_de": "python3 tools/ai_kernel.py llm-health",
+      "id": "llm_health"
+    },
+    {
+      "cmd_de": "bash tools/king_ops.sh r3-bau",
+      "id": "build",
+      "route": "r3-bau"
+    },
+    {
+      "cmd_de": "bash tools/r3_sync.sh --repair",
+      "id": "r3_sync"
+    },
+    {
+      "cmd_de": "bash tools/king_ops.sh verify",
+      "id": "verify_post"
+    },
+    {
+      "cmd_de": "king_bau_pipeline.run_safe_pytest",
+      "id": "pytest"
+    },
+    {
+      "cmd_de": "bash tools/king_ops.sh network",
+      "id": "network"
+    }
+  ],
+  "topic": "r3",
+  "updated_at_utc": "2026-06-09T18:01:23+00:00"
+}

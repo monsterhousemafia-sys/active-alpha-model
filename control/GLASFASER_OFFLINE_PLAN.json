@@ -1,0 +1,63 @@
+{
+  "one_liner_de": "Vor Offline: stabiler Tunnel + Autostart + ZIP-Backup · Während Offline: kein Forum · Nach Online: Repair + Health + Launch",
+  "phases": [
+    {
+      "actions_de": [
+        "bash tools/setup_cloudflare_tunnel_token.sh (einmalig, stabile URL)",
+        "bash tools/king_ops.sh r3-stealth",
+        "bash tools/king_ops.sh community-spread --repair",
+        "bash tools/install_remote_systemd.sh",
+        "ZIP-Backup: evidence/glasfaser_offline/worker_LITE_backup.zip"
+      ],
+      "gates": [
+        "tunnel_token_set",
+        "session_autostart",
+        "worker_export_ready",
+        "zip_backup",
+        "community_spread_ready",
+        "remote_systemd"
+      ],
+      "id": "before_offline",
+      "label_de": "Jetzt — vor Offline (Glasfaser-Umzug)",
+      "operator_note_de": "Quick-Tunnel-URLs sterben bei Neustart — Token-Pflicht vor Glasfaser-Cutover.",
+      "status": "done"
+    },
+    {
+      "actions_de": [
+        "Kein Post auf r/selfhosted / r/linux",
+        "Worker warten — König-Host ist absichtlich offline",
+        "ZIP-Backup auf USB/Cloud behalten"
+      ],
+      "gates": [
+        "offline_ack"
+      ],
+      "id": "during_offline",
+      "label_de": "Während Offline — kein öffentlicher Launch",
+      "operator_note_de": "PC aus oder ohne Internet — Federation pausiert, kein Echtgeld-Risiko.",
+      "status": "done"
+    },
+    {
+      "actions_de": [
+        "bash tools/king_ops.sh glasfaser --comeback --repair",
+        "curl -fsS <share_url>/api/health (von außen testen)",
+        "cat evidence/community_spread_forum_de.txt",
+        "Dann: r/selfhosted + r/linux"
+      ],
+      "gates": [
+        "hub_healthy",
+        "remote_health_ok",
+        "community_spread_ready",
+        "forum_draft_synced",
+        "comeback_ack"
+      ],
+      "id": "after_online",
+      "label_de": "Nach Online — Comeback + Forum",
+      "operator_note_de": "Erst posten wenn Health-Check von außen grün ist.",
+      "status": "active"
+    }
+  ],
+  "schema_version": 1,
+  "timezone": "Europe/Berlin",
+  "title_de": "Glasfaser-Umzug — Community-Ausbreitung offline-sicher",
+  "updated_at_utc": "2026-06-08T11:34:14+00:00"
+}

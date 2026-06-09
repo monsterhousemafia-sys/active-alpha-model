@@ -1,0 +1,72 @@
+{
+  "generated_at_utc": "2026-06-03T20:53:56+00:00",
+  "overall_pass": true,
+  "pytest": {
+    "ok": true,
+    "skipped": true
+  },
+  "dry_run": {
+    "ok": true,
+    "aa_execution_dry_run": true,
+    "planning_cash_eur": 492.0,
+    "raw_buy_total_eur": 470.0,
+    "scaled_buy_total_eur": 469.98,
+    "scale_factor": 1.0,
+    "orders_after_wave": 14,
+    "quote_coverage": {
+      "ok": true,
+      "coverage": {
+        "required_count": 14,
+        "covered_count": 14,
+        "missing_symbols": [],
+        "coverage_ok": true,
+        "coverage_ratio": 1.0
+      },
+      "quote_coverage_label_de": "14/14 Kurse OK",
+      "message_de": "14/14 Kurse OK",
+      "blocks": [],
+      "quote_snapshot_utc": "2026-06-03T20:53:56+00:00",
+      "price_source_by_symbol": {
+        "STX": "YAHOO_VALIDATED",
+        "WDC": "YAHOO_VALIDATED",
+        "SNDK": "YAHOO_VALIDATED",
+        "INTC": "YAHOO_VALIDATED",
+        "CIEN": "YAHOO_VALIDATED",
+        "GOOGL": "YAHOO_VALIDATED",
+        "GOOG": "YAHOO_VALIDATED",
+        "AMD": "YAHOO_VALIDATED",
+        "CAT": "YAHOO_VALIDATED",
+        "ON": "YAHOO_VALIDATED",
+        "MU": "YAHOO_VALIDATED",
+        "VRT": "YAHOO_VALIDATED",
+        "TXN": "YAHOO_VALIDATED",
+        "OXY": "YAHOO_VALIDATED"
+      }
+    },
+    "quote_coverage_label_de": "14/14 Kurse OK",
+    "cash_cap_ok": true,
+    "simulated_submissions": 14,
+    "note_de": "Dry-run: keine T212-POSTs; AA_EXECUTION_DRY_RUN=1 für echte Ausführungsschicht."
+  },
+  "exe": {
+    "exe_path": "E:\\active_alpha_model\\Marktanalyse.exe",
+    "exists": true,
+    "sha256": "0b4624524e9df214975cce8575b696196466693176418f5f23459c721b0960fe",
+    "sidecar_path": "E:\\active_alpha_model\\Marktanalyse.exe.sha256",
+    "integrity": {
+      "ok": true,
+      "actual_sha256": "0b4624524e9df214975cce8575b696196466693176418f5f23459c721b0960fe",
+      "recorded_sha256": "0b4624524e9df214975cce8575b696196466693176418f5f23459c721b0960fe",
+      "reason": null
+    },
+    "ok": true,
+    "message_de": "Marktanalyse.exe vorhanden und Hash konsistent."
+  },
+  "live_trading_operations_evidence": "E:\\active_alpha_model\\evidence\\live_trading_operations_latest.json",
+  "acceptance": {
+    "quote_coverage_full_champion_dry_run": true,
+    "cash_wave_cap": true,
+    "pytest_green": true,
+    "exe_built": true
+  }
+}

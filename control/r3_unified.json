@@ -1,0 +1,69 @@
+{
+  "auto_route_freetext": true,
+  "build_strong_verbs": [
+    "implementier",
+    "baue",
+    "bau ",
+    "erstelle",
+    "erstell",
+    "fixe",
+    "fix ",
+    "refactor",
+    "schreib ",
+    "füge hinzu",
+    "fuege hinzu",
+    "ergänze",
+    "ergaenze",
+    "umsetz"
+  ],
+  "default_pipeline": [
+    "kombi",
+    "prognose",
+    "status_hint"
+  ],
+  "headline_de": "Ein Werkzeug — Trading-ML, lokale KI, R3 Desktop",
+  "name_de": "R3 Power",
+  "power_modules": [
+    {
+      "id": "ml",
+      "label_de": "DAILY_ALPHA_H1",
+      "route": "prognose"
+    },
+    {
+      "id": "ollama",
+      "label_de": "Ollama Kernel",
+      "route": "chat"
+    },
+    {
+      "id": "cloud",
+      "label_de": "Cloud-Berater",
+      "route": "kombi"
+    },
+    {
+      "id": "build",
+      "label_de": "Bau-Kernel",
+      "route": "beitrag"
+    },
+    {
+      "id": "pilot",
+      "label_de": "Pilot-Zentrale",
+      "route": "pilot"
+    },
+    {
+      "id": "evidence",
+      "label_de": "Evidence + Speicher",
+      "route": "storage"
+    }
+  ],
+  "schema_version": 1,
+  "status_verbs": [
+    "status",
+    "warnung",
+    "warnings",
+    "bereit",
+    "ready",
+    "h1 ",
+    "cockpit"
+  ],
+  "tagline_de": "R3 KI lokal = Gespräch · Cockpit = System · Cursor IDE = optional"
+}

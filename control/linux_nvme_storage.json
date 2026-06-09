@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "mount_candidates": [
+    "/run/media/machinax7/7C1A99BE1A9975BC",
+    "/mnt/active-alpha-nvme"
+  ],
+  "data_subdir": "active_alpha_fast_data",
+  "migrate_dirs": [
+    "validation_runs",
+    "validation_runs_superseded",
+    "robustness_results_trading212",
+    "runs",
+    "build",
+    "model_output_sp500_pit_t212"
+  ],
+  "shared_cache_subdir": "shared_cache",
+  "constant_storage": {
+    "priority": "high",
+    "tmpdir_subdir": "tmp",
+    "scratch_subdir": "scratch",
+    "env_dirs": {
+      "AA_KERNEL_STORE": "kernel_store",
+      "AA_OLLAMA_WORKSPACE": "ollama_workspace",
+      "AA_H1_FAST_STORE": "h1_fast_store"
+    },
+    "note_de": "Konstanter Hochprioritäts-Tier — Kernel, König-32B, H1-Scratch auf NVMe"
+  },
+  "note_de": "Große Archive und Feature/Price-Caches auf NVMe; Code und .venv bleiben auf ext4."
+}

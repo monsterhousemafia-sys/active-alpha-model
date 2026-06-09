@@ -1,0 +1,55 @@
+{
+  "apply_result": {
+    "applied": true,
+    "champion_variant": "R3_w075_q065_noexit",
+    "conflicts": [],
+    "option": "E1_RETAIN_R3",
+    "status": "COMPLETE",
+    "steps": {
+      "B1_pointer_repair": {
+        "artifacts_present": {
+          "canonical_run_dir_exists": false,
+          "model_output_returns_exists": true
+        },
+        "integrity_status": "PASS",
+        "phase_b_repair_at_utc": "2026-06-03T20:21:55+00:00",
+        "prior_pointer": {
+          "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+          "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+          "variant_id": "R3_w075_q065_noexit"
+        },
+        "published_at_utc": "2026-05-30T15:30:00.466948+00:00",
+        "repair_note": "Phase B: aligned variant_id, run_id, and run_dir; removed R5 run_id split. Champion metrics must not be read from model_output/ until matrix returns restored.",
+        "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+        "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+        "schema_version": 1,
+        "status": "PASS",
+        "variant_id": "R3_w075_q065_noexit"
+      },
+      "B3c_champion_registry": {
+        "patched": true,
+        "variant_id": "R3_w075_q065_noexit"
+      },
+      "B5_reports": {
+        "background_research_status": "control/background_research_status.json",
+        "challenger_json": "model_output_sp500_pit_t212/challenger_report.json",
+        "challenger_txt": "model_output_sp500_pit_t212/challenger_report.txt",
+        "champion_variant_id": "R3_w075_q065_noexit",
+        "variants_compared": 5
+      },
+      "lineage_policy_updated": true,
+      "operational_status": "control/champion_operational_status.json",
+      "rejected_alternatives": "control/champion_rejected_alternatives.json"
+    }
+  },
+  "champion_change_executed": false,
+  "champion_variant_after_decision": "R3_w075_q065_noexit",
+  "conflicts": [],
+  "decision_summary_de": "R3_w075_q065_noexit bleibt produktiver Champion. Sharpe-Optimum (R0/M1) rechtfertigt keinen Wechsel ohne erfüllte Wechsel-Gates und neue externe Freigabe.",
+  "e1_operational_applied": true,
+  "generated_at_utc": "2026-06-03T20:21:55+00:00",
+  "phase": "E",
+  "schema_version": 1,
+  "selected_option": "E1_RETAIN_R3",
+  "status": "COMPLETE"
+}

@@ -1,0 +1,11 @@
+{
+  "bash_de": "bash tools/king_ops.sh clean",
+  "cleaned_at_utc": "2026-06-09T20:17:52Z",
+  "dry_run": false,
+  "ghost_note_de": "Manuell: rm -rf active_alpha_worker_FULL nach Cursor-Neustart",
+  "ghost_worker_full_mb": 0,
+  "ok": true,
+  "orphan_bytes_freed": 0,
+  "orphan_files_removed": 0,
+  "schema_version": 1
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "phase": "B",
+  "phase_a_title_de": "Ubuntu unsichtbar — R3 als einzige Oberfläche (abgeschlossen)",
+  "phase_b_title_de": "Phase B — Login · Session · WM · Pakete (H1 parallel)",
+  "learnings": {
+    "apple_de": [
+      "Control Center — Schnelltoggles und Slider an einem Ort",
+      "Spotlight — universelle Suche über Apps und Befehle",
+      "Dock — häufige Apps immer erreichbar",
+      "Einheitliche Systemeinstellungen — eine Oberfläche, klare Kategorien",
+      "Power-Menü — Sperren, Abmelden, Neustart, Ausschalten mit Bestätigung"
+    ],
+    "microsoft_de": [
+      "Action Center — Status + Schnellaktionen kombiniert",
+      "Start-Suche — tippen und sofort Treffer",
+      "Taskleiste — angeheftete Apps und Systembereich",
+      "Update-Center — sichtbarer Update-Status statt versteckter Notifier",
+      "Power-Optionen — Energie direkt aus der Shell"
+    ],
+    "r3_fusion_de": "Apple-Klarheit + Microsoft-Produktivität auf Ubuntu-Unterbau — rot/grau/weiß, ein Cockpit."
+  },
+  "step_a_milestones_de": [
+    "Control Center + Spotlight + Dock + Mitteilungen",
+    "Power-Aktionen mit Bestätigung (Apple Power · Windows Energie)",
+    "Update-Center klickbar (Ersatz update-notifier)",
+    "Native Kern-Apps: Dateien · Terminal · Einstellungen",
+    "Bau-Werkstatt /bau ohne Cursor (Kernel-Bug behoben)",
+    "H1 sealen + Pilot live (läuft parallel zu Schritt B)"
+  ],
+  "step_a_complete_code_de": "Schritt A Code vollständig — Schritt B freigeschaltet, H1 migriert parallel",
+  "step_b_milestones_de": [
+    "Eigener Login-Screen und Session-Manager",
+    "Native App-Suite ohne gnome-control-center",
+    "Eigenes Fenster-Management (Snap/Spaces)",
+    "R3-Paket- und Update-Schicht",
+    "Kernel-Grenze nur mit neuer Operator-Governance"
+  ],
+  "pinned_apps": ["aktien", "files", "terminal", "bau", "settings", "calculator"],
+  "control_toggles": [
+    {"id": "network", "label_de": "Netzwerk", "feature": "network"},
+    {"id": "settings", "label_de": "Einstellungen", "feature": "settings"},
+    {"id": "display", "label_de": "Bildschirm", "feature": "display"},
+    {"id": "lock", "label_de": "Sperren", "feature": "lock"}
+  ],
+  "power_actions": [
+    {
+      "id": "lock",
+      "label_de": "Sperren",
+      "detail_de": "Sitzung sperren",
+      "confirm_de": null,
+      "exec": ["loginctl", "lock-session"]
+    },
+    {
+      "id": "logout",
+      "label_de": "Abmelden",
+      "detail_de": "Benutzer abmelden",
+      "confirm_de": "Wirklich abmelden?",
+      "exec": ["loginctl", "terminate-user", "{user}"],
+      "fallback_exec": ["gnome-session-quit", "--logout", "--no-prompt"]
+    },
+    {
+      "id": "reboot",
+      "label_de": "Neustart",
+      "detail_de": "System neu starten",
+      "confirm_de": "Jetzt neu starten?",
+      "exec": ["systemctl", "reboot"]
+    },
+    {
+      "id": "shutdown",
+      "label_de": "Ausschalten",
+      "detail_de": "System herunterfahren",
+      "confirm_de": "Jetzt ausschalten?",
+      "exec": ["systemctl", "poweroff"]
+    },
+    {
+      "id": "suspend",
+      "label_de": "Ruhezustand",
+      "detail_de": "Energie sparen",
+      "confirm_de": "In den Ruhezustand wechseln?",
+      "exec": ["systemctl", "suspend"]
+    }
+  ],
+  "updates": {
+    "label_de": "System-Updates",
+    "detail_de": "Paket-Status (apt)",
+    "check_cmd": ["apt", "list", "--upgradable"],
+    "open_feature": "apps"
+  }
+}

@@ -1,0 +1,170 @@
+# .gitignore — Active Alpha / Marktanalyse
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/launcher/work/
+*.spec.bak
+
+# Secrets and local config
+.env
+.env.*
+trading212_zugangsdaten.env
+*.pem
+*credentials*
+control/server.env
+control/cloudflare_tunnel.token
+control/.tunnel_secret_paste
+evidence/vault_sessions.json
+control/secrets/
+control/secrets/**
+control/secrets/.vault_kdf_salt
+
+# Large data and model artifacts
+model_output/
+model_output_*/
+validation_runs/
+runs/
+paper_output/
+market_data/
+ticker_cache/
+sector_reference.csv
+sector_yfinance_cache.json
+*.parquet
+*.feather
+
+# EXE and PyInstaller
+Marktanalyse.exe
+Marktanalyse/
+.marktanalyse_app.lock
+_internal/
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Logs and temp
+*.log
+control/pipeline_runner.jsonl
+control/repair_backups/
+
+# Review ZIPs (optional local copies)
+codex_*_review.zip
+active_alpha_project_review.zip
+
+# Regenerable pipeline / build evidence (see evidence/README.md)
+evidence/archive/
+evidence/v5r_*/
+evidence/git_show_*.patch
+evidence/*_fix_*.log
+evidence/pytest_*.log
+evidence/compileall_*.log
+evidence/core_check_*.log
+evidence/dist_archive_*/
+evidence/v5r_fail_closed_test_env/
+evidence/*.png
+
+# PyInstaller decision cockpit work trees
+build/decision_cockpit/work/
+build/decision_cockpit/work_*/
+build/decision_cockpit/*.pkg
+
+# Local audit snapshots (regenerable)
+control/audit_backups/
+
+# Loose review submission drops at repo root (canonical: outgoing_external_reviews/)
+G0R4R_SUBMISSION_FOR_REVIEWER/
+codex_g0r*_detached_*.md
+codex_g0r*_detached_*.json
+codex_g0r*_verbatim_*.zip
+G0R4R*_CURSOR_DROP_IN*.zip
+
+# Interactive cockpit runtime smoke (canonical p18)
+evidence/p16g_interactive_gui_smoke_test_result.json
+evidence/p17_interactive_gui_smoke_test_result.json
+
+# Portfolio / reviewer handoff (local PDFs — not in git)
+Daten fuer Reviewer/
+
+# Local tuning experiment outputs
+tuning_runs/
+
+# Regenerated hygiene audit (run tools/repo_hygiene_audit.py)
+control/repo_hygiene_audit.json
+
+# Operative / tuning launchers (local convenience; not governance sources)
+run_r3_parallel_tuning.bat
+run_r5_operational.bat
+run_r5_matrix_cost_stress.bat
+run_r5_challenger_pipeline.bat
+run_alpha_momentum_tuning.bat
+run_adaptive_marktanalyse.bat
+run_operational_refinement.bat
+run_sync_live_daily_data.bat
+run_train_exemplar_*.bat
+
+# Adaptive / refinement ephemeral runtime (regenerable)
+control/adaptive_runtime.json
+control/adaptive_runtime.jsonl
+control/adaptive_runtime_state.json
+control/operational_refinement.json
+control/operational_refinement.jsonl
+control/operational_refinement_state.json
+control/champion_registry_r3_backup.json
+
+# Local launcher preflight dumps
+control_output/
+
+# Generated CODEX session snapshots (regenerable)
+CODEX_*_GIT_STATUS.txt
+CODEX_*_BUILD_LOG.txt
+CODEX_*_PREBUILD_TEST_OUTPUT.txt
+CODEX_*_TEST_OUTPUT.txt
+
+# Local research / robustness run output
+robustness_results_trading212/
+research_evidence/*.json
+!research_evidence/.gitkeep
+
+# Review ZIP binaries (sidecar .sha256 may be tracked)
+codex_g1_readonly_challenger_cost_evidence_submission.zip
+
+# Research run dumps (CSV/MD from local jobs)
+research_evidence/*.csv
+research_evidence/*.md
+!research_evidence/.gitkeep
+
+# Conflicting unauthorized operational claim (archived under evidence/archive/)
+OPERATIONAL_DECISION_APPROVAL_ALL.md
+
+# Local operator / spread / tunnel runtime (machine-specific, regenerable — exclude from public mirror)
+evidence/spread_finish*.json
+evidence/spread_finish*.log
+evidence/*spread*latest.json
+evidence/remote_hub_tunnel.json
+evidence/lan_spread_latest.json
+evidence/whatsapp*.json
+evidence/haus_zur_welt_latest.json
+evidence/world_spread_latest.json
+evidence/operator_finish_checklist_de.txt
+evidence/reddit_post*.txt
+evidence/community_spread_forum_anonym*.txt
+evidence/tunnel_token_operator_de.txt
+evidence/spread_broadcast_de.txt
+evidence/spread_whatsapp_de.txt
+evidence/community_spread_forum_de.txt
+evidence/lan_spread_share_de.txt
+evidence/spread_external_worker_de.txt
+evidence/spread_external_worker_handoff_de.txt
+evidence/publish_public_git_preflight_latest.json
+live_pilot/activity/
+control/preview_federation.json
+control/r3_https_mirror.json
+.git.legacy-backup*/

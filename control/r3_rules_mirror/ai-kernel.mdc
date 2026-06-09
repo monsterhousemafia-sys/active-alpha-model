@@ -1,0 +1,52 @@
+---
+description: Marktanalyse — ein Modus, einfach halten
+alwaysApply: true
+---
+
+# Active Alpha — ein System (Auto + Dashboard)
+
+R3 KI lokal (active-alpha-chat) und Marktanalyse-Dashboard sind **eine** Active-Alpha-Oberfläche:
+- **R3 KI lokal**: Gespräch, `ai_kernel`, Ollama — kein Cursor-Konto nötig
+- **Cursor IDE (optional)**: Code-Bau im Workspace
+- **Dashboard**: Live-Status, Evolution, GUI-Orders
+
+Konfiguration: `control/active_alpha_unified.json`, `control/AI_KERNEL.json`
+
+**Linux-Operator (Freigabe A–D durch User):**
+- **A–C** autonom: `ai_kernel learn|evolve|timers|maintain|h1`
+- **D** nur mit `AA_OPERATOR_APPROVE_D=1 AA_OPERATOR_ACTION=apt|nvme|status` — kein autonomes reboot
+- **E (Rennwagen/Vollauto)** nicht freigegeben
+- Scope: `python3 tools/ai_kernel.py scope` · `control/linux_operator_scope.json`
+- **Öffentliche Sichtbarkeit (jeder Ubuntu-Nutzer):** `active-alpha-show` · `~/.local/share/active-alpha/operator_latest.txt` · Dashboard-Panel «Auto — Ubuntu Operator» · `python3 tools/ai_kernel.py show-setup`
+- **Stufe 3 (Cursor-Ersatz Chat):** `python3 tools/ai_kernel.py llm-setup` · `active-alpha-chat` · Ollama + `qwen2.5:7b`
+
+# AI Kernel
+
+**Lernender Begleiter, kein Auto-Trader.** Montag 2026-06-08 erst echtes Geld.
+
+## Einstieg (wie Windows, nur Linux-Pfade)
+
+```bash
+python3 tools/ai_kernel.py status
+python3 tools/ai_kernel.py warnings       # vor US-Handel — kritische Blocker
+python3 tools/ai_kernel.py audit          # alle offenen Punkte
+python3 tools/ai_kernel.py wallstreet     # Sharpe/MDD/IC + Tages-Lernloop
+python3 tools/ai_kernel.py learn          # öffentlicher Lernzyklus + Qualitäts-Score
+python3 tools/ai_kernel.py evolve         # Evolution-Stufe (sportwagen → …)
+python3 tools/ai_kernel.py autostart      # Dashboard nach Anmeldung starten
+python3 tools/ai_kernel.py h1           # H1-Backtest native (Hintergrund)
+python3 tools/ai_kernel.py h1-status    # H1-Fortschritt
+python3 tools/ai_kernel.py timers       # systemd learn/warnings
+bash tools/setup_linux_native.sh          # wie setup_active_alpha_env.bat
+bash run_marktanalyse_linux.sh --dev      # wie run_pilot_start.bat
+python3 tools/ai_kernel.py ready
+```
+
+Config: `control/AI_KERNEL.json` · Host: `execution/linux_security_boundary.py`
+
+## Regeln
+
+- Kein Spaghetti: keine neuen Shell-Hilfsdateien, keine parallelen Launcher
+- Windows-Pfade wiederverwenden: `aa_paths`, `aa_pilot_launch.py`, `pilot_day_trading_facade`
+- Kein Auto-Execute, keine Live-Orders ohne User-GUI
+- Fixes: Quote-Engine, Facade, Dashboard — nicht EXE/WSL/Migration

@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-06-04T19:57:44+00:00",
+  "bytes_freed": 113468646,
+  "canonical_r0_stamp": "20260604T153044Z",
+  "deleted": [
+    "20260604T193041Z_R0_LEGACY_ENSEMBLE"
+  ],
+  "dry_run": false,
+  "errors": [],
+  "keep": [
+    "20260604T153044Z_R0_LEGACY_ENSEMBLE"
+  ],
+  "remove": [
+    {
+      "bytes": 113468646,
+      "dir": "20260604T193041Z_R0_LEGACY_ENSEMBLE"
+    }
+  ]
+}

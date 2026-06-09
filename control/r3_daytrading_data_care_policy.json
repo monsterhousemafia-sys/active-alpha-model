@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Daytrading-Datenpflege — immer aktuell halten",
+  "cadence_de": {
+    "us_session_open_minutes": 5,
+    "closed_market_minutes": 30,
+    "after_gui_order": true,
+    "before_order_preflight": true
+  },
+  "steps_de": [
+    "1 Kurse — r3_quote_keepalive",
+    "2 Daytrading-Snapshot — pilot_integrated_refresh",
+    "3 Kreislauf — r3_trading_cycle",
+    "4 Learning-Capture — market/learning_pipeline (read-only)"
+  ],
+  "command_de": "bash tools/king_ops.sh daytrading-refresh",
+  "evidence_ref": "evidence/r3_daytrading_data_care_latest.json",
+  "fail_closed_de": "Ohne frische Kurse/T212-Trust keine Order-Freigabe — Datenpflege ersetzt keinen gültigen API-Key"
+}

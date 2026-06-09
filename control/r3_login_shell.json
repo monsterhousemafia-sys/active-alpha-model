@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "title_de": "Alpha Model",
+  "subtitle_de": "Anmelden und Sitzung starten",
+  "brand_mark": "Alpha Model",
+  "brand_color": "#E95420",
+  "post_login_path": "/r3",
+  "login_path": "/login",
+  "session_manager": true,
+  "session_ttl_hours": 12,
+  "require_login_before_desktop": true,
+  "show_session_panel": true,
+  "power_actions": ["lock", "logout"],
+  "linux_mainline_de": "GDM/GNOME bleibt Unterbau — R3 Login ist die sichtbare Einstiegsebene"
+}

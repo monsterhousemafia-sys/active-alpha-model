@@ -1,0 +1,15 @@
+{
+  "capital": {
+    "cash_eur": null,
+    "last_sync_utc": null,
+    "message_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr",
+    "ok": false,
+    "sync_errors": [],
+    "t212_trust_reason": "CONNECTION_FAILED_RETRY_AVAILABLE",
+    "trusted": false
+  },
+  "headline_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr",
+  "ok": false,
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-09T21:17:08+00:00"
+}

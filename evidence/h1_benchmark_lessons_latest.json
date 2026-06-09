@@ -1,0 +1,37 @@
+{
+  "fixes_de": [
+    "bash tools/king_ops.sh h1-seal — flock, GPU-Prep, Progress ab Sekunde 0",
+    "AA_H1_GPU_RETURNS=1 · AA_H1_UNLOAD_OLLAMA=1 für maximale 3090-Nutzung",
+    "bash tools/king_ops.sh status — phase, prep_done, benchmark_over_eta"
+  ],
+  "headline_de": "0 aktive Beobachtung(en) · 5 dokumentierte Lessons",
+  "inferred_de": [],
+  "lessons_de": [
+    "Background-Start ohne progress.json → blindes Warten (behoben: sofortiger Progress bei Start)",
+    "Prep-Phase meldete nichts → 75+ Min bei 100% CPU ohne % (behoben: phase=prep, prep_done)",
+    "Progress erst im Returns-Loop → ETA irreführend wenn Prep lang (behoben: 0–50% Prep, 50–100% Returns)",
+    "GPU-Returns nur wenn AA_H1_GPU_RETURNS=1 und VRAM frei (Legacy: CPU-only trotz 3090)",
+    "Über ETA ohne progress_pct → Operator blind (behoben: benchmark_over_eta + phase decide)"
+  ],
+  "ok": true,
+  "progress_snapshot": {
+    "phase": "legacy_retired",
+    "reason_de": "Seal-Policy optional — Benchmark nicht mehr nötig (control/h1_seal_policy.json)",
+    "status": "retired",
+    "updated_at_utc": "2026-06-07T20:52:19+00:00"
+  },
+  "recorded_at_utc": "2026-06-08T13:56:52+00:00",
+  "schema_version": 1,
+  "timing_snapshot": {
+    "benchmark_elapsed_s": null,
+    "benchmark_hung": false,
+    "benchmark_over_eta": false,
+    "benchmark_over_eta_severe": false,
+    "benchmark_pid": null,
+    "benchmark_running": false,
+    "eta_max_s": 4200,
+    "progress_pct": null,
+    "progress_stale": false
+  },
+  "trigger_de": "test"
+}

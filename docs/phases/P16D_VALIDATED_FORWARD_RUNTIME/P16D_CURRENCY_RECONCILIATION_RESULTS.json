@@ -1,0 +1,8 @@
+{
+  "executed_count": 6,
+  "executed_instruments_reconciled": true,
+  "gbp_path": "PASS",
+  "multi_currency_runtime_gate": "PASS_FOR_EXECUTED_PORTFOLIO_ONLY",
+  "reference_observation_only_count": 1,
+  "usd_path": "PASS"
+}

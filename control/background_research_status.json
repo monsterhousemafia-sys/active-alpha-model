@@ -1,0 +1,61 @@
+{
+  "auto_promotion": "DISABLED",
+  "best_research_candidate": null,
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "checked_variant_ids": [
+    "R3_w075_q065_noexit"
+  ],
+  "entries": [
+    {
+      "integrity_pass": false,
+      "is_active_champion": false,
+      "is_research_candidate": false,
+      "run_dir": "",
+      "status": "NOT_AVAILABLE",
+      "variant_id": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "integrity_pass": true,
+      "is_active_champion": true,
+      "is_research_candidate": false,
+      "metrics": {
+        "annual_vol": 0.21672573966539618,
+        "cagr": 0.19289920238427194,
+        "daily_hit_rate": 0.5586021505376344,
+        "max_drawdown": -0.2600859967860806,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9228008769606217,
+        "total_return": 2.6762803055879076
+      },
+      "metrics_source": "embedded_inventory",
+      "note": "Matrix run dir absent locally; metrics from Phase A embedded inventory.",
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R3_w075_q065_noexit",
+      "status": "PASS",
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "integrity_pass": false,
+      "is_active_champion": false,
+      "is_research_candidate": false,
+      "run_dir": "",
+      "status": "NOT_AVAILABLE",
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "integrity_pass": false,
+      "is_active_champion": false,
+      "is_research_candidate": false,
+      "note": "Requires PASS M1 matched-controls run with embedded NAIVE_MOM_63 reference.",
+      "reference_source": "",
+      "status": "NOT_AVAILABLE",
+      "variant_id": "MOM_63_TOP12"
+    }
+  ],
+  "last_comparison_run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R3_w075_q065_noexit",
+  "m1_comparison": null,
+  "research_status": "FAIL",
+  "updated_at_utc": "2026-06-03T20:42:49+00:00",
+  "variants_checked": 1,
+  "variants_fail": 0,
+  "variants_pass": 1
+}

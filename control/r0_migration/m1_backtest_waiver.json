@@ -1,0 +1,19 @@
+{
+  "allowed_actions": [
+    "validation_matrix_backtest",
+    "validation_runs_population"
+  ],
+  "authoritative_champion_unchanged": "R3_w075_q065_noexit",
+  "authorized_at_utc": "2026-06-04T20:01:27+00:00",
+  "evidence_only": true,
+  "forbidden": [
+    "champion_change",
+    "auto_promotion",
+    "real_money_execution",
+    "productive_signal_parameter_change"
+  ],
+  "reason": "eliminate_blockers: single matrix restart.",
+  "schema_version": 1,
+  "scope": "R0_LONG_TERM_MIGRATION_M1",
+  "status": "ACTIVE"
+}

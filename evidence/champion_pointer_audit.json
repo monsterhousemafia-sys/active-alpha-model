@@ -1,0 +1,4122 @@
+{
+  "authoritative_champion_constant": "R0_LEGACY_ENSEMBLE",
+  "conflicts": [
+    "Multiple champion-like variant ids in pointers: ['R0_LEGACY_ENSEMBLE', 'R3_W070_Q070_NOEXIT', 'R3_W075_Q065_NOEXIT', 'R3_W075_Q065_NOEXIT\" IF INCLUDE_CHAMPION ELSE NONE', 'R3_W075_Q065_NOEXIT\", \"VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"}', 'R3_W075_Q065_NOEXIT\"} IF INCLUDE_CHAMPION ELSE {}', 'R3_W075_Q065_NOEXIT\"})', 'R5_RANK_ONLY_TRAIN5', 'TRUE, \"CHAMPION_VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"})', '`VALIDATED_VARIANT_ID` / `VARIANT_ID` = `R3_W075_Q065_NOEXIT`', '`VALIDATED_VARIANT_ID` = `R3_W075_Q065_NOEXIT`']",
+    "challenger_report champion_variant_id=R3_w075_q065_noexit != locked R0_LEGACY_ENSEMBLE"
+  ],
+  "critical_artifacts": {
+    "aa_evidence_schema.py": {
+      "authoritative_champion_constant": "R0_LEGACY_ENSEMBLE",
+      "present": true
+    },
+    "control/authorization/current_authorization_status.json": {
+      "allowed_actions": [
+        "manual_read_only_review",
+        "operative_jobs",
+        "backtest_execution",
+        "matrix_rerun",
+        "replay_execution",
+        "shadow_monitoring_activation",
+        "paper_monitoring_activation",
+        "promotion_execution",
+        "broker_connectivity",
+        "exe_build",
+        "exe_execution"
+      ],
+      "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+      "authoritative_review_forbids_operations": true,
+      "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+      "authoritative_source_present": true,
+      "authoritative_source_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "blocked_actions": [
+        "real_money_execution",
+        "champion_change"
+      ],
+      "champion_change_authorized": true,
+      "conflict_details": [],
+      "conflicting_or_unsealed_sources": [],
+      "conflicting_sources": [],
+      "g1_execution_authorized": true,
+      "generated_at_utc": "2026-06-07T20:46:06+00:00",
+      "live_experimental_profile": "daily_alpha_h1",
+      "operational_authorized": true,
+      "operational_status": "M9_ACTIVE_LIVE_EXPERIMENTAL",
+      "paper_monitoring_authorized": true,
+      "prior_champion": "R3_w075_q065_noexit",
+      "production_fallback_variant": "R3_w075_q065_noexit",
+      "promotion_authorized": true,
+      "real_money_authorized": false,
+      "real_money_note_de": "Echtgeld nur nach H1-Seal (experimental gate); EXE-Bestätigung pro Order-Welle.",
+      "registry_sealed_for_terminal": false,
+      "resolution_required": "NONE",
+      "schema_version": 1,
+      "shadow_monitoring_authorized": true,
+      "status": "OPERATIONAL_AUTHORIZED",
+      "strategic_governance_ref": "control/strategic_governance.json",
+      "supersedes_g0_terminal_for": "champion_identity_only",
+      "terminal_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION"
+    },
+    "control/background_research_status.json": {
+      "auto_promotion": "DISABLED",
+      "best_research_candidate": null,
+      "champion_variant_id": "R3_w075_q065_noexit",
+      "checked_variant_ids": [
+        "R3_w075_q065_noexit"
+      ],
+      "entries": [
+        {
+          "integrity_pass": false,
+          "is_active_champion": false,
+          "is_research_candidate": false,
+          "run_dir": "",
+          "status": "NOT_AVAILABLE",
+          "variant_id": "R0_LEGACY_ENSEMBLE"
+        },
+        {
+          "integrity_pass": true,
+          "is_active_champion": true,
+          "is_research_candidate": false,
+          "metrics": {
+            "annual_vol": 0.21672573966539618,
+            "cagr": 0.19289920238427194,
+            "daily_hit_rate": 0.5586021505376344,
+            "max_drawdown": -0.2600859967860806,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9228008769606217,
+            "total_return": 2.6762803055879076
+          },
+          "metrics_source": "embedded_inventory",
+          "note": "Matrix run dir absent locally; metrics from Phase A embedded inventory.",
+          "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R3_w075_q065_noexit",
+          "status": "PASS",
+          "variant_id": "R3_w075_q065_noexit"
+        },
+        {
+          "integrity_pass": false,
+          "is_active_champion": false,
+          "is_research_candidate": false,
+          "run_dir": "",
+          "status": "NOT_AVAILABLE",
+          "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+        },
+        {
+          "integrity_pass": false,
+          "is_active_champion": false,
+          "is_research_candidate": false,
+          "note": "Requires PASS M1 matched-controls run with embedded NAIVE_MOM_63 reference.",
+          "reference_source": "",
+          "status": "NOT_AVAILABLE",
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "last_comparison_run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R3_w075_q065_noexit",
+      "m1_comparison": null,
+      "research_status": "FAIL",
+      "updated_at_utc": "2026-06-03T20:42:49+00:00",
+      "variants_checked": 1,
+      "variants_fail": 0,
+      "variants_pass": 1
+    },
+    "control/r5_challenger_registry.json": {
+      "active": false,
+      "authoritative": false,
+      "auto_promotion": "DISABLED",
+      "best_run_dir": "E:\\active_alpha_model\\validation_runs\\20260531T163000Z_R5_rank_only_train5",
+      "fictive_tuning_pass": true,
+      "internet_validation": {
+        "alpha_score": 0.26399555107153344,
+        "alpha_vs_momentum": {
+          "beats_momentum": true,
+          "beta_to_momentum": 1.069625,
+          "cagr_diff": 0.037088,
+          "correlation": 0.981139,
+          "gate_reason": "PASS",
+          "information_ratio": 0.613288,
+          "momentum_benchmark": "NAIVE_MOMENTUM_MOM_BLEND_TOP12",
+          "momentum_cagr": 0.208168,
+          "momentum_sharpe": 0.7497361630948886,
+          "n_days": 2450,
+          "sharpe_diff": 0.13357583690511143,
+          "source": "backtest_report",
+          "strategy_cagr": 0.245256,
+          "strategy_sharpe": 0.883312,
+          "tracking_error": 0.0
+        },
+        "beats_momentum": true,
+        "elapsed_s": 602.0,
+        "gate_reason": "PASS",
+        "integrity": "PASS",
+        "name": "R5_rank_only_train5",
+        "out_dir": "E:\\active_alpha_model\\validation_runs\\r5_challenger\\R5_rank_only_train5",
+        "returncode": 0,
+        "status": "PASS",
+        "strategy_cagr": 0.245256,
+        "strategy_sharpe": 0.883312
+      },
+      "note": "QUARANTINED — not operational champion. See control/quarantine/unauthorized_champion_claims.json. QUARANTINED — not operational champion. See control/quarantine/unauthorized_champion_claims.json. QUARANTINED — not operational champion. See control/quarantine/unauthorized_champion_claims.json. Promoted to operational champion (manual). Auto-promotion remains DISABLED.",
+      "phase_b_patched_at_utc": "2026-06-03T20:42:49+00:00",
+      "previous_champion_variant_id": "R3_w075_q065_noexit",
+      "promoted_at_utc": "2026-05-31T17:20:36+00:00",
+      "role": "QUARANTINED_RESEARCH_ONLY",
+      "source_tuning_winner": "rank_r2_train5",
+      "updated_at_utc": "2026-05-31T16:13:05+00:00",
+      "variant_id": "R5_rank_only_train5"
+    },
+    "model_output_sp500_pit_t212/challenger_report.json": {
+      "authoritative_champion": "R3_w075_q065_noexit",
+      "auto_promotion": "DISABLED",
+      "champion_variant_id": "R3_w075_q065_noexit",
+      "entries": [
+        {
+          "integrity_pass": true,
+          "is_champion": false,
+          "is_m1_reference": false,
+          "metrics": {
+            "annual_vol": 0.2084174884043623,
+            "cagr": 0.16805513278321293,
+            "daily_hit_rate": 0.5532258064516129,
+            "excess_cagr_approx": -0.006227997421769093,
+            "information_ratio": -0.05699794216704712,
+            "max_drawdown": -0.3132759516837291,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8501252965218753,
+            "total_return": 2.1473403968741054,
+            "tracking_error": 0.10926705745825604
+          },
+          "metrics_source": "model_output_sp500_pit_t212/challenger_report.json",
+          "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R1_GATE_BASE_ONLY",
+          "variant_id": "R1_GATE_BASE_ONLY"
+        },
+        {
+          "integrity_pass": true,
+          "is_champion": false,
+          "is_m1_reference": false,
+          "metrics": {
+            "annual_vol": 0.2068711412519061,
+            "cagr": 0.19706316136473712,
+            "daily_hit_rate": 0.55,
+            "excess_cagr_approx": 0.017969732224614447,
+            "information_ratio": 0.16387795368523078,
+            "max_drawdown": -0.24287574809223278,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9734499822344412,
+            "total_return": 2.7720578437409484,
+            "tracking_error": 0.10965314016020643
+          },
+          "metrics_source": "model_output_sp500_pit_t212/challenger_report.json",
+          "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R2_MOM_BLEND_REPLACE",
+          "variant_id": "R2_MOM_BLEND_REPLACE"
+        },
+        {
+          "integrity_pass": true,
+          "is_champion": false,
+          "is_m1_reference": false,
+          "metrics": {
+            "annual_vol": 0.2166491472905297,
+            "cagr": 0.19002078458773464,
+            "daily_hit_rate": 0.5575268817204301,
+            "excess_cagr_approx": 0.014151810838141541,
+            "information_ratio": 0.128653608375964,
+            "max_drawdown": -0.2609375706684086,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9118927531483968,
+            "total_return": 2.6113078471758038,
+            "tracking_error": 0.10999933089156586
+          },
+          "metrics_source": "model_output_sp500_pit_t212/challenger_report.json",
+          "run_dir": "E:\\active_alpha_model\\validation_runs\\20260529_R3_w070_q070_noexit",
+          "variant_id": "R3_w070_q070_noexit"
+        },
+        {
+          "integrity_pass": true,
+          "is_champion": true,
+          "is_m1_reference": false,
+          "metrics": {
+            "annual_vol": 0.21672573966539618,
+            "cagr": 0.19289920238427194,
+            "daily_hit_rate": 0.5586021505376344,
+            "max_drawdown": -0.2600859967860806,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9228008769606217,
+            "total_return": 2.6762803055879076
+          },
+          "metrics_source": "control/background_research_status.json",
+          "n_days": 1860,
+          "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R3_w075_q065_noexit",
+          "variant_id": "R3_w075_q065_noexit"
+        },
+        {
+          "integrity_pass": true,
+          "is_champion": false,
+          "is_m1_reference": false,
+          "metrics": {
+            "annual_vol": 0.21523630267909113,
+            "cagr": 0.18719618319258235,
+            "daily_hit_rate": 0.5591397849462365,
+            "excess_cagr_approx": 0.011478570328623393,
+            "information_ratio": 0.10348362748300784,
+            "max_drawdown": -0.2596882296072619,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9054585330387559,
+            "total_return": 2.5485175909142006,
+            "tracking_error": 0.11092160767661735
+          },
+          "metrics_source": "model_output_sp500_pit_t212/challenger_report.json",
+          "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R4_w070_q070_forceexit",
+          "variant_id": "R4_w070_q070_forceexit"
+        }
+      ],
+      "generated_at_utc": "2026-06-03T20:42:49+00:00",
+      "m1_available": false,
+      "promotion_gate": {
+        "blocked_reasons": [
+          "auto_promotion_disabled",
+          "manual_approval_required"
+        ],
+        "checks": {
+          "beats_champion_sharpe": false,
+          "beats_m1_sharpe": false,
+          "calendar_complete": true,
+          "cost_stress_pass": null,
+          "data_quality_ok": true,
+          "integrity_pass": true,
+          "manual_approval": false,
+          "paper_forward_documented": false
+        },
+        "status": "BLOCKED"
+      },
+      "quarantined_operational_claim": "R5_rank_only_train5",
+      "ranked_by_sharpe": [
+        "R2_MOM_BLEND_REPLACE",
+        "R3_w075_q065_noexit",
+        "R3_w070_q070_noexit",
+        "R4_w070_q070_forceexit",
+        "R1_GATE_BASE_ONLY"
+      ],
+      "variants_compared": 5
+    },
+    "model_output_sp500_pit_t212/latest_validated_run.json": {
+      "run_dir": "validation_runs\\20260604T210245Z_R0_LEGACY_ENSEMBLE",
+      "source": "M9_accelerated_cutover",
+      "updated_at_utc": "2026-06-05T15:39:08+00:00",
+      "variant_id": "R0_LEGACY_ENSEMBLE"
+    }
+  },
+  "files_scanned": 2210,
+  "generated_at_utc": "2026-06-08T13:50:42+00:00",
+  "hits_by_value": {
+    "0": [
+      {
+        "file": "control/champion_change_criteria.yaml",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 21,
+        "value": "0"
+      },
+      {
+        "file": "control/champion_change_criteria.yaml",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 22,
+        "value": "0"
+      }
+    ],
+    "B0_DAILY_REFERENCE": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "control/behavioral_research_status.json",
+        "json_path": "challenger_results[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/behavioral_research_status.json",
+        "json_path": "challenger_results[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/model_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      },
+      {
+        "file": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/model_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B0_DAILY_REFERENCE"
+      }
+    ],
+    "B1_REALTIME_EXECUTION_ONLY": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "control/behavioral_research_status.json",
+        "json_path": "challenger_results[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/behavioral_research_status.json",
+        "json_path": "challenger_results[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/model_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      },
+      {
+        "file": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/model_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B1_REALTIME_EXECUTION_ONLY"
+      }
+    ],
+    "B2_ATTENTION_CONTINUATION": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "control/behavioral_research_status.json",
+        "json_path": "challenger_results[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/behavioral_research_status.json",
+        "json_path": "challenger_results[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/model_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      },
+      {
+        "file": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/model_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B2_ATTENTION_CONTINUATION"
+      }
+    ],
+    "B3_LIQUIDITY_STRESS": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "control/behavioral_research_status.json",
+        "json_path": "challenger_results[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/behavioral_research_status.json",
+        "json_path": "challenger_results[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/model_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      },
+      {
+        "file": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/model_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B3_LIQUIDITY_STRESS"
+      }
+    ],
+    "B4_CROWDING_OVERLAY": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/model_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      },
+      {
+        "file": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/model_status.json",
+        "json_path": "challenger_experiments[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "B4_CROWDING_OVERLAY"
+      }
+    ],
+    "BOOL": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/tests__test_decision_cockpit_viewmodel.py",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 15,
+        "value": "bool"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_viewmodel.py",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 47,
+        "value": "bool"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/tests__test_decision_cockpit_viewmodel.py",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 47,
+        "value": "bool"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_viewmodel.py",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 47,
+        "value": "bool"
+      }
+    ],
+    "CHAMPION": [
+      {
+        "file": "control/repair_backups/20260530T200427Z_V1R/aa_evidence_status.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 268,
+        "value": "champion"
+      },
+      {
+        "file": "control/repair_backups/20260530T201446Z_V1R2/aa_evidence_status.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 309,
+        "value": "champion"
+      },
+      {
+        "file": "control/repair_backups/20260530T204703Z_V2/aa_evidence_status.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 337,
+        "value": "champion"
+      },
+      {
+        "file": "control/repair_backups/20260530T204703Z_V2/aa_multiple_testing_adjustment.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 123,
+        "value": "CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T210216Z_V2R/aa_evidence_status.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 369,
+        "value": "champion"
+      },
+      {
+        "file": "control/repair_backups/20260530T210216Z_V2R/aa_multiple_testing_adjustment.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 197,
+        "value": "CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T210238Z_V2R/aa_evidence_status.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 369,
+        "value": "champion"
+      },
+      {
+        "file": "control/repair_backups/20260530T210238Z_V2R/aa_multiple_testing_adjustment.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 197,
+        "value": "CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T211341Z_V3/aa_evidence_status.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 399,
+        "value": "champion"
+      }
+    ],
+    "CHAMPION, \"VALIDATED_RUN_ID\": \"CHAMPION\"})": [
+      {
+        "file": "control/repair_backups/20260530T185741Z/tests__test_p9_controlled_shadow_paper_validation.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 73,
+        "value": "champion, \"validated_run_id\": \"champion\"})"
+      }
+    ],
+    "CHAMPION_BEFORE": [
+      {
+        "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+        "key": "promoted_from_champion",
+        "kind": "text_line",
+        "line": 250,
+        "value": "champion_before"
+      },
+      {
+        "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 469,
+        "value": "champion_before"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+        "key": "promoted_from_champion",
+        "kind": "text_line",
+        "line": 259,
+        "value": "champion_before"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 478,
+        "value": "champion_before"
+      }
+    ],
+    "CHAMPION_INFO": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 412,
+        "value": "champion_info"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 549,
+        "value": "champion_info"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 737,
+        "value": "champion_info"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 788,
+        "value": "champion_info"
+      },
+      {
+        "file": "control/repair_backups/20260530T225730Z_V5R_PRECHECK/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 788,
+        "value": "champion_info"
+      }
+    ],
+    "CHAMPION_INFO[\"ACTIVE_CHAMPION\"]": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 412,
+        "value": "champion_info[\"active_champion\"]"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 549,
+        "value": "champion_info[\"active_champion\"]"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 737,
+        "value": "champion_info[\"active_champion\"]"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 788,
+        "value": "champion_info[\"active_champion\"]"
+      },
+      {
+        "file": "control/repair_backups/20260530T225730Z_V5R_PRECHECK/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 788,
+        "value": "champion_info[\"active_champion\"]"
+      }
+    ],
+    "CHAMPION_VARIANT": [
+      {
+        "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 200,
+        "value": "champion_variant"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 209,
+        "value": "champion_variant"
+      },
+      {
+        "file": "control/repair_backups/20260530T211341Z_V3/aa_forward_monitor_schema.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 46,
+        "value": "CHAMPION_VARIANT"
+      },
+      {
+        "file": "control/repair_backups/20260530T211341Z_V3/aa_monitoring_readiness.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 185,
+        "value": "CHAMPION_VARIANT"
+      }
+    ],
+    "FALSE": [
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[0].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[2].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[3].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[0].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[1].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[2].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[4].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+        "json_path": "entries[0].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+        "json_path": "entries[2].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+        "json_path": "entries[3].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/review_snapshot/p11_statistical_research_validation_snapshot.json",
+        "json_path": "p11_validation.research_ranking[0].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/review_snapshot/p11_statistical_research_validation_snapshot.json",
+        "json_path": "p11_validation.research_ranking[1].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "control/review_snapshot/p11_statistical_research_validation_snapshot.json",
+        "json_path": "p11_validation.research_ranking[3].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_RESEARCH_RANKING.json",
+        "json_path": "ranking[0].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_RESEARCH_RANKING.json",
+        "json_path": "ranking[1].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "False"
+      }
+    ],
+    "FROM": [
+      {
+        "file": "docs/phases/V1R/CODEX_V1R_EVIDENCE_CONTROLLER_REPORT.md",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 36,
+        "value": "from"
+      }
+    ],
+    "LOCKED_CHAMPION": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 153,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 161,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 169,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 415,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 205,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 216,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 224,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 552,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 281,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 292,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 300,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 740,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 281,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 292,
+        "value": "LOCKED_CHAMPION"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "expected_champion",
+        "kind": "text_line",
+        "line": 300,
+        "value": "LOCKED_CHAMPION"
+      }
+    ],
+    "M1_MOM_BLEND_MATCHED_CONTROLS": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.BASELINE[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_10_BPS[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_25_BPS[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_50_BPS[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/g1_source_inventory.json",
+        "json_path": "variants[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/evidence/v2_source_inventory.json",
+        "json_path": "variants[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+        "json_path": "challenger_experiments[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.BASELINE[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.PLUS_10_BPS[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.PLUS_25_BPS[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      }
+    ],
+    "MOM_63_TOP12": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.BASELINE[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_10_BPS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_25_BPS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_50_BPS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "sensitivity_analysis.proxy_turnover_results.BASELINE[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_10_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_25_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_50_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "sensitivity_analysis.proxy_turnover_results.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      },
+      {
+        "file": "control/evidence/g1_source_inventory.json",
+        "json_path": "variants[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12"
+      }
+    ],
+    "MOM_63_TOP12_STRICT": [
+      {
+        "file": "control/review_snapshot/p11_statistical_research_validation_snapshot.json",
+        "json_path": "p11_validation.research_ranking[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P10_RESEARCH_EVIDENCE_INTEGRATION/P10_LEGACY_IDENTITY_SEARCH_RESULTS.json",
+        "json_path": "variant_comparisons[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.BASELINE[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.PLUS_10_BPS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.PLUS_25_BPS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.PLUS_50_BPS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.SLIPPAGE_TURNOVER_STRESS[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[10].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[11].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[12].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[13].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[14].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_DSR_RESULTS.json",
+        "json_path": "variants[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_RESEARCH_RANKING.json",
+        "json_path": "ranking[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_ROBUSTNESS_RESULTS.json",
+        "json_path": "variants[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP12_STRICT"
+      }
+    ],
+    "MOM_63_TOP15_RECONSTRUCTED": [
+      {
+        "file": "control/review_snapshot/p11_statistical_research_validation_snapshot.json",
+        "json_path": "p11_validation.research_ranking[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P10_RESEARCH_EVIDENCE_INTEGRATION/P10_LEGACY_IDENTITY_SEARCH_RESULTS.json",
+        "json_path": "variant_comparisons[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.BASELINE[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.PLUS_10_BPS[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.PLUS_25_BPS[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.PLUS_50_BPS[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "by_scenario.SLIPPAGE_TURNOVER_STRESS[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[15].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[16].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[17].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[18].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_COST_STRESS_RESULTS.json",
+        "json_path": "rows[19].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_DSR_RESULTS.json",
+        "json_path": "variants[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_RESEARCH_RANKING.json",
+        "json_path": "ranking[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_ROBUSTNESS_RESULTS.json",
+        "json_path": "variants[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "MOM_63_TOP15_RECONSTRUCTED"
+      }
+    ],
+    "NONE": [
+      {
+        "file": "control/repair_backups/20260530T201446Z_V1R2/aa_vision_review_gate.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 164,
+        "value": "None"
+      },
+      {
+        "file": "control/repair_backups/20260530T203050Z_V1R3/aa_vision_review_gate.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 164,
+        "value": "None"
+      }
+    ],
+    "OTHER\"}), ENCODING=\"UTF-8": [
+      {
+        "file": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_review_gate.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 71,
+        "value": "OTHER\"}), encoding=\"utf-8"
+      }
+    ],
+    "OTHER_VARIANT\"}), ENCODING=\"UTF-8": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 162,
+        "value": "OTHER_VARIANT\"}), encoding=\"utf-8"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 209,
+        "value": "OTHER_VARIANT\"}), encoding=\"utf-8"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 217,
+        "value": "OTHER_VARIANT\"}), encoding=\"utf-8"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 218,
+        "value": "OTHER_VARIANT\"}), encoding=\"utf-8"
+      }
+    ],
+    "R0_LEGACY_ENSEMBLE": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "challenger_experiments[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/authorization/authorization_source_policy.json",
+        "json_path": "authoritative_champion",
+        "key": "authoritative_champion",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/authorization/champion_lineage_status.json",
+        "json_path": "authoritative_champion",
+        "key": "authoritative_champion",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/authorization/current_authorization_status.json",
+        "json_path": "authoritative_champion",
+        "key": "authoritative_champion",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "challenger_experiments[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/champion_lineage_policy.json",
+        "json_path": "authoritative_champion",
+        "key": "authoritative_champion",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/champion_strategic_decision.json",
+        "json_path": "active_champion",
+        "key": "active_champion",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.BASELINE[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_10_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_25_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.PLUS_50_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/evidence/cost_stress_status.json",
+        "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "file": "control/evidence/g1_source_inventory.json",
+        "json_path": "variants[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R0_LEGACY_ENSEMBLE"
+      }
+    ],
+    "R1_GATE_BASE_ONLY": [
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.max_drawdown_matrix_embedded[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.sharpe_matrix_embedded[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "variants[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "evidence/champion_pointer_audit.json",
+        "json_path": "critical_artifacts.model_output_sp500_pit_t212/challenger_report.json.entries[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "evidence/phase_f_gate_matrix.json",
+        "json_path": "rows[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "evidence/variant_run_inventory.json",
+        "json_path": "variants[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "model_output/challenger_report.json",
+        "json_path": "entries[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/challenger_report.json",
+        "json_path": "entries[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R1_GATE_BASE_ONLY"
+      }
+    ],
+    "R2_MOM_BLEND_REPLACE": [
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.max_drawdown_matrix_embedded[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.sharpe_matrix_embedded[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "variants[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "evidence/champion_pointer_audit.json",
+        "json_path": "critical_artifacts.model_output_sp500_pit_t212/challenger_report.json.entries[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "evidence/phase_f_gate_matrix.json",
+        "json_path": "rows[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "evidence/variant_run_inventory.json",
+        "json_path": "variants[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "model_output/challenger_report.json",
+        "json_path": "entries[3].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/challenger_report.json",
+        "json_path": "entries[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R2_MOM_BLEND_REPLACE"
+      }
+    ],
+    "R3_W070_Q070_NOEXIT": [
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.max_drawdown_matrix_embedded[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.sharpe_matrix_embedded[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "variants[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "evidence/champion_pointer_audit.json",
+        "json_path": "critical_artifacts.model_output_sp500_pit_t212/challenger_report.json.entries[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "evidence/phase_f_gate_matrix.json",
+        "json_path": "rows[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "evidence/variant_run_inventory.json",
+        "json_path": "variants[5].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "model_output/challenger_report.json",
+        "json_path": "entries[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/challenger_report.json",
+        "json_path": "entries[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w070_q070_noexit"
+      }
+    ],
+    "R3_W075_Q065_NOEXIT": [
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+        "json_path": "gate_evaluation.champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/last_known_good_state.json",
+        "json_path": "pointer.variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/last_known_good_state.json",
+        "json_path": "validated_variant_id",
+        "key": "validated_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/control/last_known_good_state.json",
+        "json_path": "variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+        "json_path": "gate_evaluation.champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/auto_promotion_status.json",
+        "json_path": "gate_evaluation.champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/background_research_report.txt",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 4,
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[1].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/behavioral_research_report.txt",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 6,
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/behavioral_research_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      },
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "authoritative_champion",
+        "key": "authoritative_champion",
+        "kind": "json_field",
+        "value": "R3_w075_q065_noexit"
+      }
+    ],
+    "R3_W075_Q065_NOEXIT\" IF INCLUDE_CHAMPION ELSE NONE": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 30,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 32,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 62,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 64,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 62,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 64,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 62,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_viewmodel.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 64,
+        "value": "R3_w075_q065_noexit\" if include_champion else None"
+      }
+    ],
+    "R3_W075_Q065_NOEXIT\", \"VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"}": [
+      {
+        "file": "control/repair_backups/20260530T210216Z_V2R/tests__test_evidence_status.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 59,
+        "value": "R3_w075_q065_noexit\", \"variant_id\": \"R3_w075_q065_noexit\"}"
+      },
+      {
+        "file": "control/repair_backups/20260530T210238Z_V2R/tests__test_evidence_status.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 59,
+        "value": "R3_w075_q065_noexit\", \"variant_id\": \"R3_w075_q065_noexit\"}"
+      }
+    ],
+    "R3_W075_Q065_NOEXIT\"} IF INCLUDE_CHAMPION ELSE {}": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 52,
+        "value": "R3_w075_q065_noexit\"} if include_champion else {}"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 82,
+        "value": "R3_w075_q065_noexit\"} if include_champion else {}"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 82,
+        "value": "R3_w075_q065_noexit\"} if include_champion else {}"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_viewmodel.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 82,
+        "value": "R3_w075_q065_noexit\"} if include_champion else {}"
+      }
+    ],
+    "R3_W075_Q065_NOEXIT\"})": [
+      {
+        "file": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_controller.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 80,
+        "value": "R3_w075_q065_noexit\"})"
+      },
+      {
+        "file": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_review_gate.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 53,
+        "value": "R3_w075_q065_noexit\"})"
+      }
+    ],
+    "R4_W070_Q070_FORCEEXIT": [
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.max_drawdown_matrix_embedded[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "rankings.sharpe_matrix_embedded[2].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "variants[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "evidence/champion_pointer_audit.json",
+        "json_path": "critical_artifacts.model_output_sp500_pit_t212/challenger_report.json.entries[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "evidence/phase_f_gate_matrix.json",
+        "json_path": "rows[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "evidence/variant_run_inventory.json",
+        "json_path": "variants[7].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "model_output/challenger_report.json",
+        "json_path": "entries[6].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      },
+      {
+        "file": "model_output_sp500_pit_t212/challenger_report.json",
+        "json_path": "entries[4].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R4_w070_q070_forceexit"
+      }
+    ],
+    "R5_RANK_ONLY_TRAIN5": [
+      {
+        "file": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G0_REMEDIATION_REQUIRED.md",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 105,
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_r5_unauthorized/operational_champion_r5_claim.json",
+        "json_path": "variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__champion_lineage_policy.json",
+        "json_path": "quarantined_unsealed_claims[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.BASELINE[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.PLUS_10_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.PLUS_25_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.PLUS_50_BPS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+        "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__current_evidence_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__forward_monitoring_data_requirements.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__forward_monitoring_readiness_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__multiple_testing_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__paper_monitor_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__evidence__shadow_monitor_status.json",
+        "json_path": "champion_variant_id",
+        "key": "champion_variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/control__last_known_good_state.json",
+        "json_path": "pointer.variant_id",
+        "key": "variant_id",
+        "kind": "json_field",
+        "value": "R5_rank_only_train5"
+      }
+    ],
+    "STR": [
+      {
+        "file": "control/repair_backups/20260530T185741Z/tests__test_p9_controlled_shadow_paper_validation.py",
+        "key": "Champion:\\s*([A-Za-z0-9_]+)",
+        "kind": "text_pattern",
+        "line": 31,
+        "value": "str"
+      }
+    ],
+    "STR(LKG.GET(\"VALIDATED_VARIANT_ID\", CHAMPION_BEFORE) OR CHAMPION_BEFORE)": [
+      {
+        "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 301,
+        "value": "str(lkg.get(\"validated_variant_id\", champion_before) or champion_before)"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 310,
+        "value": "str(lkg.get(\"validated_variant_id\", champion_before) or champion_before)"
+      }
+    ],
+    "TRUE": [
+      {
+        "file": "control/background_research_status.json",
+        "json_path": "entries[1].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "control/challenger_report.json",
+        "json_path": "entries[3].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+        "json_path": "entries[1].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 54,
+        "value": "True"
+      },
+      {
+        "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+        "key": "is_active_champion",
+        "kind": "text_line",
+        "line": 54,
+        "value": "True"
+      },
+      {
+        "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 54,
+        "value": "True"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 54,
+        "value": "True"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+        "key": "is_active_champion",
+        "kind": "text_line",
+        "line": 54,
+        "value": "True"
+      },
+      {
+        "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 54,
+        "value": "True"
+      },
+      {
+        "file": "control/review_snapshot/p11_statistical_research_validation_snapshot.json",
+        "json_path": "p11_validation.research_ranking[2].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "docs/phases/P11_STATISTICAL_RESEARCH_VALIDATION/P11_RESEARCH_RANKING.json",
+        "json_path": "ranking[2].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "evidence/canonical_model_comparison.json",
+        "json_path": "variants[2].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "evidence/champion_pointer_audit.json",
+        "json_path": "critical_artifacts.control/background_research_status.json.entries[1].is_active_champion",
+        "key": "is_active_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "evidence/champion_pointer_audit.json",
+        "json_path": "critical_artifacts.model_output_sp500_pit_t212/challenger_report.json.entries[3].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "True"
+      },
+      {
+        "file": "model_output/challenger_report.json",
+        "json_path": "entries[5].is_champion",
+        "key": "is_champion",
+        "kind": "json_field",
+        "value": "True"
+      }
+    ],
+    "TRUE, \"CHAMPION_VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"})": [
+      {
+        "file": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_controller.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 431,
+        "value": "True, \"champion_variant_id\": \"R3_w075_q065_noexit\"})"
+      },
+      {
+        "file": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_review_gate.py",
+        "key": "champion_variant_id",
+        "kind": "text_line",
+        "line": 81,
+        "value": "True, \"champion_variant_id\": \"R3_w075_q065_noexit\"})"
+      }
+    ],
+    "UNIQUE": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 166,
+        "value": "unique"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 221,
+        "value": "unique"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 297,
+        "value": "unique"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 297,
+        "value": "unique"
+      },
+      {
+        "file": "control/repair_backups/20260530T225730Z_V5R_PRECHECK/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 297,
+        "value": "unique"
+      }
+    ],
+    "UNIQUE[0]": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 166,
+        "value": "unique[0]"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 221,
+        "value": "unique[0]"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 297,
+        "value": "unique[0]"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 297,
+        "value": "unique[0]"
+      },
+      {
+        "file": "control/repair_backups/20260530T225730Z_V5R_PRECHECK/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 297,
+        "value": "unique[0]"
+      }
+    ],
+    "UNKNOWN": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 150,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 150,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 158,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 158,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 202,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 202,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 213,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 213,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 278,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 278,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 289,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 289,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 278,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+        "kind": "text_pattern",
+        "line": 278,
+        "value": "UNKNOWN"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 289,
+        "value": "UNKNOWN"
+      }
+    ],
+    "`VALIDATED_VARIANT_ID` / `VARIANT_ID` = `R3_W075_Q065_NOEXIT`": [
+      {
+        "file": "docs/phases/V1R/CODEX_V1R_PREFLIGHT.md",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 29,
+        "value": "`validated_variant_id` / `variant_id` = `R3_w075_q065_noexit`"
+      }
+    ],
+    "`VALIDATED_VARIANT_ID` = `R3_W075_Q065_NOEXIT`": [
+      {
+        "file": "docs/phases/V1R2/CODEX_V1R2_PREFLIGHT.md",
+        "key": "validated_variant_id",
+        "kind": "text_line",
+        "line": 21,
+        "value": "`validated_variant_id` = `R3_w075_q065_noexit`"
+      }
+    ],
+    "{EXEC_OV.GET('ACTIVE_CHAMPION')}": [
+      {
+        "file": "control/repair_backups/20260530T213403Z_V4R/aa_decision_cockpit_gui.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 24,
+        "value": "{exec_ov.get('active_champion')}"
+      },
+      {
+        "file": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_gui.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 24,
+        "value": "{exec_ov.get('active_champion')}"
+      },
+      {
+        "file": "control/repair_backups/20260530T215752Z_V4R3/aa_decision_cockpit_gui.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 25,
+        "value": "{exec_ov.get('active_champion')}"
+      },
+      {
+        "file": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_gui.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 25,
+        "value": "{exec_ov.get('active_champion')}"
+      },
+      {
+        "file": "control/repair_backups/20260530T225730Z_V5R_PRECHECK/aa_decision_cockpit_gui.py",
+        "key": "active_champion",
+        "kind": "text_line",
+        "line": 25,
+        "value": "{exec_ov.get('active_champion')}"
+      }
+    ]
+  },
+  "hits_sample": [
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B0_DAILY_REFERENCE"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[4].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B1_REALTIME_EXECUTION_ONLY"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[5].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B2_ATTENTION_CONTINUATION"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[6].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B3_LIQUIDITY_STRESS"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[7].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B4_CROWDING_OVERLAY"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/auto_promotion_status.json",
+      "json_path": "gate_evaluation.champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/last_known_good_state.json",
+      "json_path": "pointer.variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/last_known_good_state.json",
+      "json_path": "validated_variant_id",
+      "key": "validated_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/control/last_known_good_state.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B0_DAILY_REFERENCE"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[4].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B1_REALTIME_EXECUTION_ONLY"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[5].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B2_ATTENTION_CONTINUATION"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[6].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B3_LIQUIDITY_STRESS"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "challenger_experiments[7].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B4_CROWDING_OVERLAY"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/audit_backups/20260530T181447Z/model_output_sp500_pit_t212/auto_promotion_status.json",
+      "json_path": "gate_evaluation.champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/authorization/authorization_source_policy.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/authorization/champion_lineage_status.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/authorization/current_authorization_status.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B4_CROWDING_OVERLAY"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[4].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B0_DAILY_REFERENCE"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[5].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B1_REALTIME_EXECUTION_ONLY"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[6].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B2_ATTENTION_CONTINUATION"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "challenger_experiments[7].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B3_LIQUIDITY_STRESS"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/auto_promotion_status.json",
+      "json_path": "gate_evaluation.champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/background_research_report.txt",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 4,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[0].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[1].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "True"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[2].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[3].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/background_research_status.json",
+      "json_path": "entries[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/behavioral_research_report.txt",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 6,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/behavioral_research_status.json",
+      "json_path": "challenger_results[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B0_DAILY_REFERENCE"
+    },
+    {
+      "file": "control/behavioral_research_status.json",
+      "json_path": "challenger_results[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B1_REALTIME_EXECUTION_ONLY"
+    },
+    {
+      "file": "control/behavioral_research_status.json",
+      "json_path": "challenger_results[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B2_ATTENTION_CONTINUATION"
+    },
+    {
+      "file": "control/behavioral_research_status.json",
+      "json_path": "challenger_results[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B3_LIQUIDITY_STRESS"
+    },
+    {
+      "file": "control/behavioral_research_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[0].is_champion",
+      "key": "is_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R1_GATE_BASE_ONLY"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[1].is_champion",
+      "key": "is_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R2_MOM_BLEND_REPLACE"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[2].is_champion",
+      "key": "is_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w070_q070_noexit"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[3].is_champion",
+      "key": "is_champion",
+      "kind": "json_field",
+      "value": "True"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[4].is_champion",
+      "key": "is_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/challenger_report.json",
+      "json_path": "entries[4].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R4_w070_q070_forceexit"
+    },
+    {
+      "file": "control/challenger_report.txt",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 3,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_change_criteria.yaml",
+      "key": "authoritative_champion",
+      "kind": "text_line",
+      "line": 6,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_change_criteria.yaml",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 6,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_change_criteria.yaml",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 21,
+      "value": "0"
+    },
+    {
+      "file": "control/champion_change_criteria.yaml",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 22,
+      "value": "0"
+    },
+    {
+      "file": "control/champion_lineage_policy.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/champion_registry.json",
+      "json_path": "previous_champion_variant_id",
+      "key": "previous_champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_registry.json",
+      "json_path": "prior_registry.variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_registry.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_registry_r3_backup.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_rejected_alternatives.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/champion_strategic_decision.json",
+      "json_path": "active_champion",
+      "key": "active_champion",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.BASELINE[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.BASELINE[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.BASELINE[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_10_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_10_BPS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_10_BPS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_25_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_25_BPS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_25_BPS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_50_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_50_BPS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.PLUS_50_BPS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.BASELINE[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_10_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_25_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_50_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/current_evidence_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/evidence/forward_monitoring_data_requirements.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/evidence/forward_monitoring_readiness_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/evidence/g1_source_inventory.json",
+      "json_path": "variants[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/evidence/g1_source_inventory.json",
+      "json_path": "variants[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/g1_source_inventory.json",
+      "json_path": "variants[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/evidence/paper_monitor_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/evidence/shadow_monitor_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/evidence/v2_source_inventory.json",
+      "json_path": "variants[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/evidence/v2_source_inventory.json",
+      "json_path": "variants[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/evidence/v2_source_inventory.json",
+      "json_path": "variants[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G0_REMEDIATION_REQUIRED.md",
+      "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+      "kind": "text_pattern",
+      "line": 105,
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_DECISION_G0R_REMEDIATION_REQUIRED.md",
+      "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+      "kind": "text_pattern",
+      "line": 35,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/last_known_good_state.json",
+      "json_path": "pointer.variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/last_known_good_state.json",
+      "json_path": "validated_variant_id",
+      "key": "validated_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/last_known_good_state.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/p9_shadow_paper_prep_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/g0r_r5_unauthorized/operational_champion_r5_claim.json",
+      "json_path": "previous_champion_variant_id",
+      "key": "previous_champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/g0r_r5_unauthorized/operational_champion_r5_claim.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B4_CROWDING_OVERLAY"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[4].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B0_DAILY_REFERENCE"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[5].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B1_REALTIME_EXECUTION_ONLY"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[6].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B2_ATTENTION_CONTINUATION"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "challenger_experiments[7].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "B3_LIQUIDITY_STRESS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__auto_promotion_status.json",
+      "json_path": "gate_evaluation.champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__champion_lineage_policy.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__champion_lineage_policy.json",
+      "json_path": "quarantined_unsealed_claims[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.BASELINE[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.BASELINE[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.BASELINE[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_10_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_10_BPS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_10_BPS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_25_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_25_BPS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_25_BPS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_50_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_50_BPS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.PLUS_50_BPS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "scenarios.SLIPPAGE_TURNOVER_STRESS[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.BASELINE[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_10_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_25_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.PLUS_50_BPS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__cost_stress_status.json",
+      "json_path": "sensitivity_analysis.proxy_turnover_results.SLIPPAGE_TURNOVER_STRESS[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__current_evidence_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__forward_monitoring_data_requirements.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__forward_monitoring_readiness_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__multiple_testing_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__paper_monitor_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__evidence__shadow_monitor_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__last_known_good_state.json",
+      "json_path": "pointer.variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__last_known_good_state.json",
+      "json_path": "validated_variant_id",
+      "key": "validated_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__last_known_good_state.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__operational_champion.json",
+      "json_path": "previous_champion_variant_id",
+      "key": "previous_champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/control__operational_champion.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "best_research_candidate.variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[0].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[1].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "True"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[1].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[2].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[2].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[3].is_active_champion",
+      "key": "is_active_champion",
+      "kind": "json_field",
+      "value": "False"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__background_research_status.json",
+      "json_path": "entries[3].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "MOM_63_TOP12"
+    },
+    {
+      "file": "control/quarantine/g0r_remediation_backup/model_output_sp500_pit_t212__latest_validated_run.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/quarantine/unauthorized_champion_claims.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/quarantine/unauthorized_champion_claims.json",
+      "json_path": "claims[0].variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/r0_migration/m1_active_scope.json",
+      "json_path": "authoritative_champion",
+      "key": "authoritative_champion",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/r5_challenger_registry.json",
+      "json_path": "previous_champion_variant_id",
+      "key": "previous_champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/r5_challenger_registry.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/r5_full_switch_summary.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/r5_operational_promotion.json",
+      "json_path": "variant_id",
+      "key": "variant_id",
+      "kind": "json_field",
+      "value": "R5_rank_only_train5"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+      "key": "champion_variant_id",
+      "kind": "text_line",
+      "line": 200,
+      "value": "champion_variant"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+      "key": "promoted_from_champion",
+      "kind": "text_line",
+      "line": 250,
+      "value": "champion_before"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+      "key": "validated_variant_id",
+      "kind": "text_line",
+      "line": 301,
+      "value": "str(lkg.get(\"validated_variant_id\", champion_before) or champion_before)"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/aa_auto_promotion.py",
+      "key": "champion_variant_id",
+      "kind": "text_line",
+      "line": 469,
+      "value": "champion_before"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+      "key": "active_champion",
+      "kind": "text_line",
+      "line": 54,
+      "value": "True"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+      "key": "is_active_champion",
+      "kind": "text_line",
+      "line": 54,
+      "value": "True"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+      "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+      "kind": "text_pattern",
+      "line": 54,
+      "value": "True"
+    },
+    {
+      "file": "control/repair_backups/20260530T184615Z/tests__test_p7_auto_promotion.py",
+      "key": "validated_variant_id",
+      "kind": "text_line",
+      "line": 91,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+      "key": "champion_variant_id",
+      "kind": "text_line",
+      "line": 209,
+      "value": "champion_variant"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+      "key": "promoted_from_champion",
+      "kind": "text_line",
+      "line": 259,
+      "value": "champion_before"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+      "key": "validated_variant_id",
+      "kind": "text_line",
+      "line": 310,
+      "value": "str(lkg.get(\"validated_variant_id\", champion_before) or champion_before)"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/aa_auto_promotion.py",
+      "key": "champion_variant_id",
+      "kind": "text_line",
+      "line": 478,
+      "value": "champion_before"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+      "key": "active_champion",
+      "kind": "text_line",
+      "line": 54,
+      "value": "True"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+      "key": "is_active_champion",
+      "kind": "text_line",
+      "line": 54,
+      "value": "True"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+      "key": "active_champion['\\\"]?\\s*[:=]\\s*['\\\"]?([A",
+      "kind": "text_pattern",
+      "line": 54,
+      "value": "True"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+      "key": "validated_variant_id",
+      "kind": "text_line",
+      "line": 91,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p7_auto_promotion.py",
+      "key": "promoted_from_champion",
+      "kind": "text_line",
+      "line": 233,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p9_controlled_shadow_paper_validation.py",
+      "key": "Champion:\\s*([A-Za-z0-9_]+)",
+      "kind": "text_pattern",
+      "line": 31,
+      "value": "str"
+    },
+    {
+      "file": "control/repair_backups/20260530T185741Z/tests__test_p9_controlled_shadow_paper_validation.py",
+      "key": "validated_variant_id",
+      "kind": "text_line",
+      "line": 73,
+      "value": "champion, \"validated_run_id\": \"champion\"})"
+    },
+    {
+      "file": "control/repair_backups/20260530T200427Z_V1R/aa_evidence_status.py",
+      "key": "champion_variant_id",
+      "kind": "text_line",
+      "line": 268,
+      "value": "champion"
+    },
+    {
+      "file": "control/repair_backups/20260530T200427Z_V1R/aa_vision_review_gate.py",
+      "key": "LOCKED_CHAMPION\\s*=\\s*['\\\"]([^'\\\"]+)['\\\"",
+      "kind": "text_pattern",
+      "line": 19,
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/repair_backups/20260530T200427Z_V1R/control__evidence__current_evidence_status.json",
+      "json_path": "champion_variant_id",
+      "key": "champion_variant_id",
+      "kind": "json_field",
+      "value": "R3_w075_q065_noexit"
+    },
+    {
+      "file": "control/repair_backups/20260530T201446Z_V1R2/aa_evidence_status.py",
+      "key": "champion_variant_id",
+      "kind": "text_line",
+      "line": 309,
+      "value": "champion"
+    },
+    {
+      "file": "control/repair_backups/20260530T201446Z_V1R2/aa_vision_review_gate.py",
+      "key": "LOCKED_CHAMPION\\s*=\\s*['\\\"]([^'\\\"]+)['\\\"",
+      "kind": "text_pattern",
+      "line": 19,
+      "value": "R3_w075_q065_noexit"
+    }
+  ],
+  "locked_champion_code": "R0_LEGACY_ENSEMBLE",
+  "parse_errors": [
+    "control/r0_migration/m1_turbo_boost.json: Expecting ',' delimiter: line 8 column 3 (char 304)",
+    "evidence/r0_migration/scheduled_tasks_register.json: Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)",
+    "live_pilot/confirmed_execution/live_trading_next_rebalance.json: Expecting value: line 1 column 1 (char 0)"
+  ],
+  "phase": "A1",
+  "pointer_hit_count": 763,
+  "schema_version": 1,
+  "unique_values": [
+    "0",
+    "B0_DAILY_REFERENCE",
+    "B1_REALTIME_EXECUTION_ONLY",
+    "B2_ATTENTION_CONTINUATION",
+    "B3_LIQUIDITY_STRESS",
+    "B4_CROWDING_OVERLAY",
+    "BOOL",
+    "CHAMPION",
+    "CHAMPION, \"VALIDATED_RUN_ID\": \"CHAMPION\"})",
+    "CHAMPION_BEFORE",
+    "CHAMPION_INFO",
+    "CHAMPION_INFO[\"ACTIVE_CHAMPION\"]",
+    "CHAMPION_VARIANT",
+    "FALSE",
+    "FROM",
+    "LOCKED_CHAMPION",
+    "M1_MOM_BLEND_MATCHED_CONTROLS",
+    "MOM_63_TOP12",
+    "MOM_63_TOP12_STRICT",
+    "MOM_63_TOP15_RECONSTRUCTED",
+    "NONE",
+    "OTHER\"}), ENCODING=\"UTF-8",
+    "OTHER_VARIANT\"}), ENCODING=\"UTF-8",
+    "R0_LEGACY_ENSEMBLE",
+    "R1_GATE_BASE_ONLY",
+    "R2_MOM_BLEND_REPLACE",
+    "R3_W070_Q070_NOEXIT",
+    "R3_W075_Q065_NOEXIT",
+    "R3_W075_Q065_NOEXIT\" IF INCLUDE_CHAMPION ELSE NONE",
+    "R3_W075_Q065_NOEXIT\", \"VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"}",
+    "R3_W075_Q065_NOEXIT\"} IF INCLUDE_CHAMPION ELSE {}",
+    "R3_W075_Q065_NOEXIT\"})",
+    "R4_W070_Q070_FORCEEXIT",
+    "R5_RANK_ONLY_TRAIN5",
+    "STR",
+    "STR(LKG.GET(\"VALIDATED_VARIANT_ID\", CHAMPION_BEFORE) OR CHAMPION_BEFORE)",
+    "TRUE",
+    "TRUE, \"CHAMPION_VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"})",
+    "UNIQUE",
+    "UNIQUE[0]",
+    "UNKNOWN",
+    "`VALIDATED_VARIANT_ID` / `VARIANT_ID` = `R3_W075_Q065_NOEXIT`",
+    "`VALIDATED_VARIANT_ID` = `R3_W075_Q065_NOEXIT`",
+    "{EXEC_OV.GET('ACTIVE_CHAMPION')}"
+  ]
+}

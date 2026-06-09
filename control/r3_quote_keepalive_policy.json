@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "enabled": true,
+  "headline_de": "R3 Kurse immer aktuell — Ingest + Live-Quotes coalesced",
+  "min_interval_s": 120,
+  "max_stale_ingest_s": 300,
+  "max_stale_quotes_s": 600,
+  "max_stale_quotes_s_us_open": 120,
+  "refresh_on_mirror_poll": true,
+  "refresh_on_hub_open": true,
+  "us_session_aggressive": true,
+  "evidence_ref": "evidence/r3_quote_keepalive_latest.json",
+  "safety_de": "Nur Marktdaten — keine Orders"
+}

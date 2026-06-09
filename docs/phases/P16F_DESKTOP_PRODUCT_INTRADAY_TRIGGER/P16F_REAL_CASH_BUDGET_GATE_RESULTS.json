@@ -1,0 +1,13 @@
+{
+  "available_real_manual_ticket_budget_eur": 0.0,
+  "pending_manual_ticket_reserved_total_eur": 0.0,
+  "readonly_broker_cash_verified": false,
+  "readonly_observed_real_broker_available_cash_eur": null,
+  "readonly_reconciled_real_invested_eur": 0.0,
+  "real_cash_reserve_required_eur": 50.0,
+  "updated_at_utc": "2026-06-01T15:50:36+00:00",
+  "user_authorized_real_pilot_capital_eur": 500.0,
+  "user_reported_executed_pending_reconciliation_eur": 0.0,
+  "virtual_cash_used_as_real_cash_authority": false,
+  "virtual_paper_portfolio_cash_eur": 153.7288
+}

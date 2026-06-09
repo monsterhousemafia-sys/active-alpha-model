@@ -1,0 +1,15 @@
+{
+  "aligned_intersection_sharpe_leader": "MOM_63_TOP12",
+  "alignment_mode": "INTERSECTION_RECOMPUTED",
+  "champion_sharpe_rank_matrix": null,
+  "generated_at_utc": "2026-06-05T17:44:36+00:00",
+  "governance_blockers": [],
+  "matrix_embedded_sharpe_leader": "R2_MOM_BLEND_REPLACE",
+  "outputs": [
+    "evidence/canonical_model_comparison.json",
+    "evidence/canonical_model_comparison.md"
+  ],
+  "phase": "C",
+  "schema_version": 1,
+  "status": "COMPLETE"
+}

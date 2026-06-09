@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "50d6cfbced22032012db499c0756427b121597d4",
+  "captured_at_utc": "2026-05-30T22:45:00Z",
+  "expected_v5_start_transition": [
+    "control/vision_automation/automation_state.json",
+    "control/vision_automation/review_registry/review_registry.json",
+    "control/vision_automation/transition_log.jsonl"
+  ],
+  "expected_v5_code_changes": [
+    "aa_decision_cockpit_viewmodel.py",
+    "aa_decision_cockpit_gui.py",
+    "build/launcher/Marktanalyse.spec",
+    "tests/test_decision_cockpit_viewmodel.py",
+    "tests/test_decision_cockpit_gui.py"
+  ],
+  "unrelated_prior_phase_artifacts": [
+    "CODEX_V1R3_GIT_STATUS.txt",
+    "CODEX_V2_GIT_STATUS.txt",
+    "codex_v1r3_authorized_completion_review.zip.sha256",
+    "codex_v2_robustness_review.zip.sha256"
+  ],
+  "ok_to_resume": true,
+  "blockers": []
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "granted_at_utc": "2026-06-05T15:05:00+00:00",
+  "granted_by": "user chat: Adminfreigabe",
+  "scope": "WSL2 feature install + Ubuntu + post_reboot setup",
+  "status": "APPROVED",
+  "next_after_reboot": "powershell -ExecutionPolicy Bypass -File E:\\active_alpha_model\\tools\\post_reboot_wsl.ps1"
+}

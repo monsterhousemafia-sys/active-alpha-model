@@ -1,0 +1,126 @@
+{
+  "created_at_utc": "20260530T210238Z",
+  "phase": "V2R_COST_STRESS_AND_STATISTICAL_VALIDITY_REMEDIATION",
+  "files": [
+    {
+      "original_path": "aa_cost_stress.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/aa_cost_stress.py",
+      "size_bytes": 15421,
+      "sha256": "85547fd2a71bcb0b531644c64a1e7fd54d7661b190490ffa8f2e16ede9210d6a"
+    },
+    {
+      "original_path": "aa_robustness_evidence.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/aa_robustness_evidence.py",
+      "size_bytes": 5467,
+      "sha256": "061fa7c6822fa69b43fd36171a3c7ba402ab782d738b0bb16263e47fbe44be13"
+    },
+    {
+      "original_path": "aa_multiple_testing_adjustment.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/aa_multiple_testing_adjustment.py",
+      "size_bytes": 8453,
+      "sha256": "de63ef6e523eec036272db47d31d91360e58278505f6437815699a45f7ef67a2"
+    },
+    {
+      "original_path": "aa_v2_source_inventory.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/aa_v2_source_inventory.py",
+      "size_bytes": 4660,
+      "sha256": "b649560b7ed1bed98d5a5b59ec0e47af31eb7534aa8c4c6dbc09dd44489d1ea2"
+    },
+    {
+      "original_path": "aa_evidence_status.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/aa_evidence_status.py",
+      "size_bytes": 17998,
+      "sha256": "6cadac68fc8fa61e0908c1212d8fd6f50c958c988c2a26a577124ac3581aea78"
+    },
+    {
+      "original_path": "aa_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/aa_vision_phase_catalog.py",
+      "size_bytes": 11323,
+      "sha256": "495971744385c68610aba7bb393bc9237b10d1ef94fe474850e593a52beea2e8"
+    },
+    {
+      "original_path": "control/evidence/current_evidence_status.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__evidence__current_evidence_status.json",
+      "size_bytes": 3392,
+      "sha256": "fa99657a309b58a5cae7d1485494e65fd1623fbc7cf3a82d9063f7318f8721a5"
+    },
+    {
+      "original_path": "control/evidence/cost_stress_status.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__evidence__cost_stress_status.json",
+      "size_bytes": 30088,
+      "sha256": "078046d02cd00573b0040fdaaf461dda06732a13f2b12842e12bb366e6753238"
+    },
+    {
+      "original_path": "control/evidence/robustness_status.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__evidence__robustness_status.json",
+      "size_bytes": 4587,
+      "sha256": "f4dbecd422d0303993cffc6b2633b872afffd16e5ffdf8b0fd86c65a2c3c9c72"
+    },
+    {
+      "original_path": "control/evidence/multiple_testing_status.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__evidence__multiple_testing_status.json",
+      "size_bytes": 1247,
+      "sha256": "b7369f51b25dbf6edb37cba71101e5168cd962a0cdeef4135520b40b24854932"
+    },
+    {
+      "original_path": "control/evidence/v2_source_inventory.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__evidence__v2_source_inventory.json",
+      "size_bytes": 3534,
+      "sha256": "fb51cd6e2b49b42e1dac3515ebc9d40682325f88e1c9b0b3864ca42d6440ed3e"
+    },
+    {
+      "original_path": "control/vision_automation/automation_state.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__vision_automation__automation_state.json",
+      "size_bytes": 1495,
+      "sha256": "d40081479f359a159eeff20c10f09bf5fbbf2103d0cbabbb088ceca6c2519fee"
+    },
+    {
+      "original_path": "control/vision_automation/phase_catalog.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__vision_automation__phase_catalog.json",
+      "size_bytes": 6664,
+      "sha256": "1aa73479e414062dc7210b793caa34fcbeec6cb45327069afb5fe8da53cf814a"
+    },
+    {
+      "original_path": "control/vision_automation/review_registry/review_registry.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/control__vision_automation__review_registry__review_registry.json",
+      "size_bytes": 4435,
+      "sha256": "80d7799c649e7e29daa58fb15c9cdee26951373ed1b20aa200ee6c7b21441699"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/VISION_PROGRESS.json",
+      "size_bytes": 837,
+      "sha256": "a9f0095f9cccd48b67fba90f405e058fe6130afb999c2cc808e02d2e79e15b7c"
+    },
+    {
+      "original_path": "tests/test_cost_stress.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/tests__test_cost_stress.py",
+      "size_bytes": 6965,
+      "sha256": "a126b9a8c36b646dafbbed99d76f946940025fac6cc7e40c4332ad74e52d8872"
+    },
+    {
+      "original_path": "tests/test_robustness_evidence.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/tests__test_robustness_evidence.py",
+      "size_bytes": 3855,
+      "sha256": "d04ad13b74f145c4ddb3bd299f2541b5a35a51888594d9719d4ee66388185587"
+    },
+    {
+      "original_path": "tests/test_multiple_testing_adjustment.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/tests__test_multiple_testing_adjustment.py",
+      "size_bytes": 3277,
+      "sha256": "d6e2808b2a141703b152e229b56df8b953058ffe8622341e5d418d2bb0ce291d"
+    },
+    {
+      "original_path": "tests/test_evidence_status.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/tests__test_evidence_status.py",
+      "size_bytes": 10450,
+      "sha256": "f66c13dc4673f70b1a1c068b12e11905d361492a2bafce3a787650c5e549b18a"
+    },
+    {
+      "original_path": "tests/test_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T210238Z_V2R/tests__test_vision_phase_catalog.py",
+      "size_bytes": 4545,
+      "sha256": "cb9e59e74d722f5878a45fbf4a5dd96317f27c91a0f0b6490f4244bebc405c6f"
+    }
+  ]
+}

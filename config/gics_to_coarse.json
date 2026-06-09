@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "description": "Maps Wikipedia/FMP GICS sector strings to coarse portfolio buckets (aligned with aa_constants.SECTOR_MAP themes).",
+  "exact": {
+    "Information Technology": "Technology",
+    "Technology": "Technology",
+    "Health Care": "Healthcare",
+    "Healthcare": "Healthcare",
+    "Financials": "Financials",
+    "Consumer Discretionary": "Consumer Discretionary",
+    "Consumer Staples": "Consumer Staples",
+    "Communication Services": "Communication",
+    "Telecommunication Services": "Communication",
+    "Industrials": "Industrials",
+    "Energy": "Energy",
+    "Materials": "Materials",
+    "Real Estate": "Real Estate",
+    "Utilities": "Utilities",
+    "Semiconductors": "Semiconductors",
+    "Software": "Software"
+  },
+  "contains": [
+    {"needle": "semiconductor", "coarse": "Semiconductors"},
+    {"needle": "software", "coarse": "Software"},
+    {"needle": "technology", "coarse": "Technology"},
+    {"needle": "health", "coarse": "Healthcare"},
+    {"needle": "financial", "coarse": "Financials"},
+    {"needle": "communication", "coarse": "Communication"},
+    {"needle": "industrial", "coarse": "Industrials"},
+    {"needle": "consumer discretionary", "coarse": "Consumer Discretionary"},
+    {"needle": "consumer staples", "coarse": "Consumer Staples"},
+    {"needle": "energy", "coarse": "Energy"},
+    {"needle": "material", "coarse": "Materials"},
+    {"needle": "real estate", "coarse": "Real Estate"},
+    {"needle": "utilit", "coarse": "Utilities"}
+  ],
+  "default": "Unknown"
+}

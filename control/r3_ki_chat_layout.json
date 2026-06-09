@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "layout_de": "R3 Cockpit-Chat: Session-Rail · Quick-Actions · System — lokaler Hauptkanal (Ollama)",
+  "session_rail": [
+    {
+      "id": "new",
+      "label_de": "Neu",
+      "icon": "plus",
+      "action": "reset",
+      "title_de": "Neue Chat-Sitzung"
+    },
+    {
+      "id": "import",
+      "label_de": "Archiv",
+      "icon": "download",
+      "action": "import",
+      "title_de": "Gespräch aus R3-Archiv laden"
+    },
+    {
+      "id": "continuity",
+      "label_de": "Kont",
+      "icon": "refresh",
+      "cmd": "/kontinuität",
+      "title_de": "Kontinuität prüfen"
+    },
+    {
+      "id": "join",
+      "label_de": "Join",
+      "icon": "users",
+      "cmd": "/join",
+      "title_de": "Rechenkraft — Worker beitreten"
+    },
+    {
+      "id": "desktop",
+      "label_de": "Sys",
+      "icon": "layout",
+      "action": "desktop",
+      "title_de": "R3 System Desktop"
+    },
+    {
+      "id": "mandat",
+      "label_de": "M",
+      "icon": "sparkle",
+      "cmd": "/wachstum",
+      "title_de": "Mandat & Wachstum"
+    }
+  ],
+  "power_module_cmds": {
+    "ml": "/geheimnis",
+    "ollama": "/hilfe",
+    "cloud": "/synergie",
+    "build": "/beitrag ",
+    "pilot": "/board",
+    "storage": "/r3"
+  },
+  "quick_chips_public": [
+    {"label_de": "Mitmachen", "cmd": "/fragen", "auto_send": true},
+    {"label_de": "Spenden", "cmd": "/spende", "auto_send": true},
+    {"label_de": "Status", "cmd": "/r3", "auto_send": true},
+    {"label_de": "Join", "cmd": "/join", "auto_send": true},
+    {"label_de": "Kontinuität", "cmd": "/kontinuität", "auto_send": true}
+  ],
+  "quick_chips_operator": [
+    {"label_de": "Power", "cmd": "/r3", "auto_send": true},
+    {"label_de": "Trading", "cmd": "/geheimnis", "auto_send": true},
+    {"label_de": "Bauen", "cmd": "/beitrag ", "auto_send": false},
+    {"label_de": "Status", "cmd": "/status", "auto_send": true},
+    {"label_de": "Synergie", "cmd": "/synergie", "auto_send": true},
+    {"label_de": "Desktop", "cmd": "/desktop", "auto_send": true},
+    {"label_de": "Mandat", "cmd": "/wachstum", "auto_send": true}
+  ]
+}

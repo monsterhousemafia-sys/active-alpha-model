@@ -1,0 +1,44 @@
+{
+  "actions": [
+    {
+      "killed_duplicate_r0_or_matrix": [
+        3796,
+        27004
+      ]
+    },
+    {
+      "removed_junk_dir": "20260604T195809Z_R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "removed_junk_dir": "20260604T195809Z_R3_w075_q065_noexit"
+    },
+    {
+      "removed_junk_dir": "20260604T200130Z_R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "path_only_turbo": {
+        "argv_from_log": true,
+        "log": "E:\\active_alpha_model\\validation_runs\\20260604T153044Z_R0_LEGACY_ENSEMBLE\\validation_run_path_turbo.log",
+        "pid": 25276,
+        "report": "E:\\active_alpha_model\\evidence\\r0_migration\\canonical_r0_run.json",
+        "started": "subprocess"
+      }
+    }
+  ],
+  "at_utc": "2026-06-04T20:12:09+00:00",
+  "batch_active": false,
+  "killer_pack": {
+    "affinity_mask": 4294967295,
+    "boosted": [],
+    "cpus": 32,
+    "executive_deduped": [],
+    "power": {
+      "/change disk-timeout-ac 0": 0,
+      "/change disk-timeout-dc 0": 0,
+      "/setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c": 0
+    }
+  },
+  "matrix_n": 0,
+  "sla_h_left": 1.09,
+  "verdict": "PATH_ONLY_R0_STARTED"
+}

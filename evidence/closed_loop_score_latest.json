@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-09T17:52:34+00:00",
+  "green": 0,
+  "yellow": 2,
+  "total": 6,
+  "pct": 0,
+  "headline_de": "Kreis-Score 0/6 grün (0%)",
+  "tag": "START",
+  "summary_de": "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+  "stages": [
+    {
+      "id": "observe",
+      "label_de": "Beobachten",
+      "ok": false,
+      "partial": true,
+      "status": "gelb",
+      "detail_de": "Lernen OK · Konto OK · Kurse 0/11 Kurse"
+    },
+    {
+      "id": "decide",
+      "label_de": "Entscheiden",
+      "ok": false,
+      "partial": false,
+      "status": "rot",
+      "detail_de": "Warnungen 3× kritisch"
+    },
+    {
+      "id": "act",
+      "label_de": "Handeln",
+      "ok": false,
+      "partial": false,
+      "status": "rot",
+      "detail_de": "Live-Fills reif: 0/3 · API-Scope offen"
+    },
+    {
+      "id": "learn",
+      "label_de": "Lernen",
+      "ok": false,
+      "partial": false,
+      "status": "rot",
+      "detail_de": "Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0."
+    },
+    {
+      "id": "evolve",
+      "label_de": "Evolieren",
+      "ok": false,
+      "partial": false,
+      "status": "rot",
+      "detail_de": "sportwagen → sport_plus · Auto-Apply 0"
+    },
+    {
+      "id": "seal",
+      "label_de": "H1/Seal",
+      "ok": false,
+      "partial": true,
+      "status": "gelb",
+      "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates"
+    }
+  ],
+  "bottleneck_de": "Entscheiden: Warnungen 3× kritisch"
+}

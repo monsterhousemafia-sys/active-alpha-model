@@ -1,0 +1,16 @@
+{
+  "finish_push": {
+    "verdict": "HOLD_LIVE_MATRIX"
+  },
+  "hints": {
+    "finish_hint": "run_r0_migration_m1_finish.bat",
+    "foreground_matrix": "run_r0_migration_m1_matrix.bat",
+    "primary_entry": "run_r0_migration_m1.bat",
+    "resume_hint": "run_r0_migration_m1.bat",
+    "status_hint": "run_r0_migration_m1_status.bat"
+  },
+  "primary_entry": "run_r0_migration_m1.bat",
+  "started_at_utc": "2026-06-04T15:40:30+00:00",
+  "status": "FINISH_PUSH_HOLD_LIVE_MATRIX",
+  "updated_at_utc": "2026-06-04T15:40:30+00:00"
+}

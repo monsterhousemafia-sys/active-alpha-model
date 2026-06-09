@@ -1,0 +1,14 @@
+---
+description: Active Alpha Autopilot — bindend gemäß CURSOR_ACTIVE_ALPHA_AUTOPILOT_MASTERPROMPT.md
+alwaysApply: false
+---
+
+# Active Alpha Autopilot
+
+Verbindliche Spezifikation: `CURSOR_ACTIVE_ALPHA_AUTOPILOT_MASTERPROMPT.md`
+
+- Eine Phase pro Lauf; aktuell nur die in `DEVELOPMENT_PIPELINE.yaml` als nächste zulässige Phase markierte Arbeit.
+- `AUTO_EXECUTE_REAL_MONEY = DISABLED` — niemals Echtgeldorders.
+- Kein Überschreiben des last-known-good bei Fehlern oder FAILSAFE_MODE.
+- Vor P1-PASS keine Änderung an Signal-/Risk-off-/Horizon-/Exposure-Parametern.
+- Arbeite autonom; keine Rückfragen außer bei produktiver Modelllogik-Änderung.

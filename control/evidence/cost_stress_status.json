@@ -1,0 +1,391 @@
+{
+  "COST_STRESS_GATE": {
+    "approved_scenario": "PLUS_25_BPS",
+    "blockers": [
+      "BASELINE_COST_TREATMENT_NOT_VERIFIED:M1_MOM_BLEND_MATCHED_CONTROLS",
+      "CHALLENGER_TURNOVER_NOT_VERIFIED"
+    ],
+    "detail": "BASELINE_COST_TREATMENT_NOT_VERIFIED:M1_MOM_BLEND_MATCHED_CONTROLS; CHALLENGER_TURNOVER_NOT_VERIFIED",
+    "evaluation_status": "NOT_EVALUABLE",
+    "pass": false
+  },
+  "baseline_cost_policy": {
+    "incremental_stress_only": true,
+    "note": "V2R requires verified baseline cost documentation per variant; no proxy turnover for gate pass."
+  },
+  "generated_at_utc": "2026-06-07T20:14:01+00:00",
+  "mode": "READ_ONLY_HISTORICAL_EVIDENCE",
+  "scenarios": {
+    "BASELINE": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "BASELINE",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "No readable baseline cost proof artifact",
+          "source_path": null,
+          "source_sha256": null,
+          "verified": false
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "BASELINE",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "BASELINE",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "PLUS_10_BPS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_10_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "No readable baseline cost proof artifact",
+          "source_path": null,
+          "source_sha256": null,
+          "verified": false
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_10_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_10_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "PLUS_25_BPS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_25_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "No readable baseline cost proof artifact",
+          "source_path": null,
+          "source_sha256": null,
+          "verified": false
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_25_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_25_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "PLUS_50_BPS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_50_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "No readable baseline cost proof artifact",
+          "source_path": null,
+          "source_sha256": null,
+          "verified": false
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_50_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "PLUS_50_BPS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "SLIPPAGE_TURNOVER_STRESS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "SLIPPAGE_TURNOVER_STRESS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "No readable baseline cost proof artifact",
+          "source_path": null,
+          "source_sha256": null,
+          "verified": false
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "SLIPPAGE_TURNOVER_STRESS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "returns_file_missing",
+        "scenario": "SLIPPAGE_TURNOVER_STRESS",
+        "source_files": {},
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ]
+  },
+  "schema_version": 2,
+  "sensitivity_analysis": {
+    "label": "NOT_GATE_EVIDENCE",
+    "proxy_turnover_results": {
+      "BASELINE": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "returns_file_missing",
+          "scenario": "BASELINE",
+          "source_files": {},
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_10_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "returns_file_missing",
+          "scenario": "PLUS_10_BPS",
+          "source_files": {},
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_25_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "returns_file_missing",
+          "scenario": "PLUS_25_BPS",
+          "source_files": {},
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_50_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "returns_file_missing",
+          "scenario": "PLUS_50_BPS",
+          "source_files": {},
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "SLIPPAGE_TURNOVER_STRESS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "returns_file_missing",
+          "scenario": "SLIPPAGE_TURNOVER_STRESS",
+          "source_files": {},
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ]
+    }
+  },
+  "variants": [
+    "R0_LEGACY_ENSEMBLE",
+    "M1_MOM_BLEND_MATCHED_CONTROLS",
+    "MOM_63_TOP12"
+  ]
+}

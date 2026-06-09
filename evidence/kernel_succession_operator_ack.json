@@ -1,0 +1,10 @@
+{
+  "ack_at_utc": "2026-06-06T15:40:05+00:00",
+  "approved_by": "user",
+  "detail_de": "Operator-Freigabe: Cognitive Kernel löst alte Steuerung ab",
+  "forbidden_de": "/boot, vmlinuz, unsigned Module — Policy unverändert",
+  "linux_mainline_de": "Ubuntu-Kernel 7.x bleibt — nur Steuerungsschicht wird Nachfolger",
+  "ok": true,
+  "schema_version": 1,
+  "succession_de": "Alter ad-hoc-Stack wird durch Cognitive Kernel abgelöst"
+}

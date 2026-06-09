@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "product_name": "Universal Lite Worker OS",
+  "short_name": "ULWO",
+  "tagline_de": "Leicht. Universal. Rechenkraft fürs R3-Netzwerk.",
+  "description_de": "Downloadbares Worker-System — wie ein schlankes Ubuntu nur für Mitmachen. Ein Klick installiert, verbindet zum R3-König, spendet CPU.",
+  "bundle_dir_name": "Universal_Lite_Worker_OS",
+  "zip_name": "Universal_Lite_Worker_OS.zip",
+  "requirements_de": ["Python 3.8+", "Internet oder LAN zum R3-König"],
+  "platforms": ["linux", "windows", "macos"],
+  "install_one_liner_de": "curl -fsSL {hub}/api/ulwo/install.sh | ULWO_HUB={hub} bash",
+  "king_requires_de": "R3 Cockpit läuft — ai_kernel ulwo-launch auf dem König-Rechner"
+}

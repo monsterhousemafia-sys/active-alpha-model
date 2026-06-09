@@ -1,0 +1,82 @@
+{
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "checklist_doc": "docs/R0_MIGRATION_MASTER_CHECKLIST.md",
+  "current_phase": "M12",
+  "last_completed_phase": "M12",
+  "mandate_doc": "docs/R0_MIGRATION_MANDATE.md",
+  "phases": {
+    "M0": {
+      "blockers": [
+        "authoritative_champion_unchanged"
+      ],
+      "status": "BLOCKED",
+      "updated_at_utc": "2026-06-08T14:01:52+00:00"
+    },
+    "M1": {
+      "blockers": [],
+      "completed_at_utc": "2026-06-05T14:54:10+00:00",
+      "seal": "SEALED",
+      "status": "SEALED"
+    },
+    "M10": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+      "status": "SEALED"
+    },
+    "M11": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+      "status": "SEALED"
+    },
+    "M12": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+      "status": "SEALED"
+    },
+    "M2": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T14:58:48+00:00",
+      "status": "SEALED"
+    },
+    "M3": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:38:50+00:00",
+      "status": "SEALED"
+    },
+    "M4": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:07+00:00",
+      "status": "SEALED"
+    },
+    "M5": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:07+00:00",
+      "status": "SEALED"
+    },
+    "M6": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:07+00:00",
+      "status": "SEALED"
+    },
+    "M7": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+      "status": "SEALED"
+    },
+    "M8": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+      "status": "SEALED"
+    },
+    "M9": {
+      "blockers": [],
+      "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+      "status": "SEALED"
+    }
+  },
+  "plan_doc": "docs/R0_LONG_TERM_MIGRATION_PLAN.md",
+  "program": "R0_LONG_TERM_MIGRATION",
+  "schema_version": 2,
+  "target_champion_after_m9": "R0_LEGACY_ENSEMBLE",
+  "updated_at_utc": "2026-06-08T14:01:52+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "consumed_at_utc": "2026-06-02T19:40:54+00:00",
+  "expires_at_utc": "2026-06-02T19:41:54+00:00",
+  "issued_at_utc": "2026-06-02T19:40:54+00:00",
+  "payload": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T19:40:54+00:00",
+    "draft_id": "f015f32c-2d1f-40ad-a7e5-c729ea3f0eca",
+    "execution_style": "market",
+    "expires_at_utc": "2026-06-02T19:55:54+00:00",
+    "instrument": "CAT",
+    "limit_price": 782.04,
+    "max_notional_eur": 23.46,
+    "order_type": "MARKET_BUY",
+    "quantity": 0.03,
+    "reference_price_eur": 782.04,
+    "side": "BUY",
+    "source": "LIVE_DASHBOARD_REBALANCE",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "CAT_US_EQ",
+    "updated_at_utc": "2026-06-02T19:40:54+00:00"
+  },
+  "payload_hash_sha256": "7905398f56996cef7cf0dc49849d0ebdb2d9255beb8d300032342bfde293109f",
+  "profile": "T212_PROFILE_CONFIRMED_EXECUTION",
+  "status": "SUBMISSION_IN_PROGRESS",
+  "token_id": "fb216a02-b5ee-4a9e-a356-1be56a7ca7d6",
+  "token_secret_hash": "287431aab9f5c7029c3315c7bc365a7bbca77db7c85c37b35ab4b3ee9933767e",
+  "used": true
+}

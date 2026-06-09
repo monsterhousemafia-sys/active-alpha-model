@@ -1,0 +1,132 @@
+[
+  {
+    "file": "1_daily_mark_to_market.bat",
+    "size": 88,
+    "sha256": "6a8c88185df51627f02240e4cf2c0703d97bc2dfef580739714b3223218fee08"
+  },
+  {
+    "file": "2_rebalance_when_due.bat",
+    "size": 1297,
+    "sha256": "2dc6325936ef16108c15662b7b7a2211af7bb6c4214410d86ef1a4d1d7ebbfc9"
+  },
+  {
+    "file": "3_book_cashflow.bat",
+    "size": 82,
+    "sha256": "bae01c9cf585a560ec7b2a1470c0a540b660eea5ed78d95eacc341396c2a561a"
+  },
+  {
+    "file": "PACKAGE_MANIFEST.txt",
+    "size": 2303,
+    "sha256": "9ccb53e30d8527ba254feaaacddd562e3f7048d7e8eb1a85caa99b600f4c840d"
+  },
+  {
+    "file": "README_ACTIVE_ALPHA.md",
+    "size": 2702,
+    "sha256": "dd4a0c04f1277bb5ff952873a785c27e154abc87c32427c29ca2e5751cd9d7f5"
+  },
+  {
+    "file": "active_alpha_control_center.py",
+    "size": 25253,
+    "sha256": "564b67eabd667f8defbc8df8c723ff39b02bfc1b3925a5395d07b188a3adcd46"
+  },
+  {
+    "file": "active_alpha_model.py",
+    "size": 324113,
+    "sha256": "8b05c387740eac48adee68ef9948d6266935bf98af215c557987322bfe849515"
+  },
+  {
+    "file": "active_alpha_settings.bat",
+    "size": 4945,
+    "sha256": "108425af8f87dca0a11024004327e34702cdae271bb0c9adf9c2e58ef7461cef"
+  },
+  {
+    "file": "active_alpha_user_config.bat",
+    "size": 3734,
+    "sha256": "25e898e2bebe0a028030c0491f3fac01eb77e6fc484796b580516b1d0dc8cfc4"
+  },
+  {
+    "file": "build_sp500_membership_wikipedia.py",
+    "size": 19997,
+    "sha256": "68a9961f41344f0772c40b073ec89c35f411444fac90fdaf98b446abf4ff07ce"
+  },
+  {
+    "file": "check_active_alpha_core.py",
+    "size": 6648,
+    "sha256": "8ba58a1fcbadd58e48d81fe8dd4e15b244b104fab15f0908f1ee14883902b363"
+  },
+  {
+    "file": "load_active_alpha_config.bat",
+    "size": 7587,
+    "sha256": "d3ef752b83e630ee6b14cfbbffc7ef4a9333db24efc02d783b1300c4ae5e9482"
+  },
+  {
+    "file": "paper_trading_engine.py",
+    "size": 120550,
+    "sha256": "ed8fa9338c1fd09accac892b4d55b72bdf5633a5d3a52ab7c72d517248c99c7b"
+  },
+  {
+    "file": "requirements_active_alpha.txt",
+    "size": 157,
+    "sha256": "06e400732d4030366e7c059f4498aedd45db27037d0c3880a226855511cff381"
+  },
+  {
+    "file": "run_active_alpha_control_center.bat",
+    "size": 4191,
+    "sha256": "ef23a0c74bd626bd4b100d7fa60fe5ff286a3f0bb123f9ee9cc50f087217c294"
+  },
+  {
+    "file": "run_active_alpha_model.bat",
+    "size": 12212,
+    "sha256": "b3e7d6a1a66ebdd8ea69b32340bfb8e2e34ede4c9a896b26a39112c032a2e724"
+  },
+  {
+    "file": "run_active_alpha_settings_wizard.bat",
+    "size": 24902,
+    "sha256": "a17efca221d986bb06c328a3edf1217e137d449e694750b323840b5407408b46"
+  },
+  {
+    "file": "run_build_sp500_membership.bat",
+    "size": 1314,
+    "sha256": "aaa3f3666dcdf5993534c738bc16814825b2a7aa32f7c2700f6021fd1e0d960f"
+  },
+  {
+    "file": "run_paper_cashflow.bat",
+    "size": 3743,
+    "sha256": "8b2fa7ca2352b9ed3e2178aa6e109b55005d3ee4adef92115a91b29153d1e589"
+  },
+  {
+    "file": "run_paper_mark_to_market.bat",
+    "size": 2545,
+    "sha256": "88a003c790d98edff3a2560f34c428b249decbeb7418bfa425017d672054e240"
+  },
+  {
+    "file": "run_paper_status.bat",
+    "size": 1648,
+    "sha256": "3580cdb3a237ac7793cc2b9fc824e3cdb75502c329714b6d67fc7ea8091843f1"
+  },
+  {
+    "file": "run_paper_trading.bat",
+    "size": 15167,
+    "sha256": "217da5b0920e893b7b315166ebbf364ecedd1f9eca06947bf5030402d669f41d"
+  },
+  {
+    "file": "run_robustness_tests.bat",
+    "size": 1035,
+    "sha256": "d29326e1c1f8685604af2a7598b146bd39eaf82a7598892686b4ee66ae3ebefd"
+  },
+  {
+    "file": "run_robustness_tests.py",
+    "size": 25335,
+    "sha256": "cbfb01b333831c9d5033bd790d45bdd7725b95a336755ca56ed8b65ca6f53327"
+  },
+  {
+    "file": "setup_active_alpha_env.bat",
+    "size": 4270,
+    "sha256": "3f75f195443719bf808e55e33073d866558ce215f8cab850fa358555984c2d98"
+  },
+  {
+    "file": "show_active_alpha_config.bat",
+    "size": 7489,
+    "sha256": "45f261584e5b20082f254ede379c1701aeec0d0e67e9cee9450fd406200a8b35"
+  }
+]

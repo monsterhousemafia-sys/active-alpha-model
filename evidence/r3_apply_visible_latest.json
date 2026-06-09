@@ -1,0 +1,86 @@
+{
+  "bytes": 35825,
+  "headline_de": "R3 UI sichtbar",
+  "king_path_de": "bash tools/king_ops.sh r3-bau gui",
+  "ok": true,
+  "reload_de": "Browser: Strg+Shift+R auf /r3",
+  "schema_version": 1,
+  "steps": [
+    {
+      "headline_de": "Bau-Mandat: R3 Lokal abstimmen",
+      "ok": true,
+      "step": "king_32b_mandate"
+    },
+    {
+      "detail": {
+        "bridge": {
+          "architecture_de": "Cursor schreibt Evidence → König liest bei Start und /cursor. König schreibt Beschwerden/Aufträge zurück → Cursor liest evidence-Datei.",
+          "headline_de": "Cursor ↔ König Bridge aktiv",
+          "last_cursor_push": {
+            "at_utc": "2026-06-08T15:27:07+00:00",
+            "direction": "cursor_to_king",
+            "source": "r3_build_mandate",
+            "summary_de": "Bau-Mandat: R3 Lokal abstimmen",
+            "tasks_for_king_de": [
+              "bash tools/king_ops.sh r3-bau",
+              "oder /bau R3 Lokal abstimmen (build-kernel)",
+              "Nach Bau: r3_sync · Operator /r3 Update bestätigen"
+            ],
+            "verified_facts_de": [
+              "Laufzeitprofil: fluid_v2",
+              "Stack: OK",
+              "Upgrade offen: nein",
+              "Bau-Owner: König 32B autonom — control/king_32b_autonomous_build.json",
+              "Cursor: kein Standard-Bau — nur Notfall-Fallback"
+            ]
+          },
+          "last_king_push": {
+            "at_utc": "2026-06-08T13:50:39+00:00",
+            "complaint_de": "",
+            "direction": "king_to_cursor",
+            "request_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+            "status_de": "König-Orchestrator: H1 COMPLETE — Seal optional (mom_1 informativ)"
+          },
+          "schema_version": 1,
+          "status": "ACTIVE",
+          "updated_at_utc": "2026-06-08T15:27:07+00:00"
+        },
+        "ok": true
+      },
+      "ok": true,
+      "step": "king_handoff"
+    },
+    {
+      "ok": true,
+      "step": "align"
+    },
+    {
+      "ok": true,
+      "step": "post_build_align"
+    },
+    {
+      "fixed": 0,
+      "ok": true,
+      "step": "post_login_ownership"
+    },
+    {
+      "desktop": true,
+      "ok": true,
+      "png": 8,
+      "step": "desktop_icon"
+    },
+    {
+      "bytes": 35825,
+      "ok": true,
+      "step": "render_cache"
+    },
+    {
+      "ok": false,
+      "rc": -15,
+      "step": "hub_restart"
+    }
+  ],
+  "surface_de": "http://127.0.0.1:17890/r3",
+  "updated_at_utc": "2026-06-08T15:27:09+00:00",
+  "visible_ui": true
+}

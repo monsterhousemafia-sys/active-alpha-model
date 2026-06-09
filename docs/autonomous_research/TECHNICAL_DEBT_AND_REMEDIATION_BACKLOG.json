@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-06-01T11:49:07+00:00",
+  "items": [
+    {
+      "id": "P0-1",
+      "priority": "P0",
+      "status": "DOCUMENTED",
+      "title": "MOM_63_TOP12 top_k alias"
+    },
+    {
+      "id": "P0-2",
+      "priority": "P0",
+      "status": "IN_PROGRESS",
+      "title": "Full trade ledger"
+    },
+    {
+      "id": "P0-3",
+      "priority": "P0",
+      "status": "IN_PROGRESS",
+      "title": "Cost reconciliation"
+    },
+    {
+      "id": "P1-1",
+      "priority": "P1",
+      "status": "IMPLEMENTED",
+      "title": "Evidence status gates"
+    }
+  ]
+}

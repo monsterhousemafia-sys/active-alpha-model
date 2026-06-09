@@ -1,0 +1,73 @@
+{
+  "active_champion": "R3_w075_q065_noexit",
+  "champion_changed": false,
+  "labels": [
+    "RESEARCH_CANDIDATE",
+    "OFFLINE_COMPARISON_RESULT",
+    "NOT_PROMOTED",
+    "NOT_LIVE_AUTHORIZED"
+  ],
+  "paper_practicality_status": "PARTIAL",
+  "ranking": [
+    {
+      "cost_stress_plus25_sharpe": 0.916796484861934,
+      "cost_stress_status": "EVALUABLE",
+      "designation": "RESEARCH_CANDIDATE",
+      "dsr_probability": 0.8304483163991592,
+      "dsr_status": "FAIL",
+      "full_sharpe": 0.9911989434917188,
+      "is_active_champion": false,
+      "live_authorization": "NOT_LIVE_AUTHORIZED",
+      "promotion_status": "NOT_PROMOTED",
+      "rank": 1,
+      "rank_score": 0.916796484861934,
+      "robustness_status": "STABLE_POSITIVE",
+      "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+    },
+    {
+      "cost_stress_plus25_sharpe": 0.9166435926883346,
+      "cost_stress_status": "EVALUABLE",
+      "designation": "RESEARCH_CANDIDATE",
+      "dsr_probability": 0.8359652715208128,
+      "dsr_status": "FAIL",
+      "full_sharpe": 0.998285209882352,
+      "is_active_champion": false,
+      "live_authorization": "NOT_LIVE_AUTHORIZED",
+      "promotion_status": "NOT_PROMOTED",
+      "rank": 2,
+      "rank_score": 0.9166435926883346,
+      "robustness_status": "STABLE_POSITIVE",
+      "variant_id": "MOM_63_TOP12_STRICT"
+    },
+    {
+      "cost_stress_plus25_sharpe": 0.8080733121312066,
+      "cost_stress_status": "EVALUABLE",
+      "designation": "RESEARCH_CANDIDATE",
+      "dsr_probability": 0.8539537100153771,
+      "dsr_status": "FAIL",
+      "full_sharpe": 0.8833124373370502,
+      "is_active_champion": true,
+      "live_authorization": "NOT_LIVE_AUTHORIZED",
+      "promotion_status": "NOT_PROMOTED",
+      "rank": 3,
+      "rank_score": 0.8080733121312066,
+      "robustness_status": "STABLE_POSITIVE",
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "cost_stress_plus25_sharpe": 0.7096342591166316,
+      "cost_stress_status": "EVALUABLE",
+      "designation": "RESEARCH_CANDIDATE",
+      "dsr_probability": 0.7284660405801431,
+      "dsr_status": "FAIL",
+      "full_sharpe": 0.8619911813303781,
+      "is_active_champion": false,
+      "live_authorization": "NOT_LIVE_AUTHORIZED",
+      "promotion_status": "NOT_PROMOTED",
+      "rank": 4,
+      "rank_score": 0.7096342591166316,
+      "robustness_status": "STABLE_POSITIVE",
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    }
+  ]
+}

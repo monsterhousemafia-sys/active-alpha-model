@@ -1,0 +1,21 @@
+{
+  "bytecode_entries": [],
+  "expected_zip_sha256": "d6b722e657b8f991a389e7ef8974f066c0fba3d88d0568fc61f8c25b9ccfd6a2",
+  "manifest_coverage": "COMPLETE",
+  "manifest_mismatches": [],
+  "manifest_present": true,
+  "p15_package_sha256": "d6b722e657b8f991a389e7ef8974f066c0fba3d88d0568fc61f8c25b9ccfd6a2",
+  "p15_preserved": true,
+  "previous_pass_phases_reset": false,
+  "secrets_in_p15_package": true,
+  "selected_p15_package": "E:\\active_alpha_model\\outgoing_cursor_observation\\p15_paper_runtime_validation\\cursor_p15_paper_runtime_validation_package.zip",
+  "sidecar_present": true,
+  "sidecar_verified": true,
+  "tests_packaged_in_p15": true,
+  "unsafe_zip_paths": [],
+  "verification_status": "VERIFIED",
+  "zip_entry_count": 42,
+  "zip_present": true,
+  "zip_readable": true,
+  "zip_sha256_match": true
+}

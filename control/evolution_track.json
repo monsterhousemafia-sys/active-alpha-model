@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "title": "Sportwagen -> Rennwagen Evolution",
+  "updated_at_utc": "2026-06-05T22:30:00+00:00",
+  "metaphor": {
+    "sportwagen": "Manuell, EXE-Bestätigung, Predict-Pflicht — schnell aber kontrolliert",
+    "rennwagen": "Vollauto nach Shadow + M9 — gleiche DNA, maximale Automatisierung"
+  },
+  "governance": {
+    "evolution_allow_full_auto": false,
+    "max_auto_stage_without_m9": "rennsport",
+    "note": "rennwagen (auto_execute) nur wenn evolution_allow_full_auto=true UND M9 sealed"
+  },
+  "stages": [
+    {
+      "id": "sportwagen",
+      "order": 0,
+      "label_de": "Sportwagen",
+      "criteria": {},
+      "auto_actions": ["outcome_sync", "feedback_update", "learning_capture", "price_refresh_on_predict"]
+    },
+    {
+      "id": "sport_plus",
+      "order": 1,
+      "label_de": "Sport Plus",
+      "criteria": {
+        "min_mature_live": 3,
+        "min_live_signed_hit_rate": 0.4,
+        "backtest_sealed": false
+      },
+      "auto_actions": ["slippage_calibrate", "quote_refresh_tune", "weekly_audit"]
+    },
+    {
+      "id": "track_day",
+      "order": 2,
+      "label_de": "Track Day",
+      "criteria": {
+        "min_mature_live": 10,
+        "min_live_signed_hit_rate": 0.48,
+        "live_mae_below_backtest": true
+      },
+      "auto_actions": ["cash_buffer_tune", "min_trade_tune", "shadow_metrics_log"]
+    },
+    {
+      "id": "rennsport",
+      "order": 3,
+      "label_de": "Rennsport",
+      "criteria": {
+        "min_mature_live": 20,
+        "min_live_signed_hit_rate": 0.52,
+        "min_weeks_improving": 2,
+        "daily_alpha_h1_backtest_sealed": true
+      },
+      "auto_actions": ["challenger_offline_queue", "execution_style_optimize"]
+    },
+    {
+      "id": "rennwagen",
+      "order": 4,
+      "label_de": "Rennwagen",
+      "criteria": {
+        "min_mature_live": 40,
+        "min_live_signed_hit_rate": 0.55,
+        "shadow_pass": true,
+        "m9_approved": true,
+        "evolution_allow_full_auto": true
+      },
+      "auto_actions": ["auto_execute_us_open", "remove_gui_confirm_gate"]
+    }
+  ],
+  "safe_auto_limits": {
+    "slippage_bps_max": 25.0,
+    "slippage_bps_step": 1.0,
+    "quote_refresh_seconds_open_min": 45,
+    "cash_buffer_pct_min": 3.0,
+    "cash_buffer_pct_max": 10.0
+  }
+}

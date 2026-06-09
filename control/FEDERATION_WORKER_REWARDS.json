@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "policy_de": "Pilot-Entlohnung: sichtbare Legion-Ränge + gemessene CPU-Sekunden — kein Echtgeld, kein Broker.",
+  "join_stipend_cpu_seconds": 60,
+  "heartbeat_stipend_cpu_seconds": 3,
+  "heartbeat_stipend_min_interval_s": 3600,
+  "min_cpu_seconds_per_task": {
+    "compute_pulse": 20,
+    "backend_preview": 25,
+    "snapshot_refresh": 15,
+    "hub_verify": 1,
+    "h1_path_chunk": 10,
+    "h1_naive_prep_chunk": 10
+  },
+  "pulse_tasks_per_worker": 3,
+  "fair_pull_one_active_per_worker": true,
+  "entlohnung_summary_de": "Jeder Worker erhält CPU-Sekunden-Gutschrift, Legion-Rang und sichtbare Anerkennung auf /legion."
+}

@@ -1,0 +1,12 @@
+{
+  "csv_rows": 1860,
+  "generated_at_utc": "2026-06-05T15:38:50+00:00",
+  "ledger_ref": "research_evidence/r0_tuning_trial_ledger.json",
+  "phase": "M3",
+  "rationale": "Accelerated track B: M1-sealed R0 reference selected; DAILY_ALPHA_H1 optional follow-up",
+  "schema_version": 1,
+  "selected_run_dir": "validation_runs\\20260604T210245Z_R0_LEGACY_ENSEMBLE",
+  "selected_variant_id": "R0_LEGACY_ENSEMBLE",
+  "status": "CANDIDATE_READY",
+  "waiver_ref": "control/r0_migration/migration_time_gate_waiver.json"
+}

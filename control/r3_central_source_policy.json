@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 — zentrale Handelsplattform",
+  "primary_deliverable_de": "Tägliches Handelsergebnis T212 — Alpha Model trainiert, R3 präsentiert nur Ergebnisse",
+  "hub_base_de": "http://127.0.0.1:17890",
+  "default_entry": "/desktop",
+  "invariants_de": [
+    "Eine Oberfläche: R3 Cockpit (Qt) + Hub HTML — kein paralleles Active-Alpha-UI",
+    "Eine Nav: control/r3_surface_identity.json — alle Routen relativ zum Hub",
+    "Lokale URLs: analytics/local_app_urls.py — keine Tunnel-HTTPS in App-Anzeige",
+    "Evidenz-Spiegel: evidence/r3_central_latest.json — Operator-IST",
+    "Single-Instance: analytics/r3_cockpit_lock.py — ein Fenster",
+    "König 32B baut Zentrale — Cursor nur bei Bridge-request_de"
+  ],
+  "feeds_de": [
+    "trading_platform",
+    "t212_api",
+    "t212_prognosis",
+    "daily_learning",
+    "browser_data",
+    "launch_progress",
+    "h1_governance",
+    "pilot_central",
+    "ki_guidance",
+    "king_status"
+  ],
+  "safety_de": "fail-closed, dry_run, keine Orders, kein Champion-Wechsel"
+}

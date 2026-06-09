@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 vollständig aktuell — Daten + visuelle GUI",
+  "cadence_de": {
+    "us_session_open_minutes": 5,
+    "closed_market_minutes": 15,
+    "after_code_or_evidence_change": true
+  },
+  "steps_de": [
+    "1 Hub online — preview_hub :17890",
+    "2 Align — Profil, Upgrade-Scan, Mirror-HTML-Cache",
+    "3 Flow — Fluss-Streifen, Desktop-Cache warm",
+    "4 Mirror-State — Evidence-Scan für /api/r3/mirror",
+    "5 Daytrading-Datenpflege — Kurse, Snapshot, Kreislauf, Learning"
+  ],
+  "gui_paths_de": [
+    "http://127.0.0.1:17890/r3",
+    "http://127.0.0.1:17890/desktop",
+    "evidence/desktop_shell_page_latest.html"
+  ],
+  "command_de": "bash tools/king_ops.sh r3-aktuell",
+  "evidence_ref": "evidence/r3_full_refresh_latest.json"
+}

@@ -1,0 +1,108 @@
+{
+  "checks": [
+    {
+      "detail_de": "HTTP /api/health",
+      "id": "hub_online",
+      "layer": "hub",
+      "ok": true
+    },
+    {
+      "detail_de": "200",
+      "id": "hub_login_route",
+      "layer": "hub",
+      "ok": true
+    },
+    {
+      "detail_de": "/api/r3/mirror",
+      "id": "r3_mirror_api",
+      "layer": "r3",
+      "ok": true
+    },
+    {
+      "detail_de": "Evidence auf Platte",
+      "id": "r3_mirror_state",
+      "layer": "r3",
+      "ok": true
+    },
+    {
+      "detail_de": "/r3",
+      "id": "r3_surface_page",
+      "layer": "r3",
+      "ok": true,
+      "warn_only": true
+    },
+    {
+      "detail_de": "Qt-Fenster",
+      "id": "r3_cockpit",
+      "layer": "r3",
+      "ok": false,
+      "warn_only": true
+    }
+  ],
+  "desktop_session": true,
+  "exec_mirror_only": true,
+  "failures_de": [],
+  "hub": {
+    "ensure_cmd_de": "python3 tools/preview_hub.py --ensure",
+    "hub_schema_version": 2,
+    "layer": "hub",
+    "ok": true,
+    "online": true,
+    "port": 17890,
+    "product": "preview-hub",
+    "route_login_detail": "200",
+    "route_login_ok": true
+  },
+  "hub_ok": true,
+  "port": 17890,
+  "r3": {
+    "cockpit_running": false,
+    "hub_online": true,
+    "layer": "r3",
+    "mirror_api_ok": true,
+    "mirror_state_ok": true,
+    "ok": true,
+    "port": 17890,
+    "start_cmd_de": "bash tools/r3_autonomous.sh",
+    "surface_page_ok": true,
+    "surface_path": "/r3"
+  },
+  "r3_ok": true,
+  "repair_cmd_de": "bash tools/stack_integrity.sh --repair --launch",
+  "repaired": true,
+  "schema_version": 1,
+  "stack_ok": true,
+  "steps": [
+    {
+      "ok": true,
+      "step": "clear_stale_pid"
+    },
+    {
+      "ok": true,
+      "step": "prepare_session"
+    },
+    {
+      "ok": true,
+      "port": 17890,
+      "step": "ensure_hub"
+    },
+    {
+      "ok": true,
+      "profile_id": "fluid_v2",
+      "step": "align_r3_surface",
+      "upgrade_pending": false
+    },
+    {
+      "ok": false,
+      "step": "ensure_mirror"
+    },
+    {
+      "ok": false,
+      "step": "ensure_surface"
+    }
+  ],
+  "updated_at_utc": "2026-06-09T21:47:23+00:00",
+  "warnings_de": [
+    "r3_cockpit: Qt-Fenster"
+  ]
+}

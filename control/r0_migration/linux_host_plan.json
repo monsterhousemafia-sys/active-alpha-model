@@ -1,0 +1,62 @@
+{
+  "status": "READY_TO_INSTALL",
+  "updated": "2026-06-05T16:00Z",
+  "purpose": "WSL/Linux as primary execution host — Windows .bat launchers retired.",
+  "canonical_entry": "bash tools/wsl_conductor.sh",
+  "commands": {
+    "setup": "bash tools/wsl_conductor.sh setup",
+    "m1": "bash tools/wsl_conductor.sh m1",
+    "m1_fast": "bash tools/wsl_conductor.sh m1-fast",
+    "autoseal": "bash tools/wsl_conductor.sh autoseal",
+    "status": "bash tools/wsl_conductor.sh status",
+    "verify": "bash tools/wsl_conductor.sh verify",
+    "post_m1": "bash tools/wsl_conductor.sh post-m1"
+  },
+  "migration_workflow": {
+    "1_preflight": "python tools/preflight_wsl_migration.py",
+    "2_install_wsl": "powershell -File tools/prepare_wsl_migration.ps1 -InstallWsl",
+    "3_reboot": "When M1 CSV done OR reboot_safe=true in manifest",
+    "4_post_reboot": "powershell -File tools/post_reboot_wsl.ps1",
+    "5_wsl_setup": "bash tools/wsl_conductor.sh setup",
+    "6_go_live": "bash tools/wsl_conductor.sh autoseal"
+  },
+  "hardware_probe": "tools/r0_migration_hw.py",
+  "windows_fallback": {
+    "commander": "python tools/r0_migration_commander.py",
+    "status": "python tools/r0_migration_status.py",
+    "autoseal": "python tools/_m1_autoseal.py"
+  },
+  "windows_repo": "E:\\active_alpha_model",
+  "wsl_repo": "~/active_alpha_model",
+  "wsl_win_mount": "/mnt/e/active_alpha_model",
+  "avoid": "/mnt/e/ for heavy compute — copy native into WSL ext4 home for I/O speed",
+  "kernel": "Microsoft WSL2 kernel (wsl --install) — no custom kernel",
+  "scripts": {
+    "preflight": "tools/preflight_wsl_migration.py",
+    "windows_prepare": "tools/prepare_wsl_migration.ps1",
+    "post_reboot": "tools/post_reboot_wsl.ps1",
+    "wsl_setup": "tools/setup_wsl_host.sh",
+    "wsl_conductor": "tools/wsl_conductor.sh"
+  },
+  "post_m1_default_host": "wsl",
+  "security_model_ref": "control/linux_host_security.json",
+  "host_roles": {
+    "linux_wsl": {
+      "compute": ["predict", "m3-daily", "matrix", "autoseal", "migration"],
+      "forbidden": ["t212_order_post", "dpapi_credential_read"],
+      "entry": "bash tools/wsl_conductor.sh",
+      "env": "tools/linux_env.sh"
+    },
+    "windows": {
+      "execution": ["Marktanalyse.exe", "T212 orders", "DPAPI credentials"],
+      "entry": "run_live_trading_start.bat --exe"
+    }
+  },
+  "post_m1_perf": {
+    "config": "control/r0_migration/post_m1_perf.json",
+    "enable": "export AA_POST_M1_PERF=1",
+    "launch": "bash tools/wsl_conductor.sh m1-fast",
+    "flags": ["--returns-fast-path", "--path-sim-checkpoint"],
+    "when": "After M1+M2 seal AND WSL setup AND smoke validation vs M1 reference CSV"
+  }
+}

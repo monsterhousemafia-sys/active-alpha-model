@@ -1,0 +1,149 @@
+{
+  "closed": false,
+  "confirmation_de": "Trading-Kreislauf · 71% — Hintergrund-Tick ausstehend",
+  "cycle_pct": 71,
+  "headline_de": "In sich geschlossener Trading-Kreislauf",
+  "message_de": "Kreislauf offen · 5/7 Stufen",
+  "ok": false,
+  "orders_de": "Schritt 7 nur über R3 mit GUI-Bestätigung",
+  "policy_ref": "control/r3_trading_cycle_policy.json",
+  "run_ok": false,
+  "runtime_closed": false,
+  "schema_version": 1,
+  "stages": [
+    {
+      "detail_de": "✓ Internet OK — R3 und Active Alpha Model können rechnen",
+      "evidence_ref": "evidence/r3_internet_latest.json",
+      "fields_de": [
+        "internet_ok"
+      ],
+      "id": "internet",
+      "label_de": "Internet",
+      "ok": true,
+      "value_de": "1"
+    },
+    {
+      "detail_de": "Konto ausstehend",
+      "evidence_ref": "evidence/r3_t212_api_bond_latest.json",
+      "fields_de": [],
+      "id": "account",
+      "label_de": "Konto R3",
+      "ok": false,
+      "value_de": "—"
+    },
+    {
+      "detail_de": "2026-06-09",
+      "evidence_ref": "evidence/r3_browser_ingest_latest.json",
+      "fields_de": [
+        "price_latest"
+      ],
+      "id": "ingest",
+      "label_de": "Kurse",
+      "ok": true,
+      "value_de": "2026-06-09"
+    },
+    {
+      "detail_de": "Signal 2026-06-09",
+      "evidence_ref": "evidence/alpha_model_background_engine_latest.json",
+      "fields_de": [
+        "predict.signal_date",
+        "r3_display.signal_date"
+      ],
+      "id": "engine",
+      "label_de": "Modell",
+      "ok": false,
+      "value_de": "2026-06-09"
+    },
+    {
+      "detail_de": "11 Zeilen · 0 Pos · 679 € · live",
+      "evidence_ref": "evidence/pilot_investment_plan_latest.json",
+      "fields_de": [
+        "allocations",
+        "t212_live.positions_count",
+        "investable_eur"
+      ],
+      "id": "plan",
+      "label_de": "Plan",
+      "ok": true,
+      "value_de": "11 · 0 · 679 €"
+    },
+    {
+      "detail_de": "2026-06-09",
+      "evidence_ref": "evidence/r3_t212_prognosis_latest.json",
+      "fields_de": [
+        "positions"
+      ],
+      "id": "display",
+      "label_de": "R3 Anzeige",
+      "ok": true,
+      "value_de": "11"
+    },
+    {
+      "detail_de": "Nur R3 — GUI-Bestätigung → T212",
+      "evidence_ref": "control/r3_order_execution_policy.json",
+      "fields_de": [
+        "status"
+      ],
+      "id": "orders",
+      "label_de": "Orders R3",
+      "ok": true,
+      "value_de": "AUTHORITATIVE"
+    }
+  ],
+  "stages_ok": 5,
+  "stages_total": 7,
+  "steps": [
+    {
+      "id": "internet",
+      "ok": true
+    },
+    {
+      "id": "quotes",
+      "ok": false,
+      "price_latest": "2026-06-09",
+      "quote_status": "STALE",
+      "skipped": false
+    },
+    {
+      "cash_eur": null,
+      "detail_de": "✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur w",
+      "id": "t212_sync",
+      "ok": true
+    },
+    {
+      "id": "t212_trust",
+      "ok": false,
+      "reason": "CONNECTION_FAILED_RETRY_AVAILABLE"
+    },
+    {
+      "buys": 0,
+      "cash_eur": null,
+      "id": "prognosis",
+      "ok": false,
+      "positions_count": null,
+      "skipped": false,
+      "trusted": false
+    },
+    {
+      "active": false,
+      "functions_active": 0,
+      "id": "rebalance",
+      "ok": true,
+      "rebalance_due": true
+    },
+    {
+      "bad_day": true,
+      "id": "postmortem",
+      "ok": true,
+      "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+      "voice_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 118 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent."
+    },
+    {
+      "id": "engine",
+      "ok": false,
+      "signal_date": "2026-06-09",
+      "steps_ok": 5
+    }
+  ],
+  "updated_at_utc": "2026-06-09T21:17:13+00:00"
+}

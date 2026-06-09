@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "applied_utc": "2026-06-04T18:07:49+00:00",
+  "items": [
+    "power_plan_high_performance",
+    "cpu_affinity_all_32",
+    "process_priority_high_canonical_workers",
+    "killer_subprocess_env_matrix_children",
+    "executive_tick_60s_sla",
+    "post_r0_matrix_r3_m1_only_no_warm_cache",
+    "reuse_prediction_cache_path_only",
+    "sla_enforce_single_canonical_r0"
+  ]
+}

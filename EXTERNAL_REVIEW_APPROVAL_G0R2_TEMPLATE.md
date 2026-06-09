@@ -1,0 +1,9 @@
+# External Review Approval — G0R2 (Template)
+
+Phase: G0R2_CLEAN_CHECKPOINT_AND_EVIDENCE_COMPLETENESS_REMEDIATION
+Status: AWAITING_EXTERNAL_REVIEW
+External sealed: NO
+
+Review ZIP: codex_g0r2_clean_checkpoint_evidence_completeness_review.zip
+REVIEW_ZIP_SHA256: PENDING_EXTERNAL_SEAL
+DETACHED_SIDECAR_SHA256: GENERATED_AFTER_FINAL_ZIP_CREATION

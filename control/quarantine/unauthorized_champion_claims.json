@@ -1,0 +1,17 @@
+{
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "claims": [
+    {
+      "classification": "UNAUTHORIZED_OR_UNSEALED_STATE",
+      "note": "Must not be used as operational champion; quarantined per EXTERNAL_REVIEW and Phase B.",
+      "pointers": [
+        "control/quarantine/g0r_r5_unauthorized/operational_champion_r5_claim.json",
+        "control/r5_challenger_registry.json"
+      ],
+      "status": "INVALID",
+      "variant_id": "R5_rank_only_train5"
+    }
+  ],
+  "generated_at_utc": "2026-06-03T20:42:49+00:00",
+  "schema_version": 1
+}

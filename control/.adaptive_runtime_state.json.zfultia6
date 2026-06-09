@@ -1,0 +1,25 @@
+{
+  "actions": [
+    "operational_refinement"
+  ],
+  "at_utc": "2026-06-06T15:23:36+00:00",
+  "context": {
+    "batch_busy": true,
+    "integrity_status": "PASS",
+    "internet_ok": true,
+    "live_regime": "RISK_ON",
+    "mature_outcomes": 73350,
+    "price_current": false,
+    "r3_regime_match": true,
+    "signal_current": true
+  },
+  "loop_interval_s": 120,
+  "mode": "AGGRESSIVE",
+  "notes": [
+    "Stale prices: force refresh",
+    "Live regime: RISK_ON",
+    "Live internet OHLCV active"
+  ],
+  "price_source": "internet",
+  "price_source_reason": "auto_internet_available"
+}

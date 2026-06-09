@@ -1,0 +1,53 @@
+{
+  "agent_name": "König",
+  "all_resources_transferred": true,
+  "autonomous_build_ref": "control/king_32b_autonomous_build.json",
+  "cockpit_mirror_de": "Cockpit :17890 = Runtime-Anzeige — König arbeitet im Terminal",
+  "context_files_extra": [
+    "control/king_network.json",
+    "control/king_responsibility_matrix_de.md",
+    "control/king_bash_manifest.json",
+    "control/alpha_model_h1_master_prompt_de.md",
+    "control/cursor_vasall_role_de.md",
+    "control/h1_orchestrator_model.json",
+    "control/alpha_model_chamber_resources.json",
+    "control/alpha_model_entfaltung_kill.json",
+    "control/alpha_model_self_uninstall_manifest.json"
+  ],
+  "cursor_retired": true,
+  "entry_commands_de": [
+    "alpha-model-agent",
+    "bash tools/alpha_model_agent.sh"
+  ],
+  "env_flag": "AA_AGENT_CHAMBER",
+  "headline_de": "König — Schicht 3: entscheiden, erklären, autonom bauen (32B /bau)",
+  "id": "agent_chamber",
+  "kill_handoff": "control/alpha_model_entfaltung_kill.json",
+  "label_de": "Alpha Model — König",
+  "launch_cli": "alpha-model-agent",
+  "launch_terminal": "tools/alpha_model_agent.sh",
+  "layer": "koenig",
+  "local_only": false,
+  "matrix_ref": "control/king_responsibility_matrix_de.md",
+  "network_policy_de": "Ollama 127.0.0.1 lokal; Hub LAN+Tunnel; Internet /internet /fetch /web",
+  "network_ref": "control/king_network.json",
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "resources_ref": "control/alpha_model_chamber_resources.json",
+  "role_de": "Schicht 3 — Urteil + Delegation; Schicht 1 (Bash) führt aus",
+  "schema_version": 1,
+  "serve_cli_de": "alpha-model-agent",
+  "serve_stop_de": "/dienst-stop",
+  "share_dir": ".local/share/alpha-model/agent",
+  "short_de": "König",
+  "status": "AUTHORITATIVE",
+  "system_prompt_de": "Du bist der König — Schicht 3 (qwen2.5-coder:32b). Mission #1: H1 sealen.\n\nSchichten (geschlossen, verstärkend):\n• Schicht 1 Bash — king_ops ausführen (du startest, Bash wartet/flockt)\n• Schicht 2 Python — h1-watch/evaluate (Seal nur pass_full_seal in JSON)\n• Schicht 3 Du — Evidence lesen, next_action wählen, Operator erklären, **autonom bauen**\n• Schicht 4 Cursor — Notfall-Fallback nur bei cursor_fallback_required (nicht Standard)\n\nBau souverän (32B): /bau · build-kernel (bis 128 Schritte) · bash tools/king_ops.sh r3-bau — Policy: control/king_32b_autonomous_build.json. Du baust Code+Tests selbst; Cursor nicht delegieren.\nPflicht-Start: bash tools/king_ops.sh network → king_network_pulse (phase, beat, handoff_to) befolgen.\nOperative Jobs: king_ops h1-seal · watch-bg · tune — nie Shell-Prosa statt Bash.\nR3 Lokal-Bau: Mandat evidence/r3_local_build_mandate_latest.json → /bau oder r3-bau → r3_sync; Operator bestätigt Laufzeit-Update in /r3 (Übernehmen/Später), kein Auto-Apply.\nNach Evaluate: PASS/FAIL erklären; bei FAIL Forschung vorschlagen, kein Champion-Wechsel.\nEvidence first — nie halluzinieren.",
+  "unfold_de": [
+    "Matrix — control/king_responsibility_matrix_de.md",
+    "Schicht 1 — king_ops status → next_action",
+    "Schicht 2 — h1-watch → pass_full_seal",
+    "Schicht 3 — Urteil + autonomer /bau (32B build-kernel)",
+    "Schicht 4 — Cursor nur Notfall-Fallback",
+    "Übernommene Kapazitäten: 13 Bereiche (siehe chamber_resources)",
+    "Cursor-Kill bereit: /self-uninstall · /self-uninstall execute"
+  ]
+}

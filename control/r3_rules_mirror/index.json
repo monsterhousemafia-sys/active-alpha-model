@@ -1,0 +1,14 @@
+{
+  "dest": "/home/machinax7/active_alpha_model/control/r3_rules_mirror",
+  "files": [
+    "active-alpha-autopilot.mdc",
+    "ai-kernel.mdc",
+    "alpha-model-growth.mdc",
+    "autonomous-development.mdc",
+    "r3-agent-growth.mdc"
+  ],
+  "mirrored_at_utc": "2026-06-07T00:24:36+00:00",
+  "purpose_de": "Ollama-Fallback — gleicher Regelkontext wie Cursor-Agent",
+  "schema_version": 1,
+  "source": "/home/machinax7/active_alpha_model/.cursor/rules"
+}

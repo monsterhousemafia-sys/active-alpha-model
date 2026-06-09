@@ -1,0 +1,481 @@
+{
+  "assessed_at_utc": "2026-06-06T23:55:23+00:00",
+  "commands_de": [
+    "python3 tools/ai_kernel.py r3-preserve",
+    "python3 tools/ai_kernel.py r3-migration-check",
+    "python3 tools/ai_kernel.py r3-migration-feasibility",
+    "python3 tools/ai_kernel.py r3-chat-migrate"
+  ],
+  "feasible": true,
+  "headline_de": "Technisch machbar — Chat+Ordner-Kern migrierbar, Cursor-UI-Reste ausgenommen",
+  "matrix": {
+    "can": [
+      {
+        "detail_de": "19 Transkript(e), Cap 400 Nachrichten",
+        "id": "cursor_transcript_import",
+        "label_de": "Cursor-Transkripte → R3-Archiv",
+        "ok": true
+      },
+      {
+        "detail_de": "R3 Chat bereit — ohne Cursor",
+        "id": "r3_chat_without_cursor",
+        "label_de": "R3 Chat ohne Cursor",
+        "ok": true
+      },
+      {
+        "detail_de": "36 Nachrichten in ki_console_session.json",
+        "id": "ki_session_restore",
+        "label_de": "Archiv → KI-Sitzung",
+        "ok": true
+      },
+      {
+        "detail_de": "/home/machinax7/active_alpha_model",
+        "id": "project_folder_bind",
+        "label_de": "Arbeitsbaum-Ordner binden",
+        "ok": true
+      },
+      {
+        "detail_de": "14 Top-Level-Einträge",
+        "id": "workspace_tree_api",
+        "label_de": "Projektbaum (Dateien-App + API)",
+        "ok": true
+      },
+      {
+        "detail_de": "/home/machinax7/active_alpha_model/.cursor/rules",
+        "id": "rules_mirror",
+        "label_de": "Cursor-Rules → control/r3_rules_mirror",
+        "ok": true
+      },
+      {
+        "detail_de": "http://127.0.0.1:17890/desktop",
+        "id": "cockpit_chat_ui",
+        "label_de": "Cockpit :17890/desktop Chat+System",
+        "ok": true
+      },
+      {
+        "detail_de": "qwen2.5:7b lokal",
+        "id": "ollama_fallback",
+        "label_de": "Ollama active-alpha-chat",
+        "ok": true
+      },
+      {
+        "detail_de": "ai_kernel r3-preserve — ohne Cursor-Pflicht",
+        "id": "incremental_preserve",
+        "label_de": "r3-preserve inkrementell",
+        "ok": true
+      }
+    ],
+    "can_ok": 9,
+    "can_total": 9,
+    "cannot": [
+      {
+        "id": "cursor_ui_state",
+        "label_de": "Cursor workspaceStorage (Tabs, Layout)",
+        "reason_de": "Liegt in Cursor-interner state.vscdb — nicht im Repo"
+      },
+      {
+        "id": "cursor_ide_chrome",
+        "label_de": "Cursor IDE Chrome (Usage-Meter, Panel-Position)",
+        "reason_de": "IDE-UI außerhalb des Arbeitsbaums — nicht migrierbar"
+      },
+      {
+        "id": "mcp_outside_repo",
+        "label_de": "MCP-Server-Konfiguration außerhalb Repo",
+        "reason_de": "Cursor-User-Settings — manuell am Zielsystem"
+      },
+      {
+        "id": "unlimited_history",
+        "label_de": "Unbegrenzte Chat-Historie 1:1",
+        "reason_de": "Archiv-Cap 400 Nachrichten — ältere Turns nur in Roh-Transkripten"
+      },
+      {
+        "id": "h1_seal_via_migration",
+        "label_de": "H1-Seal durch Migration erzwingen",
+        "reason_de": "Seal nur über Evaluate/Monitor — kein Fake-Seal"
+      },
+      {
+        "id": "workspace_auto_relocate",
+        "label_de": "Arbeitsbaum automatisch umziehen",
+        "reason_de": "Pfad /home/machinax7/active_alpha_model ist bindend — Umzug = Operator-Aktion"
+      },
+      {
+        "id": "pixel_cursor_clone",
+        "label_de": "Pixelgenauer Cursor-Clone",
+        "reason_de": "R3 adaptiert (Cockpit+Ollama) — kein IDE-Nachbau"
+      }
+    ],
+    "cannot_total": 7,
+    "capture": {
+      "explicit_copy_de": [
+        ".cursor/rules → control/r3_rules_mirror/ (Ollama-Fallback)",
+        "Projektbaum-Snapshot (list_workspace_tree)",
+        "Anhänge ~/.local/share/r3-os/chat-attachments/",
+        "Operator-Policies control/r3_agent_growth.json, r3_phase_b_master_prompt_de.md"
+      ],
+      "not_captured_de": [
+        "Cursor workspaceStorage state.vscdb (offene Tabs, UI-Layout)",
+        "Cursor IDE Chrome (Usage-Meter, Composer-Panel-Position)",
+        "Cursor MCP-Server-Konfiguration außerhalb Repo"
+      ],
+      "preferred_transcript_id": "53888fdc-f2c0-468a-986b-5bde355585eb",
+      "project_root": "/home/machinax7/active_alpha_model",
+      "r3_preserve_captures_de": [
+        "Cursor agent-transcripts (.jsonl) → ~/.local/share/r3-os/conversation/conversation_archive.jsonl",
+        "Kontinuitäts-Brief → continuity_brief_de.md + evidence/r3_continuity_brief_de.md",
+        "Manifest → continuity_manifest.json + evidence/r3_continuity_latest.json",
+        "KI-Sitzung (ki_console_session.json) bei r3-ki-import",
+        "R3-Chat-Turns (append_turn_to_archive) ohne Cursor"
+      ],
+      "transcript_paths": [
+        "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/a314941f-e190-4407-86db-28ba57e93b9a/a314941f-e190-4407-86db-28ba57e93b9a.jsonl",
+        "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/53888fdc-f2c0-468a-986b-5bde355585eb/53888fdc-f2c0-468a-986b-5bde355585eb.jsonl",
+        "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/afdb72a3-68c7-48cb-ac76-a482f049456b/afdb72a3-68c7-48cb-ac76-a482f049456b.jsonl",
+        "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/04de468a-330b-4c4c-b258-cb6fd07ce16f/04de468a-330b-4c4c-b258-cb6fd07ce16f.jsonl",
+        "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/76e31823-a7b4-4f29-bd90-34f6ee8ddc4a/76e31823-a7b4-4f29-bd90-34f6ee8ddc4a.jsonl",
+        "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/bde23b34-e7fb-4ea8-bfee-d2da1bf6ee64/bde23b34-e7fb-4ea8-bfee-d2da1bf6ee64.jsonl"
+      ]
+    },
+    "feasible": true,
+    "verdict_de": "Technisch machbar — Chat+Ordner-Kern migrierbar, Cursor-UI-Reste ausgenommen"
+  },
+  "migration_allowed": true,
+  "ok": true,
+  "operator_de": "Chat+Ordner-Kern migrierbar — H1 läuft parallel, kein Fake-Seal",
+  "preserve": {
+    "anchor_mode": false,
+    "cursor_anchor_de": "Optionales Bau-Werkzeug — Editor/Terminal; kein Konto-Gate, kein Pflicht-Anker",
+    "cursor_required": false,
+    "headline_de": "Gespräch lokal gesichert — R3 kann ohne Cursor weiterentwickeln",
+    "independence_de": "R3 läuft lokal — R3 KI (Ollama + Cockpit) ist der Hauptkanal; Cursor optional als IDE-Bau-Werkzeug.",
+    "message_count": 400,
+    "operator_de": "Benutzer + R3 KI lokal — Cursor IDE optional",
+    "paths": {
+      "anchor_policy": "/home/machinax7/active_alpha_model/control/cursor_anchor_policy.json",
+      "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+      "brief": "/home/machinax7/.local/share/r3-os/conversation/continuity_brief_de.md",
+      "conversation_dir": "/home/machinax7/.local/share/r3-os/conversation",
+      "evidence_brief": "/home/machinax7/active_alpha_model/evidence/r3_continuity_brief_de.md",
+      "project_root": "/home/machinax7/active_alpha_model"
+    },
+    "preserved_at_utc": "2026-06-06T23:55:22+00:00",
+    "primary_interface": "r3_ki",
+    "schema_version": 2,
+    "source_transcript": "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/53888fdc-f2c0-468a-986b-5bde355585eb/53888fdc-f2c0-468a-986b-5bde355585eb.jsonl"
+  },
+  "safeguards": {
+    "blocked": false,
+    "checks": [
+      {
+        "blocks_migration": false,
+        "detail_de": "RUNNING · 2 Backtest-Prozess(e) aktiv",
+        "id": "h1_backtest_protected",
+        "label_de": "H1-Backtest nicht killen",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "governance.sealed=False · evidence.sealed=False",
+        "id": "no_fake_seal",
+        "label_de": "Kein Fake-Seal",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "2026-06-06T23:55:22+00:00",
+        "id": "continuity_manifest",
+        "label_de": "r3-preserve Manifest vorhanden",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "13277 Zeichen",
+        "id": "continuity_context",
+        "label_de": "Kontinuitätskontext ≥ 2000 Zeichen",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "/home/machinax7/active_alpha_model",
+        "id": "project_root_bound",
+        "label_de": "Arbeitsbaum gebunden",
+        "ok": true
+      }
+    ],
+    "checks_passed": 5,
+    "checks_total": 5,
+    "h1_backtest_pids": [
+      9129,
+      9133
+    ],
+    "h1_sealed": false,
+    "h1_status": "RUNNING",
+    "headline_de": "Safeguards grün — Migration fail-closed freigegeben",
+    "ok": true
+  },
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail": {
+        "anchor_mode": false,
+        "cursor_anchor_de": "Optionales Bau-Werkzeug — Editor/Terminal; kein Konto-Gate, kein Pflicht-Anker",
+        "cursor_required": false,
+        "headline_de": "Gespräch lokal gesichert — R3 kann ohne Cursor weiterentwickeln",
+        "independence_de": "R3 läuft lokal — R3 KI (Ollama + Cockpit) ist der Hauptkanal; Cursor optional als IDE-Bau-Werkzeug.",
+        "message_count": 400,
+        "operator_de": "Benutzer + R3 KI lokal — Cursor IDE optional",
+        "paths": {
+          "anchor_policy": "/home/machinax7/active_alpha_model/control/cursor_anchor_policy.json",
+          "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+          "brief": "/home/machinax7/.local/share/r3-os/conversation/continuity_brief_de.md",
+          "conversation_dir": "/home/machinax7/.local/share/r3-os/conversation",
+          "evidence_brief": "/home/machinax7/active_alpha_model/evidence/r3_continuity_brief_de.md",
+          "project_root": "/home/machinax7/active_alpha_model"
+        },
+        "preserved_at_utc": "2026-06-06T23:55:22+00:00",
+        "primary_interface": "r3_ki",
+        "schema_version": 2,
+        "source_transcript": "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/53888fdc-f2c0-468a-986b-5bde355585eb/53888fdc-f2c0-468a-986b-5bde355585eb.jsonl"
+      },
+      "id": "preserve",
+      "ok": true
+    },
+    {
+      "detail": {
+        "archive_dir": "/home/machinax7/.local/share/r3-os/conversation",
+        "checks": [
+          {
+            "detail_de": "1635 B",
+            "id": "file:evidence/r3_identity_handoff_de.md",
+            "label_de": "Datei evidence/r3_identity_handoff_de.md",
+            "ok": true
+          },
+          {
+            "detail_de": "4317 B",
+            "id": "file:evidence/r3_continuity_brief_de.md",
+            "label_de": "Datei evidence/r3_continuity_brief_de.md",
+            "ok": true
+          },
+          {
+            "detail_de": "1494 B",
+            "id": "file:evidence/r3_agent_constitution_de.md",
+            "label_de": "Datei evidence/r3_agent_constitution_de.md",
+            "ok": true
+          },
+          {
+            "detail_de": "1304 B",
+            "id": "file:control/r3_continuity.json",
+            "label_de": "Datei control/r3_continuity.json",
+            "ok": true
+          },
+          {
+            "detail_de": "1794 B",
+            "id": "file:control/r3_ki_gui.json",
+            "label_de": "Datei control/r3_ki_gui.json",
+            "ok": true
+          },
+          {
+            "detail_de": "2184 B",
+            "id": "file:control/r3_ki_chat_layout.json",
+            "label_de": "Datei control/r3_ki_chat_layout.json",
+            "ok": true
+          },
+          {
+            "detail_de": "3706 B",
+            "id": "file:control/r3_agent_growth.json",
+            "label_de": "Datei control/r3_agent_growth.json",
+            "ok": true
+          },
+          {
+            "detail_de": "3593 B",
+            "id": "file:control/r3_os_fusion.json",
+            "label_de": "Datei control/r3_os_fusion.json",
+            "ok": true
+          },
+          {
+            "detail_de": "400 Nachrichten",
+            "id": "archive",
+            "label_de": "Gesprächsarchiv",
+            "ok": true
+          },
+          {
+            "detail_de": "2026-06-06T23:55:22+00:00",
+            "id": "preserve",
+            "label_de": "r3-preserve Manifest",
+            "ok": true
+          },
+          {
+            "detail_de": "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+            "id": "ki_session",
+            "label_de": "KI-Sitzung",
+            "ok": true
+          },
+          {
+            "detail_de": "bereit · qwen2.5:7b",
+            "id": "ollama",
+            "label_de": "Ollama Freitext",
+            "ok": true
+          },
+          {
+            "detail_de": "Code 100% · 6/6",
+            "id": "step_a",
+            "label_de": "Schritt-A-Code vollständig",
+            "ok": true
+          }
+        ],
+        "checks_passed": 13,
+        "checks_total": 13,
+        "cursor_required": false,
+        "headline_de": "R3 Chat bereit — ohne Cursor",
+        "ready_for_new_chat": true,
+        "ready_for_r3_chat": true,
+        "smoke_prompt_de": "Prüfe R3 Kontinuität: /kontinuität, evaluate_step_a, nächster Meilenstein. Deutsch, ohne Code zu ändern."
+      },
+      "id": "migration_check",
+      "ok": true
+    },
+    {
+      "detail": {
+        "blocked": false,
+        "checks": [
+          {
+            "blocks_migration": false,
+            "detail_de": "RUNNING · 2 Backtest-Prozess(e) aktiv",
+            "id": "h1_backtest_protected",
+            "label_de": "H1-Backtest nicht killen",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "governance.sealed=False · evidence.sealed=False",
+            "id": "no_fake_seal",
+            "label_de": "Kein Fake-Seal",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "2026-06-06T23:55:22+00:00",
+            "id": "continuity_manifest",
+            "label_de": "r3-preserve Manifest vorhanden",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "13277 Zeichen",
+            "id": "continuity_context",
+            "label_de": "Kontinuitätskontext ≥ 2000 Zeichen",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "/home/machinax7/active_alpha_model",
+            "id": "project_root_bound",
+            "label_de": "Arbeitsbaum gebunden",
+            "ok": true
+          }
+        ],
+        "checks_passed": 5,
+        "checks_total": 5,
+        "h1_backtest_pids": [
+          9129,
+          9133
+        ],
+        "h1_sealed": false,
+        "h1_status": "RUNNING",
+        "headline_de": "Safeguards grün — Migration fail-closed freigegeben",
+        "ok": true
+      },
+      "id": "safeguards",
+      "ok": true
+    }
+  ],
+  "verify": {
+    "archive_dir": "/home/machinax7/.local/share/r3-os/conversation",
+    "checks": [
+      {
+        "detail_de": "1635 B",
+        "id": "file:evidence/r3_identity_handoff_de.md",
+        "label_de": "Datei evidence/r3_identity_handoff_de.md",
+        "ok": true
+      },
+      {
+        "detail_de": "4317 B",
+        "id": "file:evidence/r3_continuity_brief_de.md",
+        "label_de": "Datei evidence/r3_continuity_brief_de.md",
+        "ok": true
+      },
+      {
+        "detail_de": "1494 B",
+        "id": "file:evidence/r3_agent_constitution_de.md",
+        "label_de": "Datei evidence/r3_agent_constitution_de.md",
+        "ok": true
+      },
+      {
+        "detail_de": "1304 B",
+        "id": "file:control/r3_continuity.json",
+        "label_de": "Datei control/r3_continuity.json",
+        "ok": true
+      },
+      {
+        "detail_de": "1794 B",
+        "id": "file:control/r3_ki_gui.json",
+        "label_de": "Datei control/r3_ki_gui.json",
+        "ok": true
+      },
+      {
+        "detail_de": "2184 B",
+        "id": "file:control/r3_ki_chat_layout.json",
+        "label_de": "Datei control/r3_ki_chat_layout.json",
+        "ok": true
+      },
+      {
+        "detail_de": "3706 B",
+        "id": "file:control/r3_agent_growth.json",
+        "label_de": "Datei control/r3_agent_growth.json",
+        "ok": true
+      },
+      {
+        "detail_de": "3593 B",
+        "id": "file:control/r3_os_fusion.json",
+        "label_de": "Datei control/r3_os_fusion.json",
+        "ok": true
+      },
+      {
+        "detail_de": "400 Nachrichten",
+        "id": "archive",
+        "label_de": "Gesprächsarchiv",
+        "ok": true
+      },
+      {
+        "detail_de": "2026-06-06T23:55:22+00:00",
+        "id": "preserve",
+        "label_de": "r3-preserve Manifest",
+        "ok": true
+      },
+      {
+        "detail_de": "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+        "id": "ki_session",
+        "label_de": "KI-Sitzung",
+        "ok": true
+      },
+      {
+        "detail_de": "bereit · qwen2.5:7b",
+        "id": "ollama",
+        "label_de": "Ollama Freitext",
+        "ok": true
+      },
+      {
+        "detail_de": "Code 100% · 6/6",
+        "id": "step_a",
+        "label_de": "Schritt-A-Code vollständig",
+        "ok": true
+      }
+    ],
+    "checks_passed": 13,
+    "checks_total": 13,
+    "cursor_required": false,
+    "headline_de": "R3 Chat bereit — ohne Cursor",
+    "ready_for_new_chat": true,
+    "ready_for_r3_chat": true,
+    "smoke_prompt_de": "Prüfe R3 Kontinuität: /kontinuität, evaluate_step_a, nächster Meilenstein. Deutsch, ohne Code zu ändern."
+  }
+}

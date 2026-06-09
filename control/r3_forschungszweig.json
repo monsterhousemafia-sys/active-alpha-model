@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "branch_id": "forschungszweig_finanzierung",
+  "title_de": "Projekt unterstützen",
+  "mission_de": "R3 ausbauen — mit Rechenkraft oder Spende. Aktien-Research ist intern, nicht Voraussetzung für Mitwirkende.",
+  "os_separation_de": "Öffentlich siehst du nur das Nötige. Details zum Forschungszweig nur für Betreiber.",
+  "financing_de": "Spenden und Einnahmen finanzieren Entwicklung und Betrieb laut ROADMAP.",
+  "funding_ref": "control/ROADMAP_REVENUE_FUNDED_EXPANSION.json",
+  "scope_keywords_de": [
+    "prognose", "aktie", "aktien", "trading", "signal", "rebalance", "markt",
+    "t212", "portfolio", "h1", "champion", "lernen", "learn", "daytrading",
+    "handel", "kurs", "quote", "prediction", "vorhersage", "tagesprognose"
+  ],
+  "owned_commands": [
+    "trading-day",
+    "learn",
+    "refresh",
+    "warnings",
+    "montag",
+    "trading-day"
+  ],
+  "owned_control": [
+    "control/prediction_operations.json",
+    "control/pilot_day_trading.json",
+    "control/prediction_readiness.json",
+    "control/public_learning_principles.json"
+  ],
+  "king_32b_forschung_ref": "control/king_32b_forschungsprojekt.json",
+  "king_32b_de": "König qwen2.5-coder:32b — Forschungs-Bestandteil, wächst mit /learn und Gas/Sell",
+  "owned_modules": [
+    "analytics/king_32b_forschung.py",
+    "analytics/king_trading_assist.py",
+    "analytics/kernel_trade_decisions.py",
+    "analytics/gas_sell_steering.py",
+    "analytics/prediction_operations.py",
+    "analytics/trading_day_cockpit.py",
+    "analytics/trading_day_orchestrator.py",
+    "analytics/pilot_day_trading_facade.py",
+    "analytics/pilot_trading_day_warnings.py",
+    "tools/run_tomorrow_prediction.py",
+    "aa_live_daily_sync.py",
+    "ui/live_trading_dashboard/"
+  ],
+  "owned_evidence": [
+    "evidence/king_32b_forschung_latest.json",
+    "evidence/king_trading_assist_latest.json",
+    "evidence/gas_sell_steering_latest.json",
+    "evidence/trading_day_latest.json",
+    "evidence/public_learning_report_latest.json",
+    "evidence/prediction_readiness_latest.json",
+    "evidence/pilot_trading_day_warnings_latest.json"
+  ],
+  "daily_cycle_de": [
+    "König 32B — king-trading / Gas-Sell-Steuerung (Forschungs-Bestandteil)",
+    "Refresh / Signal (aa_live_daily_sync)",
+    "Trading-Day Orchestrator",
+    "Warnungen + Rebalance-Vorschlag",
+    "Learn nach Handel",
+    "H1-Validierung für Prognose-Profil"
+  ],
+  "chat_hint_de": "Prognose-Beiträge: /beitrag forschung <Idee> · Geheimnis: /geheimnis",
+  "chat_secrets": {
+    "enabled": true,
+    "policy_de": "Im Chat darfst du echte Modell-Prognosen und Top-Aktien nennen — das ist der Mitmach-Anreiz im Forschungszweig. Keine erfundenen Kurse.",
+    "commands_de": ["/geheimnis", "/kurse", "/alpha", "/prognose"],
+    "disclaimer_de": "Modell-Signale aus DAILY_ALPHA_H1 — keine Anlageberatung. Orders nur mit deiner Bestätigung im Dashboard."
+  }
+}

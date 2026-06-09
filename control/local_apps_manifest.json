@@ -1,0 +1,19 @@
+{
+  "schema_version": 5,
+  "status": "EXEC_MIRROR_ONLY",
+  "headline_de": "Eine lokale R3-App — Spiegel der technischen Exekutive",
+  "hub_infra_de": "python3 tools/preview_hub.py → /r3",
+  "disposition_ref": "control/r3_pc_app_disposition.json",
+  "apps": [
+    {
+      "id": "r3_exec_mirror",
+      "tier": "core",
+      "label_de": "R3",
+      "exec_rel": "tools/r3_cockpit.sh",
+      "desktop_id": "R3.desktop",
+      "hub_path": "/r3",
+      "mirror_de": "Nur Ergebnisse + Auftrag — keine zweite Logik"
+    }
+  ],
+  "functional_only": ["r3_exec_mirror", "preview_hub", "api_r3_order", "r3_freigabe_prep"]
+}

@@ -1,0 +1,56 @@
+{
+  "generated_at_utc": "2026-06-01T14:38:37+00:00",
+  "mapping_purpose": "TRADING212_DEMO_SYNC_MAPPING",
+  "static_mapping_candidates": "8/8",
+  "provider_verified_instrument_mappings": "0/8",
+  "entries": [
+    {
+      "symbol_reference": "OXY",
+      "static_candidate_provider_id": "OXY_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "VUSD",
+      "static_candidate_provider_id": "VUSD_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "WDC",
+      "static_candidate_provider_id": "WDC_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "SNDK",
+      "static_candidate_provider_id": "SNDK_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "STX",
+      "static_candidate_provider_id": "STX_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "INTC",
+      "static_candidate_provider_id": "INTC_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "MU",
+      "static_candidate_provider_id": "MU_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "CIEN",
+      "static_candidate_provider_id": "CIEN_US_EQ",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    }
+  ]
+}

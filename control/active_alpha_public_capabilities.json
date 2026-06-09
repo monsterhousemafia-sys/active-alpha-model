@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "agent_name": "Auto",
+  "product_name": "Alpha Model",
+  "tagline_de": "Ein Kern. Ein Cockpit. Alles über Alpha Model bedienen.",
+  "how_to_see_de": [
+    "R3 Cockpit (König): r3-cockpit → http://127.0.0.1:17890",
+    "Weltneuheit: r3-welt → http://127.0.0.1:17890/launch",
+    "Status: r3-show oder python3 tools/ai_kernel.py visibility",
+    "Arbeitsfläche: Dateien, Terminal, Einstellungen im Cockpit",
+    "Order-Desk (nur Orders): r3-order-desk",
+    "Datei: ~/.local/share/r3-os/operator_latest.json"
+  ],
+  "can_do_de": [
+    "Alles über R3 Cockpit — Status, Handel heute, Arbeitsfläche",
+    "Lernen messen (learn) — IC, Hit-Rate, Live-Fills",
+    "Evolution (evolve) — sichere Auto-Verbesserungen",
+    "Handels-Warnungen vor US-Session",
+    "H1-Backtest überwachen",
+    "Wartung (maintain) — venv, NVMe, Preisfeed",
+    "Kreis-Score (circle) — Superprogramm 6/6",
+    "Trading-Day (trading-day) — eine Story pro Tag"
+  ],
+  "cannot_do_de": [
+    "Live-Orders ohne GUI-Klick",
+    "Autotrading ohne Bestätigung",
+    "Champion wechseln ohne Seal",
+    "Echtgeld ohne H1-Seal und deine Bestätigung"
+  ],
+  "evolution_platform_de": "R3 ist die Oberfläche — Kernel, Hub und Evidence zeigen jeden Schritt messbar.",
+  "cli_commands": [
+    "r3-cockpit",
+    "r3-welt",
+    "r3-show",
+    "python3 tools/ai_kernel.py visibility",
+    "python3 tools/ai_kernel.py status",
+    "python3 tools/ai_kernel.py learn",
+    "python3 tools/ai_kernel.py circle",
+    "python3 tools/ai_kernel.py trading-day"
+  ]
+}

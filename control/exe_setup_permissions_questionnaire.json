@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "questionnaire_id": "EXE_OPERATIONAL_SETUP_PERMISSIONS",
+  "status": "SAVED_PENDING_FUTURE_EXE_SETUP",
+  "saved_at_utc": "2026-06-01T22:10:00+00:00",
+  "exe_build_reference": {
+    "marktanalyse_exe_sha256": "da58b85a48b34f1d6992de1dfcc97a8177cb353a153ea10bb306553d221cc27e",
+    "built_at_utc": "2026-06-01T22:01:00+00:00",
+    "note": "Antworten gelten für spätere Einrichtung; noch nicht in Safety-Flags oder Promotion-Gates übernommen."
+  },
+  "implementation_status": {
+    "applied_to_runtime": false,
+    "applied_to_promotion_gate_config": false,
+    "applied_to_operational_safety_flags": false,
+    "blocking_note": "AGENTS.md: externe Review-Phasen und fail-closed Safety haben Vorrang bis expliziter Implementierungslauf."
+  },
+  "recommended_implementation_order": [
+    "paper_portfolio_parallel",
+    "challenger_auto_promotion_pipeline",
+    "limited_auto_trading_500eur_pilot"
+  ],
+  "responses": [
+    {
+      "id": "auto_trading",
+      "prompt_de": "Automatisches Trading (Orders automatisch an Trading 212 senden)?",
+      "selected_option_id": "auto_limited",
+      "selected_option_label_de": "Ja — begrenztes Auto-Trading nach festen Regeln (500-EUR-Pilot)",
+      "all_options": [
+        {
+          "id": "no",
+          "label_de": "Nein — weiterhin nur Read-only + manuell in T212-App (empfohlen)"
+        },
+        {
+          "id": "manual_api",
+          "label_de": "Nein auto — aber manuelle Bestätigung über Cockpit → T212-API (Execution-Key nötig)"
+        },
+        {
+          "id": "auto_limited",
+          "label_de": "Ja — begrenztes Auto-Trading nach festen Regeln (500-EUR-Pilot)"
+        }
+      ],
+      "future_setup_requirements": [
+        "TRADING212 Execution-API-Key (nicht Read-only)",
+        "Harte Limits: max 500 EUR Pilot, Kill-Switch, Gate-PASS vor Order",
+        "P17 Review-Mode-Anpassung nur in autorisiertem Implementierungslauf"
+      ]
+    },
+    {
+      "id": "promotion_research",
+      "prompt_de": "Champion-Wechsel, Auto-Promotion und Research-Backtests?",
+      "selected_option_id": "full_promotion",
+      "selected_option_label_de": "Ja — inkl. Auto-Promotion wenn Gates PASS",
+      "all_options": [
+        {
+          "id": "locked",
+          "label_de": "Nein — Champion R3 bleibt gesperrt, kein Auto-Research (aktueller Safety-Stand)"
+        },
+        {
+          "id": "research_only",
+          "label_de": "Nur Read-only Research/Challenger-Evidenz (G1), ohne Promotion"
+        },
+        {
+          "id": "full_promotion",
+          "label_de": "Ja — inkl. Auto-Promotion wenn Gates PASS"
+        }
+      ],
+      "future_setup_requirements": [
+        "Cost-Stress- und Robustness-Gates müssen PASS sein",
+        "Champion-Wechsel nur über Promotion-Pipeline mit Evidenz",
+        "Champion bleibt bis Gate-PASS: R3_w075_q065_noexit"
+      ]
+    },
+    {
+      "id": "paper_shadow",
+      "prompt_de": "Virtuelles Paper/Shadow-Monitoring parallel zum echten T212-Konto?",
+      "selected_option_id": "paper_full",
+      "selected_option_label_de": "Ja — volles Paper-Portfolio parallel",
+      "all_options": [
+        {
+          "id": "real_only",
+          "label_de": "Nein — nur echtes T212-Geld anzeigen (dein Wunsch bisher)"
+        },
+        {
+          "id": "shadow_observation",
+          "label_de": "Ja — Shadow/Paper nur zur Beobachtung, ohne Orders"
+        },
+        {
+          "id": "paper_full",
+          "label_de": "Ja — volles Paper-Portfolio parallel"
+        }
+      ],
+      "future_setup_requirements": [
+        "Paper-Engine parallel zu T212-Real-Authority aktivieren",
+        "UI: echtes vs. virtuelles Geld klar trennen",
+        "Keine Vermischung der Buchungsquellen in Reports"
+      ]
+    },
+    {
+      "id": "governance",
+      "prompt_de": "P17 Review-Mode (blockiert Live-Order-API) und externe G0R/G1-Freigabe?",
+      "selected_option_id": "skip_external",
+      "selected_option_label_de": "Externe G0R/G1-Review überspringen — lokal weiter ohne Warten",
+      "all_options": [
+        {
+          "id": "keep_review",
+          "label_de": "Review-Mode behalten — keine Live-Order-API bis externe Freigabe"
+        },
+        {
+          "id": "pilot_manual_api",
+          "label_de": "Pilot: Review-Mode lockern nur für manuell bestätigte Orders"
+        },
+        {
+          "id": "skip_external",
+          "label_de": "Externe G0R/G1-Review überspringen — lokal weiter ohne Warten"
+        }
+      ],
+      "future_setup_requirements": [
+        "Konflikt mit AGENTS.md dokumentieren falls Review übersprungen wird",
+        "Operative Flags erst nach explizitem Setup-Assistenten setzen",
+        "Evidence-Pflicht für jeden aktivierten Schalter beibehalten"
+      ],
+      "governance_conflict": "AGENTS.md verlangt EXTERNAL_REVIEW_APPROVAL vor operativen Phasen; Nutzerwunsch skip_external erfordert dokumentierte Ausnahme."
+    }
+  ],
+  "next_setup_assistant_step": "Beim nächsten EXE-Einrichtungslauf: control/exe_setup_permissions_questionnaire.json lesen und Schritt für Schritt anwenden (Paper → Promotion → Auto-Trading)."
+}

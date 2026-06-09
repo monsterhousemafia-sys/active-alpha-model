@@ -1,0 +1,15 @@
+{
+  "archive_messages": 2,
+  "cursor_required": false,
+  "headline_de": "Chat aus R3-Archiv in KI-Sitzung geladen",
+  "paths": {
+    "archive": "/tmp/pytest-of-machinax7/pytest-5/test_seed_session_from_archive0/.local/share/r3-os/conversation/conversation_archive.jsonl",
+    "attachments": "/tmp/pytest-of-machinax7/pytest-5/test_seed_session_from_archive0/.local/share/r3-os/chat-attachments",
+    "session": "/tmp/pytest-of-machinax7/pytest-5/test_seed_session_from_archive0/.local/share/r3-os/ki_console_session.json"
+  },
+  "schema_version": 1,
+  "session_messages": 2,
+  "source": "r3_archive",
+  "source_transcript": null,
+  "updated_at_utc": "2026-06-08T14:02:45+00:00"
+}

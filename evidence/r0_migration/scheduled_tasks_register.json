@@ -1,0 +1,8 @@
+﻿{
+    "logon_task":  "R0 Migration M1 On Logon",
+    "ok":  true,
+    "monitor_task":  "R0 Migration M1 Monitor",
+    "method":  "hkcu_run_only",
+    "worker":  "E:\\active_alpha_model\\run_r0_migration_m1_scheduled_worker.bat",
+    "at_utc":  "2026-06-04T14:50:01Z"
+}

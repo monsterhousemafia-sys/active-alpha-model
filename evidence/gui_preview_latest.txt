@@ -1,0 +1,17 @@
+=== GUI Preview — R3 Cockpit ===
+Zeit: 2026-06-09T17:28:00+00:00
+Gesamt: 9/10 OK
+
+— Backend (Daten & Evidence) —
+  ✓ Kreis-Score (Superprogramm): Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.
+  ✓ Tages-Cockpit Evidence: ② Rebalance — Order-Welle mit GUI bestätigen · 15 Zeilen
+  ✓ Auto-Operator Sichtbarkeit: Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0. · Timer: 3
+  ✓ Öffentlicher Operator-Status: Kann 8 · Kreis: Kreis-Score 2/6 grün (33%)
+  ✓ Lernreport: Note C · sportwagen → sport_plus
+  ✓ H1 Backtest + Governance: H1-Seal optional — COMPLETE Backtest reicht für operative Gates
+  ~ H1 Evaluate/Seal: H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.
+  ✓ Dashboard-Snapshot: Ampel — · Konto — € · Pick —
+  ✓ Handels-Warnungen: 0× kritisch · Hinweis: 1 Punkt(e) — 1 Order(s) vorgemerkt — Auto-Ausführung aus
+  ✓ Snapshot-Frische: Letzter Snap 2026-06-09T17:27:24+00:00 · Alter 1s
+
+Hinweis (gelb, kein Blocker): h1_evaluation

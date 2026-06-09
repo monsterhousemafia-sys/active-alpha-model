@@ -1,0 +1,210 @@
+{
+  "auto_refresh_seconds": 60,
+  "champion_quote_coverage": {
+    "coverage_ok": false,
+    "coverage_ratio": 0.3571,
+    "covered_count": 5,
+    "missing_symbols": [
+      "STX",
+      "WDC",
+      "SNDK",
+      "CIEN",
+      "AMD",
+      "CAT",
+      "MU",
+      "VRT",
+      "TXN"
+    ],
+    "required_count": 14
+  },
+  "data_quality_gate": "PARTIAL_CHAMPION_QUOTES",
+  "executable_prices_eur": {
+    "GOOG": 312.2955,
+    "GOOGL": 314.4949,
+    "INTC": 97.154,
+    "ON": 107.718,
+    "OXY": 49.8327
+  },
+  "forward_batch_generated_at_utc": "2026-06-08T15:15:55+00:00",
+  "freshness": {
+    "age_seconds": 0.2,
+    "calculation_allowed": false,
+    "data_quality_gate": "PARTIAL_CHAMPION_QUOTES",
+    "executable_symbol_count": 5,
+    "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
+    "generated_at_utc": "2026-06-08T15:15:56+00:00",
+    "max_age_seconds": 120,
+    "reason": "Champion-Kurse unvollständig (5/14) — fehlend: STX, WDC, SNDK, CIEN, AMD",
+    "status": "STALE"
+  },
+  "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
+  "generated_at_utc": "2026-06-08T15:15:56+00:00",
+  "incident_count": 0,
+  "max_age_seconds": 120,
+  "price_sanitization": {
+    "adjustments": {},
+    "blocked_symbols": {},
+    "executable_prices_eur": {
+      "GOOG": 312.2955,
+      "GOOGL": 314.4949,
+      "INTC": 97.154,
+      "ON": 107.718,
+      "OXY": 49.8327
+    },
+    "had_adjustments": false,
+    "had_blocks": false
+  },
+  "price_source_by_symbol": {
+    "GOOG": "YAHOO_VALIDATED",
+    "GOOGL": "YAHOO_VALIDATED",
+    "INTC": "YAHOO_VALIDATED",
+    "ON": "YAHOO_VALIDATED",
+    "OXY": "YAHOO_VALIDATED"
+  },
+  "provider": "T212_FIRST_YAHOO_VALIDATED",
+  "quote_merge_audit": {
+    "blocked": {
+      "AMD": "ABOVE_CAP_BLOCKED",
+      "CAT": "ABOVE_CAP_BLOCKED",
+      "CIEN": "ABOVE_CAP_BLOCKED",
+      "MU": "ABOVE_CAP_BLOCKED",
+      "SNDK": "ABOVE_CAP_BLOCKED",
+      "STX": "ABOVE_CAP_BLOCKED",
+      "TXN": "ABOVE_CAP_BLOCKED",
+      "VRT": "ABOVE_CAP_BLOCKED",
+      "WDC": "ABOVE_CAP_BLOCKED"
+    },
+    "used": {
+      "GOOG": "OK",
+      "GOOGL": "OK",
+      "INTC": "OK",
+      "ON": "OK",
+      "OXY": "OK"
+    }
+  },
+  "quotes_by_symbol": {
+    "AMD": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 427.26103041857164,
+      "quote_currency": "USD",
+      "raw_price": 493.42999267578125
+    },
+    "CAT": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 787.9776670145637,
+      "quote_currency": "USD",
+      "raw_price": 910.010009765625
+    },
+    "CIEN": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 411.1509778397072,
+      "quote_currency": "USD",
+      "raw_price": 474.82501220703125
+    },
+    "GOOG": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 312.29549699604644,
+      "quote_currency": "USD",
+      "raw_price": 360.6600036621094
+    },
+    "GOOGL": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 314.494890393862,
+      "quote_currency": "USD",
+      "raw_price": 363.20001220703125
+    },
+    "INTC": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 97.15397730304913,
+      "quote_currency": "USD",
+      "raw_price": 112.19999694824219
+    },
+    "MU": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 830.7964325606414,
+      "quote_currency": "USD",
+      "raw_price": 959.4600219726562
+    },
+    "ON": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 107.71796126090594,
+      "quote_currency": "USD",
+      "raw_price": 124.4000015258789
+    },
+    "OXY": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 49.83271937820747,
+      "quote_currency": "USD",
+      "raw_price": 57.550201416015625
+    },
+    "SNDK": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 1461.9119069445867,
+      "quote_currency": "USD",
+      "raw_price": 1688.31494140625
+    },
+    "STX": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 773.0755089967901,
+      "quote_currency": "USD",
+      "raw_price": 892.7999877929688
+    },
+    "TXN": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 255.6136904268522,
+      "quote_currency": "USD",
+      "raw_price": 295.20001220703125
+    },
+    "VRT": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 266.6885323945241,
+      "quote_currency": "USD",
+      "raw_price": 307.989990234375
+    },
+    "VUSD": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_OBSERVATION_NOT_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 1.6362717516720295,
+      "quote_currency": "GBP",
+      "raw_price": 141.59500122070312
+    },
+    "WDC": {
+      "conversion_valid": true,
+      "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+      "market_event_time_utc": "2026-06-08T15:15:55+00:00",
+      "price_eur": 461.5593167152728,
+      "quote_currency": "USD",
+      "raw_price": 533.0399780273438
+    }
+  },
+  "refresh_skipped": false,
+  "t212_held_prices_eur": {},
+  "valid_instrument_observations": 15
+}

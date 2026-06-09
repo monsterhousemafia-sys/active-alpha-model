@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "headline_de": "König-Bau-Pipeline — Bash orchestriert, 32B baut, Python beweist",
+  "preflight_de": [
+    "verify — Safety + Locks",
+    "llm-health — Ollama für build-kernel",
+    "stufe-a --force (optional --prep)"
+  ],
+  "post_build_de": [
+    "r3_sync --repair",
+    "verify",
+    "pytest (Mandat oder Safe-Liste)",
+    "network pulse phase=build"
+  ],
+  "topic_routes": {
+    "": "r3-bau",
+    "r3": "r3-bau",
+    "desktop": "desktop-finish",
+    "gui": "gui-rebuild",
+    "apps": "apps-run",
+    "h1": "h1-fix",
+    "stufe-a": "stufe-a",
+    "prognose": "r3-bau"
+  },
+  "safe_pytest_de": [
+    "tests/test_r3_runtime_upgrade.py",
+    "tests/test_r3_exec_mirror.py",
+    "tests/test_king_stufe_a.py",
+    "tests/test_cloud_teacher_orchestrator.py"
+  ],
+  "lock_name": "king_bau_orchestrator",
+  "evidence_ref": "evidence/king_bau_latest.json"
+}

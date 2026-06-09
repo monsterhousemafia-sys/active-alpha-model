@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "self_only": true,
+  "own_account_only": true,
+  "allowed_providers": ["wa_me", "waha"],
+  "waha_localhost_only": true,
+  "require_human_confirm_for_api_send": true,
+  "require_dry_run_env_for_agents": true,
+  "block_bot_providers": true,
+  "block_direct_send": true,
+  "rate_limit_seconds": 60,
+  "autonomous_rate_limit_seconds": 21600,
+  "require_url_sync_for_send": true,
+  "require_spread_security_for_autonomous": true,
+  "max_text_bytes": 4096,
+  "zip_max_bytes": 5242880
+}

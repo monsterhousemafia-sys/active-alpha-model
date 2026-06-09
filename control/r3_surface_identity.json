@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "product": "R3",
+  "edition_de": "Remaster 2026",
+  "tagline_de": "Aktienprognosen für Trading212.",
+  "surface_name_de": "R3",
+  "mission_de": "Hard/Soft-Orchestrator hält R3 flüssig — alles fließt visuell zusammen.",
+  "forbidden_surface_words": ["Linux", "Ubuntu", "systemd", "Command Center", "Active Alpha", "ai_kernel", "Legacy"],
+  "nav": [
+    {"id": "r3", "label_de": "R3", "href": "/r3"}
+  ],
+  "sections": {
+    "status": "Kern-Status",
+    "desktop": "System",
+    "launch": "Bereitstellung",
+    "trading": "Handelsplattform",
+    "prognosis": "Tagesergebnis",
+    "diagnostics": "Diagnose",
+    "intelligence": "R3 KI",
+    "codex": "Entwicklungsspur",
+    "actions": "Aktionen"
+  },
+  "tile_labels": {
+    "kernel": {"label_de": "Signal-Engine", "value_ok_de": "Aktiv"},
+    "interface": {"label_de": "Verbindung"},
+    "h1": {"label_de": "Validierung"},
+    "preview": {"label_de": "Systemcheck"},
+    "launch": {"label_de": "Go-Live"},
+    "lean": {"label_de": "Fokus"}
+  },
+  "footer_de": "R3"
+}

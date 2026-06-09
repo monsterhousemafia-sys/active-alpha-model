@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "updated_at_utc": "2026-06-08T15:27:08+00:00",
+  "home_uid": 1000,
+  "fixed": [],
+  "fixed_count": 0,
+  "pending": [],
+  "pending_count": 0,
+  "headline_de": "Besitz OK (0 korrigiert)",
+  "message_de": "R3 ~/.local gehört dem Benutzer."
+}

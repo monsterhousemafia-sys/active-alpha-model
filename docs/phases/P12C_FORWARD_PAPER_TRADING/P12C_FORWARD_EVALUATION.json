@@ -1,0 +1,138 @@
+{
+  "forward_evaluation": {
+    "broker_order_sent": false,
+    "capital_scaling": {
+      "current_tier_eur": 500,
+      "gates": {
+        "feed_quality_ok": true,
+        "no_critical_reconciliation_error": true,
+        "orders_executable_at_tier": false,
+        "positive_net_after_costs": true
+      },
+      "ladder_eur": [
+        500,
+        1000,
+        2500,
+        5000,
+        10000
+      ],
+      "next_simulated_tier_eur": 500,
+      "paper_capital_scale_up": "SIMULATION_ONLY",
+      "ready_for_simulated_scale": false,
+      "real_capital_scale_up": "REQUIRES_SEPARATE_EXPLICIT_USER_DECISION"
+    },
+    "eligible_observation_count": 3,
+    "evaluation": {
+      "absolute_eur_change": 1264.5573,
+      "benchmark_cash_eur_change": 0.0,
+      "cumulative_net_performance_eur": 1264.5573,
+      "current_portfolio_value_eur": 1764.5573,
+      "data_quality_status": "PASS",
+      "feed_available": true,
+      "initial_capital_eur": 500.0,
+      "max_drawdown_eur": 0.0,
+      "non_executable_orders": 2,
+      "real_money": false,
+      "realized_pnl_eur": 1264.5573,
+      "simulation_only": true,
+      "total_costs_eur": 0.0,
+      "turnover_eur": 1566.1035,
+      "unrealized_pnl_eur": 0.0,
+      "virtual_orders": 2,
+      "virtual_orders_executed": 0,
+      "vs_cash_benchmark_eur": 1264.5573
+    },
+    "execution": {
+      "deployable_eur": 188.45385953821247,
+      "fills": [],
+      "fractional_shares_enabled": false,
+      "non_executable": [
+        {
+          "reason": "whole_unit_constraint",
+          "ticker": "SPY"
+        },
+        {
+          "reason": "whole_unit_constraint",
+          "ticker": "AAPL"
+        }
+      ],
+      "policy_min_trade_value": 11.957813084113402,
+      "portfolio_value_eur": 1764.5573300037656,
+      "shorting_enabled": false,
+      "total_costs_eur": 0.0
+    },
+    "forward_window": {
+      "broker_order_sent": false,
+      "not_live_authorized": true,
+      "observation_start_utc": "2026-06-01T12:41:12+00:00",
+      "real_money": false,
+      "simulation_only": true,
+      "status": "RUNNING_SIMULATION_ONLY"
+    },
+    "ingestion": {
+      "capture_id": "capture_20260601T124112Z",
+      "health": {
+        "active_provider": "READONLY_YFINANCE",
+        "broker_order_sent": false,
+        "broker_order_submission": false,
+        "data_quality_passed": true,
+        "data_quality_status": "PASS",
+        "feed_latency_note": "received_at_utc minus market_event_time_utc per observation",
+        "fixture_provider": "READONLY_REPLAY_FIXTURE",
+        "fixture_rows": 2,
+        "last_capture_id": "capture_20260601T124112Z",
+        "last_received_at_utc": "2026-06-01T12:41:13+00:00",
+        "live_trading": false,
+        "not_live_authorized": true,
+        "online_attempted": true,
+        "online_rows": 3,
+        "real_money": false,
+        "replay_available": false,
+        "simulation_only": true,
+        "updated_at_utc": "2026-06-01T12:41:13+00:00"
+      },
+      "manifest_path": "market_data/p12a_online_ingestion/ingestion_manifest.json",
+      "online_attempted": true,
+      "provider": "READONLY_YFINANCE",
+      "quality_passed": true,
+      "quality_status": "PASS",
+      "replay_deterministic": false,
+      "row_count": 3
+    },
+    "lookahead_verified": true,
+    "metrics": {
+      "cash_eur": 198.4539,
+      "initial_capital_eur": 500.0,
+      "max_drawdown_eur": 0.0,
+      "net_pnl_eur": 1264.5573,
+      "net_return_pct": 252.9115,
+      "portfolio_value_eur": 1764.5573,
+      "position_count": 2,
+      "positions_value_eur": 1566.1035,
+      "real_money": false,
+      "simulation_only": true,
+      "total_costs_eur": 0.0,
+      "turnover_eur": 1566.1035
+    },
+    "paper_trading_status": "COMPLETED_EVALUATION_WINDOW",
+    "prospective_filter_rejected": [],
+    "real_money": false,
+    "simulation_only": true,
+    "timestamp_chain_entries": 2
+  },
+  "generated_at_utc": "2026-06-01T12:41:13+00:00",
+  "git_commit": "e4685bb62b00e4cbf7c2626f050a2a31cd001f5b",
+  "p12c_status": "PASS_WITH_FORWARD_PAPER_EVALUATION_COMPLETE",
+  "pipeline_preservation_failures": [],
+  "pipeline_preserved": true,
+  "run_id": "p12c_20260601T124112Z",
+  "safety": {
+    "broker_order_submission": false,
+    "champion_changed": false,
+    "initial_paper_capital_eur": 500.0,
+    "live_trading": false,
+    "real_money": false,
+    "real_money_capital_eur": 0.0,
+    "simulation_only": true
+  }
+}

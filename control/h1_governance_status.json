@@ -1,0 +1,23 @@
+{
+  "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+  "detail_de": null,
+  "evaluated_at_utc": "2026-06-09T21:17:08+00:00",
+  "gate_blockers": [],
+  "metrics_strategy": {
+    "cagr": 0.1449496479478598,
+    "daily_hit_rate": 0.5466237942122186,
+    "max_drawdown": -0.22945094905846275,
+    "n_days": 1866,
+    "sharpe_0rf": 0.782267724738531
+  },
+  "operational_ok": true,
+  "pass_full_seal": false,
+  "progress_pct": 100,
+  "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+  "schema_version": 1,
+  "seal_policy_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+  "seal_required": false,
+  "sealed": false,
+  "status": "COMPLETE",
+  "updated_at_utc": "2026-06-09T21:17:28+00:00"
+}

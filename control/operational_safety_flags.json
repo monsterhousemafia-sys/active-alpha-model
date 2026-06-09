@@ -1,0 +1,19 @@
+{
+  "AUTO_EXECUTE_REAL_MONEY": "DISABLED",
+  "AUTO_PROMOTE_PAPER": "DISABLED",
+  "AUTO_PROMOTE_SIGNAL": "DISABLED",
+  "AUTO_RESEARCH": "DISABLED",
+  "CHAMPION_CHANGED": false,
+  "CHAMPION_CHANGE_AUTHORIZED": false,
+  "PAPER_MONITORING_ACTIVATED": false,
+  "PROMOTION_AUTHORIZED": false,
+  "PROMOTION_EXECUTED": false,
+  "REAL_MONEY_AUTHORIZED": false,
+  "REAL_MONEY_EXECUTED": false,
+  "SHADOW_MONITORING_ACTIVATED": false,
+  "approval_file": null,
+  "authoritative_review_document": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+  "informational_only": true,
+  "note": "Fail-closed remediation G0: local operational flags disabled; not an authorization source.",
+  "schema_version": 1
+}

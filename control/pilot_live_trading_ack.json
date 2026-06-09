@@ -1,0 +1,9 @@
+{
+  "ack_phrase_verified": true,
+  "auto_execute_enabled": false,
+  "changed_by": "user",
+  "enabled": true,
+  "enabled_at_utc": "2026-06-01T23:16:29+00:00",
+  "governance_note": "Champion und auto_execute_real_money bleiben unverändert; nur manuelle Limit-Orders nach Dialog.",
+  "mode": "MANUAL_CONFIRM_BEFORE_SUBMIT"
+}

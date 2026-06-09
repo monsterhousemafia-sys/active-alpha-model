@@ -1,0 +1,14 @@
+{
+  "bytecode_detected": false,
+  "expected_sha256": "e67dce7875153e1c598210e708676518c87bed78ec3e917b0c843fb06ec2ec61",
+  "manifest_coverage": "COMPLETE",
+  "manifest_entries_verified": "64/64",
+  "p16e_preserved": true,
+  "package_sha256": "e67dce7875153e1c598210e708676518c87bed78ec3e917b0c843fb06ec2ec61",
+  "secrets_detected": false,
+  "sidecar_verified": true,
+  "unsafe_paths": [],
+  "verification_status": "VERIFIED",
+  "zip_entry_count": 64,
+  "zip_sha256_match": true
+}

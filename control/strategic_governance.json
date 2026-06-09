@@ -1,0 +1,31 @@
+{
+  "active_signal_profile": "daily_alpha_h1",
+  "active_signal_variant": "DAILY_ALPHA_H1",
+  "coherence_issues": [],
+  "coherence_ok": true,
+  "effective_orders_profile": "r3_w075_production",
+  "experimental_profiles": [
+    "daily_alpha_h1"
+  ],
+  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "governance_champion": "R0_LEGACY_ENSEMBLE",
+  "h1_backtest_sealed": false,
+  "h1_backtest_status": {
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "COMPLETE"
+  },
+  "m9_approval_ref": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+  "m9_executed": true,
+  "model": "two_tier_champion",
+  "prior_governance_champion": "R3_w075_q065_noexit",
+  "production_fallback_profile": "r3_w075_production",
+  "production_fallback_variant": "R3_w075_q065_noexit",
+  "research_sharpe_leader": "MOM_63_TOP12",
+  "rules_de": "Governance-Champion R0_LEGACY_ENSEMBLE (M9-freigegeben) ist die autorisierte Produktionsidentität. Live-Signal DAILY_ALPHA_H1 über Profil daily_alpha_h1 ist experimentell bis H1-Seal. Orders nutzen r3_w075_production solange H1 unsealed. Validierter Fallback: R3_w075_q065_noexit.",
+  "schema_version": 1,
+  "ssot": {
+    "governance_champion": "control/champion_strategic_decision.json",
+    "operational_signal": "control/prediction_operations.json"
+  },
+  "strategic_objective_ref": "control/r0_migration/alpha_objective.json"
+}

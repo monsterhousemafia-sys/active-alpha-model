@@ -1,0 +1,52 @@
+{
+  "backtest_metrics": {
+    "ic_pearson": 0.017102630157397,
+    "ic_spearman": 0.014198327578303463,
+    "mae": 0.050673499325520184,
+    "mean_error_by_rebalance": 0.0030624073530501495,
+    "n_mature": 73350,
+    "n_mature_selected": 47748,
+    "n_pending": 150,
+    "n_rebalance_periods": 489,
+    "n_total": 73500,
+    "rmse": 0.06743018042573498,
+    "selected_mae": 0.052263626227849296,
+    "selected_signed_hit_rate": 0.5053405378235738,
+    "signed_hit_rate": 0.5056850715746422
+  },
+  "backtest_sealed": false,
+  "blocked_full_auto_reason": "evolution_allow_full_auto=false — Rennwagen-Stufe gesperrt bis M9+Shadow",
+  "delta_vs_previous": {
+    "live_n_mature": 0.0
+  },
+  "evolution_state": {
+    "current_stage_id": "sportwagen",
+    "history": [],
+    "promoted_at_utc": null,
+    "schema_version": 1,
+    "updated_at_utc": "2026-06-05T17:45:12+00:00"
+  },
+  "generated_at_utc": "2026-06-09T21:16:54+00:00",
+  "learning_detected": false,
+  "live_metrics": {
+    "n_mature": 0,
+    "n_pending": 0,
+    "n_total": 0
+  },
+  "message_de": "Evolution: Sportwagen (Stufe 0). Live reif: 0, signed_hit: —.",
+  "next_stage_id": "sport_plus",
+  "ok": true,
+  "schema_version": 1,
+  "stage": {
+    "auto_actions_allowed": [
+      "outcome_sync",
+      "feedback_update",
+      "learning_capture",
+      "price_refresh_on_predict"
+    ],
+    "next_stage_id": "sport_plus",
+    "stage_id": "sportwagen",
+    "stage_label_de": "Sportwagen",
+    "stage_order": 0
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "capabilities": [
+    {
+      "detail_de": "127.0.0.1:17890 (stack)",
+      "id": "hub_local",
+      "label_de": "Hub lokal",
+      "ok": true,
+      "weight": 15
+    },
+    {
+      "detail_de": "/api/r3/mirror (stack)",
+      "id": "mirror_api",
+      "label_de": "Mirror-API",
+      "ok": true,
+      "weight": 15
+    },
+    {
+      "detail_de": "/r3 (stack)",
+      "id": "surface_r3",
+      "label_de": "Oberfläche /r3",
+      "ok": true,
+      "weight": 15
+    },
+    {
+      "detail_de": "/home/machinax7/active_alpha_model/evidence/pilot_investment_plan_latest.json",
+      "id": "plan_evidence",
+      "label_de": "Modell-Plan Evidence",
+      "ok": true,
+      "weight": 10
+    },
+    {
+      "detail_de": "3 Funktionen",
+      "id": "trading_functions",
+      "label_de": "3 Handelsfunktionen",
+      "ok": true,
+      "weight": 10
+    },
+    {
+      "detail_de": "Flüssig — bestätigt",
+      "id": "runtime_profile",
+      "label_de": "Laufzeitprofil",
+      "ok": true,
+      "weight": 10
+    },
+    {
+      "detail_de": "Gate aktiv",
+      "id": "upgrade_gate",
+      "label_de": "Upgrade mit Bestätigung",
+      "ok": 1,
+      "weight": 10
+    },
+    {
+      "detail_de": "OK",
+      "id": "stack_integrity",
+      "label_de": "Stack-Integrität",
+      "ok": true,
+      "weight": 10
+    },
+    {
+      "detail_de": "Ollama 127.0.0.1:11434",
+      "id": "king_local",
+      "label_de": "König 32B lokal",
+      "ok": true,
+      "weight": 5
+    }
+  ],
+  "capabilities_ok": 9,
+  "capabilities_total": 9,
+  "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
+  "growth_pct": 100,
+  "headline_de": "R3 lokal 100% — 4/4 Meilensteine",
+  "linux_potential_headline_de": "Linux 88% — 8/9 Dimensionen",
+  "linux_potential_pct": 88,
+  "local_only": true,
+  "local_primary_url": "http://127.0.0.1:17890/r3",
+  "milestones": [
+    {
+      "capabilities": [
+        "hub_local",
+        "mirror_api",
+        "surface_r3"
+      ],
+      "id": "local_first",
+      "label_de": "Lokal wirksam",
+      "ok": true
+    },
+    {
+      "capabilities": [
+        "plan_evidence",
+        "trading_functions"
+      ],
+      "id": "full_mirror",
+      "label_de": "Voller R3-Spiegel",
+      "ok": true
+    },
+    {
+      "capabilities": [
+        "runtime_profile",
+        "upgrade_gate"
+      ],
+      "id": "runtime_evolution",
+      "label_de": "Laufzeit wächst",
+      "ok": true
+    },
+    {
+      "capabilities": [
+        "stack_integrity",
+        "king_local"
+      ],
+      "id": "operational_loop",
+      "label_de": "Geschlossener Kreis",
+      "ok": true
+    }
+  ],
+  "milestones_ok": 4,
+  "milestones_total": 4,
+  "next_growth_de": "R3 lokal vollständig — neue Upgrades erscheinen im Katalog mit Bestätigung",
+  "policy_ref": "control/r3_local_growth.json",
+  "runtime_profile_id": "fluid_v2",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-09T21:47:20+00:00",
+  "upgrade_pending": false
+}

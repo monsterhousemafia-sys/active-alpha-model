@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "seal_required": false,
+  "benchmark_required_for_operations": false,
+  "headline_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+  "rationale_de": "Operator-Freigabe: mom_1-Benchmark-Seal nicht mehr Voraussetzung für Predict/Launch/Cockpit. Echtgeld bleibt gesperrt (AGENTS.md). Sharpe-Gate weiterhin Evidence, kein Blocker.",
+  "effective_at_utc": "2026-06-07T22:45:00+00:00",
+  "still_enforced_de": [
+    "auto_execute_real_money_enabled=false",
+    "auto_promote_* =false",
+    "Champion-Wechsel nur externe Freigabe"
+  ],
+  "optional_evidence_de": "pass_full_seal in evaluation_latest.json — informativ, nicht blockierend"
+}

@@ -1,0 +1,15 @@
+{
+  "ready": true,
+  "checks": {
+    "venv": true,
+    "env": true,
+    "champion_csv": true,
+    "pilot_policy": true,
+    "native_host": true,
+    "no_auto_money": true,
+    "tests": true,
+    "snapshot": true
+  },
+  "blockers": [],
+  "go_live": "2026-06-08"
+}

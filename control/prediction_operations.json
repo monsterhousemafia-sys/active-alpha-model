@@ -1,0 +1,76 @@
+{
+  "active_profile": "daily_alpha_h1",
+  "budget": {
+    "cash_buffer_pct": 0.0,
+    "exclude_symbols": [
+      "LITE"
+    ],
+    "min_position_eur": 25.0,
+    "mode": "variable_free_cash",
+    "note_de": "Live-T212 Free-Cash als Planungsbasis (max. investierbarer Betrag). Kein auto_execute — Orders weiterhin mit GUI-Bestätigung in R3.",
+    "source": "t212_live_sync",
+    "use_full_free_cash": true
+  },
+  "experimental_profiles": [
+    "daily_alpha_h1"
+  ],
+  "fallback_profile": "r3_w075_production",
+  "governance": {
+    "experimental_requires_sealed_backtest_for_real_money": false,
+    "governance_champion_profile": "r0_governance",
+    "note_de": "Echtgeld mit daily_alpha_h1 nur nach sealed H1 PASS inkl. +25bps Turnover-Stress vs mom_1_top12."
+  },
+  "governance_champion": "R0_LEGACY_ENSEMBLE",
+  "objective_ref": "control/r0_migration/alpha_objective.json",
+  "orders": {
+    "auto_run_predict_before_orders": true,
+    "auto_run_predict_on_scheduled_mark": true,
+    "require_prediction_ready": true
+  },
+  "production_fallback": "R3_w075_q065_noexit",
+  "profiles": {
+    "daily_alpha_h1": {
+      "description": "User objective: 1-day horizon, daily rebalance, vs mom_1_top12",
+      "note": "First live signal run — full matrix backtest still recommended on WSL",
+      "variant_key": "DAILY_ALPHA_H1"
+    },
+    "r0_governance": {
+      "description": "M9 governance champion — legacy risk-off",
+      "variant_key": "R0_LEGACY_ENSEMBLE"
+    },
+    "r3_w075_production": {
+      "description": "Validated production champion parameters (5d rebalance, horizon 10)",
+      "variant_key": "R3_w075_q065_noexit"
+    }
+  },
+  "rebalance": {
+    "min_weight_gap_pct": 2.5,
+    "note_de": "Daily h=1: keine Order unter 2,5% Gewichtsabweichung — reduziert T212-Turnover/FX."
+  },
+  "research_sharpe_leader": "MOM_63_TOP12",
+  "safety": {
+    "auto_promotion": false,
+    "note": "Echtes T212-Geld erlaubt — jede Order-Welle erfordert finale Bestätigung in Marktanalyse.exe",
+    "output_only": false,
+    "real_money": true
+  },
+  "schedule": {
+    "eod_after_us_close": true,
+    "eod_local_time_cet": "22:15",
+    "run_before_market": "sync prices + signal refresh",
+    "switch_at": "eod",
+    "windows_command": "python tools/run_tomorrow_prediction.py",
+    "wsl_command": "bash tools/wsl_conductor.sh predict"
+  },
+  "schema_version": 1,
+  "strategic_model": {
+    "effective_orders_profile": "r3_w075_production",
+    "manifest_ref": "control/strategic_governance.json",
+    "note_de": "Governance-Champion R0_LEGACY_ENSEMBLE (M9-freigegeben) ist die autorisierte Produktionsidentität. Live-Signal DAILY_ALPHA_H1 über Profil daily_alpha_h1 ist experimentell bis H1-Seal. Orders nutzen r3_w075_production solange H1 unsealed. Validierter Fallback: R3_w075_q065_noexit.",
+    "production_fallback_variant": "R3_w075_q065_noexit",
+    "tier_1_governance_champion": "R0_LEGACY_ENSEMBLE",
+    "tier_2_live_signal_profile": "daily_alpha_h1",
+    "tier_2_live_signal_variant": "DAILY_ALPHA_H1"
+  },
+  "updated_at_utc": "2026-06-09T18:44:48+00:00"
+}

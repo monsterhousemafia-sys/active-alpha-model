@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-06-01T11:25:20+00:00",
+  "project_root": "E:\\active_alpha_model",
+  "start_head": "e4685bb62b00e4cbf7c2626f050a2a31cd001f5b",
+  "branch": "development/g1-independent-next-level-research-platform",
+  "findings": [
+    {
+      "id": "champion_evidence",
+      "classification": "VERIFIED_EXISTING_ARTEFACT",
+      "path": "model_output_sp500_pit_t212/"
+    },
+    {
+      "id": "control_evidence",
+      "classification": "VERIFIED_EXISTING_ARTEFACT",
+      "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/"
+    },
+    {
+      "id": "challenger_returns",
+      "classification": "VERIFIED_EXISTING_ARTEFACT",
+      "path": "runs/.../naive_momentum_daily_returns.csv"
+    },
+    {
+      "id": "challenger_turnover",
+      "classification": "MISSING_INPUT",
+      "note": "prior to this run"
+    },
+    {
+      "id": "feature_cache",
+      "classification": "VERIFIED_EXISTING_ARTEFACT",
+      "path": "model_output_sp500_pit_t212/features/"
+    },
+    {
+      "id": "naive_generator",
+      "classification": "VERIFIED_EXISTING_CODE_PATH",
+      "path": "aa_backtest.run_naive_momentum_baseline_full"
+    }
+  ]
+}

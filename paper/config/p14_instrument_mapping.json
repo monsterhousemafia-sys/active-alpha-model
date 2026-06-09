@@ -1,0 +1,109 @@
+{
+  "generated_at_utc": "2026-06-01T13:51:34+00:00",
+  "entries": [
+    {
+      "display_name": "Occidental Petroleum",
+      "symbol_reference_from_screenshot": "OXY",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "OXY_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Vanguard S&P 500 (Dist)",
+      "symbol_reference_from_screenshot": "VUSD",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "VUSD_EQ",
+      "exchange": "LSE",
+      "currency": "GBP",
+      "instrument_type": "ETF",
+      "mapping_status": "VERIFIED_WITH_EXCHANGE_QUALIFIER",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Western Digital",
+      "symbol_reference_from_screenshot": "WDC",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "WDC_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Sandisk",
+      "symbol_reference_from_screenshot": "SNDK",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "SNDK_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "Sandisk corporate lineage \u2014 verify against live metadata",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Seagate Technology",
+      "symbol_reference_from_screenshot": "STX",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "STX_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Intel",
+      "symbol_reference_from_screenshot": "INTC",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "INTC_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Micron Technology",
+      "symbol_reference_from_screenshot": "MU",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "MU_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    },
+    {
+      "display_name": "Ciena",
+      "symbol_reference_from_screenshot": "CIEN",
+      "provider": "TRADING212_DEMO_METADATA_AND_STATIC_TABLE",
+      "provider_instrument_id": "CIEN_US_EQ",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "instrument_type": "EQUITY",
+      "mapping_status": "VERIFIED_UNIQUE",
+      "mapping_confidence": "HIGH",
+      "mapping_evidence": "static_p14_mapping_table_v1",
+      "last_verified_at_utc": "2026-06-01T13:51:34+00:00"
+    }
+  ]
+}

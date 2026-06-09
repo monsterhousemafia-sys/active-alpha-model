@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3-Web ↔ Decision-Cockpit-Vision — Brücke (read-only)",
+  "mission_de": "R3 operativ unter 127.0.0.1; EXE-VISION V1–V4 bleibt extern review-gated. Update synchronisiert Snapshot und König-Remaster — keine Phasenausführung.",
+  "r3_scope_de": "Preview-Hub /r3 — Exec-Spiegel, Trading-Kreislauf (Prozent/Kanäle nur /desktop)",
+  "exe_vision_scope_de": "Marktanalyse.exe Decision Cockpit — V1–V5R abgeschlossen, AWAITING_EXTERNAL_REVIEW",
+  "forbidden_de": [
+    "VISION-Phasen ohne EXTERNAL_REVIEW_APPROVAL ausführen",
+    "Champion-Wechsel oder Auto-Promote",
+    "Echtgeld-Orders außerhalb R3-GUI-Bestätigung"
+  ],
+  "update_process_de": [
+    "bash tools/king_ops.sh series-ready --repair",
+    "bash tools/king_ops.sh cockpit-update",
+    "bash tools/king_ops.sh gui-rebuild"
+  ],
+  "evidence_refs": [
+    "evidence/series_readiness_latest.json",
+    "evidence/decision_cockpit_update_latest.json",
+    "evidence/decision_cockpit_update_lessons_latest.json",
+    "evidence/r3_operational_checklist_latest.json",
+    "evidence/r3_operator_readiness_latest.json",
+    "control/review_snapshot/v5r_decision_cockpit_snapshot.json"
+  ],
+  "lessons_ref": "evidence/decision_cockpit_update_lessons_latest.json",
+  "lessons_module_de": "analytics/decision_cockpit_update_lessons.py",
+  "policy_refs": [
+    "VISION_DECISION_COCKPIT_EXECPLAN.md",
+    "control/vision_automation/automation_state.json",
+    "control/gui_32b_rebuild_manifest.json"
+  ],
+  "operator_command_de": "bash tools/king_ops.sh cockpit-update"
+}

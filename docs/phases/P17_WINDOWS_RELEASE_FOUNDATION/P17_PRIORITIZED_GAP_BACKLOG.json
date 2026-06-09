@@ -1,0 +1,85 @@
+{
+  "gaps": [
+    {
+      "acceptance_criterion": "P16H ZIP sidecar verified or gap documented",
+      "category": "TESTS",
+      "id": "P17-G001",
+      "priority": "P0",
+      "status": "REMEDIATED_IN_P17",
+      "title": "P16H transport verification"
+    },
+    {
+      "acceptance_criterion": "100% negative cases block submission",
+      "category": "SECURITY",
+      "id": "P17-G002",
+      "priority": "P0",
+      "status": "REMEDIATED_IN_P17",
+      "title": "Confirm-before-submit negative tests"
+    },
+    {
+      "acceptance_criterion": "Secure store or session-only with visible label",
+      "category": "SECURITY",
+      "id": "P17-G003",
+      "priority": "P0",
+      "status": "REMEDIATED_IN_P17",
+      "title": "Windows credential storage"
+    },
+    {
+      "acceptance_criterion": "20/20 starts without failure locally",
+      "category": "STABILITY",
+      "id": "P17-G004",
+      "priority": "P0",
+      "status": "OPEN",
+      "title": "EXE startup repeatability"
+    },
+    {
+      "acceptance_criterion": "Mock tested; no auto-retry",
+      "category": "RECONCILIATION",
+      "id": "P17-G005",
+      "priority": "P1",
+      "status": "REMEDIATED_IN_P17",
+      "title": "Cancel and unknown state workflow"
+    },
+    {
+      "acceptance_criterion": "User credentials; not faked in P17",
+      "category": "API",
+      "id": "P17-G006",
+      "priority": "P1",
+      "status": "DEFERRED_TO_P19",
+      "title": "Real T212 readonly baseline"
+    },
+    {
+      "acceptance_criterion": "Automated smoke + harness for P18",
+      "category": "TESTS",
+      "id": "P17-G007",
+      "priority": "P1",
+      "status": "REMEDIATED_IN_P17",
+      "title": "GUI E2E foundation"
+    },
+    {
+      "acceptance_criterion": "Strategy documented",
+      "category": "PACKAGING",
+      "id": "P17-G008",
+      "priority": "P2",
+      "status": "DEFERRED_TO_P20",
+      "title": "Installer signing update path"
+    },
+    {
+      "acceptance_criterion": "5-step wizard without terminal",
+      "category": "UX",
+      "id": "P17-G009",
+      "priority": "P1",
+      "status": "REMEDIATED_IN_P17",
+      "title": "First-run onboarding"
+    },
+    {
+      "acceptance_criterion": "P17 docs and reports complete",
+      "category": "TESTS",
+      "id": "P17-G010",
+      "priority": "P1",
+      "status": "REMEDIATED_IN_P17",
+      "title": "Documentation depth"
+    }
+  ],
+  "generated_phase": "P17_WINDOWS_RELEASE_FOUNDATION"
+}

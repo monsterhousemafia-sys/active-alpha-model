@@ -1,0 +1,20 @@
+{
+  "anchor_mode": false,
+  "cursor_anchor_de": "Entfernt — Kontext archiviert unter ~/.local/share/r3-os/conversation/",
+  "cursor_required": false,
+  "headline_de": "Gespräch lokal gesichert — Alpha Model KI übernimmt (IDE optional entfernbar)",
+  "independence_de": "Alpha Model läuft lokal — Entfaltungsraum + Cockpit; Cursor/Werkstatt entfernt.",
+  "message_count": 0,
+  "operator_de": "Benutzer + Alpha Model KI lokal — keine IDE nötig",
+  "paths": {
+    "anchor_policy": "/home/machinax7/active_alpha_model/control/alpha_model_workshop_policy.json",
+    "archive": "/tmp/pytest-of-machinax7/pytest-5/test_preserve_conversation_no_0/.local/share/r3-os/conversation/conversation_archive.jsonl",
+    "brief": "/tmp/pytest-of-machinax7/pytest-5/test_preserve_conversation_no_0/.local/share/r3-os/conversation/continuity_brief_de.md",
+    "conversation_dir": "/tmp/pytest-of-machinax7/pytest-5/test_preserve_conversation_no_0/.local/share/r3-os/conversation",
+    "project_root": "/home/machinax7/active_alpha_model"
+  },
+  "preserved_at_utc": "2026-06-08T14:01:54+00:00",
+  "primary_interface": "agent_chamber",
+  "schema_version": 2,
+  "source_transcript": "r3_archive"
+}

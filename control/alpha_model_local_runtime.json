@@ -1,0 +1,26 @@
+{
+  "apply_command_de": "bash tools/king_ops.sh r3-local",
+  "dampen_warning_codes": [
+    "OFFLINE_OR_FICTIVE_PRICES"
+  ],
+  "headline_de": "Welt-Modus — Remote-Worker über Tunnel/Internet erwartet",
+  "https_mirror_ref": "control/r3_https_mirror.json",
+  "hub_bind": "0.0.0.0",
+  "hub_port": 17890,
+  "hub_url": "http://127.0.0.1:17890",
+  "local_first_policy_ref": "control/r3_local_first_policy.json",
+  "local_only": false,
+  "ollama_base_url": "http://127.0.0.1:11434",
+  "operator_surfaces_de": [
+    "Cockpit: http://127.0.0.1:17890/desktop",
+    "Entfaltungsraum: alpha-model-agent",
+    "CLI: python3 tools/ai_kernel.py",
+    "Ollama: http://127.0.0.1:11434"
+  ],
+  "price_data_local_de": "PRE_GO_LIVE: fictive/lokale Kurse OK — kein Internet-Preisfeed als Blocker",
+  "remote_workers_expected": true,
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "tunnel_required": true,
+  "world_enabled_at_utc": "2026-06-09T21:22:38+00:00"
+}

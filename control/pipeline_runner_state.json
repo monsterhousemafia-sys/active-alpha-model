@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-05-30T18:38:30+00:00",
+  "followup_prompt": "",
+  "has_pending_work": false,
+  "steps": [
+    {
+      "status": "OK",
+      "step": "sync_control_plane"
+    },
+    {
+      "mature": 0,
+      "status": "OK",
+      "step": "sync_outcome_ledger"
+    },
+    {
+      "reason": "already_pass",
+      "status": "SKIP",
+      "step": "m1_validation"
+    },
+    {
+      "compared": 7,
+      "status": "OK",
+      "step": "challenger_eval"
+    },
+    {
+      "status": "OK",
+      "step": "quick_tests",
+      "tail": "........................                                                 [100%]\n24 passed in 2.14s\n"
+    }
+  ]
+}

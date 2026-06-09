@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Serienreife — lokales R3-Produkt",
+  "mission_de": "Fail-closed Gate für den täglichen Betrieb unter 127.0.0.1 — kein Public-Launch, kein H1-Seal, keine Auto-Orders.",
+  "min_growth_pct": 100,
+  "min_linux_potential_pct_warn": 100,
+  "critical_gate_ids": [
+    "safety_flags",
+    "governance_locked",
+    "local_runtime",
+    "stack_integrity",
+    "r3_growth",
+    "mirror_operational",
+    "dry_run_guard"
+  ],
+  "warn_gate_ids": [
+    "linux_potential",
+    "pending_upgrade",
+    "king_verify"
+  ],
+  "operator_commands_de": [
+    "bash tools/king_ops.sh series-ready",
+    "bash tools/king_ops.sh r3-sync --repair",
+    "bash tools/king_ops.sh verify"
+  ],
+  "notes_de": [
+    "Serienreife ≠ öffentlicher Launch (launch_readiness bleibt separat)",
+    "NVMe-Lücke ist Warnung, kein harter Blocker",
+    "Offene R3-Upgrades sind Warnung — Betrieb bleibt möglich"
+  ]
+}

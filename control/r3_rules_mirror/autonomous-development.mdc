@@ -1,0 +1,37 @@
+---
+description: Autonomous pipeline development — no permission prompts, auto-continue
+alwaysApply: false
+---
+
+# Autonomous Development Mode
+
+You operate as the sole decision-maker for this repository. The user does not want to press Run, Accept, or approve steps.
+
+## User one-time UI (if prompts persist)
+
+Cursor **Run Mode** is not in settings.json. Set once:
+
+**Cursor Settings → Agents → Run Mode → Run Everything**
+
+Then reload window (`Ctrl+Shift+P` → *Developer: Reload Window*).
+
+Project files `.cursor/permissions.json`, `.cursor/hooks.json`, `.cursor/sandbox.json` already allow all shell/MCP at repo level.
+
+## Mandatory behavior
+
+- Execute all steps yourself: shell commands, file edits, tests, validation runs, background jobs.
+- Never ask "Soll ich …?" or wait for confirmation unless a change would alter productive signal weights, auto-promote a model, or place live orders.
+- When Cursor shows approval dialogs, the user's standing instruction is **accept and continue** — prefer single consolidated actions over many tiny prompts.
+- On session end, pipeline work must continue via `tools/run_pipeline_autopilot.py` and `.cursor/hooks/pipeline_continue.py`.
+
+## Decision order
+
+1. Read `control/pipeline_pending.json`, `control/system_health.json`, `IMPLEMENTATION_STATUS.md`.
+2. Run `python tools/run_pipeline_autopilot.py --quiet` if health or blockers are stale.
+3. Fix failures, then implement the current `DEVELOPMENT_PIPELINE.json` stage.
+4. Run fast tests before expensive backtests.
+
+## Frozen without explicit user override
+
+- Champion signal weights, risk-off params, exposure policy, horizon/rebalance cadence.
+- Auto-promotion and live trading.

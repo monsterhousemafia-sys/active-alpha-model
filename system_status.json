@@ -1,0 +1,16 @@
+{
+  "last_run_utc": "2026-06-04T20:00:11+00:00",
+  "phase": "refresh",
+  "health": "ERROR",
+  "operational_health": "OK",
+  "analytical_validity": "INVALID",
+  "validated_run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+  "exit_code": 0,
+  "price_date": "2026-06-01",
+  "signal_date": "2026-06-02",
+  "paper_mark_today": false,
+  "preflight_status": "OK",
+  "run_plan": "analyze",
+  "message": "Scheduled refresh",
+  "details": {}
+}

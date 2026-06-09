@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-01T13:51:35+00:00",
+  "mode": "READ_ONLY_REVIEW_SNAPSHOT",
+  "build_status": "MANUAL_READ_ONLY_REVIEW_ONLY",
+  "operational_authorization": "NONE",
+  "live_trading_allowed": false,
+  "auto_promotion_allowed": false,
+  "evidence_stage": "BACKTESTED",
+  "forward_monitoring_status": "NOT_AUTHORIZED",
+  "shadow_monitoring_status": "NOT_AUTHORIZED",
+  "paper_monitoring_status": "NOT_AUTHORIZED",
+  "blockers": [
+    "V5R_EXTERNAL_REVIEW_PENDING",
+    "NO_OPERATIONAL_AUTHORIZATION",
+    "PROMOTION_NOT_ELIGIBLE",
+    "PAPER_NOT_ELIGIBLE",
+    "REAL_MONEY_NOT_ELIGIBLE",
+    "FORWARD_MONITORING_NOT_EXTERNALLY_APPROVED",
+    "SHADOW_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+    "PAPER_ACTIVATION_NOT_EXTERNALLY_APPROVED"
+  ],
+  "banners": [
+    "P14 PAPER FORWARD \u2014 SIMULATION ONLY",
+    "500 EUR USER REFERENCE ALLOCATION | REAL_MONEY = NO",
+    "TRADING212 = DEMO READ-ONLY ONLY"
+  ],
+  "cockpit_data": {
+    "schema_version": 4,
+    "generated_at_utc": "2026-06-01T13:51:35+00:00",
+    "mode": "READ_ONLY_DECISION_COCKPIT",
+    "authorization_status": {
+      "schema_version": 1,
+      "status": "CONFLICT_BLOCKED_FOR_SAFETY",
+      "operational_status": "BLOCKED_FOR_SAFETY",
+      "terminal_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+      "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "authoritative_source_present": true,
+      "authoritative_source_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "authoritative_champion": "R3_w075_q065_noexit",
+      "authoritative_review_forbids_operations": true,
+      "registry_sealed_for_terminal": true,
+      "conflicting_sources": [
+        "R5_rank_only_train5_operational_claims"
+      ],
+      "conflicting_or_unsealed_sources": [
+        "R5_rank_only_train5_operational_claims"
+      ],
+      "conflict_details": [
+        "Unsealed operational champion claim 'R5_rank_only_train5' conflicts with authoritative champion 'R3_w075_q065_noexit'"
+      ],
+      "operational_authorized": false,
+      "real_money_authorized": false,
+      "promotion_authorized": false,
+      "shadow_monitoring_authorized": false,
+      "paper_monitoring_authorized": false,
+      "champion_change_authorized": false,
+      "allowed_actions": [
+        "manual_read_only_review"
+      ],
+      "blocked_actions": [
+        "shadow_monitoring_activation",
+        "paper_monitoring_activation",
+        "promotion_execution",
+        "champion_change",
+        "real_money_execution",
+        "operative_jobs",
+        "backtest_execution",
+        "matrix_rerun",
+        "replay_execution",
+        "broker_connectivity",
+        "exe_build",
+        "exe_execution"
+      ],
+      "g1_execution_authorized": false,
+      "resolution_required": "CORRECTED_G0_EXTERNAL_SEAL_THEN_SEPARATE_G1_EXTERNAL_APPROVAL",
+      "generated_at_utc": "2026-06-01T13:51:35+00:00"
+    },
+    "banners": [
+      "NO LIVE TRADING",
+      "NO AUTO PROMOTION",
+      "READ-ONLY DECISION COCKPIT"
+    ],
+    "executive_overview": {
+      "active_champion": "R3_w075_q065_noexit",
+      "champion_status": "VERIFIED_FROM_SOURCES",
+      "champion_blocked_for_safety": false,
+      "expected_champion": "R3_w075_q065_noexit",
+      "candidate": "MOM_63_TOP12",
+      "control_reference": "M1_MOM_BLEND_MATCHED_CONTROLS",
+      "manifest_status": "VERIFIED_FROM_MANIFEST",
+      "manifest_blocked_for_safety": false,
+      "evidence_stage": "BACKTESTED",
+      "evidence_stage_summary": "Current verified stage: BACKTESTED. No reviewed forward, shadow or paper readiness established.",
+      "source_classification": "PREEXISTING_UNREVIEWED",
+      "promotion_eligible_display": "NO",
+      "paper_eligible_display": "NO",
+      "real_money_eligible_display": "NO"
+    },
+    "controller_state": {
+      "display": "UNKNOWN \u2014 BLOCKED FOR SAFETY",
+      "blocked_for_safety": true,
+      "block_reasons": [
+        "authorization_source_conflict"
+      ],
+      "lifecycle_message": "CONTROLLER STATE UNKNOWN OR UNSAFE\nBLOCKED FOR SAFETY",
+      "current_executed_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+      "expected_next_phase": "NONE",
+      "authorized_phase": "",
+      "current_running_phase": null,
+      "execution_status": "AWAITING_EXTERNAL_REVIEW",
+      "next_phase_authorized": false,
+      "next_phase_authorized_display": "NO"
+    },
+    "safety_automation": {
+      "AUTO_RESEARCH": "DISABLED",
+      "AUTO_PROMOTE_PAPER": "DISABLED",
+      "AUTO_PROMOTE_SIGNAL": "DISABLED",
+      "AUTO_EXECUTE_REAL_MONEY": "DISABLED",
+      "hooks_status": "DISABLED",
+      "hooks_schema_valid": true,
+      "hooks_schema_error": null,
+      "system_health": "OK",
+      "last_known_good_available": true,
+      "controller_status": "AWAITING_EXTERNAL_REVIEW",
+      "current_executed_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+      "last_sealed_review": {
+        "phase_id": "V5R_READ_ONLY_STANDALONE_EXE_REBUILD_AND_AUDIT_REPAIR",
+        "review_zip": "codex_v5r_standalone_exe_review.zip",
+        "review_zip_sha256": "b0e687522cdb7a5966b872756e3df97ba62a676ab0f3a8aa01acaf7b4eadffc3",
+        "external_sealed": true,
+        "sealed_by": "EXTERNAL_REVIEW_APPROVAL_FINAL.md"
+      },
+      "safety_banner": "SAFETY STATUS UNKNOWN OR CONFLICTING",
+      "safety_warnings": [
+        "AUTHORIZATION SOURCE CONFLICT",
+        "BLOCKED FOR SAFETY"
+      ],
+      "automation_blocked_for_safety": true,
+      "hooks_blocked_for_safety": false,
+      "governance_display_source": "operational_safety_flags.json"
+    },
+    "evidence_ladder": {
+      "stages": [
+        {
+          "stage": "IDEA",
+          "status": "REACHED",
+          "blocker": null
+        },
+        {
+          "stage": "BACKTESTED",
+          "status": "CURRENT",
+          "blocker": null
+        },
+        {
+          "stage": "ROBUSTNESS_CHECKED",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "SHADOW_RUNNING",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "SHADOW_PASSED",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "PAPER_RUNNING",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "PAPER_CANDIDATE",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        }
+      ],
+      "summary": "Current verified stage: BACKTESTED. No reviewed forward, shadow or paper readiness established."
+    },
+    "why_not_promoted": {
+      "explanatory_reasons": [
+        "Challenger-specific turnover is not verified.",
+        "Cost Stress Gate is not passed.",
+        "Deflated Sharpe Ratio is below required confidence.",
+        "Robustness evidence is partial only.",
+        "P9 is not externally reviewed as Shadow/Paper readiness.",
+        "Shadow activation has not been externally approved.",
+        "Paper activation has not been externally approved.",
+        "Automatic promotion is disabled.",
+        "Real-money execution is disabled."
+      ],
+      "current_active_blockers": [
+        "CHALLENGER_TURNOVER_NOT_VERIFIED",
+        "COST_STRESS_GATE_NOT_PASSED",
+        "COST_STRESS_NOT_PASSED",
+        "DSR_BELOW_REQUIRED_CONFIDENCE",
+        "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False",
+        "FORWARD_MONITORING_NOT_EXTERNALLY_APPROVED",
+        "MULTIPLE_TESTING_NOT_PASSED",
+        "P9_NOT_EXTERNALLY_REVIEWED",
+        "PAPER_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+        "ROBUSTNESS_NOT_PASSED",
+        "SHADOW_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+        "SHADOW_EVIDENCE_NOT_EXTERNALLY_REVIEWED"
+      ],
+      "source_conflicts": [
+        "ECONOMIC_VALUE_GATE source conflict: auto_promotion_status=True, promotion_status=False",
+        "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False"
+      ]
+    },
+    "cost_stress_robustness": {
+      "cost_stress_status": "NOT_EVALUABLE",
+      "cost_stress_pass": false,
+      "cost_stress_blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED",
+      "proxy_label": "NOT_GATE_EVIDENCE",
+      "dsr_probability": 0.8408993992363185,
+      "dsr_required_probability": 0.95,
+      "dsr_status": "FAIL",
+      "pbo_status": "NOT_EVALUABLE",
+      "subperiod_screen_pass": true,
+      "robustness_status": "PARTIAL_ONLY",
+      "robustness_pass": false
+    },
+    "monitoring": {
+      "forward": {
+        "status": "BLOCKED",
+        "display": "BLOCKED",
+        "evidence_missing": false,
+        "activation_status": "BLOCKED"
+      },
+      "shadow": {
+        "status": "BLOCKED",
+        "display": "BLOCKED",
+        "evidence_missing": false,
+        "activation_status": "BLOCKED",
+        "activation_externally_approved": false,
+        "operative_jobs_started": false,
+        "shadow_collection_started": false,
+        "promotion_allowed": false,
+        "paper_eligible": false,
+        "real_money_eligible": false
+      },
+      "paper": {
+        "status": "BLOCKED",
+        "display": "BLOCKED",
+        "evidence_missing": false,
+        "activation_status": "BLOCKED",
+        "activation_externally_approved": false,
+        "operative_jobs_started": false,
+        "paper_simulation_started": false,
+        "promotion_allowed": false,
+        "paper_eligible": false,
+        "real_money_eligible": false
+      },
+      "data_requirements_present": true
+    },
+    "experiment_registry": {
+      "experiment_id": "EXP_INITIAL_MOM_63_TOP12",
+      "candidate": "MOM_63_TOP12",
+      "champion_reference": "R3_w075_q065_noexit",
+      "control_reference": "M1_MOM_BLEND_MATCHED_CONTROLS",
+      "status": "RESEARCH_ONLY",
+      "evidence_stage": "BACKTESTED",
+      "display": "VERIFIED",
+      "status_message": "VERIFIED_FROM_MANIFEST",
+      "provenance_blockers": [
+        "COST_STRESS_NOT_EVALUATED",
+        "P9_NOT_EXTERNALLY_REVIEWED"
+      ],
+      "source_status": "OK",
+      "blocked_for_safety": false
+    },
+    "audit_review_chain": {
+      "chain": "V1 -> V1R -> V1R2 -> V1R3 -> V2 -> V2R -> V3 -> V4 -> V4R -> V4R2 -> V4R3 -> V5 -> V5R",
+      "reviews": [
+        {
+          "phase_id": "V1_EVIDENCE_DATA_CONTRACTS_AND_GATED_CASCADE_FOUNDATION",
+          "review_zip": "codex_v1_evidence_and_cascade_review.zip",
+          "review_zip_sha256": "403c9a5c3660db6c6ae5b7d1582f6029add22b7fd2569c7c6e81dd997bb6d283",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "V1R_EVIDENCE_AND_CONTROLLER_HARDENING",
+          "review_zip": "codex_v1r_evidence_controller_review.zip",
+          "review_zip_sha256": "6033ad04a87a8cd7315743f73bc109461abe45be74f697c4efc75abbb92184b4",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V1R2.md"
+        },
+        {
+          "phase_id": "V1R2_REVIEW_CHAIN_AND_FAIL_CLOSED_SEALING",
+          "review_zip": "codex_v1r2_review_chain_review.zip",
+          "review_zip_sha256": "595d5fc0f5cf8d399ef5ba066fdb9973994aa46e94c3740960ea08c7a5921017",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V1R3.md"
+        },
+        {
+          "phase_id": "V1R3_AUTHORIZED_COMPLETION_GATE",
+          "review_zip": "codex_v1r3_authorized_completion_review.zip",
+          "review_zip_sha256": "62428f7ef13af102e25e834ab391b30d1cda0e86955e0d5b2edcc3cab875659a",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V2.md"
+        },
+        {
+          "phase_id": "V2_COST_STRESS_AND_ROBUSTNESS_ENGINE",
+          "review_zip": "codex_v2_robustness_review.zip",
+          "review_zip_sha256": "3ac4b5048b60ff72d826535968fb23b10102d07e2fdc63e7d09725a0402f5a94",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V2R.md"
+        },
+        {
+          "phase_id": "V2R_COST_STRESS_AND_STATISTICAL_VALIDITY_REMEDIATION",
+          "review_zip": "codex_v2r_statistical_validity_review.zip",
+          "review_zip_sha256": "46005fd19828e5ac43e4e28c4c5709aa5b3051936be34e03797ba6c4ba8a0bdf",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V3.md"
+        },
+        {
+          "phase_id": "V3_CONTROLLED_FORWARD_MONITORING_FOUNDATION",
+          "review_zip": "codex_v3_monitor_foundation_review.zip",
+          "review_zip_sha256": "1a18b63ea3258d0761be168ee74e2093cb992a212aa5ee433ab3e4546886abb4",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4.md"
+        },
+        {
+          "phase_id": "V4_DECISION_COCKPIT_GUI_INTEGRATION",
+          "review_zip": "codex_v4_gui_review.zip",
+          "review_zip_sha256": "75808571c9cf44a2b58cc1dd85bff4d84640a4ccafd2bda61d09fd5622f28037",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4R.md"
+        },
+        {
+          "phase_id": "V4R_FAIL_CLOSED_GUI_AND_REVIEW_EVIDENCE_REMEDIATION",
+          "review_zip": "codex_v4r_gui_safety_review.zip",
+          "review_zip_sha256": "9ad800492a7662c7d5ecae35858312333f7c84885b36f5b0a8e06c6427a91a4f",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4R2.md"
+        },
+        {
+          "phase_id": "V4R2_FINAL_FAIL_CLOSED_BUILD_GATE",
+          "review_zip": "codex_v4r2_final_gui_gate_review.zip",
+          "review_zip_sha256": "93946db8aa0bd40a5f007e3ec8739579d8f227a74719ac2141a3e68d7807e14d",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4R3.md"
+        },
+        {
+          "phase_id": "V4R3_FINAL_UI_STATE_AND_HOOK_SCHEMA_GATE",
+          "review_zip": "codex_v4r3_final_build_gate_review.zip",
+          "review_zip_sha256": "ea345927f370bd8cf0807b77addd7a2413025af8cf89ebb32e3b3b828b070999",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V5.md"
+        },
+        {
+          "phase_id": "V5_WINDOWS_EXE_BUILD_AND_VERIFICATION",
+          "review_zip": "codex_v5_exe_build_review.zip",
+          "review_zip_sha256": "f4c7d1de3b91f8aff8b6f7ee95a968f21518e2c3a799a78ab380e0fb80355245",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V5R.md"
+        },
+        {
+          "phase_id": "V5R_READ_ONLY_STANDALONE_EXE_REBUILD_AND_AUDIT_REPAIR",
+          "review_zip": "codex_v5r_standalone_exe_review.zip",
+          "review_zip_sha256": "b0e687522cdb7a5966b872756e3df97ba62a676ab0f3a8aa01acaf7b4eadffc3",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_FINAL.md"
+        },
+        {
+          "phase_id": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+          "review_zip": "",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0_AUTHORIZATION_SOURCE_CONFLICT_REMEDIATION",
+          "review_zip": "codex_g0_authorization_conflict_remediation_review.zip",
+          "review_zip_sha256": "09adac3cef01ef61faa716c39f751c39cab39ef5289ed5523d81af831b132130",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G1_READ_ONLY_CHALLENGER_COST_EVIDENCE_PREPARATION",
+          "review_zip": "codex_g1_readonly_challenger_cost_evidence_submission.zip",
+          "review_zip_sha256": "50a26cd8a6a1c36db8d9fc30a82aeb743b241fbb73d51fb0a03d09c5a4644aeb",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R_AUTHORIZATION_AND_CHAMPION_LINEAGE_REMEDIATION_RESUBMISSION",
+          "review_zip": "codex_g0r_authorization_champion_lineage_remediation_review.zip",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R2_CLEAN_CHECKPOINT_AND_EVIDENCE_COMPLETENESS_REMEDIATION",
+          "review_zip": "codex_g0r2_clean_checkpoint_evidence_completeness_review.zip",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R3_FINAL_COMMIT_BOUND_PACKAGE_AND_MANIFEST_REMEDIATION",
+          "review_zip": "codex_g0r3_final_commit_bound_package_review.zip",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R4_DETACHED_ATTESTATION_AND_EXACT_BYTE_PACKAGE_BINDING_REMEDIATION",
+          "review_zip": "codex_g0r4_detached_attestation_exact_byte_package_review.zip",
+          "review_zip_sha256": "DETACHED_ATTESTATION_ONLY",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R4R_VERBATIM_EXTERNAL_REVIEW_CHAIN_RESUBMISSION",
+          "review_zip": "codex_g0r4r_verbatim_external_review_chain_resubmission.zip",
+          "review_zip_sha256": "DETACHED_ATTESTATION_ONLY",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R4R2_VERBATIM_AUTHORITATIVE_BASELINE_RESUBMISSION",
+          "review_zip": "codex_g0r4r2_verbatim_authoritative_baseline_resubmission.zip",
+          "review_zip_sha256": "DETACHED_ATTESTATION_ONLY",
+          "external_sealed": false,
+          "sealed_by": null
+        }
+      ],
+      "pending_external_branch_options": []
+    },
+    "source_health": {
+      "critical_sources": {
+        "promotion_gate_config.yaml": "OK",
+        "control/auto_promotion_status.json": "OK",
+        "control/promotion_status.json": "OK",
+        "control/system_health.json": "OK",
+        "control/last_known_good_state.json": "OK",
+        "control/evidence/current_evidence_status.json": "OK",
+        "control/evidence/cost_stress_status.json": "OK",
+        "control/evidence/robustness_status.json": "OK",
+        "control/evidence/multiple_testing_status.json": "OK",
+        "control/evidence/forward_monitoring_readiness_status.json": "OK",
+        "control/evidence/shadow_monitor_status.json": "OK",
+        "control/evidence/paper_monitor_status.json": "OK",
+        "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml": "OK"
+      },
+      "missing_sources": [],
+      "unparseable_sources": [],
+      "conflicts": [
+        "ECONOMIC_VALUE_GATE source conflict: auto_promotion_status=True, promotion_status=False",
+        "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False"
+      ],
+      "fail_closed": true,
+      "blocked_for_safety": true,
+      "champion_source_policy": [
+        "control/evidence/current_evidence_status.json",
+        "control/last_known_good_state.json",
+        "control/auto_promotion_status.json",
+        "model_output_sp500_pit_t212/latest_validated_run.json"
+      ]
+    },
+    "manifest_validation": {
+      "manifest_file_status": "MISSING",
+      "validation_pass": false,
+      "validation_errors": [
+        "HASH_MISMATCH:config_snapshot_hash",
+        "HASH_MISMATCH:strategy_returns_hash",
+        "HASH_MISMATCH:benchmark_report_hash",
+        "HASH_MISMATCH:constraint_history_hash",
+        "HASH_MISMATCH:cost_report_hash"
+      ],
+      "validation_checks": {
+        "run_id": "PRESENT",
+        "variant": "PRESENT",
+        "created_at_utc": "PRESENT",
+        "runtime_mode": "PRESENT",
+        "output_dir": "PRESENT",
+        "source_commit": "PRESENT",
+        "config_snapshot_hash": "PRESENT",
+        "strategy_returns_hash": "PRESENT",
+        "benchmark_report_hash": "PRESENT",
+        "constraint_history_hash": "PRESENT",
+        "cost_report_hash": "PRESENT",
+        "gate_status_hash": "PRESENT",
+        "evidence_stage": "PRESENT",
+        "promotion_allowed": "PRESENT",
+        "shadow_allowed": "PRESENT",
+        "paper_allowed": "PRESENT",
+        "real_money_allowed": "PRESENT",
+        "output_dir_exists": "OK",
+        "hash_config_snapshot_hash": "MISMATCH",
+        "hash_strategy_returns_hash": "MISMATCH",
+        "hash_benchmark_report_hash": "MISMATCH",
+        "hash_constraint_history_hash": "MISMATCH",
+        "hash_cost_report_hash": "MISMATCH",
+        "validation_status": "FAIL"
+      },
+      "latest_verified_run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "variant": "R3_w075_q065_noexit",
+      "evidence_stage": "BACKTESTED",
+      "stale_or_inconsistent": true
+    },
+    "gui_read_only": true,
+    "operative_ui_actions_allowed": false
+  },
+  "v5r_external_acceptance": "APPROVED_FOR_MANUAL_READ_ONLY_REVIEW",
+  "p14_paper_forward": {
+    "current_integration_phase": "P14_PAPER_FORWARD_500_EUR_WITH_TRADING212_DEMO_READONLY_OBSERVATION",
+    "p14_status": "PASS_WITH_TRADING212_CREDENTIALS_PENDING",
+    "p10_p13_verification": true,
+    "initial_paper_capital_eur": 500.0,
+    "reference_source": "USER_PROVIDED_SCREENSHOT_REFERENCE",
+    "screenshot_verified_as_broker_ledger": false,
+    "mapped_instruments": 8,
+    "portfolio_value_eur": 499.3068,
+    "virtual_cash_eur": 37.1568,
+    "invested_eur": 462.15,
+    "net_pnl_eur": -0.6932,
+    "simulated_costs_eur": 0.6932,
+    "trading212_sync_status": "AWAITING_OPTIONAL_CREDENTIAL_CONFIGURATION_NON_BLOCKING",
+    "runtime_status": "RUNNING_PAPER_FORWARD_SIMULATION_ONLY",
+    "simulation_only": true,
+    "real_money": false,
+    "broker_order_routing": "DISABLED",
+    "active_champion": "R3_w075_q065_noexit",
+    "next_flowchart_work_unit": "P15_PAPER_PERFORMANCE_AND_VIRTUAL_CAPITAL_SCALING_DECISION_SUPPORT",
+    "p15_enqueued": {
+      "ok": true,
+      "message": "enqueued"
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "external_sealed": false,
+  "g1_authorized": false,
+  "generated_at_utc": "2026-05-31T22:37:39+00:00",
+  "git_commit_included": false,
+  "git_commit_location": "DETACHED_SUBMISSION_ATTESTATION_ONLY",
+  "manifest_role": "NON_SELF_REFERENTIAL_COMMITTED_PAYLOAD_INDEX",
+  "operational_status": "BLOCKED_FOR_SAFETY",
+  "payload_entries": [
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/phases/G0R4/CODEX_G0R4_PREFLIGHT.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "cca3c3ae25da4e7d0d19ed3251b9590d96351f50a5958ef63c4668c37e60609b",
+      "zip_path": "docs/phases/G0R4/CODEX_G0R4_PREFLIGHT.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/phases/G0R4/CODEX_G0R4_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "a1c6a4c200c3d142ecebc8ce96b70467d1c16463675ddd2d89064f4ce8ce0b45",
+      "zip_path": "docs/phases/G0R4/CODEX_G0R4_EXTERNAL_REJECTION_REMEDIATION_REPORT.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/integrity/session_logs/G0R4/CODEX_G0R4_GIT_STATUS.txt",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "e8726978348eef19ab1a709bf9177b1b1683a36195469e6b9704b420998d1290",
+      "zip_path": "docs/integrity/session_logs/G0R4/CODEX_G0R4_GIT_STATUS.txt"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/phases/G0R4/CODEX_G0R4_V5R_BASELINE_COMPARISON.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "66531fe38d69690a7155fffc19d160441276e618f8b002f86440250e08182e81",
+      "zip_path": "docs/phases/G0R4/CODEX_G0R4_V5R_BASELINE_COMPARISON.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_BEFORE.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "0cc012de0d87369695a45a33a0bc99afface7cff06e8caf73f0e680112b7ba55",
+      "zip_path": "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_BEFORE.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_AFTER.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "0cc012de0d87369695a45a33a0bc99afface7cff06e8caf73f0e680112b7ba55",
+      "zip_path": "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_AFTER.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/integrity/session_logs/G0R4/CODEX_G0R4_TEST_OUTPUT.txt",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "c8e4f38c7ca5e72bab7e343406e7d488d0715a9ef41cee9b3e64194f70597d6a",
+      "zip_path": "docs/integrity/session_logs/G0R4/CODEX_G0R4_TEST_OUTPUT.txt"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "G0R4-CHANGE_MANIFEST.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "48c2eda40fc303f3d3b9215aaaa7a8cc29c2e5ef51a49b019a38d471d8ac2d02",
+      "zip_path": "G0R4-CHANGE_MANIFEST.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/review_snapshot/g0r_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "fb7bade6305ad3a007b5c0f63240842b3708830c3d8ea71483bc48b012546cf0",
+      "zip_path": "control/review_snapshot/g0r_decision_cockpit_snapshot.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/review_snapshot/g0r2_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "7267a10dd69fe921412e483d9ef2299bb8ff22596d0ec26834b3ee9109a6a1db",
+      "zip_path": "control/review_snapshot/g0r2_decision_cockpit_snapshot.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/review_snapshot/g0r3_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "2c54d609e2ec3e6305d6be95a8f64708f085e1045d2b6553dc6742976535fb7f",
+      "zip_path": "control/review_snapshot/g0r3_decision_cockpit_snapshot.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/review_snapshot/g0r4_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "687351cea6afd337f396348dc2879926e1ba48e9fc01e086884c88c0da7310c5",
+      "zip_path": "control/review_snapshot/g0r4_decision_cockpit_snapshot.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/review_snapshot/v5r_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "97cce59119b8ce2747121c5bf4214ad8913d0585baa4843b5d272b57d90f77dc",
+      "zip_path": "control/review_snapshot/v5r_decision_cockpit_snapshot.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "DEVELOPMENT_PIPELINE.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "cdde61834d70bb491e81fd10b99dfaf796713c5545998541d36de1c7da868674",
+      "zip_path": "DEVELOPMENT_PIPELINE.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "DEVELOPMENT_PIPELINE.yaml",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "032b428673cc5e67ea02a3979712287ce56ab2e4ec355aaae54d376692b63e6a",
+      "zip_path": "DEVELOPMENT_PIPELINE.yaml"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/auto_promotion_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "e2901234d1f4bceb3606a55095da804c6baacc1a454c3342f394626dbff100e7",
+      "zip_path": "control/auto_promotion_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/cost_stress_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "bbe231ac7f5e375bf4fa498ac827d22ddfa816d61e98c06008160cec341a9404",
+      "zip_path": "control/evidence/cost_stress_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/current_evidence_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "c51237d27c4ca56196fc2bb52346a924b7a94ee28be36d38ddf944abd60c979f",
+      "zip_path": "control/evidence/current_evidence_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/forward_monitoring_data_requirements.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "38ff1ae40d05858d2d98621ac9405c658e88b9d7add102ae99eabf6a5dde527d",
+      "zip_path": "control/evidence/forward_monitoring_data_requirements.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/forward_monitoring_readiness_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "538fab6de3b6333d74846819f345b632b6043ba9101074fcbef0c1dc2167dc3b",
+      "zip_path": "control/evidence/forward_monitoring_readiness_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/multiple_testing_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "91a4c04151e862d3e36e567f2b98391f353e7621207666f3da0181ad5a01ffe2",
+      "zip_path": "control/evidence/multiple_testing_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/paper_monitor_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "5290a3ad9ad52f8ecacef81214d96095efaaec995519a6bdad6ecb87cb09335d",
+      "zip_path": "control/evidence/paper_monitor_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/robustness_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "4c219ab56218ea6ec68c454a6c57fad3045fd70b4bba0282978745805af78e45",
+      "zip_path": "control/evidence/robustness_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/evidence/shadow_monitor_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "fb73200c5834713d2e9a9c09791b164778b0d95348f1dcd20113cfed15e59764",
+      "zip_path": "control/evidence/shadow_monitor_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "6c385efecb43c303726ecf4a5baff4dd779a425417f5012185ea82bfb73430b2",
+      "zip_path": "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/last_known_good_state.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "f67b37eba2807702f1ffbada01e0f6153046d66a23136e0dc307f01fa4ff9bcc",
+      "zip_path": "control/last_known_good_state.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/p9_shadow_paper_prep_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "d47657dcfa5e478c51453809eff7e9386eebd4c3f47e2429c1e27f7704937636",
+      "zip_path": "control/p9_shadow_paper_prep_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/promotion_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "14b8f53f9e95ec03234cbfdf60c9a437db4a4fb3c33dc9fd3146e199901b693a",
+      "zip_path": "control/promotion_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "model_output_sp500_pit_t212/background_research_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "2401c9cd2340d186c98eced96356315cd0c03dab41607c94c60c1df9b5a53d70",
+      "zip_path": "model_output_sp500_pit_t212/background_research_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "model_output_sp500_pit_t212/latest_validated_run.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "e5a821da3cae03952cc0bbbad9c43d9f813fa60fb48d58d60fe6947314a9a58d",
+      "zip_path": "model_output_sp500_pit_t212/latest_validated_run.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "promotion_gate_config.yaml",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e",
+      "zip_path": "promotion_gate_config.yaml"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/authorization/authorization_source_policy.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "a53d37001f56950a3448d5f07621f35e76731ad59c085a109728da26d5cdb740",
+      "zip_path": "control/authorization/authorization_source_policy.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/authorization/current_authorization_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "f179c6a9d116d57d06ffcc34f3c96efc2ad3b80185a92479ad222ec29ea9b51a",
+      "zip_path": "control/authorization/current_authorization_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/authorization/champion_lineage_status.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "b75515fb9da002e1f6dfc45c6a5c47604ba4a481f1dcbc3aa62b0e6c1a7f124c",
+      "zip_path": "control/authorization/champion_lineage_status.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/vision_automation/automation_state.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "d95411cf2a068f705ac41dacdd4b91c711e0784d52d7d78ae9db3f59c1685a38",
+      "zip_path": "control/vision_automation/automation_state.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/vision_automation/phase_catalog.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "187ec0f6936a1c31516c63c7720a62d3f600d9b33171d28626ef5c4ee473c204",
+      "zip_path": "control/vision_automation/phase_catalog.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/vision_automation/review_registry/review_registry.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "5f3d26c7edac9e88ce1b79b9683709b7a58af5cf9353ac7d52aa465a95a3e058",
+      "zip_path": "control/vision_automation/review_registry/review_registry.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/vision_automation/transition_log.jsonl",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "2877ea91512462dab3e7fdddafa3bcbc4c4f9b239da7dbf8187950a30bf077c2",
+      "zip_path": "control/vision_automation/transition_log.jsonl"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/system_health.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "e4cd2bed595506a23180d1363de645a9befafc7b9a5b55e51fb78d564b8161cc",
+      "zip_path": "control/system_health.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "VISION_PROGRESS.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "7a712716eb87c4d89e2c4295b6844b492c6a6943f4816d8526f9d4470d637cd9",
+      "zip_path": "VISION_PROGRESS.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": ".cursor/hooks.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "887820009578e8dc55e174da5873b4025cde40c5b0c33e750b69238b3c158079",
+      "zip_path": ".cursor/hooks.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "017d0bc59df4bea2b5773ef1cfaf47e6c93f4036b96d5d14b30fcb6fe7940e6a",
+      "zip_path": "EXTERNAL_REVIEW_APPROVAL_FINAL.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "V5R_EXTERNAL_ACCEPTANCE_REPORT.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "6d65847e9d4aff0295498087e2810c24fdee272262071c2e11b60047936de276",
+      "zip_path": "V5R_EXTERNAL_ACCEPTANCE_REPORT.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "255f9a7db48d517f9f023dfbe2f7475c36839f599d191331d03f3c7c8c57c7de",
+      "zip_path": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G0_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "fcc6ce80b10c09c2cbc78c468c2efca996a56f9adf02a250dbf80eefbb77ea2e",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G0_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G1_NOT_APPROVED.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "7d400303528cf712e75cc76aacb081e113cbb5b37ec67561100f65a4656dd8a3",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G1_NOT_APPROVED.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_SUMMARY_G0_G1.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "7f6d58e92920c2c9da6b4b142dda9f373ca250a6d503ec1f35ac827695d4996e",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_SUMMARY_G0_G1.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_OBSERVED_HASHES_G0_G1.sha256",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "13c4c9956e133920771e7b6f5e25e5ac904148a83f5a2d1b0c2542008c59f1d2",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_OBSERVED_HASHES_G0_G1.sha256"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_DECISION_G0R_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "76b950547d6ea1cda3557071e26e887b382928aca87c5acfc55aa75420583f9c",
+      "zip_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_DECISION_G0R_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R.sha256",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "bf6190427a676b8c7fea86438e0e069b03c89568190d71c931b4f4455b7cce20",
+      "zip_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R.sha256"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_DECISION_G0R2_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "2c8bbd091a7c4e7c54057b016251425cbe447e5a7e5d232e98a0da310390cd81",
+      "zip_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_DECISION_G0R2_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R2.sha256",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "4eed9790abd179861d7fd6187fd6cac92c0c8c382c52ffdb273e72b42a1f1e6e",
+      "zip_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R2.sha256"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0r3_rejection/EXTERNAL_REVIEW_DECISION_G0R3_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "c8dbf03cd685e3a106f1ddf43c06219424a76b50b7b85c6444603d41ac5ab63e",
+      "zip_path": "control/external_reviews/g0r3_rejection/EXTERNAL_REVIEW_DECISION_G0R3_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "control/external_reviews/g0r3_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R3.sha256",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "2d2c9020b81eb5f366826a3a09ad4931d79de9311b80441ec54c0017cfc3bbef",
+      "zip_path": "control/external_reviews/g0r3_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R3.sha256"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "NEXT_CURSOR_PROMPT.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "682cdd707a1b107d031e20291382c576ad9cfe1d672ac0792f3be4f6de7b6867",
+      "zip_path": "NEXT_CURSOR_PROMPT.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "EXTERNAL_REVIEW_APPROVAL_G0R4_TEMPLATE.md",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "a93ae6650dab8b0dea2095fa57f11f5076b327f416ebb339786e9508626443e7",
+      "zip_path": "EXTERNAL_REVIEW_APPROVAL_G0R4_TEMPLATE.md"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "tools/complete_g0r4_submission.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "0937844a1fff7e19641ff95824bd6c0596144710741a71ece5e2ffcfd5601a75",
+      "zip_path": "tools/complete_g0r4_submission.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "tests/test_g0r4_submission_integrity.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "e318320b6bca923e5632707788a0c41c439f37822b9dca10d0ff3fecf8b9bf77",
+      "zip_path": "tests/test_g0r4_submission_integrity.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "tests/test_authorization_conflict_fail_closed.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "c87ccf4a9a34a28843f34ed472eb86c3dd38df8eb65b583ee538ebb0abb5685b",
+      "zip_path": "tests/test_authorization_conflict_fail_closed.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "tests/test_g0r_remediation.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "8bdd56bc5f5a4f18c4c3377c272b92eea6b32600fa31c7f743d7cf08d777b2b4",
+      "zip_path": "tests/test_g0r_remediation.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "tests/test_g0r2_remediation.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "21f585164b973129a38577bc1ccf3737a5ae55cc43214a88c396fb94a90851d6",
+      "zip_path": "tests/test_g0r2_remediation.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "tests/test_g0r3_submission_integrity.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "c8c30f945d770605350a898487323d0f7fbaee8014551c8e31bdb5e124998e46",
+      "zip_path": "tests/test_g0r3_submission_integrity.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "aa_decision_cockpit_readonly_snapshot.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "3560b0d0a66e9b2bf90a250ca3bd224aa0c5538bd39f1037458a5444d4f86574",
+      "zip_path": "aa_decision_cockpit_readonly_snapshot.py"
+    },
+    {
+      "included_as": "COMMITTED_PAYLOAD",
+      "repository_path": "aa_doc_paths.py",
+      "required_for_review": true,
+      "sha256_of_committed_bytes": "deb2ae62f1ff037cf033f5cffa5325406e136fb17db1b84cf9542bd789fcd2a7",
+      "zip_path": "aa_doc_paths.py"
+    }
+  ],
+  "phase": "G0R4_DETACHED_ATTESTATION_AND_EXACT_BYTE_PACKAGE_BINDING_REMEDIATION",
+  "schema_version": 1,
+  "self_hash_exclusion_reason": "A manifest cannot non-recursively attest its own final byte hash within itself.",
+  "self_hash_included": false,
+  "self_path": "docs/phases/G0R4/CODEX_G0R4_COMMITTED_PAYLOAD_MANIFEST.json",
+  "zip_hash_included": false,
+  "zip_hash_location": "DETACHED_SUBMISSION_ATTESTATION_ONLY"
+}

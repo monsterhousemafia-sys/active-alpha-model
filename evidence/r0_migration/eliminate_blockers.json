@@ -1,0 +1,71 @@
+{
+  "actions": [
+    {
+      "restart": {
+        "cmd": [
+          "E:\\active_alpha_model\\.venv\\Scripts\\python.exe",
+          "E:\\active_alpha_model\\tools\\run_validation_matrix.py",
+          "--phase",
+          "matrix",
+          "--run-mode",
+          "backtest",
+          "--variant",
+          "R0_LEGACY_ENSEMBLE",
+          "--variant",
+          "R3_w075_q065_noexit",
+          "--variant",
+          "M1_MOM_BLEND_MATCHED_CONTROLS",
+          "--parallel-jobs",
+          "2",
+          "--runtime-profile",
+          "turbo"
+        ],
+        "foreground": false,
+        "log_path": "E:\\active_alpha_model\\evidence\\r0_migration\\validation_matrix_run.log",
+        "matrix_job": {
+          "batch_active": false,
+          "cmd": [
+            "E:\\active_alpha_model\\.venv\\Scripts\\python.exe",
+            "E:\\active_alpha_model\\tools\\run_validation_matrix.py",
+            "--phase",
+            "matrix",
+            "--run-mode",
+            "backtest",
+            "--variant",
+            "R0_LEGACY_ENSEMBLE",
+            "--variant",
+            "R3_w075_q065_noexit",
+            "--variant",
+            "M1_MOM_BLEND_MATCHED_CONTROLS",
+            "--parallel-jobs",
+            "2",
+            "--runtime-profile",
+            "turbo"
+          ],
+          "foreground": false,
+          "log_path": "evidence\\r0_migration\\validation_matrix_run.log",
+          "log_summary_ok": false,
+          "pid": 31608,
+          "reason": "work_stopped_early",
+          "resolved_at_utc": "2026-06-04T20:01:30+00:00",
+          "returncode": null,
+          "returns_ok": false,
+          "schema_version": 2,
+          "session": "2026-06-04T200130+0000",
+          "started_at_utc": "2026-06-04T20:01:30+00:00",
+          "status": "INCOMPLETE",
+          "updated_at_utc": "2026-06-04T20:01:30+00:00"
+        },
+        "pid": 31608
+      }
+    }
+  ],
+  "at_utc": "2026-06-04T20:01:15+00:00",
+  "batch_active_after": false,
+  "matrix_count_after": 0,
+  "r0_log": {
+    "idle_min": 0.1,
+    "run_dir": "20260604T195809Z_R0_LEGACY_ENSEMBLE",
+    "stuck": false
+  }
+}

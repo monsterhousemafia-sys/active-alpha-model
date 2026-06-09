@@ -1,0 +1,177 @@
+{
+  "overall_status": "PASS",
+  "variants": [
+    {
+      "full_sample_metrics": {
+        "annual_vol": 0.29890165388996914,
+        "cagr": 0.24525625702147913,
+        "daily_hit_rate": 0.5195918367346939,
+        "max_drawdown": -0.5436688199844164,
+        "n_days": 2450,
+        "sharpe_0rf": 0.8833124373370502,
+        "total_return": 7.435805676683101
+      },
+      "status": "EVALUABLE",
+      "subperiod_sharpe_stability": "STABLE_POSITIVE",
+      "subperiods": [
+        {
+          "cagr": 0.320750199669249,
+          "end": "2020-02-18 00:00:00",
+          "max_drawdown": -0.49123446475343835,
+          "observations": 816,
+          "segment": 1,
+          "sharpe_0rf": 1.044910381172574,
+          "start": "2017-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.39664526472065087,
+          "end": "2023-04-06 00:00:00",
+          "max_drawdown": -0.28642184579086283,
+          "observations": 817,
+          "segment": 2,
+          "sharpe_0rf": 1.319552564323213,
+          "start": "2020-02-19 00:00:00"
+        },
+        {
+          "cagr": 0.046889121906598774,
+          "end": "2026-05-25 00:00:00",
+          "max_drawdown": -0.4123665468051013,
+          "observations": 817,
+          "segment": 3,
+          "sharpe_0rf": 0.3024791616317704,
+          "start": "2023-04-07 00:00:00"
+        }
+      ],
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "full_sample_metrics": {
+        "annual_vol": 0.2559794243226388,
+        "cagr": 0.2064696932893908,
+        "daily_hit_rate": 0.5494623655913978,
+        "max_drawdown": -0.3889374033994921,
+        "n_days": 1860,
+        "sharpe_0rf": 0.8619911813303781,
+        "total_return": 2.9963985334534224
+      },
+      "status": "EVALUABLE",
+      "subperiod_sharpe_stability": "STABLE_POSITIVE",
+      "subperiods": [
+        {
+          "cagr": 0.2166534102832509,
+          "end": "2021-06-18 00:00:00",
+          "max_drawdown": -0.2643270801165164,
+          "observations": 620,
+          "segment": 1,
+          "sharpe_0rf": 0.8419298486894137,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": -0.01937236048699309,
+          "end": "2023-12-05 00:00:00",
+          "max_drawdown": -0.311979397944091,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.027144447666738142,
+          "start": "2021-06-21 00:00:00"
+        },
+        {
+          "cagr": 0.4718997882331766,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.22420037619566957,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.6259693631369259,
+          "start": "2023-12-06 00:00:00"
+        }
+      ],
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "full_sample_metrics": {
+        "annual_vol": 0.22637634376141702,
+        "cagr": 0.2216982679243582,
+        "daily_hit_rate": 0.5481441635287789,
+        "max_drawdown": -0.2799019777918448,
+        "n_days": 1859,
+        "sharpe_0rf": 0.998285209882352,
+        "total_return": 3.380581239595225
+      },
+      "status": "EVALUABLE",
+      "subperiod_sharpe_stability": "STABLE_POSITIVE",
+      "subperiods": [
+        {
+          "cagr": 0.2760718348506406,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.25532173904110866,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.133154488460541,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.03225866182494319,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.26943146049181044,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.25957362743513723,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.38439084111338806,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.23193614552751007,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.4846093574396528,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "MOM_63_TOP12_STRICT"
+    },
+    {
+      "full_sample_metrics": {
+        "annual_vol": 0.22405839355593699,
+        "cagr": 0.21756822369927264,
+        "daily_hit_rate": 0.5505376344086022,
+        "max_drawdown": -0.276656323952126,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9911989434917188,
+        "total_return": 3.275845606539125
+      },
+      "status": "EVALUABLE",
+      "subperiod_sharpe_stability": "STABLE_POSITIVE",
+      "subperiods": [
+        {
+          "cagr": 0.2697052188723803,
+          "end": "2021-06-18 00:00:00",
+          "max_drawdown": -0.276656323952126,
+          "observations": 620,
+          "segment": 1,
+          "sharpe_0rf": 1.1015850836511818,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.03211636574851062,
+          "end": "2023-12-05 00:00:00",
+          "max_drawdown": -0.2628337992807144,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.26013952817055586,
+          "start": "2021-06-21 00:00:00"
+        },
+        {
+          "cagr": 0.37736279162280617,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.24178132680201325,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.498265882586563,
+          "start": "2023-12-06 00:00:00"
+        }
+      ],
+      "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+    }
+  ]
+}

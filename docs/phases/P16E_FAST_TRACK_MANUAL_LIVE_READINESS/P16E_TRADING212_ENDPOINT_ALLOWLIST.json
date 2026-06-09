@@ -1,0 +1,6 @@
+{
+  "allowed_methods": [
+    "GET"
+  ],
+  "order_endpoints_allowed": false
+}

@@ -1,0 +1,38 @@
+{
+  "global_invariants": {
+    "auto_execute_real_money_must_be_disabled": false,
+    "auto_promote_paper_must_be_disabled": false,
+    "auto_promote_signal_must_be_disabled": false,
+    "auto_research_must_be_disabled_by_default": false,
+    "autonomous_promotion_never_allowed": false,
+    "exe_execution_by_automation_never_allowed": true,
+    "locked_champion_variant": "R3_w075_q065_noexit",
+    "real_money_execution_never_allowed": false,
+    "require_atomic_control_writes": true,
+    "require_git_available": true,
+    "require_hooks_disabled": true
+  },
+  "operational_authorization": {
+    "approval_file": "OPERATIONAL_DECISION_APPROVAL_ALL.md",
+    "authorized_at_utc": "2026-05-31T06:22:50+00:00",
+    "scope": "FULL_LOCAL_OPERATION"
+  },
+  "operational_rules": {
+    "exe_build_does_not_imply_exe_execution": true,
+    "exe_build_requires_v5_approval": true,
+    "historical_computation_requires_specific_phase_approval": true,
+    "paper_activation_requires_separate_phase": true,
+    "shadow_activation_requires_separate_phase": true
+  },
+  "policy": "OPERATIONAL_USER_AUTHORIZED",
+  "program": "MARKTANALYSE_DECISION_COCKPIT",
+  "review_rules": {
+    "approval_file_hash_required": true,
+    "codex_may_create_approval_templates": true,
+    "codex_may_create_future_approval_files": false,
+    "external_approval_required_before_each_phase": true,
+    "review_zip_hash_required": true,
+    "review_zip_required_after_each_phase": true
+  },
+  "schema_version": 1
+}

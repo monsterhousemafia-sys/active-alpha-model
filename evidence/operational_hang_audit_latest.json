@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "severity": "INFO",
+      "area": "cursor_hooks",
+      "issue": "hooks.json leer — Selbstverbesserung nur via tools/run_pipeline_autopilot.py",
+      "mitigation": "Autopilot-Loop mit --loop ausführen oder Phase manuell claimen"
+    },
+    {
+      "severity": "WARN",
+      "area": "pipeline_pending",
+      "issue": "Pending Phase P16G_READONLY_REAL_ACCOUNT_CONFIGURATION_AND_MANUAL_TICKET_GENERATION ohne Claim",
+      "mitigation": "run_pipeline_autopilot --once oder Phase ausführen; stale >168h auto-release"
+    },
+    {
+      "severity": "OK",
+      "area": "quote_refresh",
+      "issue": "single-flight lock aktiv",
+      "in_progress": false
+    }
+  ]
+}

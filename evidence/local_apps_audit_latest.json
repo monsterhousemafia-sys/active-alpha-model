@@ -1,0 +1,255 @@
+{
+  "all_ok": true,
+  "apps": [
+    {
+      "detail_de": "OK",
+      "id": "hub",
+      "issues_de": [],
+      "label_de": "Preview Hub",
+      "local_start_de": "http://127.0.0.1:17890/api/health",
+      "ok": true,
+      "runtime_detail_de": "17890",
+      "runtime_ok": true,
+      "start_cmd_de": "python tools/preview_hub.py --ensure",
+      "tier": "infra"
+    },
+    {
+      "detail_de": "OK",
+      "id": "cockpit",
+      "issues_de": [],
+      "label_de": "Alpha Model Cockpit",
+      "local_start_de": "http://127.0.0.1:17890/desktop",
+      "ok": true,
+      "runtime_detail_de": "Single-Instance + /desktop Cache OK",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/r3_cockpit.sh → /desktop",
+      "tier": "core"
+    },
+    {
+      "detail_de": "OK",
+      "id": "session",
+      "issues_de": [],
+      "label_de": "Session-Autostart",
+      "local_start_de": "tools/r3_session_autostart.sh (Login)",
+      "ok": true,
+      "runtime_detail_de": "Autostart OK",
+      "runtime_ok": true,
+      "start_cmd_de": "tools/r3_session_autostart.sh (Login)",
+      "tier": "core"
+    },
+    {
+      "detail_de": "OK",
+      "id": "agent",
+      "issues_de": [],
+      "label_de": "Entfaltungsraum (32B)",
+      "local_start_de": "bash tools/alpha_model_agent.sh",
+      "ok": true,
+      "runtime_detail_de": "Launcher + Ollama OK",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/alpha_model_agent.sh",
+      "tier": "core"
+    },
+    {
+      "detail_de": "OK",
+      "id": "markt",
+      "issues_de": [],
+      "label_de": "Marktanalyse",
+      "local_start_de": "bash run_marktanalyse_linux.sh (GUI) · bash tools/marktanalyse_bash.sh menu (Bash)",
+      "ok": true,
+      "runtime_detail_de": "marktanalyse_bash.sh — Marktanalyse als Bash-Cockpit (ohne EXE/GUI)\n\n  start               Preflight + Status + Picks + König-Status\n  status              Kurzstatus + Evidence schreiben\n  preflight  ",
+      "runtime_ok": true,
+      "start_cmd_de": "bash run_marktanalyse_linux.sh (GUI) · bash tools/marktanalyse_bash.sh menu (Bash)",
+      "tier": "core"
+    },
+    {
+      "detail_de": "OK",
+      "id": "bash_gpt4o",
+      "issues_de": [],
+      "label_de": "GPT-4o Bash",
+      "local_start_de": "bash tools/bash_gpt4o.sh menu",
+      "ok": true,
+      "runtime_detail_de": "GPT-4o bereit (ollama_keyless)\nModus: ollama_keyless | Modell: gpt-4o",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/bash_gpt4o.sh menu",
+      "tier": "core"
+    },
+    {
+      "detail_de": "Hub-Link offline: /launch (Hub starten)",
+      "id": "welt",
+      "issues_de": [
+        "Hub-Link offline: /launch (Hub starten)"
+      ],
+      "label_de": "Weltneuheit",
+      "local_start_de": "http://127.0.0.1:17890/launch",
+      "ok": true,
+      "runtime_detail_de": "Launcher OK — öffnet /launch im Cockpit",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/r3_welt.sh → /launch",
+      "tier": "link"
+    },
+    {
+      "detail_de": "OK",
+      "id": "files",
+      "issues_de": [],
+      "label_de": "Dateien",
+      "local_start_de": "bash tools/r3_shell_launch.sh files",
+      "ok": true,
+      "runtime_detail_de": "R3 Dateien — Finder-Stil",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/r3_shell_launch.sh files",
+      "tier": "shell"
+    },
+    {
+      "detail_de": "OK",
+      "id": "terminal",
+      "issues_de": [],
+      "label_de": "Terminal",
+      "local_start_de": "bash tools/r3_shell_launch.sh terminal",
+      "ok": true,
+      "runtime_detail_de": "R3 Terminal — Schnellbefehle",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/r3_shell_launch.sh terminal",
+      "tier": "shell"
+    },
+    {
+      "detail_de": "OK",
+      "id": "calculator",
+      "issues_de": [],
+      "label_de": "Rechner",
+      "local_start_de": "bash tools/r3_shell_launch.sh calculator",
+      "ok": true,
+      "runtime_detail_de": "Schnell rechnen",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/r3_shell_launch.sh calculator",
+      "tier": "shell"
+    },
+    {
+      "detail_de": "OK",
+      "id": "screenshot",
+      "issues_de": [],
+      "label_de": "Screenshot",
+      "local_start_de": "bash tools/r3_shell_launch.sh screenshot",
+      "ok": true,
+      "runtime_detail_de": "Bildschirm festhalten",
+      "runtime_ok": true,
+      "start_cmd_de": "bash tools/r3_shell_launch.sh screenshot",
+      "tier": "shell"
+    },
+    {
+      "detail_de": "OK",
+      "id": "system_panels",
+      "issues_de": [],
+      "label_de": "System",
+      "local_start_de": "gnome-control-center (settings/network/…)",
+      "ok": true,
+      "runtime_detail_de": "6/6 Panels OK",
+      "runtime_ok": true,
+      "start_cmd_de": "gnome-control-center (settings/network/…)",
+      "tier": "shell"
+    }
+  ],
+  "display_available": true,
+  "fail_count": 0,
+  "headline_de": "Lokale PC-Anwendungen — Alpha Model (konsolidiert)",
+  "hub_port": 17890,
+  "next_de": "bash tools/king_ops.sh apps-run",
+  "ok_count": 12,
+  "runtime": {
+    "all_ok": true,
+    "apps": [
+      {
+        "id": "hub",
+        "label_de": "Preview Hub",
+        "runtime_detail_de": "17890",
+        "runtime_ok": true,
+        "start_cmd_de": "python tools/preview_hub.py --ensure"
+      },
+      {
+        "id": "cockpit",
+        "label_de": "Alpha Model Cockpit",
+        "runtime_detail_de": "Single-Instance + /desktop Cache OK",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/r3_cockpit.sh → /desktop"
+      },
+      {
+        "id": "session",
+        "label_de": "Session-Autostart",
+        "runtime_detail_de": "Autostart OK",
+        "runtime_ok": true,
+        "start_cmd_de": "tools/r3_session_autostart.sh (Login)"
+      },
+      {
+        "id": "agent",
+        "label_de": "Entfaltungsraum (32B)",
+        "runtime_detail_de": "Launcher + Ollama OK",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/alpha_model_agent.sh"
+      },
+      {
+        "id": "markt",
+        "label_de": "Marktanalyse",
+        "runtime_detail_de": "marktanalyse_bash.sh — Marktanalyse als Bash-Cockpit (ohne EXE/GUI)\n\n  start               Preflight + Status + Picks + König-Status\n  status              Kurzstatus + Evidence schreiben\n  preflight  ",
+        "runtime_ok": true,
+        "start_cmd_de": "bash run_marktanalyse_linux.sh (GUI) · bash tools/marktanalyse_bash.sh menu (Bash)"
+      },
+      {
+        "id": "bash_gpt4o",
+        "label_de": "GPT-4o Bash",
+        "runtime_detail_de": "GPT-4o bereit (ollama_keyless)\nModus: ollama_keyless | Modell: gpt-4o",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/bash_gpt4o.sh menu"
+      },
+      {
+        "id": "welt",
+        "label_de": "Weltneuheit",
+        "runtime_detail_de": "Launcher OK — öffnet /launch im Cockpit",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/r3_welt.sh → /launch"
+      },
+      {
+        "id": "files",
+        "label_de": "Dateien",
+        "runtime_detail_de": "R3 Dateien — Finder-Stil",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/r3_shell_launch.sh files"
+      },
+      {
+        "id": "terminal",
+        "label_de": "Terminal",
+        "runtime_detail_de": "R3 Terminal — Schnellbefehle",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/r3_shell_launch.sh terminal"
+      },
+      {
+        "id": "calculator",
+        "label_de": "Rechner",
+        "runtime_detail_de": "Schnell rechnen",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/r3_shell_launch.sh calculator"
+      },
+      {
+        "id": "screenshot",
+        "label_de": "Screenshot",
+        "runtime_detail_de": "Bildschirm festhalten",
+        "runtime_ok": true,
+        "start_cmd_de": "bash tools/r3_shell_launch.sh screenshot"
+      },
+      {
+        "id": "system_panels",
+        "label_de": "System",
+        "runtime_detail_de": "6/6 Panels OK",
+        "runtime_ok": true,
+        "start_cmd_de": "gnome-control-center (settings/network/…)"
+      }
+    ],
+    "fail_count": 0,
+    "ok_count": 12,
+    "schema_version": 1,
+    "total": 12,
+    "updated_at_utc": "2026-06-07T21:51:21+00:00"
+  },
+  "runtime_ok_count": 12,
+  "schema_version": 2,
+  "total": 12,
+  "updated_at_utc": "2026-06-07T21:51:21+00:00"
+}

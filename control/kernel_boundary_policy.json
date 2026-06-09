@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "policy_id": "KERNEL_BOUNDARY_SECURE_PATH",
+  "status": "AUTHORITATIVE",
+  "purpose_de": "Abgesicherter Ersatz für Kernel-Neuschreibung — nur Lesen, Whitelist-Tuning, Runtime-Schicht. Kein Kernel-Image-Tausch.",
+  "forbidden_always_de": [
+    "Linux-Kernel-Image ersetzen oder kompilieren",
+    "Unsigned Kernel-Module laden",
+    "Bootloader (GRUB/systemd-boot) ohne dokumentierte Operator-Freigabe ändern",
+    "initramfs oder /boot ohne Review anfassen",
+    "Treiber (GPU/NVMe/Netz) neu schreiben statt Mainline-Kernel zu nutzen"
+  ],
+  "allowed_layers": [
+    {
+      "id": "L0_AUDIT",
+      "level": "A",
+      "label_de": "Kernel-Grenze lesen (uname, Module, sysctl, NVMe-Scheduler)",
+      "autonomous": true
+    },
+    {
+      "id": "L1_RUNTIME",
+      "level": "B",
+      "label_de": "Active-Alpha Runtime (Slices, Limits, API, Watch) — kein Kernel",
+      "autonomous": true,
+      "cmd": "runtime-install"
+    },
+    {
+      "id": "L2_USERSPACE_TUNING",
+      "level": "C",
+      "label_de": "Whitelisted userspace/ cgroup / systemd Limits (bereits in Units)",
+      "autonomous": false,
+      "requires_ack": "evidence/kernel_boundary_apply_ack.json"
+    },
+    {
+      "id": "L3_SYSCTL_READWRITE",
+      "level": "D",
+      "label_de": "sysctl nur aus Whitelist — typisch root, nie automatisch im Agent",
+      "autonomous": false,
+      "requires_ack": "evidence/kernel_boundary_sysctl_ack.json",
+      "operator_only": true
+    }
+  ],
+  "sysctl_whitelist": {
+    "fs.file-max": {
+      "min": 65536,
+      "max": 2097152,
+      "reason_de": "Mehr FDs für Hub/Backtest ohne Kernel-Build"
+    },
+    "vm.swappiness": {
+      "min": 0,
+      "max": 60,
+      "reason_de": "NVMe/H1: weniger Swap-Druck bei großen Artefakten"
+    },
+    "net.core.somaxconn": {
+      "min": 128,
+      "max": 4096,
+      "reason_de": "Hub-Verbindungswarteschlange"
+    }
+  },
+  "secure_path_de": "Kernel bleibt Distribution-Mainline. Verbesserung über Runtime-Schicht + begrenzte Tunables + Audit-Evidence — fail-closed bei Verbotenem."
+}

@@ -1,0 +1,10 @@
+{
+  "active_champion": "R0_LEGACY_ENSEMBLE",
+  "approval_file": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+  "champion_change_executed": true,
+  "generated_at_utc": "2026-06-05T15:39:08+00:00",
+  "prior_champion": "R3_w075_q065_noexit",
+  "run_dir": "validation_runs\\20260604T210245Z_R0_LEGACY_ENSEMBLE",
+  "schema_version": 1,
+  "waiver_ref": "control/r0_migration/migration_time_gate_waiver.json"
+}

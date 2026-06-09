@@ -1,0 +1,14 @@
+{
+  "authority_de": "Benutzer → Agent → Mandat",
+  "authorized_actions": [
+    "h1-force",
+    "lean-turbo"
+  ],
+  "channel": "conversational",
+  "expires_at_utc": "2026-06-07T18:42:24+00:00",
+  "issued_at_utc": "2026-06-07T16:42:24+00:00",
+  "ok": true,
+  "schema_version": 1,
+  "utterance_de": "Gib dem König den H1 seal",
+  "utterance_hash": "a52a6590e170d02e"
+}

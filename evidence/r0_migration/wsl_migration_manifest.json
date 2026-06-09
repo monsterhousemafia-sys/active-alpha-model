@@ -1,0 +1,72 @@
+{
+  "generated_at_utc": "2026-06-05T19:34:47+00:00",
+  "windows_repo": "E:\\active_alpha_model",
+  "wsl_target": "~/active_alpha_model",
+  "wsl_win_mount": "/mnt/e/active_alpha_model",
+  "wsl": {
+    "installed": true,
+    "distros": [
+      "* Ubuntu    Stopped         2"
+    ],
+    "status_stdout": "Standarddistribution: Ubuntu\r\nStandardversion: 2",
+    "ubuntu_ready": true
+  },
+  "m1_windows": {
+    "backtest_pids": [],
+    "cpu_delta_2s": 0.0,
+    "productive": false,
+    "matrix_procs": 0,
+    "cpu_cores": 32
+  },
+  "m1_sealed": true,
+  "fast_seal": true,
+  "canonical_m1_run": "20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS",
+  "variant_runs": {
+    "R0_LEGACY_ENSEMBLE": {
+      "dir": "20260604T210245Z_R0_LEGACY_ENSEMBLE",
+      "strategy_daily_returns.csv": true,
+      "strategy_daily_returns.csv_mb": 0.06,
+      "prediction_cache.pkl": true,
+      "prediction_cache.pkl_mb": 108.19,
+      "prediction_cache_meta.json": true,
+      "prediction_cache_meta.json_mb": 0.01,
+      "integrity_report.json": true,
+      "integrity_report.json_mb": 0.0,
+      "csv_rows": 1860
+    },
+    "R3_w075_q065_noexit": {
+      "dir": "20260604T203857Z_R3_w075_q065_noexit",
+      "strategy_daily_returns.csv": true,
+      "strategy_daily_returns.csv_mb": 0.06,
+      "prediction_cache.pkl": true,
+      "prediction_cache.pkl_mb": 110.25,
+      "prediction_cache_meta.json": true,
+      "prediction_cache_meta.json_mb": 0.01,
+      "integrity_report.json": true,
+      "integrity_report.json_mb": 0.0,
+      "csv_rows": 1860
+    },
+    "M1_MOM_BLEND_MATCHED_CONTROLS": {
+      "dir": "20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS",
+      "strategy_daily_returns.csv": true,
+      "strategy_daily_returns.csv_mb": 0.06,
+      "prediction_cache.pkl": true,
+      "prediction_cache.pkl_mb": 108.19,
+      "prediction_cache_meta.json": true,
+      "prediction_cache_meta.json_mb": 0.01,
+      "integrity_report.json": true,
+      "integrity_report.json_mb": 0.0,
+      "csv_rows": 1860
+    }
+  },
+  "seed_run_dirs": [
+    "20260604T210245Z_R0_LEGACY_ENSEMBLE",
+    "20260604T203857Z_R3_w075_q065_noexit",
+    "20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS"
+  ],
+  "shared_cache_mb": 897.8,
+  "shared_cache_path": "E:\\active_alpha_model\\robustness_results_trading212\\_shared_cache",
+  "missing_required_files": [],
+  "reboot_safe": true,
+  "reboot_block_reason": null
+}

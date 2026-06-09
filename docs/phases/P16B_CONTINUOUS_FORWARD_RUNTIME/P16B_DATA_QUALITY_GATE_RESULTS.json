@@ -1,0 +1,27 @@
+{
+  "data_quality_gate": "PASS_FOR_OBSERVATION",
+  "fx_quality_gate": "PASS",
+  "generated_at_utc": "2026-06-01T14:51:49+00:00",
+  "prices_eur": {
+    "CIEN": 484.247936,
+    "INTC": 95.140504,
+    "MU": 892.607316,
+    "OXY": 51.504937,
+    "SNDK": 1526.466989,
+    "STX": 771.826258,
+    "VUSD": 123.71694,
+    "WDC": 472.137968
+  },
+  "provider": "READONLY_YFINANCE",
+  "quote_success": {
+    "CIEN": true,
+    "INTC": true,
+    "MU": true,
+    "OXY": true,
+    "SNDK": true,
+    "STX": true,
+    "VUSD": true,
+    "WDC": true
+  },
+  "valid_instrument_observations": 8
+}

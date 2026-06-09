@@ -1,0 +1,43 @@
+{
+  "baseline_batch_count": 1,
+  "batch_count": 1,
+  "inherited_from_p16c": true,
+  "last_batch_fingerprint": "0ec0b948b66088ad",
+  "last_valid_fx_rate": 0.8605999859449628,
+  "last_valid_observation_hash": {
+    "AMD": "135cf374d3b7a1e8a37e35482366e799ff1fe4de8063838e0de7faf5472bfaee",
+    "CAT": "4e6073a9110ce65ff79d8bc9bf57a0f917d160bac05e5ff24240e2a08f40376d",
+    "CIEN": "ba024e1783e84537b5f4b1a26f52988c69914236dc4e0979dfa194642e37ed6f",
+    "GOOG": "82b21c2f4f8779a3183ec8e1d51185a1cf372f67c359a38a9ad73a83b6f23331",
+    "GOOGL": "cfd7597936610e11ad0d265431cd9af2528c910b9d3fedc35c2ff4d29d5f7e20",
+    "INTC": "ff3271a62c193a20fc2fab16e7439c88954d941f88ab8522d097988906c1527b",
+    "MU": "d5b137c10fb0e3998d542db9be91ba9f5a7868e4899e7481d6c2432261c3286b",
+    "ON": "08f7b3572113d097fbad5bca3f9db70bf32532017bccc335fdc68b96e610e5ee",
+    "OXY": "ea05c869189addc53e6b2450c02bec5b7e011b77b96e74ea835b90b4e24b87cc",
+    "SNDK": "91daf350b9612feeef600a9f20ac61fcafdbbd503c1ff9e6d28433fcf9e083d7",
+    "STX": "f33339036025868b6decc46099de12956327c09cc96e2e8f1c2133fab7f191df",
+    "TXN": "944edf2289f2fab8ba9df4544adb8bfe7d67224d6ca2afb9967d6880caad48ba",
+    "VRT": "e07e908dfeaad106297cb8e19955d205538ade935abc2f936ee65ca9372714b9",
+    "VUSD": "17bcafb501906628a334e44a74d140d5d6ca23a2c69dc488f9cd9cd7fb508e75",
+    "WDC": "4135058ec26ed5a7c94412137a73f15b9fc85295c7e2d5f2f6e2ce54a906e669"
+  },
+  "last_valid_price": {
+    "AMD": 466.3800048828125,
+    "CAT": 904.280029296875,
+    "CIEN": 488.2099914550781,
+    "GOOG": 365.760009765625,
+    "GOOGL": 368.5299987792969,
+    "INTC": 99.16999816894531,
+    "MU": 864.010009765625,
+    "ON": 117.26000213623047,
+    "OXY": 56.93000030517578,
+    "SNDK": 1559.3199462890625,
+    "STX": 847.469970703125,
+    "TXN": 285.05999755859375,
+    "VRT": 300.510009765625,
+    "VUSD": 142.12249755859375,
+    "WDC": 511.7200012207031
+  },
+  "p16d_hardening_complete": true,
+  "post_baseline_batch_count": 1027
+}

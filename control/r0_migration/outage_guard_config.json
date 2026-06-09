@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "stall_detection": {
+    "enabled": true,
+    "max_idle_minutes_without_returns": 45,
+    "max_log_idle_minutes": 45,
+    "min_lock_holder_cpu_seconds": 30,
+    "min_matrix_worker_processes_for_activity": 1
+  },
+  "auto_repair": {
+    "remove_stale_lock": true,
+    "clear_lock_file_on_stall": true,
+    "reconcile_matrix_job": true,
+    "reconcile_phase_status": true,
+    "sync_completion_summary": true
+  },
+  "power_hint": {
+    "prevent_sleep_script": "run_r0_migration_prevent_sleep_on.bat",
+    "restore_sleep_script": "run_r0_migration_prevent_sleep_off.bat"
+  },
+  "strategic": {
+    "finish_script": "run_r0_migration_m1_finish.bat",
+    "matrix_script": "run_r0_migration_m1.bat",
+    "foreground_matrix_script": "run_r0_migration_m1_matrix.bat",
+    "scheduled_setup": "setup_r0_migration_m1_scheduled_tasks.bat"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "MOM_63_TOP12_STRICT": {
+    "aggregate_tx_cost_sum": 0.187131227574303,
+    "execution_costs_series": "evidence/autonomous_research/MOM_63_TOP12_STRICT/execution_costs.csv",
+    "gross_daily_returns_available": false,
+    "limitation": "Gross pre-cost daily return series not persisted in naive baseline export; net returns embed costs at rebalance.",
+    "net_return_series": "evidence/autonomous_research/MOM_63_TOP12_STRICT/daily_returns.csv",
+    "rebalance_cost_events": 372,
+    "return_cost_deduction_formula_verified": false,
+    "status": "PARTIAL_WITH_EXPLICIT_MISSING_GROSS_RETURN_INPUT",
+    "strategy_id": "MOM_63_TOP12_STRICT",
+    "trade_to_rebalance_cost_reconciled": true
+  },
+  "MOM_63_TOP15_RECONSTRUCTED": {
+    "aggregate_tx_cost_sum": 0.16901542566856537,
+    "execution_costs_series": "evidence/autonomous_research/MOM_63_TOP15_RECONSTRUCTED/execution_costs.csv",
+    "gross_daily_returns_available": false,
+    "limitation": "Gross pre-cost daily return series not persisted in naive baseline export; net returns embed costs at rebalance.",
+    "net_return_series": "evidence/autonomous_research/MOM_63_TOP15_RECONSTRUCTED/daily_returns.csv",
+    "rebalance_cost_events": 372,
+    "return_cost_deduction_formula_verified": false,
+    "status": "PARTIAL_WITH_EXPLICIT_MISSING_GROSS_RETURN_INPUT",
+    "strategy_id": "MOM_63_TOP15_RECONSTRUCTED",
+    "trade_to_rebalance_cost_reconciled": true
+  }
+}

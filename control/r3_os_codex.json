@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "product_de": "R3 — Research Operating System",
+  "mission_de": "R3-OS in der Pilot-Zentrale — Spenden und Mitwirkende finanzieren den Ausbau.",
+  "workspace_label_de": "Arbeitsbaum",
+  "data_label_de": "Sitzungsdaten",
+  "trail_label_de": "Entwicklungsspur",
+  "next_label_de": "Als Nächstes",
+  "recent_label_de": "Zuletzt sichtbar geändert",
+  "agent_note_de": "R3-Kern = Ollama + Hub + Evidence. Cursor = Bau-Werkzeug (IDE), solange wir hier entwickeln — nicht der Kernel.",
+  "default_next_de": [
+    "Desktop Fusion Schritt A — Control Center, Spotlight, Power-Menü (Apple × Microsoft)",
+    "Eigene Kern-Apps statt GNOME-Launcher — Dateien, Terminal, Einstellungen",
+    "Bau-Werkstatt ohne Cursor — /bau im Cockpit, /bau apply ausführen",
+    "Schritt B erst nach A — Login-Screen, native Apps, eigenes Fenster-Management"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "zip": "codex_v4r3_final_build_gate_review.zip",
+  "zip_sha256": "ea345927f370bd8cf0807b77addd7a2413025af8cf89ebb32e3b3b828b070999",
+  "expected_zip_sha256": "ea345927f370bd8cf0807b77addd7a2413025af8cf89ebb32e3b3b828b070999",
+  "checkpoint_commit": "50d6cfbced22032012db499c0756427b121597d4",
+  "paths_compared": [
+    "aa_decision_cockpit_viewmodel.py",
+    "aa_decision_cockpit_gui.py",
+    "aa_decision_cockpit_export.py",
+    "aa_dashboard_qt_window.py",
+    "aa_vision_controller.py",
+    "aa_vision_phase_catalog.py",
+    "control/vision_automation/automation_state.json",
+    "control/vision_automation/phase_catalog.json",
+    "tests/test_decision_cockpit_viewmodel.py",
+    "tests/test_decision_cockpit_gui.py",
+    ".cursor/hooks.json"
+  ],
+  "ok": true,
+  "mismatches": []
+}

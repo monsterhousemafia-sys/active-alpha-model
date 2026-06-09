@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "title_de": "Erhaltungsprogramm — König + Bash-Welt + Community",
+  "one_liner_de": "Wartung fail-closed, Spread-Evidence konsolidieren, Bash-Schichten weltweit sichtbar",
+  "doctrine_de": "Orchestrator = König auf diesem Host. Bash weltweit ist normal, aber ohne König-Orchestrierung nutzlos isoliert.",
+  "schedule_local": ["*-*-* 07:30:00", "*-*-* 19:30:00"],
+  "steps_de": [
+    "bash tools/king_ops.sh verify",
+    "bash tools/king_ops.sh maintain",
+    "community-spread --scan-only",
+    "glasfaser --scan-only",
+    "series-ready (scan)",
+    "bash_weltweit_consolidation"
+  ],
+  "operator_command_de": "bash tools/king_ops.sh erhaltung --start",
+  "evidence_refs": [
+    "evidence/erhaltungsprogramm_latest.json",
+    "evidence/bash_weltweit_consolidation_latest.json"
+  ],
+  "updated_at_utc": "2026-06-08T13:15:00+00:00"
+}

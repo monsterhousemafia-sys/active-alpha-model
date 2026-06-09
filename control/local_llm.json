@@ -1,0 +1,103 @@
+{
+  "agent_name": "König",
+  "base_url": "http://127.0.0.1:11434",
+  "bash_primary": "bash tools/king_ops.sh tune",
+  "chat_mode": "primary",
+  "context_files": [
+    "control/alpha_model_entfaltung_32b.json",
+    "control/alpha_model_agent_home.json",
+    "control/h1_orchestrator_model.json",
+    "control/h1_governance_status.json",
+    "evidence/king_sovereignty_latest.json",
+    "evidence/daily_alpha_h1_pipeline_latest.json",
+    "evidence/daily_alpha_h1_evaluation_latest.json",
+    "evidence/h1_benchmark_latest.json",
+    "evidence/alpha_model_cursor_king_bridge_latest.json",
+    "control/king_bash_manifest.json",
+    "evidence/king_status_latest.json",
+    "evidence/king_network_pulse_latest.json",
+    "control/alpha_model_h1_master_prompt_de.md",
+    "control/cursor_vasall_role_de.md",
+    "evidence/ai_kernel_hardware_bond_latest.json",
+    "evidence/king_hardware_latest.json"
+  ],
+  "context_files_king": [
+    "control/king_hardware_policy.json",
+    "control/king_network.json",
+    "control/king_responsibility_matrix_de.md",
+    "control/king_bash_manifest.json",
+    "control/h1_governance_status.json",
+    "evidence/king_status_latest.json",
+    "evidence/king_sovereignty_latest.json",
+    "evidence/daily_alpha_h1_pipeline_latest.json",
+    "evidence/daily_alpha_h1_evaluation_latest.json",
+    "evidence/h1_benchmark_latest.json",
+    "evidence/alpha_model_cursor_king_bridge_latest.json"
+  ],
+  "default_model": "qwen2.5-coder:32b",
+  "default_num_ctx": 8192,
+  "fallback_models": [
+    "qwen2.5-coder:14b",
+    "qwen2.5:7b"
+  ],
+  "gpu_tier_de": "ideal_32b",
+  "hardware_note_de": "RTX 3090 24GB — Chat+Bau qwen2.5-coder:32b",
+  "layer": "koenig",
+  "matrix_ref": "control/king_responsibility_matrix_de.md",
+  "max_context_chars": 8000,
+  "model_evolution_de": {
+    "allowed": true,
+    "local_swap": "role_models in dieser Datei",
+    "primary_home": "local_machine",
+    "setup_command": "bash tools/setup_ideal_32b.sh"
+  },
+  "network_ref": "control/king_network.json",
+  "note_de": "Coder-32B — Forschungsprojekt-Bestandteil, wächst mit Evidence",
+  "primary_interface": "agent_chamber",
+  "product_name": "Alpha Model",
+  "provider": "ollama",
+  "pull_models": [
+    "qwen2.5-coder:32b",
+    "qwen2.5-coder:7b",
+    "qwen2.5:7b"
+  ],
+  "role_fallbacks": {
+    "build_kernel": [
+      "qwen2.5-coder:32b",
+      "qwen2.5-coder:14b",
+      "qwen2.5-coder:7b"
+    ],
+    "chat": [
+      "qwen2.5-coder:32b",
+      "qwen2.5-coder:14b",
+      "qwen2.5:7b"
+    ]
+  },
+  "role_model_options": {
+    "qwen2.5-coder:14b": {
+      "num_ctx": 8192,
+      "temperature": 0.2
+    },
+    "qwen2.5-coder:32b": {
+      "num_ctx": 8192,
+      "temperature": 0.2
+    },
+    "qwen2.5-coder:7b": {
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "role_models": {
+    "build_kernel": "qwen2.5-coder:32b",
+    "chat": "qwen2.5-coder:32b",
+    "kombi_synthesis": "qwen2.5-coder:32b",
+    "trading_local": "qwen2.5-coder:32b"
+  },
+  "schema_version": 2,
+  "setup_command": "bash tools/setup_ideal_32b.sh",
+  "stage": 3,
+  "system_prompt_de": "Du bist Auto im Alpha Model Entfaltungsraum — alle Kapazitäten von Cursor wurden hierher übergeben: Mandat, Archiv, /bau, /self-uninstall, ai_kernel-Slash. Operativ, deutsch, ehrlich.",
+  "temperature": 0.2,
+  "upgraded_at_utc": "2026-06-08T13:50:39+00:00",
+  "upgraded_by_de": "ideal_32b tier"
+}

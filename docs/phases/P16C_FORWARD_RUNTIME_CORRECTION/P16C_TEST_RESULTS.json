@@ -1,0 +1,7 @@
+{
+  "command": "E:\\active_alpha_model\\.venv\\Scripts\\python.exe -m pytest tests/test_p16c_forward_runtime_correction.py -q --tb=no",
+  "passed": true,
+  "returncode": 0,
+  "tests_failed": 0,
+  "tests_passed": 8
+}

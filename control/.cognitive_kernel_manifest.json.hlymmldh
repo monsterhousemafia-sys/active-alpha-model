@@ -1,0 +1,22 @@
+{
+  "components": [
+    "aa_linux_runtime",
+    "aa_scheduler",
+    "ebpf_observer",
+    "runtime_api",
+    "agent_mandate",
+    "kernel_boundary_policy",
+    "operator_sovereignty",
+    "alpha_model_interface_kernel"
+  ],
+  "installed_at_utc": "2026-06-07T17:43:26+00:00",
+  "kernel_generation": 2,
+  "linux_mainline_de": "Unverändert — Nachfolge nur auf Control-Plane-Ebene",
+  "name_de": "Cognitive Kernel v2",
+  "schema_version": 2,
+  "successor_de": "Ersetzt ad-hoc Hub/H1-Governance als einheitliche Steuerungsschicht",
+  "systemd_units": [
+    "active-alpha-cognitive-scheduler.timer",
+    "active-alpha-cognitive-observe.timer"
+  ]
+}

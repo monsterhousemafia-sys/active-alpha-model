@@ -1,0 +1,7 @@
+M1 returns: 0/3
+  [..] R0_LEGACY_ENSEMBLE  run=20260604T153044Z_R0_LEGACY_ENSEMBLE  path_turbo_idle_min=0.1
+  [ ] R3_w075_q065_noexit  not started
+  [ ] M1_MOM_BLEND_MATCHED_CONTROLS  not started
+batch_active: False
+lock: 0 validation_20260604T153044Z 2026-06-04T19:57:48+00:00
+next: progress_guard active — do not run m1_matrix.bat

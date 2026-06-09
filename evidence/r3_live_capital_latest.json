@@ -1,0 +1,36 @@
+{
+  "broker": {
+    "cash_breakdown": {
+      "available_to_trade_eur": 678.52,
+      "currency": "EUR",
+      "in_pies_eur": 0.0,
+      "invested_current_value_eur": 0.0,
+      "planning_cash_eur": 678.52,
+      "reserved_for_orders_eur": 0.0,
+      "source": "account_summary.cash.availableToTrade",
+      "total_account_value_eur": 678.52
+    },
+    "cash_eur": 678.52,
+    "credentials_configured": true,
+    "last_successful_sync_utc": "2026-06-08T16:05:02+00:00",
+    "positions": [],
+    "positions_count": 0,
+    "r3_investable_eur": 644.59,
+    "r3_planning_cash_eur": 678.52,
+    "source": "t212_live_sync",
+    "status": "LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE"
+  },
+  "budget_source": "t212_live_sync",
+  "cash_eur": 678.52,
+  "investable_eur": 644.59,
+  "last_sync_utc": "2026-06-08T16:05:02+00:00",
+  "message_de": "✓ Live-Kontostand 679 € · 645 € investierbar · 0 Positionen",
+  "ok": true,
+  "planning_cash_eur": 678.52,
+  "positions": [],
+  "positions_count": 0,
+  "schema_version": 1,
+  "trusted": true,
+  "updated_at_utc": "2026-06-08T16:16:25+00:00",
+  "worthwhile_ref": "evidence/r3_worthwhile_positions_latest.json"
+}

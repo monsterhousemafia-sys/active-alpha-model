@@ -1,0 +1,44 @@
+{
+  "auto_route": true,
+  "commands_de": "Freitext · /r3 · /geheimnis · /beitrag · /kombi · /bau",
+  "headline_de": "Ein Werkzeug — Trading-ML, lokale KI, R3 Desktop",
+  "intent_hint_de": "Freitext → Trading/Status/Bau/Kombi automatisch",
+  "internet_ok": true,
+  "modules": [
+    {
+      "detail_de": "DAILY_ALPHA_H1 · None",
+      "id": "ml",
+      "ok": false
+    },
+    {
+      "detail_de": "qwen2.5-coder:32b",
+      "id": "ollama",
+      "ok": true
+    },
+    {
+      "detail_de": "fast=? deep=?",
+      "id": "cloud",
+      "ok": true
+    },
+    {
+      "detail_de": "Lauf vorhanden",
+      "id": "build",
+      "ok": true
+    },
+    {
+      "detail_de": "0 in Queue",
+      "id": "pilot",
+      "ok": true
+    },
+    {
+      "detail_de": "36 Nachrichten",
+      "id": "storage",
+      "ok": true
+    }
+  ],
+  "name_de": "R3 Power",
+  "power_pct": 83,
+  "schema_version": 1,
+  "tagline_de": "R3 KI lokal = Gespräch · Cockpit = System · Cursor IDE = optional",
+  "updated_at_utc": "2026-06-09T21:16:13+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "CANONICAL_EXE_BUILD_METHOD": "tools/build_v5r_standalone_exe.py + build/decision_cockpit/Marktanalyse.spec",
+  "CANONICAL_EXE_OUTPUT_PATH": "dist/Marktanalyse.exe",
+  "CANONICAL_GUI_ENTRYPOINT": "tools/decision_cockpit_readonly_launcher.py",
+  "GUI_FRAMEWORK": "PySide6",
+  "ISOLATION_MODE": "GIT_BRANCH",
+  "PROJECT_ROOT": "E:\\active_alpha_model",
+  "generated_at_utc": "2026-06-01T15:50:42+00:00"
+}

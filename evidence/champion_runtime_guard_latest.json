@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "champion_ok": true,
+  "signals_ok": true,
+  "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+  "code_champion": "DAILY_ALPHA_H1",
+  "signal_profile": "daily_alpha_h1",
+  "auto_champion_update_enabled": false,
+  "signal_date": "2026-06-09",
+  "signal_current": true,
+  "portfolio_csv_present": true,
+  "policy_present": true,
+  "blockers": [],
+  "warnings": [],
+  "status_de": "Governance OK — R0_LEGACY_ENSEMBLE | Signal DAILY_ALPHA_H1 | Signale aktuell (2026-06-09)",
+  "hard_block": false
+}

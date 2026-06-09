@@ -1,0 +1,21 @@
+{
+  "bytecode_entries": [],
+  "embedded_secrets_detected": false,
+  "expected_zip_sha256": "1fd104cfd26b0977f1993f89bfef30a7c92b4666e3576314f281e8362a2adb5d",
+  "manifest_coverage": "COMPLETE",
+  "manifest_entries_verified": "17/17",
+  "manifest_mismatches": [],
+  "manifest_present": true,
+  "p14_preserved": true,
+  "previous_pass_phases_reset": false,
+  "sidecar_match": true,
+  "sidecar_present": true,
+  "unsafe_zip_paths": [],
+  "verification_status": "VERIFIED",
+  "zip_entry_count": 17,
+  "zip_path": "E:\\active_alpha_model\\outgoing_cursor_observation\\p14_paper_forward\\cursor_p14_paper_forward_package.zip",
+  "zip_present": true,
+  "zip_readable": true,
+  "zip_sha256": "1fd104cfd26b0977f1993f89bfef30a7c92b4666e3576314f281e8362a2adb5d",
+  "zip_sha256_match": true
+}

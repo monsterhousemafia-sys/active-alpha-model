@@ -1,0 +1,66 @@
+{
+  "schema_version": 3,
+  "status": "AUTHORITATIVE",
+  "matrix_ref": "control/king_responsibility_matrix_de.md",
+  "network_ref": "control/king_network.json",
+  "pulse_evidence": "evidence/king_network_pulse_latest.json",
+  "headline_de": "Schicht 1 — Bash führt aus, Python beweist, König entscheidet, Cursor baut",
+  "layer": "bash",
+  "primary": "bash tools/king_ops.sh tune",
+  "safety_de": {
+    "dry_run": "AA_EXECUTION_DRY_RUN=1 via king_safe.sh",
+    "no_orders": "AA_NO_LIVE_ORDER_SUBMISSION=1",
+    "single_benchmark": "flock + PID-Check — kein Zweitstart",
+    "no_auto_kill": "Hung-Benchmark nur warnen, nicht auto-killen",
+    "no_destructive_rm": "kein rm -rf auf worker_FULL/Daten ohne Operator"
+  },
+  "layers_de": {
+    "bash": "Ausführen — king_ops, flock, Evidence king_*",
+    "python": "Beweisen — h1-watch, evaluate, pass_full_seal",
+    "koenig": "Entscheiden — Evidence lesen, nächsten king_ops wählen, erklären",
+    "cursor": "Bauen — Diff nur auf Bridge request_de"
+  },
+  "reinforcement_loop_de": [
+    "king_ops tune → verify/clean/status/watch-bg → network pulse",
+    "king_ops status → next_action + next_layer → king_network_pulse_latest.json",
+    "king_ops h1-seal → ai_kernel h1-watch → evaluation → pulse phase=decide",
+    "König liest pulse (beat, phase, handoff_to) → Operator-Briefing",
+    "König /cursor anfrage → pulse phase=build → Cursor → king_ops verify"
+  ],
+  "commands": {
+    "tune": "bash tools/king_ops.sh tune",
+    "verify": "bash tools/king_ops.sh verify",
+    "clean": "bash tools/king_ops.sh clean",
+    "status": "bash tools/king_ops.sh status",
+    "h1_seal": "bash tools/king_ops.sh h1-seal",
+    "watch": "bash tools/king_ops.sh watch-bg",
+    "distribute": "bash tools/king_ops.sh distribute",
+    "agent": "bash tools/king_ops.sh agent",
+    "marktanalyse": "bash tools/marktanalyse_bash.sh start"
+  },
+  "rules_de": [
+    "Schicht 1: king_ops status vor jeder Entscheidung",
+    "Schicht 1: king_ops h1-seal — ein Job, flock",
+    "Schicht 2: Seal nur bei pass_full_seal in Evaluation",
+    "Schicht 3: König wählt king_ops — keine Shell-Prosa",
+    "Schicht 4: Cursor nur Bridge request_de",
+    "Matrix: control/king_responsibility_matrix_de.md"
+  ],
+  "evidence_outputs": [
+    "evidence/king_verify_latest.json",
+    "evidence/king_clean_latest.json",
+    "evidence/king_status_latest.json",
+    "evidence/king_tune_latest.json",
+    "evidence/king_benchmark_hung_latest.json",
+    "evidence/king_h1_watch.log"
+  ],
+  "upstream_reads": [
+    "control/h1_governance_status.json",
+    "evidence/daily_alpha_h1_evaluation_latest.json"
+  ],
+  "downstream_consumers_de": [
+    "König 32B — liest king_status_latest.json",
+    "Python h1-watch — schreibt evaluation_latest.json",
+    "Cursor — liest status + bridge, schreibt Code"
+  ]
+}

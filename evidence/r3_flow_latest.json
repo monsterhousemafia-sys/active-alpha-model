@@ -1,0 +1,66 @@
+{
+  "channels": [
+    {
+      "detail_de": "GPU ON · 53 GB frei · NVMe",
+      "id": "hardware",
+      "label_de": "Hardware",
+      "ok": true,
+      "state": "ok",
+      "warn": false
+    },
+    {
+      "detail_de": "Takt 9 · build · cursor → bash",
+      "id": "orchestrator",
+      "label_de": "Takt",
+      "ok": true,
+      "state": "ok",
+      "warn": false
+    },
+    {
+      "detail_de": "HTTP :17890",
+      "id": "hub",
+      "label_de": "Hub",
+      "ok": true,
+      "state": "ok",
+      "warn": false
+    },
+    {
+      "detail_de": "Qt-Cockpit aktiv",
+      "id": "r3_cockpit",
+      "label_de": "R3 Cockpit",
+      "ok": true,
+      "state": "ok",
+      "warn": false
+    },
+    {
+      "detail_de": "Internet · 2026-06-09",
+      "id": "kurse",
+      "label_de": "Kurse",
+      "ok": true,
+      "state": "ok",
+      "warn": false
+    },
+    {
+      "detail_de": "Hintergrund · 2026-06-09 · H1 COMPLETE",
+      "id": "modell",
+      "label_de": "Modell",
+      "ok": true,
+      "state": "ok",
+      "warn": false
+    }
+  ],
+  "channels_ok": 6,
+  "channels_total": 6,
+  "fluidity_pct": 100,
+  "hardware_ref": "evidence/king_hardware_latest.json",
+  "headline_de": "Hard/Soft-Orchestrator — alles fließt visuell in R3",
+  "merge_de": "R3",
+  "message_de": "Stabil · 100% flüssig · 6/6 Kanäle",
+  "next_de": "bash tools/king_ops.sh r3-flow",
+  "policy_ref": "control/r3_flow_orchestrator_policy.json",
+  "pulse_ref": "evidence/king_network_pulse_latest.json",
+  "schema_version": 1,
+  "stable": true,
+  "stable_min_pct": 75,
+  "updated_at_utc": "2026-06-09T20:28:09+00:00"
+}

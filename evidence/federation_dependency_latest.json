@@ -1,0 +1,14 @@
+{
+  "adoption_done": false,
+  "adoption_pct_honest": 25,
+  "compute_total": 1,
+  "dependency_de": "Freundlich nur Rechenleistung — jeder freiwillige PC-Worker auf eigenem Host macht das Netz robuster (ehrlich: noch kein externer Host).",
+  "headline_de": "Nur lokaler Compute — Abhängigkeit von zu wenigen (gleicher PC)",
+  "local_only_compute": 1,
+  "next_action_de": "Welt-ZIP + Link an Menschen mit eigenem PC — nicht nur König-Host",
+  "ok": false,
+  "remote_compute": 0,
+  "risk_level": "high",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-09T21:23:11+00:00"
+}

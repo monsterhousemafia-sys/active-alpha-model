@@ -1,0 +1,10 @@
+{
+  "block_orders_when_untrusted": true,
+  "block_plan_scaling_when_untrusted": true,
+  "fail_closed": true,
+  "headline_de": "T212 Trust Gate — keine Orders/Plan-Skalierung ohne frischen Live-Sync",
+  "max_stale_display_s": 1800,
+  "max_stale_sync_s": 900,
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T16:00:00+00:00"
+}

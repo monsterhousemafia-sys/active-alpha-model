@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-01T11:25:20+00:00",
+  "expected_turnover_artifacts": [
+    "evidence\\g1_independent_next_level/challenger/MOM_63_TOP12/turnover/rebalance_turnover.csv"
+  ],
+  "expected_trade_artifacts": [
+    "evidence\\g1_independent_next_level/challenger/MOM_63_TOP12/trades/rebalance_trades.csv"
+  ],
+  "expected_cost_artifacts": [
+    "evidence\\g1_independent_next_level/challenger/MOM_63_TOP12/costs/execution_costs.csv"
+  ],
+  "comparison_metrics": [
+    "calendar_overlap",
+    "turnover_events",
+    "cost_stress_eligibility"
+  ],
+  "hash_manifest_required": true,
+  "reproducibility_requirement": "Re-run tools/run_g1_independent_evidence.py with frozen inputs",
+  "evidence_labels": [
+    "existing",
+    "generated",
+    "repaired",
+    "missing"
+  ],
+  "computation_mode": "OFFLINE_DEVELOPMENT_EVIDENCE_COMPUTATION"
+}

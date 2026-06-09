@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "component_id": "king_32b_forschung",
+  "model": "qwen2.5-coder:32b",
+  "agent_cli": "alpha-model-agent",
+  "headline_de": "König 32B — Bestandteil des Forschungsprojekts Active Alpha",
+  "mission_de": "32B wächst mit dem Forschungsprojekt: lernt aus Evidence, unterstützt Gas/Sell-Steuerung, H1 und /learn — kein isolierter Chat-Bot.",
+  "forschungszweig_ref": "control/r3_forschungszweig.json",
+  "forschungszweig_branch_id": "forschungszweig_finanzierung",
+  "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
+  "growth_phases_de": {
+    "keim": "Modell noch nicht bereit — Quant-Optimum läuft weiter",
+    "spross": "Ollama bereit — König liest Evidence",
+    "wachstum": "trade_decisions + Gas/Sell + king-trading aktiv",
+    "forschung_reif": "Learn/Evolve + Forschungszweig + öffentliches Lernen"
+  },
+  "roles_in_forschung_de": [
+    "trading_local — Gas/Sell-Beratung und Entscheidungs-Sanktion",
+    "build_kernel — /bau im Forschungsbaum",
+    "chat — Entfaltungsraum mit Forschungs-Kontext",
+    "kombi_synthesis — Cloud-Tipp + lokale Umsetzung"
+  ],
+  "owned_modules": [
+    "analytics/king_32b_forschung.py",
+    "analytics/king_trading_assist.py",
+    "analytics/kernel_trade_decisions.py",
+    "analytics/gas_sell_steering.py",
+    "analytics/ai_kernel_hardware_bond.py"
+  ],
+  "owned_evidence": [
+    "evidence/king_trading_assist_latest.json",
+    "evidence/gas_sell_steering_latest.json",
+    "evidence/king_32b_forschung_latest.json",
+    "evidence/king_stufe_a_latest.json",
+    "evidence/king_evidence_rag_latest.json",
+    "evidence/king_teacher_student_latest.json",
+    "evidence/public_learning_report_latest.json"
+  ],
+  "growth_commands_de": [
+    "bash tools/king_ops.sh stufe-a",
+    "bash tools/setup_gemini_key.sh",
+    "python3 tools/ai_kernel.py gemini-key-test",
+    "python3 tools/ai_kernel.py stufe-a --force",
+    "python3 tools/ai_kernel.py king-trading",
+    "python3 tools/ai_kernel.py learn",
+    "python3 tools/ai_kernel.py evolve",
+    "bash tools/king_ops.sh king-trading",
+    "/kombi <frage>",
+    "/beitrag forschung <Idee>"
+  ],
+  "forbidden_de": [
+    "32B als reines UI-Ornament ohne Forschungs-Evidence",
+    "Champion-Wechsel durch LLM-Prosa",
+    "Auto-Orders ohne R3-GUI"
+  ],
+  "evidence_ref": "evidence/king_32b_forschung_latest.json"
+}

@@ -1,0 +1,88 @@
+{
+  "generated_at_utc": "2026-06-01T14:28:02+00:00",
+  "static_reference_mapping_available": true,
+  "static_mapping_candidates": "8/8",
+  "provider_verified_instrument_mappings": "0/8",
+  "entries": [
+    {
+      "symbol_reference": "OXY",
+      "display_name": "Occidental Petroleum",
+      "static_candidate_provider_id": "OXY_US_EQ",
+      "provider_instrument_id": "OXY_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "VUSD",
+      "display_name": "Vanguard S&P 500 (Dist)",
+      "static_candidate_provider_id": "VUSD_EQ",
+      "provider_instrument_id": "VUSD_EQ",
+      "exchange": "LSE",
+      "currency": "GBP",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "WDC",
+      "display_name": "Western Digital",
+      "static_candidate_provider_id": "WDC_US_EQ",
+      "provider_instrument_id": "WDC_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "SNDK",
+      "display_name": "Sandisk",
+      "static_candidate_provider_id": "SNDK_US_EQ",
+      "provider_instrument_id": "SNDK_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "STX",
+      "display_name": "Seagate Technology",
+      "static_candidate_provider_id": "STX_US_EQ",
+      "provider_instrument_id": "STX_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "INTC",
+      "display_name": "Intel",
+      "static_candidate_provider_id": "INTC_US_EQ",
+      "provider_instrument_id": "INTC_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "MU",
+      "display_name": "Micron Technology",
+      "static_candidate_provider_id": "MU_US_EQ",
+      "provider_instrument_id": "MU_US_EQ",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    },
+    {
+      "symbol_reference": "CIEN",
+      "display_name": "Ciena",
+      "static_candidate_provider_id": "CIEN_US_EQ",
+      "provider_instrument_id": "CIEN_US_EQ",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "mapping_status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA",
+      "provider_metadata_fetched": false
+    }
+  ]
+}

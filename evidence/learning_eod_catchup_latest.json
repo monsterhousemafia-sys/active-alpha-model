@@ -1,0 +1,91 @@
+{
+  "generated_at_utc": "2026-06-04T20:15:03+00:00",
+  "eod": {
+    "date": "2026-06-04",
+    "symbols": {
+      "GOOGL": {
+        "bar_date": "2026-06-04",
+        "close": 372.19000244140625
+      },
+      "CIEN": {
+        "bar_date": "2026-06-04",
+        "close": 535.260009765625
+      },
+      "STX": {
+        "bar_date": "2026-06-04",
+        "close": 925.989990234375
+      },
+      "GOOG": {
+        "bar_date": "2026-06-04",
+        "close": 369.2699890136719
+      },
+      "WDC": {
+        "bar_date": "2026-06-04",
+        "close": 575.5
+      },
+      "TXN": {
+        "bar_date": "2026-06-04",
+        "close": 305.3699951171875
+      },
+      "CAT": {
+        "bar_date": "2026-06-04",
+        "close": 940.2899780273438
+      },
+      "INTC": {
+        "bar_date": "2026-06-04",
+        "close": 111.77999877929688
+      },
+      "ON": {
+        "bar_date": "2026-06-04",
+        "close": 131.82000732421875
+      },
+      "AMD": {
+        "bar_date": "2026-06-04",
+        "close": 523.2000122070312
+      },
+      "MU": {
+        "bar_date": "2026-06-04",
+        "close": 996.0
+      },
+      "VRT": {
+        "bar_date": "2026-06-04",
+        "close": 323.9049987792969
+      },
+      "OXY": {
+        "bar_date": "2026-06-04",
+        "close": 58.650001525878906
+      },
+      "SNDK": {
+        "bar_date": "2026-06-04",
+        "close": 1759.6800537109375
+      }
+    },
+    "errors": [],
+    "ok": true,
+    "captured": 14
+  },
+  "broker_daily": {
+    "ok": true,
+    "date": "2026-06-04"
+  },
+  "readiness": {
+    "learning_collection_active": true,
+    "ready_for_offline_research": true,
+    "intraday_observations": 138,
+    "eod_close_observations": 1000,
+    "broker_daily_snapshots": 4,
+    "last_intraday_utc": "2026-06-02T11:33:19+00:00",
+    "last_eod_date": "2026-06-04",
+    "last_broker_daily_date": "2026-06-04",
+    "auto_training_blocked": true,
+    "champion_locked": "R3_w075_q065_noexit",
+    "next_offline_step": "Approved research phase: materialize features from ledgers \u2192 validate challenger offline",
+    "ledger_paths": {
+      "intraday": "market_data\\live_learning\\intraday_quotes.jsonl",
+      "eod": "market_data\\live_learning\\eod_closes.jsonl",
+      "broker_daily": "market_data\\live_learning\\broker_daily_snapshots.jsonl"
+    },
+    "capture_errors": [],
+    "learning_healthy": true
+  }
+}

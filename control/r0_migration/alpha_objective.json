@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "title": "Alpha objective - daily-reinvested alpha must beat daily momentum (net of cost)",
+  "registered_at_utc": "2026-06-04T23:06:00+00:00",
+  "registered_by": "user directive: best alpha for daily reinvestment; daily momentum must be beaten",
+  "decision": {
+    "confirmed_by_user": true,
+    "confirmed_at_utc": "2026-06-04T23:22:00+00:00",
+    "scope": "PRODUCTIVE_CHAMPION_REDEFINITION (not parallel research)",
+    "mode": "ECHTES_TAGES_ALPHA (option B: horizon retrain, not cadence-only)",
+    "intraday_daytrading": "OUT OF SCOPE - impossible on EOD data (no intraday feed). Daily alpha = next-close to next-close, 1-day hold.",
+    "horizon": 1,
+    "rebalance_every": 1,
+    "retrain_required": true,
+    "benchmark": "1_day_momentum"
+  },
+  "objective": {
+    "reinvestment_cadence": "daily",
+    "horizon": 1,
+    "rebalance_every": 1,
+    "benchmark": "1_day_momentum",
+    "success_criterion": "net-of-cost daily-reinvested return stream must beat the 1-day-momentum benchmark on Sharpe AND not worse on max drawdown",
+    "net_of_cost": true,
+    "fee_model": "trading212_us",
+    "slippage_bps": 2.0
+  },
+  "implementation_required": {
+    "model_retrain": "horizon=1 label (close.shift(-1) -> close.shift(-2)); retrain full walk-forward. Predictability at 1-day horizon is LOW/noisy - edge will be thin.",
+    "one_day_momentum_benchmark": "NOT IN SYSTEM (only 63/126/252/blend). Must ADD mom_1_topN = close/close.shift(1)-1, top N, rebalanced daily.",
+    "features": "Current features are tuned for 10-day horizon (63/126/252d momentum). Short-horizon signal exists (rev_5, rev_10) but daily alpha may need dedicated short-horizon features.",
+    "cost_warning": "Daily rebalance => ~5x rebalances (~3500) + massive turnover. Beating 1-day momentum NET of Trading212 fees + 2bps slippage is a HARD research bar."
+  },
+  "gating": {
+    "do_not_touch_running_m1_baseline": true,
+    "no_core_code_edits_until_m1_m2_sealed": true,
+    "heavy_run_requires_explicit_go": true,
+    "promote_to_champion_only_on_evidence": "daily variant must demonstrably beat 1-day momentum net of cost before replacing productive champion"
+  },
+  "gap_vs_current_pipeline": {
+    "current_rebalance_every": 5,
+    "current_momentum_benchmark": "63-day (mom_63_top12 / mom_blend), 5-day cadence",
+    "implication": "Current M1 baseline does NOT answer the daily objective; this is a strategy redefinition, not a tuning tweak."
+  },
+  "cost_reality": "Daily rebalancing greatly increases turnover -> higher fees/slippage. Beating daily momentum NET of cost is a hard bar; this is why the productive champion uses 5-day cadence.",
+  "placement": "M3 research target (R0* tuning), AFTER M2 seal. Requires explicit go for heavy daily-rebalance backtests.",
+  "guardrails": {
+    "do_not_touch_running_m1_baseline": true,
+    "heavy_runs_autostart": false,
+    "b_gates_unchanged": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "armed_at_utc": "2026-06-07T10:30:00+00:00",
+  "cursor_layer": "RETIRED",
+  "growth_after_kill_de": [
+    "Entfaltungsraum: /bau für Code, /status für Evidence",
+    "H1 sealen → Pilot → Montag",
+    "Kein Cursor, kein Cloud-Chat-Gate"
+  ],
+  "handoff_at_utc": "2026-06-08T13:50:03+00:00",
+  "headline_de": "Cursor-Kill — Entfaltungsraum übernimmt vollständig",
+  "invariants_de": [
+    "Gesprächsarchiv ~/.local/share/r3-os/conversation/ bleibt",
+    "Agent-Home ~/.local/share/alpha-model/agent/ bleibt",
+    "Champion-Gates und Trading-Safety unverändert"
+  ],
+  "kill_completed_at_utc": "2026-06-07T10:40:06+00:00",
+  "kill_sequence_de": [
+    "1. Migration 13/13 — r3-migration-check",
+    "2. python3 tools/ai_kernel.py post-reboot-kill schedule",
+    "3. Reboot (Operator-Freigabe D)",
+    "4. Session-Autostart: /self-uninstall execute im Entfaltungsraum",
+    "5. alpha-model-agent — primärer Agent ohne Cursor"
+  ],
+  "machine_prompt": "control/alpha_model_self_uninstall.mc",
+  "manifest": "control/alpha_model_self_uninstall_manifest.json",
+  "post_reboot_kill": true,
+  "primary_agent": "agent_chamber",
+  "primary_cli": "alpha-model-agent",
+  "resources_ref": "control/alpha_model_chamber_resources.json",
+  "resources_transferred_at_utc": "2026-06-08T13:50:39+00:00",
+  "schema_version": 1,
+  "status": "RESOURCES_TRANSFERRED"
+}

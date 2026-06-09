@@ -1,0 +1,13 @@
+{
+  "auto_promotion": "DISABLED",
+  "effective_orders_profile": "r3_w075_production",
+  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "live_signal_profile": "daily_alpha_h1",
+  "live_signal_variant": "DAILY_ALPHA_H1",
+  "operational_champion": "R0_LEGACY_ENSEMBLE",
+  "phase": "M9_LIVE_EXPERIMENTAL",
+  "production_fallback_variant": "R3_w075_q065_noexit",
+  "schema_version": 2,
+  "strategic_decision": "M9_R0_GOVERNANCE_WITH_H1_EXPERIMENTAL_SIGNAL",
+  "strategic_governance_ref": "control/strategic_governance.json"
+}

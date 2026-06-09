@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "canonical_owner": "prognosis_pipeline",
+  "min_coalesce_interval_s": 120,
+  "prognosis_first": true,
+  "headline_de": "T212 API — Prognose-Pipeline ist einziger Sync-Owner (120 s Coalesce)"
+}

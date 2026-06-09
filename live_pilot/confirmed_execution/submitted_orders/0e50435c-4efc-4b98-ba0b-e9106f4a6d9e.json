@@ -1,0 +1,47 @@
+{
+  "body": {
+    "extendedHours": false,
+    "quantity": 0.25,
+    "ticker": "INTC_US_EQ"
+  },
+  "draft": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T19:40:52+00:00",
+    "draft_id": "0e50435c-4efc-4b98-ba0b-e9106f4a6d9e",
+    "execution_style": "market",
+    "expires_at_utc": "2026-06-02T19:55:52+00:00",
+    "instrument": "INTC",
+    "limit_price": 91.92,
+    "max_notional_eur": 22.98,
+    "order_type": "MARKET_BUY",
+    "quantity": 0.25,
+    "reference_price_eur": 91.92,
+    "side": "BUY",
+    "source": "LIVE_DASHBOARD_REBALANCE",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "INTC_US_EQ",
+    "updated_at_utc": "2026-06-02T19:40:52+00:00"
+  },
+  "response": {
+    "createdAt": "2026-06-02T22:40:53.065+03:00",
+    "currency": "EUR",
+    "extendedHours": false,
+    "filledQuantity": 0,
+    "id": 52019567615,
+    "initiatedFrom": "API",
+    "instrument": {
+      "currency": "USD",
+      "isin": "US4581401001",
+      "name": "Intel",
+      "ticker": "INTC_US_EQ"
+    },
+    "quantity": 0.25,
+    "side": "BUY",
+    "status": "NEW",
+    "strategy": "QUANTITY",
+    "ticker": "INTC_US_EQ",
+    "type": "MARKET"
+  },
+  "submitted_at_utc": "2026-06-02T19:40:52+00:00"
+}

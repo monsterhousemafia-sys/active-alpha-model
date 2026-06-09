@@ -1,0 +1,9 @@
+{
+  "code": 0,
+  "component": "cognitive-kernel",
+  "event": "succession_v2",
+  "level": "info",
+  "ok": true,
+  "schema_version": 1,
+  "ts_utc": "2026-06-09T21:17:13+00:00"
+}

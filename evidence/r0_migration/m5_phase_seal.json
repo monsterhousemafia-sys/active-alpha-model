@@ -1,0 +1,72 @@
+{
+  "artifact_hashes": {
+    "control/evidence/cost_stress_status.json": "fc14992f6098e750bb9dbb46d1eab5246ae282bcb1315f81dc61d558a7e99b5e",
+    "control/evidence/multiple_testing_status.json": "441c4f796280967bfa39048d72f7dccf050ad386448f8785a8f7ced774afa8a7",
+    "control/evidence/robustness_status.json": "70b3632d6342b22804367b04789f878858f9d43740268ca1fb4d8fca95fc542c",
+    "evidence/r0_migration/gate_matrix.json": "5272877b74939ceb3ee2a6b7a30370a3d54e28e05221fe415c8c48c1e65977eb"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M6",
+  "phase": "M5",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:07+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M4 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m4_phase_seal.json"
+      },
+      {
+        "check": "file_exists:evidence/r0_migration/gate_matrix.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/r0_migration/gate_matrix.json"
+      },
+      {
+        "check": "file_exists:control/evidence/cost_stress_status.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/evidence/cost_stress_status.json"
+      },
+      {
+        "check": "file_exists:control/evidence/multiple_testing_status.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/evidence/multiple_testing_status.json"
+      },
+      {
+        "check": "file_exists:control/evidence/robustness_status.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/evidence/robustness_status.json"
+      },
+      {
+        "check": "m5_all_gates_pass",
+        "detail": "PASS",
+        "pass": true,
+        "path": "evidence\\r0_migration\\gate_matrix.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M5",
+    "title": "Statistische Gates",
+    "verified_at_utc": "2026-06-05T15:39:07+00:00"
+  }
+}

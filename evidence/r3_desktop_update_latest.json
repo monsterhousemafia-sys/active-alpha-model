@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "ok": false,
+  "updated_at_utc": "2026-06-09T17:53:08+00:00",
+  "phase": "B",
+  "desktop_hub_path": "/r3",
+  "headline_de": "Desktop-Update teilweise — Fehler: R3 Supremacy (GNOME zurücknehmen), Desktop-Einträge & Autostart",
+  "steps": [
+    {
+      "id": "supremacy",
+      "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+      "ok": false,
+      "detail": {
+        "ok": false,
+        "headline_de": "R3 — Ubuntu läuft in dir",
+        "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+        "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+        "desktop": {
+          "ok": false,
+          "blocked": true,
+          "error": "LOCAL_APPS_PURGED",
+          "headline_de": "Lokal-Apps deinstalliert — nur technische Exekutive",
+          "message_de": "Re-Install blockiert. Hub: python3 tools/preview_hub.py · Disposition: control/r3_pc_app_disposition.json",
+          "functional_de": [
+            "bash tools/r3_cockpit.sh oder Befehl r3 → natives Qt-Fenster /r3",
+            "Ergebnis-Spiegel: Paket, T212, Kurse, letzter Auftrag (Evidence read-only)",
+            "Button „Auftrag an T212“ → POST /api/r3/order (confirm true)",
+            "auto_prepare: T212, Kurse, Order-Zeilen",
+            "GET /api/r3/mirror — JSON-Spiegel für Refresh"
+          ],
+          "purge_command_de": "bash tools/purge_r3_local_apps.sh"
+        },
+        "autostart_disabled": 0,
+        "legacy_removed": 0,
+        "gnome_tweaks": 11,
+        "survives_de": [
+          "Cognitive Kernel v2",
+          "Preview Hub / R3 Cockpit",
+          "R3 Arbeitsfläche (native Apps als Fenster)",
+          "Order-Desk bei Bedarf",
+          "H1 / Scheduler / Evidence"
+        ],
+        "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh"
+      }
+    },
+    {
+      "id": "desktop_os",
+      "label_de": "Desktop-Einträge & Autostart",
+      "ok": false,
+      "detail": {
+        "ok": false,
+        "blocked": true,
+        "error": "LOCAL_APPS_PURGED",
+        "headline_de": "Lokal-Apps deinstalliert — nur technische Exekutive",
+        "message_de": "Re-Install blockiert. Hub: python3 tools/preview_hub.py · Disposition: control/r3_pc_app_disposition.json",
+        "functional_de": [
+          "bash tools/r3_cockpit.sh oder Befehl r3 → natives Qt-Fenster /r3",
+          "Ergebnis-Spiegel: Paket, T212, Kurse, letzter Auftrag (Evidence read-only)",
+          "Button „Auftrag an T212“ → POST /api/r3/order (confirm true)",
+          "auto_prepare: T212, Kurse, Order-Zeilen",
+          "GET /api/r3/mirror — JSON-Spiegel für Refresh"
+        ],
+        "purge_command_de": "bash tools/purge_r3_local_apps.sh"
+      }
+    },
+    {
+      "id": "hub",
+      "label_de": "Preview-Hub neu starten",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "port": 17890,
+        "url": "http://127.0.0.1:17890/r3"
+      }
+    },
+    {
+      "id": "phase_b",
+      "label_de": "Phase-B-Stand schreiben",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "headline_de": "Phase B · 80% — H1 parallel integriert",
+        "percent": 80
+      }
+    },
+    {
+      "id": "h1_guard",
+      "label_de": "H1-Migration stabil",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "action": "complete",
+        "h1_status": "COMPLETE",
+        "monitor": {
+          "ok": true,
+          "action": "monitor_started",
+          "pid": 167349,
+          "reply_de": "H1-Monitor gestartet (PID 167349)"
+        },
+        "governance": {
+          "schema_version": 1,
+          "updated_at_utc": "2026-06-09T17:53:08+00:00",
+          "status": "COMPLETE",
+          "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+          "sealed": false,
+          "progress_pct": 100,
+          "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+          "gate_blockers": [],
+          "detail_de": null,
+          "pass_full_seal": false,
+          "operational_ok": true,
+          "metrics_strategy": {
+            "sharpe_0rf": 0.782267724738531,
+            "cagr": 0.1449496479478598,
+            "max_drawdown": -0.22945094905846275,
+            "n_days": 1866,
+            "daily_hit_rate": 0.5466237942122186
+          },
+          "evaluated_at_utc": "2026-06-09T17:27:17+00:00",
+          "seal_required": false,
+          "seal_policy_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates"
+        },
+        "reply_de": "H1 COMPLETE — Evaluate läuft"
+      }
+    },
+    {
+      "id": "launch",
+      "label_de": "R3 Desktop Vollbild",
+      "ok": true,
+      "detail": {
+        "ok": true,
+        "url": "http://127.0.0.1:17890/r3",
+        "shell": "native",
+        "pid": 167393,
+        "message_de": "R3 Cockpit lokal gestartet — nur 127.0.0.1, kein Web."
+      }
+    }
+  ],
+  "launch": {
+    "ok": true,
+    "url": "http://127.0.0.1:17890/r3",
+    "shell": "native",
+    "pid": 167393,
+    "message_de": "R3 Cockpit lokal gestartet — nur 127.0.0.1, kein Web."
+  },
+  "notify_desktop": true,
+  "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh"
+}

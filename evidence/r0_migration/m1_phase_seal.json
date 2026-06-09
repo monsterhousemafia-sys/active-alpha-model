@@ -1,0 +1,78 @@
+{
+  "artifact_hashes": {
+    "evidence/r0_migration/env_alpha_model_mode_audit.json": "9515188b10fcffc7348f54dbedc03bb1bc5a8d64ff6da83201a6dbc97c6a7b2a",
+    "evidence/r0_migration/pointer_audit.json": "56ba4e1a4a157adc36df4c53fe3702cd69e4d34fe1119517f0ddda8bb16d7b19",
+    "evidence/r0_migration/returns_manifest.json": "2df1c23699d14cf41528549367c77569ee4ac3fa3a6ba86049dd89ddf747b868",
+    "evidence/r0_migration/validation_runs_status.json": "86458471e6558784109b8d97039a49b4bbef9a5a66c8873b33808670dc4f4fc3"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M2",
+  "phase": "M1",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T14:54:10+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M0 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m0_phase_seal.json"
+      },
+      {
+        "check": "file_exists:evidence/r0_migration/pointer_audit.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/r0_migration/pointer_audit.json"
+      },
+      {
+        "check": "file_exists:evidence/r0_migration/env_alpha_model_mode_audit.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/r0_migration/env_alpha_model_mode_audit.json"
+      },
+      {
+        "check": "file_exists:evidence/r0_migration/returns_manifest.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/r0_migration/returns_manifest.json"
+      },
+      {
+        "check": "file_exists:evidence/r0_migration/validation_runs_status.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/r0_migration/validation_runs_status.json"
+      },
+      {
+        "check": "m1_returns_integrity",
+        "detail": "all pass",
+        "pass": true,
+        "path": "evidence\\r0_migration\\returns_manifest.json"
+      },
+      {
+        "check": "m1_env_audit_pass",
+        "detail": "pass",
+        "pass": true,
+        "path": "evidence\\r0_migration\\env_alpha_model_mode_audit.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M1",
+    "title": "Evidenz-Baseline & Matrix",
+    "verified_at_utc": "2026-06-05T14:54:10+00:00"
+  }
+}

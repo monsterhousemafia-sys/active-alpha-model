@@ -1,0 +1,38 @@
+{
+  "attach_zip": true,
+  "auto_send_mode": "auto",
+  "callmebot": {
+    "api_key_keyring": "callmebot_api_key"
+  },
+  "enabled": true,
+  "firefox_profile_dir": "control/secrets/whatsapp_firefox_profile",
+  "green_api": {
+    "base_url": "https://api.green-api.com",
+    "instance_id_keyring": "green_api_instance_id",
+    "token_keyring": "green_api_token"
+  },
+  "own_account_only": true,
+  "playwright_session_dir": "control/secrets/whatsapp_playwright",
+  "provider": "wa_me",
+  "schema_version": 1,
+  "self_phone_e164": "4915756402383",
+  "send_mode": "self",
+  "terminal_task": {
+    "status": "aktiv",
+    "reactivated_at_utc": "2026-06-08T12:15:00+00:00"
+  },
+  "text_ref": "evidence/spread_whatsapp_de.txt",
+  "ui_wait_seconds": 22,
+  "zip_attach_auto": true,
+  "waha": {
+    "api_key_keyring": "waha_api_key",
+    "base_url": "http://127.0.0.1:3000",
+    "session": "default"
+  },
+  "zip_path": "/home/machinax7/world_worker_LITE.zip",
+  "zip_preference": [
+    "world",
+    "home",
+    "lite"
+  ]
+}

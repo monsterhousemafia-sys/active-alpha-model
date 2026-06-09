@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "headline_de": "24/7 T212-Watch — alle 10 min (coalesced mit Prognose-Pipeline)",
+  "min_interval_s": 600,
+  "force_sync_when_stale": true,
+  "run_prognosis_on_sync": true,
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T18:00:00+00:00"
+}

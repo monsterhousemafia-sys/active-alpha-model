@@ -1,0 +1,16 @@
+Champion / Challenger Evaluation Report
+Generated: 2026-06-03T20:42:49+00:00
+Champion: R3_w075_q065_noexit
+Auto-promotion: DISABLED
+Variants compared: 5
+
+Ranked by Sharpe (0 rf):
+  R2_MOM_BLEND_REPLACE: Sharpe=0.973 CAGR=19.71% MaxDD=-24.29%
+  R3_w075_q065_noexit [CHAMPION]: Sharpe=0.923 CAGR=19.29% MaxDD=-26.01%
+  R3_w070_q070_noexit: Sharpe=0.912 CAGR=19.00% MaxDD=-26.09%
+  R4_w070_q070_forceexit: Sharpe=0.905 CAGR=18.72% MaxDD=-25.97%
+  R1_GATE_BASE_ONLY: Sharpe=0.850 CAGR=16.81% MaxDD=-31.33%
+
+Promotion gate: BLOCKED
+  - auto_promotion_disabled
+  - manual_approval_required

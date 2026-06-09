@@ -1,0 +1,18 @@
+{
+  "portfolio_id": "REFERENCE_PORTFOLIO_8_POSITION_500_EUR",
+  "initial_capital_eur": 500.0,
+  "base_currency": "EUR",
+  "position_count": 8,
+  "symbols": [
+    "OXY",
+    "VUSD",
+    "WDC",
+    "SNDK",
+    "STX",
+    "INTC",
+    "MU",
+    "CIEN"
+  ],
+  "fully_executed": false,
+  "purpose": "target_and_comparison_allocation"
+}

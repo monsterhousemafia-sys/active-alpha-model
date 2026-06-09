@@ -1,0 +1,11 @@
+{
+  "path": "E:\\active_alpha_model\\Marktanalyse.exe",
+  "size_bytes": 27573690,
+  "creation_time_utc": "2026-05-30T11:55:58.7110893Z",
+  "last_write_time_utc": "2026-05-30T13:31:39.9000678Z",
+  "sha256": "eb93e3af18ed175cd8ce8b919b90088dd85cbcfc92a318f65c452afde42f8debe",
+  "classification": "PREEXISTING_NOT_V5_BUILD_EVIDENCE",
+  "executed": false,
+  "captured_at_utc": "2026-05-30T22:45:00Z",
+  "note": "Recorded before resumed V5 build; predates interrupted orchestration at 2026-05-30T22:16:50Z"
+}

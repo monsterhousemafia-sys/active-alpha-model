@@ -1,0 +1,38 @@
+{
+  "bash_de": "bash tools/king_ops.sh prognosis run",
+  "headline_de": "R3 Handelsergebnis · Trading212",
+  "investable_eur": 678.52,
+  "ok": false,
+  "package_ready": false,
+  "policy_ref": "control/r3_prognosis_automation.json",
+  "prognosis_ref": "evidence/r3_t212_prognosis_latest.json",
+  "schema_version": 1,
+  "steps": [
+    {
+      "buys": null,
+      "investable_eur": null,
+      "ok": false,
+      "step": "live_capital",
+      "t212_force": false
+    },
+    {
+      "ok": false,
+      "positions": 11,
+      "step": "prognosis",
+      "t212_trusted": false
+    },
+    {
+      "ok": false,
+      "primary": null,
+      "step": "trading_functions"
+    },
+    {
+      "ok": false,
+      "ready": false,
+      "step": "freigabe"
+    }
+  ],
+  "t212_trusted": false,
+  "updated_at_utc": "2026-06-09T21:17:13+00:00",
+  "worthwhile_buys": 0
+}

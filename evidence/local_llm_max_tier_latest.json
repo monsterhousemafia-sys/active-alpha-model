@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "headline_de": "Max-Tier RTX 3090 konfiguriert — Modelle werden geladen",
+  "ran_at_utc": "2026-06-07T13:45:00+00:00",
+  "gpu_tier_de": "max_rtx3090",
+  "role_models": {
+    "build_kernel": "qwen2.5-coder:32b",
+    "chat": "qwen2.5:14b",
+    "kombi_synthesis": "qwen2.5:14b",
+    "trading_local": "qwen2.5:7b"
+  },
+  "num_ctx_de": {
+    "qwen2.5-coder:32b": 8192,
+    "qwen2.5:14b": 16384,
+    "qwen2.5:7b": 8192
+  },
+  "setup_command": "bash tools/setup_max_local_llm.sh",
+  "operator_next_de": "alpha-model-agent",
+  "status_de": "pull_läuft — qwen2.5:14b zuerst, dann Coder-32B",
+  "honest_limits_de": [
+    "Lokal max — kein Cursor-MCP, 6/12 Agent-Schritte",
+    "32B nutzt ~85% VRAM nur während /bau",
+    "Cursor bleibt stärker bei Endlos-Architektur"
+  ]
+}

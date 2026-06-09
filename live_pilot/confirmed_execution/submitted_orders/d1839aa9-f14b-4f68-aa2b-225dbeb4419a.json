@@ -1,0 +1,47 @@
+{
+  "body": {
+    "extendedHours": false,
+    "quantity": 0.04,
+    "ticker": "STX_US_EQ"
+  },
+  "draft": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T19:40:47+00:00",
+    "draft_id": "d1839aa9-f14b-4f68-aa2b-225dbeb4419a",
+    "execution_style": "market",
+    "expires_at_utc": "2026-06-02T19:55:47+00:00",
+    "instrument": "STX",
+    "limit_price": 798.95,
+    "max_notional_eur": 31.96,
+    "order_type": "MARKET_BUY",
+    "quantity": 0.04,
+    "reference_price_eur": 798.95,
+    "side": "BUY",
+    "source": "LIVE_DASHBOARD_REBALANCE",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "STX_US_EQ",
+    "updated_at_utc": "2026-06-02T19:40:47+00:00"
+  },
+  "response": {
+    "createdAt": "2026-06-02T22:40:48.826+03:00",
+    "currency": "EUR",
+    "extendedHours": false,
+    "filledQuantity": 0,
+    "id": 52019567605,
+    "initiatedFrom": "API",
+    "instrument": {
+      "currency": "USD",
+      "isin": "IE00BKVD2N49",
+      "name": "Seagate Technology",
+      "ticker": "STX_US_EQ"
+    },
+    "quantity": 0.04,
+    "side": "BUY",
+    "status": "NEW",
+    "strategy": "QUANTITY",
+    "ticker": "STX_US_EQ",
+    "type": "MARKET"
+  },
+  "submitted_at_utc": "2026-06-02T19:40:48+00:00"
+}

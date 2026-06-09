@@ -1,0 +1,5 @@
+{
+  "reserved_cash_eur_documented": true,
+  "new_instrument_policy": "separate_portfolio_or_explicit_addition_event",
+  "tracking_error_vs_reference_eur": null
+}

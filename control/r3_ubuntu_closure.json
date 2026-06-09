@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "title_de": "Ubuntu → R3 Abschluss",
+  "subtitle_de": "Jede Desktop-Funktion einmal geprüft — in sich geschlossen ohne GNOME-Oberfläche",
+  "closure_target_de": "Schritt A: R3-native UI · Schritt B: Session/WM/Pakete",
+  "categories": [
+    {"id": "session", "label_de": "Sitzung & Energie"},
+    {"id": "files", "label_de": "Dateien"},
+    {"id": "apps", "label_de": "Programme"},
+    {"id": "settings", "label_de": "Einstellungen"},
+    {"id": "connect", "label_de": "Verbindung"},
+    {"id": "display", "label_de": "Darstellung"},
+    {"id": "notify", "label_de": "Mitteilungen"},
+    {"id": "updates", "label_de": "Updates & Software"},
+    {"id": "productivity", "label_de": "Werkzeug"},
+    {"id": "market", "label_de": "Markt (R3)"},
+    {"id": "shell", "label_de": "Shell & Suche"},
+    {"id": "step_b", "label_de": "Schritt B (parallel zu H1)"}
+  ]
+}

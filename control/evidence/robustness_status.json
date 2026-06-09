@@ -1,0 +1,26 @@
+{
+  "ROBUSTNESS_EVIDENCE": {
+    "blockers": [
+      "COST_STRESS_GATE_NOT_PASSED",
+      "MULTIPLE_TESTING_NOT_PASSED",
+      "ROBUSTNESS_INPUT_SERIES_INCOMPLETE"
+    ],
+    "detail": "subperiod_screen=False cost_ok=False mt_ok=False",
+    "pass": false,
+    "status": "NOT_EVALUABLE"
+  },
+  "SUBPERIOD_STABILITY_SCREEN": {
+    "pass": false
+  },
+  "aligned_observations": 0,
+  "blockers": [
+    "COST_STRESS_GATE_NOT_PASSED",
+    "MULTIPLE_TESTING_NOT_PASSED",
+    "ROBUSTNESS_INPUT_SERIES_INCOMPLETE"
+  ],
+  "generated_at_utc": "2026-06-07T20:14:01+00:00",
+  "mode": "READ_ONLY_HISTORICAL_EVIDENCE",
+  "schema_version": 2,
+  "source_hashes": {},
+  "variants": {}
+}

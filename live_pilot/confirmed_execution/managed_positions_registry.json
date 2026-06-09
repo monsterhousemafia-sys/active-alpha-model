@@ -1,0 +1,68 @@
+{
+  "entries": [
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "AMD"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "CAT"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "CIEN"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "GLW"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "GOOG"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "GOOGL"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "INTC"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "LRCX"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "MU"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "ON"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "OXY"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "SNDK"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "STX"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "TXN"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "VRT"
+    },
+    {
+      "classification": "REAL_CONFIRMED_CORE_LIVE_ORDER",
+      "symbol": "WDC"
+    }
+  ]
+}

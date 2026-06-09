@@ -1,0 +1,34 @@
+[
+  {
+    "original_path": "aa_decision_cockpit_gui.py",
+    "sha256": "b2e0caf50da7ff0573ce35c369982fd46d04f66c4c36ce1752e818ecba510cc8"
+  },
+  {
+    "original_path": "aa_decision_cockpit_viewmodel.py",
+    "sha256": "b54cd409308414cf3ae1fe544cca4f9073af45de4654448c2da3810bc0d9c332"
+  },
+  {
+    "original_path": "aa_vision_phase_catalog.py",
+    "sha256": "fff3e9f5a28627eb4a055d48e80800977e2b078cfc3871a30923dcfab9ae2674"
+  },
+  {
+    "original_path": "control/vision_automation/automation_state.json",
+    "sha256": "55bb0f7e8d04760dcf8c8d29630c165f0fa98915846453a96095046ed342b675"
+  },
+  {
+    "original_path": "control/vision_automation/phase_catalog.json",
+    "sha256": "35630134a3954dae2e577dd40e2a80d8f926ba71c42e98ed8550225f09cdd9db"
+  },
+  {
+    "original_path": "control/vision_automation/review_registry/review_registry.json",
+    "sha256": "771dc445a521816af46f8305a977b0921a4ae2a54c7ece618241383369f9dceb"
+  },
+  {
+    "original_path": "VISION_PROGRESS.json",
+    "sha256": "66eb29073cbb4cf99123b45d0f15b805241dc3eba68b5d362878fbe572d45cfb"
+  },
+  {
+    "original_path": "build/launcher/Marktanalyse.spec",
+    "sha256": "fda8606de17d5329343a1d6bcd91da26648c304444ca6062bf2512e627e370c0"
+  }
+]

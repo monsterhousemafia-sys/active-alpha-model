@@ -1,0 +1,49 @@
+{
+  "MULTIPLE_TESTING_EVIDENCE": {
+    "blocker": "DSR_BELOW_REQUIRED_CONFIDENCE",
+    "detail": "dsr_probability=0.8323269258266724 trials=14",
+    "pass": false,
+    "status": "FAIL"
+  },
+  "PBO_BLOCKER": "INSUFFICIENT_CANDIDATE_MATRIX_FOR_PBO",
+  "PBO_STATUS": "NOT_EVALUABLE",
+  "challenger_variant_id": "MOM_63_TOP12",
+  "champion_variant_id": "R5_rank_only_train5",
+  "deflated_sharpe": {
+    "annualized_sharpe_display_only": 1.0076686234910281,
+    "blocker": "DSR_BELOW_REQUIRED_CONFIDENCE",
+    "dsr_probability": 0.8323269258266724,
+    "dsr_required_probability": 0.95,
+    "expected_max_sharpe": 0.04084304285747153,
+    "observation_frequency": "daily",
+    "observations_T": 1860,
+    "periodic_sharpe": 0.06347715670761997,
+    "sharpe_std": 0.023493961073591314,
+    "status": "FAIL",
+    "test_statistic": 0.9634013514898774
+  },
+  "generated_at_utc": "2026-05-31T20:23:06+00:00",
+  "independence_assumption": "Variants treated as non-independent unless externally validated",
+  "m1_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "mode": "READ_ONLY_HISTORICAL_EVIDENCE",
+  "observations": 1860,
+  "return_series_path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+  "return_series_sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7",
+  "schema_version": 2,
+  "tested_variant_count": 14,
+  "trial_count_derivation": "unique variant ids from challenger_report entries (8) + naive momentum columns",
+  "trial_count_source_files": [
+    {
+      "path": "control/challenger_report.json",
+      "sha256": "c49586affe9248ec0aef6967dd96ae79db15e2b7c35551faf0bf226146f24abc"
+    },
+    {
+      "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+      "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+    }
+  ],
+  "trial_count_source_hashes": {
+    "control/challenger_report.json": "c49586affe9248ec0aef6967dd96ae79db15e2b7c35551faf0bf226146f24abc",
+    "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+  }
+}

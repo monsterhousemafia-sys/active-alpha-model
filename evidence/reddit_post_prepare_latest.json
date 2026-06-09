@@ -1,0 +1,26 @@
+{
+  "body_file": "/home/machinax7/active_alpha_model/evidence/reddit_post_body_ready.txt",
+  "body_preview": "Listen. The next AI revolution is not another chatbot subscription.\n\nIt's thousands of machines thinking together — with a cockpit you can audit,\nand CPUs you voluntarily lend. No broker keys. No black box. No begging a cloud CEO for permis",
+  "clipboard": {
+    "detail_de": "Clipboard nicht verfügbar — Body in Evidence-Datei",
+    "ok": false
+  },
+  "headline_de": "Reddit Submit geöffnet — Body in evidence/reddit_post_body_ready.txt (manuell kopieren)",
+  "next_de": "In beiden Tabs: Strg+V → Post. Danach: AA_FORUM_POST_URL='https://reddit.com/...' bash tools/king_ops.sh forum-ack",
+  "ok": true,
+  "opened": [
+    {
+      "ok": true,
+      "subreddit": "r/selfhosted",
+      "url": "https://www.reddit.com/r/selfhosted/submit/?type=TEXT&title=We%20are%20the%20next%20AI%20revolution%20%E2%80%94%20decentralized%2C%20open%2C%20~100%20KB%20worker%20ZIP%20%28no%20cloud%20lock-in%29"
+    },
+    {
+      "ok": true,
+      "subreddit": "r/linux",
+      "url": "https://www.reddit.com/r/linux/submit/?type=TEXT&title=We%20are%20the%20next%20AI%20revolution%20%E2%80%94%20decentralized%2C%20open%2C%20~100%20KB%20worker%20ZIP%20%28no%20cloud%20lock-in%29"
+    }
+  ],
+  "schema_version": 1,
+  "title": "We are the next AI revolution — decentralized, open, ~100 KB worker ZIP (no cloud lock-in)",
+  "updated_at_utc": "2026-06-09T21:35:17+00:00"
+}

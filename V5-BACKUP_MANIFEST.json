@@ -1,0 +1,66 @@
+{
+  "created_at_utc": "20260530T221650Z",
+  "phase": "V5_WINDOWS_EXE_BUILD_AND_VERIFICATION",
+  "files": [
+    {
+      "original_path": "aa_decision_cockpit_viewmodel.py",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_viewmodel.py",
+      "size_bytes": 35965,
+      "sha256": "67e1c4c4ba346ae1862c41689772596037116eb329aa0f3f939184eff8082c81"
+    },
+    {
+      "original_path": "aa_decision_cockpit_gui.py",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_gui.py",
+      "size_bytes": 9314,
+      "sha256": "3578e238318facd1a7f501a7a384406f848859abbf6639f4dd1e14ab5cedc1dd"
+    },
+    {
+      "original_path": "aa_decision_cockpit_export.py",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/aa_decision_cockpit_export.py",
+      "size_bytes": 2372,
+      "sha256": "9750d401b1847a0f3217f302b2cb1423aeaede9daebc68aca27deaf948ba2e43"
+    },
+    {
+      "original_path": "build/launcher/Marktanalyse.spec",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/build__launcher__Marktanalyse.spec",
+      "size_bytes": 3710,
+      "sha256": "fda8606de17d5329343a1d6bcd91da26648c304444ca6062bf2512e627e370c0"
+    },
+    {
+      "original_path": "control/vision_automation/automation_state.json",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/control__vision_automation__automation_state.json",
+      "size_bytes": 1492,
+      "sha256": "f162f2015a1e7d42e8a66b2f48a2248909341bd6e6535f5ab94af1801e15a486"
+    },
+    {
+      "original_path": "control/vision_automation/phase_catalog.json",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/control__vision_automation__phase_catalog.json",
+      "size_bytes": 8451,
+      "sha256": "35630134a3954dae2e577dd40e2a80d8f926ba71c42e98ed8550225f09cdd9db"
+    },
+    {
+      "original_path": "control/vision_automation/review_registry/review_registry.json",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/control__vision_automation__review_registry__review_registry.json",
+      "size_bytes": 9665,
+      "sha256": "01690ef4e08c631ac3dd8506a70541a5b72d397ad4839e9e40f92c99e1e98a8c"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/VISION_PROGRESS.json",
+      "size_bytes": 1121,
+      "sha256": "9a36c39017a3bb04d070cfdbfbf0552c7b92d9a6e599add61bea5c3cd8dea9c8"
+    },
+    {
+      "original_path": "tests/test_decision_cockpit_viewmodel.py",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_viewmodel.py",
+      "size_bytes": 24502,
+      "sha256": "147f4a0191064721eef86daff99a3fd80899e52bb0ae3b394c319914dfc26071"
+    },
+    {
+      "original_path": "tests/test_decision_cockpit_gui.py",
+      "backup_path": "control/repair_backups/20260530T221650Z_V5/tests__test_decision_cockpit_gui.py",
+      "size_bytes": 7101,
+      "sha256": "ebb3d73e68845319ba299702d8afce907437ba578315dc8a14eaa98d4500aa6f"
+    }
+  ]
+}

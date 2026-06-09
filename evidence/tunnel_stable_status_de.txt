@@ -1,0 +1,15 @@
+=== Tunnel-Stabilität — Stand freundlicher Diktator ===
+
+Quick-Tunnel: AKTIV
+URL: https://pole-holidays-behavior-merchandise.trycloudflare.com
+stable: false (wechselt nach Neustart)
+
+Token-Tunnel: NOCH NICHT — einmalig einrichten:
+  bash tools/setup_cloudflare_tunnel_token.sh
+  # oder: bash tools/king_ops.sh tunnel-stable setup
+
+Danach erneut:
+  bash tools/king_ops.sh spread voll
+  bash tools/king_ops.sh whatsapp durch
+
+Mobil-Links bleiben nur dauerhaft gültig mit Token-Tunnel.

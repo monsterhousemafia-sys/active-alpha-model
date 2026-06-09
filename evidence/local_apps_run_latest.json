@@ -1,0 +1,27 @@
+{
+  "all_ok": true,
+  "desktop_health_de": "Display + Hub :17890 + PySide6 + ptyxis OK",
+  "file_audit": "evidence/local_apps_audit_latest.json",
+  "headline_de": "Alle Anwendungen — lauffähig für User",
+  "king_32b": {
+    "command_de": "bash tools/king_ops.sh apps-run",
+    "log": "evidence/king_32b_local_apps_finish.log",
+    "mandate": "evidence/king_32b_local_apps_mandate.txt",
+    "status_de": "build-kernel läuft oder abgeschlossen — 20/20 verifiziert",
+    "verify_forced": true
+  },
+  "ok_count": 20,
+  "runtime_audit": "evidence/local_apps_runtime_latest.json",
+  "runtime_ok_count": 20,
+  "schema_version": 1,
+  "total": 20,
+  "updated_at_utc": "2026-06-07T21:38:00.118550+00:00",
+  "user_start_de": [
+    "bash tools/r3_cockpit.sh",
+    "bash run_marktanalyse_linux.sh",
+    "bash run_marktanalyse_bash.sh menu",
+    "bash tools/bash_gpt4o.sh menu",
+    "bash tools/king_ops.sh agent",
+    "http://127.0.0.1:17890/desktop"
+  ]
+}

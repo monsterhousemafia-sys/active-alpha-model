@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "granted_at_utc": "2026-06-05T15:00:00+00:00",
+  "granted_by": "user explicit permission in chat",
+  "status": "ACTIVE",
+  "phases_authorized": {
+    "M3": "R0 tuning / candidate selection — heavy compute allowed",
+    "M5": "Statistical gates (cost stress, multiple testing, robustness)",
+    "M6": "Shadow monitoring — subject to time-window gate when implemented",
+    "M7": "Paper forward — subject to calendar gate when implemented",
+    "M9": "Champion change path — still requires EXTERNAL_REVIEW_APPROVAL file at seal",
+    "M11": "Marktanalyse EXE build & smoke",
+    "M12": "OS / desktop rollout"
+  },
+  "hard_gates_unchanged": [
+    "M6_shadow_monitoring_time_window",
+    "M7_paper_forward_calendar_time",
+    "M10_stabilization_time_window",
+    "M9_external_approval_file_at_seal",
+    "integrity_and_prerequisite_seal_chain"
+  ],
+  "execution_note": "User go removes organizational block; each phase still fail-closes on real evidence at seal time.",
+  "wsl_host": "preferred after M2 seal — see control/r0_migration/linux_host_plan.json"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "world_novelty_de": "Weltneuheit",
+  "title_de": "R3 — Research neu gedacht",
+  "subtitle_de": "Ein Kern, ein Cockpit, kollektive Rechenkraft — transparent und unter deiner Kontrolle.",
+  "claim_de": "Offenes Research-System — messbar, gemeinschaftlich, lokal auf deinem Rechner.",
+  "pillars": [
+    {
+      "id": "kernel",
+      "icon": "kernel",
+      "title_de": "Ein Kern",
+      "body_de": "Ein Scheduler, ein Status, eine Wahrheit — statt verstreuter Tools."
+    },
+    {
+      "id": "transparent",
+      "icon": "transparent",
+      "title_de": "Transparent",
+      "body_de": "Schritte und Checks sind sichtbar. Kein Autotrading ohne deine Bestätigung."
+    },
+    {
+      "id": "collective",
+      "icon": "collective",
+      "title_de": "Kollektiv",
+      "body_de": "Andere Rechner können Rechenkraft spenden — du entscheidest, was läuft."
+    }
+  ],
+  "milestone_labels": {
+    "setup": "Grundstein",
+    "preview": "Systemcheck",
+    "remote": "Welt-Zugang",
+    "h1": "Validierung",
+    "launch": "Welt-Start"
+  },
+  "cta_cockpit_de": "Cockpit öffnen",
+  "cta_join_de": "Mitwirken",
+  "reveal_enabled": false,
+  "storage_key": "r3_world_launch_seen_v1",
+  "kernel_gate_de": "Weltneuheit nur mit Cognitive Kernel v2 — sonst gesperrt.",
+  "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — nur Oberfläche, Menüs, Autostart und Befehle sind R3.",
+  "share_dir_note_de": "Daten liegen unter ~/.local/share/r3-os/."
+}

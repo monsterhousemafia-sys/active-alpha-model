@@ -1,0 +1,13 @@
+active_hooks_json_present=YES
+active_hooks_json_empty=YES
+hooks_disabled_json_present=YES
+session_start_autopilot_hook_active=NO
+blanket_shell_allow_hook_active=NO
+
+Checked at UTC: 2026-05-30T19:15:00+00:00
+
+Remediation applied:
+  - Previous hook config archived to .cursor/hooks.disabled.json
+  - Active .cursor/hooks.json set to {"version":1,"hooks":{}}
+
+V0R requirement satisfied: session-start autopilot and blanket shell allow are disabled.

@@ -1,0 +1,10 @@
+{
+  "credential_profile": "CONFIRMED_EXECUTION",
+  "endpoint": "GET /api/v0/equity/positions",
+  "fetch_error": null,
+  "fetch_status": "OK",
+  "generated_at_utc": "2026-06-02T16:53:17+00:00",
+  "positions": [],
+  "pricing_summary": [],
+  "source": "NONE"
+}

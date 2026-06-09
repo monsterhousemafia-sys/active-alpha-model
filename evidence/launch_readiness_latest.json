@@ -1,0 +1,99 @@
+{
+  "blockers_de": [
+    "h1_sealed: H1 RUNNING — noch nicht sealed"
+  ],
+  "h1": {
+    "banner_de": "H1: RUNNING ~69% — Gate öffnet nach Seal",
+    "detail_de": "Path-Simulation läuft (Features fertig)",
+    "gate_blockers": [
+      "DAILY_ALPHA_H1_NOT_SEALED"
+    ],
+    "progress_pct": 69,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "schema_version": 1,
+    "sealed": false,
+    "status": "RUNNING",
+    "updated_at_utc": "2026-06-06T15:12:52+00:00"
+  },
+  "headline_de": "Launch-Setup abgeschlossen — siehe remaining_de",
+  "ok": true,
+  "public_launch_ready": false,
+  "remaining_de": [
+    "Tunnel-Token: ai_kernel spread-tunnel-secure (Browser-Login — Passwort nur im Browser, nie im Chat)",
+    "H1 sealed abwarten — ai_kernel h1-watch (läuft per Timer)"
+  ],
+  "remote": {
+    "public_base_url": "https://vii-consumption-expansys-suggestion.trycloudflare.com",
+    "remote_ready": true,
+    "stable": false,
+    "tunnel_token_set": false
+  },
+  "schema_version": 1,
+  "steps": [
+    {
+      "cmd": "hub-restart",
+      "rc": -15
+    },
+    {
+      "cmd": "server-bootstrap",
+      "rc": 0
+    },
+    {
+      "cmd": "spread-prelaunch",
+      "rc": 0
+    },
+    {
+      "cmd": "spread-remote",
+      "rc": 0
+    },
+    {
+      "cmd": "spread-secure",
+      "rc": 0
+    },
+    {
+      "cmd": "spread-timers",
+      "rc": 0
+    },
+    {
+      "cmd": "spread-tick",
+      "rc": 0
+    },
+    {
+      "cmd": "h1-watch",
+      "rc": 0
+    },
+    {
+      "cmd": "legion",
+      "rc": 0
+    },
+    {
+      "cmd": "spread-tunnel-secure",
+      "rc": -1
+    },
+    {
+      "cmd": "spread-plan",
+      "rc": 0
+    },
+    {
+      "cmd": "h1-status",
+      "rc": 0
+    }
+  ],
+  "updated_at_utc": "2026-06-06T15:12:52+00:00",
+  "vault_auto_opened": true,
+  "vault_message_de": "Schlüssel-Tresor geöffnet — nur auf diesem Gerät.",
+  "vault_portal": {
+    "auto_open_context": "launch_setup",
+    "hub_port": 17890,
+    "localhost_only": true,
+    "message_de": "Schlüssel-Tresor geöffnet — nur auf diesem Gerät.",
+    "mode": "setup",
+    "ok": true,
+    "portal_opened": true,
+    "portal_url": "http://127.0.0.1:17890/local/vault?session=3KBtCu2fb0NjVTaB1vEClU9FAspSWMWkbf3UejAwgIg",
+    "reason_de": "Cloudflare-Anmeldung und Tunnel-Token einrichten",
+    "security_de": "Privatsphäre zuerst. Nicht im Chat.",
+    "session_ttl_s": 900,
+    "vault_direct_url": "http://127.0.0.1:17891/vault?session=3KBtCu2fb0NjVTaB1vEClU9FAspSWMWkbf3UejAwgIg"
+  }
+}

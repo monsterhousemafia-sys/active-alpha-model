@@ -1,0 +1,714 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-09T18:48:14+00:00",
+  "mode": "READ_ONLY_REVIEW_SNAPSHOT",
+  "build_status": "MANUAL_READ_ONLY_REVIEW_ONLY",
+  "operational_authorization": "NONE",
+  "live_trading_allowed": false,
+  "auto_promotion_allowed": false,
+  "evidence_stage": "BACKTESTED",
+  "forward_monitoring_status": "NOT_AUTHORIZED",
+  "shadow_monitoring_status": "NOT_AUTHORIZED",
+  "paper_monitoring_status": "NOT_AUTHORIZED",
+  "blockers": [
+    "V5R_EXTERNAL_REVIEW_PENDING",
+    "NO_OPERATIONAL_AUTHORIZATION",
+    "PROMOTION_NOT_ELIGIBLE",
+    "PAPER_NOT_ELIGIBLE",
+    "REAL_MONEY_NOT_ELIGIBLE",
+    "FORWARD_MONITORING_NOT_EXTERNALLY_APPROVED",
+    "SHADOW_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+    "PAPER_ACTIVATION_NOT_EXTERNALLY_APPROVED"
+  ],
+  "banners": [
+    "READ-ONLY DECISION COCKPIT",
+    "NO OPERATIONAL AUTHORIZATION",
+    "MANUAL READ-ONLY REVIEW ONLY"
+  ],
+  "cockpit_data": {
+    "schema_version": 4,
+    "generated_at_utc": "2026-06-09T18:48:14+00:00",
+    "mode": "READ_ONLY_DECISION_COCKPIT",
+    "authorization_status": {
+      "schema_version": 1,
+      "status": "OPERATIONAL_AUTHORIZED",
+      "operational_status": "OPERATIONAL_AUTHORIZED",
+      "terminal_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+      "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "authoritative_source_present": true,
+      "authoritative_source_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+      "authoritative_review_forbids_operations": true,
+      "registry_sealed_for_terminal": false,
+      "conflicting_sources": [],
+      "conflicting_or_unsealed_sources": [],
+      "conflict_details": [],
+      "operational_authorized": true,
+      "real_money_authorized": false,
+      "promotion_authorized": true,
+      "shadow_monitoring_authorized": true,
+      "paper_monitoring_authorized": true,
+      "champion_change_authorized": false,
+      "allowed_actions": [
+        "manual_read_only_review",
+        "operative_jobs",
+        "backtest_execution",
+        "matrix_rerun",
+        "replay_execution",
+        "shadow_monitoring_activation",
+        "paper_monitoring_activation",
+        "promotion_execution",
+        "broker_connectivity",
+        "exe_build",
+        "exe_execution"
+      ],
+      "blocked_actions": [
+        "real_money_execution",
+        "champion_change"
+      ],
+      "g1_execution_authorized": true,
+      "resolution_required": "NONE",
+      "generated_at_utc": "2026-06-09T18:48:14+00:00"
+    },
+    "banners": [
+      "NO LIVE TRADING",
+      "NO AUTO PROMOTION",
+      "READ-ONLY DECISION COCKPIT",
+      "FAILSAFE: Challenger-Pointer weicht von R0_LEGACY_ENSEMBLE ab \u2014 keine Promotion / kein Champion-Wechsel."
+    ],
+    "champion_governance_de": {
+      "schema_version": 1,
+      "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+      "approval_status_de": "Freigegeben",
+      "is_highest_backtest_sharpe": false,
+      "matrix_sharpe_rank": 4,
+      "matrix_variants_compared": 4,
+      "matrix_sharpe_leader": "R2_MOM_BLEND_REPLACE",
+      "m1_sharpe_delta": -0.004215011304585126,
+      "r0_sharpe_delta": 0.0,
+      "champion_sharpe_0rf": 0.8946047221769763,
+      "m1_sharpe_0rf": 0.8903897108723912,
+      "cost_stress_status": "NOT_EVALUABLE",
+      "cost_stress_pass": false,
+      "auto_promotion": "DISABLED",
+      "change_criteria_status": "OK",
+      "canonical_comparison_status": "OK",
+      "charter_present": true,
+      "lines_de": [
+        "Freigabe: Produktiv freigegeben \u2014 R0_LEGACY_ENSEMBLE",
+        "Backtest-Sharpe (Matrix ~1860d): Rang 4 von 4 \u2014 nicht h\u00f6chster Sharpe",
+        "Matrix-Sharpe-F\u00fchrer: R2_MOM_BLEND_REPLACE",
+        "M1-Delta Sharpe (M1 \u2212 Champion): -0.0042",
+        "R0-Delta Sharpe (R0 \u2212 Champion): +0.0000",
+        "Cost-Stress (+25 bps): NOT_EVALUABLE (pass=False)",
+        "Auto-Promotion: DISABLED \u2014 manuelle Freigabe erforderlich",
+        "Aktive Blocker: BASELINE_COST_TREATMENT_NOT_VERIFIED:M1_MOM_BLEND_MATCHED_CONTROLS, CHALLENGER_TURNOVER_NOT_VERIFIED",
+        "Quarant\u00e4ne: R5_rank_only_train5 (kein operativer Champion)",
+        "Hinweis: Matrix-embedded \u2260 MOM-Intersection-Sharpe vermischen."
+      ],
+      "summary_de": "Backtest-Sharpe (Matrix ~1860d): Rang 4 von 4 \u2014 nicht h\u00f6chster Sharpe",
+      "blockers": [
+        "BASELINE_COST_TREATMENT_NOT_VERIFIED:M1_MOM_BLEND_MATCHED_CONTROLS",
+        "CHALLENGER_TURNOVER_NOT_VERIFIED"
+      ],
+      "criteria_ref": "control/champion_change_criteria.yaml",
+      "charter_ref": "control/champion_decision_charter.md",
+      "canonical_ref": "evidence/canonical_model_comparison.json",
+      "ready_for_external_review": true,
+      "strategic_decision_option": null,
+      "strategic_decision_summary_de": null,
+      "strategic_decision_status": "OK"
+    },
+    "operator_transparency_de": {
+      "schema_version": 1,
+      "phase": "H",
+      "h1_model_comparison": {
+        "status": "OK",
+        "lines_de": [
+          "Modell-Vergleich (Research) \u2014 read-only",
+          "Champion (freigegeben): R0_LEGACY_ENSEMBLE",
+          "Matrix-Sharpe-F\u00fchrer: R2_MOM_BLEND_REPLACE",
+          "Champion Matrix-Rang: None",
+          "",
+          "Rangliste \u2014 Matrix embedded (~1860d):",
+          "   1. R2_MOM_BLEND_REPLACE (SIBLING_MATRIX) \u2014 Sharpe 0.9734",
+          "   2. R3_w070_q070_noexit (SIBLING_MATRIX) \u2014 Sharpe 0.9119",
+          "   3. R4_w070_q070_forceexit (SIBLING_MATRIX) \u2014 Sharpe 0.9055",
+          "   4. R1_GATE_BASE_ONLY (SIBLING_MATRIX) \u2014 Sharpe 0.8501",
+          "",
+          "Rangliste \u2014 Aligned intersection (MOM/research CSVs):",
+          "   1. MOM_63_TOP12 (RESEARCH_CANDIDATE) \u2014 Sharpe 1.0311",
+          "   2. MOM_63_TOP12_STRICT (RESEARCH_CANDIDATE) \u2014 Sharpe 0.9983",
+          "   3. MOM_63_TOP15_RECONSTRUCTED (RESEARCH_CANDIDATE) \u2014 Sharpe 0.9938",
+          "   4. R0_LEGACY_ENSEMBLE (SIBLING_MATRIX) \u2014 Sharpe 0.8946",
+          "   5. M1_MOM_BLEND_MATCHED_CONTROLS (M1_CONTROL) \u2014 Sharpe 0.8904",
+          "   6. R3_w075_q065_noexit (CHAMPION) \u2014 Sharpe 0.8621",
+          "",
+          "WARNUNG: Matrix-embedded Sharpe \u2260 MOM-Intersection-Sharpe vermischen.",
+          "Vollst\u00e4ndig: evidence/canonical_model_comparison.md"
+        ],
+        "source_ref": "evidence/canonical_model_comparison.json",
+        "markdown_ref": "evidence/canonical_model_comparison.md",
+        "matrix_leader": "R2_MOM_BLEND_REPLACE",
+        "champion_is_sharpe_leader": false
+      },
+      "h2_champion_status": {
+        "status": "OK",
+        "lines_de": [
+          "Produktiv-Champion: R0_LEGACY_ENSEMBLE",
+          "Letztes Signal-Datum: 2026-06-09 (latest_target_portfolio.csv)",
+          "Auto-Promotion: DISABLED",
+          "Phase-E-Entscheidung: M9_R0_GOVERNANCE_WITH_H1_EXPERIMENTAL_SIGNAL \u2014 R0_LEGACY_ENSEMBLE",
+          "",
+          "--- Charter (Auszug) ---",
+          "# Champion Decision Charter \u2014 R3_w075_q065_noexit",
+          "",
+          "Stand: 2026-06-03 \u00b7 Phase D (Governance)",
+          "Autoritative Quelle: `EXTERNAL_REVIEW_APPROVAL_FINAL.md`, `aa_evidence_schema.AUTHORITATIVE_CHAMPION`",
+          "",
+          "## 1. \u00d6konomische Hypothese (warum R3 produktiv ist)",
+          "",
+          "Der produktive Champion **R3_w075_q065_noexit** ist kein \u201emax-Sharpe\u201c-Modell, sondern ein **Risk-off-Momentum-Rescue**-Design:",
+          "",
+          "| Parameter | Wert | Bedeutung |",
+          "|-----------|------|-----------|",
+          "| `risk_off_selection_mode` | `mom_blend_blend` | Momentum-Blend im Risk-off-Regime |",
+          "| `risk_off_momentum_weight` | 0.75 | Gewichtung Momentum vs. Basis |",
+          "| `risk_off_gate_mode` | `momentum_rescue` | Rettungs-Gate bei Stress |",
+          "| `risk_off_momentum_rescue_quantile` | 0.65 | Quantil f\u00fcr Rescue |",
+          "| `risk_off_force_exit_enabled` | false | Kein erzwungenes Voll-Exit |",
+          "",
+          "**Hypothese:** In Risk-off-Phasen soll das Portfolio kontrolliert Momentum-Exposure halten und Drawdowns gegen\u00fcber naivem Ensemble / reinem Gate-Base begrenzen \u2014 nicht den h\u00f6chsten historischen Sharpe auf der Matrix maximieren.",
+          "",
+          "## 2. Bewusste Trade-offs vs. Referenzmodelle",
+          "",
+          "Vergleichsrahmen: **Matrix embedded**, ~1860 Handelstage (siehe `evidence/canonical_model_comparison.md`).",
+          "",
+          "| Referenz | Rolle | Typischer Trade-off vs. R3 |",
+          "|----------|-------|------------------------------|",
+          "| **R0_LEGACY_ENSEMBLE** | Prim\u00e4r-Benchmark | H\u00f6herer Matrix-Sharpe, weniger Risk-off-Spezialisierung |",
+          "| **M1_MOM_BLEND_MATCHED_CONTROLS** | Kontroll-Variante | Nahe R0-Sharpe, \u201ematched controls\u201c ohne R3-Rescue-Logik |",
+          "| **R2 / R4** | Matrix-Geschwister | Leicht andere Risk-off-/Exit-Parameter |",
+          "\u2026 (gek\u00fcrzt \u2014 vollst\u00e4ndig in control/champion_decision_charter.md)"
+        ],
+        "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+        "last_signal_date": "2026-06-09",
+        "last_signal_source": "latest_target_portfolio.csv",
+        "charter_ref": "control/champion_decision_charter.md",
+        "strategic_decision": "M9_R0_GOVERNANCE_WITH_H1_EXPERIMENTAL_SIGNAL"
+      },
+      "h3_rebalance_precheck": {
+        "status": "WARN",
+        "lines_de": [
+          "Rebalance-Vorcheck (read-only, keine T212-POSTs)",
+          "Planning-Cash: 678.52 EUR",
+          "Roh-Summe BUY (vor Welle): 470.00 EUR",
+          "Skaliert (nach Welle): 469.95 EUR",
+          "Scale-Faktor: 1.0",
+          "Quote-Coverage (geplante K\u00e4ufe): 0/15 Kurse",
+          "Geplante BUY-Orders: 15",
+          "Hinweis: Nur 0/15 Live-Kurse f\u00fcr geplante K\u00e4ufe \u2014 Rebalance blockiert. Fehlend: OMC, PFE, CHTR, EPAM, GM, GHC, TDY, GR (+7). Bitte \u00abAktualisieren\u00bb (F5) oder US-Session warten.",
+          "",
+          "Top-Positionen (nach Skalierung):",
+          "  OMC: 31.33 EUR",
+          "  PFE: 31.33 EUR",
+          "  CHTR: 31.33 EUR",
+          "  EPAM: 31.33 EUR",
+          "  GM: 31.33 EUR",
+          "  GHC: 31.33 EUR",
+          "  TDY: 31.33 EUR",
+          "  GR: 31.33 EUR",
+          "  APD: 31.33 EUR",
+          "  NWSA: 31.33 EUR",
+          "  DNR: 31.33 EUR",
+          "  BHI: 31.33 EUR",
+          "  \u2026 +3 weitere"
+        ],
+        "planning_cash_eur": 678.52,
+        "cash_cap_ok": true,
+        "quote_coverage_ok": false,
+        "quote_coverage_label_de": "0/15 Kurse",
+        "blocked_symbols": [],
+        "planned_buy_count": 15,
+        "scale_factor": 1.0
+      },
+      "h4_pointer_drift": {
+        "status": "FAIL",
+        "drift_detected": true,
+        "failsafe_active": true,
+        "failsafe_banner_de": "FAILSAFE: Challenger-Pointer weicht von R0_LEGACY_ENSEMBLE ab \u2014 keine Promotion / kein Champion-Wechsel.",
+        "locked_champion": "R0_LEGACY_ENSEMBLE",
+        "mismatches": [
+          {
+            "source": "control/challenger_report.json",
+            "value": "R3_w075_q065_noexit",
+            "status": "OK"
+          },
+          {
+            "source": "model_output_sp500_pit_t212/challenger_report.json",
+            "value": "R3_w075_q065_noexit",
+            "status": "OK"
+          }
+        ],
+        "observations": [
+          {
+            "source": "control/challenger_report.json",
+            "value": "R3_w075_q065_noexit",
+            "status": "OK"
+          },
+          {
+            "source": "model_output_sp500_pit_t212/challenger_report.json",
+            "value": "R3_w075_q065_noexit",
+            "status": "OK"
+          },
+          {
+            "source": "model_output_sp500_pit_t212/latest_validated_run.json",
+            "value": "R0_LEGACY_ENSEMBLE",
+            "status": "OK"
+          }
+        ],
+        "lines_de": [
+          "Locked Champion (Policy): R0_LEGACY_ENSEMBLE",
+          "Pointer-Drift: JA \u2014 FAILSAFE",
+          "",
+          "Beobachtete Pointer:",
+          "  control/challenger_report.json: R3_w075_q065_noexit *** DRIFT ***",
+          "  model_output_sp500_pit_t212/challenger_report.json: R3_w075_q065_noexit *** DRIFT ***",
+          "  model_output_sp500_pit_t212/latest_validated_run.json: R0_LEGACY_ENSEMBLE"
+        ]
+      },
+      "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+      "pointer_drift_active": true,
+      "failsafe_banner_de": "FAILSAFE: Challenger-Pointer weicht von R0_LEGACY_ENSEMBLE ab \u2014 keine Promotion / kein Champion-Wechsel.",
+      "last_signal_date": "2026-06-09"
+    },
+    "executive_overview": {
+      "active_champion": "UNKNOWN",
+      "champion_status": "CHAMPION STATUS MISSING OR CONFLICTING",
+      "champion_blocked_for_safety": true,
+      "expected_champion": "R0_LEGACY_ENSEMBLE",
+      "candidate": "UNKNOWN",
+      "control_reference": "UNKNOWN",
+      "manifest_status": "EXPERIMENT MANIFEST MISSING OR CONFLICTING",
+      "manifest_blocked_for_safety": true,
+      "evidence_stage": "BACKTESTED",
+      "evidence_stage_summary": "Current verified stage: BACKTESTED. No reviewed forward, shadow or paper readiness established.",
+      "source_classification": "PREEXISTING_UNREVIEWED",
+      "promotion_eligible_display": "NO",
+      "paper_eligible_display": "NO",
+      "real_money_eligible_display": "NO"
+    },
+    "controller_state": {
+      "display": "VERIFIED",
+      "blocked_for_safety": false,
+      "block_reasons": [],
+      "lifecycle_message": "DECISION COCKPIT AVAILABLE FOR MANUAL REVIEW\nNO OPERATIONAL AUTHORIZATION\nAuthoritative Review State: Manual read-only review only",
+      "current_executed_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+      "expected_next_phase": "NONE",
+      "authorized_phase": "",
+      "current_running_phase": null,
+      "execution_status": "AWAITING_EXTERNAL_REVIEW",
+      "next_phase_authorized": false,
+      "next_phase_authorized_display": "NO"
+    },
+    "safety_automation": {
+      "AUTO_RESEARCH": "DISABLED",
+      "AUTO_PROMOTE_PAPER": "DISABLED",
+      "AUTO_PROMOTE_SIGNAL": "DISABLED",
+      "AUTO_EXECUTE_REAL_MONEY": "DISABLED",
+      "hooks_status": "UNKNOWN",
+      "hooks_schema_valid": false,
+      "hooks_schema_error": "invalid_version",
+      "system_health": "OK",
+      "last_known_good_available": true,
+      "controller_status": "AWAITING_EXTERNAL_REVIEW",
+      "current_executed_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+      "last_sealed_review": {
+        "phase_id": "V5R_READ_ONLY_STANDALONE_EXE_REBUILD_AND_AUDIT_REPAIR",
+        "review_zip": "codex_v5r_standalone_exe_review.zip",
+        "review_zip_sha256": "b0e687522cdb7a5966b872756e3df97ba62a676ab0f3a8aa01acaf7b4eadffc3",
+        "external_sealed": true,
+        "sealed_by": "EXTERNAL_REVIEW_APPROVAL_FINAL.md"
+      },
+      "safety_banner": "SAFETY STATUS UNKNOWN OR CONFLICTING",
+      "safety_warnings": [
+        "CURSOR HOOKS ACTIVE OR UNVERIFIED",
+        "BLOCKED FOR SAFETY"
+      ],
+      "automation_blocked_for_safety": false,
+      "hooks_blocked_for_safety": true
+    },
+    "evidence_ladder": {
+      "stages": [
+        {
+          "stage": "IDEA",
+          "status": "REACHED",
+          "blocker": null
+        },
+        {
+          "stage": "BACKTESTED",
+          "status": "CURRENT",
+          "blocker": null
+        },
+        {
+          "stage": "ROBUSTNESS_CHECKED",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "SHADOW_RUNNING",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "SHADOW_PASSED",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "PAPER_RUNNING",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        },
+        {
+          "stage": "PAPER_CANDIDATE",
+          "status": "NOT_REACHED",
+          "blocker": "CHALLENGER_TURNOVER_NOT_VERIFIED"
+        }
+      ],
+      "summary": "Current verified stage: BACKTESTED. No reviewed forward, shadow or paper readiness established."
+    },
+    "why_not_promoted": {
+      "explanatory_reasons": [
+        "Challenger-specific turnover is not verified.",
+        "Cost Stress Gate is not passed.",
+        "Deflated Sharpe Ratio is below required confidence.",
+        "Robustness evidence is partial only.",
+        "P9 is not externally reviewed as Shadow/Paper readiness.",
+        "Shadow activation has not been externally approved.",
+        "Paper activation has not been externally approved.",
+        "Automatic promotion is disabled.",
+        "Real-money execution is disabled."
+      ],
+      "current_active_blockers": [
+        "CHALLENGER_TURNOVER_NOT_VERIFIED",
+        "COST_STRESS_GATE_NOT_PASSED",
+        "COST_STRESS_NOT_PASSED",
+        "DSR_BELOW_REQUIRED_CONFIDENCE",
+        "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False",
+        "FORWARD_MONITORING_NOT_EXTERNALLY_APPROVED",
+        "MULTIPLE_TESTING_NOT_PASSED",
+        "P9_NOT_EXTERNALLY_REVIEWED",
+        "PAPER_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+        "ROBUSTNESS_NOT_PASSED",
+        "SHADOW_ACTIVATION_NOT_EXTERNALLY_APPROVED",
+        "SHADOW_EVIDENCE_NOT_EXTERNALLY_REVIEWED"
+      ],
+      "source_conflicts": [
+        "ECONOMIC_VALUE_GATE source conflict: auto_promotion_status=True, promotion_status=False",
+        "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False"
+      ]
+    },
+    "cost_stress_robustness": {
+      "cost_stress_status": "NOT_EVALUABLE",
+      "cost_stress_pass": false,
+      "cost_stress_blocker": "BASELINE_COST_TREATMENT_NOT_VERIFIED:M1_MOM_BLEND_MATCHED_CONTROLS",
+      "proxy_label": "NOT_GATE_EVIDENCE",
+      "dsr_probability": null,
+      "dsr_required_probability": 0.95,
+      "dsr_status": "NOT_EVALUABLE",
+      "pbo_status": "NOT_EVALUABLE",
+      "subperiod_screen_pass": false,
+      "robustness_status": "NOT_EVALUABLE",
+      "robustness_pass": false
+    },
+    "monitoring": {
+      "forward": {
+        "status": "BLOCKED",
+        "display": "BLOCKED",
+        "evidence_missing": false,
+        "activation_status": "BLOCKED"
+      },
+      "shadow": {
+        "status": "UNKNOWN \u2014 BLOCKED FOR SAFETY",
+        "display": "UNKNOWN \u2014 BLOCKED FOR SAFETY",
+        "evidence_missing": true,
+        "missing_fields": [
+          "activation_externally_approved",
+          "shadow_collection_started",
+          "promotion_allowed",
+          "paper_eligible",
+          "real_money_eligible"
+        ],
+        "shadow_collection_started": null
+      },
+      "paper": {
+        "status": "UNKNOWN \u2014 BLOCKED FOR SAFETY",
+        "display": "UNKNOWN \u2014 BLOCKED FOR SAFETY",
+        "evidence_missing": true,
+        "missing_fields": [
+          "activation_externally_approved",
+          "operative_jobs_started",
+          "paper_simulation_started",
+          "promotion_allowed",
+          "paper_eligible"
+        ],
+        "paper_simulation_started": null
+      },
+      "data_requirements_present": true
+    },
+    "experiment_registry": {
+      "experiment_id": "EXP_INITIAL_MOM_63_TOP12",
+      "candidate": null,
+      "champion_reference": null,
+      "control_reference": null,
+      "status": null,
+      "evidence_stage": null,
+      "display": "UNKNOWN \u2014 BLOCKED FOR SAFETY",
+      "status_message": "EXPERIMENT MANIFEST MISSING OR CONFLICTING",
+      "provenance_blockers": [
+        "COST_STRESS_NOT_EVALUATED",
+        "P9_NOT_EXTERNALLY_REVIEWED"
+      ],
+      "source_status": "OK",
+      "blocked_for_safety": true
+    },
+    "audit_review_chain": {
+      "chain": "V1 -> V1R -> V1R2 -> V1R3 -> V2 -> V2R -> V3 -> V4 -> V4R -> V4R2 -> V4R3 -> V5 -> V5R",
+      "reviews": [
+        {
+          "phase_id": "V1_EVIDENCE_DATA_CONTRACTS_AND_GATED_CASCADE_FOUNDATION",
+          "review_zip": "codex_v1_evidence_and_cascade_review.zip",
+          "review_zip_sha256": "403c9a5c3660db6c6ae5b7d1582f6029add22b7fd2569c7c6e81dd997bb6d283",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "V1R_EVIDENCE_AND_CONTROLLER_HARDENING",
+          "review_zip": "codex_v1r_evidence_controller_review.zip",
+          "review_zip_sha256": "6033ad04a87a8cd7315743f73bc109461abe45be74f697c4efc75abbb92184b4",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V1R2.md"
+        },
+        {
+          "phase_id": "V1R2_REVIEW_CHAIN_AND_FAIL_CLOSED_SEALING",
+          "review_zip": "codex_v1r2_review_chain_review.zip",
+          "review_zip_sha256": "595d5fc0f5cf8d399ef5ba066fdb9973994aa46e94c3740960ea08c7a5921017",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V1R3.md"
+        },
+        {
+          "phase_id": "V1R3_AUTHORIZED_COMPLETION_GATE",
+          "review_zip": "codex_v1r3_authorized_completion_review.zip",
+          "review_zip_sha256": "62428f7ef13af102e25e834ab391b30d1cda0e86955e0d5b2edcc3cab875659a",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V2.md"
+        },
+        {
+          "phase_id": "V2_COST_STRESS_AND_ROBUSTNESS_ENGINE",
+          "review_zip": "codex_v2_robustness_review.zip",
+          "review_zip_sha256": "3ac4b5048b60ff72d826535968fb23b10102d07e2fdc63e7d09725a0402f5a94",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V2R.md"
+        },
+        {
+          "phase_id": "V2R_COST_STRESS_AND_STATISTICAL_VALIDITY_REMEDIATION",
+          "review_zip": "codex_v2r_statistical_validity_review.zip",
+          "review_zip_sha256": "46005fd19828e5ac43e4e28c4c5709aa5b3051936be34e03797ba6c4ba8a0bdf",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V3.md"
+        },
+        {
+          "phase_id": "V3_CONTROLLED_FORWARD_MONITORING_FOUNDATION",
+          "review_zip": "codex_v3_monitor_foundation_review.zip",
+          "review_zip_sha256": "1a18b63ea3258d0761be168ee74e2093cb992a212aa5ee433ab3e4546886abb4",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4.md"
+        },
+        {
+          "phase_id": "V4_DECISION_COCKPIT_GUI_INTEGRATION",
+          "review_zip": "codex_v4_gui_review.zip",
+          "review_zip_sha256": "75808571c9cf44a2b58cc1dd85bff4d84640a4ccafd2bda61d09fd5622f28037",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4R.md"
+        },
+        {
+          "phase_id": "V4R_FAIL_CLOSED_GUI_AND_REVIEW_EVIDENCE_REMEDIATION",
+          "review_zip": "codex_v4r_gui_safety_review.zip",
+          "review_zip_sha256": "9ad800492a7662c7d5ecae35858312333f7c84885b36f5b0a8e06c6427a91a4f",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4R2.md"
+        },
+        {
+          "phase_id": "V4R2_FINAL_FAIL_CLOSED_BUILD_GATE",
+          "review_zip": "codex_v4r2_final_gui_gate_review.zip",
+          "review_zip_sha256": "93946db8aa0bd40a5f007e3ec8739579d8f227a74719ac2141a3e68d7807e14d",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V4R3.md"
+        },
+        {
+          "phase_id": "V4R3_FINAL_UI_STATE_AND_HOOK_SCHEMA_GATE",
+          "review_zip": "codex_v4r3_final_build_gate_review.zip",
+          "review_zip_sha256": "ea345927f370bd8cf0807b77addd7a2413025af8cf89ebb32e3b3b828b070999",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V5.md"
+        },
+        {
+          "phase_id": "V5_WINDOWS_EXE_BUILD_AND_VERIFICATION",
+          "review_zip": "codex_v5_exe_build_review.zip",
+          "review_zip_sha256": "f4c7d1de3b91f8aff8b6f7ee95a968f21518e2c3a799a78ab380e0fb80355245",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_V5R.md"
+        },
+        {
+          "phase_id": "V5R_READ_ONLY_STANDALONE_EXE_REBUILD_AND_AUDIT_REPAIR",
+          "review_zip": "codex_v5r_standalone_exe_review.zip",
+          "review_zip_sha256": "b0e687522cdb7a5966b872756e3df97ba62a676ab0f3a8aa01acaf7b4eadffc3",
+          "external_sealed": true,
+          "sealed_by": "EXTERNAL_REVIEW_APPROVAL_FINAL.md"
+        },
+        {
+          "phase_id": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+          "review_zip": "",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0_AUTHORIZATION_SOURCE_CONFLICT_REMEDIATION",
+          "review_zip": "codex_g0_authorization_conflict_remediation_review.zip",
+          "review_zip_sha256": "09adac3cef01ef61faa716c39f751c39cab39ef5289ed5523d81af831b132130",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G1_READ_ONLY_CHALLENGER_COST_EVIDENCE_PREPARATION",
+          "review_zip": "codex_g1_readonly_challenger_cost_evidence_submission.zip",
+          "review_zip_sha256": "50a26cd8a6a1c36db8d9fc30a82aeb743b241fbb73d51fb0a03d09c5a4644aeb",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R_AUTHORIZATION_AND_CHAMPION_LINEAGE_REMEDIATION_RESUBMISSION",
+          "review_zip": "codex_g0r_authorization_champion_lineage_remediation_review.zip",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R2_CLEAN_CHECKPOINT_AND_EVIDENCE_COMPLETENESS_REMEDIATION",
+          "review_zip": "codex_g0r2_clean_checkpoint_evidence_completeness_review.zip",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R3_FINAL_COMMIT_BOUND_PACKAGE_AND_MANIFEST_REMEDIATION",
+          "review_zip": "codex_g0r3_final_commit_bound_package_review.zip",
+          "review_zip_sha256": "PENDING_EXTERNAL_SEAL",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R4_DETACHED_ATTESTATION_AND_EXACT_BYTE_PACKAGE_BINDING_REMEDIATION",
+          "review_zip": "codex_g0r4_detached_attestation_exact_byte_package_review.zip",
+          "review_zip_sha256": "DETACHED_ATTESTATION_ONLY",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R4R_VERBATIM_EXTERNAL_REVIEW_CHAIN_RESUBMISSION",
+          "review_zip": "codex_g0r4r_verbatim_external_review_chain_resubmission.zip",
+          "review_zip_sha256": "DETACHED_ATTESTATION_ONLY",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "G0R4R2_VERBATIM_AUTHORITATIVE_BASELINE_RESUBMISSION",
+          "review_zip": "codex_g0r4r2_verbatim_authoritative_baseline_resubmission.zip",
+          "review_zip_sha256": "DETACHED_ATTESTATION_ONLY",
+          "external_sealed": false,
+          "sealed_by": null
+        },
+        {
+          "phase_id": "CHAMPION_EVIDENCE_GOVERNANCE_REMEDIATION_A_THROUGH_I",
+          "review_zip": "codex_champion_evidence_remediation_review.zip",
+          "review_zip_sha256": "ef4ed5cdc8210c18e4f2adcf321f3e678b4ac9f08c51a05185162b777b4b46c1",
+          "external_sealed": false,
+          "sealed_by": null
+        }
+      ],
+      "pending_external_branch_options": []
+    },
+    "source_health": {
+      "critical_sources": {
+        "promotion_gate_config.yaml": "OK",
+        "control/auto_promotion_status.json": "OK",
+        "control/promotion_status.json": "OK",
+        "control/system_health.json": "OK",
+        "control/last_known_good_state.json": "OK",
+        "control/evidence/current_evidence_status.json": "OK",
+        "control/evidence/cost_stress_status.json": "OK",
+        "control/evidence/robustness_status.json": "OK",
+        "control/evidence/multiple_testing_status.json": "OK",
+        "control/evidence/forward_monitoring_readiness_status.json": "OK",
+        "control/evidence/shadow_monitor_status.json": "OK",
+        "control/evidence/paper_monitor_status.json": "OK",
+        "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml": "OK"
+      },
+      "missing_sources": [],
+      "unparseable_sources": [],
+      "conflicts": [
+        "ECONOMIC_VALUE_GATE source conflict: auto_promotion_status=True, promotion_status=False",
+        "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False"
+      ],
+      "fail_closed": true,
+      "blocked_for_safety": true,
+      "champion_source_policy": [
+        "control/evidence/current_evidence_status.json",
+        "control/last_known_good_state.json",
+        "control/auto_promotion_status.json",
+        "model_output_sp500_pit_t212/latest_validated_run.json"
+      ]
+    },
+    "manifest_validation": {
+      "manifest_file_status": "MISSING",
+      "validation_pass": false,
+      "validation_errors": [
+        "MANIFEST_FIELD_MISSING:strategy_returns_hash"
+      ],
+      "validation_checks": {
+        "run_id": "PRESENT",
+        "variant": "PRESENT",
+        "created_at_utc": "PRESENT",
+        "runtime_mode": "PRESENT",
+        "output_dir": "PRESENT",
+        "source_commit": "PRESENT",
+        "config_snapshot_hash": "PRESENT",
+        "strategy_returns_hash": "MISSING",
+        "benchmark_report_hash": "PRESENT",
+        "constraint_history_hash": "PRESENT",
+        "cost_report_hash": "PRESENT",
+        "gate_status_hash": "PRESENT",
+        "evidence_stage": "PRESENT",
+        "promotion_allowed": "PRESENT",
+        "shadow_allowed": "PRESENT",
+        "paper_allowed": "PRESENT",
+        "real_money_allowed": "PRESENT",
+        "output_dir_exists": "OK",
+        "hash_config_snapshot_hash": "OK",
+        "hash_benchmark_report_hash": "OK",
+        "hash_constraint_history_hash": "OK",
+        "hash_cost_report_hash": "OK",
+        "validation_status": "FAIL"
+      },
+      "latest_verified_run_id": "model_output_sp500_pit_t212",
+      "variant": "R0_LEGACY_ENSEMBLE",
+      "evidence_stage": "BACKTESTED",
+      "stale_or_inconsistent": true
+    },
+    "gui_read_only": true,
+    "operative_ui_actions_allowed": false
+  },
+  "v5r_external_acceptance": "APPROVED_FOR_MANUAL_READ_ONLY_REVIEW"
+}

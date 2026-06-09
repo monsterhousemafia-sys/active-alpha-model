@@ -1,0 +1,79 @@
+{
+  "fixes_de": [
+    "bash tools/king_ops.sh series-ready --repair",
+    "bash tools/king_ops.sh r3-checklist",
+    "bash tools/king_ops.sh cockpit-update",
+    "bash tools/king_ops.sh gui-rebuild"
+  ],
+  "headline_de": "10 dokumentierte Lessons · 2 aktuelle Beobachtung(en)",
+  "inferred_de": [
+    "Serienreif trotz Warnung: Linux-Potenzial — kein harter Blocker",
+    "Checkliste PARTIAL: Einzel-Verkauf — klickbar, Bestätigung, T212 — dokumentieren, nicht als FAIL werten"
+  ],
+  "lessons_de": [
+    {
+      "action_de": "bash tools/king_ops.sh series-ready --repair startet Ollama via ensure_ollama_running",
+      "id": "series_blocker_not_r3_broken",
+      "lesson_de": "Serienreife 86 % bedeutet nicht „R3 kaputt“ — Blocker war king_local (Ollama offline), Stack/Mirror waren OK."
+    },
+    {
+      "action_de": "bash tools/king_ops.sh r3-checklist — maschinenlesbarer Scan",
+      "id": "no_formal_lhp",
+      "lesson_de": "Kein formales Lasten-/Pflichtenheft im Repo — SOLL aus Policies + control/r3_operational_checklist.json ableiten."
+    },
+    {
+      "action_de": "Trading-Kreislauf evidence/r3_trading_cycle_latest.json als Referenz",
+      "id": "id_consistency",
+      "lesson_de": "Checklisten-IDs müssen Kreislauf-IDs entsprechen (orders, nicht orders_gate)."
+    },
+    {
+      "action_de": "Erstes Element aus operator_commands_de — nie str(list) indexieren",
+      "id": "next_de_list_bug",
+      "lesson_de": "next_de mit str(list)[0] erzeugte „— [“ statt Operator-Befehl."
+    },
+    {
+      "action_de": "control/r3_runtime_profile.json — mirror_poll_ms 30000 ohne Safety zu ändern",
+      "id": "latency_is_poll_not_cpu",
+      "lesson_de": "Spürbare UI-Latenz kam von mirror_poll_ms (60 s), nicht von Mirror-Render (<15 ms)."
+    },
+    {
+      "action_de": "Reeval-Fixture oder echtes Portfolio mit SELL für Live-Nachweis",
+      "id": "sell_partial_not_fail",
+      "lesson_de": "sell_count=0 ist PARTIAL (kein Reeval-Verkauf), kein FAIL — UI+Merge+Tests sind vorhanden."
+    },
+    {
+      "action_de": "control/decision_cockpit_r3_bridge.json · vision_next_authorized bleibt false",
+      "id": "vision_not_r3_scope",
+      "lesson_de": "VISION V1–V4 EXE-Phasen ≠ R3-Web — Brücke synchronisiert Snapshot + König-Remaster, führt keine Phase aus."
+    },
+    {
+      "action_de": "bash tools/king_ops.sh cockpit-update — ein Befehl, fünf Schritte",
+      "id": "update_ok_three_gates",
+      "lesson_de": "cockpit-update ok nur wenn series_ready UND checklist_ok UND alle Update-Schritte grün."
+    },
+    {
+      "action_de": "sed -i 's/\\r$//' tools/*.sh vor erstem Aufruf",
+      "id": "crlf_shell_scripts",
+      "lesson_de": "CRLF in .sh bricht set -euo pipefail (Windows-Editoren)."
+    },
+    {
+      "action_de": "bash tools/king_ops.sh gui-rebuild",
+      "id": "king_builds_not_cursor",
+      "lesson_de": "GUI-Remaster und EXE-Optik — König 32B build-kernel, Cursor nur Bridge/Vasall."
+    }
+  ],
+  "ok": true,
+  "operator_de": "Lessons bei jedem cockpit-update aktualisiert — König liest evidence/decision_cockpit_update_lessons_latest.json",
+  "policy_ref": "control/decision_cockpit_r3_bridge.json",
+  "recorded_at_utc": "2026-06-08T07:37:13+00:00",
+  "schema_version": 1,
+  "snapshot_de": {
+    "checklist_ok": true,
+    "items": "37/37",
+    "readiness_pct": 100,
+    "series_ready": true,
+    "update_ok": true
+  },
+  "trigger_de": "cockpit-update",
+  "update_ref": "evidence/decision_cockpit_update_latest.json"
+}

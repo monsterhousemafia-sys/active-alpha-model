@@ -1,0 +1,9 @@
+{
+  "blocked_until_m1_sealed": [],
+  "current_execution_phase": "M3",
+  "execution_focus": "M2_COMPLETE_USER_GO_M3_PLUS",
+  "m1_sealed": true,
+  "program": "R0_LONG_TERM_MIGRATION",
+  "schema_version": 1,
+  "scope_doc": "docs/R0_MIGRATION_M1_ACTIVE_SCOPE.md"
+}

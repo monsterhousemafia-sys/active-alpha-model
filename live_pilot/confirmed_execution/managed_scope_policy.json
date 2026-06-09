@@ -1,0 +1,24 @@
+{
+  "authorized_capital_eur": 500.0,
+  "live_trading_active": true,
+  "managed_instruments": [
+    "AMD",
+    "CAT",
+    "CIEN",
+    "GLW",
+    "GOOG",
+    "GOOGL",
+    "INTC",
+    "LRCX",
+    "MU",
+    "ON",
+    "OXY",
+    "SNDK",
+    "STX",
+    "TXN",
+    "VRT",
+    "WDC"
+  ],
+  "reserve_eur": 0.0,
+  "updated_at_utc": "2026-06-06T00:20:49+00:00"
+}

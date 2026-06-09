@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Linux-Potenzial — lokal, schnell, König+NVMe+systemd",
+  "mission_de": "Volle Linux-Umgebung für R3: loopback-Hub, Cognitive Kernel v2, Ollama lokal, NVMe-Tier, Session-Autostart — fail-closed, keine Auto-Orders.",
+  "dimensions": [
+    {"id": "local_runtime", "label_de": "Lokal-first Runtime", "weight": 12},
+    {"id": "r3_stack", "label_de": "R3 Stack (/r3)", "weight": 14},
+    {"id": "cognitive_v2", "label_de": "Cognitive Kernel v2", "weight": 12},
+    {"id": "session_autostart", "label_de": "Login-Autostart R3", "weight": 10},
+    {"id": "ollama_local", "label_de": "Ollama lokal (32B)", "weight": 12},
+    {"id": "nvme_tier", "label_de": "NVMe Fast-Data", "weight": 14},
+    {"id": "gpu_ready", "label_de": "GPU/H1-Prep bereit", "weight": 10},
+    {"id": "maintain_ok", "label_de": "Linux Maintain", "weight": 8},
+    {"id": "lean_mode", "label_de": "Lean/Turbo aktiv", "weight": 8}
+  ],
+  "safe_apply_de": [
+    "apply_r3_local_first",
+    "repair_nvme_symlinks",
+    "apply_nvme_env",
+    "r3_sync",
+    "sync_timer_catalog",
+    "ensure_hub"
+  ],
+  "operator_d_de": "NVMe mount / apt: AA_OPERATOR_APPROVE_D=1 bash tools/linux_operator_system.sh",
+  "apply_cmd_de": "bash tools/king_ops.sh linux-potential"
+}

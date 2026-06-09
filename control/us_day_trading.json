@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "execution_window_mode": "full_session",
+  "open_burst_minutes": 45,
+  "pause_new_buys_minutes_before_close": 20,
+  "quote_refresh_seconds_open": 60,
+  "quote_refresh_seconds_preopen": 180,
+  "full_refresh_minutes_open": 5,
+  "full_refresh_minutes_closed": 30,
+  "reeval_minutes_open_early": 3,
+  "reeval_minutes_open": 5,
+  "suggest_enqueue_on_high_urgency": true
+}

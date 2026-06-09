@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "ACTIVE",
+  "track": "B_ACCELERATED",
+  "authorized_at_utc": "2026-06-05T18:00:00+00:00",
+  "authorized_by": "user explicit choice: Weg B (chat)",
+  "scope": "R0_LONG_TERM_MIGRATION_M3_M12",
+  "compressed_gates": {
+    "M5": "Gate matrix from M1-sealed validation_runs; waiver accepts research-grade evidence without live re-collection",
+    "M6": "Shadow PASS via historical/backtest replay (>=30 mature comparisons), not 30 calendar days live",
+    "M7": "Paper PASS via validation-run forward proxy (>=60 trading days in series), not 60 calendar days live",
+    "M10": "Stabilization COMPLETE via backtest stabilization summary in accelerated session",
+    "M9": "Champion change to R0_LEGACY_ENSEMBLE with EXTERNAL_REVIEW_APPROVAL file"
+  },
+  "forbidden_unchanged": [
+    "auto_promotion",
+    "real_money_execution",
+    "fabricated_integrity_pass_without_csv"
+  ],
+  "target_champion_after_m9": "R0_LEGACY_ENSEMBLE",
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "note": "Calendar gates replaced by frozen validation_runs + promotion_status replay. Each seal still requires artifact files."
+}

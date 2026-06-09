@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "approved_by": "user",
+  "approved_at_utc": "2026-06-06T20:25:00+00:00",
+  "headline_de": "Multi-Modell-Team für R3 Betriebssystem",
+  "anchor_de": "Cursor-Agent — Anker, Meilensteine 1+3, Integration",
+  "roles": [
+    {
+      "id": "cursor",
+      "label_de": "Cursor (Anker)",
+      "models_de": "Composer / Auto",
+      "scope_de": "Meilensteine 1+3: Login, Session, WM/Spaces — Architektur, Code, Integration"
+    },
+    {
+      "id": "ollama_chat",
+      "label_de": "Ollama Chat",
+      "models_de": "qwen2.5:14b",
+      "scope_de": "Entfaltungsraum Freitext, Chat-Agent, Architektur light"
+    },
+    {
+      "id": "ollama_coder",
+      "label_de": "Ollama Coder",
+      "models_de": "qwen2.5-coder:32b (max) · Fallback 14B/7B",
+      "scope_de": "Entfaltungsraum /bau — max GPU RTX 3090, 12 Schritte"
+    },
+    {
+      "id": "cloud",
+      "label_de": "Cloud-Berater",
+      "models_de": "gpt-4o / gpt-4o-mini",
+      "scope_de": "UX/Architektur-Review vor großen Schritten (/kombi, /tipp)"
+    },
+    {
+      "id": "h1_ml",
+      "label_de": "H1 ML",
+      "models_de": "DAILY_ALPHA_H1",
+      "scope_de": "Parallel laufen lassen bis Seal — nicht anfassen"
+    },
+    {
+      "id": "federation",
+      "label_de": "Federation",
+      "models_de": "Worker-Pool",
+      "scope_de": "Schwere Batch-Jobs (optional) über /join"
+    }
+  ],
+  "workflow_de": "Cursor führt → Cloud-Review bei großen Schritten → Ollama testet → H1 parallel → Federation optional"
+}

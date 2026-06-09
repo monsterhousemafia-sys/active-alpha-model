@@ -1,0 +1,68 @@
+{
+  "commands_de": [
+    "bash tools/king_ops.sh local-control status",
+    "bash tools/king_ops.sh local-control repair",
+    "bash tools/king_ops.sh worker-stability",
+    "bash tools/king_ops.sh spread verify"
+  ],
+  "controller": "cursor_local",
+  "headline_de": "Lokale Kontrolle aktiv — Hub, Tunnel, Worker unter king_ops",
+  "join_url": "https://dans-served-herald-guns.trycloudflare.com",
+  "layer_de": "Schicht 4 — lokale Runtime-Kontrolle (Hub/Tunnel/Worker)",
+  "linger": "yes",
+  "next_de": "bash tools/king_ops.sh tunnel-stable setup",
+  "ok": true,
+  "schema_version": 1,
+  "spread_verify": {
+    "ok": true,
+    "passed": 6,
+    "total": 6
+  },
+  "tunnel_stable": false,
+  "unit_actions": [
+    {
+      "action": "ok",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-preview-hub.service"
+    },
+    {
+      "action": "ok",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-remote-tunnel.service"
+    },
+    {
+      "action": "ok",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-preview-worker.service"
+    },
+    {
+      "action": "ok",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-runtime-api.service"
+    },
+    {
+      "action": "enable",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-tunnel-stable.timer"
+    },
+    {
+      "action": "enable",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-spread-tick.timer"
+    },
+    {
+      "action": "enable",
+      "active": "active",
+      "ok": true,
+      "unit": "active-alpha-evidence-watch.timer"
+    }
+  ],
+  "updated_at_utc": "2026-06-08T15:25:04+00:00",
+  "workers_online": 2
+}

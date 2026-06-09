@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 Betrieb — ohne Cursor",
+  "cursor_runtime_required": false,
+  "operator_primary_de": "bash tools/king_ops.sh · alpha-model-agent · http://127.0.0.1:17890/r3",
+  "king_primary_de": "König 32B baut autonom — /bau · r3-bau · build-kernel · pulse",
+  "autonomous_build_ref": "control/king_32b_autonomous_build.json",
+  "vasall_scope_de": "Nur Schicht 4 — Code-Diff wenn König /cursor anfrage stellt",
+  "autonomous_stack_de": [
+    "systemd active-alpha-preview-hub.service",
+    "autostart r3-os-session.desktop",
+    "tools/r3_post_login_hook.sh",
+    "tools/linux_boot_services.sh",
+    "analytics/stack_integrity repair_stack"
+  ],
+  "operator_commands_de": [
+    "bash tools/king_ops.sh r3-detach",
+    "bash tools/king_ops.sh r3-sync",
+    "bash tools/king_ops.sh series-ready",
+    "bash tools/r3_cockpit.sh",
+    "bash tools/alpha_model_agent.sh"
+  ],
+  "forbidden_runtime_de": [
+    "Cursor Session-Autopilot",
+    "Cursor hooks für R3-Start",
+    "Manuelles Cache-Pflegen in der IDE für Normalbetrieb"
+  ]
+}

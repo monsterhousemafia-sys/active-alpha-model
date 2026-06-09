@@ -1,0 +1,10 @@
+{
+  "active_champion": "R0_LEGACY_ENSEMBLE",
+  "generated_at_utc": "2026-06-05T15:39:08+00:00",
+  "mode": "ACCELERATED_BACKTEST_STABILIZATION",
+  "note": "Stabilization window compressed: canonical refresh verified against M1/M5 artifacts in single session.",
+  "phase": "M10",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "waiver_ref": "control/r0_migration/migration_time_gate_waiver.json"
+}

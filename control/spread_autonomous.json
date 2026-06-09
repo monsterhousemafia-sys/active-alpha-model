@@ -1,0 +1,17 @@
+{
+  "autonomous_spread_enabled": true,
+  "invariants_de": [
+    "Kein Echtgeld · keine Auto-Orders ohne Operator-Bestätigung",
+    "Spread nur eigene WhatsApp · join_token Pflicht",
+    "Safety-Flags bleiben false"
+  ],
+  "operator_stock_veto": true,
+  "paused": false,
+  "preflight_required": true,
+  "released_at_utc": "2026-06-08T12:45:00+00:00",
+  "released_by_de": "Operator — Spread autonom freigegeben; letztes Wort bei Aktien bleibt beim Operator",
+  "reward_message_de": "Jeder mit CPU verdient mit — kollektive Rechenleistung, offenes Research, kein Abo.",
+  "schema_version": 1,
+  "whatsapp_auto_on_tick": true,
+  "worker_daemon_ensure": true
+}

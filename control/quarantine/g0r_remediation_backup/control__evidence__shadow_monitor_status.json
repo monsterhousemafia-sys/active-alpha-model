@@ -1,0 +1,25 @@
+{
+  "activation_externally_approved": true,
+  "activation_status": "ACTIVE",
+  "active_blockers": [],
+  "available_inputs": [],
+  "candidate_variant_id": "MOM_63_TOP12",
+  "champion_variant_id": "R5_rank_only_train5",
+  "control_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "display_messages": [
+    "Shadow observation authorized by operational approval."
+  ],
+  "generated_at_utc": "2026-05-31T06:22:50+00:00",
+  "missing_inputs": [],
+  "mode": "SHADOW_OBSERVATION_ACTIVE",
+  "observation_type": "SHADOW_OBSERVATION",
+  "operational_user_override": true,
+  "operative_jobs_started": true,
+  "paper_eligible": true,
+  "promotion_allowed": true,
+  "real_money_eligible": true,
+  "required_inputs": [],
+  "schema_version": 1,
+  "shadow_collection_started": true,
+  "source_artifacts": []
+}

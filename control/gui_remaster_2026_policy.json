@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "edition_de": "Remaster 2026",
+  "owner_de": "König 32B (build-kernel) — nicht Cursor",
+  "primary_hub_path": "/r3",
+  "primary_surface_de": "Exec-Spiegel: Ergebnisse + Auftrag-Button (EXEC_MIRROR_ONLY)",
+  "cursor_role_de": "Vasall: keine optischen Diffs — nur Evidence/Bridge bei König-Anfrage",
+  "design_ref": "control/r3_surface_identity.json",
+  "theme_module": "analytics/r3_surface_theme.py",
+  "cache_module": "analytics/desktop_shell_cache.py",
+  "invariants_de": [
+    "Ein Look: Typo, Farben, Nav, Kacheln — überall gleich (R3_CSS_ROOT / r3_surface_theme)",
+    "Hub-HTML + Qt-native — kein zweites paralleles Design-System",
+    "/desktop bleibt schnell: render_desktop_shell_page(fast=True) + desktop_shell_cache",
+    "Safety unverändert: fail-closed, dry_run, keine Orders, keine auto_promote Flags aktivieren",
+    "Cursor baut die GUI nicht — nur König 32B via build-kernel"
+  ],
+  "forbidden_de": [
+    "Zweites CSS-Framework neben r3_surface_theme",
+    "evaluate_ubuntu_closure oder build_launch_status im /desktop-Render-Pfad",
+    "auto_execute_real_money_enabled=true",
+    "Champion-Wechsel oder produktive Signalgewichte ohne externe Freigabe"
+  ],
+  "mandatory_modules": [
+    "analytics/r3_surface_theme.py",
+    "analytics/r3_exec_mirror.py",
+    "analytics/r3_trading_functions.py",
+    "analytics/preview_hub_page.py",
+    "analytics/desktop_shell_cache.py",
+    "analytics/gui_preview_visual.py",
+    "aa_dashboard_qt_window.py"
+  ],
+  "mandatory_tests": [
+    "tests/test_gui_remaster_2026_policy.py",
+    "tests/test_desktop_shell_cache.py",
+    "tests/test_preview_hub.py",
+    "tests/test_gui_preview_visual.py"
+  ],
+  "finish_gate_de": "finish nur wenn: pytest tests/test_gui_remaster_2026_policy.py -q grün UND evidence/gui_remaster_acceptance_latest.json ok=true",
+  "king_command_de": "bash tools/king_ops.sh gui-rebuild"
+}

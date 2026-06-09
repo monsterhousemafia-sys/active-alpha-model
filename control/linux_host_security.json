@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-05T18:30:00+00:00",
+  "purpose": "Secure split: Linux compute vs execution hosts",
+  "end_state": {
+    "linux_compute": "WSL headless — signals, backtests, EOD predict, migration — no broker POST",
+    "linux_native_app": "Ubuntu desktop — Marktanalyse GUI + Pilot Day Trading (run_marktanalyse_linux.sh)",
+    "windows": "Marktanalyse.exe, T212 credentials (DPAPI), manual order confirmation"
+  },
+  "native_app_entry": "run_marktanalyse_linux.sh",
+  "native_app_module": "execution/linux_security_boundary.py",
+  "linux_defaults": {
+    "AA_EXECUTION_DRY_RUN": "1",
+    "AA_P17_REVIEW_MODE_NO_LIVE_NETWORK_SUBMISSION": "1",
+    "AA_NO_LIVE_ORDER_SUBMISSION": "1",
+    "AA_LINUX_COMPUTE_HOST": "1"
+  },
+  "linux_live_orders": {
+    "allowed": false,
+    "override_env": "AA_LINUX_ALLOW_LIVE_ORDERS=1",
+    "override_note": "Do not set unless external real-money approval + Linux credential store exists"
+  },
+  "credentials": {
+    "windows": "DPAPI + optional keyring",
+    "linux": "env injection for read-only sync only; no DPAPI import",
+    "future": "keyring + Secret Service documented in setup_wsl_host.sh"
+  },
+  "canonical_linux_compute_entry": "bash tools/wsl_conductor.sh",
+  "canonical_linux_native_entry": "bash run_marktanalyse_linux.sh",
+  "canonical_windows_entry": "run_live_trading_start.bat --exe",
+  "operator_scope": "control/linux_operator_scope.json",
+  "operator_levels_approved": ["A", "B", "C", "D"],
+  "operator_note_de": "A–C autonom via ai_kernel; D nur mit expliziter Freigabe pro Aktion (apt/reboot/nvme). E (Vollauto/Rennwagen) nicht freigegeben."
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-07T02:12:00+00:00",
+  "headline_de": "Alpha Model — 80% OS · 95% Launch · H1 1865/1866",
+  "summary_de": "Remaster + Cursor-Layer entfernt. H1 Path-Sim 99,9% — Seal sobald strategy_daily_returns.csv da ist. Montag: Pilot.",
+  "implemented": {
+    "phase_a": {"percent": 100, "items": ["Fusion UI", "Power/Updates", "Native Apps", "Bau /bau Fallback", "Cockpit Vollbild"]},
+    "phase_b": {"percent": 80, "done": 4, "total": 5, "items_done": ["Login/Session", "Native Suite", "WM/Spaces", "Pakete/Updates"], "items_open": ["H1-Seal integriert"]},
+    "migration": {"checks": "13/13", "chat_archive": 400, "cursor_required": false, "tunnel": true, "orchestrator_fast": true},
+    "cognitive_kernel_v2": true,
+    "local_ki": {"ollama": "qwen2.5:7b", "active-alpha-chat": true, "primary": "r3_ki", "unfolded": true, "learn_score": "63/100"},
+    "launch_progress_pct": 95,
+    "preview": "21/21"
+  },
+  "open_build": [
+    {"id": "h1_seal", "priority": 1, "eta_de": "2026-06-08 Montag", "command": "h1-status → h1-finish"},
+    {"id": "public_launch", "priority": 2, "blocked_by": "h1_sealed"},
+    {"id": "tunnel_stable", "priority": 3, "command": "bash tools/setup_cloudflare_tunnel_token.sh"},
+    {"id": "offline_pricefeed", "priority": 4, "note_de": "OHLCV vor US-Handel"},
+    {"id": "ready_snapshot", "priority": 5, "status": "PASS", "note_de": "evidence/ai_kernel_ready_latest.json ready=true"},
+    {"id": "hub_zombie_68300", "priority": 5, "note_de": "Alter Hub-PID — Operator: kill -9 68300 im echten Terminal"},
+    {"id": "phase_b_100", "priority": 6, "blocked_by": "h1_sealed"},
+    {"id": "evolve_sport_plus", "priority": 7, "blocked_by": "h1_sealed", "command": "ai_kernel evolve"}
+  ],
+  "deprecated_not_build": ["r3_build_kernel Nachbau", "r3_build_channel", "paralleler Cursor-Klon"],
+  "next_build_commands_de": [
+    "python3 tools/ai_kernel.py cognitive-scheduler",
+    "python3 tools/ai_kernel.py learn",
+    "python3 tools/ai_kernel.py warnings",
+    "python3 tools/ai_kernel.py h1-status"
+  ]
+}

@@ -1,0 +1,75 @@
+Active Alpha Model Package - Clean Updated Core
+Generated: 2026-05-28
+
+Purpose
+- Single-model Active Alpha Core configuration focused on SPY outperformance.
+- Stage-5 infrastructure retained, but default portfolio logic is now alpha-return oriented.
+
+Key model defaults
+- top_k = 15
+- max_position = 0.12
+- max_issuer = 0.15
+- max_sector = 0.55
+- beta_cap_mode = dynamic
+- dynamic_beta_risk_off = 1.10
+- dynamic_beta_normal = 1.25
+- dynamic_beta_risk_on = 1.40
+- dynamic_beta_strong = 1.50
+- cluster_constraint_mode = static_only
+- cluster_mode = dynamic_diagnostic
+- static_cluster_cap = 0.40
+- dynamic_cluster_cap = 0.50 diagnostic/default non-binding unless explicitly enforced
+- cash_filler_mode = benchmark_completion
+- benchmark_completion_ticker = SPY
+- benchmark_completion_max_weight = 0.25
+- max_gross_exposure = 1.00
+
+Contained files
+- active_alpha_model.py
+- paper_trading_engine.py
+- active_alpha_control_center.py
+- check_active_alpha_core.py
+- build_sp500_membership_wikipedia.py
+- run_robustness_tests.py
+- requirements_active_alpha.txt
+- active_alpha_settings.bat
+- active_alpha_user_config.bat
+- load_active_alpha_config.bat
+- show_active_alpha_config.bat
+- setup_active_alpha_env.bat
+- run_active_alpha_model.bat
+- run_paper_trading.bat
+- run_active_alpha_control_center.bat
+- run_active_alpha_settings_wizard.bat
+- run_build_sp500_membership.bat
+- run_robustness_tests.bat
+- run_paper_status.bat
+- run_paper_mark_to_market.bat
+- run_paper_cashflow.bat
+- 1_daily_mark_to_market.bat
+- 2_rebalance_when_due.bat
+- 3_book_cashflow.bat
+- README_ACTIVE_ALPHA.md
+- PACKAGE_MANIFEST.txt
+- file_hashes.json
+
+Not included by design
+- .venv
+- ticker_membership.csv
+- asset_master.csv
+- model_output* folders
+- paper_output
+- control_output
+
+Run order
+1. setup_active_alpha_env.bat
+2. run_build_sp500_membership.bat, if ticker_membership.csv is missing
+3. run_active_alpha_model.bat
+
+
+Multi-Core Pipeline Patch
+-------------------------
+- active_alpha_model.py supports --n-jobs and --parallel-backtest-backend.
+- Parallelized stage: walk-forward ML training/prediction/initial target construction.
+- Serial stage remains unchanged: buy/hold spread, turnover controls, tail pruning, execution costs, and portfolio path simulation.
+- Defaults: AA_N_JOBS=auto, AA_PARALLEL_BACKTEST_BACKEND=thread.

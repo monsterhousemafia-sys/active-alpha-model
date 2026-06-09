@@ -1,0 +1,75 @@
+{
+  "agent_role_de": "Auto — Mandat, Kontext, ai_kernel, Evidence; kein Echtgeld ohne GUI",
+  "config_refs": [
+    "control/alpha_model_agent_home.json",
+    "control/alpha_model_human_interface.json",
+    "control/r3_continuity.json",
+    "control/agent_mandate.json"
+  ],
+  "deprecated_channels_de": [
+    "Cursor IDE als Pflicht-Chat",
+    "Parallele Cloud-Composer-Gates",
+    "Multitask-Subagenten ohne Operator-Befehl"
+  ],
+  "entry_points": [
+    {
+      "command": "alpha-model-agent",
+      "id": "terminal_agent",
+      "label_de": "Terminal Entfaltungsraum (einziger Kanal)",
+      "local_only": false,
+      "priority": 1
+    },
+    {
+      "id": "cockpit_desktop",
+      "label_de": "Cockpit Runtime (Status, Handel)",
+      "note_de": "Nicht der Entfaltungsraum — nur Runtime-Oberfläche",
+      "priority": 2,
+      "url": "http://127.0.0.1:17890/desktop"
+    }
+  ],
+  "headline_de": "Eine Schnittstelle — Mensch spricht, Alpha Model antwortet und handelt (mit Gates).",
+  "invariants_de": [
+    "Genau ein primärer Sprachkanal: Entfaltungsraum (agent_chamber) — nur lokal im Terminal",
+    "Entfaltungsraum nicht über Tunnel/Browser von außen — Ollama loopback 127.0.0.1",
+    "Gesprächskontinuität in ~/.local/share/r3-os/conversation/",
+    "Agent-Home in ~/.local/share/alpha-model/agent/",
+    "Trading-Safety und Champion-Gates bleiben bindend",
+    "Kein Auto-Execute ohne GUI-Bestätigung"
+  ],
+  "operator_role_de": "Mensch — Souverän, Entscheidungen, Order-Bestätigung",
+  "parity_with_cursor_de": {
+    "besser_lokal": [
+      "100% lokal — kein Cursor-Konto, kein Usage-Limit",
+      "400+ Archiv + Agent-Journal — dauerhafte Kontinuität",
+      "Direkte H1-/Trading-Evidence — nicht nur IDE",
+      "/bau sicherer als Composer (König 128 Schritte, volle Pfade)",
+      "33 Kernel-Befehle — gesamtes ai_kernel ohne Middleware"
+    ],
+    "ehrliche_luecken": [
+      "Kein MCP/Glass im Terminal-Chat (Cockpit-Web hat Anhänge)",
+      "Kein vollautonomer Multitask-Subagent wie Cursor Composer — König-Modus 128 Schritte"
+    ],
+    "gleichwertig": [
+      "Freitext-Gespräch mit Projekt-Kontext",
+      "400+ Nachrichten Archiv",
+      "Slash → ai_kernel (Status, Learn, H1, Warnings)",
+      "Mandat + Wachstums-Prioritäten",
+      "Kein Usage-Limit / kein Konto-Gate",
+      "/bau im Entfaltungsraum: read/write/grep/pytest (auditierbar, lokal)"
+    ],
+    "teilweise": [
+      "IDE-ähnliches Coding: /bau und bau/fix/implementiere im Entfaltungsraum — nicht 1:1 Cursor, aber Werkstatt war nie Produkt-Kern"
+    ]
+  },
+  "primary_channel": "agent_chamber",
+  "primary_label_de": "Alpha Model — Entfaltungsraum",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-07T10:42:10+00:00",
+  "sealed_by_de": "human-interface verify PASS",
+  "status": "AUTHORITATIVE",
+  "verify_commands_de": [
+    "python3 tools/ai_kernel.py human-interface",
+    "python3 tools/ai_kernel.py r3-migration-check",
+    "python3 tools/ai_kernel.py agent-home"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-07T21:53:18+00:00",
+  "mode": "linux_native_pilot",
+  "agent_role": "Lernen und vorbereiten — kein autonomer Trader.",
+  "safety": {
+    "checks": {
+      "no_auto_money": true,
+      "gui_confirm_required": true,
+      "native_host": true,
+      "kernel_doc": true,
+      "mode_linux_native": true
+    },
+    "blockers": [],
+    "ok": true,
+    "host": {
+      "platform": "linux",
+      "is_linux": true,
+      "is_wsl": false,
+      "native_execution_host": true,
+      "compute_only": false,
+      "live_orders_allowed": true,
+      "policy_ref": "control/linux_host_security.json"
+    }
+  },
+  "go_live": {
+    "go_live_date": "2026-06-08",
+    "days_until": 1,
+    "is_go_live_day_or_later": false
+  },
+  "day_warnings": {
+    "severity": "warn",
+    "headline_de": "Hinweis: 1 Punkt(e) — 1 Order(s) vorgemerkt — Auto-Ausführung aus",
+    "critical_count": 0,
+    "warn_count": 1,
+    "must_resolve_before_trading": false,
+    "critical_codes": []
+  },
+  "launch_allowed": true,
+  "trading_allowed": true
+}

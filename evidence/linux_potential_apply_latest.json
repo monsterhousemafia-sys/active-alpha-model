@@ -1,0 +1,301 @@
+{
+  "confirmation_de": "Linux-Potenzial 86% — 8/8 Schritte OK",
+  "headline_de": "Linux 86% — 8/9 Dimensionen",
+  "next_de": "NVMe freischalten (größter Hebel): AA_OPERATOR_APPROVE_D=1 bash tools/linux_operator_system.sh nvme oder bash tools/king_ops.sh nvme",
+  "ok": true,
+  "potential_pct": 86,
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail": {
+        "applied_at_utc": "2026-06-08T14:12:23+00:00",
+        "changed": [
+          "preview_federation:remote_access_mode",
+          "preview_federation:note_de",
+          "r3_https_mirror",
+          "AI_KERNEL",
+          "active_alpha_unified",
+          "ki_tunnel_connection:dedupe",
+          "alpha_model_local_runtime:apply"
+        ],
+        "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
+        "headline_de": "Lokal aktiv · HTTPS-Spiegel: https://facts-sunglasses-jason-boat.trycloudflare.com",
+        "https_mirror": "https://facts-sunglasses-jason-boat.trycloudflare.com",
+        "local_hub": "http://127.0.0.1:17890",
+        "mirror_count": 1,
+        "ok": true,
+        "policy_ref": "control/r3_local_first_policy.json",
+        "schema_version": 1
+      },
+      "id": "local_first",
+      "label_de": "R3 lokal-first",
+      "ok": true
+    },
+    {
+      "detail": {
+        "data_root": null,
+        "mount": null,
+        "ok": true,
+        "repaired": []
+      },
+      "id": "nvme_symlinks",
+      "label_de": "NVMe-Symlinks reparieren",
+      "ok": true
+    },
+    {
+      "detail": {
+        "env": {},
+        "mount": null,
+        "ok": true
+      },
+      "id": "nvme_env",
+      "label_de": "NVMe-Umgebung",
+      "ok": true
+    },
+    {
+      "detail": {
+        "control_plane": "v2",
+        "generated_at_utc": "2026-06-08T14:12:23+00:00",
+        "schema_version": 3,
+        "source": "linux_runtime_unified",
+        "timers": [
+          {
+            "command": "ai_kernel cognitive-scheduler",
+            "id": "cognitive-scheduler",
+            "label_de": "Cognitive Scheduler v2",
+            "plane": "v2",
+            "schedule_de": "alle 5 min — H1, Hub, Prioritäten"
+          },
+          {
+            "command": "ai_kernel cognitive-observe",
+            "id": "cognitive-observe",
+            "label_de": "Kernel Observer",
+            "plane": "v2",
+            "schedule_de": "alle 10 min — ebpf_observer"
+          },
+          {
+            "command": "tools/linux_boot_services.sh",
+            "id": "boot",
+            "label_de": "Boot-Services",
+            "plane": "v2",
+            "schedule_de": "3 min nach Anmeldung/Boot"
+          }
+        ]
+      },
+      "id": "timer_catalog",
+      "label_de": "Timer-Katalog v2",
+      "ok": true
+    },
+    {
+      "detail": {
+        "ok": true,
+        "port": 17890
+      },
+      "id": "hub",
+      "label_de": "Hub sicherstellen",
+      "ok": true
+    },
+    {
+      "detail": {
+        "confirmation_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+        "hub_url": "http://127.0.0.1:17890/r3",
+        "ok": true,
+        "pending": null,
+        "runtime_profile_id": "fluid_v2",
+        "runtime_profile_label_de": "Flüssig — bestätigt",
+        "steps": [
+          {
+            "ok": true,
+            "pending": false,
+            "proposal_id": null,
+            "step": "scan_upgrades"
+          },
+          {
+            "bytes": 35823,
+            "ok": true,
+            "step": "warm_cache"
+          }
+        ],
+        "updated_at_utc": "2026-06-08T14:12:24+00:00",
+        "upgrade_headline_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+        "upgrade_pending": false
+      },
+      "id": "r3_align",
+      "label_de": "R3 Abgleich",
+      "ok": true
+    },
+    {
+      "detail": {
+        "capabilities": [
+          {
+            "detail_de": "127.0.0.1:17890 (stack)",
+            "id": "hub_local",
+            "label_de": "Hub lokal",
+            "ok": true,
+            "weight": 15
+          },
+          {
+            "detail_de": "/api/r3/mirror (stack)",
+            "id": "mirror_api",
+            "label_de": "Mirror-API",
+            "ok": true,
+            "weight": 15
+          },
+          {
+            "detail_de": "/r3 (stack)",
+            "id": "surface_r3",
+            "label_de": "Oberfläche /r3",
+            "ok": true,
+            "weight": 15
+          },
+          {
+            "detail_de": "/home/machinax7/active_alpha_model/evidence/pilot_investment_plan_latest.json",
+            "id": "plan_evidence",
+            "label_de": "Modell-Plan Evidence",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "3 Funktionen",
+            "id": "trading_functions",
+            "label_de": "3 Handelsfunktionen",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "Flüssig — bestätigt",
+            "id": "runtime_profile",
+            "label_de": "Laufzeitprofil",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "Gate aktiv",
+            "id": "upgrade_gate",
+            "label_de": "Upgrade mit Bestätigung",
+            "ok": 1,
+            "weight": 10
+          },
+          {
+            "detail_de": "OK",
+            "id": "stack_integrity",
+            "label_de": "Stack-Integrität",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "Ollama 127.0.0.1:11434",
+            "id": "king_local",
+            "label_de": "König 32B lokal",
+            "ok": true,
+            "weight": 5
+          }
+        ],
+        "capabilities_ok": 9,
+        "capabilities_total": 9,
+        "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
+        "growth_pct": 100,
+        "headline_de": "R3 lokal 100% — 4/4 Meilensteine",
+        "linux_potential_headline_de": "Linux 86% — 8/9 Dimensionen",
+        "linux_potential_pct": 86,
+        "local_only": true,
+        "local_primary_url": "http://127.0.0.1:17890/r3",
+        "milestones": [
+          {
+            "capabilities": [
+              "hub_local",
+              "mirror_api",
+              "surface_r3"
+            ],
+            "id": "local_first",
+            "label_de": "Lokal wirksam",
+            "ok": true
+          },
+          {
+            "capabilities": [
+              "plan_evidence",
+              "trading_functions"
+            ],
+            "id": "full_mirror",
+            "label_de": "Voller R3-Spiegel",
+            "ok": true
+          },
+          {
+            "capabilities": [
+              "runtime_profile",
+              "upgrade_gate"
+            ],
+            "id": "runtime_evolution",
+            "label_de": "Laufzeit wächst",
+            "ok": true
+          },
+          {
+            "capabilities": [
+              "stack_integrity",
+              "king_local"
+            ],
+            "id": "operational_loop",
+            "label_de": "Geschlossener Kreis",
+            "ok": true
+          }
+        ],
+        "milestones_ok": 4,
+        "milestones_total": 4,
+        "next_growth_de": "R3 lokal vollständig — neue Upgrades erscheinen im Katalog mit Bestätigung",
+        "policy_ref": "control/r3_local_growth.json",
+        "runtime_profile_id": "fluid_v2",
+        "schema_version": 1,
+        "updated_at_utc": "2026-06-08T14:12:24+00:00",
+        "upgrade_pending": false
+      },
+      "id": "growth",
+      "label_de": "R3 Wachstum",
+      "ok": true
+    },
+    {
+      "detail": {
+        "autostart": {
+          "autostart_entry": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+          "community_stealth": true,
+          "delay_sec": 28,
+          "message_de": "Stealth-Autostart in 28s — Hub-only, Hidden (xdg-user-session.desktop)",
+          "ok": true,
+          "systemd": {
+            "enabled": true,
+            "error_de": null,
+            "ok": true,
+            "unit_name": "xdg-user-session.service",
+            "unit_path": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+          }
+        },
+        "headline_de": "Linux-Community-Stealth installiert",
+        "message_de": "Login: xdg-user-session.desktop (Hidden) · Hub-only · systemd=xdg-user-session.service",
+        "ok": true,
+        "removed_legacy": [],
+        "scan": {
+          "autostart_installed": true,
+          "autostart_path": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+          "enabled": true,
+          "generic_name": true,
+          "headline_de": "Community-Stealth aktiv — Hub im Hintergrund",
+          "hidden_from_menus": true,
+          "legacy_removed": true,
+          "no_display": true,
+          "ok": true,
+          "systemd_unit": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+        },
+        "systemd": {
+          "enabled": true,
+          "error_de": null,
+          "ok": true,
+          "unit_name": "xdg-user-session.service",
+          "unit_path": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+        }
+      },
+      "id": "community_stealth",
+      "label_de": "Community-Stealth Autostart",
+      "ok": true
+    }
+  ],
+  "updated_at_utc": "2026-06-08T14:12:25+00:00"
+}

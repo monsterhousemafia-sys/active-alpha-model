@@ -1,0 +1,13 @@
+{
+  "activated_at_utc": "2026-06-02T15:25:29+00:00",
+  "limits": {
+    "max_capital_eur": 500.0,
+    "max_daily_loss_eur": 15.0,
+    "max_drawdown_eur": 35.0,
+    "max_orders_per_day": 0,
+    "max_single_position_eur": 0.0,
+    "min_reserve_eur": 0.0
+  },
+  "policy_version": "P16H_CORE_LIVE_V1",
+  "status": "ACTIVE_CONFIRM_BEFORE_SUBMIT_ONLY"
+}

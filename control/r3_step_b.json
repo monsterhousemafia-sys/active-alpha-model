@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "released": true,
+  "phase_active": true,
+  "released_at_utc": "2026-06-06T21:30:00+00:00",
+  "phase_started_at_utc": "2026-06-06T22:00:00+00:00",
+  "released_by_de": "Operator — Phase B aktiv",
+  "h1_migration_parallel": true,
+  "h1_migration_note_de": "H1-Backtest und Monitor laufen weiter. Nach Seal: Evaluation, Governance und Aktien-Gate aktualisieren sich automatisch — Schritt B bleibt aktiv.",
+  "migration_sufficient_pre_seal": true,
+  "migration_approved_by_de": "Operator — Status reicht für Migration",
+  "migration_approved_at_utc": "2026-06-07T01:45:00+00:00",
+  "seal_deferred_until": "2026-06-08",
+  "seal_deferred_reason_de": "Trading-Pilot Montag — Seal nach Handelstag-Freigabe",
+  "monday_checklist_de": [
+    "python3 tools/ai_kernel.py h1-status",
+    "python3 tools/ai_kernel.py h1-finish",
+    "python3 tools/ai_kernel.py launch-status"
+  ],
+  "phase_title_de": "Phase B — Vollständiger OS-Stack",
+  "milestones_de": [
+    "Eigener Login-Screen und Session-Manager",
+    "Native App-Suite ohne gnome-control-center",
+    "Eigenes Fenster-Management (Snap/Spaces)",
+    "R3-Paket- und Update-Schicht",
+    "H1-Seal integriert ohne Schritt-B-Stopp"
+  ]
+}

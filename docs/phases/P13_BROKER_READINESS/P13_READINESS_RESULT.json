@@ -1,0 +1,79 @@
+{
+  "generated_at_utc": "2026-06-01T12:45:06+00:00",
+  "git_commit": "e4685bb62b00e4cbf7c2626f050a2a31cd001f5b",
+  "p13_status": "PASS_WITH_DISABLED_BROKER_READINESS_COMPLETE",
+  "pipeline_preservation_failures": [],
+  "pipeline_preserved": true,
+  "readiness": {
+    "activation_requirement": "EXPLICIT_USER_DECISION_WITH_BROKER_CAPITAL_AND_RISK_SCOPE",
+    "adapter_status": {
+      "assessed_at_utc": "2026-06-01T12:45:06+00:00",
+      "broker_adapter_enabled": false,
+      "broker_adapter_implemented": true,
+      "real_money_enabled": false,
+      "real_order_routing_enabled": false
+    },
+    "broker_order_sent": false,
+    "capital_scaling": {
+      "current_tier_eur": 500,
+      "gates": {
+        "feed_quality_ok": true,
+        "no_critical_reconciliation_error": true,
+        "orders_executable_at_tier": false,
+        "positive_net_after_costs": true
+      },
+      "next_simulated_tier_eur": 500,
+      "paper_capital_ladder_eur": [
+        500,
+        1000,
+        2500,
+        5000,
+        10000
+      ],
+      "paper_capital_scale_up": "SIMULATION_ONLY",
+      "ready_for_simulated_scale": false,
+      "real_capital_scale_up": "REQUIRES_SEPARATE_EXPLICIT_USER_DECISION",
+      "real_money_capital_eur": 0.0
+    },
+    "credential_isolation": {
+      "credential_store_path": "NOT_CONFIGURED",
+      "execution_credentials_loaded": false,
+      "isolated_by_default": true,
+      "note": "Real broker credentials must not be present until explicit user activation.",
+      "present_keys": []
+    },
+    "dry_run_oversize_rejected": true,
+    "dry_run_sample_order": {
+      "accepted": false,
+      "reason": "KILL_SWITCH_ACTIVE",
+      "routed": false
+    },
+    "kill_switch": {
+      "active": true,
+      "real_order_routing_blocked": true,
+      "reason": "P13_DEFAULT_FAIL_CLOSED",
+      "updated_at_utc": "2026-06-01T12:45:06+00:00"
+    },
+    "not_live_authorized": true,
+    "read_only_account_state": {
+      "account_connected": false,
+      "adapter": "DISABLED_BROKER_ADAPTER_V1",
+      "balance_eur": 0.0,
+      "enabled": false,
+      "mode": "READ_ONLY_STUB",
+      "real_money": false
+    },
+    "real_money": false,
+    "real_order_attempt_blocked": true,
+    "simulation_only": true
+  },
+  "run_id": "p13_20260601T124506Z",
+  "safety": {
+    "broker_adapter_enabled": false,
+    "champion_changed": false,
+    "real_money": false,
+    "real_money_enabled": false,
+    "real_order_routing_enabled": false,
+    "simulation_only": true
+  }
+}

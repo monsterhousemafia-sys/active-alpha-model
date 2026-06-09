@@ -1,0 +1,12 @@
+{
+  "client_and_guard_tests_passed": true,
+  "credentials_configured": false,
+  "demo_base_url": "https://demo.trading212.com/api/v0",
+  "demo_read_only_metadata_sync_active": false,
+  "environment": "DEMO_ONLY",
+  "live_host_blocked": true,
+  "order_endpoints_blocked": true,
+  "secrets_excluded": true,
+  "sync_status": "CLIENT_TESTED_READY_FOR_OPTIONAL_DEMO_SYNC",
+  "write_methods_blocked": true
+}

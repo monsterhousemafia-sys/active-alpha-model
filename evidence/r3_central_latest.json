@@ -1,0 +1,71 @@
+{
+  "all_ok": true,
+  "default_entry_de": "http://127.0.0.1:17890/desktop",
+  "feeds": [
+    {
+      "headline_de": "R3 Tagesprognose · Trading212",
+      "id": "t212_prognosis",
+      "label_de": "Tagesprognose T212",
+      "ok": true,
+      "positions": 12,
+      "signal_date": "2026-06-05",
+      "summary_de": "Profil daily_alpha_h1 (DAILY_ALPHA_H1): 12 Positionen auf 641 € investierbar (5 % Puffer auf 675 € frei handelbar laut T212). Umstellung zum Tagesende ab 22:15 CET."
+    },
+    {
+      "entry_de": "http://127.0.0.1:17890/desktop",
+      "id": "cockpit",
+      "label_de": "Cockpit",
+      "ok": true,
+      "running": false
+    },
+    {
+      "headline_de": "Bereit — öffentlicher Zugang freigegeben",
+      "hub_url": "http://127.0.0.1:17890/",
+      "id": "launch",
+      "join_url": "http://127.0.0.1:17890/join",
+      "label_de": "Bereitstellung",
+      "ok": true,
+      "overall_pct": 100,
+      "phase": "ready"
+    },
+    {
+      "all_ok": true,
+      "id": "local_apps",
+      "label_de": "Anwendungen",
+      "ok": true,
+      "ok_count": 12,
+      "total": 12
+    },
+    {
+      "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+      "id": "h1",
+      "label_de": "Validierung H1",
+      "ok": true,
+      "sealed": false,
+      "status": "COMPLETE"
+    },
+    {
+      "active_interface_de": "—",
+      "id": "ki",
+      "kernel_active": false,
+      "label_de": "Alpha Model KI",
+      "next_step_de": "② Rebalance — Order-Welle mit GUI bestätigen",
+      "ok": true
+    },
+    {
+      "current_id": "bfd7b5527c",
+      "id": "pilot",
+      "items": 0,
+      "label_de": "Pilot-Zentrale",
+      "ok": true
+    }
+  ],
+  "feeds_ok": 7,
+  "feeds_total": 7,
+  "headline_de": "R3 — zentrale Quelle; finale Tagesprognose für Trading212",
+  "hub_base_de": "http://127.0.0.1:17890",
+  "next_de": "bash tools/king_ops.sh r3-central",
+  "policy_ref": "control/r3_central_source_policy.json",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-07T22:01:41+00:00"
+}

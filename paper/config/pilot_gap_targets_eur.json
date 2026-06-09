@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "description": "P16C-style pilot allocation targets (EUR) — planning only, not orders",
+  "targets_eur": {
+    "OXY": 88.51,
+    "WDC": 75.96,
+    "STX": 62.86,
+    "INTC": 41.95,
+    "MU": 38.45,
+    "CIEN": 37.85
+  }
+}

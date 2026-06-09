@@ -1,0 +1,74 @@
+{
+  "aligned_calendar_observations": 0,
+  "aligned_calendar_ok": true,
+  "blockers": [
+    "CHALLENGER_TURNOVER_NOT_VERIFIED",
+    "CHALLENGER_RETURNS_MISSING",
+    "G1_NOT_EXTERNALLY_APPROVED"
+  ],
+  "challenger": "MOM_63_TOP12",
+  "champion": "R0_LEGACY_ENSEMBLE",
+  "cost_assumptions": {
+    "baseline_costs_in_champion_returns": true,
+    "config_path": "promotion_gate_config.yaml",
+    "config_sha256": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e",
+    "cost_stress_scenarios_configured": [
+      "baseline",
+      "plus_25bps"
+    ],
+    "fee_model": "trading212_us+fx_0bps+slippage_2bps"
+  },
+  "generated_at_utc": "2026-06-07T20:14:02+00:00",
+  "m1_control": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "operative_jobs_executed": false,
+  "phase": "G1_READ_ONLY_CHALLENGER_COST_EVIDENCE_PREPARATION",
+  "read_only": true,
+  "schema_version": 1,
+  "variants": [
+    {
+      "baseline_cost_proof_path": "model_output_sp500_pit_t212/backtest_report.txt",
+      "baseline_cost_proof_present": true,
+      "decisions_path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+      "decisions_present": true,
+      "decisions_sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1",
+      "gate_eligible": true,
+      "returns_path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+      "returns_present": false,
+      "returns_sha256": "",
+      "role": "CHAMPION",
+      "turnover_proxy_variant": null,
+      "turnover_verified": true,
+      "variant_id": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "baseline_cost_proof_path": null,
+      "baseline_cost_proof_present": false,
+      "decisions_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+      "decisions_present": false,
+      "decisions_sha256": "",
+      "gate_eligible": true,
+      "returns_path": null,
+      "returns_present": false,
+      "returns_sha256": "",
+      "role": "M1_CONTROL",
+      "turnover_proxy_variant": null,
+      "turnover_verified": true,
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "baseline_cost_proof_path": "model_output_sp500_pit_t212/backtest_report.txt",
+      "baseline_cost_proof_present": true,
+      "decisions_path": null,
+      "decisions_present": false,
+      "decisions_sha256": "",
+      "gate_eligible": false,
+      "returns_path": null,
+      "returns_present": false,
+      "returns_sha256": "",
+      "role": "CHALLENGER",
+      "turnover_proxy_variant": "R0_LEGACY_ENSEMBLE",
+      "turnover_verified": false,
+      "variant_id": "MOM_63_TOP12"
+    }
+  ]
+}

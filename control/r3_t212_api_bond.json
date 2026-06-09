@@ -1,0 +1,8 @@
+{
+  "bonded": true,
+  "bonded_at_utc": "2026-06-07T22:22:18+00:00",
+  "confirmation_de": "✗ T212 nicht vertrauenswürdig — ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pro Minute.\nAutomatischer Sync pausiert — späte",
+  "environment": "LIVE_READ_ONLY",
+  "last_confirmed_at_utc": "2026-06-09T21:27:37+00:00",
+  "last_sync_utc": null
+}

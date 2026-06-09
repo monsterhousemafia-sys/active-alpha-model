@@ -1,0 +1,14 @@
+{
+  "activation_status": "PASS",
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "forward_days_in_series": 1860,
+  "generated_at_utc": "2026-06-05T15:39:07+00:00",
+  "minimum_days_met": true,
+  "minimum_days_required": 60,
+  "mode": "ACCELERATED_VALIDATION_FORWARD_PROXY",
+  "paper_variant_id": "R0_LEGACY_ENSEMBLE",
+  "real_money_eligible": false,
+  "schema_version": 1,
+  "status": "PASS",
+  "waiver_ref": "control/r0_migration/migration_time_gate_waiver.json"
+}

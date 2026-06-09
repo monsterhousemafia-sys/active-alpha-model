@@ -1,0 +1,144 @@
+{
+  "automation_modes": {
+    "AUTO_EXECUTE_REAL_MONEY": "ENABLED",
+    "AUTO_PROMOTE_PAPER": "ENABLED",
+    "AUTO_PROMOTE_SIGNAL": "ENABLED",
+    "AUTO_RESEARCH": "ENABLED"
+  },
+  "blockers": [],
+  "candidate_variant_id": "MOM_63_TOP12",
+  "champion_variant_id": "R5_rank_only_train5",
+  "control_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "current_active_blockers": [],
+  "current_evidence_stage": "BACKTESTED",
+  "display_messages": [
+    "Operational authorization active — automation paths enabled by owner request.",
+    "Shadow and paper monitoring authorized.",
+    "Promotion and real-money paths enabled in configuration."
+  ],
+  "gate_summary": {
+    "COST_STRESS_GATE": {
+      "pass": true,
+      "source": "control/evidence/cost_stress_status.json"
+    },
+    "DATA_QUALITY_GATE": {
+      "missing": false,
+      "pass": true,
+      "source": "auto_promotion_status"
+    },
+    "ECONOMIC_VALUE_GATE": {
+      "pass": true,
+      "source": "auto_promotion_status"
+    },
+    "MULTIPLE_TESTING_EVIDENCE": {
+      "pass": true,
+      "source": "control/evidence/multiple_testing_status.json"
+    },
+    "RISK_GATE": {
+      "pass": true,
+      "source": "auto_promotion_status"
+    },
+    "ROBUSTNESS_EVIDENCE": {
+      "pass": true,
+      "source": "control/evidence/robustness_status.json"
+    },
+    "all_gates_pass_promotion_status": true,
+    "promotion_allowed_auto": true,
+    "system_health_ok": true
+  },
+  "generated_at_utc": "2026-05-31T06:22:50+00:00",
+  "historical_manifest_blockers": [],
+  "mode": "READ_ONLY_EVIDENCE",
+  "monitoring_artifacts": {
+    "forward_monitoring_data_requirements.json": true,
+    "forward_monitoring_readiness_status.json": true,
+    "paper_monitor_status.json": true,
+    "shadow_monitor_status.json": true
+  },
+  "monitoring_summary": {
+    "forward_activation_status": "ACTIVE",
+    "paper_activation_status": "ACTIVE",
+    "paper_simulation_started": true,
+    "shadow_activation_status": "ACTIVE",
+    "shadow_collection_started": true
+  },
+  "observed_automation_modes": {
+    "auto_promotion_status": {
+      "AUTO_EXECUTE_REAL_MONEY": "ENABLED",
+      "AUTO_PROMOTE_PAPER": "ENABLED",
+      "AUTO_PROMOTE_SIGNAL": "ENABLED",
+      "AUTO_RESEARCH": "ENABLED"
+    },
+    "promotion_status": {
+      "AUTO_EXECUTE_REAL_MONEY": "ENABLED",
+      "AUTO_PROMOTE_PAPER": "ENABLED",
+      "AUTO_PROMOTE_SIGNAL": "ENABLED",
+      "AUTO_RESEARCH": "ENABLED"
+    }
+  },
+  "operational_user_override": true,
+  "p9_classification": "EXTERNALLY_REVIEWED",
+  "paper_eligible": true,
+  "promotion_eligible": true,
+  "real_money_eligible": true,
+  "resolved_or_superseded_blockers": [],
+  "schema_version": 2,
+  "source_artifacts": [
+    {
+      "path": "promotion_gate_config.yaml",
+      "role": "automation_config_primary"
+    },
+    {
+      "path": "control/auto_promotion_status.json",
+      "role": "auto_promotion_safety_source"
+    },
+    {
+      "path": "control/promotion_status.json",
+      "role": "informative_promotion_view"
+    },
+    {
+      "path": "control/system_health.json",
+      "role": "system_health"
+    },
+    {
+      "path": "control/last_known_good_state.json",
+      "role": "lkg_reference"
+    },
+    {
+      "path": "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml",
+      "role": "experiment_manifest"
+    },
+    {
+      "path": "control/p9_shadow_paper_prep_status.json",
+      "role": "p9_preparation_status"
+    },
+    {
+      "path": "P9_EXTERNAL_REVIEW_STATUS.md",
+      "role": "p9_review_classification"
+    },
+    {
+      "path": "control/evidence/forward_monitoring_readiness_status.json",
+      "role": "forward_monitoring_readiness"
+    },
+    {
+      "path": "control/evidence/shadow_monitor_status.json",
+      "role": "shadow_monitor_status"
+    },
+    {
+      "path": "control/evidence/paper_monitor_status.json",
+      "role": "paper_monitor_status"
+    },
+    {
+      "path": "control/evidence/forward_monitoring_data_requirements.json",
+      "role": "monitoring_data_requirements"
+    }
+  ],
+  "source_classification": "NOT_AVAILABLE",
+  "source_conflicts": [],
+  "v2_evidence_artifacts": {
+    "cost_stress_status.json": true,
+    "multiple_testing_status.json": true,
+    "robustness_status.json": true,
+    "v2_source_inventory.json": true
+  }
+}

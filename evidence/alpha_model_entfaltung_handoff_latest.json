@@ -1,0 +1,17 @@
+{
+  "applied_at_utc": "2026-06-08T13:50:03+00:00",
+  "changed": [
+    "agent_mandate",
+    "r3_agent_growth",
+    "r3_kernel_roles",
+    "alpha_model_agent_home",
+    "entfaltung_kill",
+    "chamber_resources",
+    "reseal_mc"
+  ],
+  "headline_de": "Entfaltungsraum übernimmt — Cursor-Kill-Handoff angewendet",
+  "ok": true,
+  "operator_next_de": "alpha-model-agent → /self-uninstall execute",
+  "primary_cli": "alpha-model-agent",
+  "schema_version": 1
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": 2,
+  "generated_at_utc": "2026-06-09T17:52:34+00:00",
+  "date_de": "Tuesday 09.06.2026",
+  "phase": "PRE_GO_LIVE",
+  "orchestrator_phase": "post-learn",
+  "traffic": "ROT",
+  "next_step_de": "② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen",
+  "warnings": {
+    "count": 6,
+    "critical_count": 3,
+    "headline_de": "⚠ 3 kritisch — vor US-Handel beheben: Live-Kurse unvollständig"
+  },
+  "quote_coverage_de": "0/11 Kurse",
+  "rebalance_due": true,
+  "h1": {
+    "status": "COMPLETE",
+    "progress_pct": 100,
+    "sealed": false,
+    "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates"
+  },
+  "evolution": {
+    "stage_id": "sportwagen",
+    "next_stage_id": "sport_plus",
+    "live_fills_mature": 0,
+    "fills_to_next": 3
+  },
+  "learning_message_de": "Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+  "checklist_items": [],
+  "steps": [],
+  "snap_summary_de": "⚠ 3 kritisch — vor US-Handel beheben: Live-Kurse unvollständig",
+  "circle_score": {
+    "schema_version": 1,
+    "generated_at_utc": "2026-06-09T17:52:34+00:00",
+    "green": 0,
+    "yellow": 2,
+    "total": 6,
+    "pct": 0,
+    "headline_de": "Kreis-Score 0/6 grün (0%)",
+    "tag": "START",
+    "summary_de": "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+    "stages": [
+      {
+        "id": "observe",
+        "label_de": "Beobachten",
+        "ok": false,
+        "partial": true,
+        "status": "gelb",
+        "detail_de": "Lernen OK · Konto OK · Kurse 0/11 Kurse"
+      },
+      {
+        "id": "decide",
+        "label_de": "Entscheiden",
+        "ok": false,
+        "partial": false,
+        "status": "rot",
+        "detail_de": "Warnungen 3× kritisch"
+      },
+      {
+        "id": "act",
+        "label_de": "Handeln",
+        "ok": false,
+        "partial": false,
+        "status": "rot",
+        "detail_de": "Live-Fills reif: 0/3 · API-Scope offen"
+      },
+      {
+        "id": "learn",
+        "label_de": "Lernen",
+        "ok": false,
+        "partial": false,
+        "status": "rot",
+        "detail_de": "Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0."
+      },
+      {
+        "id": "evolve",
+        "label_de": "Evolieren",
+        "ok": false,
+        "partial": false,
+        "status": "rot",
+        "detail_de": "sportwagen → sport_plus · Auto-Apply 0"
+      },
+      {
+        "id": "seal",
+        "label_de": "H1/Seal",
+        "ok": false,
+        "partial": true,
+        "status": "gelb",
+        "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates"
+      }
+    ],
+    "bottleneck_de": "Entscheiden: Warnungen 3× kritisch"
+  },
+  "circle_lines_de": [
+    "Kreis-Score 0/6 grün (0%)",
+    "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+    "  ~ Beobachten: Lernen OK · Konto OK · Kurse 0/11 Kurse",
+    "  ✗ Entscheiden: Warnungen 3× kritisch",
+    "  ✗ Handeln: Live-Fills reif: 0/3 · API-Scope offen",
+    "  ✗ Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+    "  ✗ Evolieren: sportwagen → sport_plus · Auto-Apply 0",
+    "  ~ H1/Seal: H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "→ Engpass: Entscheiden: Warnungen 3× kritisch"
+  ],
+  "cockpit_lines_de": [
+    "Kreis-Score 0/6 grün (0%)",
+    "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+    "  ~ Beobachten: Lernen OK · Konto OK · Kurse 0/11 Kurse",
+    "  ✗ Entscheiden: Warnungen 3× kritisch",
+    "  ✗ Handeln: Live-Fills reif: 0/3 · API-Scope offen",
+    "  ✗ Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+    "  ✗ Evolieren: sportwagen → sport_plus · Auto-Apply 0",
+    "  ~ H1/Seal: H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "→ Engpass: Entscheiden: Warnungen 3× kritisch",
+    "",
+    "Tuesday 09.06.2026 · Phase: PRE_GO_LIVE",
+    "├── Auto: refresh — · Warnungen 3× kritisch · Kurse 0/11 Kurse",
+    "├── Du: ② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen",
+    "├── H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "└── Evolution: sportwagen → sport_plus (0/3 Fills)"
+  ]
+}

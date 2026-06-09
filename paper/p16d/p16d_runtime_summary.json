@@ -1,0 +1,621 @@
+{
+  "currency_reconciliation": {
+    "executed_count": 6,
+    "executed_instruments_reconciled": true,
+    "gbp_path": "PASS",
+    "multi_currency_runtime_gate": "PASS_FOR_EXECUTED_PORTFOLIO_ONLY",
+    "reference_observation_only_count": 1,
+    "usd_path": "PASS"
+  },
+  "forward_batch": {
+    "batch_number": 1,
+    "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+    "executable_prices_eur": {
+      "CIEN": 483.93259039979404,
+      "INTC": 95.36308234148714,
+      "MU": 879.7526428343162,
+      "OXY": 51.39503221117027,
+      "STX": 778.3351576498131,
+      "WDC": 471.1096295984722
+    },
+    "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
+    "generated_at_utc": "2026-06-01T15:12:50+00:00",
+    "incident_count": 0,
+    "instrument_conversions": [
+      {
+        "allowed_action": "VIRTUAL_FILL_VALID",
+        "conversion_valid": true,
+        "converted_price_eur": 51.39503221117027,
+        "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 59.720001220703125,
+        "performance_valid": true,
+        "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+        "provider_symbol": "OXY",
+        "quote_currency": "USD",
+        "raw_price": 59.720001220703125,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "OXY",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "OBSERVATION_ONLY_CURRENCY_UNRESOLVED",
+        "conversion_valid": true,
+        "converted_price_eur": 1.660247226023674,
+        "data_quality_gate": "PASS_FOR_OBSERVATION_NOT_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 1.156000018119812,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 0.01,
+        "normalization_note": "LSE_pence_to_GBP_major_unit",
+        "normalized_quote_price": 1.4362,
+        "performance_valid": false,
+        "portfolio_scope": "REFERENCE_OBSERVATION",
+        "provider_symbol": "VUSD.L",
+        "quote_currency": "GBP",
+        "raw_price": 143.6199951171875,
+        "raw_price_unit": "GBp",
+        "required_fx_pair": "GBPEUR",
+        "user_reference_symbol": "VUSD",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "VIRTUAL_FILL_VALID",
+        "conversion_valid": true,
+        "converted_price_eur": 471.1096295984722,
+        "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 547.4199829101562,
+        "performance_valid": true,
+        "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+        "provider_symbol": "WDC",
+        "quote_currency": "USD",
+        "raw_price": 547.4199829101562,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "WDC",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "EXCLUDED_AMBIGUOUS_IDENTITY",
+        "conversion_valid": true,
+        "converted_price_eur": 1505.1807610135838,
+        "data_quality_gate": "PASS_FOR_OBSERVATION_NOT_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 1748.989990234375,
+        "performance_valid": false,
+        "portfolio_scope": "REFERENCE_OBSERVATION",
+        "provider_symbol": "SNDK",
+        "quote_currency": "USD",
+        "raw_price": 1748.989990234375,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "SNDK",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "VIRTUAL_FILL_VALID",
+        "conversion_valid": true,
+        "converted_price_eur": 778.3351576498131,
+        "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 904.409912109375,
+        "performance_valid": true,
+        "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+        "provider_symbol": "STX",
+        "quote_currency": "USD",
+        "raw_price": 904.409912109375,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "STX",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "VIRTUAL_FILL_VALID",
+        "conversion_valid": true,
+        "converted_price_eur": 95.36308234148714,
+        "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 110.80999755859375,
+        "performance_valid": true,
+        "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+        "provider_symbol": "INTC",
+        "quote_currency": "USD",
+        "raw_price": 110.80999755859375,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "INTC",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "VIRTUAL_FILL_VALID",
+        "conversion_valid": true,
+        "converted_price_eur": 879.7526428343162,
+        "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 1022.2550048828125,
+        "performance_valid": true,
+        "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+        "provider_symbol": "MU",
+        "quote_currency": "USD",
+        "raw_price": 1022.2550048828125,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "MU",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      },
+      {
+        "allowed_action": "VIRTUAL_FILL_VALID",
+        "conversion_valid": true,
+        "converted_price_eur": 483.93259039979404,
+        "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+        "fx_event_time_utc": "2026-06-01T15:12:49+00:00",
+        "fx_quality_gate": "PASS",
+        "fx_rate_used": 0.8605999859449628,
+        "fx_source": "READONLY_YFINANCE",
+        "normalization_factor": 1.0,
+        "normalized_quote_price": 562.3200073242188,
+        "performance_valid": true,
+        "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+        "provider_symbol": "CIEN",
+        "quote_currency": "USD",
+        "raw_price": 562.3200073242188,
+        "raw_price_unit": "USD",
+        "required_fx_pair": "USDEUR",
+        "user_reference_symbol": "CIEN",
+        "valuation_timestamp_utc": "2026-06-01T15:12:50+00:00"
+      }
+    ],
+    "portfolio_scope": "PROVISIONAL_EXECUTABLE",
+    "prices_eur": {
+      "CIEN": 483.93259039979404,
+      "INTC": 95.36308234148714,
+      "MU": 879.7526428343162,
+      "OXY": 51.39503221117027,
+      "STX": 778.3351576498131,
+      "WDC": 471.1096295984722
+    },
+    "provider": "READONLY_YFINANCE",
+    "stateful_outlier_gate_active": false,
+    "valid_instrument_observations": 8
+  },
+  "gbp_path": "PASS",
+  "generated_at_utc": "2026-06-01T15:12:51+00:00",
+  "instrument_identity": {
+    "fill_allowed": [
+      "OXY",
+      "WDC",
+      "STX",
+      "INTC",
+      "MU",
+      "CIEN"
+    ],
+    "observation_only": [
+      "VUSD",
+      "SNDK"
+    ],
+    "primary": {
+      "entries": [
+        {
+          "allowed_action": "VIRTUAL_FILL_VALID",
+          "display_name": "Occidental Petroleum",
+          "exchange": "NYSE",
+          "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "MARK_TO_MARKET_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "OXY",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "OXY",
+          "virtual_initial_fill_allowed": "YES",
+          "virtual_rebalance_allowed": "YES"
+        },
+        {
+          "allowed_action": "OBSERVATION_ONLY_CURRENCY_UNRESOLVED",
+          "display_name": "Vanguard S&P 500 Dist",
+          "exchange": "LSE",
+          "identity_binding_status": "QUOTE_OBSERVATION_ONLY",
+          "instrument_type": "ETF",
+          "mark_to_market_allowed": "OBSERVATION_VALID_NOT_PERFORMANCE_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "VUSD.L",
+          "quote_currency": "GBP",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "VUSD",
+          "virtual_initial_fill_allowed": "NO",
+          "virtual_rebalance_allowed": "NO"
+        },
+        {
+          "allowed_action": "VIRTUAL_FILL_VALID",
+          "display_name": "Western Digital",
+          "exchange": "NASDAQ",
+          "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "MARK_TO_MARKET_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "WDC",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "WDC",
+          "virtual_initial_fill_allowed": "YES",
+          "virtual_rebalance_allowed": "YES"
+        },
+        {
+          "allowed_action": "EXCLUDED_AMBIGUOUS_IDENTITY",
+          "display_name": "Sandisk",
+          "exchange": "NASDAQ",
+          "identity_binding_status": "QUOTE_OBSERVATION_ONLY",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "QUOTE_OBSERVATION_ALLOWED",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "SNDK",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "SNDK",
+          "virtual_initial_fill_allowed": "NO",
+          "virtual_rebalance_allowed": "NO"
+        },
+        {
+          "allowed_action": "VIRTUAL_FILL_VALID",
+          "display_name": "Seagate Technology",
+          "exchange": "NASDAQ",
+          "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "MARK_TO_MARKET_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "STX",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "STX",
+          "virtual_initial_fill_allowed": "YES",
+          "virtual_rebalance_allowed": "YES"
+        },
+        {
+          "allowed_action": "VIRTUAL_FILL_VALID",
+          "display_name": "Intel",
+          "exchange": "NASDAQ",
+          "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "MARK_TO_MARKET_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "INTC",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "INTC",
+          "virtual_initial_fill_allowed": "YES",
+          "virtual_rebalance_allowed": "YES"
+        },
+        {
+          "allowed_action": "VIRTUAL_FILL_VALID",
+          "display_name": "Micron Technology",
+          "exchange": "NASDAQ",
+          "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "MARK_TO_MARKET_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "MU",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "MU",
+          "virtual_initial_fill_allowed": "YES",
+          "virtual_rebalance_allowed": "YES"
+        },
+        {
+          "allowed_action": "VIRTUAL_FILL_VALID",
+          "display_name": "Ciena",
+          "exchange": "NYSE",
+          "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+          "instrument_type": "EQUITY",
+          "mark_to_market_allowed": "MARK_TO_MARKET_VALID",
+          "metadata_source": "STATIC_INSTRUMENT_DEFINITION",
+          "metadata_verified_at_utc": "2026-06-01T15:12:49+00:00",
+          "provider_name": "READONLY_YFINANCE",
+          "provider_symbol": "CIEN",
+          "quote_currency": "USD",
+          "quote_observation_allowed": "YES",
+          "quote_retrieval_confirmed": "PENDING_LIVE_BATCH",
+          "user_reference_symbol": "CIEN",
+          "virtual_initial_fill_allowed": "YES",
+          "virtual_rebalance_allowed": "YES"
+        }
+      ],
+      "generated_at_utc": "2026-06-01T15:12:49+00:00",
+      "primary_provider_metadata_fully_verified": "0/8",
+      "primary_provider_metadata_partial": "6/8",
+      "primary_quote_retrieval_confirmed": "8/8",
+      "primary_static_instrument_definitions": "8/8"
+    },
+    "trading212": {
+      "entries": [
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "OXY"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "VUSD"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "WDC"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "SNDK"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "STX"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "INTC"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "MU"
+        },
+        {
+          "allowed_actions": "OBSERVATION_ONLY",
+          "user_reference_symbol": "CIEN"
+        }
+      ],
+      "generated_at_utc": "2026-06-01T15:12:49+00:00",
+      "trading212_demo_metadata_verified": "0/8"
+    },
+    "virtual_fill_allowed": [
+      "OXY",
+      "WDC",
+      "STX",
+      "INTC",
+      "MU",
+      "CIEN"
+    ]
+  },
+  "mark_to_market": {
+    "independent_post_baseline_mark": false,
+    "note": "first_p16d_mark_establishes_post_baseline_reference",
+    "portfolio_value_eur": 498.9438,
+    "subsequent_market_price_pnl_eur": 0.0
+  },
+  "multi_currency_runtime_gate": "PASS_FOR_EXECUTED_PORTFOLIO_ONLY",
+  "observation_window": {
+    "_dq_pass": 1,
+    "data_quality_pass_rate": 1.0,
+    "elapsed_performance_window_hours": 0.0,
+    "fx_quality_pass_rate": 1.0,
+    "incident_count": 0,
+    "independent_post_baseline_portfolio_marks": 0,
+    "independent_signal_events": 0,
+    "independent_virtual_rebalances": 0,
+    "p16c_baseline_batch_count": 1,
+    "p16c_baseline_classification": "INITIAL_CORRECTED_BASELINE_BATCH_NOT_INDEPENDENT_PERFORMANCE_EVENT",
+    "p16c_baseline_independent_performance_marks": 0,
+    "p16c_validated_epoch_utc": "2026-06-01T15:00:39+00:00",
+    "paused_instrument_count": 0,
+    "portfolio_reconciliation_pass_rate": 1.0,
+    "post_baseline_validated_batches": 1,
+    "scaling_gate_status": "NOT_READY_PENDING_POST_BASELINE_WINDOW",
+    "status": "POST_BASELINE_WINDOW_RUNNING_LIMITED_PORTFOLIO",
+    "valid_performance_instrument_observations": 6,
+    "validated_performance_window_start_utc": "2026-06-01T15:12:51+00:00"
+  },
+  "p16c_conditional_classification": "CONDITIONAL_PASS_CORE_ACCOUNTING_AND_USD_FX_REMEDIATIONS_IMPLEMENTED",
+  "p16c_import_verification": {
+    "bytecode_detected": false,
+    "expected_sha256": "51c3af7b3eed1c5e831614d0c4b320ed48cffa3a9846d88a967667e121e9dcd8",
+    "manifest_coverage": "COMPLETE",
+    "manifest_entries_verified": "57/57",
+    "p16c_preserved": true,
+    "package_sha256": "51c3af7b3eed1c5e831614d0c4b320ed48cffa3a9846d88a967667e121e9dcd8",
+    "secrets_detected": true,
+    "sidecar_verified": true,
+    "unsafe_paths": [],
+    "verification_status": "VERIFIED_WITH_NOTES",
+    "zip_entry_count": 57,
+    "zip_sha256_match": true
+  },
+  "p16d_implementation_status": "PASS_RUNTIME_HARDENED_LIMITED_PORTFOLIO_OBSERVATION_RUNNING",
+  "performance_evidence_classification": "LIMITED_PORTFOLIO_FORWARD_EVIDENCE_ONLY",
+  "pnl_attribution_gate": "PASS",
+  "portfolio_identity": {
+    "executable": {
+      "base_currency": "EUR",
+      "classification": "LIMITED_EXECUTABLE_SUBSET_PERFORMANCE",
+      "excluded_from_execution": [
+        "VUSD",
+        "SNDK"
+      ],
+      "initial_capital_eur": 500.0,
+      "no_retroactive_inclusion": true,
+      "p16c_ledger_preserved": true,
+      "portfolio_id": "PROVISIONAL_EXECUTABLE_PORTFOLIO_6_POSITION_500_EUR",
+      "position_count": 6,
+      "symbols": [
+        "OXY",
+        "WDC",
+        "STX",
+        "INTC",
+        "MU",
+        "CIEN"
+      ]
+    },
+    "executable_positions": 6,
+    "full_reference_claimed_as_executed": false,
+    "generated_at_utc": "2026-06-01T15:12:49+00:00",
+    "observation_only": [
+      "VUSD",
+      "SNDK"
+    ],
+    "policy": {
+      "executable_portfolio_id": "PROVISIONAL_EXECUTABLE_PORTFOLIO_6_POSITION_500_EUR",
+      "no_retroactive_portfolio_identity_change": true,
+      "option_a_new_8_position_portfolio": {
+        "new_portfolio_id": "REFERENCE_PORTFOLIO_8_POSITION_500_EUR_V2",
+        "requires_new_forward_start": true,
+        "trigger": "VUSD_and_SNDK_fully_validated"
+      },
+      "option_b_continue_6_position": {
+        "performance_classification": "LIMITED_EXECUTABLE_SUBSET_PERFORMANCE",
+        "trigger": "identity_or_currency_not_fully_validated"
+      },
+      "portfolio_identity_policy_version": "P16D",
+      "reference_portfolio_id": "REFERENCE_PORTFOLIO_8_POSITION_500_EUR",
+      "reserved_cash_policy": "transparent_uninvested_cash_after_cost_adjusted_allocation",
+      "tracking_error_method": "absolute_eur_deviation_vs_reference_targets"
+    },
+    "reference": {
+      "base_currency": "EUR",
+      "fully_executed": false,
+      "initial_capital_eur": 500.0,
+      "portfolio_id": "REFERENCE_PORTFOLIO_8_POSITION_500_EUR",
+      "position_count": 8,
+      "purpose": "target_and_comparison_allocation",
+      "symbols": [
+        "OXY",
+        "VUSD",
+        "WDC",
+        "SNDK",
+        "STX",
+        "INTC",
+        "MU",
+        "CIEN"
+      ]
+    },
+    "reference_positions": 8
+  },
+  "portfolio_reconciliation_gate": "PASS",
+  "portfolio_state": {
+    "cash_eur": 153.7288,
+    "cumulative_net_pnl_eur": -0.6912,
+    "initial_allocation_executed": true,
+    "initial_capital_eur": 500.0,
+    "initial_execution_cost_eur": 0.6912,
+    "initial_mtm_recorded": true,
+    "initial_post_fill_portfolio_value_eur": 499.3088,
+    "last_mark_value_eur": 498.9438,
+    "mark_count": 1,
+    "migrated_from_p16c": true,
+    "no_reinitialization": true,
+    "p16c_baseline_mark_count": 1,
+    "portfolio_id": "PROVISIONAL_EXECUTABLE_PORTFOLIO_6_POSITION_500_EUR",
+    "positions": [
+      {
+        "avg_cost_eur": 51.32187871733935,
+        "last_mark_eur": 51.39503221117027,
+        "market_value_eur": 88.6362,
+        "shares": 1.724605610941839,
+        "symbol": "OXY"
+      },
+      {
+        "avg_cost_eur": 473.02018888123445,
+        "last_mark_eur": 471.1096295984722,
+        "market_value_eur": 75.6532,
+        "shares": 0.16058511197937891,
+        "symbol": "WDC"
+      },
+      {
+        "avg_cost_eur": 775.42643054888,
+        "last_mark_eur": 778.3351576498131,
+        "market_value_eur": 63.0958,
+        "shares": 0.08106507274391589,
+        "symbol": "STX"
+      },
+      {
+        "avg_cost_eur": 95.54811475271086,
+        "last_mark_eur": 95.36308234148714,
+        "market_value_eur": 41.8688,
+        "shares": 0.43904581590721353,
+        "symbol": "INTC"
+      },
+      {
+        "avg_cost_eur": 886.0780317202699,
+        "last_mark_eur": 879.7526428343162,
+        "market_value_eur": 38.1755,
+        "shares": 0.04339346945025995,
+        "symbol": "MU"
+      },
+      {
+        "avg_cost_eur": 484.75878529596883,
+        "last_mark_eur": 483.93259039979404,
+        "market_value_eur": 37.7855,
+        "shares": 0.0780800702289299,
+        "symbol": "CIEN"
+      }
+    ],
+    "post_baseline_baseline_value_eur": 498.9438,
+    "post_baseline_mark_count": 1,
+    "subsequent_fx_pnl_eur": 0.0,
+    "subsequent_market_price_pnl_eur": 0.0,
+    "updated_at_utc": "2026-06-01T15:12:51+00:00"
+  },
+  "real_money": false,
+  "simulation_only": true,
+  "stateful_continuation": {
+    "initial_allocation_executed": true,
+    "migrated_from_p16c": true,
+    "stateful_continuation_no_reinitialization": "PASS"
+  },
+  "trading212": {
+    "client_and_guard_tests_passed": true,
+    "credentials_configured": false,
+    "demo_base_url": "https://demo.trading212.com/api/v0",
+    "demo_read_only_metadata_sync_active": false,
+    "environment": "DEMO_ONLY",
+    "live_host_blocked": true,
+    "order_endpoints_blocked": true,
+    "secrets_excluded": true,
+    "sync_status": "CLIENT_TESTED_READY_FOR_OPTIONAL_DEMO_SYNC",
+    "write_methods_blocked": true
+  },
+  "usd_path": "PASS",
+  "vusd_quote_unit_verified": true
+}

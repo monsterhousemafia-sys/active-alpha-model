@@ -1,0 +1,78 @@
+{
+  "created_at_utc": "20260530T211341Z",
+  "phase": "V3_CONTROLLED_FORWARD_MONITORING_FOUNDATION",
+  "files": [
+    {
+      "original_path": "aa_evidence_status.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_evidence_status.py",
+      "size_bytes": 20614,
+      "sha256": "936f13e04f5603ad8fb0c49dbfb3ff0e0e22965d71ba311dd26916f2e6e856eb"
+    },
+    {
+      "original_path": "aa_forward_monitor_schema.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_forward_monitor_schema.py",
+      "size_bytes": 3369,
+      "sha256": "976d2b2ab836f3d14875185d05a8ca41b95c6913ef94191b27b2141e80dafd44"
+    },
+    {
+      "original_path": "aa_monitoring_readiness.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_monitoring_readiness.py",
+      "size_bytes": 7950,
+      "sha256": "24cc69a28244beb448288c4ad138d27cf34730052093b13ebb3fe80271e7d2ae"
+    },
+    {
+      "original_path": "aa_shadow_monitor_status.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_shadow_monitor_status.py",
+      "size_bytes": 1733,
+      "sha256": "6ba170ad521dd523ccf8c219890e3ebf530f80e2856d6ed1d78a2e0b107d4d19"
+    },
+    {
+      "original_path": "aa_paper_monitor_status.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_paper_monitor_status.py",
+      "size_bytes": 1786,
+      "sha256": "e46f229f38e7b08060e08672df33ecf85c8eae52ff6a2f23c3698079525a9e59"
+    },
+    {
+      "original_path": "aa_vision_controller.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_vision_controller.py",
+      "size_bytes": 24318,
+      "sha256": "30768c4ab71fdec6d97e60dced08a4d286733c1724c84fdbe2139c98154ff7a0"
+    },
+    {
+      "original_path": "aa_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/aa_vision_phase_catalog.py",
+      "size_bytes": 12140,
+      "sha256": "45111496b06e428020b5aff4c65fd1489ac4a54120910a4c3c5d2596dc1e6105"
+    },
+    {
+      "original_path": "control/evidence/current_evidence_status.json",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/control__evidence__current_evidence_status.json",
+      "size_bytes": 4097,
+      "sha256": "9425d86bb2082590ce643dec3f3b94a8891b87811d34a0a97fe64f9cd5cc6dee"
+    },
+    {
+      "original_path": "control/vision_automation/automation_state.json",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/control__vision_automation__automation_state.json",
+      "size_bytes": 1409,
+      "sha256": "94780041eb3db7fc9189644a25cc23560974ab83faab84758d438e2f1a98a230"
+    },
+    {
+      "original_path": "control/vision_automation/phase_catalog.json",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/control__vision_automation__phase_catalog.json",
+      "size_bytes": 6664,
+      "sha256": "1aa73479e414062dc7210b793caa34fcbeec6cb45327069afb5fe8da53cf814a"
+    },
+    {
+      "original_path": "control/vision_automation/review_registry/review_registry.json",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/control__vision_automation__review_registry__review_registry.json",
+      "size_bytes": 5177,
+      "sha256": "f9d9b553fff62b2970e63ef0d911cc55efc1d66c3d8e8f1b8b7ae8b37235ead9"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T211341Z_V3/VISION_PROGRESS.json",
+      "size_bytes": 898,
+      "sha256": "dcf323acb99492f4f670975086b388e98d67e62e8c34374cf50ae75e10993012"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "title_de": "Pilot-Zentrale",
+  "tagline_de": "Ein Chat · sichtbar bauen · getestet · König gibt frei",
+  "phases": ["eingereicht", "wird_umgesetzt", "getestet", "wartet_freigabe", "live", "abgelehnt", "fehler"],
+  "default_test_cmd": "python3 -m pytest tests/test_r3_build_kernel.py tests/test_r3_pilot_central.py -q --tb=no",
+  "share_subdir": ".local/share/r3-os/pilot",
+  "board_file": "central_board.json",
+  "king_role_de": "König — nur Freigabe nach Test",
+  "contributor_role_de": "Mitwirkende — Beitrag über Chat /beitrag",
+  "chat_commands_de": [
+    "/beitrag <was> — R3-OS bauen",
+    "/beitrag forschung <was> — Forschungszweig (tägliche Prognose, Finanzierung)",
+    "/prognose <was> — Kurzform Forschungszweig",
+    "/freigeben — König: freigeben",
+    "/ablehnen — König: ablehnen",
+    "/board — Anzeige aktualisieren"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "title": "Deep .py consolidation (disentangled) - r0_migration tool cluster",
+  "registered_at_utc": "2026-06-05T00:24:00+00:00",
+  "registered_by": "user directive: 'Tiefe .py-Konsolidierung (entflochten) -> erst nach M1/M2-Seal (live zu riskant)'",
+  "status": "PLANNED",
+  "principle": "ONE driver -> ONE conductor -> phase runners -> ONE guard -> ONE executor, supported by a small core-lib set. Rival autonomous drivers and duplicated friction utilities are retired. RETIRE != blind delete: several 'rival' modules export PURE helpers that the canonical chain imports (e.g. sla_enforce.canonical_r0_dir is used by run_r0_migration_phase_m1). Disentangle = extract the still-needed pure helpers into the core lib FIRST, then remove the driver loop + friction.",
+  "hard_invariant": "After EVERY step the canonical chain must (a) import cleanly, (b) py_compile cleanly, (c) pass seal_r0_migration_phase.py --verify-only for all already-sealed phases. Any regression -> revert that step (fail-closed).",
+  "gating": {
+    "execute_only_after": ["M1_sealed", "M2_sealed", "WSL_host_ready"],
+    "requires_explicit_go": true,
+    "no_core_edits_while_m1_running": true,
+    "prefer_host": "WSL ~/active_alpha_model (not Windows E: — avoid consolidate-then-rsync waste)",
+    "reason_live_risky": "The cluster is import-entangled; editing while M1 backtest + autoseal are live could break the seal pipeline mid-flight."
+  },
+  "dependency_map_basis": "derived from import grep over tools/ (2026-06-05). Canonical reachability = imported (transitively) by _m1_autoseal -> orchestrator / phase runners / seal / phase_guard / validation_matrix / outage_guard.",
+  "classification": {
+    "KEEP_canonical_path": [
+      "tools/_m1_autoseal.py (the single driver; singleton-guarded)",
+      "tools/run_r0_migration_phase_orchestrator.py (canonical conductor)",
+      "tools/run_r0_migration_phase_m0.py",
+      "tools/run_r0_migration_phase_m1.py",
+      "tools/run_r0_migration_phase_m2.py",
+      "tools/seal_r0_migration_phase.py",
+      "tools/r0_migration_phase_guard.py (gate authority)",
+      "tools/run_validation_matrix.py (executor)"
+    ],
+    "KEEP_core_lib": [
+      "tools/r0_migration_runtime.py (process/CPU/matrix helpers - imported widely)",
+      "tools/r0_migration_commander.py (PURE process-control helpers _migration_pids/_kill_pids/_lock_holder_pid/_pid_alive - keep; RETIRE only its autonomous run_commander loop)",
+      "tools/r0_migration_crash_guard.py (_m1_returns_complete/_m1_blockers/ensure_m1_unblocked/reconcile - used by phase_guard/outage_guard/status)",
+      "tools/r0_migration_outage_guard.py (CPU-aware stall repair; fold recovery here)",
+      "tools/r0_migration_killer_pack.py (subprocess env + kill - used by validation_matrix)",
+      "tools/r0_migration_scheduled_worker.py (run_worker - used by orchestrator)"
+    ],
+    "MERGE": [
+      {
+        "target": "tools/r0_migration_processctl.py (NEW core module)",
+        "absorb": ["r0_migration_stop_unnecessary.py", "r0_migration_stop_hung_matrix.py", "r0_migration_eliminate_blockers.py", "r0_migration_post_r0_turbo.py", "r0_migration_prune_validation_junk.py"],
+        "why": "five overlapping stop/kill/prune utilities -> one process-control surface"
+      },
+      {
+        "target": "tools/r0_migration_status.py (NEW; or extend status_sync)",
+        "absorb": ["r0_migration_m1_status.py", "r0_migration_m1_control.py", "r0_migration_status_sync.py", "r0_migration_active_scope.py", "tools/_m1_progress.py"],
+        "why": "duplicated M1 status/progress/scope reporting -> one status surface. Drop dead M1_ENTRY_BAT (.bat launchers already removed)."
+      },
+      {
+        "target": "tools/r0_migration_outage_guard.py (extend)",
+        "absorb": ["r0_migration_recover_canonical_r0.py", "run_r0_migration_recover.py"],
+        "why": "recovery belongs with stall detection/repair"
+      },
+      {
+        "target": "tools/r0_migration_runtime.py (extend) + delete sla enforcement",
+        "absorb_pure_helpers_from": "r0_migration_sla_enforce.py (canonical_r0_dir, canonical_r0_incomplete, _build_path_only_cmd, CANONICAL_R0_STAMP)",
+        "then_retire": "the SLA *enforcement* friction (enforce_sla_fast_path / sla_fast_path_active deadline logic) - already neutered via m1_sla_6h.json",
+        "why": "phase_m1/commander/reach_milestone import pure path helpers from sla_enforce; the deadline friction (A-gate) must go without breaking those imports"
+      }
+    ],
+    "RETIRE_rival_drivers": [
+      "tools/run_r0_migration_autopilot.py",
+      "tools/run_r0_migration_autopilot_selfcheck.py",
+      "tools/r0_migration_executive.py",
+      "tools/r0_migration_progress_guard.py",
+      "tools/run_r0_migration_watch_loop.py",
+      "tools/run_r0_migration_strategic_bootstrap.py",
+      "tools/r0_migration_reach_milestone.py",
+      "tools/r0_migration_operational_setup.py",
+      "tools/r0_migration_run_canonical_r0.py (R0 already complete)",
+      "tools/r0_migration_finish_push.py (only reached via retired drivers + scheduled_worker; verify scheduled_worker no longer needs it, else fold the seal-attempt into orchestrator)"
+    ]
+  },
+  "execution_order": [
+    "0. PRECONDITION: M1 sealed AND M2 sealed AND explicit go.",
+    "1. Snapshot: git status clean; record canonical verify-only PASS baseline for M0/M1/M2.",
+    "2. Extract pure helpers (sla_enforce path helpers, commander process helpers) into core lib; rewire imports. Verify chain.",
+    "3. MERGE processctl cluster; rewire callers; verify chain.",
+    "4. MERGE status cluster; rewire callers; verify chain.",
+    "5. Fold recovery into outage_guard; verify chain.",
+    "6. RETIRE rival drivers (delete) once nothing canonical imports them (grep must return only deleted-among-deleted).",
+    "7. Final: import+compile+verify-only PASS on M0/M1/M2; one driver (_m1_autoseal) + one conductor (orchestrator) remain as entry points."
+  ],
+  "validation_each_step": [
+    "python -c import of the full canonical chain",
+    "py_compile of canonical chain + edited modules",
+    "seal_r0_migration_phase.py --phase {M0,M1,M2} --verify-only --json -> blockers == [] for sealed phases",
+    "import grep: retired module names must have ZERO remaining importers"
+  ],
+  "do_not": [
+    "do not change any gate logic or thresholds (B-gates intact)",
+    "do not alter strategy returns / numerical outputs (this is tooling-only)",
+    "do not run during a live M1/M2 backtest"
+  ],
+  "preparation_done_now": "read-only dependency map + classification registered. Execute on WSL after M1+M2 seal + explicit go. See migration_efficiency_plan.json."
+}

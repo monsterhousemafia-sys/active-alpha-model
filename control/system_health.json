@@ -1,0 +1,18 @@
+{
+  "active_signal_validity": "NOT_AVAILABLE",
+  "active_variant_label": "R0_LEGACY_ENSEMBLE",
+  "analytical_validity": "NOT_VALIDATED",
+  "batch_work_active": false,
+  "critical_errors": [],
+  "current_phase": "P16G_READONLY_REAL_ACCOUNT_CONFIGURATION_AND_MANUAL_TICKET_GENERATION",
+  "integrity_status": "PASS",
+  "last_failed_job": "",
+  "last_known_good_model_id": "R3_w075_q065_noexit",
+  "last_known_good_run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+  "last_successful_job": "",
+  "last_updated_at_utc": "2026-06-09T18:48:14+00:00",
+  "operational_health": "OK",
+  "pipeline_status": "IDLE",
+  "pipeline_version": 4,
+  "validated_run_id": ""
+}

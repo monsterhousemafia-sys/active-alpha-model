@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "ranks": [
+    {"id": "evocatus", "name_de": "Evocatus", "min_cpu_seconds": 180000},
+    {"id": "centurio", "name_de": "Centurio", "min_cpu_seconds": 36000},
+    {"id": "optio", "name_de": "Optio", "min_cpu_seconds": 7200},
+    {"id": "legionarius", "name_de": "Legionär", "min_cpu_seconds": 1800},
+    {"id": "miles", "name_de": "Miles", "min_cpu_seconds": 300},
+    {"id": "auxilia", "name_de": "Auxilia", "min_cpu_seconds": 60},
+    {"id": "tiro", "name_de": "Tiro", "min_cpu_seconds": 0}
+  ],
+  "campaign_goal_cpu_hours": 10000,
+  "detail_de": "Freiwillige Legion — Rang nach gemessenen CPU-Sekunden (Preview, Pulse, Checks)."
+}

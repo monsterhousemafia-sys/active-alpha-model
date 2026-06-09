@@ -1,0 +1,193 @@
+{
+  "blockers": [],
+  "champion_sync": {
+    "active_signal_variant": "DAILY_ALPHA_H1",
+    "coherence_issues": [],
+    "coherence_ok": true,
+    "effective_orders_profile": "r3_w075_production",
+    "governance_champion": "R0_LEGACY_ENSEMBLE",
+    "manifest_path": "control/strategic_governance.json",
+    "status": "OK"
+  },
+  "daily_trading_fee_context": {
+    "cost_stress_incremental_bps": 25.0,
+    "fee_model": "trading212_us",
+    "fx_bps_per_side": 0.0,
+    "horizon": 1,
+    "note_de": "Tages-Rebalance (h=1): Kosten skaliieren mit Turnover pro Tag — Baseline ~4.0 bps Roundtrip + Stress +25 bps auf Rebalance-Turnover. Ohne sealed PASS vs mom_1_top12 netto ist Live-Echtgeld Forschung.",
+    "rebalance_every": 1,
+    "roundtrip_bps_baseline": 4.0,
+    "schema_version": 1,
+    "slippage_bps_per_side": 2.0
+  },
+  "disclaimer": "Research signal only — not investment advice; real-money gates unchanged.",
+  "fallback_used": false,
+  "generated_at_utc": "2026-06-09T18:48:14+00:00",
+  "h1_backtest_sealed": false,
+  "h1_backtest_status": {
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "COMPLETE"
+  },
+  "h1_evaluation": {
+    "evaluated_at_utc": "2026-06-09T20:25:28+00:00",
+    "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
+    "metrics_strategy": {
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531
+    },
+    "pass_full_seal": false,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+  },
+  "h1_governance_banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+  "h1_operational_ok": true,
+  "last_error": null,
+  "message_de": "Predict bereit.",
+  "ok": true,
+  "order_gate_ok": true,
+  "portfolio_path": "model_output_sp500_pit_t212/latest_target_portfolio.csv",
+  "price_current": true,
+  "price_latest": "2026-06-09",
+  "profile_used": "daily_alpha_h1",
+  "profiles_attempted": [
+    "daily_alpha_h1",
+    "r3_w075_production"
+  ],
+  "refinement": {
+    "cockpit_refreshed": true,
+    "live_sync": {
+      "merged_ticker_count": 798,
+      "ok": true,
+      "price_latest": "2026-06-09",
+      "prices_refreshed": true,
+      "r3_diagnosis_ok": true,
+      "r3_regime_match": false,
+      "signal_date": "2026-06-09",
+      "signal_refreshed": true
+    },
+    "messages": [
+      "[INFO] Tages-Tail-Merge (SPY): Panel bis 2026-06-09 (Referenz 2026-06-09)",
+      "[INFO] Live-Tagesdaten: lade 798 Ticker ab 2012-01-01 (Portfolio + Universum + Benchmark) …",
+      "[OK] Preis-Cache aktualisiert — Stand 2026-06-09 (Benchmark SPY)",
+      "[INFO] Signal-Update mit frischen Tagesdaten …",
+      "[INFO] Signal-Update: berechne latest_target_portfolio.csv …",
+      "[OK] Modell-Signal aktualisiert — 2026-06-09",
+      "[OK] Prognose-Feedback: +0 neu, 0 reif",
+      "[WARN] R3-Diagnose: Regime-Drift — live RISK_ON, Signal RISK_OFF",
+      "  -> Regime-Drift: frische Tagesdaten (RISK_ON) weichen vom gespeicherten Signal (RISK_OFF) ab — Signal-Refresh empfohlen.",
+      "[INFO] Regime-Drift erkannt — erzwinge Signal-Refresh mit Tagesdaten …",
+      "[INFO] Signal-Update: berechne latest_target_portfolio.csv …",
+      "[OK] Modell-Signal aktualisiert — 2026-06-09",
+      "[WARN] R3-Diagnose: Regime-Drift — live RISK_ON, Signal RISK_OFF",
+      "[OK] Cockpit-Snapshot aktualisiert: /home/machinax7/active_alpha_model/control/review_snapshot/v5r_decision_cockpit_snapshot.json"
+    ],
+    "model_status_updated": true,
+    "ok": true,
+    "r3_regime_match": false,
+    "signal_refreshed": true,
+    "steps": [
+      {
+        "price_source": "fictive",
+        "status": "AGGRESSIVE",
+        "step": "adaptive_plan"
+      },
+      {
+        "r3_regime_match": false,
+        "signal_refreshed": true,
+        "status": "OK",
+        "step": "live_daily_sync"
+      },
+      {
+        "regime_match": false,
+        "signal_date": "2026-06-09",
+        "status": "OK",
+        "step": "auto_signal_on_drift"
+      },
+      {
+        "mature": 73350,
+        "status": "OK",
+        "step": "sync_outcome_ledger"
+      },
+      {
+        "status": "OK",
+        "step": "model_status"
+      },
+      {
+        "status": "OK",
+        "step": "sync_control_plane"
+      },
+      {
+        "path": "/home/machinax7/active_alpha_model/control/review_snapshot/v5r_decision_cockpit_snapshot.json",
+        "status": "OK",
+        "step": "cockpit_snapshot"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "signal_current": true,
+  "signal_date": "2026-06-09",
+  "top_picks": [
+    {
+      "target_weight": 0.1143614412750685,
+      "ticker": "OMC"
+    },
+    {
+      "target_weight": 0.1006338056376121,
+      "ticker": "PFE"
+    },
+    {
+      "target_weight": 0.0811762812714739,
+      "ticker": "CHTR"
+    },
+    {
+      "target_weight": 0.0721875217411356,
+      "ticker": "EPAM"
+    },
+    {
+      "target_weight": 0.0584354519738266,
+      "ticker": "GM"
+    },
+    {
+      "target_weight": 0.0573321409747144,
+      "ticker": "GHC"
+    },
+    {
+      "target_weight": 0.0533261520255586,
+      "ticker": "TDY"
+    },
+    {
+      "target_weight": 0.0480377033065067,
+      "ticker": "GR"
+    },
+    {
+      "target_weight": 0.0414965778093244,
+      "ticker": "APD"
+    },
+    {
+      "target_weight": 0.0410465684279082,
+      "ticker": "NWSA"
+    },
+    {
+      "target_weight": 0.0405636121113217,
+      "ticker": "DNR"
+    },
+    {
+      "target_weight": 0.0216402483102857,
+      "ticker": "BHI"
+    },
+    {
+      "target_weight": 0.0199388382408362,
+      "ticker": "AME"
+    },
+    {
+      "target_weight": 0.0196266517216071,
+      "ticker": "COV"
+    },
+    {
+      "target_weight": 7.314028634657263e-05,
+      "ticker": "MUR"
+    }
+  ]
+}

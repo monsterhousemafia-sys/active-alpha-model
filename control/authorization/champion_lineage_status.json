@@ -1,0 +1,16 @@
+{
+  "active_signal_profile": "daily_alpha_h1",
+  "active_signal_variant": "DAILY_ALPHA_H1",
+  "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+  "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+  "champion_change_authorized": true,
+  "g1_comparison_champion_until_new_external_approval": "R3_w075_q065_noexit",
+  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "prediction_profile_ref": "control/prediction_operations.json",
+  "prior_champion": "R3_w075_q065_noexit",
+  "research_sharpe_leader": "MOM_63_TOP12",
+  "research_sharpe_leader_ref": "evidence/canonical_model_comparison.json",
+  "schema_version": 2,
+  "status": "M9_ACTIVE_CHAMPION",
+  "strategic_governance_ref": "control/strategic_governance.json"
+}

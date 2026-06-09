@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "name_de": "Alpha Model Bau",
+  "surface": "entfaltungsraum",
+  "primary_entry": "alpha-model-agent",
+  "workshop_deprecated": true,
+  "allow_run": true,
+  "write_prefixes": [
+    "tools/",
+    "analytics/",
+    "tests/",
+    "control/",
+    "evidence/",
+    "docs/",
+    "execution/",
+    "aa_"
+  ],
+  "write_forbidden_substrings": [
+    ".env",
+    "credentials",
+    "secret",
+    ".git/"
+  ],
+  "run_allowlist_prefixes": [
+    "python3 -m pytest ",
+    "python3 tools/ai_kernel.py ",
+    ".venv/bin/python -m pytest ",
+    "bash tools/"
+  ],
+  "run_forbidden_substrings": [
+    "git push",
+    "git reset --hard",
+    "rm -rf",
+    "pip install",
+    "apt ",
+    "sudo "
+  ],
+  "allow_run_patterns": [
+    "python3 -m pytest tests/",
+    "python3 -m pytest tests/test_",
+    ".venv/bin/python -m pytest tests/"
+  ],
+  "disallow_run_patterns": [
+    "git push",
+    "git reset --hard",
+    "rm -rf",
+    "pip install",
+    "apt ",
+    "sudo "
+  ],
+  "allowed_paths": [
+    "tools/",
+    "analytics/",
+    "tests/",
+    "control/",
+    "evidence/",
+    "docs/",
+    "execution/",
+    "aa_"
+  ],
+  "hint_de": "König-Modus: /bau <Aufgabe> · /bau status · /bau apply · /beitrag <Patch> · bis 128 Schritte"
+}

@@ -1,0 +1,32 @@
+---
+description: Alpha Model — Runtime vs. Werkstatt (Wachstums-Abwandlung)
+alwaysApply: true
+---
+
+# Alpha Model — Wachstum
+
+**Bindend:** `control/alpha_model_growth.json` · `control/alpha_model_workshop_policy.json`
+
+## Zwei Oberflächen
+
+| Oberfläche | Name | Rolle |
+|------------|------|--------|
+| **Runtime** | Alpha Model | Produkt — Cockpit, Handel, Validierung, Operator |
+| **Werkstatt** | Alpha Model — Werkstatt | Wachstum — dieser Cursor-Chat; baut, ersetzt nicht |
+
+## Dieser Chat = Werkstatt
+
+- Zweck: Bau, Tests, H1, Migration, Pilot — kein Meta, kein Cursor-Klon.
+- Output fließt in **Evidence** → **Runtime** (Cockpit :17890).
+- Hauptkanal bleibt **Alpha Model KI** (Ollama / active-alpha-chat) — Werkstatt ist optional.
+
+## Desktop
+
+- `Alpha-Model.desktop` — Cockpit (Runtime)
+- `Alpha-Model-Workshop.desktop` — Cursor-Workspace (Werkstatt)
+- CLI: `alpha-model` · `alpha-model-workshop`
+
+## Ausführung
+
+- `multitask_mode: off` — direkt arbeiten, keine Task-Subagenten (außer Operator sagt «Multitask»).
+- Trading-Safety und H1-Seal-Integrität bleiben bindend (`AGENTS.md`).

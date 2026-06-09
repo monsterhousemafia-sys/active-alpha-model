@@ -1,0 +1,9 @@
+{
+  "ack_phrase_verified": true,
+  "auto_execute_enabled": false,
+  "changed_by": "trading_mode_toggle",
+  "enabled": true,
+  "enabled_at_utc": "2026-06-02T15:25:29+00:00",
+  "governance_note": "Echtes T212-Geld erlaubt — jede Order erfordert finale Bestätigung in der EXE (Dialog vor Versand).",
+  "mode": "MANUAL_CONFIRM_BEFORE_SUBMIT"
+}

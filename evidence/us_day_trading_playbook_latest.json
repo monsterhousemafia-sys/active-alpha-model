@@ -1,0 +1,63 @@
+{
+  "deferred_execution_allowed": false,
+  "deferred_pending": 0,
+  "generated_at_utc": "2026-06-09T20:28:45+00:00",
+  "headline_de": "US-Session zu → Für Eröffnung vormerken",
+  "next_action": "ENQUEUE_OPEN",
+  "pause_new_buys": false,
+  "plan_safety": {
+    "blocks_execute": false,
+    "buy_rows": 11,
+    "errors_de": [],
+    "investable_eur": 678.52,
+    "max_single_buy_pct": 0.12,
+    "ok": true,
+    "warnings_de": []
+  },
+  "playbook_steps": [
+    "Session zu — «Order ausführen» vormerkt alle 11 Modell-Allokationen für Eröffnung.",
+    "T212-Kosten (Schätzung): FX ~0.15% ≈ 0.09 € · Reservierung +0% · All-in ~32288043.53 €"
+  ],
+  "policy": {
+    "armed": false,
+    "execution_window_mode": "full_session"
+  },
+  "primary_symbol": "MU",
+  "readiness": {
+    "api_execute_configured": false,
+    "api_execute_scope_proven": false,
+    "blockers": [
+      "EXECUTION_API_NOT_CONFIGURED",
+      "US_REGULAR_SESSION_CLOSED",
+      "CASH_NOT_VERIFIED",
+      "REVIEW_MODE_BLOCKS_LIVE_ORDERS"
+    ],
+    "cash_eur": null,
+    "cash_source": "readonly_sync",
+    "ok": false,
+    "session": {
+      "now_ny": "2026-06-09T16:28:45.008788-04:00",
+      "open": false,
+      "phase": "CLOSED",
+      "reason_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden."
+    },
+    "status_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden.\nHinweis: Ausserhalb US-Regular meldet T212 oft «Insufficient funds» — obwohl API «Orders ausführen» hat. Ihr Konto: keine Extended-Hours.\nAlternative: In der App «Order ausführen» zum Vormerken oder «Automatisch bei US-Eröffnung» aktivieren.\nAPI mit Order-Rechten in der App speichern.\nKontostand nicht verifiziert — «Aktualisieren».",
+    "us_session_open": false,
+    "warnings": []
+  },
+  "readiness_ok": false,
+  "reevaluation_urgency": "NONE",
+  "session": {
+    "detail_phase": "CLOSED",
+    "minutes_since_open": 0,
+    "minutes_until_close": 0,
+    "now_ny": "2026-06-09T16:28:45.008350-04:00",
+    "now_ny_hm": "16:28 NY",
+    "open": false,
+    "phase": "CLOSED",
+    "reason_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden."
+  },
+  "status": "OK",
+  "summary_de": "US-Session zu → Für Eröffnung vormerken · NY 16:28 NY · Kein Broker-Sync — zuerst «Aktualisieren». · Session zu — «Order ausführen» vormerkt alle 11 Modell-Allokationen für Eröffnung.",
+  "trade_required": false
+}

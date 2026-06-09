@@ -1,0 +1,252 @@
+{
+  "G1_symbol_mapping": {
+    "champion_symbol_count": 14,
+    "execution_report_uses_champion_symbols": true,
+    "issues": [],
+    "mapping_rows": [
+      {
+        "champion_symbol": "AMD",
+        "t212_ticker": "AMD_US_EQ"
+      },
+      {
+        "champion_symbol": "CAT",
+        "t212_ticker": "CAT_US_EQ"
+      },
+      {
+        "champion_symbol": "CIEN",
+        "t212_ticker": "CIEN_US_EQ"
+      },
+      {
+        "champion_symbol": "GOOG",
+        "t212_ticker": "GOOG_US_EQ"
+      },
+      {
+        "champion_symbol": "GOOGL",
+        "t212_ticker": "GOOGL_US_EQ"
+      },
+      {
+        "champion_symbol": "INTC",
+        "t212_ticker": "INTC_US_EQ"
+      },
+      {
+        "champion_symbol": "MU",
+        "t212_ticker": "MU_US_EQ"
+      },
+      {
+        "champion_symbol": "ON",
+        "t212_ticker": "ON_US_EQ"
+      },
+      {
+        "champion_symbol": "OXY",
+        "t212_ticker": "OXY_US_EQ"
+      },
+      {
+        "champion_symbol": "SNDK",
+        "t212_ticker": "SNDK_US_EQ"
+      },
+      {
+        "champion_symbol": "STX",
+        "t212_ticker": "STX_US_EQ"
+      },
+      {
+        "champion_symbol": "TXN",
+        "t212_ticker": "TXN_US_EQ"
+      },
+      {
+        "champion_symbol": "VRT",
+        "t212_ticker": "VRT_US_EQ"
+      },
+      {
+        "champion_symbol": "WDC",
+        "t212_ticker": "WDC_US_EQ"
+      }
+    ],
+    "note_de": "Orders/Reports: Feld symbol = Champion-Ticker (STX); T212 nur in t212_instrument_id.",
+    "portfolio_tradeable_count": 11,
+    "rule_de": "Orders/Reports: Feld symbol = Champion-Ticker (STX); T212 nur in t212_instrument_id.",
+    "status": "PASS",
+    "stx_maps_to_stx_us_eq": true
+  },
+  "G2_planning_cash": {
+    "cash_cap_ok": true,
+    "evidence_path": "evidence/phase_g_planning_cash_audit.json",
+    "note_de": "Skalierung raw→planning_cash; Evidence in phase_g_planning_cash_audit.json",
+    "planning_cash_eur": 492.0,
+    "raw_buy_total_eur": 638.0,
+    "scale_factor": 0.771112,
+    "scaled_buy_total_eur": 492.0,
+    "status": "PASS",
+    "t212_sync_status": "PASS"
+  },
+  "G3_quote_coverage": {
+    "blocks": [],
+    "coverage_ok": true,
+    "note_de": "14/14 Kurse OK",
+    "quote_coverage_label_de": "14/14 Kurse OK",
+    "required_count": 14,
+    "sndk_in_champion_symbols": true,
+    "status": "PASS"
+  },
+  "G4_execution_report": {
+    "module": "analytics/execution_result_report.py",
+    "note_de": "1 Zeile/Symbol: executed vs NO_LIMIT_PRICE vs PREFLIGHT",
+    "status": "PASS",
+    "summary_de": "1/2 an T212 gesendet — 1 ohne Kurs (MU)"
+  },
+  "G5_exe_os_bat": {
+    "exe_sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02",
+    "exe_verify": {
+      "exe_path": "E:\\active_alpha_model\\Marktanalyse.exe",
+      "exists": true,
+      "integrity": {
+        "actual_sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02",
+        "ok": true,
+        "reason": null,
+        "recorded_sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02"
+      },
+      "message_de": "Marktanalyse.exe vorhanden und Hash konsistent.",
+      "ok": true,
+      "sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02",
+      "sidecar_path": "E:\\active_alpha_model\\Marktanalyse.exe.sha256"
+    },
+    "note_de": "EXE-Rebuild nur mit --build-exe; OS-BAT startet Marktanalyse read-only.",
+    "os_bat_path": "active_alpha_marktanalyse_os.bat",
+    "os_bat_present": true,
+    "status": "PASS"
+  },
+  "G6_phase5_dry_run": {
+    "dry_run": {
+      "aa_execution_dry_run": true,
+      "cash_cap_ok": true,
+      "note_de": "Dry-run: keine T212-POSTs; AA_EXECUTION_DRY_RUN=1 für echte Ausführungsschicht.",
+      "ok": true,
+      "orders_after_wave": 14,
+      "planning_cash_eur": 492.0,
+      "quote_coverage": {
+        "blocks": [],
+        "coverage": {
+          "coverage_ok": true,
+          "coverage_ratio": 1.0,
+          "covered_count": 14,
+          "missing_symbols": [],
+          "required_count": 14
+        },
+        "message_de": "14/14 Kurse OK",
+        "ok": true,
+        "price_source_by_symbol": {
+          "AMD": "YAHOO_VALIDATED",
+          "CAT": "YAHOO_VALIDATED",
+          "CIEN": "YAHOO_VALIDATED",
+          "GOOG": "YAHOO_VALIDATED",
+          "GOOGL": "YAHOO_VALIDATED",
+          "INTC": "YAHOO_VALIDATED",
+          "MU": "YAHOO_VALIDATED",
+          "ON": "YAHOO_VALIDATED",
+          "OXY": "YAHOO_VALIDATED",
+          "SNDK": "YAHOO_VALIDATED",
+          "STX": "YAHOO_VALIDATED",
+          "TXN": "YAHOO_VALIDATED",
+          "VRT": "YAHOO_VALIDATED",
+          "WDC": "YAHOO_VALIDATED"
+        },
+        "quote_coverage_label_de": "14/14 Kurse OK",
+        "quote_snapshot_utc": "2026-06-03T20:26:33+00:00"
+      },
+      "quote_coverage_label_de": "14/14 Kurse OK",
+      "raw_buy_total_eur": 470.0,
+      "scale_factor": 1.0,
+      "scaled_buy_total_eur": 469.98,
+      "simulated_submissions": 14
+    },
+    "evidence_json": "evidence/v5r_live_rebalance_phase5_validation.json",
+    "exe": {
+      "exe_path": "E:\\active_alpha_model\\Marktanalyse.exe",
+      "exists": true,
+      "integrity": {
+        "actual_sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02",
+        "ok": true,
+        "reason": null,
+        "recorded_sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02"
+      },
+      "message_de": "Marktanalyse.exe vorhanden und Hash konsistent.",
+      "ok": true,
+      "sha256": "4a6052af6ab995d30444b6b583a60db1727efcaa2266c2dc05aa4094546c7e02",
+      "sidecar_path": "E:\\active_alpha_model\\Marktanalyse.exe.sha256"
+    },
+    "live_trading_operations": {
+      "executed": 14,
+      "execution_breakdown": {
+        "summary_de": "Dry-run: 14/14 simuliert — 14/14 Kurse OK"
+      },
+      "generated_at_utc": "2026-06-03T20:26:33+00:00",
+      "message_de": "Phase-5-Validierung (Dry-Run). Live US-Session-Run separat mit echten Credentials.",
+      "mode": "dry_run_simulation",
+      "ok": true,
+      "orders_planned": 14,
+      "phase": "LIVE_REBALANCE_PHASE5_VALIDATION",
+      "pytest_phase5": true,
+      "quote_coverage": {
+        "blocks": [],
+        "coverage": {
+          "coverage_ok": true,
+          "coverage_ratio": 1.0,
+          "covered_count": 14,
+          "missing_symbols": [],
+          "required_count": 14
+        },
+        "message_de": "14/14 Kurse OK",
+        "ok": true,
+        "price_source_by_symbol": {
+          "AMD": "YAHOO_VALIDATED",
+          "CAT": "YAHOO_VALIDATED",
+          "CIEN": "YAHOO_VALIDATED",
+          "GOOG": "YAHOO_VALIDATED",
+          "GOOGL": "YAHOO_VALIDATED",
+          "INTC": "YAHOO_VALIDATED",
+          "MU": "YAHOO_VALIDATED",
+          "ON": "YAHOO_VALIDATED",
+          "OXY": "YAHOO_VALIDATED",
+          "SNDK": "YAHOO_VALIDATED",
+          "STX": "YAHOO_VALIDATED",
+          "TXN": "YAHOO_VALIDATED",
+          "VRT": "YAHOO_VALIDATED",
+          "WDC": "YAHOO_VALIDATED"
+        },
+        "quote_coverage_label_de": "14/14 Kurse OK",
+        "quote_snapshot_utc": "2026-06-03T20:26:33+00:00"
+      },
+      "quote_coverage_label_de": "14/14 Kurse OK",
+      "rebalance_wave": {
+        "planning_cash_eur": 492.0,
+        "scale_factor": 1.0,
+        "total_buy_notional_scaled": 469.98
+      }
+    },
+    "note_de": "validate_live_rebalance_phase5.py — Dry-Run vor Release",
+    "overall_pass": true,
+    "pytest": {
+      "exit_code": 0,
+      "ok": true,
+      "stderr_tail": "",
+      "stdout_tail": "..............................                                           [100%]\n30 passed in 1.31s\n",
+      "tests": [
+        "tests/test_t212_instrument_quotes.py",
+        "tests/test_live_quote_champion_coverage.py",
+        "tests/test_rebalance_wave_planner.py",
+        "tests/test_champion_quote_gate.py",
+        "tests/test_execution_result_report.py",
+        "tests/test_live_rebalance_pipeline_integration.py",
+        "tests/test_quote_plausibility.py",
+        "tests/test_pilot_walkforward_mirror.py",
+        "tests/test_order_execution_fixes.py"
+      ]
+    },
+    "report_md": "docs/LIVE_TRADING_REBALANCE_PHASE5_VALIDATION.md",
+    "status": "PASS"
+  },
+  "generated_at_utc": "2026-06-03T20:26:33+00:00",
+  "overall_pass": true,
+  "phase": "G",
+  "schema_version": 1,
+  "status": "COMPLETE"
+}

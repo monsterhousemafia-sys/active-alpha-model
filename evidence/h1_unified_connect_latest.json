@@ -1,0 +1,206 @@
+{
+  "actions_taken": [
+    {
+      "id": "seal_optional_sync",
+      "status": "COMPLETE — Benchmark nicht erforderlich"
+    }
+  ],
+  "architecture_de": "Orchestrator = König auf diesem Host. Bash weltweit ist normal, aber ohne König-Orchestrierung nutzlos isoliert.",
+  "benchmark": {
+    "benchmark_path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/naive_mom_1_daily_returns.csv",
+    "benchmark_variant": "mom_1_top12",
+    "eta_de": "~45–60 Min (king_h1, 1867 Tages-Rebalances)",
+    "exists": false,
+    "generating": true,
+    "ok": true,
+    "progress_path": "evidence/h1_benchmark_progress.json",
+    "progress_pct": null,
+    "rebalance_dates_total": null,
+    "rebalance_done": null,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "size_bytes": 0,
+    "stale_evidence": false,
+    "status": "generating",
+    "unified_state": "generating"
+  },
+  "benchmark_processes": [
+    {
+      "cmd": "135677 pgrep -af generate_h1_naive_benchmark",
+      "pattern": "generate_h1_naive_benchmark",
+      "pid": 135677
+    },
+    {
+      "cmd": "135680 pgrep -af ai_kernel.py h1-benchmark",
+      "pattern": "ai_kernel.py h1-benchmark",
+      "pid": 135680
+    },
+    {
+      "cmd": "135681 pgrep -af ai_kernel.py h1-benchmark",
+      "pattern": "ai_kernel.py h1-benchmark",
+      "pid": 135681
+    },
+    {
+      "cmd": "135684 pgrep -af run_benchmark_sync",
+      "pattern": "run_benchmark_sync",
+      "pid": 135684
+    },
+    {
+      "cmd": "135685 pgrep -af run_benchmark_sync",
+      "pattern": "run_benchmark_sync",
+      "pid": 135685
+    },
+    {
+      "cmd": "135687 pgrep -af run_naive_momentum_baseline_full",
+      "pattern": "run_naive_momentum_baseline_full",
+      "pid": 135687
+    },
+    {
+      "cmd": "135688 pgrep -af run_naive_momentum_baseline_full",
+      "pattern": "run_naive_momentum_baseline_full",
+      "pid": 135688
+    }
+  ],
+  "connected_at_utc": "2026-06-09T17:25:55+00:00",
+  "evaluation": {
+    "beats_benchmark_sharpe": false,
+    "beats_benchmark_sharpe_after_cost_stress": false,
+    "benchmark_returns_path": null,
+    "benchmark_variant": "mom_1_top12",
+    "cost_stress_extra_bps_on_turnover": 25.0,
+    "daily_trading_fee_context": {
+      "cost_stress_incremental_bps": 25.0,
+      "fee_model": "trading212_us",
+      "fx_bps_per_side": 0.0,
+      "horizon": 1,
+      "note_de": "Tages-Rebalance (h=1): Kosten skaliieren mit Turnover pro Tag — Baseline ~4.0 bps Roundtrip + Stress +25 bps auf Rebalance-Turnover. Ohne sealed PASS vs mom_1_top12 netto ist Live-Echtgeld Forschung.",
+      "rebalance_every": 1,
+      "roundtrip_bps_baseline": 4.0,
+      "schema_version": 1,
+      "slippage_bps_per_side": 2.0
+    },
+    "evaluated_at_utc": "2026-06-08T15:34:29+00:00",
+    "max_drawdown_not_worse": true,
+    "max_drawdown_not_worse_after_cost_stress": true,
+    "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
+    "metrics_benchmark": {},
+    "metrics_benchmark_cost_stress": {},
+    "metrics_strategy": {
+      "annual_vol": 0.19825243917571733,
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531,
+      "total_return": 1.7245777497482102
+    },
+    "metrics_strategy_cost_stress": {
+      "annual_vol": 0.19825243917571733,
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531,
+      "total_return": 1.7245777497482102
+    },
+    "objective_ref": "control/r0_migration/alpha_objective.json",
+    "ok": true,
+    "pass_alpha_objective": false,
+    "pass_daily_cost_stress": false,
+    "pass_full_seal": false,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+  },
+  "future_lane": {
+    "active_for_mom_1_seal": false,
+    "federation_enabled": true,
+    "federation_mode": "execute",
+    "scope_de": "Federation/Legion = Zukunft für verteilte Path-Sim-Chunks — nicht der aktuelle mom_1_top12-Benchmark."
+  },
+  "generating_live": false,
+  "h1_backtest": {
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "COMPLETE"
+  },
+  "headline_de": "König-Orchestrator: H1 COMPLETE — Seal optional (mom_1 informativ)",
+  "mom_1_benchmark_lane": {
+    "benchmark_optional": true,
+    "benchmark_path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/naive_mom_1_daily_returns.csv",
+    "exists": false,
+    "generating_live": false,
+    "path_dependent": true,
+    "processes": [
+      {
+        "cmd": "135677 pgrep -af generate_h1_naive_benchmark",
+        "pattern": "generate_h1_naive_benchmark",
+        "pid": 135677
+      },
+      {
+        "cmd": "135680 pgrep -af ai_kernel.py h1-benchmark",
+        "pattern": "ai_kernel.py h1-benchmark",
+        "pid": 135680
+      },
+      {
+        "cmd": "135681 pgrep -af ai_kernel.py h1-benchmark",
+        "pattern": "ai_kernel.py h1-benchmark",
+        "pid": 135681
+      },
+      {
+        "cmd": "135684 pgrep -af run_benchmark_sync",
+        "pattern": "run_benchmark_sync",
+        "pid": 135684
+      },
+      {
+        "cmd": "135685 pgrep -af run_benchmark_sync",
+        "pattern": "run_benchmark_sync",
+        "pid": 135685
+      },
+      {
+        "cmd": "135687 pgrep -af run_naive_momentum_baseline_full",
+        "pattern": "run_naive_momentum_baseline_full",
+        "pid": 135687
+      },
+      {
+        "cmd": "135688 pgrep -af run_naive_momentum_baseline_full",
+        "pattern": "run_naive_momentum_baseline_full",
+        "pid": 135688
+      }
+    ],
+    "scope": "local_only",
+    "stale_evidence": false,
+    "unified_state": "generating"
+  },
+  "next_step_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+  "ok": true,
+  "orchestrator": {
+    "agent": "alpha-model-agent",
+    "commands_de": [
+      "/h1-workers",
+      "/h1-benchmark --wait",
+      "/h1-watch"
+    ],
+    "id": "king_rtx_host",
+    "role_de": "König (alpha-model-agent) auf diesem RTX-Host — einziger Orchestrator für mom_1_top12-Seal"
+  },
+  "runtime": {
+    "crash_guard_de": "Thread-Prep + RAM-Cap — kein 30× spawn-Duplikat",
+    "gpu": {
+      "device_id": 0,
+      "gpu_returns": true,
+      "memory_free_mb": 22954,
+      "memory_total_mb": 24124,
+      "name": "NVIDIA GeForce RTX 3090",
+      "ok": true
+    },
+    "gpu_available": true,
+    "logical_cores": 32,
+    "naive_gpu_returns": false,
+    "physical_cores": 16,
+    "prep_backend": "thread",
+    "prep_workers": 10,
+    "profile": "king_h1",
+    "ram_gb": 60,
+    "ram_reserve_gb": 22.0,
+    "reserve_cores": 4
+  },
+  "schema_version": 2,
+  "sealed": false
+}

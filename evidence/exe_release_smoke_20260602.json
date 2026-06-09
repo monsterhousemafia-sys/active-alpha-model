@@ -1,0 +1,22 @@
+{
+  "generated_at_utc": "2026-06-02T18:00:00+00:00",
+  "pytest_live_and_v5r": "46 passed",
+  "core_check": "OK",
+  "preflight_live_trading_ready": true,
+  "build": "tools/build_v5r_standalone_exe.py exit 0",
+  "static_verify": "PASS",
+  "fixes_in_build": [
+    "live_trading_dashboard daily mark sync_ok messaging",
+    "rebalance enqueue fallback on T212 buy block / zero executed",
+    "reset_stock_buy_gate button",
+    "aa_exe_direct_startup for double-click EXE",
+    "build live PyInstaller output",
+    "dashboard reset button re-enable after refresh"
+  ],
+  "user_start": "E:\\active_alpha_model\\Marktanalyse.exe",
+  "requires": [
+    "EXE in project root with active_alpha_model.py and .venv",
+    "KI-unterstuetzt + T212 API keys",
+    "T212-Kaufblock zuruecksetzen after broker insufficient streak"
+  ]
+}

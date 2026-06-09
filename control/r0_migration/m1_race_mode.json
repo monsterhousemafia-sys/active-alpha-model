@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "started_at_utc": "2026-06-04T15:00:00+00:00",
+  "executive_mode": true,
+  "executive_tick_sec": 180,
+  "rules": [
+    "executive_keepalive_only",
+    "single_matrix_only",
+    "turbo_max_cores",
+    "no_watch_loop",
+    "no_scheduled_worker",
+    "m1_phase_r0_warm_then_r3_parallel_jobs_2",
+    "ignore_plain_progress_display",
+    "never_restart_on_path_phase_log_idle",
+    "killer_pack_enabled"
+  ],
+  "killer_pack": true
+}

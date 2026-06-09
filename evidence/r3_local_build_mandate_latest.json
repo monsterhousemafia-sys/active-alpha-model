@@ -1,0 +1,32 @@
+{
+  "efficient_path_de": "bash tools/king_ops.sh r3-bau",
+  "headline_de": "Bau-Mandat: R3 Lokal abstimmen",
+  "mandate_de": "R3 Lokal-Bau — effizient umsetzen (König 32B, nicht Cursor).\nProfil aktiv: Flüssig — bestätigt\nStack: OK\nKein offener Update-Vorschlag — Stabilität und Tests absichern.\nSchritte:\n1. Evidence lesen: evidence/r3_runtime_upgrade_latest.json, control/r3_runtime_profile.json\n2. Prognose-Pipeline: analytics/r3_prognosis_pipeline.py, r3_t212_prognosis.py (König-Boost, Trust fail-closed)\n3. Mirror /r3: analytics/r3_mirror_view.py _render_prognosis_section + r3_mirror_state prognosis-Block\n4. Bash-Hooks: king_tune prognosis · r3_sync --repair · r3_trading_cycle prognosis-Schritt\n5. Ausführen: bash tools/king_ops.sh t212-trust → prognosis run → r3-apply (nur wenn t212_trusted)\n6. Code lesen: analytics/r3_mirror_view.py, analytics/r3_runtime_upgrade.py, tools/r3_sync.sh\n7. Nur fehlende R3-Lokal-Anpassungen — kleine Diffs, kein Parallel-Design\n8. Tests: python3 -m pytest tests/test_r3_runtime_upgrade.py tests/test_r3_exec_mirror.py -q\n9. Abgleich: bash tools/r3_sync.sh --repair\n10. finish: Operator bestätigt Laufzeit-Update in http://127.0.0.1:17890/r3 (Übernehmen/Später) — kein Auto-Apply",
+  "owner_de": "König 32B (build-kernel)",
+  "pending_proposal_id": null,
+  "post_build_de": "bash tools/r3_sync.sh --repair",
+  "runtime_profile_id": "fluid_v2",
+  "schema_version": 1,
+  "stack_ok": true,
+  "steps_de": [
+    "Evidence lesen: evidence/r3_runtime_upgrade_latest.json, control/r3_runtime_profile.json",
+    "Prognose-Pipeline: analytics/r3_prognosis_pipeline.py, r3_t212_prognosis.py (König-Boost, Trust fail-closed)",
+    "Mirror /r3: analytics/r3_mirror_view.py _render_prognosis_section + r3_mirror_state prognosis-Block",
+    "Bash-Hooks: king_tune prognosis · r3_sync --repair · r3_trading_cycle prognosis-Schritt",
+    "Ausführen: bash tools/king_ops.sh t212-trust → prognosis run → r3-apply (nur wenn t212_trusted)",
+    "Code lesen: analytics/r3_mirror_view.py, analytics/r3_runtime_upgrade.py, tools/r3_sync.sh",
+    "Nur fehlende R3-Lokal-Anpassungen — kleine Diffs, kein Parallel-Design",
+    "Tests: python3 -m pytest tests/test_r3_runtime_upgrade.py tests/test_r3_exec_mirror.py -q",
+    "Abgleich: bash tools/r3_sync.sh --repair",
+    "finish: Operator bestätigt Laufzeit-Update in http://127.0.0.1:17890/r3 (Übernehmen/Später) — kein Auto-Apply"
+  ],
+  "tests_de": [
+    "tests/test_r3_runtime_upgrade.py",
+    "tests/test_r3_exec_mirror.py",
+    "tests/test_r3_t212_prognosis.py",
+    "tests/test_r3_prognosis_pipeline.py"
+  ],
+  "topic": "prognosis",
+  "updated_at_utc": "2026-06-08T16:00:36+00:00",
+  "upgrade_pending": false
+}

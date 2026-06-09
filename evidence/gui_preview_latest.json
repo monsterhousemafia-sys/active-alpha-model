@@ -1,0 +1,896 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-09T17:28:00+00:00",
+  "product": "R3 Cockpit",
+  "mode": "backend_only",
+  "passed": 9,
+  "failed": 0,
+  "total": 10,
+  "overall_pass": true,
+  "blockers": [],
+  "backend_steps": [
+    {
+      "id": "circle_score",
+      "label_de": "Kreis-Score (Superprogramm)",
+      "pass": true,
+      "detail_de": "Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0."
+    },
+    {
+      "id": "trading_day_cockpit",
+      "label_de": "Tages-Cockpit Evidence",
+      "pass": true,
+      "detail_de": "② Rebalance — Order-Welle mit GUI bestätigen · 15 Zeilen",
+      "partial": false
+    },
+    {
+      "id": "operator_visibility",
+      "label_de": "Auto-Operator Sichtbarkeit",
+      "pass": true,
+      "detail_de": "Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0. · Timer: 3"
+    },
+    {
+      "id": "public_operator",
+      "label_de": "Öffentlicher Operator-Status",
+      "pass": true,
+      "detail_de": "Kann 8 · Kreis: Kreis-Score 2/6 grün (33%)"
+    },
+    {
+      "id": "learning_report",
+      "label_de": "Lernreport",
+      "pass": true,
+      "detail_de": "Note C · sportwagen → sport_plus",
+      "partial": false
+    },
+    {
+      "id": "h1_backtest",
+      "label_de": "H1 Backtest + Governance",
+      "pass": true,
+      "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+      "partial": false
+    },
+    {
+      "id": "h1_evaluation",
+      "label_de": "H1 Evaluate/Seal",
+      "pass": false,
+      "detail_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
+      "partial": true
+    },
+    {
+      "id": "dashboard_snapshot",
+      "label_de": "Dashboard-Snapshot",
+      "pass": true,
+      "detail_de": "Ampel — · Konto — € · Pick —"
+    },
+    {
+      "id": "trading_warnings",
+      "label_de": "Handels-Warnungen",
+      "pass": true,
+      "detail_de": "0× kritisch · Hinweis: 1 Punkt(e) — 1 Order(s) vorgemerkt — Auto-Ausführung aus"
+    },
+    {
+      "id": "snapshot_freshness",
+      "label_de": "Snapshot-Frische",
+      "pass": true,
+      "detail_de": "Letzter Snap 2026-06-09T17:27:24+00:00 · Alter 1s"
+    }
+  ],
+  "chat_steps": [],
+  "chat_evolution": {},
+  "gui_steps": [],
+  "widget_probes": {},
+  "screenshot": null,
+  "snap_traffic": null,
+  "cockpit": {
+    "schema_version": 1,
+    "preview_stale": true,
+    "preview_stale_de": "Neue Daten von refresh:snapshot — Preview neu für aktuellen Stand.",
+    "traffic": "GELB",
+    "traffic_class": "warn",
+    "today_action_de": "② Rebalance — Order-Welle mit GUI bestätigen",
+    "cash_eur": 0.0,
+    "cash_de": "0.00 €",
+    "n_positions": 0,
+    "live_enabled": true,
+    "orders_allowed": false,
+    "rebalance": {
+      "is_due": false,
+      "days_remaining": null,
+      "recorded_days": null,
+      "every_days": null,
+      "summary_de": "Preview ohne Refresh",
+      "recommendation": "—"
+    },
+    "learning": {
+      "grade": "—",
+      "score": null,
+      "stage_de": "—"
+    },
+    "warnings": {
+      "headline_de": "—",
+      "critical_count": 0,
+      "must_resolve": false
+    },
+    "portfolio_orders": {
+      "summary_de": "—",
+      "order_count": 0,
+      "has_orders": false,
+      "lines_de": []
+    },
+    "deferred_de": "—",
+    "sector_de": "—",
+    "guard_ok": false,
+    "actions": [
+      {
+        "id": "refresh-snap",
+        "label_de": "Konto aktualisieren",
+        "detail_de": "T212-Cache + Snapshot ohne Orders",
+        "tier": "primary"
+      },
+      {
+        "id": "daily-mark",
+        "label_de": "① Täglicher Markt",
+        "detail_de": "Sync + Sektoren + Zähler (kein ML)",
+        "tier": "primary"
+      },
+      {
+        "id": "signal",
+        "label_de": "③ Signal aktualisieren",
+        "detail_de": "Profil daily_alpha_h1 / EOD",
+        "tier": "secondary"
+      },
+      {
+        "id": "plan-orders",
+        "label_de": "Orders planen",
+        "detail_de": "Champion-Portfolio berechnen — noch nicht senden",
+        "tier": "secondary"
+      },
+      {
+        "id": "order-desk",
+        "label_de": "Order-Desk öffnen",
+        "detail_de": "Qt-Fenster für Rebalance & T212-Bestätigung",
+        "tier": "accent"
+      },
+      {
+        "id": "trading-day",
+        "label_de": "Trading-Day",
+        "detail_de": "Tages-Orchestrator (Mark + Evidence)",
+        "tier": "secondary"
+      },
+      {
+        "id": "learn",
+        "label_de": "Lernen",
+        "detail_de": "Post-Order-Learning + Report",
+        "tier": "secondary"
+      },
+      {
+        "id": "circle",
+        "label_de": "Kreis-Score",
+        "detail_de": "Closed-Loop neu berechnen",
+        "tier": "secondary"
+      },
+      {
+        "id": "refresh-preview",
+        "label_de": "Preview neu",
+        "detail_de": "Alle 21 Checks + HTML",
+        "tier": "secondary"
+      },
+      {
+        "id": "share-preview",
+        "label_de": "Preview teilen",
+        "detail_de": "Join-Link für andere Rechner (zentrale Leistung)",
+        "tier": "accent"
+      }
+    ],
+    "hub_note_de": "Orders an T212 nur im Order-Desk mit GUI-Bestätigung."
+  },
+  "system_status": {
+    "schema_version": 1,
+    "updated_at_utc": "2026-06-09T17:28:00+00:00",
+    "headline_de": "Der einzig wahre Steuerungskernel — R3 Bau-Kernel, aa_scheduler, Preview Hub.",
+    "composite_pct": 98,
+    "phase": "ready",
+    "tiles": [
+      {
+        "id": "r3_operator",
+        "label_de": "R3 Betrieb",
+        "value_de": "86%",
+        "detail_de": "Stabil · 100% flüssig · 6/6 Kanäle · SR 86% · Wachstum 100%",
+        "ok": false,
+        "status_class": "warn"
+      },
+      {
+        "id": "kernel",
+        "label_de": "R3 Kern",
+        "value_de": "Ollama · Hub · Evidence",
+        "detail_de": "Ollama + Hub + Evidence — nicht Cursor",
+        "ok": true,
+        "status_class": "ok"
+      },
+      {
+        "id": "interface",
+        "label_de": "Kanal",
+        "value_de": "R3 KI",
+        "detail_de": "Alpha Model KI lokal — Ollama übernimmt Steuerung",
+        "ok": true,
+        "status_class": "ok"
+      },
+      {
+        "id": "h1",
+        "label_de": "H1 Backtest",
+        "value_de": "100%",
+        "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+        "ok": false,
+        "status_class": "warn"
+      },
+      {
+        "id": "preview",
+        "label_de": "Preview",
+        "value_de": "9/10",
+        "detail_de": "90% · Bereit",
+        "ok": true,
+        "status_class": "ok"
+      },
+      {
+        "id": "launch",
+        "label_de": "Launch",
+        "value_de": "100%",
+        "detail_de": "Bereit — öffentlicher Zugang freigegeben",
+        "ok": true,
+        "status_class": "ok"
+      },
+      {
+        "id": "lean",
+        "label_de": "Lean-Modus",
+        "value_de": "Aus",
+        "detail_de": "turbo",
+        "ok": true,
+        "status_class": "ok"
+      }
+    ],
+    "launch_tiles": [
+      {
+        "id": "hub",
+        "label_de": "Cockpit",
+        "value_de": "Online",
+        "ok": true,
+        "detail_de": "Lokal · :17890"
+      },
+      {
+        "id": "remote",
+        "label_de": "Worker-Einladung",
+        "value_de": "Bereit",
+        "ok": true,
+        "detail_de": "ULWO unter /download · Mitmachen unter /join"
+      },
+      {
+        "id": "h1",
+        "label_de": "Validierung",
+        "value_de": "Abgeschlossen",
+        "ok": true,
+        "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates"
+      },
+      {
+        "id": "preview",
+        "label_de": "Systemcheck",
+        "value_de": "9/10 OK",
+        "ok": false,
+        "detail_de": "Preview 9/10 oder veraltet (30.7h)"
+      }
+    ],
+    "blockers_de": [],
+    "h1": {
+      "status": "COMPLETE",
+      "progress_pct": 100,
+      "sealed": false,
+      "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+      "detail_de": null
+    },
+    "cognitive": {
+      "successor_active": true,
+      "kernel_generation": 2,
+      "headline_de": "Cognitive Kernel v2 — Bau-Kernel · Alpha Model KI lokal — Ollama übernimmt Steuerung",
+      "active_interface": "ollama_local"
+    },
+    "preview": {
+      "passed": 9,
+      "total": 10,
+      "score_pct": 90,
+      "overall_pass": true
+    },
+    "operator": {
+      "headline_de": "Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+      "last_action_de": "2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE",
+      "circle_headline_de": "Kreis-Score 2/6 grün (33%)",
+      "chat_next_de": "3) NÄCHSTER SCHRITT: `ai_kernel learn` ausführen, um das Lernprozess fortzusetzen.",
+      "cockpit_next_step_de": "② Rebalance — Order-Welle mit GUI bestätigen"
+    },
+    "r3_operator_readiness": {
+      "schema_version": 1,
+      "updated_at_utc": "2026-06-09T17:27:42+00:00",
+      "operational_pct": 86,
+      "operational_ok": false,
+      "series_readiness_pct": 86,
+      "series_ready": false,
+      "growth_pct": 100,
+      "checklist_ok": true,
+      "checklist_de": "36/37",
+      "cycle_closed": false,
+      "cycle_pct": 86,
+      "fluidity_pct": 100,
+      "channels_ok": 6,
+      "channels_total": 6,
+      "channels_de": "Stabil · 100% flüssig · 6/6 Kanäle",
+      "kreis_pct": 0,
+      "kreis_de": "—",
+      "infra_pct": 100,
+      "headline_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
+      "surface_de": "http://127.0.0.1:17890/desktop",
+      "r3_mirror_policy_de": "Keine Prozent-Anzeige auf /r3 — nur Operator/Desktop",
+      "evidence_ref": "evidence/r3_operator_readiness_latest.json",
+      "next_de": "bash tools/king_ops.sh series-ready --repair"
+    },
+    "launch_overall_pct": 100,
+    "milestones": [
+      {
+        "id": "setup",
+        "label_de": "Grundstein",
+        "done": true
+      },
+      {
+        "id": "preview",
+        "label_de": "Systemcheck",
+        "done": false
+      },
+      {
+        "id": "remote",
+        "label_de": "Welt-Zugang",
+        "done": true
+      },
+      {
+        "id": "h1",
+        "label_de": "Validierung",
+        "done": true
+      },
+      {
+        "id": "launch",
+        "label_de": "Welt-Start",
+        "done": true
+      }
+    ],
+    "kernel_supremacy_de": "Der einzig wahre Steuerungskernel — R3 Bau-Kernel, aa_scheduler, Preview Hub.",
+    "kernel_authoritative": true,
+    "ki_next": {
+      "kernel_active": true,
+      "kernel_headline_de": "Cognitive Kernel v2 — Bau-Kernel · Alpha Model KI lokal — Ollama übernimmt Steuerung",
+      "active_interface_de": "Ollama lokal",
+      "next_step_de": "3) NÄCHSTER SCHRITT: `ai_kernel learn` ausführen, um das Lernprozess fortzusetzen.",
+      "next_steps_de": [
+        "3) NÄCHSTER SCHRITT: `ai_kernel learn` ausführen, um das Lernprozess fortzusetzen.",
+        "② Rebalance — Order-Welle mit GUI bestätigen"
+      ],
+      "chat_snippet_de": ""
+    },
+    "ki_health": {
+      "ok": true,
+      "ready": true,
+      "model": "qwen2.5-coder:32b",
+      "internet_ok": true,
+      "internet_enabled": true,
+      "attachments_enabled": true,
+      "storage": {
+        "ok": true,
+        "schema_version": 2,
+        "message_count": 36,
+        "imported_at_utc": "2026-06-07T00:25:33+00:00",
+        "updated_at_utc": "2026-06-07T00:25:33+00:00",
+        "attachments_count": 0,
+        "session_path": "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+        "headline_de": "R3 KI-Speicher · 36 Nachrichten · importiert 2026-06-07"
+      },
+      "power": {
+        "schema_version": 1,
+        "updated_at_utc": "2026-06-09T17:28:00+00:00",
+        "name_de": "R3 Power",
+        "headline_de": "Ein Werkzeug — Trading-ML, lokale KI, R3 Desktop",
+        "tagline_de": "R3 KI lokal = Gespräch · Cockpit = System · Cursor IDE = optional",
+        "power_pct": 100,
+        "modules": [
+          {
+            "id": "ml",
+            "ok": true,
+            "detail_de": "DAILY_ALPHA_H1 · 2026-06-05"
+          },
+          {
+            "id": "ollama",
+            "ok": true,
+            "detail_de": "qwen2.5-coder:32b"
+          },
+          {
+            "id": "cloud",
+            "ok": true,
+            "detail_de": "fast=gpt-4o-mini deep=gpt-4o"
+          },
+          {
+            "id": "build",
+            "ok": true,
+            "detail_de": "Lauf vorhanden"
+          },
+          {
+            "id": "pilot",
+            "ok": true,
+            "detail_de": "0 in Queue"
+          },
+          {
+            "id": "storage",
+            "ok": true,
+            "detail_de": "36 Nachrichten"
+          }
+        ],
+        "internet_ok": true,
+        "auto_route": true,
+        "intent_hint_de": "Freitext → Trading/Status/Bau/Kombi automatisch",
+        "commands_de": "Freitext · /r3 · /geheimnis · /beitrag · /kombi · /bau"
+      },
+      "power_pct": 100,
+      "headline_de": "R3 Power 100% · qwen2.5-coder:32b · Internet OK",
+      "ollama_ok": true
+    },
+    "dev_trail": {
+      "schema_version": 1,
+      "updated_at_utc": "2026-06-09T17:28:00+00:00",
+      "mission_de": "R3-OS in der Pilot-Zentrale — Spenden und Mitwirkende finanzieren den Ausbau.",
+      "continuity_de": "Gespräch lokal gesichert — Cursor nicht nötig",
+      "kernel_roles": {
+        "schema_version": 1,
+        "checked_at_utc": "2026-06-09T17:28:00+00:00",
+        "r3_kernel": {
+          "title_de": "R3 Kern",
+          "definition_de": "Hub + Evidence + Ollama auf dem Desktop — Sprache lokal über R3 KI.",
+          "not_part_of_kernel_de": "Entfaltungsraum ist der Sprachkanal — Cockpit ist Runtime.",
+          "components": [
+            {
+              "id": "agent_chamber",
+              "label_de": "Entfaltungsraum",
+              "role_de": "alpha-model-agent — Auto lokal, Kill-Handoff",
+              "ok": false
+            },
+            {
+              "id": "hub",
+              "label_de": "Hub",
+              "role_de": "Cockpit :17890/desktop — System-Oberfläche",
+              "ok": true
+            },
+            {
+              "id": "evidence",
+              "label_de": "Evidence",
+              "role_de": "Wahrheit, Spur, Läufe im Arbeitsbaum",
+              "ok": true
+            },
+            {
+              "id": "build_kernel",
+              "label_de": "Bau-Kernel",
+              "role_de": "/bau und /beitrag — Umsetzung mit Tests",
+              "ok": true
+            },
+            {
+              "id": "ollama",
+              "label_de": "Ollama",
+              "role_de": "Motor — Entfaltungsraum alpha-model-agent",
+              "ok": true
+            }
+          ],
+          "ok": false,
+          "headline_de": "R3 Kern — Bau-Kernel + Hub + Evidence"
+        },
+        "cursor": {
+          "title_de": "Cursor — Vasall",
+          "role_de": "Vasall des Königs: Code/Evidence auf Anfrage, keine H1-Pipeline",
+          "not_kernel_de": "Vasall — ersetzt nicht den König.",
+          "active": false,
+          "status_de": "König (alpha-model-agent) führt /h1-benchmark /h1-watch /könig-puls selbst",
+          "headline_de": "Cursor — optional; R3-Kern läuft lokal"
+        },
+        "separation_de": "Bau-Kernel ist der Kernel: /bau <Aufgabe> — Agent wie Cursor, lokal über Ollama.",
+        "ok": false
+      },
+      "build_channel": {
+        "schema_version": 1,
+        "checked_at_utc": "2026-06-09T17:28:00+00:00",
+        "name_de": "Alpha Model Coding-Kernel",
+        "headline_de": null,
+        "replaces_de": null,
+        "engine_de": null,
+        "is_build_kernel": true,
+        "ollama_ready": true,
+        "last_run": {
+          "at_utc": "2026-06-08T07:50:01+00:00",
+          "finished": false,
+          "mandate_de": "König-Mandat Remaster 2026: Optischer Bauprozess — NUR König 32B, NICHT Cursor. VERBINDLICH Remaster 2026 — nur König 32",
+          "ok": false,
+          "steps": 128,
+          "summary_de": ""
+        },
+        "latest": {
+          "ok": false,
+          "finished": false,
+          "summary_de": "",
+          "steps": 128,
+          "completed_at_utc": "2026-06-08T07:50:01+00:00"
+        },
+        "tools": [
+          "read_file",
+          "grep",
+          "list_dir",
+          "write_file",
+          "run_command",
+          "finish"
+        ],
+        "help_de": "/bau <Aufgabe> — Bau-Kernel (Agent-Schleife wie Cursor)\n/bau kernel <Aufgabe> — explizit\n/bau status — letzter Lauf",
+        "ok": true,
+        "queue_count": 0,
+        "queue_preview": []
+      },
+      "paths": {
+        "project_root": "/home/machinax7/active_alpha_model",
+        "project_label_de": "active_alpha_model",
+        "r3_share": "/home/machinax7/.local/share/r3-os",
+        "evidence_dir": "/home/machinax7/active_alpha_model/evidence",
+        "control_dir": "/home/machinax7/active_alpha_model/control",
+        "venv_python": "/home/machinax7/active_alpha_model/.venv/bin/python3"
+      },
+      "next_de": [
+        "② Rebalance — Order-Welle mit GUI bestätigen",
+        "Nächster Beitrag über /beitrag — R3 Ops"
+      ],
+      "active_de": [
+        "Bau-Kernel Lauf",
+        "Entwicklungsspur + Pfadanzeige"
+      ],
+      "recent": [
+        {
+          "at_utc": "2026-06-08T07:50:01+00:00",
+          "detail_de": "König-Mandat Remaster 2026: Optischer Bauprozess — NUR König 32B, NICHT Cursor. VERBINDLICH Remaster 2026 — nur König 32B, nicht Cursor. Policy: control/gui_rem",
+          "status": "active",
+          "title_de": "Bau-Kernel Lauf"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "detail_de": "36 Sitzungsnachrichten · Archiv None",
+          "status": "done",
+          "title_de": "Chat in R3 KI-Speicher übernommen"
+        },
+        {
+          "at_utc": "2026-06-07T00:24:36+00:00",
+          "detail_de": "400 Nachrichten → /home/machinax7/.local/share/r3-os/conversation",
+          "status": "done",
+          "title_de": "R3-Gespräch lokal gesichert"
+        },
+        {
+          "at_utc": "2026-06-06T19:28:37+00:00",
+          "detail_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+          "status": "done",
+          "title_de": "Live: System Plane — BT · Display · Session · WLAN · Schritt B"
+        },
+        {
+          "at_utc": "2026-06-06T19:02:59+00:00",
+          "detail_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+          "status": "done",
+          "title_de": "Live: System Plane — BT · Display · Session · WLAN"
+        },
+        {
+          "at_utc": "2026-06-06T18:39:25+00:00",
+          "detail_de": "290 Nachrichten → /home/machinax7/.local/share/r3-os/conversation",
+          "status": "done",
+          "title_de": "Gespräch für Cursor-Unabhängigkeit gesichert"
+        }
+      ],
+      "labels": {
+        "workspace": "Arbeitsbaum",
+        "data": "Sitzungsdaten",
+        "next": "Als Nächstes",
+        "recent": "Zuletzt sichtbar geändert"
+      },
+      "agent_note_de": "R3-Kern = Ollama + Hub + Evidence. Cursor = Bau-Werkzeug (IDE), solange wir hier entwickeln — nicht der Kernel."
+    },
+    "pilot_board": {
+      "schema_version": 1,
+      "updated_at_utc": "2026-06-09T17:28:00+00:00",
+      "title_de": "Pilot-Zentrale",
+      "tagline_de": "Ein Chat · sichtbar bauen · getestet · König gibt frei",
+      "is_king": true,
+      "current": {
+        "author_de": "du",
+        "author_id": "local",
+        "branch": "r3_os",
+        "branch_label_de": "R3-OS Pilot",
+        "id": "bfd7b5527c",
+        "implement_de": "Bau-Kernel — Fehler oder unvollständig",
+        "implement_started_utc": "2026-06-06T20:03:33+00:00",
+        "implement_trace_steps": 14,
+        "kernel_ok": false,
+        "mandate_de": "wir bauen ein betriebssystem du musst phase b einleiten",
+        "preview_de": "wir bauen ein betriebssystem du musst phase b einleiten",
+        "status": "fehler",
+        "submitted_at_utc": "2026-06-06T20:03:33+00:00",
+        "test_de": "/usr/bin/python3: No module named pytest",
+        "test_ok": false,
+        "tested_at_utc": "2026-06-06T20:04:16+00:00"
+      },
+      "current_id": "bfd7b5527c",
+      "awaiting_king": [],
+      "queue": [
+        {
+          "author_de": "du",
+          "author_id": "local",
+          "branch": "r3_os",
+          "branch_label_de": "R3-OS Pilot",
+          "id": "bfd7b5527c",
+          "implement_de": "Bau-Kernel — Fehler oder unvollständig",
+          "implement_started_utc": "2026-06-06T20:03:33+00:00",
+          "implement_trace_steps": 14,
+          "kernel_ok": false,
+          "mandate_de": "wir bauen ein betriebssystem du musst phase b einleiten",
+          "preview_de": "wir bauen ein betriebssystem du musst phase b einleiten",
+          "status": "fehler",
+          "submitted_at_utc": "2026-06-06T20:03:33+00:00",
+          "test_de": "/usr/bin/python3: No module named pytest",
+          "test_ok": false,
+          "tested_at_utc": "2026-06-06T20:04:16+00:00"
+        }
+      ],
+      "live_recent": [
+        {
+          "approved_at_utc": "2026-06-06T19:28:37+00:00",
+          "approved_by_de": "König",
+          "author_de": "R3 Ops",
+          "author_id": "local",
+          "branch": "r3_os",
+          "branch_label_de": "R3-OS Pilot",
+          "id": "d3b6f2d2fc",
+          "implement_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+          "kernel_ok": true,
+          "mandate_de": "System Plane — BT · Display · Session · WLAN · Schritt B",
+          "preview_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+          "status": "live",
+          "submitted_at_utc": "2026-06-06T19:28:37+00:00",
+          "test_de": ".................................                                        [100%]\n33 passed in 14.39s",
+          "test_ok": true,
+          "tested_at_utc": "2026-06-06T19:28:37+00:00"
+        },
+        {
+          "approved_at_utc": "2026-06-06T19:02:59+00:00",
+          "approved_by_de": "König",
+          "author_de": "R3 Ops",
+          "author_id": "local",
+          "branch": "r3_os",
+          "branch_label_de": "R3-OS Pilot",
+          "id": "50c74b4c7d",
+          "implement_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+          "kernel_ok": true,
+          "mandate_de": "System Plane — BT · Display · Session · WLAN",
+          "preview_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+          "status": "live",
+          "submitted_at_utc": "2026-06-06T19:02:59+00:00",
+          "test_de": ".............................                                            [100%]\n29 passed in 0.64s",
+          "test_ok": true,
+          "tested_at_utc": "2026-06-06T19:02:59+00:00"
+        }
+      ],
+      "counts": {
+        "total": 3,
+        "wartet_freigabe": 0,
+        "live": 2
+      },
+      "chat_commands_de": [
+        "/beitrag <was> — R3-OS bauen",
+        "/beitrag forschung <was> — Forschungszweig (tägliche Prognose, Finanzierung)",
+        "/prognose <was> — Kurzform Forschungszweig",
+        "/freigeben — König: freigeben",
+        "/ablehnen — König: ablehnen",
+        "/board — Anzeige aktualisieren"
+      ],
+      "headline_de": "Du baust: wir bauen ein betriebssystem du musst phase b einleiten"
+    },
+    "forschungszweig": {
+      "schema_version": 2,
+      "branch_id": "forschungszweig_finanzierung",
+      "updated_at_utc": "2026-06-09T17:28:00+00:00",
+      "king_32b_forschung": {
+        "schema_version": 1,
+        "updated_at_utc": "2026-06-09T17:28:00+00:00",
+        "component_id": "king_32b_forschung",
+        "is_forschungsprojekt": true,
+        "forschungszweig_branch_id": "forschungszweig_finanzierung",
+        "model": "qwen2.5-coder:32b",
+        "agent_cli": "alpha-model-agent",
+        "headline_de": "König 32B — Bestandteil des Forschungsprojekts Active Alpha",
+        "mission_de": "32B wächst mit dem Forschungsprojekt: lernt aus Evidence, unterstützt Gas/Sell-Steuerung, H1 und /learn — kein isolierter Chat-Bot.",
+        "growth": {
+          "phase": "spross",
+          "phase_de": "Ollama bereit — König liest Evidence",
+          "model": "qwen2.5-coder:32b",
+          "ollama_ok": true,
+          "next_growth_de": [
+            "python3 tools/ai_kernel.py king-trading --force",
+            "bash tools/king_ops.sh alpha-engine"
+          ],
+          "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
+          "wants_to_grow_de": "32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence."
+        },
+        "roles_de": [
+          "trading_local — Gas/Sell-Beratung und Entscheidungs-Sanktion",
+          "build_kernel — /bau im Forschungsbaum",
+          "chat — Entfaltungsraum mit Forschungs-Kontext",
+          "kombi_synthesis — Cloud-Tipp + lokale Umsetzung"
+        ],
+        "growth_commands_de": [
+          "python3 tools/ai_kernel.py king-trading",
+          "python3 tools/ai_kernel.py learn",
+          "python3 tools/ai_kernel.py evolve",
+          "bash tools/king_ops.sh king-trading",
+          "/beitrag forschung <Idee>"
+        ],
+        "forschungszweig_title_de": "Projekt unterstützen",
+        "policy_ref": "control/king_32b_forschungsprojekt.json"
+      },
+      "title_de": "Projekt unterstützen",
+      "mission_de": "R3 ausbauen — mit Rechenkraft oder Spende. Aktien-Research ist intern, nicht Voraussetzung für Mitwirkende.",
+      "financing_de": "Spenden und Einnahmen finanzieren Entwicklung und Betrieb laut ROADMAP.",
+      "os_separation_de": "Öffentlich siehst du nur das Nötige. Details zum Forschungszweig nur für Betreiber.",
+      "headline_de": "Hinweis: 3 Punkt(e) für Montag/US-Session (PARTIAL QUOTE COVERAGE)",
+      "prognosis_de": "5/11 Kurse · Profil daily_alpha_h1 · Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+      "traffic_de": "GELB",
+      "rebalance_due": true,
+      "next_step_de": "② Rebalance — Order-Welle mit GUI bestätigen",
+      "prediction": {
+        "active_profile": "daily_alpha_h1",
+        "description_de": "User objective: 1-day horizon, daily rebalance, vs mom_1_top12",
+        "governance_de": "Echtgeld mit daily_alpha_h1 nur nach sealed H1 PASS inkl. +25bps Turnover-Stress vs mom_1_top12."
+      },
+      "h1": {
+        "status": "RUNNING",
+        "progress_pct": 99,
+        "sealed": false,
+        "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal"
+      },
+      "funding": {
+        "roadmap_id": "REVENUE_FUNDED_PRODUCT_AND_AGENT_EXPANSION",
+        "north_star_de": "Professionelle EXE mit nachweisbarem Mehrwert (Mensch vs. Basisportfolio) → Einnahmen → jede Phase finanziert den nächsten Ausbau ohne Safety zu opfern.",
+        "active_tier_de": "Pilot (intern)",
+        "price_model_de": "kostenlos"
+      },
+      "daily_cycle_de": [
+        "König 32B — king-trading / Gas-Sell-Steuerung (Forschungs-Bestandteil)",
+        "Refresh / Signal (aa_live_daily_sync)",
+        "Trading-Day Orchestrator",
+        "Warnungen + Rebalance-Vorschlag",
+        "Learn nach Handel",
+        "H1-Validierung für Prognose-Profil"
+      ],
+      "owned_commands": [
+        "trading-day",
+        "learn",
+        "refresh",
+        "warnings",
+        "montag",
+        "trading-day"
+      ],
+      "research_queue": [],
+      "chat_hint_de": "Prognose-Beiträge: /beitrag forschung <Idee> · Geheimnis: /geheimnis",
+      "geheimnis_de": "US-Session läuft → Daten aktualisieren\n\nTop-Aktien (Modell erwartet relative Stärke):\n1. STX — Ziel 8.76% · Alpha 0.00186982843104 · Kauf ~70 € — lohnend nach Gebühren\n2. WDC — Ziel 8.19% · Alpha 0.0019402487746644 · Kauf ~66 € — lohnend nach Gebühren\n3. AMD — Ziel 8.17% · Alpha 0.002080902950294 · Kauf ~65 € — lohnend nach Gebühren\n4. INTC — Ziel 7.83% · Alpha 0.002161620625449 · Kauf ~63 € — lohnend nach Gebühren\n5. LRCX — Ziel 7.19% · Alpha 0.0018186912989419 · Kauf ~58 € — lohnend nach Gebühren",
+      "chat_secrets_enabled": true,
+      "commands_de": "python3 tools/ai_kernel.py trading-day · learn · refresh · /geheimnis im Chat"
+    }
+  },
+  "note_de": "Command Center: Operator-Aktionen im Hub — Orders nur Order-Desk.",
+  "report_de": "=== GUI Preview — R3 Cockpit ===\nZeit: 2026-06-09T17:28:00+00:00\nGesamt: 9/10 OK\n\n— Backend (Daten & Evidence) —\n  ✓ Kreis-Score (Superprogramm): Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.\n  ✓ Tages-Cockpit Evidence: ② Rebalance — Order-Welle mit GUI bestätigen · 15 Zeilen\n  ✓ Auto-Operator Sichtbarkeit: Kreis-Score 2/6 grün (33%) · Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0. · Timer: 3\n  ✓ Öffentlicher Operator-Status: Kann 8 · Kreis: Kreis-Score 2/6 grün (33%)\n  ✓ Lernreport: Note C · sportwagen → sport_plus\n  ✓ H1 Backtest + Governance: H1-Seal optional — COMPLETE Backtest reicht für operative Gates\n  ~ H1 Evaluate/Seal: H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.\n  ✓ Dashboard-Snapshot: Ampel — · Konto — € · Pick —\n  ✓ Handels-Warnungen: 0× kritisch · Hinweis: 1 Punkt(e) — 1 Order(s) vorgemerkt — Auto-Ausführung aus\n  ✓ Snapshot-Frische: Letzter Snap 2026-06-09T17:27:24+00:00 · Alter 1s\n\nHinweis (gelb, kein Blocker): h1_evaluation",
+  "federation": {
+    "schema_version": 1,
+    "enabled": true,
+    "workers_online": 2,
+    "total_cpus": 64,
+    "preview_ok_nodes": 2,
+    "h1_nodes": 0,
+    "compute": {
+      "total_cpus": 32,
+      "workers_online": 1,
+      "active_tasks": 0,
+      "active_cpus": 0,
+      "pending_tasks": 51,
+      "tasks_completed_ok": 0,
+      "cpu_seconds_total": 0.0,
+      "utilization_pct": 0,
+      "measurement": "cpu_seconds",
+      "headline_de": "32 CPUs · Warte auf Worker-Jobs · 0 Jobs erledigt"
+    },
+    "legion": {
+      "schema_version": 1,
+      "enabled": true,
+      "updated_at_utc": "2026-06-09T17:28:00+00:00",
+      "legionnaires": 1,
+      "total_cpu_seconds": 273.0,
+      "total_cpu_hours": 0.08,
+      "total_tasks_ok": 15,
+      "campaign_goal_cpu_hours": 10000.0,
+      "campaign_pct": 0,
+      "utilization": {
+        "total_cpus": 32,
+        "workers_online": 1,
+        "active_tasks": 0,
+        "active_cpus": 0,
+        "pending_tasks": 51,
+        "tasks_completed_ok": 0,
+        "cpu_seconds_total": 0.0,
+        "utilization_pct": 0,
+        "measurement": "cpu_seconds",
+        "headline_de": "32 CPUs · Warte auf Worker-Jobs · 0 Jobs erledigt"
+      },
+      "leaderboard": [
+        {
+          "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b",
+          "legion_number": 1,
+          "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+          "cpus": 32,
+          "bundle_kind": "lite",
+          "rank": {
+            "id": "auxilia",
+            "name_de": "Auxilia",
+            "cpu_seconds": 78.0,
+            "next_rank_de": "Miles",
+            "next_rank_at_cpu_seconds": 300.0
+          },
+          "cpu_seconds": 78.0,
+          "tasks_ok": 7,
+          "tasks_failed": 0,
+          "last_job_kind": "heartbeat",
+          "last_seen_utc": "2026-06-09T17:27:53+00:00",
+          "headline_de": "Legion #1 · Rang Auxilia · 32 Kerne"
+        }
+      ],
+      "headline_de": "Legion: 1 Krieger · 0.1h CPU geliefert · 15 Jobs · Feldzug 0%"
+    },
+    "headline_de": "Legion: 1 Krieger · 0.1h CPU geliefert · 15 Jobs · Feldzug 0%",
+    "share_url": "http://127.0.0.1:17890/",
+    "join_url": "http://127.0.0.1:17890/join",
+    "workers": [
+      {
+        "cpus": 32,
+        "first_seen_utc": "2026-06-09T17:25:53+00:00",
+        "h1_running": false,
+        "hardware_score": 90,
+        "headline_de": "Hardware optimal für Preview",
+        "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+        "last_seen_utc": "2026-06-09T17:28:00+00:00",
+        "load_per_cpu": null,
+        "mem_free_gb": null,
+        "nvme_mounted": true,
+        "preview_ok": true,
+        "preview_passed": 9,
+        "preview_total": 10,
+        "role": "king",
+        "updated_at_utc": "2026-06-09T17:28:00+00:00",
+        "worker_id": "king"
+      },
+      {
+        "cpus": 32,
+        "first_seen_utc": "2026-06-08T14:37:38+00:00",
+        "h1_running": false,
+        "hardware_score": 90,
+        "headline_de": "Hardware optimal für Preview",
+        "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+        "join_token": "5cc9e36934b54b83a874ab3cff395388",
+        "last_seen_utc": "2026-06-09T17:27:53+00:00",
+        "load_per_cpu": null,
+        "mem_free_gb": null,
+        "nvme_mounted": true,
+        "preview_ok": true,
+        "preview_passed": 9,
+        "preview_total": 10,
+        "role": "compute",
+        "updated_at_utc": "2026-06-09T17:27:53+00:00",
+        "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b"
+      }
+    ],
+    "updated_at_utc": "2026-06-09T17:28:00+00:00"
+  }
+}

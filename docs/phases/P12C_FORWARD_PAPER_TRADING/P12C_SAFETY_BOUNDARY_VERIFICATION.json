@@ -1,0 +1,9 @@
+{
+  "broker_order_submission": false,
+  "champion_changed": false,
+  "initial_paper_capital_eur": 500.0,
+  "live_trading": false,
+  "real_money": false,
+  "real_money_capital_eur": 0.0,
+  "simulation_only": true
+}

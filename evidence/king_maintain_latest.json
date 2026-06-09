@@ -1,0 +1,9 @@
+{
+  "bash_de": "bash tools/king_maintain.sh",
+  "dry_run": true,
+  "ok": true,
+  "orphan_bytes_freed": 0,
+  "orphan_files_removed": 0,
+  "ran_at_utc": "2026-06-07T20:15:56Z",
+  "schema_version": 1
+}

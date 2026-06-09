@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Vier-Knoten-Netzwerk — getaktete Handoffs über Evidence",
+  "matrix_ref": "control/king_responsibility_matrix_de.md",
+  "pulse_evidence": "evidence/king_network_pulse_latest.json",
+  "hardware_policy_ref": "control/king_hardware_policy.json",
+  "hardware_evidence": "evidence/king_hardware_latest.json",
+  "nodes": [
+    {
+      "id": "bash",
+      "layer": 1,
+      "role_de": "Ausführen",
+      "entry": "bash tools/king_ops.sh",
+      "writes": ["evidence/king_status_latest.json", "evidence/king_tune_latest.json"]
+    },
+    {
+      "id": "python",
+      "layer": 2,
+      "role_de": "Beweisen",
+      "entry": ".venv/bin/python tools/ai_kernel.py",
+      "writes": ["evidence/daily_alpha_h1_evaluation_latest.json", "evidence/king_sovereignty_latest.json"]
+    },
+    {
+      "id": "koenig",
+      "layer": 3,
+      "role_de": "Entscheiden",
+      "entry": "alpha-model-agent",
+      "reads": ["evidence/king_network_pulse_latest.json", "evidence/king_status_latest.json"]
+    },
+    {
+      "id": "cursor",
+      "layer": 4,
+      "role_de": "Notfall-Fallback (kein Standard-Bau)",
+      "entry": "evidence/alpha_model_cursor_king_bridge_latest.json",
+      "writes": ["code", "tests"],
+      "deprecated_for_build_de": "König 32B baut autonom — control/king_32b_autonomous_build.json"
+    },
+    {
+      "id": "hardware",
+      "layer": 0,
+      "role_de": "Ressourcen-Takt",
+      "entry": "analytics/king_hardware.py",
+      "writes": ["evidence/king_hardware_latest.json"],
+      "reads": ["control/king_hardware_policy.json"]
+    }
+  ],
+  "edges": [
+    {"from": "bash", "to": "python", "trigger_de": "king_ops h1-seal → h1-watch"},
+    {"from": "python", "to": "koenig", "trigger_de": "evaluation_latest.json + pass_full_seal"},
+    {"from": "koenig", "to": "koenig", "trigger_de": "/bau · r3-bau · build-kernel (32B autonom)"},
+    {"from": "koenig", "to": "bash", "trigger_de": "Bau fertig → r3_sync · king_ops verify"},
+    {"from": "koenig", "to": "cursor", "trigger_de": "Nur Notfall: cursor_fallback_required in Bridge"},
+    {"from": "cursor", "to": "bash", "trigger_de": "Fallback-Diff fertig → king_ops verify"},
+    {"from": "bash", "to": "koenig", "trigger_de": "king_status next_layer=koenig"},
+    {"from": "koenig", "to": "bash", "trigger_de": "king_ops status|tune|h1-seal"}
+  ],
+  "takt_phases_de": [
+    {"id": "sync", "owner": "bash", "handoff_to": "bash", "desc_de": "tune/verify — Netzwerk-Grundtakt"},
+    {"id": "observe", "owner": "bash", "handoff_to": "python", "desc_de": "Benchmark läuft — watch-bg"},
+    {"id": "execute", "owner": "bash", "handoff_to": "python", "desc_de": "h1-seal starten (flock)"},
+    {"id": "prove", "owner": "python", "handoff_to": "koenig", "desc_de": "CSV da — h1-watch evaluate"},
+    {"id": "decide", "owner": "koenig", "handoff_to": "koenig", "desc_de": "PASS/FAIL erklären; bei Code-Lücke /bau oder r3-bau"},
+    {"id": "build", "owner": "koenig", "handoff_to": "bash", "desc_de": "32B /bau · build-kernel · r3-bau — danach verify"},
+    {"id": "verify", "owner": "bash", "handoff_to": "koenig", "desc_de": "king_ops verify nach Diff"},
+    {"id": "ready", "owner": "koenig", "handoff_to": "koenig", "desc_de": "H1 sealed — /learn /predict"}
+  ],
+  "sync_triggers_de": [
+    "king_ops status",
+    "king_ops tune",
+    "king_ops h1-seal",
+    "ai_kernel king-pulse",
+    "ai_kernel h1-watch"
+  ]
+}

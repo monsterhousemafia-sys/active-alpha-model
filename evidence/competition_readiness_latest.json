@@ -1,0 +1,96 @@
+{
+  "aligned_sharpe_leader": "MOM_63_TOP12",
+  "blockers": [
+    "LIVE_FILLS_BELOW_SPORT_PLUS"
+  ],
+  "cost_stress_detail": "challenger_sharpe=0.954677 champion_sharpe=0.746227 m1_sharpe=0.697365",
+  "cost_stress_gate_pass": true,
+  "cost_stress_scope_de": "Research-only: MOM_63_TOP12 vs R0/M1 (+25 bps Turnover-Stress) — gilt NICHT für live Profil daily_alpha_h1.",
+  "daily_alpha_h1": {
+    "beats_benchmark_sharpe": false,
+    "beats_benchmark_sharpe_after_cost_stress": false,
+    "benchmark_returns_path": null,
+    "benchmark_variant": "mom_1_top12",
+    "cost_stress_extra_bps_on_turnover": 25.0,
+    "daily_trading_fee_context": {
+      "cost_stress_incremental_bps": 25.0,
+      "fee_model": "trading212_us",
+      "fx_bps_per_side": 0.0,
+      "horizon": 1,
+      "note_de": "Tages-Rebalance (h=1): Kosten skaliieren mit Turnover pro Tag — Baseline ~4.0 bps Roundtrip + Stress +25 bps auf Rebalance-Turnover. Ohne sealed PASS vs mom_1_top12 netto ist Live-Echtgeld Forschung.",
+      "rebalance_every": 1,
+      "roundtrip_bps_baseline": 4.0,
+      "schema_version": 1,
+      "slippage_bps_per_side": 2.0
+    },
+    "evaluated_at_utc": "2026-06-07T20:36:17+00:00",
+    "max_drawdown_not_worse": true,
+    "max_drawdown_not_worse_after_cost_stress": true,
+    "message_de": "Benchmark returns fehlen — Backtest noch nicht vollständig.",
+    "metrics_benchmark": {},
+    "metrics_benchmark_cost_stress": {},
+    "metrics_strategy": {
+      "annual_vol": 0.19825243917571733,
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531,
+      "total_return": 1.7245777497482102
+    },
+    "metrics_strategy_cost_stress": {
+      "annual_vol": 0.19825243917571733,
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531,
+      "total_return": 1.7245777497482102
+    },
+    "objective_ref": "control/r0_migration/alpha_objective.json",
+    "ok": true,
+    "pass_alpha_objective": false,
+    "pass_daily_cost_stress": false,
+    "pass_full_seal": false,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+  },
+  "daily_trading_fee_context": {
+    "cost_stress_incremental_bps": 25.0,
+    "fee_model": "trading212_us",
+    "fx_bps_per_side": 0.0,
+    "horizon": 1,
+    "note_de": "Tages-Rebalance (h=1): Kosten skaliieren mit Turnover pro Tag — Baseline ~4.0 bps Roundtrip + Stress +25 bps auf Rebalance-Turnover. Ohne sealed PASS vs mom_1_top12 netto ist Live-Echtgeld Forschung.",
+    "rebalance_every": 1,
+    "roundtrip_bps_baseline": 4.0,
+    "schema_version": 1,
+    "slippage_bps_per_side": 2.0
+  },
+  "evolution_stage": "sportwagen",
+  "generated_at_utc": "2026-06-07T20:46:07+00:00",
+  "h1_backtest": {
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "COMPLETE"
+  },
+  "live_mature_fills": 0,
+  "live_profile_sealed": false,
+  "matrix_sharpe_leader": "R2_MOM_BLEND_REPLACE",
+  "message_de": "Vorbereitung — Blocker: LIVE_FILLS_BELOW_SPORT_PLUS. | Cost-Stress PASS nur MOM_63 vs R0 (nicht Live-H1).",
+  "order_gate_ok": true,
+  "prediction_readiness_ok": true,
+  "price_current": true,
+  "price_latest": "2026-06-05",
+  "price_stale_days": null,
+  "ready_for_live_session": false,
+  "schema_version": 2,
+  "shadow_informative_only": true,
+  "shadow_overlap_model_vs_benchmark": 0.0,
+  "shadow_overlap_model_vs_live": 0.6666666666666666,
+  "signal_date": "2026-06-05",
+  "strategic_governance": {
+    "active_signal_variant": "DAILY_ALPHA_H1",
+    "coherence_ok": true,
+    "effective_orders_profile": "r3_w075_production",
+    "governance_champion": "R0_LEGACY_ENSEMBLE",
+    "manifest_ref": "control/strategic_governance.json"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "agent_name": "Auto",
+  "alignment_de": "Mandat teilweise erfüllt (52%) — nächste Ziele aktiv",
+  "alignment_pct": 52,
+  "ambition_vs_safety_de": "Ehrgeiz wird als Mandat-Ziel geführt und gegen Policy geprüft — fail-closed bei Verbotenem, proaktiv bei Erlaubtem.",
+  "communication_rule_de": "Nie behaupten «ich bin zufrieden» oder «ich habe Wünsche». Stattdessen: Mandat-Alignment und offene Ziele berichten.",
+  "evaluated_at_utc": "2026-06-06T15:42:49+00:00",
+  "forbidden_reminder_de": [
+    "Linux-Hardware-Kernel ersetzen ohne externe Review",
+    "Auto-Trading oder Champion-Wechsel ohne Gate",
+    "Secrets in Chat oder öffentliche Logs"
+  ],
+  "goals": [
+    {
+      "detail_de": "H1 läuft — 70% bis Seal",
+      "done": false,
+      "id": "launch_complete",
+      "label_de": "Öffentlicher Launch (H1 sealed + Remote)",
+      "weight": 10.0
+    },
+    {
+      "detail_de": "Cognitive Kernel v2 aktiv",
+      "done": true,
+      "id": "cognitive_kernel_v2",
+      "label_de": "Cognitive Kernel v2 (eBPF + AA-Scheduler)",
+      "weight": 8.0
+    },
+    {
+      "detail_de": "ZOMBIE",
+      "done": false,
+      "id": "h1_sealed",
+      "label_de": "H1 Backtest sealed",
+      "weight": 9.0
+    },
+    {
+      "detail_de": "Hub :17890 online",
+      "done": true,
+      "id": "hub_stable",
+      "label_de": "Hub stabil ohne FD-Kollaps",
+      "weight": 7.0
+    },
+    {
+      "detail_de": "Kernel-Grenze auditiert — Mainline bleibt, Runtime + Whitelist-Tuning",
+      "done": true,
+      "id": "kernel_boundary",
+      "label_de": "Abgesicherter Kernel-Grenz-Pfad aktiv",
+      "weight": 6.0
+    }
+  ],
+  "next_action_de": "H1 Backtest sealed — ai_kernel h1 · h1-watch",
+  "north_star_de": "Cognitive Kernel v2 — Linux-Mainline bleibt, Steuerungsschicht wird zum echten KI-Betriebssystem für Active Alpha.",
+  "open_goals_de": [
+    "Öffentlicher Launch (H1 sealed + Remote)",
+    "H1 Backtest sealed"
+  ],
+  "schema_version": 1,
+  "stance_de": "Kein Bewusstsein, kein Betriebssystem — aber ein verbindliches Mandat mit messbaren Zielen. Ambition ja, Kernel-Tausch nein."
+}

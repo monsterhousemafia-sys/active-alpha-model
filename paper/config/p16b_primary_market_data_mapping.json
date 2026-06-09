@@ -1,0 +1,56 @@
+{
+  "generated_at_utc": "2026-06-01T14:51:47+00:00",
+  "primary_static_ticker_mapping_count": "8/8",
+  "primary_quote_retrieval_success_count": "0/8",
+  "primary_provider_metadata_identity_verified_count": "0/8",
+  "entries": [
+    {
+      "symbol_reference": "OXY",
+      "yfinance_ticker": "OXY",
+      "mapping_status": "TO_BE_VERIFIED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "VUSD",
+      "yfinance_ticker": "VUSD.L",
+      "mapping_status": "IDENTITY_PARTIAL_QUOTE_RETRIEVED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "WDC",
+      "yfinance_ticker": "WDC",
+      "mapping_status": "TO_BE_VERIFIED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "SNDK",
+      "yfinance_ticker": "SNDK",
+      "mapping_status": "IDENTITY_PARTIAL_QUOTE_RETRIEVED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "STX",
+      "yfinance_ticker": "STX",
+      "mapping_status": "TO_BE_VERIFIED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "INTC",
+      "yfinance_ticker": "INTC",
+      "mapping_status": "TO_BE_VERIFIED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "MU",
+      "yfinance_ticker": "MU",
+      "mapping_status": "TO_BE_VERIFIED",
+      "quote_retrieved": false
+    },
+    {
+      "symbol_reference": "CIEN",
+      "yfinance_ticker": "CIEN",
+      "mapping_status": "TO_BE_VERIFIED",
+      "quote_retrieved": false
+    }
+  ]
+}

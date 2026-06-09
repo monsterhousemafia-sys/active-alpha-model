@@ -1,0 +1,28 @@
+{
+  "applied_at_utc": "2026-06-09T18:39:39+00:00",
+  "changed": [
+    "alpha_model_local_runtime:local_only",
+    "alpha_model_local_runtime:remote_workers_expected",
+    "alpha_model_local_runtime:tunnel_required",
+    "alpha_model_local_runtime:hub_bind",
+    "alpha_model_local_runtime:headline_de",
+    "preview_federation:bind_host",
+    "preview_federation:lan_bind",
+    "preview_federation:remote_access_mode",
+    "preview_federation:remote_workers_expected",
+    "preview_federation:note_de",
+    "r3_https_mirror",
+    "AI_KERNEL",
+    "active_alpha_unified",
+    "ki_tunnel_connection:dedupe",
+    "alpha_model_local_runtime:apply"
+  ],
+  "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
+  "headline_de": "Lokal aktiv · HTTPS-Spiegel: https://dans-served-herald-guns.trycloudflare.com",
+  "https_mirror": "https://dans-served-herald-guns.trycloudflare.com",
+  "local_hub": "http://127.0.0.1:17890",
+  "mirror_count": 1,
+  "ok": true,
+  "policy_ref": "control/r3_local_first_policy.json",
+  "schema_version": 1
+}

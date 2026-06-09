@@ -1,0 +1,52 @@
+{
+  "awaiting_king": [],
+  "chat_commands_de": [
+    "/beitrag <was> — R3-OS bauen",
+    "/beitrag forschung <was> — Forschungszweig (tägliche Prognose, Finanzierung)",
+    "/prognose <was> — Kurzform Forschungszweig",
+    "/freigeben — König: freigeben",
+    "/ablehnen — König: ablehnen",
+    "/board — Anzeige aktualisieren"
+  ],
+  "counts": {
+    "live": 0,
+    "total": 1,
+    "wartet_freigabe": 0
+  },
+  "current": {
+    "author_de": "du",
+    "author_id": "local",
+    "branch": "r3_os",
+    "branch_label_de": "R3-OS Pilot",
+    "id": "ba00b5fa90",
+    "implement_de": null,
+    "mandate_de": "Board test",
+    "preview_de": "Board test",
+    "status": "eingereicht",
+    "submitted_at_utc": "2026-06-08T14:03:14+00:00",
+    "test_de": null
+  },
+  "current_id": "ba00b5fa90",
+  "headline_de": "Du baust: Board test",
+  "is_king": false,
+  "live_recent": [],
+  "queue": [
+    {
+      "author_de": "du",
+      "author_id": "local",
+      "branch": "r3_os",
+      "branch_label_de": "R3-OS Pilot",
+      "id": "ba00b5fa90",
+      "implement_de": null,
+      "mandate_de": "Board test",
+      "preview_de": "Board test",
+      "status": "eingereicht",
+      "submitted_at_utc": "2026-06-08T14:03:14+00:00",
+      "test_de": null
+    }
+  ],
+  "schema_version": 1,
+  "tagline_de": "Ein Chat · sichtbar bauen · getestet · König gibt frei",
+  "title_de": "Pilot-Zentrale",
+  "updated_at_utc": "2026-06-08T14:03:14+00:00"
+}

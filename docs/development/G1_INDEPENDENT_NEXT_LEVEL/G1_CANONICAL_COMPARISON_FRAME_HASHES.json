@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-06-01T11:25:21+00:00",
+  "variants": {
+    "R3_w075_q065_noexit": {
+      "returns_path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+      "decisions_path": "model_output_sp500_pit_t212/backtest_decisions.csv"
+    },
+    "MOM_63_TOP12": {
+      "returns_path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+      "returns_column": "NAIVE_MOMENTUM_MOM_63_TOP12",
+      "decisions_path": "",
+      "baseline_cost_proof_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+      "turnover_verified": false,
+      "gate_eligible": false,
+      "turnover_proxy_variant": "R3_w075_q065_noexit"
+    },
+    "M1_MOM_BLEND_MATCHED_CONTROLS": {
+      "returns_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+      "decisions_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+      "returns_column": null,
+      "baseline_cost_proof_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+      "turnover_verified": true,
+      "gate_eligible": true
+    }
+  },
+  "hashes": {
+    "R3_w075_q065_noexit": {
+      "returns": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653",
+      "decisions": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+    },
+    "MOM_63_TOP12": {
+      "returns": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7",
+      "decisions": ""
+    },
+    "M1_MOM_BLEND_MATCHED_CONTROLS": {
+      "returns": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07",
+      "decisions": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+    }
+  }
+}

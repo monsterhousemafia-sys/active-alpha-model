@@ -1,0 +1,73 @@
+{
+  "advisors_ref": "control/r3_external_advisors.json",
+  "attachments": {
+    "allowed_extensions": [
+      ".txt",
+      ".md",
+      ".json",
+      ".py",
+      ".sh",
+      ".csv",
+      ".log",
+      ".yaml",
+      ".yml",
+      ".html",
+      ".js",
+      ".ts",
+      ".tsx",
+      ".jsx",
+      ".toml",
+      ".ini",
+      ".cfg",
+      ".xml"
+    ],
+    "allowed_mime_prefixes": [
+      "text/",
+      "application/json",
+      "application/xml",
+      "application/javascript"
+    ],
+    "enabled": true,
+    "max_bytes": 2097152,
+    "max_per_message": 4
+  },
+  "evolution_de": "Wachstum im Entfaltungsraum — /bau, Evidence, H1",
+  "hide_context_usage_ui": true,
+  "import": {
+    "legacy_cursor_import": false,
+    "on_boot": true,
+    "seed_session_messages": 36,
+    "source": "r3_archive"
+  },
+  "independence_de": "Entfaltungsraum + Cockpit lokal — kein Cursor",
+  "internet": {
+    "block_private_hosts": true,
+    "commands_de": [
+      "/web",
+      "/fetch",
+      "/internet"
+    ],
+    "enabled": true,
+    "fetch_enabled": true,
+    "fetch_timeout_s": 12.0,
+    "max_fetch_bytes": 524288,
+    "user_agent": "R3-KI/1.0 (+local-hub)"
+  },
+  "layout_de": "Session-Rail · Quick-Chips · Power-Module · Auto-Route",
+  "layout_ref": "control/r3_ki_chat_layout.json",
+  "model_home": "local_machine",
+  "primary_agent_cli": "alpha-model-agent",
+  "product_name": "Alpha Model KI",
+  "replaces_de": "Cursor-Pflichtkanal — R3 KI lokal ist Hauptsprache; Cockpit = Chat + System",
+  "schema_version": 1,
+  "session_max_chars_per_message": 8000,
+  "session_max_messages": 48,
+  "ui_hints_de": [
+    "/geheimnis",
+    "/beitrag",
+    "/kombi",
+    "/tipp",
+    "/berater",
+    "Datei anhängen · Enter senden · Shift+Enter Zeile"
+  ]
+}

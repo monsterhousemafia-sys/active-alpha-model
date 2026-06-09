@@ -1,0 +1,804 @@
+ticker,valid_from,valid_to,source,reason,company,confidence
+A,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Agilent Technologies,medium
+AA,2012-01-01,2016-11-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Alcoa,medium
+AAL,2015-03-23,2024-09-23,wikipedia_sp500_reconstructed,added_to_sp500,American Airlines Group,medium
+AAP,2015-07-08,2023-08-25,wikipedia_sp500_reconstructed,added_to_sp500,Advance Auto Parts,medium
+AAPL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Apple Inc.,medium
+ABBV,2013-01-02,,wikipedia_sp500_reconstructed,added_to_sp500,AbbVie,high
+ABMD,2018-05-31,2022-12-22,wikipedia_sp500_reconstructed,added_to_sp500,Abiomed,medium
+ABNB,2023-09-18,,wikipedia_sp500_reconstructed,added_to_sp500,Airbnb,high
+ABT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Abbott Laboratories,medium
+ACE,2012-01-01,2016-01-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Chubb,medium
+ACGL,2022-11-01,,wikipedia_sp500_reconstructed,added_to_sp500,Arch Capital Group,high
+ACN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Accenture,medium
+ADBE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Adobe Inc.,medium
+ADI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Analog Devices,medium
+ADM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Archer Daniels Midland,medium
+ADP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Automatic Data Processing,medium
+ADS,2013-12-23,2020-06-22,wikipedia_sp500_reconstructed,added_to_sp500,Alliance Data Systems,medium
+ADSK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Autodesk,medium
+ADT,2012-10-01,2016-05-03,wikipedia_sp500_reconstructed,added_to_sp500,ADT,medium
+AEE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ameren,medium
+AEP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,American Electric Power,medium
+AES,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,AES Corporation,medium
+AET,2012-01-01,2018-12-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Aetna,medium
+AFL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Aflac,medium
+AGN,2012-01-01,2015-03-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Allergan,medium
+AIG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,American International Group,medium
+AIV,2012-01-01,2020-12-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Apartment Investment & Management,medium
+AIZ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Assurant,medium
+AJG,2016-05-31,,wikipedia_sp500_reconstructed,added_to_sp500,Arthur J. Gallagher & Co.,high
+AKAM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Akamai Technologies,medium
+ALB,2016-07-01,,wikipedia_sp500_reconstructed,added_to_sp500,Albemarle Corporation,high
+ALGN,2017-06-19,,wikipedia_sp500_reconstructed,added_to_sp500,Align Technology,high
+ALK,2016-05-13,2023-12-18,wikipedia_sp500_reconstructed,added_to_sp500,Alaska Air Group,medium
+ALL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Allstate,medium
+ALLE,2013-12-02,,wikipedia_sp500_reconstructed,added_to_sp500,Allegion,high
+ALTR,2012-01-01,2015-12-29,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Altera,medium
+ALXN,2012-05-21,2021-07-21,wikipedia_sp500_reconstructed,added_to_sp500,Alexion Pharmaceuticals,medium
+AMAT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Applied Materials,medium
+AMCR,2019-06-11,,wikipedia_sp500_reconstructed,added_to_sp500,Amcor,high
+AMD,2012-01-01,2013-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Advanced Micro Devices,medium
+AMD,2017-03-20,,wikipedia_sp500_reconstructed,added_to_sp500,Advanced Micro Devices,high
+AME,2013-09-20,,wikipedia_sp500_reconstructed,added_to_sp500,Ametek,high
+AMG,2014-07-01,2019-12-23,wikipedia_sp500_reconstructed,added_to_sp500,Affiliated Managers Group,medium
+AMGN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Amgen,medium
+AMP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ameriprise Financial,medium
+AMT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,American Tower,medium
+AMTM,2024-09-30,2024-12-23,wikipedia_sp500_reconstructed,added_to_sp500,Amentum,medium
+AMZN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Amazon,medium
+AN,2012-01-01,2017-08-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Amoco,medium
+ANDV,2012-01-01,2018-10-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Andeavor,medium
+ANET,2018-08-28,,wikipedia_sp500_reconstructed,added_to_sp500,Arista Networks,high
+ANF,2012-01-01,2013-12-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Abercrombie & Fitch,medium
+ANR,2012-01-01,2012-10-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Alpha Natural Resources,medium
+ANSS,2017-06-19,2025-07-18,wikipedia_sp500_reconstructed,added_to_sp500,Ansys,medium
+AON,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Aon plc,medium
+AOS,2017-07-26,,wikipedia_sp500_reconstructed,added_to_sp500,A. O. Smith,high
+APA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,APA Corporation,medium
+APC,2012-01-01,2019-08-09,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Anadarko Petroleum,medium
+APD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Air Products,medium
+APH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Amphenol,medium
+APO,2024-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,Apollo Global Management,high
+APOL,2012-01-01,2013-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Apollo Education Group,medium
+APP,2025-09-22,,wikipedia_sp500_reconstructed,added_to_sp500,AppLovin,high
+APTV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Aptiv,medium
+ARE,2017-03-20,,wikipedia_sp500_reconstructed,added_to_sp500,Alexandria Real Estate Equities,high
+ARES,2025-12-11,,wikipedia_sp500_reconstructed,added_to_sp500,Ares Management,high
+ARG,2012-01-01,2016-05-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Airgas,medium
+ARNC,2016-11-01,2020-04-01,wikipedia_sp500_reconstructed,added_to_sp500,Arconic,medium
+ATI,2012-01-01,2015-07-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Allegheny Technologies,medium
+ATO,2019-02-15,,wikipedia_sp500_reconstructed,added_to_sp500,Atmos Energy,high
+ATVI,2015-08-28,2023-10-18,wikipedia_sp500_reconstructed,added_to_sp500,Activision Blizzard,medium
+AVB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,AvalonBay Communities,medium
+AVGO,2014-05-08,,wikipedia_sp500_reconstructed,added_to_sp500,Broadcom,high
+AVP,2012-01-01,2015-03-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Avon Products,medium
+AVY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Avery Dennison,medium
+AWK,2016-03-04,,wikipedia_sp500_reconstructed,added_to_sp500,American Water Works,high
+AXON,2023-05-04,,wikipedia_sp500_reconstructed,added_to_sp500,Axon Enterprise,high
+AXP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,American Express,medium
+AYI,2016-05-03,2018-06-18,wikipedia_sp500_reconstructed,added_to_sp500,Acuity Brands,medium
+AZO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,AutoZone,medium
+BA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Boeing,medium
+BAC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Bank of America,medium
+BALL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ball Corporation,medium
+BAX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Baxter International,medium
+BBBY,2012-01-01,2017-07-26,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Bed Bath & Beyond,medium
+BBWI,2012-01-01,2024-10-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"Bath & Body Works, Inc.",medium
+BBY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Best Buy,medium
+BCR,2012-01-01,2018-01-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CR Bard,medium
+BDX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Becton Dickinson,medium
+BEAM,2012-01-01,2014-05-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Suntory Global Spirits,medium
+BEN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Franklin Resources,medium
+BF-B,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Brown–Forman,medium
+BG,2023-03-15,,wikipedia_sp500_reconstructed,added_to_sp500,Bunge Global,high
+BHF,2017-08-08,2019-04-02,wikipedia_sp500_reconstructed,added_to_sp500,Brighthouse Financial,medium
+BHI,2012-01-01,2017-07-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Baker Hughes,medium
+BIG,2012-01-01,2013-02-15,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Big Lots,medium
+BIIB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Biogen,medium
+BIO,2020-06-22,2024-09-23,wikipedia_sp500_reconstructed,added_to_sp500,Bio-Rad Laboratories,medium
+BKNG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Booking Holdings,medium
+BKR,2017-07-07,,wikipedia_sp500_reconstructed,added_to_sp500,Baker Hughes,high
+BLDR,2023-12-18,,wikipedia_sp500_reconstructed,added_to_sp500,Builders FirstSource,high
+BLK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,BlackRock,medium
+BMC,2012-01-01,2013-09-10,wikipedia_sp500_reconstructed,present_at_start_reconstructed,BMC Software,medium
+BMS,2012-01-01,2014-12-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Bemis Company,medium
+BMS,2019-06-07,2019-06-11,wikipedia_sp500_reconstructed,added_to_sp500,Bemis Company,medium
+BMY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Bristol Myers Squibb,medium
+BNY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,BNY Mellon,medium
+BR,2018-06-18,,wikipedia_sp500_reconstructed,added_to_sp500,Broadridge Financial Solutions,high
+BRCM,2012-01-01,2016-02-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Broadcom Corporation,medium
+BRK-B,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Berkshire Hathaway,medium
+BRO,2021-09-20,,wikipedia_sp500_reconstructed,added_to_sp500,Brown & Brown,high
+BSX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Boston Scientific,medium
+BTU,2012-01-01,2014-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Peabody Energy,medium
+BWA,2012-01-01,2025-03-24,wikipedia_sp500_reconstructed,present_at_start_reconstructed,BorgWarner,medium
+BX,2023-09-18,,wikipedia_sp500_reconstructed,added_to_sp500,Blackstone Inc.,high
+BXLT,2015-07-01,2016-06-03,wikipedia_sp500_reconstructed,added_to_sp500,Baxalta,medium
+BXP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"BXP, Inc.",medium
+C,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Citigroup,medium
+CA,2012-01-01,2018-11-06,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CA Technologies,medium
+CAG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Conagra Brands,medium
+CAH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cardinal Health,medium
+CAM,2012-01-01,2016-04-04,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cameron International,medium
+CARR,2020-04-03,,wikipedia_sp500_reconstructed,added_to_sp500,Carrier Global,high
+CASY,2026-04-09,,wikipedia_sp500_reconstructed,added_to_sp500,Casey's,high
+CAT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Caterpillar Inc.,medium
+CB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Chubb Limited,medium
+CBE,2012-01-01,2012-12-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cooper Industries,medium
+CBOE,2017-03-01,,wikipedia_sp500_reconstructed,added_to_sp500,Cboe Global Markets,high
+CBRE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CBRE Group,medium
+CCE,2012-01-01,2016-05-31,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Coca-Cola Enterprises,medium
+CCI,2012-03-13,,wikipedia_sp500_reconstructed,added_to_sp500,Crown Castle,high
+CCL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Carnival Corporation,medium
+CDAY,2021-09-20,,wikipedia_sp500_reconstructed,added_to_sp500,Ceridian,high
+CDNS,2017-09-18,,wikipedia_sp500_reconstructed,added_to_sp500,Cadence Design Systems,high
+CDW,2019-09-23,,wikipedia_sp500_reconstructed,added_to_sp500,CDW Corporation,high
+CE,2018-12-24,2025-03-24,wikipedia_sp500_reconstructed,added_to_sp500,Celanese,medium
+CEG,2012-01-01,2012-03-13,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Constellation Energy,medium
+CEG,2022-02-02,,wikipedia_sp500_reconstructed,added_to_sp500,Constellation Energy,high
+CELG,2012-01-01,2019-11-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Celgene,medium
+CERN,2012-01-01,2022-06-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cerner,medium
+CF,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CF Industries,medium
+CFG,2016-02-01,,wikipedia_sp500_reconstructed,added_to_sp500,Citizens Financial Group,high
+CFN,2012-01-01,2015-03-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Carefusion,medium
+CHD,2015-12-29,,wikipedia_sp500_reconstructed,added_to_sp500,Church & Dwight,high
+CHK,2012-01-01,2018-03-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Chesapeake Energy,medium
+CHRW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,C.H. Robinson,medium
+CHTR,2016-09-08,,wikipedia_sp500_reconstructed,added_to_sp500,Charter Communications,high
+CI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cigna,medium
+CIEN,2026-02-09,,wikipedia_sp500_reconstructed,added_to_sp500,Ciena,high
+CINF,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cincinnati Financial,medium
+CL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Colgate-Palmolive,medium
+CLF,2012-01-01,2014-04-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cliffs Natural Resources,medium
+CLX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Clorox,medium
+CMA,2012-01-01,2024-06-24,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Comerica,medium
+CMCSA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Comcast,medium
+CMCSK,2015-09-18,2015-12-15,wikipedia_sp500_reconstructed,added_to_sp500,Comcast Class K Special,medium
+CME,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CME Group,medium
+CMG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Chipotle Mexican Grill,medium
+CMI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cummins,medium
+CMS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CMS Energy,medium
+CNC,2016-03-30,,wikipedia_sp500_reconstructed,added_to_sp500,Centene Corporation,high
+CNP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CenterPoint Energy,medium
+CNX,2012-01-01,2016-03-04,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Consol Energy,medium
+COF,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Capital One,medium
+COHR,2026-03-23,,wikipedia_sp500_reconstructed,added_to_sp500,Coherent Corp.,high
+COIN,2025-05-19,,wikipedia_sp500_reconstructed,added_to_sp500,Coinbase,high
+COL,2012-01-01,2018-12-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Rockwell Collins,medium
+COO,2016-09-22,,wikipedia_sp500_reconstructed,added_to_sp500,Cooper Companies (The),high
+COP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,ConocoPhillips,medium
+COR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cencora,medium
+COST,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Costco,medium
+COTY,2016-09-30,2020-09-21,wikipedia_sp500_reconstructed,added_to_sp500,Coty,medium
+COV,2012-01-01,2015-01-27,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Covidien,medium
+CPAY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Corpay,medium
+CPB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Campbell's Company (The),medium
+CPGX,2015-07-02,2016-07-05,wikipedia_sp500_reconstructed,added_to_sp500,Columbia Pipeline Group,medium
+CPRI,2012-01-01,2020-05-12,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Capri Holdings,medium
+CPRT,2018-07-02,,wikipedia_sp500_reconstructed,added_to_sp500,Copart,high
+CPT,2022-04-04,,wikipedia_sp500_reconstructed,added_to_sp500,Camden Property Trust,high
+CRH,2025-12-22,,wikipedia_sp500_reconstructed,added_to_sp500,CRH plc,high
+CRL,2021-05-14,,wikipedia_sp500_reconstructed,added_to_sp500,Charles River Laboratories,high
+CRM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Salesforce,medium
+CRWD,2024-06-24,,wikipedia_sp500_reconstructed,added_to_sp500,CrowdStrike,high
+CSC,2012-01-01,2015-12-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Computer Sciences Corporation,medium
+CSCO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cisco,medium
+CSGP,2022-09-19,,wikipedia_sp500_reconstructed,added_to_sp500,CoStar Group,high
+CSRA,2015-12-01,2018-04-04,wikipedia_sp500_reconstructed,added_to_sp500,CSRA,medium
+CSX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CSX Corporation,medium
+CTAS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cintas,medium
+CTLT,2020-09-21,2024-12-23,wikipedia_sp500_reconstructed,added_to_sp500,Catalent,medium
+CTRA,2012-01-01,2026-05-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Coterra Energy,medium
+CTSH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cognizant,medium
+CTVA,2019-06-03,,wikipedia_sp500_reconstructed,added_to_sp500,Corteva,high
+CTXS,2012-01-01,2022-10-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Citrix Systems,medium
+CVC,2012-01-01,2016-06-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Cablevision,medium
+CVH,2012-01-01,2013-05-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Coventry Health Care,medium
+CVNA,2025-12-22,,wikipedia_sp500_reconstructed,added_to_sp500,Carvana,high
+CVS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CVS Health,medium
+CVX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Chevron Corporation,medium
+CXO,2016-02-22,2021-01-21,wikipedia_sp500_reconstructed,added_to_sp500,Concho Resources,medium
+CZR,2021-03-22,2025-09-22,wikipedia_sp500_reconstructed,added_to_sp500,Caesars Entertainment,medium
+D,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dominion Energy,medium
+DAL,2013-09-10,,wikipedia_sp500_reconstructed,added_to_sp500,Delta Air Lines,high
+DASH,2025-03-24,,wikipedia_sp500_reconstructed,added_to_sp500,DoorDash,high
+DAY,2012-01-01,2026-02-09,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dayforce,medium
+DD,2012-01-01,2017-09-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,DuPont,medium
+DD,2019-06-03,,wikipedia_sp500_reconstructed,added_to_sp500,DuPont,high
+DDOG,2025-07-09,,wikipedia_sp500_reconstructed,added_to_sp500,Datadog,high
+DE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Deere & Company,medium
+DECK,2024-03-18,,wikipedia_sp500_reconstructed,added_to_sp500,Deckers Brands,high
+DELL,2012-01-01,2013-10-29,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dell Technologies,medium
+DELL,2024-09-23,,wikipedia_sp500_reconstructed,added_to_sp500,Dell Technologies,high
+DF,2012-01-01,2013-05-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dean Foods,medium
+DFS,2012-01-01,2025-05-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Discover Financial,medium
+DG,2012-12-03,,wikipedia_sp500_reconstructed,added_to_sp500,Dollar General,high
+DGX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Quest Diagnostics,medium
+DHI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,D. R. Horton,medium
+DHR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Danaher Corporation,medium
+DIS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Walt Disney Company (The),medium
+DISCA,2012-01-01,2022-04-11,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"Discovery, Inc.",medium
+DISCK,2014-08-06,2022-04-11,wikipedia_sp500_reconstructed,added_to_sp500,Discovery Communications,medium
+DISH,2017-03-13,2023-06-20,wikipedia_sp500_reconstructed,added_to_sp500,Dish Network,medium
+DLPH,2012-12-21,,wikipedia_sp500_reconstructed,added_to_sp500,Delphi Automotive,high
+DLR,2016-05-18,,wikipedia_sp500_reconstructed,added_to_sp500,Digital Realty,high
+DLTR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dollar Tree,medium
+DNB,2012-01-01,2017-04-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dun & Bradstreet,medium
+DNR,2012-01-01,2015-03-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Denbury Resources,medium
+DO,2012-01-01,2016-09-30,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Diamond Offshore Drilling,medium
+DOC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Healthpeak Properties,medium
+DOV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dover Corporation,medium
+DOW,2012-01-01,2017-09-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dow Inc.,medium
+DOW,2019-04-02,,wikipedia_sp500_reconstructed,added_to_sp500,Dow Inc.,high
+DPS,2012-01-01,2018-07-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dr Pepper Snapple Group,medium
+DPZ,2020-05-12,,wikipedia_sp500_reconstructed,added_to_sp500,Domino's,high
+DRE,2017-07-26,2022-10-03,wikipedia_sp500_reconstructed,added_to_sp500,Duke Realty Corp,medium
+DRI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Darden Restaurants,medium
+DTE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,DTE Energy,medium
+DTV,2012-01-01,2015-07-29,wikipedia_sp500_reconstructed,present_at_start_reconstructed,DirecTV,medium
+DUK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Duke Energy,medium
+DV,2012-01-01,2012-10-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,DeVry,medium
+DVA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,DaVita,medium
+DVN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Devon Energy,medium
+DWDP,2017-09-01,2019-06-03,wikipedia_sp500_reconstructed,added_to_sp500,DuPont,medium
+DXC,2017-04-04,2023-10-03,wikipedia_sp500_reconstructed,added_to_sp500,DXC Technology,medium
+DXCM,2020-05-12,,wikipedia_sp500_reconstructed,added_to_sp500,Dexcom,high
+EA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Electronic Arts,medium
+EBAY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,eBay Inc.,medium
+ECL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ecolab,medium
+ED,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Consolidated Edison,medium
+EFX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Equifax,medium
+EG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Everest Group,medium
+EIX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Edison International,medium
+EL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Estée Lauder Companies (The),medium
+ELV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Elevance Health,medium
+EMC,2012-01-01,2016-09-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,EMC Corporation,medium
+EME,2025-09-22,,wikipedia_sp500_reconstructed,added_to_sp500,Emcor,high
+EMN,2012-01-01,2025-11-04,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Eastman Chemical Co.,medium
+EMR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Emerson Electric,medium
+ENDP,2015-01-27,2017-03-02,wikipedia_sp500_reconstructed,added_to_sp500,Endo International,medium
+ENPH,2021-01-07,2025-09-22,wikipedia_sp500_reconstructed,added_to_sp500,Enphase Energy,medium
+EOG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,EOG Resources,medium
+EP,2012-01-01,2012-05-17,wikipedia_sp500_reconstructed,present_at_start_reconstructed,El Paso Corporation,medium
+EPAM,2021-12-14,2026-06-02,wikipedia_sp500_reconstructed,added_to_sp500,EPAM Systems,medium
+EQIX,2015-03-23,,wikipedia_sp500_reconstructed,added_to_sp500,Equinix,high
+EQR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Equity Residential,medium
+EQT,2012-01-01,2018-11-13,wikipedia_sp500_reconstructed,present_at_start_reconstructed,EQT Corporation,medium
+EQT,2022-10-03,,wikipedia_sp500_reconstructed,added_to_sp500,EQT Corporation,high
+ERIE,2024-09-23,,wikipedia_sp500_reconstructed,added_to_sp500,Erie Indemnity,high
+ES,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Eversource Energy,medium
+ESRX,2012-01-01,2018-12-24,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Express Scripts,medium
+ESS,2014-04-02,,wikipedia_sp500_reconstructed,added_to_sp500,Essex Property Trust,high
+ESV,2012-07-31,2016-03-30,wikipedia_sp500_reconstructed,added_to_sp500,Ensco,medium
+ETFC,2012-01-01,2020-10-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,E-Trade,medium
+ETN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Eaton Corporation,medium
+ETR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Entergy,medium
+ETSY,2020-09-21,2024-09-23,wikipedia_sp500_reconstructed,added_to_sp500,Etsy,medium
+EVHC,2016-12-02,2018-10-11,wikipedia_sp500_reconstructed,added_to_sp500,Envision Healthcare,medium
+EVRG,2018-06-05,,wikipedia_sp500_reconstructed,added_to_sp500,Evergy,high
+EW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Edwards Lifesciences,medium
+EXC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Exelon,medium
+EXE,2025-03-24,,wikipedia_sp500_reconstructed,added_to_sp500,Expand Energy,high
+EXPD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Expeditors International,medium
+EXPE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Expedia Group,medium
+EXR,2016-01-19,,wikipedia_sp500_reconstructed,added_to_sp500,Extra Space Storage,high
+F,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ford Motor Company,medium
+FANG,2018-12-03,,wikipedia_sp500_reconstructed,added_to_sp500,Diamondback Energy,high
+FAST,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Fastenal,medium
+FB,2013-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,Facebook,high
+FBHS,2016-06-22,2022-12-19,wikipedia_sp500_reconstructed,added_to_sp500,Fortune Brands Home & Security,medium
+FCX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Freeport-McMoRan,medium
+FDO,2012-01-01,2015-07-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Family Dollar,medium
+FDS,2021-12-20,,wikipedia_sp500_reconstructed,added_to_sp500,FactSet,high
+FDX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,FedEx,medium
+FDXF,2026-06-01,,wikipedia_sp500_reconstructed,added_to_sp500,FedEx Freight,high
+FE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,FirstEnergy,medium
+FFIV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"F5, Inc.",medium
+FHN,2012-01-01,2013-06-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,First Horizon,medium
+FICO,2023-03-20,,wikipedia_sp500_reconstructed,added_to_sp500,Fair Isaac,high
+FII,2012-01-01,2013-01-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Federated Investors,medium
+FIS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Fidelity National Information Services,medium
+FISV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Fiserv,medium
+FITB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Fifth Third Bancorp,medium
+FIX,2025-12-22,,wikipedia_sp500_reconstructed,added_to_sp500,Comfort Systems USA,high
+FL,2016-04-04,2019-08-09,wikipedia_sp500_reconstructed,added_to_sp500,Foot Locker,medium
+FLIR,2012-01-01,2021-05-14,wikipedia_sp500_reconstructed,present_at_start_reconstructed,FLIR Systems,medium
+FLR,2012-01-01,2019-06-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Fluor Corporation,medium
+FLS,2012-01-01,2021-03-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Flowserve,medium
+FLT,2018-06-20,,wikipedia_sp500_reconstructed,added_to_sp500,FleetCor Technologies,high
+FMC,2012-01-01,2025-03-24,wikipedia_sp500_reconstructed,present_at_start_reconstructed,FMC Corporation,medium
+FOSL,2012-04-03,2016-01-05,wikipedia_sp500_reconstructed,added_to_sp500,Fossil,medium
+FOX,2015-09-18,2019-03-19,wikipedia_sp500_reconstructed,added_to_sp500,Fox Corporation (Class B),medium
+FOX,2019-03-19,,wikipedia_sp500_reconstructed,added_to_sp500,Fox Corporation (Class B),high
+FOXA,2012-01-01,2019-03-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Fox Corporation (Class A),medium
+FOXA,2019-03-19,,wikipedia_sp500_reconstructed,added_to_sp500,Fox Corporation (Class A),high
+FRC,2019-01-02,2023-05-04,wikipedia_sp500_reconstructed,added_to_sp500,First Republic Bank,medium
+FRT,2016-02-01,,wikipedia_sp500_reconstructed,added_to_sp500,Federal Realty Investment Trust,high
+FRX,2012-01-01,2014-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Forest Laboratories,medium
+FSLR,2012-01-01,2017-03-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,First Solar,medium
+FSLR,2022-12-19,,wikipedia_sp500_reconstructed,added_to_sp500,First Solar,high
+FTI,2012-01-01,2021-02-12,wikipedia_sp500_reconstructed,present_at_start_reconstructed,FMC Technologies,medium
+FTNT,2018-10-11,,wikipedia_sp500_reconstructed,added_to_sp500,Fortinet,high
+FTR,2012-01-01,2017-03-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Frontier Communications,medium
+FTV,2016-07-05,,wikipedia_sp500_reconstructed,added_to_sp500,Fortive,high
+GAS,2012-01-01,2016-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,AGL Resources.,medium
+GD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,General Dynamics,medium
+GDDY,2024-06-24,,wikipedia_sp500_reconstructed,added_to_sp500,GoDaddy,high
+GE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,GE Aerospace,medium
+GEHC,2023-01-04,,wikipedia_sp500_reconstructed,added_to_sp500,GE HealthCare,high
+GEN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Gen Digital,medium
+GEV,2024-04-02,,wikipedia_sp500_reconstructed,added_to_sp500,GE Vernova,high
+GGP,2013-12-10,2018-08-28,wikipedia_sp500_reconstructed,added_to_sp500,General Growth Properties,medium
+GHC,2012-01-01,2014-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Graham Holdings,medium
+GILD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Gilead Sciences,medium
+GIS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,General Mills,medium
+GL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Globe Life,medium
+GLW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Corning Inc.,medium
+GM,2013-06-06,,wikipedia_sp500_reconstructed,added_to_sp500,General Motors,high
+GMCR,2014-03-21,2016-03-07,wikipedia_sp500_reconstructed,added_to_sp500,Keurig Green Mountain,medium
+GME,2012-01-01,2016-04-25,wikipedia_sp500_reconstructed,present_at_start_reconstructed,GameStop,medium
+GNRC,2021-03-22,,wikipedia_sp500_reconstructed,added_to_sp500,Generac,high
+GNW,2012-01-01,2015-11-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Genworth Financial,medium
+GOOG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Alphabet Inc. (Class C),medium
+GOOGL,2014-04-03,,wikipedia_sp500_reconstructed,added_to_sp500,Alphabet Inc. (Class A),high
+GPC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Genuine Parts Company,medium
+GPN,2016-04-25,,wikipedia_sp500_reconstructed,added_to_sp500,Global Payments,high
+GPS,2012-01-01,2022-02-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Gap,medium
+GR,2012-01-01,2012-07-31,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Goodrich Corporation,medium
+GRMN,2012-12-11,,wikipedia_sp500_reconstructed,added_to_sp500,Garmin,high
+GS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Goldman Sachs,medium
+GT,2012-01-01,2019-02-27,wikipedia_sp500_reconstructed,present_at_start_reconstructed,The Goodyear Tire & Rubber Company,medium
+GWW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,W. W. Grainger,medium
+HAL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Halliburton,medium
+HAR,2012-01-01,2017-03-16,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Harman International,medium
+HAS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hasbro,medium
+HBAN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Huntington Bancshares,medium
+HBI,2015-03-23,2021-12-20,wikipedia_sp500_reconstructed,added_to_sp500,Hanesbrands,medium
+HCA,2015-01-27,,wikipedia_sp500_reconstructed,added_to_sp500,HCA Healthcare,high
+HCBK,2012-01-01,2015-11-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hudson City Bancorp,medium
+HD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Home Depot (The),medium
+HES,2012-01-01,2025-07-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hess Corporation,medium
+HFC,2018-06-18,2021-06-04,wikipedia_sp500_reconstructed,added_to_sp500,HollyFrontier,medium
+HIG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hartford (The),medium
+HII,2018-01-03,,wikipedia_sp500_reconstructed,added_to_sp500,Huntington Ingalls Industries,high
+HLT,2017-06-19,,wikipedia_sp500_reconstructed,added_to_sp500,Hilton Worldwide,high
+HNZ,2012-01-01,2013-06-06,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Heinz,medium
+HOG,2012-01-01,2020-06-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Harley-Davidson,medium
+HOLX,2016-03-30,2026-04-09,wikipedia_sp500_reconstructed,added_to_sp500,Hologic,medium
+HON,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Honeywell,medium
+HOOD,2025-09-22,,wikipedia_sp500_reconstructed,added_to_sp500,Robinhood Markets,high
+HOT,2012-01-01,2016-09-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Starwood,medium
+HP,2012-01-01,2020-05-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Helmerich & Payne,medium
+HPE,2015-11-02,,wikipedia_sp500_reconstructed,added_to_sp500,Hewlett Packard Enterprise,high
+HPQ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,HP Inc.,medium
+HRB,2012-01-01,2020-09-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,H&R Block,medium
+HRL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hormel Foods,medium
+HSIC,2015-03-18,,wikipedia_sp500_reconstructed,added_to_sp500,Henry Schein,high
+HSP,2012-01-01,2015-09-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hospira,medium
+HST,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Host Hotels & Resorts,medium
+HSY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Hershey Company (The),medium
+HUBB,2023-10-18,,wikipedia_sp500_reconstructed,added_to_sp500,Hubbell Incorporated,high
+HUM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Humana,medium
+HWM,2020-04-01,,wikipedia_sp500_reconstructed,added_to_sp500,Howmet Aerospace,high
+IBKR,2025-08-28,,wikipedia_sp500_reconstructed,added_to_sp500,Interactive Brokers,high
+IBM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,IBM,medium
+ICE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Intercontinental Exchange,medium
+IDXX,2017-01-05,,wikipedia_sp500_reconstructed,added_to_sp500,Idexx Laboratories,high
+IEX,2019-08-09,,wikipedia_sp500_reconstructed,added_to_sp500,IDEX Corporation,high
+IFF,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,International Flavors & Fragrances,medium
+IGT,2012-01-01,2014-06-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,International Game Technology,medium
+ILMN,2015-11-19,2024-06-24,wikipedia_sp500_reconstructed,added_to_sp500,Illumina,medium
+INCY,2017-02-28,,wikipedia_sp500_reconstructed,added_to_sp500,Incyte,high
+INFO,2017-06-02,2022-03-02,wikipedia_sp500_reconstructed,added_to_sp500,IHS Markit,medium
+INTC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Intel,medium
+INTU,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Intuit,medium
+INVH,2022-09-19,,wikipedia_sp500_reconstructed,added_to_sp500,Invitation Homes,high
+IP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,International Paper,medium
+IPG,2012-01-01,2025-11-28,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Interpublic Group,medium
+IPGP,2018-03-07,2022-06-21,wikipedia_sp500_reconstructed,added_to_sp500,IPG Photonics,medium
+IQV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,IQVIA,medium
+IR,2020-03-02,,wikipedia_sp500_reconstructed,added_to_sp500,Ingersoll Rand,high
+IRM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Iron Mountain,medium
+ISRG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Intuitive Surgical,medium
+IT,2017-04-05,,wikipedia_sp500_reconstructed,added_to_sp500,Gartner,high
+ITW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Illinois Tool Works,medium
+IVZ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Invesco,medium
+J,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Jacobs Solutions,medium
+JBHT,2015-07-01,,wikipedia_sp500_reconstructed,added_to_sp500,J.B. Hunt,high
+JBL,2012-01-01,2014-11-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Jabil,medium
+JBL,2023-12-18,,wikipedia_sp500_reconstructed,added_to_sp500,Jabil,high
+JCI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Johnson Controls,medium
+JCP,2012-01-01,2013-12-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,JCPenney,medium
+JDSU,2012-01-01,2013-12-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,JDS Uniphase,medium
+JEF,2012-01-01,2019-09-26,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Jefferies Financial Group,medium
+JKHY,2018-11-13,,wikipedia_sp500_reconstructed,added_to_sp500,Jack Henry & Associates,high
+JNJ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Johnson & Johnson,medium
+JNPR,2012-01-01,2025-07-09,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Juniper Networks,medium
+JOY,2012-01-01,2015-10-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Joy Global,medium
+JPM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,JPMorgan Chase,medium
+JWN,2012-01-01,2020-06-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Nordstrom,medium
+K,2012-01-01,2025-12-11,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Kellanova,medium
+KDP,2022-06-21,,wikipedia_sp500_reconstructed,added_to_sp500,Keurig Dr Pepper,high
+KEY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,KeyCorp,medium
+KEYS,2018-11-06,,wikipedia_sp500_reconstructed,added_to_sp500,Keysight Technologies,high
+KFT,2012-01-01,2012-10-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Kraft Foods,medium
+KHC,2015-07-06,,wikipedia_sp500_reconstructed,added_to_sp500,Kraft Heinz,high
+KIM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Kimco Realty,medium
+KKR,2024-06-24,,wikipedia_sp500_reconstructed,added_to_sp500,KKR & Co.,high
+KLAC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,KLA Corporation,medium
+KMB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Kimberly-Clark,medium
+KMI,2012-05-17,,wikipedia_sp500_reconstructed,added_to_sp500,Kinder Morgan,high
+KMX,2012-01-01,2025-10-31,wikipedia_sp500_reconstructed,present_at_start_reconstructed,CarMax,medium
+KO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Coca-Cola Company (The),medium
+KORS,2013-11-13,,wikipedia_sp500_reconstructed,added_to_sp500,Michael Kors,high
+KR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Kroger,medium
+KRFT,2012-10-02,2015-07-06,wikipedia_sp500_reconstructed,added_to_sp500,Kraft Foods,medium
+KSS,2012-01-01,2020-09-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Kohl's,medium
+KSU,2013-05-23,2021-12-14,wikipedia_sp500_reconstructed,added_to_sp500,Kansas City Southern,medium
+KVUE,2023-08-25,,wikipedia_sp500_reconstructed,added_to_sp500,Kenvue,high
+L,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Loews Corporation,medium
+LDOS,2019-08-09,,wikipedia_sp500_reconstructed,added_to_sp500,Leidos,high
+LEG,2012-01-01,2021-12-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Leggett & Platt,medium
+LEN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lennar,medium
+LH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Labcorp,medium
+LHX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,L3Harris,medium
+LIFE,2012-01-01,2014-01-24,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Life Technologies,medium
+LII,2024-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,Lennox International,high
+LIN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Linde plc,medium
+LITE,2026-03-23,,wikipedia_sp500_reconstructed,added_to_sp500,Lumentum,high
+LKQ,2016-05-23,2025-12-22,wikipedia_sp500_reconstructed,added_to_sp500,LKQ Corporation,medium
+LLL,2012-01-01,2019-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,L3 Technologies,medium
+LLTC,2012-01-01,2017-03-13,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Linear Technology,medium
+LLY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lilly (Eli),medium
+LM,2012-01-01,2016-12-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Legg Mason,medium
+LMT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lockheed Martin,medium
+LNC,2012-01-01,2023-09-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lincoln National Corporation,medium
+LNT,2016-07-01,,wikipedia_sp500_reconstructed,added_to_sp500,Alliant Energy,high
+LO,2012-01-01,2015-06-11,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lorillard Tobacco Company,medium
+LOW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lowe's,medium
+LRCX,2012-06-05,,wikipedia_sp500_reconstructed,added_to_sp500,Lam Research,high
+LSI,2012-01-01,2014-05-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,LSI Corporation,medium
+LULU,2023-10-18,,wikipedia_sp500_reconstructed,added_to_sp500,Lululemon Athletica,high
+LUMN,2012-01-01,2023-03-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lumen Technologies,medium
+LUV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Southwest Airlines,medium
+LVLT,2014-11-05,2017-10-13,wikipedia_sp500_reconstructed,added_to_sp500,Level 3 Communications,medium
+LVS,2019-10-03,,wikipedia_sp500_reconstructed,added_to_sp500,Las Vegas Sands,high
+LW,2018-12-03,2026-03-23,wikipedia_sp500_reconstructed,added_to_sp500,Lamb Weston,medium
+LXK,2012-01-01,2012-10-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Lexmark,medium
+LYB,2012-09-05,,wikipedia_sp500_reconstructed,added_to_sp500,LyondellBasell,high
+LYV,2019-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,Live Nation Entertainment,high
+M,2012-01-01,2020-04-06,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Macy's,medium
+MA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Mastercard,medium
+MAA,2016-12-02,,wikipedia_sp500_reconstructed,added_to_sp500,Mid-America Apartment Communities,high
+MAC,2013-05-08,2019-12-23,wikipedia_sp500_reconstructed,added_to_sp500,Macerich,medium
+MAR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Marriott International,medium
+MAS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Masco,medium
+MAT,2012-01-01,2019-06-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Mattel,medium
+MBC,2022-12-15,2022-12-19,wikipedia_sp500_reconstructed,added_to_sp500,MasterBrand,medium
+MCD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,McDonald's,medium
+MCHP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Microchip Technology,medium
+MCK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,McKesson Corporation,medium
+MCO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Moody's Corporation,medium
+MDLZ,2012-10-02,,wikipedia_sp500_reconstructed,added_to_sp500,Mondelez International,high
+MDT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Medtronic,medium
+MET,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,MetLife,medium
+META,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Meta Platforms,medium
+MGM,2017-07-26,,wikipedia_sp500_reconstructed,added_to_sp500,MGM Resorts,high
+MHK,2013-12-23,2025-12-22,wikipedia_sp500_reconstructed,added_to_sp500,Mohawk Industries,medium
+MHS,2012-01-01,2012-04-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Medco Health Solutions,medium
+MJN,2012-01-01,2017-06-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Mead Johnson Nutrition,medium
+MKC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,McCormick & Company,medium
+MKTX,2019-07-01,2025-09-22,wikipedia_sp500_reconstructed,added_to_sp500,MarketAxess,medium
+MLM,2014-07-02,,wikipedia_sp500_reconstructed,added_to_sp500,Martin Marietta Materials,high
+MMI,2012-01-01,2012-05-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Motorola Mobility,medium
+MMM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,3M,medium
+MNK,2014-08-18,2017-07-26,wikipedia_sp500_reconstructed,added_to_sp500,Mallinckrodt,medium
+MNST,2012-06-29,,wikipedia_sp500_reconstructed,added_to_sp500,Monster Beverage,high
+MO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Altria,medium
+MOH,2022-03-02,2026-03-23,wikipedia_sp500_reconstructed,added_to_sp500,Molina Healthcare,medium
+MOLX,2012-01-01,2013-12-10,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Molex,medium
+MON,2012-01-01,2018-06-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Monsanto,medium
+MOS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Mosaic Company (The),medium
+MPC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Marathon Petroleum,medium
+MPWR,2021-02-12,,wikipedia_sp500_reconstructed,added_to_sp500,Monolithic Power Systems,high
+MRK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Merck & Co.,medium
+MRNA,2021-07-21,,wikipedia_sp500_reconstructed,added_to_sp500,Moderna,high
+MRO,2012-01-01,2024-11-26,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Marathon Oil,medium
+MRSH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Marsh McLennan,medium
+MS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Morgan Stanley,medium
+MSCI,2018-04-04,,wikipedia_sp500_reconstructed,added_to_sp500,MSCI Inc.,high
+MSFT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Microsoft,medium
+MSI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Motorola Solutions,medium
+MTB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,M&T Bank,medium
+MTCH,2021-09-20,2026-03-23,wikipedia_sp500_reconstructed,added_to_sp500,Match Group,medium
+MTD,2016-09-06,,wikipedia_sp500_reconstructed,added_to_sp500,Mettler Toledo,high
+MU,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Micron Technology,medium
+MUR,2012-01-01,2017-07-26,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Murphy Oil,medium
+MXIM,2018-12-03,2021-08-30,wikipedia_sp500_reconstructed,added_to_sp500,Maxim Integrated Products,medium
+NAVI,2014-05-01,2018-06-05,wikipedia_sp500_reconstructed,added_to_sp500,Navient,medium
+NBL,2012-01-01,2020-10-12,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Noble Energy,medium
+NBR,2012-01-01,2015-03-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Nabors Industries,medium
+NCLH,2017-10-13,,wikipedia_sp500_reconstructed,added_to_sp500,Norwegian Cruise Line Holdings,high
+NDAQ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"Nasdaq, Inc.",medium
+NDSN,2022-02-15,,wikipedia_sp500_reconstructed,added_to_sp500,Nordson Corporation,high
+NE,2012-01-01,2015-07-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Noble Corporation,medium
+NEE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,NextEra Energy,medium
+NEM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Newmont,medium
+NFLX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Netflix,medium
+NFX,2012-01-01,2019-02-15,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Newfield Exploration,medium
+NI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,NiSource,medium
+NKE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"Nike, Inc.",medium
+NKTR,2018-03-19,2019-10-03,wikipedia_sp500_reconstructed,added_to_sp500,Nektar Therapeutics,medium
+NLSN,2013-07-08,2022-10-12,wikipedia_sp500_reconstructed,added_to_sp500,Nielsen Holdings,medium
+NOC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Northrop Grumman,medium
+NOV,2012-01-01,2021-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Nov,medium
+NOW,2019-11-21,,wikipedia_sp500_reconstructed,added_to_sp500,ServiceNow,high
+NRG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,NRG Energy,medium
+NSC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Norfolk Southern,medium
+NTAP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,NetApp,medium
+NTRS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Northern Trust,medium
+NUE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Nucor,medium
+NVDA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Nvidia,medium
+NVLS,2012-01-01,2012-06-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Novellus Systems,medium
+NVR,2019-09-26,,wikipedia_sp500_reconstructed,added_to_sp500,"NVR, Inc.",high
+NWL,2012-01-01,2023-09-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Newell Brands,medium
+NWS,2015-09-18,,wikipedia_sp500_reconstructed,added_to_sp500,News Corp (Class B),high
+NWSA,2013-07-01,,wikipedia_sp500_reconstructed,added_to_sp500,News Corp (Class A),high
+NXPI,2021-03-22,,wikipedia_sp500_reconstructed,added_to_sp500,NXP Semiconductors,high
+NYX,2012-01-01,2013-11-13,wikipedia_sp500_reconstructed,present_at_start_reconstructed,NYSE Euronext,medium
+O,2015-04-07,,wikipedia_sp500_reconstructed,added_to_sp500,Realty Income,high
+ODFL,2019-12-09,,wikipedia_sp500_reconstructed,added_to_sp500,Old Dominion,high
+OGN,2021-06-03,2023-10-18,wikipedia_sp500_reconstructed,added_to_sp500,Organon & Co.,medium
+OI,2012-01-01,2016-12-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Owens-Illinois,medium
+OKE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Oneok,medium
+OMC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Omnicom Group,medium
+ON,2022-06-21,,wikipedia_sp500_reconstructed,added_to_sp500,ON Semiconductor,high
+ORCL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Oracle Corporation,medium
+ORLY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,O’Reilly Automotive,medium
+OTIS,2020-04-03,,wikipedia_sp500_reconstructed,added_to_sp500,Otis Worldwide,high
+OXY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Occidental Petroleum,medium
+PANW,2023-06-20,,wikipedia_sp500_reconstructed,added_to_sp500,Palo Alto Networks,high
+PAYC,2020-01-28,2026-03-23,wikipedia_sp500_reconstructed,added_to_sp500,Paycom,medium
+PAYX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Paychex,medium
+PBCT,2012-01-01,2022-04-04,wikipedia_sp500_reconstructed,present_at_start_reconstructed,People's United Financial,medium
+PBI,2012-01-01,2017-03-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Pitney Bowes,medium
+PCAR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Paccar,medium
+PCG,2012-01-01,2019-01-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,PG&E Corporation,medium
+PCG,2022-10-03,,wikipedia_sp500_reconstructed,added_to_sp500,PG&E Corporation,high
+PCL,2012-01-01,2016-02-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Plum Creek Timber,medium
+PCP,2012-01-01,2016-02-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Precision Castparts Corporation,medium
+PCS,2012-01-01,2013-04-30,wikipedia_sp500_reconstructed,present_at_start_reconstructed,MetroPCS,medium
+PDCO,2012-01-01,2018-03-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Patterson Companies,medium
+PEG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Public Service Enterprise Group,medium
+PENN,2021-03-22,2022-09-19,wikipedia_sp500_reconstructed,added_to_sp500,Penn National Gaming,medium
+PEP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,PepsiCo,medium
+PETM,2012-10-10,2015-03-12,wikipedia_sp500_reconstructed,added_to_sp500,PetSmart,medium
+PFE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Pfizer,medium
+PFG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Principal Financial Group,medium
+PG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Procter & Gamble,medium
+PGN,2012-01-01,2012-07-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Progress Energy,medium
+PGR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Progressive Corporation,medium
+PH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Parker Hannifin,medium
+PHM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,PulteGroup,medium
+PKG,2017-07-26,,wikipedia_sp500_reconstructed,added_to_sp500,Packaging Corporation of America,high
+PLD,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Prologis,medium
+PLL,2012-01-01,2015-08-28,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Pall Corporation,medium
+PLTR,2024-09-23,,wikipedia_sp500_reconstructed,added_to_sp500,Palantir Technologies,high
+PM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Philip Morris International,medium
+PNC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,PNC Financial Services,medium
+PNR,2012-10-01,,wikipedia_sp500_reconstructed,added_to_sp500,Pentair,high
+PNW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Pinnacle West Capital,medium
+PODD,2023-03-15,,wikipedia_sp500_reconstructed,added_to_sp500,Insulet Corporation,high
+POM,2012-01-01,2016-03-30,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Pepco Holdings,medium
+POOL,2020-10-07,,wikipedia_sp500_reconstructed,added_to_sp500,Pool Corporation,high
+PPG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,PPG Industries,medium
+PPL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,PPL Corporation,medium
+PRGO,2012-01-01,2021-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Perrigo,medium
+PRU,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Prudential Financial,medium
+PSA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Public Storage,medium
+PSKY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Paramount Skydance Corporation,medium
+PSX,2012-04-23,,wikipedia_sp500_reconstructed,added_to_sp500,Phillips 66,high
+PTC,2021-04-20,,wikipedia_sp500_reconstructed,added_to_sp500,PTC Inc.,high
+PVH,2013-02-15,2022-09-19,wikipedia_sp500_reconstructed,added_to_sp500,PVH,medium
+PWR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Quanta Services,medium
+PXD,2012-01-01,2024-05-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Pioneer Natural Resources,medium
+PYPL,2015-07-20,,wikipedia_sp500_reconstructed,added_to_sp500,PayPal,high
+Q,2017-08-29,,wikipedia_sp500_reconstructed,added_to_sp500,Qnity Electronics,high
+QCOM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Qualcomm,medium
+QEP,2012-01-01,2015-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,QEP Resources,medium
+QRVO,2015-06-11,2024-12-23,wikipedia_sp500_reconstructed,added_to_sp500,Qorvo,medium
+R,2012-01-01,2017-06-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ryder System,medium
+RAI,2012-01-01,2017-07-26,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Reynolds American,medium
+RCL,2014-12-05,,wikipedia_sp500_reconstructed,added_to_sp500,Royal Caribbean Group,high
+RDC,2012-01-01,2014-08-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Rowan Companies,medium
+RE,2017-06-19,,wikipedia_sp500_reconstructed,added_to_sp500,Everest Re,high
+REG,2017-03-02,,wikipedia_sp500_reconstructed,added_to_sp500,Regency Centers,high
+REGN,2013-04-30,,wikipedia_sp500_reconstructed,added_to_sp500,Regeneron Pharmaceuticals,high
+RF,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Regions Financial Corporation,medium
+RHI,2012-01-01,2024-06-24,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Robert Half,medium
+RHT,2012-01-01,2019-07-15,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Red Hat,medium
+RIG,2013-10-29,2017-07-26,wikipedia_sp500_reconstructed,added_to_sp500,Transocean,medium
+RJF,2017-03-20,,wikipedia_sp500_reconstructed,added_to_sp500,Raymond James Financial,high
+RL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ralph Lauren Corporation,medium
+RMD,2017-07-26,,wikipedia_sp500_reconstructed,added_to_sp500,ResMed,high
+ROK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Rockwell Automation,medium
+ROL,2018-10-01,,wikipedia_sp500_reconstructed,added_to_sp500,"Rollins, Inc.",high
+ROP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Roper Technologies,medium
+ROST,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ross Stores,medium
+RRC,2012-01-01,2018-06-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Range Resources,medium
+RRD,2012-01-01,2012-12-11,wikipedia_sp500_reconstructed,present_at_start_reconstructed,RR Donnelley,medium
+RSG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Republic Services,medium
+RTN,2012-01-01,2020-04-06,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Raytheon Company,medium
+RTX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,RTX Corporation,medium
+RVTY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Revvity,medium
+S,2012-01-01,2013-07-08,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sprint Nextel,medium
+SAI,2012-01-01,2013-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,SAIC,medium
+SATS,2026-03-23,,wikipedia_sp500_reconstructed,added_to_sp500,EchoStar,high
+SBAC,2017-09-01,,wikipedia_sp500_reconstructed,added_to_sp500,SBA Communications,high
+SBNY,2021-12-20,2023-03-15,wikipedia_sp500_reconstructed,added_to_sp500,Signature Bank,medium
+SBUX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Starbucks,medium
+SCG,2012-01-01,2019-01-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,SCANA,medium
+SCHW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Charles Schwab Corporation,medium
+SE,2012-01-01,2017-02-28,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Spectra Energy,medium
+SEDG,2021-12-20,2023-12-18,wikipedia_sp500_reconstructed,added_to_sp500,SolarEdge,medium
+SEE,2012-01-01,2023-12-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sealed Air,medium
+SHLD,2012-01-01,2012-09-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sears Holdings,medium
+SHW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sherwin-Williams,medium
+SIAL,2012-01-01,2015-11-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sigma-Aldrich,medium
+SIG,2015-07-29,2018-03-19,wikipedia_sp500_reconstructed,added_to_sp500,Signet Jewelers,medium
+SIVB,2018-03-19,2023-03-15,wikipedia_sp500_reconstructed,added_to_sp500,SVB Financial Group,medium
+SJM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,J.M. Smucker Company (The),medium
+SLB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Schlumberger,medium
+SLE,2012-01-01,2012-06-29,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sara Lee Corporation,medium
+SLG,2015-03-23,2021-03-22,wikipedia_sp500_reconstructed,added_to_sp500,SL Green Realty,medium
+SLM,2012-01-01,2014-05-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,SLM Corporation,medium
+SMCI,2024-03-18,,wikipedia_sp500_reconstructed,added_to_sp500,Supermicro,high
+SNA,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Snap-on,medium
+SNDK,2012-01-01,2016-05-13,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sandisk,medium
+SNDK,2025-11-28,,wikipedia_sp500_reconstructed,added_to_sp500,Sandisk,high
+SNI,2012-01-01,2018-03-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Scripps Networks Interactive,medium
+SNPS,2017-03-16,,wikipedia_sp500_reconstructed,added_to_sp500,Synopsys,high
+SO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Southern Company,medium
+SOLS,2025-10-30,2025-12-22,wikipedia_sp500_reconstructed,added_to_sp500,Solstice Advanced Materials,medium
+SOLV,2024-04-01,,wikipedia_sp500_reconstructed,added_to_sp500,Solventum,high
+SPG,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Simon Property Group,medium
+SPGI,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,S&P Global,medium
+SPLS,2012-01-01,2017-09-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Staples,medium
+SRCL,2012-01-01,2018-12-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Stericycle,medium
+SRE,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sempra,medium
+STE,2019-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,Steris,high
+STI,2012-01-01,2019-12-09,wikipedia_sp500_reconstructed,present_at_start_reconstructed,SunTrust Banks,medium
+STJ,2012-01-01,2017-01-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,St Jude Medical,medium
+STLD,2022-12-22,,wikipedia_sp500_reconstructed,added_to_sp500,Steel Dynamics,high
+STT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,State Street Corporation,medium
+STX,2012-07-02,,wikipedia_sp500_reconstructed,added_to_sp500,Seagate Technology,high
+STZ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Constellation Brands,medium
+SUN,2012-01-01,2012-10-10,wikipedia_sp500_reconstructed,present_at_start_reconstructed,SunAmerica,medium
+SVU,2012-01-01,2012-04-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Supervalu,medium
+SW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Smurfit Westrock,medium
+SWK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Stanley Black & Decker,medium
+SWKS,2015-03-12,,wikipedia_sp500_reconstructed,added_to_sp500,Skyworks Solutions,high
+SWN,2012-01-01,2017-04-04,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Southwestern Energy,medium
+SWY,2012-01-01,2015-01-27,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Safeway,medium
+SYF,2015-11-18,,wikipedia_sp500_reconstructed,added_to_sp500,Synchrony Financial,high
+SYK,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Stryker Corporation,medium
+SYY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Sysco,medium
+T,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,AT&T,medium
+TAP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Molson Coors Beverage Company,medium
+TDC,2012-01-01,2017-06-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Teradata,medium
+TDG,2016-06-03,,wikipedia_sp500_reconstructed,added_to_sp500,TransDigm Group,high
+TDY,2020-06-22,,wikipedia_sp500_reconstructed,added_to_sp500,Teledyne Technologies,high
+TE,2012-01-01,2016-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,TECO Energy,medium
+TECH,2021-08-30,,wikipedia_sp500_reconstructed,added_to_sp500,Bio-Techne,high
+TEG,2012-01-01,2015-07-01,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Integrys Energy Group,medium
+TEL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,TE Connectivity,medium
+TER,2012-01-01,2013-12-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Teradyne,medium
+TER,2020-09-21,,wikipedia_sp500_reconstructed,added_to_sp500,Teradyne,high
+TFC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Truist Financial,medium
+TFX,2019-01-18,2025-03-24,wikipedia_sp500_reconstructed,added_to_sp500,Teleflex,medium
+TGNA,2012-01-01,2017-06-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Tegna,medium
+TGT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Target Corporation,medium
+THC,2012-01-01,2016-04-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Tenet Healthcare,medium
+TIE,2012-01-01,2012-12-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Titanium Metals,medium
+TIF,2012-01-01,2021-01-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Tiffany & Co,medium
+TJX,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,TJX Companies,medium
+TKO,2025-03-24,,wikipedia_sp500_reconstructed,added_to_sp500,TKO Group Holdings,high
+TMO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Thermo Fisher Scientific,medium
+TMUS,2019-07-15,,wikipedia_sp500_reconstructed,added_to_sp500,T-Mobile US,high
+TPL,2024-11-26,,wikipedia_sp500_reconstructed,added_to_sp500,Texas Pacific Land Corporation,high
+TPR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,"Tapestry, Inc.",medium
+TRGP,2022-10-12,,wikipedia_sp500_reconstructed,added_to_sp500,Targa Resources,high
+TRIP,2012-01-01,2019-12-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,TripAdvisor,medium
+TRMB,2021-01-21,,wikipedia_sp500_reconstructed,added_to_sp500,Trimble Inc.,high
+TROW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,T. Rowe Price,medium
+TRV,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Travelers Companies (The),medium
+TSCO,2014-01-24,,wikipedia_sp500_reconstructed,added_to_sp500,Tractor Supply,high
+TSLA,2020-12-21,,wikipedia_sp500_reconstructed,added_to_sp500,"Tesla, Inc.",high
+TSN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Tyson Foods,medium
+TSS,2012-01-01,2019-09-23,wikipedia_sp500_reconstructed,present_at_start_reconstructed,TSYS,medium
+TT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Trane Technologies,medium
+TTD,2025-07-18,,wikipedia_sp500_reconstructed,added_to_sp500,Trade Desk (The),high
+TTWO,2018-03-19,,wikipedia_sp500_reconstructed,added_to_sp500,Take-Two Interactive,high
+TWC,2012-01-01,2016-05-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Time Warner Cable,medium
+TWTR,2018-06-07,2022-11-01,wikipedia_sp500_reconstructed,added_to_sp500,Twitter,medium
+TWX,2012-01-01,2018-06-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Time Warner,medium
+TXN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Texas Instruments,medium
+TXT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Textron,medium
+TYC,2012-01-01,2016-09-06,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Tyco International,medium
+TYL,2020-06-22,,wikipedia_sp500_reconstructed,added_to_sp500,Tyler Technologies,high
+UA,2014-05-01,2022-06-21,wikipedia_sp500_reconstructed,added_to_sp500,Under Armour,medium
+UAA,2012-01-01,2022-06-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Under Armour (Class A),medium
+UAL,2015-09-02,,wikipedia_sp500_reconstructed,added_to_sp500,United Airlines Holdings,high
+UBER,2023-12-18,,wikipedia_sp500_reconstructed,added_to_sp500,Uber,high
+UDR,2016-03-07,,wikipedia_sp500_reconstructed,added_to_sp500,"UDR, Inc.",high
+UHS,2014-09-20,,wikipedia_sp500_reconstructed,added_to_sp500,Universal Health Services,high
+ULTA,2016-04-18,,wikipedia_sp500_reconstructed,added_to_sp500,Ulta Beauty,high
+UNH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,UnitedHealth Group,medium
+UNM,2012-01-01,2021-09-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Unum,medium
+UNP,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Union Pacific Corporation,medium
+UPS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,United Parcel Service,medium
+URBN,2012-01-01,2017-03-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Urban Outfitters,medium
+URI,2014-09-20,,wikipedia_sp500_reconstructed,added_to_sp500,United Rentals,high
+USB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,U.S. Bancorp,medium
+V,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Visa Inc.,medium
+VAR,2012-01-01,2021-04-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Varian Medical Systems,medium
+VEEV,2026-05-07,,wikipedia_sp500_reconstructed,added_to_sp500,Veeva Systems,high
+VFC,2012-01-01,2024-04-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,VF Corporation,medium
+VIAB,2012-01-01,2019-12-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Viacom,medium
+VICI,2022-06-08,,wikipedia_sp500_reconstructed,added_to_sp500,Vici Properties,high
+VLO,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Valero Energy,medium
+VLTO,2023-10-02,,wikipedia_sp500_reconstructed,added_to_sp500,Veralto,high
+VMC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Vulcan Materials Company,medium
+VNO,2012-01-01,2023-01-05,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Vornado Realty Trust,medium
+VNT,2020-10-09,2021-03-22,wikipedia_sp500_reconstructed,added_to_sp500,Vontier,medium
+VRSK,2015-10-07,,wikipedia_sp500_reconstructed,added_to_sp500,Verisk Analytics,high
+VRSN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Verisign,medium
+VRT,2026-03-23,,wikipedia_sp500_reconstructed,added_to_sp500,Vertiv,high
+VRTX,2013-09-20,,wikipedia_sp500_reconstructed,added_to_sp500,Vertex Pharmaceuticals,high
+VST,2024-05-08,,wikipedia_sp500_reconstructed,added_to_sp500,Vistra Corp.,high
+VTR,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Ventas,medium
+VTRS,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Viatris,medium
+VZ,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Verizon,medium
+WAB,2019-02-27,,wikipedia_sp500_reconstructed,added_to_sp500,Wabtec,high
+WAT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Waters Corporation,medium
+WBA,2012-01-01,2025-08-28,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Walgreens Boots Alliance,medium
+WBD,2022-04-11,,wikipedia_sp500_reconstructed,added_to_sp500,Warner Bros. Discovery,high
+WCG,2018-09-14,2020-01-28,wikipedia_sp500_reconstructed,added_to_sp500,WellCare,medium
+WDAY,2024-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,"Workday, Inc.",high
+WDC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Western Digital,medium
+WEC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,WEC Energy Group,medium
+WELL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Welltower,medium
+WFC,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Wells Fargo,medium
+WFM,2012-01-01,2017-08-29,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Whole Foods Market,medium
+WHR,2012-01-01,2024-03-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Whirlpool Corporation,medium
+WIN,2012-01-01,2015-04-07,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Windstream Communications,medium
+WLTW,2016-01-05,,wikipedia_sp500_reconstructed,added_to_sp500,Willis Towers Watson,high
+WM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Waste Management,medium
+WMB,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Williams Companies,medium
+WMT,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Walmart,medium
+WPX,2012-01-01,2014-03-21,wikipedia_sp500_reconstructed,present_at_start_reconstructed,WPX Energy,medium
+WRB,2019-12-05,,wikipedia_sp500_reconstructed,added_to_sp500,W. R. Berkley Corporation,high
+WSM,2025-03-24,,wikipedia_sp500_reconstructed,added_to_sp500,"Williams-Sonoma, Inc.",high
+WST,2020-05-22,,wikipedia_sp500_reconstructed,added_to_sp500,West Pharmaceutical Services,high
+WTW,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Willis Towers Watson,medium
+WU,2012-01-01,2021-12-20,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Western Union,medium
+WY,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Weyerhaeuser,medium
+WYN,2012-01-01,2018-05-31,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Wyndham Worldwide,medium
+WYNN,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Wynn Resorts,medium
+X,2012-01-01,2014-07-02,wikipedia_sp500_reconstructed,present_at_start_reconstructed,United States Steel,medium
+XEC,2014-06-20,2020-03-02,wikipedia_sp500_reconstructed,added_to_sp500,Cimarex Energy,medium
+XEL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Xcel Energy,medium
+XL,2012-01-01,2018-09-14,wikipedia_sp500_reconstructed,present_at_start_reconstructed,XL Group,medium
+XLNX,2012-01-01,2022-02-15,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Xilinx,medium
+XOM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,ExxonMobil,medium
+XRAY,2012-01-01,2024-04-03,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Dentsply Sirona,medium
+XRX,2012-01-01,2021-03-22,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Xerox,medium
+XYL,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Xylem Inc.,medium
+XYZ,2025-07-23,,wikipedia_sp500_reconstructed,added_to_sp500,"Block, Inc.",high
+YHOO,2012-01-01,2017-06-19,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Yahoo!,medium
+YUM,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Yum! Brands,medium
+ZBH,2012-01-01,,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Zimmer Biomet,medium
+ZBRA,2019-12-23,,wikipedia_sp500_reconstructed,added_to_sp500,Zebra Technologies,high
+ZION,2012-01-01,2024-03-18,wikipedia_sp500_reconstructed,present_at_start_reconstructed,Zions Bancorporation,medium
+ZTS,2013-06-21,,wikipedia_sp500_reconstructed,added_to_sp500,Zoetis,high

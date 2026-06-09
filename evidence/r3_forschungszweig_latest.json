@@ -1,0 +1,95 @@
+{
+  "branch_id": "forschungszweig_finanzierung",
+  "chat_hint_de": "Prognose-Beiträge: /beitrag forschung <Idee> · Geheimnis: /geheimnis",
+  "chat_secrets_enabled": true,
+  "commands_de": "python3 tools/ai_kernel.py trading-day · learn · refresh · /geheimnis im Chat",
+  "daily_cycle_de": [
+    "König 32B — king-trading / Gas-Sell-Steuerung (Forschungs-Bestandteil)",
+    "Refresh / Signal (aa_live_daily_sync)",
+    "Trading-Day Orchestrator",
+    "Warnungen + Rebalance-Vorschlag",
+    "Learn nach Handel",
+    "H1-Validierung für Prognose-Profil"
+  ],
+  "financing_de": "Spenden und Einnahmen finanzieren Entwicklung und Betrieb laut ROADMAP.",
+  "funding": {
+    "active_tier_de": "Pilot (intern)",
+    "north_star_de": "Professionelle EXE mit nachweisbarem Mehrwert (Mensch vs. Basisportfolio) → Einnahmen → jede Phase finanziert den nächsten Ausbau ohne Safety zu opfern.",
+    "price_model_de": "kostenlos",
+    "roadmap_id": "REVENUE_FUNDED_PRODUCT_AND_AGENT_EXPANSION"
+  },
+  "geheimnis_de": "",
+  "h1": {
+    "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "progress_pct": 100,
+    "sealed": false,
+    "status": "COMPLETE"
+  },
+  "headline_de": "⚠ 3 kritisch — vor US-Handel beheben: Live-Kurse unvollständig",
+  "king_32b_forschung": {
+    "agent_cli": "alpha-model-agent",
+    "component_id": "king_32b_forschung",
+    "forschungszweig_branch_id": "forschungszweig_finanzierung",
+    "forschungszweig_title_de": "Projekt unterstützen",
+    "growth": {
+      "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
+      "model": "qwen2.5-coder:32b",
+      "next_growth_de": [
+        "python3 tools/ai_kernel.py evolve",
+        "H1-Seal prüfen"
+      ],
+      "ollama_ok": true,
+      "phase": "forschung_reif",
+      "phase_de": "Learn/Evolve + Forschungszweig + öffentliches Lernen",
+      "wants_to_grow_de": "32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence."
+    },
+    "growth_commands_de": [
+      "bash tools/king_ops.sh stufe-a",
+      "bash tools/setup_gemini_key.sh",
+      "python3 tools/ai_kernel.py gemini-key-test",
+      "python3 tools/ai_kernel.py stufe-a --force",
+      "python3 tools/ai_kernel.py king-trading",
+      "python3 tools/ai_kernel.py learn",
+      "python3 tools/ai_kernel.py evolve",
+      "bash tools/king_ops.sh king-trading",
+      "/kombi <frage>",
+      "/beitrag forschung <Idee>"
+    ],
+    "headline_de": "König 32B — Bestandteil des Forschungsprojekts Active Alpha",
+    "is_forschungsprojekt": true,
+    "mission_de": "32B wächst mit dem Forschungsprojekt: lernt aus Evidence, unterstützt Gas/Sell-Steuerung, H1 und /learn — kein isolierter Chat-Bot.",
+    "model": "qwen2.5-coder:32b",
+    "policy_ref": "control/king_32b_forschungsprojekt.json",
+    "roles_de": [
+      "trading_local — Gas/Sell-Beratung und Entscheidungs-Sanktion",
+      "build_kernel — /bau im Forschungsbaum",
+      "chat — Entfaltungsraum mit Forschungs-Kontext",
+      "kombi_synthesis — Cloud-Tipp + lokale Umsetzung"
+    ],
+    "schema_version": 1,
+    "updated_at_utc": "2026-06-09T21:16:12+00:00"
+  },
+  "mission_de": "R3 ausbauen — mit Rechenkraft oder Spende. Aktien-Research ist intern, nicht Voraussetzung für Mitwirkende.",
+  "next_step_de": "② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen",
+  "os_separation_de": "Öffentlich siehst du nur das Nötige. Details zum Forschungszweig nur für Betreiber.",
+  "owned_commands": [
+    "trading-day",
+    "learn",
+    "refresh",
+    "warnings",
+    "montag",
+    "trading-day"
+  ],
+  "prediction": {
+    "active_profile": "daily_alpha_h1",
+    "description_de": "User objective: 1-day horizon, daily rebalance, vs mom_1_top12",
+    "governance_de": "Echtgeld mit daily_alpha_h1 nur nach sealed H1 PASS inkl. +25bps Turnover-Stress vs mom_1_top12."
+  },
+  "prognosis_de": "0/11 Kurse · Profil daily_alpha_h1 · Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+  "rebalance_due": true,
+  "research_queue": [],
+  "schema_version": 2,
+  "title_de": "Projekt unterstützen",
+  "traffic_de": "ROT",
+  "updated_at_utc": "2026-06-09T21:16:12+00:00"
+}

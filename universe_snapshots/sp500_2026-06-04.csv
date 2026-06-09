@@ -1,0 +1,504 @@
+ticker,source_symbol,company,sector_gics,sector_coarse,source,source_detail,fetched_at_utc
+MMM,MMM,3M,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AOS,AOS,A. O. Smith,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ABT,ABT,Abbott Laboratories,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ABBV,ABBV,AbbVie,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ACN,ACN,Accenture,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ADBE,ADBE,Adobe Inc.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMD,AMD,Advanced Micro Devices,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AES,AES,AES Corporation,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AFL,AFL,Aflac,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+A,A,Agilent Technologies,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+APD,APD,Air Products,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ABNB,ABNB,Airbnb,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AKAM,AKAM,Akamai Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ALB,ALB,Albemarle Corporation,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ARE,ARE,Alexandria Real Estate Equities,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ALGN,ALGN,Align Technology,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ALLE,ALLE,Allegion,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LNT,LNT,Alliant Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ALL,ALL,Allstate,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GOOGL,GOOGL,Alphabet Inc. (Class A),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GOOG,GOOG,Alphabet Inc. (Class C),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MO,MO,Altria,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMZN,AMZN,Amazon,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMCR,AMCR,Amcor,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AEE,AEE,Ameren,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AEP,AEP,American Electric Power,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AXP,AXP,American Express,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AIG,AIG,American International Group,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMT,AMT,American Tower,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AWK,AWK,American Water Works,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMP,AMP,Ameriprise Financial,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AME,AME,Ametek,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMGN,AMGN,Amgen,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+APH,APH,Amphenol,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ADI,ADI,Analog Devices,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AON,AON,Aon plc,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+APA,APA,APA Corporation,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+APO,APO,Apollo Global Management,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AAPL,AAPL,Apple Inc.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AMAT,AMAT,Applied Materials,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+APP,APP,AppLovin,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+APTV,APTV,Aptiv,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ACGL,ACGL,Arch Capital Group,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ADM,ADM,Archer Daniels Midland,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ARES,ARES,Ares Management,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ANET,ANET,Arista Networks,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AJG,AJG,Arthur J. Gallagher & Co.,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AIZ,AIZ,Assurant,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+T,T,AT&T,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ATO,ATO,Atmos Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ADSK,ADSK,Autodesk,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ADP,ADP,Automatic Data Processing,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AZO,AZO,AutoZone,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AVB,AVB,AvalonBay Communities,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AVY,AVY,Avery Dennison,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AXON,AXON,Axon Enterprise,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BKR,BKR,Baker Hughes,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BALL,BALL,Ball Corporation,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BAC,BAC,Bank of America,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BAX,BAX,Baxter International,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BDX,BDX,Becton Dickinson,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BRK-B,BRK.B,Berkshire Hathaway,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BBY,BBY,Best Buy,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TECH,TECH,Bio-Techne,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BIIB,BIIB,Biogen,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BLK,BLK,BlackRock,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BX,BX,Blackstone Inc.,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+XYZ,XYZ,"Block, Inc.",Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BNY,BNY,BNY Mellon,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BA,BA,Boeing,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BKNG,BKNG,Booking Holdings,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BSX,BSX,Boston Scientific,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BMY,BMY,Bristol Myers Squibb,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+AVGO,AVGO,Broadcom,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BR,BR,Broadridge Financial Solutions,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BRO,BRO,Brown & Brown,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BF-B,BF.B,Brown–Forman,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BLDR,BLDR,Builders FirstSource,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BG,BG,Bunge Global,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BXP,BXP,"BXP, Inc.",Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CHRW,CHRW,C.H. Robinson,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CDNS,CDNS,Cadence Design Systems,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CPT,CPT,Camden Property Trust,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CPB,CPB,Campbell's Company (The),Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COF,COF,Capital One,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CAH,CAH,Cardinal Health,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CCL,CCL,Carnival Corporation,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CARR,CARR,Carrier Global,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CVNA,CVNA,Carvana,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CASY,CASY,Casey's,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CAT,CAT,Caterpillar Inc.,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CBOE,CBOE,Cboe Global Markets,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CBRE,CBRE,CBRE Group,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CDW,CDW,CDW Corporation,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COR,COR,Cencora,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CNC,CNC,Centene Corporation,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CNP,CNP,CenterPoint Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CF,CF,CF Industries,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CRL,CRL,Charles River Laboratories,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SCHW,SCHW,Charles Schwab Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CHTR,CHTR,Charter Communications,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CVX,CVX,Chevron Corporation,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CMG,CMG,Chipotle Mexican Grill,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CB,CB,Chubb Limited,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CHD,CHD,Church & Dwight,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CIEN,CIEN,Ciena,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CI,CI,Cigna,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CINF,CINF,Cincinnati Financial,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CTAS,CTAS,Cintas,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CSCO,CSCO,Cisco,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+C,C,Citigroup,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CFG,CFG,Citizens Financial Group,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CLX,CLX,Clorox,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CME,CME,CME Group,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CMS,CMS,CMS Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KO,KO,Coca-Cola Company (The),Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CTSH,CTSH,Cognizant,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COHR,COHR,Coherent Corp.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COIN,COIN,Coinbase,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CL,CL,Colgate-Palmolive,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CMCSA,CMCSA,Comcast,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FIX,FIX,Comfort Systems USA,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CAG,CAG,Conagra Brands,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COP,COP,ConocoPhillips,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ED,ED,Consolidated Edison,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+STZ,STZ,Constellation Brands,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CEG,CEG,Constellation Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COO,COO,Cooper Companies (The),Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CPRT,CPRT,Copart,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GLW,GLW,Corning Inc.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CPAY,CPAY,Corpay,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CTVA,CTVA,Corteva,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CSGP,CSGP,CoStar Group,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+COST,COST,Costco,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CRH,CRH,CRH plc,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CRWD,CRWD,CrowdStrike,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CCI,CCI,Crown Castle,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CSX,CSX,CSX Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CMI,CMI,Cummins,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CVS,CVS,CVS Health,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DHR,DHR,Danaher Corporation,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DRI,DRI,Darden Restaurants,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DDOG,DDOG,Datadog,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DVA,DVA,DaVita,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DECK,DECK,Deckers Brands,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DE,DE,Deere & Company,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DELL,DELL,Dell Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DAL,DAL,Delta Air Lines,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DVN,DVN,Devon Energy,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DXCM,DXCM,Dexcom,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FANG,FANG,Diamondback Energy,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DLR,DLR,Digital Realty,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DG,DG,Dollar General,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DLTR,DLTR,Dollar Tree,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+D,D,Dominion Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DPZ,DPZ,Domino's,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DASH,DASH,DoorDash,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DOV,DOV,Dover Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DOW,DOW,Dow Inc.,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DHI,DHI,D. R. Horton,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DTE,DTE,DTE Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DUK,DUK,Duke Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DD,DD,DuPont,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ETN,ETN,Eaton Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EBAY,EBAY,eBay Inc.,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SATS,SATS,EchoStar,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ECL,ECL,Ecolab,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EIX,EIX,Edison International,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EW,EW,Edwards Lifesciences,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EA,EA,Electronic Arts,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ELV,ELV,Elevance Health,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EME,EME,Emcor,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EMR,EMR,Emerson Electric,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ETR,ETR,Entergy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EOG,EOG,EOG Resources,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EQT,EQT,EQT Corporation,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EFX,EFX,Equifax,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EQIX,EQIX,Equinix,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EQR,EQR,Equity Residential,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ERIE,ERIE,Erie Indemnity,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ESS,ESS,Essex Property Trust,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EL,EL,Estée Lauder Companies (The),Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EG,EG,Everest Group,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EVRG,EVRG,Evergy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ES,ES,Eversource Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EXC,EXC,Exelon,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EXE,EXE,Expand Energy,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EXPE,EXPE,Expedia Group,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EXPD,EXPD,Expeditors International,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+EXR,EXR,Extra Space Storage,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+XOM,XOM,ExxonMobil,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FFIV,FFIV,"F5, Inc.",Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FDS,FDS,FactSet,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FICO,FICO,Fair Isaac,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FAST,FAST,Fastenal,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FRT,FRT,Federal Realty Investment Trust,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FDX,FDX,FedEx,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FDXF,FDXF,FedEx Freight,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FIS,FIS,Fidelity National Information Services,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FITB,FITB,Fifth Third Bancorp,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FSLR,FSLR,First Solar,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FE,FE,FirstEnergy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FISV,FISV,Fiserv,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+F,F,Ford Motor Company,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FTNT,FTNT,Fortinet,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FTV,FTV,Fortive,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FOXA,FOXA,Fox Corporation (Class A),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FOX,FOX,Fox Corporation (Class B),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+BEN,BEN,Franklin Resources,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+FCX,FCX,Freeport-McMoRan,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GRMN,GRMN,Garmin,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IT,IT,Gartner,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GE,GE,GE Aerospace,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GEHC,GEHC,GE HealthCare,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GEV,GEV,GE Vernova,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GEN,GEN,Gen Digital,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GNRC,GNRC,Generac,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GD,GD,General Dynamics,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GIS,GIS,General Mills,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GM,GM,General Motors,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GPC,GPC,Genuine Parts Company,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GILD,GILD,Gilead Sciences,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GPN,GPN,Global Payments,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GL,GL,Globe Life,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GDDY,GDDY,GoDaddy,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GS,GS,Goldman Sachs,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HAL,HAL,Halliburton,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HIG,HIG,Hartford (The),Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HAS,HAS,Hasbro,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HCA,HCA,HCA Healthcare,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DOC,DOC,Healthpeak Properties,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HSIC,HSIC,Henry Schein,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HSY,HSY,Hershey Company (The),Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HPE,HPE,Hewlett Packard Enterprise,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HLT,HLT,Hilton Worldwide,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HD,HD,Home Depot (The),Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HON,HON,Honeywell,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HRL,HRL,Hormel Foods,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HST,HST,Host Hotels & Resorts,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HWM,HWM,Howmet Aerospace,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HPQ,HPQ,HP Inc.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HUBB,HUBB,Hubbell Incorporated,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HUM,HUM,Humana,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HBAN,HBAN,Huntington Bancshares,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HII,HII,Huntington Ingalls Industries,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IBM,IBM,IBM,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IEX,IEX,IDEX Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IDXX,IDXX,Idexx Laboratories,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ITW,ITW,Illinois Tool Works,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+INCY,INCY,Incyte,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IR,IR,Ingersoll Rand,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PODD,PODD,Insulet Corporation,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+INTC,INTC,Intel,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IBKR,IBKR,Interactive Brokers,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ICE,ICE,Intercontinental Exchange,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IFF,IFF,International Flavors & Fragrances,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IP,IP,International Paper,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+INTU,INTU,Intuit,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ISRG,ISRG,Intuitive Surgical,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IVZ,IVZ,Invesco,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+INVH,INVH,Invitation Homes,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IQV,IQV,IQVIA,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+IRM,IRM,Iron Mountain,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+JBHT,JBHT,J.B. Hunt,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+JBL,JBL,Jabil,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+JKHY,JKHY,Jack Henry & Associates,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+J,J,Jacobs Solutions,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+JNJ,JNJ,Johnson & Johnson,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+JCI,JCI,Johnson Controls,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+JPM,JPM,JPMorgan Chase,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KVUE,KVUE,Kenvue,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KDP,KDP,Keurig Dr Pepper,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KEY,KEY,KeyCorp,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KEYS,KEYS,Keysight Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KMB,KMB,Kimberly-Clark,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KIM,KIM,Kimco Realty,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KMI,KMI,Kinder Morgan,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KKR,KKR,KKR & Co.,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KLAC,KLAC,KLA Corporation,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KHC,KHC,Kraft Heinz,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+KR,KR,Kroger,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LHX,LHX,L3Harris,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LH,LH,Labcorp,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LRCX,LRCX,Lam Research,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LVS,LVS,Las Vegas Sands,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LDOS,LDOS,Leidos,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LEN,LEN,Lennar,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LII,LII,Lennox International,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LLY,LLY,Lilly (Eli),Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LIN,LIN,Linde plc,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LYV,LYV,Live Nation Entertainment,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LMT,LMT,Lockheed Martin,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+L,L,Loews Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LOW,LOW,Lowe's,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LULU,LULU,Lululemon Athletica,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LITE,LITE,Lumentum,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LYB,LYB,LyondellBasell,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MTB,MTB,M&T Bank,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MPC,MPC,Marathon Petroleum,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MAR,MAR,Marriott International,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MRSH,MRSH,Marsh McLennan,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MLM,MLM,Martin Marietta Materials,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MAS,MAS,Masco,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MA,MA,Mastercard,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MKC,MKC,McCormick & Company,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MCD,MCD,McDonald's,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MCK,MCK,McKesson Corporation,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MDT,MDT,Medtronic,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MRK,MRK,Merck & Co.,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+META,META,Meta Platforms,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MET,MET,MetLife,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MTD,MTD,Mettler Toledo,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MGM,MGM,MGM Resorts,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MCHP,MCHP,Microchip Technology,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MU,MU,Micron Technology,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MSFT,MSFT,Microsoft,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MAA,MAA,Mid-America Apartment Communities,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MRNA,MRNA,Moderna,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TAP,TAP,Molson Coors Beverage Company,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MDLZ,MDLZ,Mondelez International,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MPWR,MPWR,Monolithic Power Systems,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MNST,MNST,Monster Beverage,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MCO,MCO,Moody's Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MS,MS,Morgan Stanley,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MOS,MOS,Mosaic Company (The),Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MSI,MSI,Motorola Solutions,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+MSCI,MSCI,MSCI Inc.,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NDAQ,NDAQ,"Nasdaq, Inc.",Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NTAP,NTAP,NetApp,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NFLX,NFLX,Netflix,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NEM,NEM,Newmont,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NWSA,NWSA,News Corp (Class A),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NWS,NWS,News Corp (Class B),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NEE,NEE,NextEra Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NKE,NKE,"Nike, Inc.",Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NI,NI,NiSource,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NDSN,NDSN,Nordson Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NSC,NSC,Norfolk Southern,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NTRS,NTRS,Northern Trust,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NOC,NOC,Northrop Grumman,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NCLH,NCLH,Norwegian Cruise Line Holdings,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NRG,NRG,NRG Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NUE,NUE,Nucor,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NVDA,NVDA,Nvidia,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NVR,NVR,"NVR, Inc.",Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NXPI,NXPI,NXP Semiconductors,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ORLY,ORLY,O’Reilly Automotive,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+OXY,OXY,Occidental Petroleum,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ODFL,ODFL,Old Dominion,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+OMC,OMC,Omnicom Group,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ON,ON,ON Semiconductor,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+OKE,OKE,Oneok,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ORCL,ORCL,Oracle Corporation,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+OTIS,OTIS,Otis Worldwide,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PCAR,PCAR,Paccar,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PKG,PKG,Packaging Corporation of America,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PLTR,PLTR,Palantir Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PANW,PANW,Palo Alto Networks,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PSKY,PSKY,Paramount Skydance Corporation,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PH,PH,Parker Hannifin,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PAYX,PAYX,Paychex,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PYPL,PYPL,PayPal,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PNR,PNR,Pentair,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PEP,PEP,PepsiCo,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PFE,PFE,Pfizer,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PCG,PCG,PG&E Corporation,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PM,PM,Philip Morris International,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PSX,PSX,Phillips 66,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PNW,PNW,Pinnacle West Capital,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PNC,PNC,PNC Financial Services,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+POOL,POOL,Pool Corporation,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PPG,PPG,PPG Industries,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PPL,PPL,PPL Corporation,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PFG,PFG,Principal Financial Group,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PG,PG,Procter & Gamble,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PGR,PGR,Progressive Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PLD,PLD,Prologis,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PRU,PRU,Prudential Financial,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PEG,PEG,Public Service Enterprise Group,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PTC,PTC,PTC Inc.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PSA,PSA,Public Storage,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PHM,PHM,PulteGroup,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+PWR,PWR,Quanta Services,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+QCOM,QCOM,Qualcomm,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DGX,DGX,Quest Diagnostics,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+Q,Q,Qnity Electronics,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RL,RL,Ralph Lauren Corporation,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RJF,RJF,Raymond James Financial,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RTX,RTX,RTX Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+O,O,Realty Income,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+REG,REG,Regency Centers,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+REGN,REGN,Regeneron Pharmaceuticals,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RF,RF,Regions Financial Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RSG,RSG,Republic Services,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RMD,RMD,ResMed,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RVTY,RVTY,Revvity,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+HOOD,HOOD,Robinhood Markets,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ROK,ROK,Rockwell Automation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ROL,ROL,"Rollins, Inc.",Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ROP,ROP,Roper Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ROST,ROST,Ross Stores,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+RCL,RCL,Royal Caribbean Group,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SPGI,SPGI,S&P Global,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+CRM,CRM,Salesforce,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SNDK,SNDK,Sandisk,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SBAC,SBAC,SBA Communications,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SLB,SLB,Schlumberger,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+STX,STX,Seagate Technology,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SRE,SRE,Sempra,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+NOW,NOW,ServiceNow,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SHW,SHW,Sherwin-Williams,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SPG,SPG,Simon Property Group,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SWKS,SWKS,Skyworks Solutions,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SJM,SJM,J.M. Smucker Company (The),Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SW,SW,Smurfit Westrock,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SNA,SNA,Snap-on,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SOLV,SOLV,Solventum,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SO,SO,Southern Company,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+LUV,LUV,Southwest Airlines,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SWK,SWK,Stanley Black & Decker,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SBUX,SBUX,Starbucks,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+STT,STT,State Street Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+STLD,STLD,Steel Dynamics,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+STE,STE,Steris,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SYK,SYK,Stryker Corporation,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SMCI,SMCI,Supermicro,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SYF,SYF,Synchrony Financial,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SNPS,SNPS,Synopsys,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+SYY,SYY,Sysco,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TMUS,TMUS,T-Mobile US,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TROW,TROW,T. Rowe Price,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TTWO,TTWO,Take-Two Interactive,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TPR,TPR,"Tapestry, Inc.",Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TRGP,TRGP,Targa Resources,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TGT,TGT,Target Corporation,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TEL,TEL,TE Connectivity,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TDY,TDY,Teledyne Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TER,TER,Teradyne,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TSLA,TSLA,"Tesla, Inc.",Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TXN,TXN,Texas Instruments,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TPL,TPL,Texas Pacific Land Corporation,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TXT,TXT,Textron,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TMO,TMO,Thermo Fisher Scientific,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TJX,TJX,TJX Companies,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TKO,TKO,TKO Group Holdings,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TTD,TTD,Trade Desk (The),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TSCO,TSCO,Tractor Supply,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TT,TT,Trane Technologies,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TDG,TDG,TransDigm Group,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TRV,TRV,Travelers Companies (The),Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TRMB,TRMB,Trimble Inc.,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TFC,TFC,Truist Financial,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TYL,TYL,Tyler Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+TSN,TSN,Tyson Foods,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+USB,USB,U.S. Bancorp,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UBER,UBER,Uber,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UDR,UDR,"UDR, Inc.",Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ULTA,ULTA,Ulta Beauty,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UNP,UNP,Union Pacific Corporation,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UAL,UAL,United Airlines Holdings,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UPS,UPS,United Parcel Service,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+URI,URI,United Rentals,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UNH,UNH,UnitedHealth Group,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+UHS,UHS,Universal Health Services,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VLO,VLO,Valero Energy,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VEEV,VEEV,Veeva Systems,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VTR,VTR,Ventas,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VLTO,VLTO,Veralto,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VRSN,VRSN,Verisign,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VRSK,VRSK,Verisk Analytics,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VZ,VZ,Verizon,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VRTX,VRTX,Vertex Pharmaceuticals,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VRT,VRT,Vertiv,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VTRS,VTRS,Viatris,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VICI,VICI,Vici Properties,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+V,V,Visa Inc.,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VST,VST,Vistra Corp.,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+VMC,VMC,Vulcan Materials Company,Materials,Materials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WRB,WRB,W. R. Berkley Corporation,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+GWW,GWW,W. W. Grainger,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WAB,WAB,Wabtec,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WMT,WMT,Walmart,Consumer Staples,Consumer Staples,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+DIS,DIS,Walt Disney Company (The),Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WBD,WBD,Warner Bros. Discovery,Communication Services,Communication,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WM,WM,Waste Management,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WAT,WAT,Waters Corporation,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WEC,WEC,WEC Energy Group,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WFC,WFC,Wells Fargo,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WELL,WELL,Welltower,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WST,WST,West Pharmaceutical Services,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WDC,WDC,Western Digital,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WY,WY,Weyerhaeuser,Real Estate,Real Estate,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WSM,WSM,"Williams-Sonoma, Inc.",Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WMB,WMB,Williams Companies,Energy,Energy,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WTW,WTW,Willis Towers Watson,Financials,Financials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WDAY,WDAY,"Workday, Inc.",Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+WYNN,WYNN,Wynn Resorts,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+XEL,XEL,Xcel Energy,Utilities,Utilities,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+XYL,XYL,Xylem Inc.,Industrials,Industrials,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+YUM,YUM,Yum! Brands,Consumer Discretionary,Consumer Discretionary,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ZBRA,ZBRA,Zebra Technologies,Information Technology,Technology,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ZBH,ZBH,Zimmer Biomet,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00
+ZTS,ZTS,Zoetis,Health Care,Healthcare,wikipedia_sp500,wikipedia_sp500,2026-06-04T10:13:52+00:00

@@ -1,0 +1,81 @@
+{
+  "cursor_runtime_required": false,
+  "detach_pct": 100,
+  "gates": [
+    {
+      "detail_de": ".cursor/hooks.json leer",
+      "id": "cursor_hooks_empty",
+      "label_de": "Cursor-Hooks inaktiv",
+      "ok": true
+    },
+    {
+      "detail_de": "Alpha Model — König",
+      "id": "cursor_retired",
+      "label_de": "Cursor als Agent zurückgebaut",
+      "ok": true
+    },
+    {
+      "detail_de": "/home/machinax7/.config/autostart/r3-os-session.desktop",
+      "id": "session_autostart",
+      "label_de": "Login-Autostart R3",
+      "ok": true
+    },
+    {
+      "detail_de": "/home/machinax7/.local/share/applications/R3.desktop",
+      "id": "desktop_entry",
+      "label_de": "Menü R3.desktop",
+      "ok": true
+    },
+    {
+      "detail_de": "/home/machinax7/.local/bin/r3",
+      "id": "r3_command",
+      "label_de": "Befehl r3",
+      "ok": true
+    },
+    {
+      "detail_de": "Besitz OK (0 korrigiert)",
+      "id": "home_ownership",
+      "label_de": "~/.local Besitz OK",
+      "ok": true
+    },
+    {
+      "detail_de": "—",
+      "id": "stack_ok",
+      "label_de": "Integritäts-Stack",
+      "ok": true
+    },
+    {
+      "detail_de": "systemd+stack",
+      "id": "hub_service",
+      "label_de": "Preview-Hub",
+      "ok": true
+    },
+    {
+      "detail_de": "/r3",
+      "id": "r3_surface",
+      "label_de": "R3 Oberfläche /r3",
+      "ok": true
+    },
+    {
+      "detail_de": "R3 Betrieb — ohne Cursor",
+      "id": "policy_authoritative",
+      "label_de": "Betriebs-Policy",
+      "ok": true
+    },
+    {
+      "detail_de": "König 32B baut autonom — Cursor nicht im Bau-Takt",
+      "id": "autonomous_build_32b",
+      "label_de": "32B baut autonom",
+      "ok": true
+    }
+  ],
+  "gates_ok": 11,
+  "gates_total": 11,
+  "headline_de": "R3 operativ abgenabelt — Cursor nicht nötig",
+  "king_de": "König 32B baut autonom — /bau · r3-bau · build-kernel · pulse",
+  "message_de": "Laufzeit: Autostart + Hub + König. Cursor nur Schicht-4-Code auf Anfrage.",
+  "operational_detach": true,
+  "operator_de": "bash tools/king_ops.sh · alpha-model-agent · http://127.0.0.1:17890/r3",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T06:50:32+00:00"
+}

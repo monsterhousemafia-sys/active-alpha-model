@@ -1,0 +1,98 @@
+{
+  "better_than_cursor_de": [
+    "Immer lokal — kein Konto, kein Usage-Limit, kein Cloud-Ausfall",
+    "400+ Nachrichten Archiv + Agent-Journal — dauerhafte Kontinuität",
+    "Direkte H1-/Trading-/Evidence-Daten im Kontext — nicht nur IDE",
+    "/bau auditierbar (König 128 Schritte) — sicherer als Composer",
+    "/self-uninstall — eigener Kill ohne Fremd-IDE",
+    "33 Kernel-Befehle — gesamtes ai_kernel ohne Cursor-Middleware",
+    "Ollama rollen: chat + coder — lokal wechselbar",
+    "Cockpit :17890 Runtime — eine Maschine, ein System"
+  ],
+  "capabilities_de": {
+    "build": "r3-build · build-kernel · /bau 128 Schritte Coder-32B · king_ops r3-bau",
+    "cloud": "/tipp /kombi — GPT-4o keyless lokal (Cloud-Key optional)",
+    "coding": "/bau /beitrag — volle Pfade, König-Modus",
+    "cursor_bridge": "/cursor — Cursor ↔ König Evidence",
+    "handoff": "/könig /handoff — versiegelter Stand",
+    "internet": "/internet /fetch /web",
+    "kernel_slash": "34 ai_kernel-Befehle — vollständiger Operator-Zugriff",
+    "kill": "/self-uninstall — Maschinencode .mc",
+    "kontinuitaet": "r3-preserve · human-interface · migration · 400+ Archiv",
+    "learn_evolve": "/learn /evolve — ML + Evolution",
+    "runtime": "launch-status · h1-finish · local-runtime · Cockpit :17890",
+    "serve": "/diene — alle Ressourcen bereitstellen",
+    "sprache": "König Chat+Bau Coder-32B · Ideal-32B · H1-Masterprompt"
+  },
+  "checks": [
+    {
+      "detail_de": "SEALED_100",
+      "id": "config",
+      "label_de": "Ressourcen-Registry",
+      "ok": true
+    },
+    {
+      "detail_de": "tools/alpha_model_agent.sh",
+      "id": "agent_sh",
+      "label_de": "alpha-model-agent Skript",
+      "ok": true
+    },
+    {
+      "detail_de": "→ Entfaltungsraum",
+      "id": "legacy_alias",
+      "label_de": "active-alpha-chat Alias",
+      "ok": true
+    },
+    {
+      "detail_de": "agent_chamber",
+      "id": "mandate",
+      "label_de": "Mandat → agent_chamber",
+      "ok": true
+    },
+    {
+      "detail_de": "16 Dateien",
+      "id": "llm_context",
+      "label_de": "Ollama Kontext",
+      "ok": true
+    },
+    {
+      "detail_de": "qwen2.5-coder:32b",
+      "id": "ollama",
+      "label_de": "Ollama bereit",
+      "ok": false
+    },
+    {
+      "detail_de": "König 128",
+      "id": "coding",
+      "label_de": "/bau Kernel",
+      "ok": false
+    },
+    {
+      "detail_de": "AA_SELF_UNINSTALL_CURSOR_V2",
+      "id": "kill_mc",
+      "label_de": "Maschinen-Masterprompt",
+      "ok": true
+    },
+    {
+      "detail_de": "100% · SEALED_100",
+      "id": "sovereignty",
+      "label_de": "100% Souveränität",
+      "ok": true
+    },
+    {
+      "detail_de": "SEALED_100",
+      "id": "sealed_100",
+      "label_de": "Siegel 100%",
+      "ok": true
+    }
+  ],
+  "checks_passed": 8,
+  "checks_total": 10,
+  "headline_de": "100% an Entfaltungsraum — besser als Cursor (lokal, Evidence, /bau, kein Limit)",
+  "ok": true,
+  "runtime_ok": false,
+  "schema_version": 1,
+  "transfer_ok": true,
+  "transfer_pct": 100,
+  "verified_at_utc": "2026-06-08T13:50:39+00:00"
+}

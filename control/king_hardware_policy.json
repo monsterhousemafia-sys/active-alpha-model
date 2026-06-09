@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "RTX 3090 24GB · Ryzen 3950X 16C · 60GB RAM — Hard/Soft-Takt",
+  "host_profile_de": "ideal_32b_king_h1",
+  "gpu": {
+    "vram_min_mb_gpu_returns": 4096,
+    "vram_reserve_mb_ollama_32b": 20000,
+    "prefer_gpu_returns": true,
+    "auto_unload_ollama_before_h1": true,
+    "unload_ollama_before_h1_de": "Phase execute/observe: Ollama 32B entladen — VRAM für CuPy"
+  },
+  "benchmark": {
+    "eta_max_s_default": 4200,
+    "eta_overrun_factor": 1.35,
+    "hung_s": 5400,
+    "progress_stale_s": 900
+  },
+  "ollama": {
+    "chat_model": "qwen2.5-coder:32b",
+    "unload_keep_alive_s": 0
+  },
+  "ram": {
+    "reserve_gb_ollama": 22.0,
+    "min_free_gb_warn": 8.0
+  },
+  "cpu": {
+    "prep_max_threads": 10,
+    "reserve_cores": 4
+  },
+  "nvme": {
+    "priority": "high",
+    "constant_storage": true,
+    "kernel_bond_required": true,
+    "headline_de": "NVMe = konstanter Fast-Tier für Kernel, König-32B, H1"
+  },
+  "kernel_bond": {
+    "enabled": true,
+    "king_model": "qwen2.5-coder:32b",
+    "king_cli": "alpha-model-agent",
+    "hardware_access": true,
+    "evidence_ref": "evidence/ai_kernel_hardware_bond_latest.json",
+    "bond_command": "python3 tools/ai_kernel.py kernel-bond"
+  },
+  "phase_hardware_de": {
+    "sync": "tune — CPU+RAM baseline",
+    "observe": "Benchmark: GPU-Returns wenn VRAM frei; Ollama leer",
+    "execute": "Vor Start: Ollama entladen; AA_H1_GPU_RETURNS=1",
+    "prove": "h1-watch CPU-leicht",
+    "decide": "König 32B preload erlaubt",
+    "build": "Cursor CPU; Ollama optional",
+    "ready": "König + Predict gates"
+  }
+}

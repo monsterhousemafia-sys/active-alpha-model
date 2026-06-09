@@ -1,0 +1,903 @@
+{
+  "blockers_de": [],
+  "bridge_policy_ref": "control/decision_cockpit_r3_bridge.json",
+  "checklist_ok": true,
+  "checklist_ref": "evidence/r3_operational_checklist_latest.json",
+  "cockpit_snapshot_ref": "control/review_snapshot/v5r_decision_cockpit_snapshot.json",
+  "gui_rebuild_de": "bash tools/king_ops.sh gui-rebuild",
+  "headline_de": "Decision Cockpit Update OK — Serienreife + Checkliste + Snapshot",
+  "lessons_headline_de": "10 dokumentierte Lessons · 2 aktuelle Beobachtung(en)",
+  "lessons_ref": "evidence/decision_cockpit_update_lessons_latest.json",
+  "next_de": "bash tools/king_ops.sh gui-rebuild — König 32B baut EXE/R3-Optik",
+  "ok": true,
+  "r3_vision_bridge_de": {
+    "forbidden_de": [
+      "VISION-Phasen ohne EXTERNAL_REVIEW_APPROVAL ausführen",
+      "Champion-Wechsel oder Auto-Promote",
+      "Echtgeld-Orders außerhalb R3-GUI-Bestätigung"
+    ],
+    "note_de": "R3 operativ unter 127.0.0.1; EXE-VISION V1–V4 bleibt extern review-gated. Update synchronisiert Snapshot und König-Remaster — keine Phasenausführung.",
+    "policy_ref": "control/decision_cockpit_r3_bridge.json",
+    "r3_checklist_items": "37/37",
+    "r3_checklist_ok": true,
+    "r3_cycle_closed": true,
+    "r3_growth_pct": 100,
+    "r3_operator_ok": true,
+    "r3_operator_pct": 100,
+    "r3_operator_ref": "evidence/r3_operator_readiness_latest.json",
+    "r3_operator_surface_de": "http://127.0.0.1:17890/desktop",
+    "r3_readiness_pct": 100,
+    "r3_series_ready": true,
+    "r3_surface_de": "http://127.0.0.1:17890/r3",
+    "vision_executed_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+    "vision_execution_status": "AWAITING_EXTERNAL_REVIEW",
+    "vision_next_authorized": false
+  },
+  "readiness_pct": 100,
+  "schema_version": 1,
+  "series_ready": true,
+  "steps": [
+    {
+      "detail": {
+        "checklist_ok": true,
+        "checklist_ref": "evidence/r3_operational_checklist_latest.json",
+        "headline_de": "Serienreife 100% — Warnungen: Linux-Potenzial",
+        "next_de": "Optional: Linux-Potenzial — bash tools/king_ops.sh series-ready",
+        "ok": true,
+        "operator_readiness_ok": true,
+        "operator_readiness_pct": 100,
+        "operator_readiness_ref": "evidence/r3_operator_readiness_latest.json",
+        "readiness_pct": 100,
+        "schema_version": 1,
+        "series_ready": true,
+        "steps": [
+          {
+            "detail": {
+              "ok": true,
+              "port": 17890
+            },
+            "id": "hub",
+            "label_de": "Hub sicherstellen",
+            "ok": true
+          },
+          {
+            "detail": {
+              "confirmation_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+              "hub_url": "http://127.0.0.1:17890/r3",
+              "ok": true,
+              "pending": null,
+              "runtime_profile_id": "fluid_v2",
+              "runtime_profile_label_de": "Flüssig — bestätigt",
+              "steps": [
+                {
+                  "ok": true,
+                  "pending": false,
+                  "proposal_id": null,
+                  "step": "scan_upgrades"
+                },
+                {
+                  "bytes": 35825,
+                  "ok": true,
+                  "step": "warm_cache"
+                }
+              ],
+              "updated_at_utc": "2026-06-08T07:37:12+00:00",
+              "upgrade_headline_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+              "upgrade_pending": false
+            },
+            "id": "r3_align",
+            "label_de": "R3 Abgleich",
+            "ok": true
+          },
+          {
+            "detail": {
+              "checks": [
+                {
+                  "detail_de": "HTTP /api/health",
+                  "id": "hub_online",
+                  "layer": "hub",
+                  "ok": true
+                },
+                {
+                  "detail_de": "200",
+                  "id": "hub_login_route",
+                  "layer": "hub",
+                  "ok": true
+                },
+                {
+                  "detail_de": "/api/r3/mirror",
+                  "id": "r3_mirror_api",
+                  "layer": "r3",
+                  "ok": true
+                },
+                {
+                  "detail_de": "Evidence auf Platte",
+                  "id": "r3_mirror_state",
+                  "layer": "r3",
+                  "ok": true
+                },
+                {
+                  "detail_de": "/r3",
+                  "id": "r3_surface_page",
+                  "layer": "r3",
+                  "ok": true,
+                  "warn_only": true
+                },
+                {
+                  "detail_de": "Qt-Fenster",
+                  "id": "r3_cockpit",
+                  "layer": "r3",
+                  "ok": false,
+                  "warn_only": true
+                }
+              ],
+              "desktop_session": true,
+              "exec_mirror_only": true,
+              "failures_de": [],
+              "hub": {
+                "ensure_cmd_de": "python3 tools/preview_hub.py --ensure",
+                "hub_schema_version": 2,
+                "layer": "hub",
+                "ok": true,
+                "online": true,
+                "port": 17890,
+                "product": "preview-hub",
+                "route_login_detail": "200",
+                "route_login_ok": true
+              },
+              "hub_ok": true,
+              "port": 17890,
+              "r3": {
+                "cockpit_running": false,
+                "hub_online": true,
+                "layer": "r3",
+                "mirror_api_ok": true,
+                "mirror_state_ok": true,
+                "ok": true,
+                "port": 17890,
+                "start_cmd_de": "bash tools/r3_autonomous.sh",
+                "surface_page_ok": true,
+                "surface_path": "/r3"
+              },
+              "r3_ok": true,
+              "repair_cmd_de": "bash tools/stack_integrity.sh --repair --launch",
+              "schema_version": 1,
+              "stack_ok": true,
+              "updated_at_utc": "2026-06-08T07:37:12+00:00",
+              "warnings_de": [
+                "r3_cockpit: Qt-Fenster"
+              ]
+            },
+            "id": "stack",
+            "label_de": "Stack prüfen",
+            "ok": true
+          },
+          {
+            "detail": {
+              "base_url": "http://127.0.0.1:11434",
+              "detail_de": "http://127.0.0.1:11434",
+              "ok": true,
+              "started": false
+            },
+            "id": "ollama",
+            "label_de": "König 32B lokal (Ollama)",
+            "ok": true
+          },
+          {
+            "detail": {
+              "capabilities": [
+                {
+                  "detail_de": "127.0.0.1:17890 (stack)",
+                  "id": "hub_local",
+                  "label_de": "Hub lokal",
+                  "ok": true,
+                  "weight": 15
+                },
+                {
+                  "detail_de": "/api/r3/mirror (stack)",
+                  "id": "mirror_api",
+                  "label_de": "Mirror-API",
+                  "ok": true,
+                  "weight": 15
+                },
+                {
+                  "detail_de": "/r3 (stack)",
+                  "id": "surface_r3",
+                  "label_de": "Oberfläche /r3",
+                  "ok": true,
+                  "weight": 15
+                },
+                {
+                  "detail_de": "/home/machinax7/active_alpha_model/evidence/pilot_investment_plan_latest.json",
+                  "id": "plan_evidence",
+                  "label_de": "Modell-Plan Evidence",
+                  "ok": true,
+                  "weight": 10
+                },
+                {
+                  "detail_de": "3 Funktionen",
+                  "id": "trading_functions",
+                  "label_de": "3 Handelsfunktionen",
+                  "ok": true,
+                  "weight": 10
+                },
+                {
+                  "detail_de": "Flüssig — bestätigt",
+                  "id": "runtime_profile",
+                  "label_de": "Laufzeitprofil",
+                  "ok": true,
+                  "weight": 10
+                },
+                {
+                  "detail_de": "Gate aktiv",
+                  "id": "upgrade_gate",
+                  "label_de": "Upgrade mit Bestätigung",
+                  "ok": 1,
+                  "weight": 10
+                },
+                {
+                  "detail_de": "OK",
+                  "id": "stack_integrity",
+                  "label_de": "Stack-Integrität",
+                  "ok": true,
+                  "weight": 10
+                },
+                {
+                  "detail_de": "Ollama 127.0.0.1:11434",
+                  "id": "king_local",
+                  "label_de": "König 32B lokal",
+                  "ok": true,
+                  "weight": 5
+                }
+              ],
+              "capabilities_ok": 9,
+              "capabilities_total": 9,
+              "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
+              "growth_pct": 100,
+              "headline_de": "R3 lokal 100% — 4/4 Meilensteine",
+              "linux_potential_headline_de": "Linux 86% — 8/9 Dimensionen",
+              "linux_potential_pct": 86,
+              "local_only": true,
+              "local_primary_url": "http://127.0.0.1:17890/r3",
+              "milestones": [
+                {
+                  "capabilities": [
+                    "hub_local",
+                    "mirror_api",
+                    "surface_r3"
+                  ],
+                  "id": "local_first",
+                  "label_de": "Lokal wirksam",
+                  "ok": true
+                },
+                {
+                  "capabilities": [
+                    "plan_evidence",
+                    "trading_functions"
+                  ],
+                  "id": "full_mirror",
+                  "label_de": "Voller R3-Spiegel",
+                  "ok": true
+                },
+                {
+                  "capabilities": [
+                    "runtime_profile",
+                    "upgrade_gate"
+                  ],
+                  "id": "runtime_evolution",
+                  "label_de": "Laufzeit wächst",
+                  "ok": true
+                },
+                {
+                  "capabilities": [
+                    "stack_integrity",
+                    "king_local"
+                  ],
+                  "id": "operational_loop",
+                  "label_de": "Geschlossener Kreis",
+                  "ok": true
+                }
+              ],
+              "milestones_ok": 4,
+              "milestones_total": 4,
+              "next_growth_de": "R3 lokal vollständig — neue Upgrades erscheinen im Katalog mit Bestätigung",
+              "policy_ref": "control/r3_local_growth.json",
+              "runtime_profile_id": "fluid_v2",
+              "schema_version": 1,
+              "updated_at_utc": "2026-06-08T07:37:12+00:00",
+              "upgrade_pending": false
+            },
+            "id": "growth",
+            "label_de": "R3 Wachstum neu scannen",
+            "ok": true
+          },
+          {
+            "detail": {
+              "channels_de": "Stabil · 83% flüssig · 5/6 Kanäle",
+              "channels_ok": 5,
+              "channels_total": 6,
+              "checklist_de": "37/37",
+              "checklist_ok": true,
+              "cycle_closed": true,
+              "cycle_pct": 100,
+              "evidence_ref": "evidence/r3_operator_readiness_latest.json",
+              "fluidity_pct": 83,
+              "growth_pct": 100,
+              "headline_de": "R3 betriebsbereit — 100 %",
+              "infra_pct": 83,
+              "kreis_de": "—",
+              "kreis_pct": 0,
+              "next_de": "bash tools/king_ops.sh series-ready --repair",
+              "operational_ok": true,
+              "operational_pct": 100,
+              "r3_mirror_policy_de": "Keine Prozent-Anzeige auf /r3 — nur Operator/Desktop",
+              "schema_version": 1,
+              "series_readiness_pct": 100,
+              "series_ready": true,
+              "surface_de": "http://127.0.0.1:17890/desktop",
+              "updated_at_utc": "2026-06-08T07:37:13+00:00"
+            },
+            "id": "operator_readiness",
+            "label_de": "R3 Operator-Readiness (100 %)",
+            "ok": true
+          }
+        ],
+        "steps_ok": 6,
+        "steps_total": 6,
+        "updated_at_utc": "2026-06-08T07:37:13+00:00"
+      },
+      "id": "series_repair",
+      "label_de": "Serienreife reparieren",
+      "ok": true
+    },
+    {
+      "detail": {
+        "blockers_de": [],
+        "checklist_ok": true,
+        "critical_fail": 0,
+        "headline_de": "R3 Checkliste OK — 1 Hinweis(e)",
+        "items_ok": 37,
+        "items_total": 37,
+        "next_de": "Betrieb OK — http://127.0.0.1:17890/r3",
+        "partial_count": 1,
+        "partial_de": [
+          "Einzel-Verkauf — klickbar, Bestätigung, T212"
+        ],
+        "policy_ref": "control/r3_operational_checklist.json",
+        "schema_version": 1,
+        "sections": [
+          {
+            "id": "safety",
+            "items": [
+              {
+                "detail_de": "{'auto_research_enabled': False, 'auto_promote_paper_enabled': False, 'auto_promote_signal_enabled': False, 'auto_execute_real_money_enabled': False}",
+                "fail_closed": true,
+                "id": "safety_flags_off",
+                "label_de": "Auto-Flags aus (research, promote, execute)",
+                "ok": true,
+                "section_id": "safety",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "king_verify OK",
+                "fail_closed": true,
+                "id": "governance_locked",
+                "label_de": "Champion gesperrt — kein Auto-Promote",
+                "ok": true,
+                "section_id": "safety",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Orders nur über R3 — Active Alpha Model führt keine Orders aus",
+                "fail_closed": true,
+                "id": "orders_only_r3",
+                "label_de": "Orders nur über R3 — Engine/Scheduler blockiert",
+                "ok": true,
+                "section_id": "safety",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "live_submit=False",
+                "fail_closed": true,
+                "id": "dry_run_guard",
+                "label_de": "Live-Submit nur nach GUI-Bestätigung + Gates",
+                "ok": true,
+                "section_id": "safety",
+                "status": "PASS",
+                "tier": "critical"
+              }
+            ],
+            "items_ok": 4,
+            "items_total": 4,
+            "tier": "critical",
+            "title_de": "A — Safety & Governance (Active Alpha)"
+          },
+          {
+            "id": "runtime",
+            "items": [
+              {
+                "detail_de": "127.0.0.1:17890",
+                "fail_closed": false,
+                "id": "hub_local",
+                "label_de": "Preview-Hub auf 127.0.0.1:17890",
+                "ok": true,
+                "section_id": "runtime",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "/r3",
+                "fail_closed": false,
+                "id": "r3_surface",
+                "label_de": "Oberfläche /r3 erreichbar",
+                "ok": true,
+                "section_id": "runtime",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "11/11",
+                "fail_closed": false,
+                "id": "autostart",
+                "label_de": "Login-Autostart + Desktop R3",
+                "ok": true,
+                "section_id": "runtime",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "OK",
+                "fail_closed": false,
+                "id": "stack_ok",
+                "label_de": "Stack-Integrität (Hub, Mirror, Cache)",
+                "ok": true,
+                "section_id": "runtime",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Besitz OK (0 korrigiert)",
+                "fail_closed": false,
+                "id": "home_ownership",
+                "label_de": "~/.local Besitz korrekt (kein root)",
+                "ok": true,
+                "section_id": "runtime",
+                "status": "PASS",
+                "tier": "critical"
+              }
+            ],
+            "items_ok": 5,
+            "items_total": 5,
+            "tier": "critical",
+            "title_de": "B — Laufzeit & Autostart"
+          },
+          {
+            "id": "cycle",
+            "items": [
+              {
+                "detail_de": "✓ Internet OK — R3 und Active Alpha Model können rechnen",
+                "fail_closed": false,
+                "id": "internet",
+                "label_de": "1 Internet — Probe OK",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "T212 · 675 €",
+                "fail_closed": false,
+                "id": "account",
+                "label_de": "2 Konto — T212-Bond verbunden, cash_eur",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "2026-06-05",
+                "fail_closed": false,
+                "id": "ingest",
+                "label_de": "3 Kurse — Browser-Ingest / price_latest",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Signal 2026-06-05",
+                "fail_closed": false,
+                "id": "engine",
+                "label_de": "4 Modell — Background-Engine Tick",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "11 Zeilen · 0 Pos · 641 € · live",
+                "fail_closed": false,
+                "id": "plan",
+                "label_de": "5 Plan — investable_eur + allocations",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "2026-06-05",
+                "fail_closed": false,
+                "id": "display",
+                "label_de": "6 Anzeige — R3 Mirror read-only",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Nur R3 — GUI-Bestätigung → T212",
+                "fail_closed": false,
+                "id": "orders",
+                "label_de": "7 Orders — Policy AUTHORITATIVE, nur R3-GUI",
+                "ok": true,
+                "section_id": "cycle",
+                "status": "PASS",
+                "tier": "critical"
+              }
+            ],
+            "items_ok": 7,
+            "items_total": 7,
+            "tier": "critical",
+            "title_de": "C — Trading-Kreislauf (7 Stufen)"
+          },
+          {
+            "id": "mirror_ui",
+            "items": [
+              {
+                "detail_de": "4 API-Metriken · Operator 100%",
+                "fail_closed": false,
+                "id": "metrics_traceable",
+                "label_de": "Faktenzeilen mit evidence_ref + fields_de",
+                "ok": true,
+                "section_id": "mirror_ui",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "investable=640.93",
+                "fail_closed": false,
+                "id": "plan_panel",
+                "label_de": "Plan-Panel — investable_eur aus Plan-Evidence",
+                "ok": true,
+                "section_id": "mirror_ui",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Verkauf+Kauf UI · sell=0 buy=11",
+                "fail_closed": false,
+                "id": "t212_panel",
+                "label_de": "T212-Panel — Verkauf + Kauf getrennt",
+                "ok": true,
+                "section_id": "mirror_ui",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Mirror-State OK",
+                "fail_closed": false,
+                "id": "status_compact",
+                "label_de": "Status: T212 · Paket · Kurse (Zahlen)",
+                "ok": true,
+                "section_id": "mirror_ui",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "poll=30000ms soft=True",
+                "fail_closed": false,
+                "id": "poll_refresh",
+                "label_de": "Live-Poll /api/r3/mirror ohne Seitenabbruch",
+                "ok": true,
+                "section_id": "mirror_ui",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Flüssig — bestätigt",
+                "fail_closed": true,
+                "id": "upgrade_confirm",
+                "label_de": "Runtime-Upgrade nur Übernehmen/Später",
+                "ok": true,
+                "section_id": "mirror_ui",
+                "status": "PASS",
+                "tier": "critical"
+              }
+            ],
+            "items_ok": 6,
+            "items_total": 6,
+            "tier": "critical",
+            "title_de": "D — Anzeige /r3 (Zahlen aus Evidence)"
+          },
+          {
+            "id": "trading",
+            "items": [
+              {
+                "detail_de": "11 BUY-Zeilen",
+                "fail_closed": false,
+                "id": "buy_single",
+                "label_de": "Einzel-Kauf — klickbar, Bestätigung, T212",
+                "ok": true,
+                "section_id": "trading",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "UI+Merge OK — 0 SELL (kein Reeval-Verkauf)",
+                "fail_closed": false,
+                "id": "sell_single",
+                "label_de": "Einzel-Verkauf — klickbar, Bestätigung, T212",
+                "ok": true,
+                "section_id": "trading",
+                "status": "PARTIAL",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Paket bereit — 641 € · 11 Zeilen",
+                "fail_closed": false,
+                "id": "initial_package",
+                "label_de": "Gesamtpaket Kauf — nur BUY, GUI-Bestätigung",
+                "ok": true,
+                "section_id": "trading",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "—",
+                "fail_closed": false,
+                "id": "sell_notice",
+                "label_de": "Verkauf-Funktion aktiv bei Reeval-SELL",
+                "ok": true,
+                "section_id": "trading",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "min=12.0",
+                "fail_closed": false,
+                "id": "min_trade",
+                "label_de": "Mindest-Trade ≥ min_trade_eur",
+                "ok": true,
+                "section_id": "trading",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "14 blockiert",
+                "fail_closed": true,
+                "id": "no_background_orders",
+                "label_de": "Kein Auto-Execute aus Engine/Scheduler",
+                "ok": true,
+                "section_id": "trading",
+                "status": "PASS",
+                "tier": "critical"
+              }
+            ],
+            "items_ok": 6,
+            "items_total": 6,
+            "tier": "critical",
+            "title_de": "E — Handel (Kauf + Verkauf)"
+          },
+          {
+            "id": "alpha_model",
+            "items": [
+              {
+                "detail_de": "investable=640.93",
+                "fail_closed": false,
+                "id": "signal_plan",
+                "label_de": "Champion-Signal → Plan (read-only für R3)",
+                "ok": true,
+                "section_id": "alpha_model",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "12 Aktionen",
+                "fail_closed": false,
+                "id": "reeval_actions",
+                "label_de": "Reevaluation — Kauf/Verkauf-Empfehlungen",
+                "ok": true,
+                "section_id": "alpha_model",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "Teilkreis Konto → Modell (Teil des Trading-Kreislaufs)",
+                "fail_closed": false,
+                "id": "closed_loop",
+                "label_de": "Closed Loop Konto→Modell synchron",
+                "ok": true,
+                "section_id": "alpha_model",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "True",
+                "fail_closed": false,
+                "id": "prediction_gate",
+                "label_de": "prediction_readiness — order_gate_ok",
+                "ok": true,
+                "section_id": "alpha_model",
+                "status": "PASS",
+                "tier": "critical"
+              },
+              {
+                "detail_de": "H1 König-Territorium — kein R3-Blocker",
+                "fail_closed": false,
+                "id": "h1_separate",
+                "label_de": "H1/Benchmark — König-Territorium, nicht R3-Blocker",
+                "ok": true,
+                "section_id": "alpha_model",
+                "status": "PASS",
+                "tier": "critical"
+              }
+            ],
+            "items_ok": 5,
+            "items_total": 5,
+            "tier": "critical",
+            "title_de": "F — Active Alpha Model (Hintergrund)"
+          },
+          {
+            "id": "operator",
+            "items": [
+              {
+                "detail_de": "verify",
+                "fail_closed": false,
+                "id": "king_ops",
+                "label_de": "king_ops status · r3-sync · verify",
+                "ok": true,
+                "section_id": "operator",
+                "status": "PASS",
+                "tier": "warn"
+              },
+              {
+                "detail_de": "http://127.0.0.1:11434",
+                "fail_closed": false,
+                "id": "king_agent",
+                "label_de": "König 32B — alpha-model-agent erreichbar",
+                "ok": true,
+                "section_id": "operator",
+                "status": "PASS",
+                "tier": "warn"
+              },
+              {
+                "detail_de": "König 32B baut autonom — Cursor nicht im Bau-Takt",
+                "fail_closed": false,
+                "id": "r3_bau",
+                "label_de": "UI-Änderungen via r3-bau / r3-apply",
+                "ok": true,
+                "section_id": "operator",
+                "status": "PASS",
+                "tier": "warn"
+              },
+              {
+                "detail_de": "Serienreife 100% — Warnungen: Linux-Potenzial",
+                "fail_closed": false,
+                "id": "series_ready",
+                "label_de": "Serienreife-Gate dokumentiert",
+                "ok": true,
+                "section_id": "operator",
+                "status": "PASS",
+                "tier": "warn"
+              }
+            ],
+            "items_ok": 4,
+            "items_total": 4,
+            "tier": "warn",
+            "title_de": "G — Operator & König"
+          }
+        ],
+        "test_suites_de": [
+          "pytest tests/test_r3_exec_mirror.py tests/test_r3_stock_orders.py tests/test_r3_trading_cycle.py -q",
+          "pytest tests/test_r3_evidence_metrics.py tests/test_r3_operational_independence.py -q",
+          "pytest tests/test_r3_trading_functions.py tests/test_r3_order_execution_gate.py -q"
+        ],
+        "updated_at_utc": "2026-06-08T07:37:13+00:00",
+        "verify_all_de": "bash tools/king_ops.sh series-ready && bash tools/king_ops.sh r3-sync --repair"
+      },
+      "id": "r3_checklist",
+      "label_de": "R3 Betriebs-Checkliste",
+      "ok": true
+    },
+    {
+      "detail": {
+        "build_status": "MANUAL_READ_ONLY_REVIEW_ONLY",
+        "generated_at_utc": "2026-06-08T07:37:13+00:00",
+        "ok": true,
+        "path": "/home/machinax7/active_alpha_model/control/review_snapshot/v5r_decision_cockpit_snapshot.json"
+      },
+      "id": "cockpit_snapshot",
+      "label_de": "Decision-Cockpit-Snapshot",
+      "ok": true
+    },
+    {
+      "detail": {
+        "bridge": {
+          "architecture_de": "Cursor schreibt Evidence → König liest bei Start und /cursor. König schreibt Beschwerden/Aufträge zurück → Cursor liest evidence-Datei.",
+          "headline_de": "Cursor ↔ König Bridge aktiv",
+          "last_cursor_push": {
+            "at_utc": "2026-06-08T07:37:13+00:00",
+            "direction": "cursor_to_king",
+            "source": "decision_cockpit_update",
+            "summary_de": "Decision-Cockpit-Update — R3-Web an Vision-Kette angebunden",
+            "tasks_for_king_de": [
+              "bash tools/king_ops.sh gui-rebuild — R3 Exec-Spiegel ↔ Decision Cockpit Optik",
+              "Lies control/decision_cockpit_r3_bridge.json und evidence/decision_cockpit_update_latest.json",
+              "pytest tests/test_gui_remaster_2026_policy.py -q vor finish"
+            ],
+            "verified_facts_de": [
+              "Serienreife 100% — ready=True",
+              "Checkliste 37/37 — ok=True",
+              "R3 Wachstum 100% — Kreislauf closed=True",
+              "Operator-Readiness 100% — /r3 ohne Prozent-Anzeige",
+              "Vision: COMPLETE_AWAITING_OPERATIONAL_DECISION",
+              "Snapshot: control/review_snapshot/v5r_decision_cockpit_snapshot.json"
+            ]
+          },
+          "last_king_push": {
+            "at_utc": "2026-06-08T06:46:44+00:00",
+            "complaint_de": "",
+            "direction": "king_to_cursor",
+            "request_de": "",
+            "status_de": "R3 Laufzeit souverän — Vasall nur bei /cursor anfrage (Schicht 4)"
+          },
+          "schema_version": 1,
+          "status": "ACTIVE",
+          "updated_at_utc": "2026-06-08T07:37:13+00:00"
+        },
+        "ok": true
+      },
+      "id": "king_bridge",
+      "label_de": "König-Bridge",
+      "ok": true
+    },
+    {
+      "detail": {
+        "active_layer": "koenig",
+        "active_node": "koenig",
+        "beat": 8,
+        "benchmark_csv_ok": false,
+        "benchmark_hung": false,
+        "benchmark_over_eta": false,
+        "benchmark_running": false,
+        "gpu_returns_enabled": false,
+        "h1_sealed": false,
+        "h1_status": "COMPLETE",
+        "handoff_to": "koenig",
+        "hardware_ref": "evidence/king_hardware_latest.json",
+        "headline_de": "Takt 8 · ready · Schicht koenig → koenig · GPU-OFF",
+        "matrix_ref": "control/king_responsibility_matrix_de.md",
+        "network_ref": "control/king_network.json",
+        "next_action_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+        "next_layer": "koenig",
+        "ok": true,
+        "phase": "ready",
+        "reason_de": "H1 COMPLETE — Seal optional (Policy)",
+        "schema_version": 1,
+        "source_node": "decision_cockpit_update",
+        "synced_at_utc": "2026-06-08T07:37:13+00:00",
+        "vram_policy_de": "Phase ready: Ollama geladen — Chat bereit"
+      },
+      "id": "network_pulse",
+      "label_de": "Netzwerk-Takt",
+      "ok": true
+    }
+  ],
+  "steps_ok": 5,
+  "steps_total": 5,
+  "updated_at_utc": "2026-06-08T07:37:13+00:00",
+  "vision_program_ref": "VISION_DECISION_COCKPIT_EXECPLAN.md"
+}

@@ -1,0 +1,58 @@
+{
+  "artifact_hashes": {
+    "Marktanalyse.exe.sha256": "45dd45429851a23e9d6fe5ec824fd2af38200e451dc4110f7abb336a2dfa8a95",
+    "evidence/v5r_final_validation_summary.json": "bd2b3213de1c898e6834ad420dddd314481f088204bc520e03899908ce754793"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M12",
+  "phase": "M11",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M10 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m10_phase_seal.json"
+      },
+      {
+        "check": "file_exists:Marktanalyse.exe.sha256",
+        "detail": "present",
+        "pass": true,
+        "path": "Marktanalyse.exe.sha256"
+      },
+      {
+        "check": "file_exists:evidence/v5r_final_validation_summary.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/v5r_final_validation_summary.json"
+      },
+      {
+        "check": "m11_runtime_verify_pass",
+        "detail": "PASS",
+        "pass": true,
+        "path": "evidence\\v5r_final_validation_summary.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M11",
+    "title": "EXE Marktanalyse",
+    "verified_at_utc": "2026-06-05T15:39:08+00:00"
+  }
+}

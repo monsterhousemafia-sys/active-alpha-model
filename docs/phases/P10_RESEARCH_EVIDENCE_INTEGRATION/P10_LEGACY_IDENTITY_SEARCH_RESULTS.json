@@ -1,0 +1,53 @@
+{
+  "best_match_max_abs_diff": 0.010950334274535598,
+  "best_match_variant": "MOM_63_TOP15_RECONSTRUCTED",
+  "canonical_decision": {
+    "do_not_claim_exact_legacy_reproduction": true,
+    "legacy_alias_MOM_63_TOP12": "ALIAS_INCONSISTENCY_DOCUMENTED",
+    "retain_MOM_63_TOP12_STRICT": true,
+    "retain_MOM_63_TOP15_RECONSTRUCTED": true
+  },
+  "configs_examined": [
+    {
+      "note": "MOM_63_TOP12_STRICT aligned",
+      "top_k": 12,
+      "trading212_policy": "threshold"
+    },
+    {
+      "note": "MOM_63_TOP15_RECONSTRUCTED aligned",
+      "top_k": 15,
+      "trading212_policy": "threshold"
+    },
+    {
+      "note": "prior G1 run mismatch source",
+      "top_k": 15,
+      "trading212_policy": "balanced"
+    }
+  ],
+  "search_budget": 6,
+  "variant_comparisons": [
+    {
+      "compared": true,
+      "correlation": 0.9936933489762079,
+      "max_abs_diff": 0.012145560434121301,
+      "mean_abs_diff": 0.0010492226652340222,
+      "observations": 1859,
+      "returns_match_within_1e6": false,
+      "returns_path": "evidence/autonomous_research/MOM_63_TOP12_STRICT/daily_returns.csv",
+      "returns_sha256": "70f9500a1ee15224faee293f5cf02d2ab7865bc00267891a17a7869aa3872128",
+      "variant_id": "MOM_63_TOP12_STRICT"
+    },
+    {
+      "compared": true,
+      "correlation": 0.9968139292260715,
+      "max_abs_diff": 0.010950334274535598,
+      "mean_abs_diff": 0.0005323546772079348,
+      "observations": 1860,
+      "returns_match_within_1e6": false,
+      "returns_path": "evidence/autonomous_research/MOM_63_TOP15_RECONSTRUCTED/daily_returns.csv",
+      "returns_sha256": "1c6235dbd7eeafdf2c011909f71e8644f2c520d946d18f2f0eba75b3c5b7ab11",
+      "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+    }
+  ],
+  "verdict": "LEGACY_IDENTITY_NOT_REPRODUCIBLE_WITH_AVAILABLE_INPUTS"
+}

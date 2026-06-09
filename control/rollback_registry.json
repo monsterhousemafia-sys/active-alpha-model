@@ -1,0 +1,16 @@
+{
+  "artifact_hashes": {
+    "backtest_report.txt": "ad855bab249a0418601a6e2c595602021f02c27d98411aad73021b0e5e214899",
+    "integrity_report.json": "562615bc6cedad001140734603335cca40a6f3ae7e9bdbab59d8deb7d4bb4476",
+    "integrity_status.json": "1d0d349e0466a7c2acfc4de7c3bcab187489d7027e6ffc2186808df3436e5874",
+    "latest_target_portfolio.csv": "d620cfa5e65244d453dc8cd24dacc33d3dffe7f1c83b1c1039025bbada2c2f56",
+    "latest_validated_run.json": "e5a821da3cae03952cc0bbbad9c43d9f813fa60fb48d58d60fe6947314a9a58d",
+    "model_status.json": "90e7583f0abfef6c0546671787d825078a89221b660b8b0a116745e906290ed2",
+    "strategy_daily_returns.csv": "98a580fe7ee2ba9fccab230a56ee98366a0df2b341a8262ab184ef57d38c1b07"
+  },
+  "out_dir": "E:\\active_alpha_model\\model_output_sp500_pit_t212",
+  "rollback_available": true,
+  "target_run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+  "target_variant_id": "R3_w075_q065_noexit",
+  "updated_at_utc": "2026-05-30T18:01:19+00:00"
+}

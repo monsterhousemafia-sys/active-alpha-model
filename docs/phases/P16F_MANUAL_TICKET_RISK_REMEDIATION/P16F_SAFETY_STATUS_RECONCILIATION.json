@@ -1,0 +1,9 @@
+{
+  "actionable_manual_real_money_tickets": 0,
+  "manual_real_money_pilot_framework": "IMPLEMENTED_NOT_EXECUTION_READY",
+  "p16e_ready_tickets": 0,
+  "p16e_ticket_execution_allowed": false,
+  "p16e_tickets_superseded": 6,
+  "real_capital_deployed_eur": 0.0,
+  "simulation_only": true
+}

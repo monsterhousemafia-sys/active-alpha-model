@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "In sich geschlossener Trading-Kreislauf",
+  "cycle_de": [
+    "1 Internet — R3 und Active Alpha Model",
+    "2 Konto — R3 T212-API-Bond (Kontostand autoritativ)",
+    "3 Kurse — Browser-Ingest aus Internet",
+    "4 Modell — Active Alpha: Signal + Rebalance-Plan mit R3-Konto",
+    "5 Plan — investierbar skaliert auf freies Cash",
+    "6 Anzeige — R3 /desktop (read-only Evidence)",
+    "7 Orders — ausschließlich R3 mit GUI-Bestätigung → T212"
+  ],
+  "closed_properties_de": [
+    "Kein paralleler Broker-Sync in der Engine",
+    "Kein Auto-Execute außerhalb R3",
+    "Fail-closed bei fehlendem Internet oder Konto",
+    "Ein Hintergrund-Einstieg: run_trading_cycle",
+    "T212-Sync + Trust bei jedem Zyklus (force wenn stale)",
+    "Tages-Postmortem read-only (Plan vs. SPY) + Sprach-Warnung in R3"
+  ],
+  "evidence_ref": "evidence/r3_trading_cycle_latest.json",
+  "run_command_de": "bash tools/king_ops.sh r3-cycle",
+  "postmortem_command_de": "bash tools/king_ops.sh erklaer-heute · /erklär-heute im R3-Chat",
+  "api_route_de": "GET /api/r3/cycle"
+}

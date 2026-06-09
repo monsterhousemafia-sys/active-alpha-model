@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "program": "R0_LONG_TERM_MIGRATION",
+  "execution_focus": "M2_COMPLETE_USER_GO_M3_PLUS",
+  "current_execution_phase": "M3",
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "m1_sealed": true,
+  "m2_sealed": true,
+  "user_phase_go": "control/r0_migration/user_phase_go.json",
+  "scope_doc": "docs/R0_MIGRATION_M1_ACTIVE_SCOPE.md",
+  "primary_entry": "python tools/run_r0_migration_phase_orchestrator.py",
+  "wsl_entry": "bash tools/wsl_conductor.sh",
+  "blocked_until_m1_sealed": [],
+  "authorized_next_phases": ["M3", "M5", "M6", "M7", "M9", "M11", "M12"],
+  "after_m1_sealed_next": "M3",
+  "updated_at_utc": "2026-06-05T15:00:00+00:00"
+}

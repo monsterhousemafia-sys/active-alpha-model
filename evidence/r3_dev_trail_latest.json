@@ -1,0 +1,87 @@
+{
+  "entries": [
+    {
+      "at_utc": "2026-06-08T14:03:14+00:00",
+      "detail_de": "Kleine UI-Änderung",
+      "status": "done",
+      "title_de": "Live: Kleine UI-Änderung"
+    },
+    {
+      "at_utc": "2026-06-08T14:02:45+00:00",
+      "detail_de": "2 Sitzungsnachrichten · Archiv None",
+      "status": "done",
+      "title_de": "Chat in R3 KI-Speicher übernommen"
+    },
+    {
+      "at_utc": "2026-06-08T14:02:41+00:00",
+      "detail_de": "Detail",
+      "status": "active",
+      "title_de": "Test"
+    },
+    {
+      "at_utc": "2026-06-08T14:01:54+00:00",
+      "detail_de": "0 Nachrichten → /tmp/pytest-of-machinax7/pytest-5/test_preserve_conversation_no_0/.local/share/r3-os/conversation",
+      "status": "done",
+      "title_de": "R3-Gespräch lokal gesichert"
+    },
+    {
+      "at_utc": "2026-06-08T07:50:01+00:00",
+      "detail_de": "König-Mandat Remaster 2026: Optischer Bauprozess — NUR König 32B, NICHT Cursor. VERBINDLICH Remaster 2026 — nur König 32B, nicht Cursor. Policy: control/gui_rem",
+      "status": "active",
+      "title_de": "Bau-Kernel Lauf"
+    },
+    {
+      "at_utc": "2026-06-06T19:28:37+00:00",
+      "detail_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+      "status": "done",
+      "title_de": "Live: System Plane — BT · Display · Session · WLAN · Schritt B"
+    },
+    {
+      "at_utc": "2026-06-06T19:02:59+00:00",
+      "detail_de": "R3 System Plane: Bluetooth, Display, Session, WLAN-Connect, Bild-Vorschau",
+      "status": "done",
+      "title_de": "Live: System Plane — BT · Display · Session · WLAN"
+    },
+    {
+      "at_utc": "2026-06-06T18:39:25+00:00",
+      "detail_de": "290 Nachrichten → /home/machinax7/.local/share/r3-os/conversation",
+      "status": "done",
+      "title_de": "Gespräch für Cursor-Unabhängigkeit gesichert"
+    },
+    {
+      "at_utc": "2026-06-06T17:23:58+00:00",
+      "detail_de": "Ein Eingabefenster im Cockpit — Ollama lokal, frei von Cursor.",
+      "status": "done",
+      "title_de": "Zentrale R3-KI-Eingabe"
+    },
+    {
+      "at_utc": "2026-06-06T17:23:58+00:00",
+      "detail_de": "Arbeitsbaum und nächste Änderungen dauerhaft im Preview sichtbar.",
+      "status": "active",
+      "title_de": "Entwicklungsspur + Pfadanzeige"
+    },
+    {
+      "at_utc": "2026-06-06T17:23:58+00:00",
+      "detail_de": "Kein Tunnel-in-Tunnel mehr — König sieht Lokal · :17890.",
+      "status": "done",
+      "title_de": "Tunnel-Anzeige bereinigt"
+    },
+    {
+      "at_utc": "2026-06-06T17:23:58+00:00",
+      "detail_de": "r3-cockpit öffnet Qt lokal statt Browser.",
+      "status": "done",
+      "title_de": "Natives R3-Fenster"
+    },
+    {
+      "at_utc": "2026-06-06T17:23:58+00:00",
+      "detail_de": "Einheitlicher R3-Hintergrund #0a0a0f.",
+      "status": "done",
+      "title_de": "Ubuntu-Hintergrund entfernt"
+    }
+  ],
+  "next_de": [
+    "Nächster Beitrag über /beitrag — du"
+  ],
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T14:03:14+00:00"
+}

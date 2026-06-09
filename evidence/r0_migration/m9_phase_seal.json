@@ -1,0 +1,57 @@
+{
+  "artifact_hashes": {
+    "docs/CHAMPION_STRATEGIC_DECISION_RECORD.md": "0021805e2463959118389eb1999ca4f2ddb6fb212d8d5ecfd7548d7647f1c594"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M10",
+  "phase": "M9",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M8 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m8_phase_seal.json"
+      },
+      {
+        "check": "file_exists:docs/CHAMPION_STRATEGIC_DECISION_RECORD.md",
+        "detail": "present",
+        "pass": true,
+        "path": "docs/CHAMPION_STRATEGIC_DECISION_RECORD.md"
+      },
+      {
+        "check": "m9_external_approval_file",
+        "detail": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+        "pass": true,
+        "path": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md"
+      },
+      {
+        "check": "m9_champion_change_executed",
+        "detail": "R0_LEGACY_ENSEMBLE",
+        "pass": true,
+        "path": "control\\champion_strategic_decision.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M9",
+    "title": "Externe Freigabe & Champion-Wechsel",
+    "verified_at_utc": "2026-06-05T15:39:08+00:00"
+  }
+}

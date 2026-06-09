@@ -1,0 +1,42 @@
+{
+  "farewell_at_utc": "2026-06-08T18:28:16+00:00",
+  "farewell_by_de": "Operator",
+  "headline_de": "USB-Klon verabschiedet — Stick kann sicher entfernt werden",
+  "manifest_deployed_at_utc": "2026-06-08T18:22:41+00:00",
+  "next_de": "Stick im Dateimanager auswerfen, dann physisch abziehen.",
+  "ok": true,
+  "on_new_pc_de": "./USB_WEITERARBEITEN.sh --full-setup",
+  "schema_version": 1,
+  "seal_status": "BLESSED",
+  "source_root": "/home/machinax7/active_alpha_model",
+  "status": "FAREWELL",
+  "steps": [
+    {
+      "detail_de": "l (14G)\n     Anleitung: /run/media/machinax7/USB Stick/ACTIVE_ALPHA_USB_ANLEITUNG.txt\n     Erster Start: cd \"/run/media/machinax7/USB Stick/active_alpha_model\" && ./USB_WEITERARBEITEN.sh --full-setup\n",
+      "ok": true,
+      "step": "final_deploy_sync"
+    },
+    {
+      "detail_de": "USB-Autostart-Timer gestoppt — Quell-PC beobachtet Stick nicht mehr",
+      "ok": true,
+      "step": "disable_usb_timer",
+      "timer_state": "inactive"
+    },
+    {
+      "detail_de": "control/usb_portable_autostart.json → enabled=false",
+      "ok": true,
+      "step": "pause_autostart_policy"
+    },
+    {
+      "detail_de": "VERABSCHIEDUNG_ACTIVE_ALPHA.txt",
+      "ok": true,
+      "step": "usb_farewell_brief"
+    },
+    {
+      "ok": true,
+      "step": "sync"
+    }
+  ],
+  "usb_mounted": true,
+  "usb_project": "/run/media/machinax7/USB Stick/active_alpha_model"
+}

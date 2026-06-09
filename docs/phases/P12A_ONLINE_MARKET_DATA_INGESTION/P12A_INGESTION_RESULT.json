@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-06-01T12:34:24+00:00",
+  "git_commit": "e4685bb62b00e4cbf7c2626f050a2a31cd001f5b",
+  "ingestion": {
+    "capture_id": "capture_20260601T123423Z",
+    "health": {
+      "active_provider": "READONLY_YFINANCE",
+      "broker_order_sent": false,
+      "broker_order_submission": false,
+      "data_quality_passed": true,
+      "data_quality_status": "PASS",
+      "feed_latency_note": "received_at_utc minus market_event_time_utc per observation",
+      "fixture_provider": "READONLY_REPLAY_FIXTURE",
+      "fixture_rows": 2,
+      "last_capture_id": "capture_20260601T123423Z",
+      "last_received_at_utc": "2026-06-01T12:34:24+00:00",
+      "live_trading": false,
+      "not_live_authorized": true,
+      "online_attempted": true,
+      "online_rows": 3,
+      "real_money": false,
+      "replay_available": true,
+      "simulation_only": true,
+      "updated_at_utc": "2026-06-01T12:34:24+00:00"
+    },
+    "manifest_path": "market_data/p12a_online_ingestion/ingestion_manifest.json",
+    "online_attempted": true,
+    "provider": "READONLY_YFINANCE",
+    "quality_passed": true,
+    "quality_status": "PASS",
+    "replay_deterministic": true,
+    "row_count": 3
+  },
+  "p12a_status": "PASS_WITH_READONLY_ONLINE_INGESTION_READY",
+  "pipeline_preservation_failures": [],
+  "pipeline_preserved": true,
+  "run_id": "p12a_20260601T123423Z",
+  "safety": {
+    "broker_order_routing": false,
+    "broker_order_submission": false,
+    "champion_changed": false,
+    "initial_paper_capital_eur": 500.0,
+    "live_trading": false,
+    "real_money": false,
+    "real_money_capital_eur": 0.0,
+    "simulation_only": true
+  }
+}

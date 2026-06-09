@@ -1,0 +1,50 @@
+{
+  "next_action": "heavy_run: bash tools/wsl_conductor.sh m3-daily (after WSL setup)",
+  "selfcheck": {
+    "autopilot_success": true,
+    "blockers": [],
+    "checked_at_utc": "2026-06-05T15:00:07+00:00",
+    "checks": {
+      "batch_active": false,
+      "m0_sealed": true,
+      "m1_sealed": true,
+      "returns_integrity_pass": true,
+      "stall_detected": false
+    },
+    "may_advance_to_m2": true,
+    "next_action": "run_orchestrator_for_M2_after_M1_seal",
+    "schema_version": 1,
+    "scope_doc": "docs/R0_MIGRATION_M1_ACTIVE_SCOPE.md",
+    "stall": {
+      "reason": "returns_complete",
+      "stalled": false
+    },
+    "trading_step": "M2_aligned_comparison",
+    "verdict": "SUCCESS"
+  },
+  "started_at_utc": "2026-06-05T15:00:07+00:00",
+  "status": "M3_COMPLETE",
+  "steps": [
+    {
+      "M3": {
+        "decision": {
+          "generated_at_utc": "2026-06-05T15:00:07+00:00",
+          "ledger_ref": "research_evidence/r0_tuning_trial_ledger.json",
+          "phase": "M3",
+          "rationale": "awaiting heavy trial completion",
+          "schema_version": 1,
+          "seal_requires": "selected_variant_id + trial evidence PASS",
+          "selected_variant_id": null,
+          "status": "SCAFFOLD"
+        },
+        "ledger": "E:\\active_alpha_model\\research_evidence\\r0_tuning_trial_ledger.json",
+        "seal": {
+          "reason": "no_candidate_yet",
+          "status": "SKIPPED"
+        },
+        "status": "SCAFFOLD_COMPLETE",
+        "user_go": "ACTIVE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "authorization_blocks_backtest": false,
+  "estimated_runtime": "hours_per_variant (3 variants, shared feature cache)",
+  "generated_at_utc": "2026-06-05T14:54:10+00:00",
+  "phase": "M1.2",
+  "recommended_command": "E:\\active_alpha_model\\.venv\\Scripts\\python.exe E:\\active_alpha_model\\tools\\run_validation_matrix.py --phase matrix --run-mode backtest --variant R0_LEGACY_ENSEMBLE --variant R3_w075_q065_noexit --variant M1_MOM_BLEND_MATCHED_CONTROLS --parallel-jobs 1 --runtime-profile turbo",
+  "schema_version": 1,
+  "status": "PARTIAL",
+  "user_action_required": false,
+  "validation_runs_dir_present": true,
+  "validation_runs_path": "validation_runs"
+}

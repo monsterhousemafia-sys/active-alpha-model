@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-06T19:39:14+00:00",
+  "ok": true,
+  "steps": [
+    {
+      "step": "outcome_sync",
+      "ok": true
+    },
+    {
+      "step": "capture",
+      "ok": true
+    },
+    {
+      "step": "audit",
+      "ok": true
+    },
+    {
+      "step": "refresh",
+      "ok": true
+    }
+  ],
+  "outcome_sync": {
+    "schema_version": 1,
+    "generated_at_utc": "2026-06-06T19:39:14+00:00",
+    "ok": true,
+    "added_from_submitted": 0,
+    "matured_live": 0,
+    "live_rows_total": 0,
+    "ledger_counts": {
+      "stored_predictions": 73500,
+      "mature_outcomes": 73350,
+      "pending_predictions": 150,
+      "last_feedback_update_utc": "2026-06-06T00:21:30+00:00"
+    },
+    "history_sync": {
+      "skipped": true
+    },
+    "message_de": "Live-Fills -> Ledger: +0 neu, 0 reif, 0 LIVE_T212 gesamt."
+  },
+  "capture": {
+    "learning_healthy": true
+  },
+  "audit": {
+    "ok": true,
+    "live_n_mature": 0
+  },
+  "refresh": {
+    "ok": true,
+    "traffic": "GELB"
+  },
+  "next_step_de": "② Rebalance — Order-Welle mit GUI bestätigen"
+}

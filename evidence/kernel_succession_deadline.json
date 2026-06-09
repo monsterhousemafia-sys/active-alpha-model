@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "declared_at_utc": "2026-06-06T15:46:00+00:00",
+  "approved_by": "user",
+  "scope_de": "Cognitive Kernel ersetzt ad-hoc-Steuerung — Ubuntu-Mainline bleibt unverändert",
+  "milestones": [
+    {
+      "id": "control_plane_active",
+      "label_de": "Cognitive Kernel v2 aktiv (Nachfolger)",
+      "deadline_utc": "2026-06-06T15:40:00+00:00",
+      "deadline_local_de": "06.06.2026 17:40 MESZ",
+      "status": "DONE",
+      "probe": "cognitive-status successor_active=true"
+    },
+    {
+      "id": "h1_owner_succession",
+      "label_de": "H1 unter Cognitive Scheduler (kein ad-hoc-Zombie)",
+      "deadline_utc": "2026-06-06T22:00:00+00:00",
+      "deadline_local_de": "06.06.2026 24:00 MESZ",
+      "status": "IN_PROGRESS",
+      "probe": "h1.sealed oder RUNNING mit validation-Profil",
+      "blocker_de": "Path-Sim 174/175 — Prozess läuft"
+    },
+    {
+      "id": "succession_complete",
+      "label_de": "Alter Kernel (ad-hoc) formal abgelöst + Launch-Gate",
+      "deadline_utc": "2026-06-06T22:00:00+00:00",
+      "deadline_local_de": "07.06.2026 00:00 MESZ",
+      "status": "PENDING",
+      "probe": "kernel_succession_complete.json + launch.public_ready",
+      "done_when_de": "H1 sealed, Hub/Timer/API unter v2, spread-tick grün oder ein Blocker dokumentiert",
+      "revised_de": "Vorher 18:00 MESZ +1d war Puffer wegen Zombie/force-rebuild — enger nachgestellt"
+    }
+  ],
+  "headline_de": "Nachfolge bis 07.06.2026 00:00 MESZ vollständig — Kontroll-Ebene bereits aktiv",
+  "linux_mainline_de": "Kein vmlinuz-Tausch — Frist gilt nur Steuerungsschicht"
+}

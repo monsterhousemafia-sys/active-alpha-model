@@ -1,0 +1,63 @@
+{
+  "bash_de": "bash tools/king_ops.sh daily-alpha pre-us",
+  "desktop_url_de": "http://127.0.0.1:17890/desktop",
+  "governance": {
+    "auto_execute_allowed": false,
+    "auto_execute_real_money": false,
+    "fail_closed": true,
+    "message_de": "✓ Fail-closed — Top-Picks vorbereitet, Orders nur per R3-Freigabe",
+    "orders_require_gui_confirmation": true
+  },
+  "headline_de": "Daily Alpha pre_us: 2/6 Schritte — ✓ Fail-closed — Top-Picks vorbereitet, Orders nur per R3-Freigabe",
+  "investable_eur": null,
+  "next_action_de": "T212 API-Key prüfen und bash tools/king_ops.sh daily-alpha full",
+  "ok": false,
+  "phase": "pre_us",
+  "policy_ref": "control/daily_alpha_ops_policy.json",
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail_de": "Kurse aktualisieren — ingest_fail, price_not_current, quotes_missing",
+      "id": "quotes",
+      "ok": false,
+      "quote_status": "MISSING"
+    },
+    {
+      "detail_de": "Predict bereit — Profil daily_alpha_h1, Signal 2026-06-09.",
+      "id": "signal_check",
+      "ok": true,
+      "profile": "daily_alpha_h1",
+      "signal_date": "2026-06-09"
+    },
+    {
+      "detail_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p",
+      "id": "capital",
+      "investable_eur": null,
+      "ok": false,
+      "worthwhile_buy_count": null
+    },
+    {
+      "detail_de": "R3 Handelsergebnis · Trading212",
+      "id": "prognosis",
+      "ok": false,
+      "package_ready": false,
+      "worthwhile_buys": 0
+    },
+    {
+      "detail_de": "0 Top-Picks: —",
+      "id": "top_picks",
+      "ok": false,
+      "top_picks": []
+    },
+    {
+      "detail_de": "GUI-Cache warm (0 B)",
+      "id": "gui_light",
+      "ok": true
+    }
+  ],
+  "steps_ok": 2,
+  "steps_total": 6,
+  "top_pick_count": 0,
+  "top_picks": [],
+  "updated_at_utc": "2026-06-09T20:31:03+00:00"
+}

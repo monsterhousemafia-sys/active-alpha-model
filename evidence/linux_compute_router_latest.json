@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-05T19:16:10+00:00",
+  "wsl_available": true,
+  "wsl_native_ready": true,
+  "linux_workdir": "$HOME/active_alpha_model",
+  "windows_mount": "/mnt//.",
+  "windows_only": [
+    "competition_shadow",
+    "live_mark",
+    "live_rebalance",
+    "predict",
+    "price_tail_merge",
+    "t212"
+  ],
+  "linux_jobs": [
+    "h1_backtest",
+    "m1_matrix",
+    "m3_daily",
+    "validation_matrix",
+    "wsl_setup"
+  ]
+}

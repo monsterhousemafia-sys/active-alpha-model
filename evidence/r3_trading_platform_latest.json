@@ -1,0 +1,95 @@
+{
+  "alpha_model_de": "Active Alpha Model — trainiert täglich im Hintergrund; Operator sieht nur Ergebnisse auf R3",
+  "broker_de": "Trading212",
+  "headline_de": "R3 — zentrale Handelsplattform",
+  "message_de": "R3 Handelsplattform — Ergebnis 2026-06-05 · 12 Positionen",
+  "model_training": {
+    "engine_de": "Active Alpha Model",
+    "pipeline_ok": true,
+    "pipeline_phase": "complete",
+    "pipeline_updated_at_utc": "2026-06-08T15:26:57+00:00",
+    "presentation_only": true,
+    "profile_used": "daily_alpha_h1",
+    "result_at_utc": "2026-06-07T20:41:12+00:00",
+    "schedule_de": "Täglich — Ergebnis für R3",
+    "signal_date": "2026-06-05",
+    "training_enabled": false
+  },
+  "platform_de": "R3",
+  "presentation_only": true,
+  "role_de": "Präsentiert nur die täglichen Handelsergebnisse (Prognose, Zielportfolio, Budget T212)",
+  "safety_de": "R3 startet keine Berechnungen — auto_model_training_enabled bleibt governance-gesteuert",
+  "schema_version": 1,
+  "trading_result": {
+    "investable_eur": 640.93,
+    "message_de": "Predict bereit.",
+    "ok": true,
+    "positions": 12,
+    "signal_date": "2026-06-05",
+    "summary_de": "Profil daily_alpha_h1 (DAILY_ALPHA_H1): 11 Positionen auf 641 € investierbar (5 % Puffer auf 675 € frei handelbar laut T212). Umstellung zum Tagesende ab 22:15 CET.",
+    "top_picks": [
+      {
+        "target_weight": 0.1349993080928511,
+        "target_weight_pct": 13.5,
+        "ticker": "SPY"
+      },
+      {
+        "target_weight": 0.0603124914320769,
+        "target_weight_pct": 6.03,
+        "ticker": "STX"
+      },
+      {
+        "target_weight": 0.0564139364481134,
+        "target_weight_pct": 5.64,
+        "ticker": "WDC"
+      },
+      {
+        "target_weight": 0.0562419173508319,
+        "target_weight_pct": 5.62,
+        "ticker": "AMD"
+      },
+      {
+        "target_weight": 0.0539012901080283,
+        "target_weight_pct": 5.39,
+        "ticker": "INTC"
+      },
+      {
+        "target_weight": 0.0495195176037427,
+        "target_weight_pct": 4.95,
+        "ticker": "LRCX"
+      },
+      {
+        "target_weight": 0.0492334252511556,
+        "target_weight_pct": 4.92,
+        "ticker": "GOOGL"
+      },
+      {
+        "target_weight": 0.0467079049064199,
+        "target_weight_pct": 4.67,
+        "ticker": "GOOG"
+      },
+      {
+        "target_weight": 0.0464440971908478,
+        "target_weight_pct": 4.64,
+        "ticker": "MU"
+      },
+      {
+        "target_weight": 0.040338386665127,
+        "target_weight_pct": 4.03,
+        "ticker": "ON"
+      },
+      {
+        "target_weight": 0.0384021961314223,
+        "target_weight_pct": 3.84,
+        "ticker": "CIEN"
+      },
+      {
+        "target_weight": 0.0371664047829408,
+        "target_weight_pct": 3.72,
+        "ticker": "TXN"
+      }
+    ]
+  },
+  "training_schedule_de": "Täglich (EOD / Marktschluss) — Signal und Zielgewichte",
+  "updated_at_utc": "2026-06-08T15:34:08+00:00"
+}

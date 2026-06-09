@@ -1,0 +1,103 @@
+{
+  "generated_at_utc": "2026-06-01T15:00:37+00:00",
+  "primary_static_ticker_mapping_count": "8/8",
+  "primary_provider_identity_bound_count": "6/8",
+  "entries": [
+    {
+      "user_reference_symbol": "OXY",
+      "provider_symbol": "OXY",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NYSE",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+      "allowed_actions": "VIRTUAL_FILL_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "VUSD",
+      "provider_symbol": "VUSD.L",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "LSE",
+      "instrument_type": "ETF",
+      "quote_currency": "GBP",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "QUOTE_OBSERVATION_ONLY",
+      "allowed_actions": "MARK_TO_MARKET_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "WDC",
+      "provider_symbol": "WDC",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NASDAQ",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+      "allowed_actions": "VIRTUAL_FILL_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "SNDK",
+      "provider_symbol": "SNDK",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NASDAQ",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "QUOTE_OBSERVATION_ONLY",
+      "allowed_actions": "MARK_TO_MARKET_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "STX",
+      "provider_symbol": "STX",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NASDAQ",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+      "allowed_actions": "VIRTUAL_FILL_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "INTC",
+      "provider_symbol": "INTC",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NASDAQ",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+      "allowed_actions": "VIRTUAL_FILL_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "MU",
+      "provider_symbol": "MU",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NASDAQ",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+      "allowed_actions": "VIRTUAL_FILL_ALLOWED"
+    },
+    {
+      "user_reference_symbol": "CIEN",
+      "provider_symbol": "CIEN",
+      "provider_name": "READONLY_YFINANCE",
+      "exchange": "NYSE",
+      "instrument_type": "EQUITY",
+      "quote_currency": "USD",
+      "metadata_source": "p16c_documented_instrument_definition",
+      "metadata_verified_at_utc": "2026-06-01T15:00:37+00:00",
+      "identity_binding_status": "PROVIDER_METADATA_IDENTITY_PARTIAL",
+      "allowed_actions": "VIRTUAL_FILL_ALLOWED"
+    }
+  ]
+}

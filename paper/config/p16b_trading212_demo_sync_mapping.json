@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-06-01T14:51:47+00:00",
+  "trading212_provider_metadata_identity_verified_count": "0/8",
+  "entries": [
+    {
+      "symbol_reference": "OXY",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "VUSD",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "WDC",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "SNDK",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "STX",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "INTC",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "MU",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    },
+    {
+      "symbol_reference": "CIEN",
+      "status": "STATIC_CANDIDATE_PENDING_PROVIDER_METADATA"
+    }
+  ]
+}

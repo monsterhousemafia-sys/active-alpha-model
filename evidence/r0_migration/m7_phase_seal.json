@@ -1,0 +1,51 @@
+{
+  "artifact_hashes": {
+    "control/evidence/paper_monitor_status.json": "880a75194d8e53be492b0a7a189e2dd8144b41146185d38cbc5a226a94f3a1f5"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M8",
+  "phase": "M7",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M6 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m6_phase_seal.json"
+      },
+      {
+        "check": "file_exists:control/evidence/paper_monitor_status.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/evidence/paper_monitor_status.json"
+      },
+      {
+        "check": "json_equals:control/evidence/paper_monitor_status.json",
+        "detail": "ok",
+        "pass": true,
+        "path": "control/evidence/paper_monitor_status.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M7",
+    "title": "Paper-Forward",
+    "verified_at_utc": "2026-06-05T15:39:08+00:00"
+  }
+}

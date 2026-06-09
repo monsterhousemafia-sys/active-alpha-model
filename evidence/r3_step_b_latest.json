@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "phase": "B",
+  "phase_active": true,
+  "released": true,
+  "released_by_de": "Operator — Phase B aktiv",
+  "released_at_utc": "2026-06-06T21:30:00+00:00",
+  "phase_started_at_utc": "2026-06-06T22:00:00+00:00",
+  "phase_title_de": "Phase B — Vollständiger OS-Stack",
+  "step_b_active": true,
+  "step_b_percent": 80,
+  "step_b_done": 4,
+  "step_b_total": 5,
+  "step_b_next_de": "H1 parallel integriert",
+  "step_a_ready_for_b": true,
+  "step_a_percent": 83,
+  "h1_migration": {
+    "parallel_with_step_b": true,
+    "migrates_on_seal": true,
+    "h1_sealed": false,
+    "h1_status": "COMPLETE",
+    "h1_progress_pct": 100,
+    "h1_monitor_running": false,
+    "h1_backtest_running": false,
+    "h1_migration_stable": false,
+    "h1_process_health": {
+      "monitor_count": 0,
+      "backtest_count": 0,
+      "duplicate_risk": false
+    },
+    "phase_de": "H1 migriert parallel (100% · COMPLETE) · Stabilisierung",
+    "on_seal_de": "Automatisch: governance sync, Evaluate, Aktien-Gate, Launch-Readiness",
+    "note_de": "H1-Backtest und Monitor laufen weiter. Nach Seal: Evaluation, Governance und Aktien-Gate aktualisieren sich automatisch — Schritt B bleibt aktiv."
+  },
+  "milestones": [
+    {
+      "id": "login_session",
+      "label_de": "Login + Session-Manager",
+      "done": true,
+      "detail_de": "R3 Login konfiguriert · Sitzung · machinax7 · aktiv"
+    },
+    {
+      "id": "native_suite",
+      "label_de": "Native App-Suite",
+      "done": true,
+      "detail_de": "Dateien · Terminal · Einstellungen · Plane"
+    },
+    {
+      "id": "wm_spaces",
+      "label_de": "Fenster-Management",
+      "done": true,
+      "detail_de": "Snap + Spaces aktiv"
+    },
+    {
+      "id": "r3_packages",
+      "label_de": "Paket- und Update-Schicht",
+      "done": true,
+      "detail_de": "R3 Updates-Panel · apt list"
+    },
+    {
+      "id": "h1_integrated",
+      "label_de": "H1 parallel integriert",
+      "done": false,
+      "detail_de": "Migration genug — Seal 2026-06-08 (Trading) · H1 migriert parallel (100% · COMPLETE) · Stabilisierung"
+    }
+  ],
+  "milestones_de": [
+    "Eigener Login-Screen und Session-Manager",
+    "Native App-Suite ohne gnome-control-center",
+    "Eigenes Fenster-Management (Snap/Spaces)",
+    "R3-Paket- und Update-Schicht",
+    "H1-Seal integriert ohne Schritt-B-Stopp"
+  ],
+  "headline_de": "Phase B · 80% — H1 parallel integriert",
+  "updated_at_utc": "2026-06-09T17:53:07+00:00"
+}

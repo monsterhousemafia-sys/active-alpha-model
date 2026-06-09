@@ -1,0 +1,62 @@
+{
+  "open_points": [],
+  "traffic": "GELB",
+  "warnings": {
+    "count": 5,
+    "critical_count": 0,
+    "critical_count_raw": 3,
+    "dampened_off_hours": [
+      "PARTIAL_QUOTE_COVERAGE",
+      "UNDER_INVESTED_CASH",
+      "REBALANCE_DUE_NO_POSITIONS"
+    ],
+    "generated_at_utc": "2026-06-07T23:29:48+00:00",
+    "headline_de": "Hinweis: 3 Punkt(e) für Montag/US-Session (PARTIAL QUOTE COVERAGE)",
+    "infrastructure_open_points": [],
+    "must_resolve_before_trading": false,
+    "schema_version": 1,
+    "severity": "warn",
+    "us_session_open": false,
+    "warn_count": 4,
+    "warnings": [
+      {
+        "action_de": "Internet prüfen, dann «Aktualisieren»",
+        "code": "PARTIAL_QUOTE_COVERAGE",
+        "dampened_off_hours": true,
+        "detail_de": "2/11 Kurse · US zu — Montag/Session",
+        "severity": "warn",
+        "title_de": "Kurs-Abdeckung zu niedrig"
+      },
+      {
+        "action_de": "Rebalance ② oder Champion-Portfolio senden — nicht manuell in iOS stückeln",
+        "code": "UNDER_INVESTED_CASH",
+        "dampened_off_hours": true,
+        "detail_de": "Cash 100 % · Exposure-Lücke 100 % · Regime RISK_ON · US zu — Montag/Session",
+        "severity": "warn",
+        "title_de": "Fast alles Cash — Modell will investiert sein"
+      },
+      {
+        "action_de": "Schritt ② Rebalance — sonst verpasst du den Handelstag",
+        "code": "REBALANCE_DUE_NO_POSITIONS",
+        "dampened_off_hours": true,
+        "detail_de": "Live-Trading: Rebalance fällig (5/1 Mark-Tage). · US zu — Montag/Session",
+        "severity": "warn",
+        "title_de": "Rebalance fällig — Depot leer"
+      },
+      {
+        "action_de": "Champion-Portfolio per GUI bestätigen senden (kein Auto-Execute)",
+        "code": "PENDING_NOT_ARMED",
+        "detail_de": "1 US-Order(s) vorgemerkt — nächste Eröffnung Mon 08.06.2026 09:30 New York (Auto bei Eröffnung AUS)",
+        "severity": "warn",
+        "title_de": "1 Order(s) vorgemerkt — Auto-Ausführung aus"
+      },
+      {
+        "action_de": "Go-Live-Ziel: 2026-06-07",
+        "code": "REAL_MONEY_NOT_AUTHORIZED",
+        "detail_de": "Echtgeld nur nach H1-Seal (experimental gate); EXE-Bestätigung pro Order-Welle.",
+        "severity": "info",
+        "title_de": "Echtgeld-Gate: noch nicht freigegeben"
+      }
+    ]
+  }
+}

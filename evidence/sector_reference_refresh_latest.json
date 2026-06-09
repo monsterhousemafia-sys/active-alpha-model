@@ -1,0 +1,17 @@
+{
+  "last_universe_sync": {
+    "added": 0,
+    "as_of_utc": "2026-06-04T10:13:52+00:00",
+    "path": "E:\\active_alpha_model\\sector_reference.csv",
+    "row_count": 504,
+    "updated": 503
+  },
+  "schema_version": 1,
+  "source_detail": "wikipedia_sp500",
+  "status": "OK",
+  "summary_de": "Sektor-Referenz: 504 Zeilen (+0, ~503 aktualisiert).",
+  "synced_at_utc": "2026-06-04T10:15:36+00:00",
+  "synced_from": "E:\\active_alpha_model\\control\\sector_reference_status.json",
+  "updated_at_utc": "2026-06-04T10:13:52+00:00",
+  "valid_from": "2026-06-04"
+}

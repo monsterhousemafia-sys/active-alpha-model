@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 Desktop — read-only render, Hintergrund separat",
+  "rules_de": [
+    "render_desktop_shell_page ruft keine sync_* oder apply_* auf",
+    "Status nur aus evidence/*_latest.json",
+    "Ein Status-Balken statt vier paralleler Bestätigungszeilen",
+    "Kein Flow-Streifen auf /desktop — nur API/Scheduler",
+    "Hintergrund: analytics/r3_trading_cycle.run_trading_cycle"
+  ],
+  "forbidden_on_render_de": [
+    "sync_network_pulse",
+    "sync_readonly_account",
+    "apply_r3_local_first",
+    "tick_alpha_model_background",
+    "build_r3_central_status",
+    "verify_r3_local_first"
+  ]
+}

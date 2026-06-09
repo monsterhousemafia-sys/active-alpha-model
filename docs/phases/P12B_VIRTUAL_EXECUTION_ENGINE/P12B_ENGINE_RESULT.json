@@ -1,0 +1,86 @@
+{
+  "engine_cycle": {
+    "audit_event_count": 12,
+    "broker_order_routing": false,
+    "cash_reconciliation": {
+      "cash_eur": 198.45385953821247,
+      "difference_eur": 0.0,
+      "expected_cash_eur": 198.45385953821247,
+      "reconciled": true
+    },
+    "eurusd": 1.1653653383255005,
+    "execution": {
+      "deployable_eur": 490.0,
+      "fills": [
+        {
+          "cost_eur": 172.5651118892554,
+          "price_usd": 100.35,
+          "shares": 2.0,
+          "ticker": "SPY"
+        },
+        {
+          "cost_eur": 128.98102857253215,
+          "price_usd": 150.01,
+          "shares": 1.0,
+          "ticker": "AAPL"
+        }
+      ],
+      "fractional_shares_enabled": false,
+      "non_executable": [],
+      "policy_min_trade_value": 11.957813084113402,
+      "portfolio_value_eur": 499.3981114960843,
+      "shorting_enabled": false,
+      "total_costs_eur": 0.6018885039157437
+    },
+    "initial_capital_eur": 500.0,
+    "lifecycle": {
+      "has_fill": true,
+      "stage_counts": {
+        "COSTS_BOOKED": 2,
+        "PORTFOLIO_MARKED_TO_MARKET": 1,
+        "POSITION_UPDATED": 2,
+        "SIGNAL_CREATED": 1,
+        "VIRTUAL_FILL_SIMULATED": 2,
+        "VIRTUAL_ORDER_ACCEPTED": 2,
+        "VIRTUAL_ORDER_CREATED": 2
+      }
+    },
+    "metrics": {
+      "cash_eur": 198.4539,
+      "initial_capital_eur": 500.0,
+      "max_drawdown_eur": 0.0,
+      "net_pnl_eur": -0.6019,
+      "net_return_pct": -0.1204,
+      "portfolio_value_eur": 499.3981,
+      "position_count": 2,
+      "positions_value_eur": 300.9443,
+      "real_money": false,
+      "simulation_only": true,
+      "total_costs_eur": 0.6019,
+      "turnover_eur": 300.9443
+    },
+    "prices_usd": {
+      "AAPL": 150.01,
+      "SPY": 100.35
+    },
+    "simulation_only": true
+  },
+  "generated_at_utc": "2026-06-01T12:37:29+00:00",
+  "git_commit": "e4685bb62b00e4cbf7c2626f050a2a31cd001f5b",
+  "p12b_status": "PASS_WITH_VIRTUAL_PAPER_PORTFOLIO_READY",
+  "pipeline_preservation_failures": [],
+  "pipeline_preserved": true,
+  "run_id": "p12b_20260601T123729Z",
+  "safety": {
+    "broker_order_routing": false,
+    "broker_order_submission": false,
+    "champion_changed": false,
+    "initial_paper_capital_eur": 500.0,
+    "live_trading": false,
+    "paper_leverage_enabled": false,
+    "paper_shorting_enabled": false,
+    "real_money": false,
+    "real_money_capital_eur": 0.0,
+    "simulation_only": true
+  }
+}

@@ -1,0 +1,1001 @@
+{
+  "active": {},
+  "completed": [],
+  "pending": [
+    {
+      "chunk_id": "naive-prep-0008",
+      "detail_de": "mom_1 Prep 401–450",
+      "end_n": 450,
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_naive_prep_chunk-1780857873387372526-43509",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 400,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0091",
+        "end_n": 2325,
+        "id": "chunk-0092",
+        "rebalance_range_de": "2301–2325",
+        "start_n": 2300,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2301–2325 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873393938076-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0092",
+        "end_n": 2350,
+        "id": "chunk-0093",
+        "rebalance_range_de": "2326–2350",
+        "start_n": 2325,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2326–2350 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873396547860-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0093",
+        "end_n": 2375,
+        "id": "chunk-0094",
+        "rebalance_range_de": "2351–2375",
+        "start_n": 2350,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2351–2375 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873399089293-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0094",
+        "end_n": 2400,
+        "id": "chunk-0095",
+        "rebalance_range_de": "2376–2400",
+        "start_n": 2375,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2376–2400 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873401689017-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0095",
+        "end_n": 2425,
+        "id": "chunk-0096",
+        "rebalance_range_de": "2401–2425",
+        "start_n": 2400,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2401–2425 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873404285961-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0096",
+        "end_n": 2450,
+        "id": "chunk-0097",
+        "rebalance_range_de": "2426–2450",
+        "start_n": 2425,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2426–2450 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873406789495-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0097",
+        "end_n": 2475,
+        "id": "chunk-0098",
+        "rebalance_range_de": "2451–2475",
+        "start_n": 2450,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2451–2475 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873409376779-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0098",
+        "end_n": 2500,
+        "id": "chunk-0099",
+        "rebalance_range_de": "2476–2500",
+        "start_n": 2475,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2476–2500 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873412079483-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0099",
+        "end_n": 2525,
+        "id": "chunk-0100",
+        "rebalance_range_de": "2501–2525",
+        "start_n": 2500,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2501–2525 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873414879677-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0100",
+        "end_n": 2550,
+        "id": "chunk-0101",
+        "rebalance_range_de": "2526–2550",
+        "start_n": 2525,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2526–2550 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873450981471-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0101",
+        "end_n": 2575,
+        "id": "chunk-0102",
+        "rebalance_range_de": "2551–2575",
+        "start_n": 2550,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2551–2575 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873453616705-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0102",
+        "end_n": 2600,
+        "id": "chunk-0103",
+        "rebalance_range_de": "2576–2600",
+        "start_n": 2575,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2576–2600 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873456217739-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0103",
+        "end_n": 2625,
+        "id": "chunk-0104",
+        "rebalance_range_de": "2601–2625",
+        "start_n": 2600,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2601–2625 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873458802173-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0104",
+        "end_n": 2650,
+        "id": "chunk-0105",
+        "rebalance_range_de": "2626–2650",
+        "start_n": 2625,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2626–2650 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873461410397-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0105",
+        "end_n": 2675,
+        "id": "chunk-0106",
+        "rebalance_range_de": "2651–2675",
+        "start_n": 2650,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2651–2675 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873464027581-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0106",
+        "end_n": 2700,
+        "id": "chunk-0107",
+        "rebalance_range_de": "2676–2700",
+        "start_n": 2675,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2676–2700 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:33+00:00",
+      "id": "h1_path_chunk-1780857873466569165-43509",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "detail_de": "Intensiv-Puls — Spread",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "compute_pulse-1780857890287419267-43947",
+      "kind": "compute_pulse",
+      "priority": 25,
+      "requires": [
+        "pulse"
+      ],
+      "seconds": 60,
+      "status": "pending",
+      "timeout_s": 180
+    },
+    {
+      "detail_de": "Intensiv-Puls — Spread",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "compute_pulse-1780857890289976260-43947",
+      "kind": "compute_pulse",
+      "priority": 25,
+      "requires": [
+        "pulse"
+      ],
+      "seconds": 60,
+      "status": "pending",
+      "timeout_s": 180
+    },
+    {
+      "detail_de": "Intensiv-Puls — Spread",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "compute_pulse-1780857890292618834-43947",
+      "kind": "compute_pulse",
+      "priority": 25,
+      "requires": [
+        "pulse"
+      ],
+      "seconds": 60,
+      "status": "pending",
+      "timeout_s": 180
+    },
+    {
+      "detail_de": "Intensiv-Puls — Spread",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "compute_pulse-1780857890295187758-43947",
+      "kind": "compute_pulse",
+      "priority": 25,
+      "requires": [
+        "pulse"
+      ],
+      "seconds": 60,
+      "status": "pending",
+      "timeout_s": 180
+    },
+    {
+      "detail_de": "Hub-Check (Spread intensiv)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "hub_verify-1780857890297726652-43947",
+      "kind": "hub_verify",
+      "priority": 10,
+      "requires": [
+        "pulse"
+      ],
+      "status": "pending",
+      "timeout_s": 30
+    },
+    {
+      "detail_de": "Hub-Check (Spread intensiv)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "hub_verify-1780857890300237256-43947",
+      "kind": "hub_verify",
+      "priority": 10,
+      "requires": [
+        "pulse"
+      ],
+      "status": "pending",
+      "timeout_s": 30
+    },
+    {
+      "chunk_id": "naive-prep-0009",
+      "detail_de": "mom_1 Prep 451–500",
+      "end_n": 500,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890337906942-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 450,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0010",
+      "detail_de": "mom_1 Prep 501–550",
+      "end_n": 550,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890340699066-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 500,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0011",
+      "detail_de": "mom_1 Prep 551–600",
+      "end_n": 600,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890343474791-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 550,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0012",
+      "detail_de": "mom_1 Prep 601–650",
+      "end_n": 650,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890346197784-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 600,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0013",
+      "detail_de": "mom_1 Prep 651–700",
+      "end_n": 700,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890348728208-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 650,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0014",
+      "detail_de": "mom_1 Prep 701–750",
+      "end_n": 750,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890351132252-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 700,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0015",
+      "detail_de": "mom_1 Prep 751–800",
+      "end_n": 800,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890353656806-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 750,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk_id": "naive-prep-0016",
+      "detail_de": "mom_1 Prep 801–850",
+      "end_n": 850,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890356060019-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 800,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0075",
+        "end_n": 1925,
+        "id": "chunk-0076",
+        "rebalance_range_de": "1901–1925",
+        "start_n": 1900,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 1901–1925 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890362791109-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0076",
+        "end_n": 1950,
+        "id": "chunk-0077",
+        "rebalance_range_de": "1926–1950",
+        "start_n": 1925,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 1926–1950 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890365306603-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0077",
+        "end_n": 1975,
+        "id": "chunk-0078",
+        "rebalance_range_de": "1951–1975",
+        "start_n": 1950,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 1951–1975 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890367839787-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0078",
+        "end_n": 2000,
+        "id": "chunk-0079",
+        "rebalance_range_de": "1976–2000",
+        "start_n": 1975,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 1976–2000 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890370341411-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0079",
+        "end_n": 2025,
+        "id": "chunk-0080",
+        "rebalance_range_de": "2001–2025",
+        "start_n": 2000,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2001–2025 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890372819994-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0080",
+        "end_n": 2050,
+        "id": "chunk-0081",
+        "rebalance_range_de": "2026–2050",
+        "start_n": 2025,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2026–2050 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890375345438-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0081",
+        "end_n": 2075,
+        "id": "chunk-0082",
+        "rebalance_range_de": "2051–2075",
+        "start_n": 2050,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2051–2075 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890377914982-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0082",
+        "end_n": 2100,
+        "id": "chunk-0083",
+        "rebalance_range_de": "2076–2100",
+        "start_n": 2075,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2076–2100 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890380524826-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0083",
+        "end_n": 2125,
+        "id": "chunk-0084",
+        "rebalance_range_de": "2101–2125",
+        "start_n": 2100,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2101–2125 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890383113350-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk_id": "naive-prep-0000",
+      "detail_de": "mom_1 Prep 1–50",
+      "end_n": 50,
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_naive_prep_chunk-1780857890412063503-43947",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 0,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0084",
+        "end_n": 2150,
+        "id": "chunk-0085",
+        "rebalance_range_de": "2126–2150",
+        "start_n": 2125,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2126–2150 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890418710293-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0085",
+        "end_n": 2175,
+        "id": "chunk-0086",
+        "rebalance_range_de": "2151–2175",
+        "start_n": 2150,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2151–2175 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890423945501-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0086",
+        "end_n": 2200,
+        "id": "chunk-0087",
+        "rebalance_range_de": "2176–2200",
+        "start_n": 2175,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2176–2200 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890426524215-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0087",
+        "end_n": 2225,
+        "id": "chunk-0088",
+        "rebalance_range_de": "2201–2225",
+        "start_n": 2200,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2201–2225 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890429099539-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0088",
+        "end_n": 2250,
+        "id": "chunk-0089",
+        "rebalance_range_de": "2226–2250",
+        "start_n": 2225,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2226–2250 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890431615563-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0089",
+        "end_n": 2275,
+        "id": "chunk-0090",
+        "rebalance_range_de": "2251–2275",
+        "start_n": 2250,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2251–2275 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890433984146-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "chunk": {
+        "depends_on": "chunk-0090",
+        "end_n": 2300,
+        "id": "chunk-0091",
+        "rebalance_range_de": "2276–2300",
+        "start_n": 2275,
+        "status": "pending"
+      },
+      "detail_de": "H1 Chunk 2276–2300 (execute)",
+      "enqueued_at_utc": "2026-06-07T18:44:50+00:00",
+      "id": "h1_path_chunk-1780857890436426490-43947",
+      "kind": "h1_path_chunk",
+      "mode": "execute",
+      "priority": 45,
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "status": "pending",
+      "timeout_s": 900
+    },
+    {
+      "detail_de": "Backend-Preview auf Worker-CPU",
+      "enqueued_at_utc": "2026-06-07T18:44:52+00:00",
+      "id": "backend_preview-1780857892244767969-43947",
+      "kind": "backend_preview",
+      "priority": 50,
+      "requires": [
+        "preview"
+      ],
+      "status": "pending",
+      "timeout_s": 600
+    },
+    {
+      "detail_de": "Snapshot-Refresh auf Worker",
+      "enqueued_at_utc": "2026-06-07T18:44:52+00:00",
+      "id": "snapshot_refresh-1780857892247382743-43947",
+      "kind": "snapshot_refresh",
+      "priority": 30,
+      "requires": [
+        "snapshot"
+      ],
+      "status": "pending",
+      "timeout_s": 300
+    },
+    {
+      "chunk_id": "naive-prep-0001",
+      "detail_de": "mom_1 Prep 51–100",
+      "end_n": 100,
+      "enqueued_at_utc": "2026-06-07T18:22:13+00:00",
+      "id": "h1_naive_prep_chunk-1780856533629756382-37313",
+      "kind": "h1_naive_prep_chunk",
+      "priority": 55,
+      "reclaim_reason_de": "Worker offline — Weg B",
+      "reclaimed_at_utc": "2026-06-07T18:49:09+00:00",
+      "requires": [
+        "h1"
+      ],
+      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+      "start_n": 50,
+      "status": "pending",
+      "timeout_s": 1200,
+      "variant": "mom_1_top12"
+    }
+  ],
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-07T18:49:09+00:00"
+}

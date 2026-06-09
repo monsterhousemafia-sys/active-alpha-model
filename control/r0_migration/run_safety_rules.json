@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "title": "M1 backtest run-safety rules - prevent killing the wrong (productive) run",
+  "registered_at_utc": "2026-06-05T00:46:00+00:00",
+  "registered_by": "user directive: 'Sicherheitsmechanismen klaeren um erneute Verwechselung auszuschliessen'",
+  "incident": {
+    "what_happened": "Two concurrent M1 backtests ran (203857Z + 211142Z). The productive one (CPU-active, in path-sim) was killed because 'productive vs hung' was judged from prediction_cache file timestamps instead of measured CPU. The actually-hung run (211142Z, 0% CPU for ~3h) was the one that should have been killed.",
+    "root_causes": [
+      "DUPLICATE: two M1 backtests were allowed to run at once (no single-run guard).",
+      "INFERENCE: liveness was inferred from timestamps, not measured from CPU."
+    ]
+  },
+  "rules": [
+    {
+      "id": "single_run_only",
+      "rule": "At most ONE M1 backtest may run at a time. Before launching, run tools/_m1_run_guard.py preflight; only launch if safe_to_launch=true (no PRODUCTIVE run exists).",
+      "enforced_by": "tools/_m1_run_guard.py preflight_launch()"
+    },
+    {
+      "id": "cpu_evidence_before_kill",
+      "rule": "NEVER kill a backtest based on file timestamps, dir age, or assumptions. Classification PRODUCTIVE vs IDLE_OR_HUNG MUST come from measured CPU growth (tools/_m1_run_guard.py inventory).",
+      "enforced_by": "tools/_m1_run_guard.py inventory() (cpu_delta + classification)"
+    },
+    {
+      "id": "kill_only_listed_candidates",
+      "rule": "On a CONFLICT, kill ONLY the dirs listed in the guard's kill_candidates (always the non-productive ones). If verdict is CONFLICT_ALL_IDLE_INVESTIGATE or CONFLICT_MULTIPLE_PRODUCTIVE_DO_NOT_KILL -> stop and investigate, do NOT kill.",
+      "enforced_by": "human/agent follows guard verdict; tool never auto-kills"
+    },
+    {
+      "id": "readonly_guard",
+      "rule": "_m1_run_guard.py is read-only and never kills. Killing remains a deliberate, evidence-justified action.",
+      "enforced_by": "tool design"
+    },
+    {
+      "id": "deadlock_safe_reuse_backend",
+      "rule": "When relaunching M1 reusing cached predictions (--reuse-prediction-cache or --backtest-scope path-only), use --parallel-backtest-backend thread and --n-jobs 1. The process backend with a large worker pool (32) deadlocked phase 4 silently (CPU drops to 0, no error) -> M1 never finishes. The canonical M1 path config (tests/test_r0_migration_m1.py) is thread + n-jobs 1.",
+      "incident_ref": "2026-06-05: process-backend phase-4 deadlock after ~1.5h compute; recovered with thread/n-jobs 1.",
+      "enforced_by": "manual relaunch config; matrix path-only path already uses thread+1"
+    }
+  ],
+  "guard_tool": {
+    "path": "tools/_m1_run_guard.py",
+    "inventory": ".venv\\Scripts\\python.exe tools\\_m1_run_guard.py inventory",
+    "preflight": ".venv\\Scripts\\python.exe tools\\_m1_run_guard.py preflight",
+    "verdicts": {
+      "NO_RUN": "no M1 backtest running",
+      "SINGLE_OK": "exactly one productive run - healthy",
+      "SINGLE_IDLE_INVESTIGATE": "one run, but no CPU - check if hung before any action",
+      "CONFLICT_KEEP_PRODUCTIVE": "multiple runs - keep the single productive one, kill_candidates are safe to stop",
+      "CONFLICT_ALL_IDLE_INVESTIGATE": "multiple runs, none active - investigate, do not blind-kill",
+      "CONFLICT_MULTIPLE_PRODUCTIVE_DO_NOT_KILL": "multiple active runs - do not kill, escalate"
+    }
+  }
+}

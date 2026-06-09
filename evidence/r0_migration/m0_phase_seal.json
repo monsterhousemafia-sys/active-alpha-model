@@ -1,0 +1,66 @@
+{
+  "artifact_hashes": {
+    "control/champion_decision_charter_r0_target_draft.md": "9a85dbb1007095878dd49d12a85675b85bf2388b075cd74c1db360db855e9831",
+    "control/r0_migration/mandate.json": "ff1b425db8df66876f097fbf500eb7842b2328b2ad0fe5f609c6d318f6556191",
+    "docs/R0_MIGRATION_MANDATE.md": "731ee1fbd3d52f93ee339b66d26b6e440834205cd024e6963ca9f1e5dfe10316",
+    "evidence/r0_migration/m0_phase_seal.json": "2a0ad5be9be47572ba28d55b9b92ea41b677c13b22d1434f05ecfde3f571337f"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M1",
+  "phase": "M0",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-04T13:38:06+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "first phase",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "file_exists:docs/R0_MIGRATION_MANDATE.md",
+        "detail": "present",
+        "pass": true,
+        "path": "docs/R0_MIGRATION_MANDATE.md"
+      },
+      {
+        "check": "file_exists:control/r0_migration/mandate.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/r0_migration/mandate.json"
+      },
+      {
+        "check": "file_exists:control/champion_decision_charter_r0_target_draft.md",
+        "detail": "present",
+        "pass": true,
+        "path": "control/champion_decision_charter_r0_target_draft.md"
+      },
+      {
+        "check": "json_equals:control/r0_migration/mandate.json",
+        "detail": "ok",
+        "pass": true,
+        "path": "control/r0_migration/mandate.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M0",
+    "title": "Mandat & Zielfunktion",
+    "verified_at_utc": "2026-06-04T13:38:06+00:00"
+  }
+}

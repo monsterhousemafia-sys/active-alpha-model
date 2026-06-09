@@ -1,0 +1,30 @@
+{
+  "consumed_at_utc": "2026-06-02T19:41:08+00:00",
+  "expires_at_utc": "2026-06-02T19:42:08+00:00",
+  "issued_at_utc": "2026-06-02T19:41:08+00:00",
+  "payload": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T19:41:08+00:00",
+    "draft_id": "77b1d9b2-4274-436a-a2b3-16ebab263bf3",
+    "execution_style": "market",
+    "expires_at_utc": "2026-06-02T19:56:08+00:00",
+    "instrument": "GOOG",
+    "limit_price": 309.58,
+    "max_notional_eur": 21.67,
+    "order_type": "MARKET_BUY",
+    "quantity": 0.07,
+    "reference_price_eur": 309.58,
+    "side": "BUY",
+    "source": "LIVE_DASHBOARD_REBALANCE",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "GOOG_US_EQ",
+    "updated_at_utc": "2026-06-02T19:41:08+00:00"
+  },
+  "payload_hash_sha256": "e01233e48568619c4c6df125f9016862a8f93cc9b435ed4504bf710c7903021b",
+  "profile": "T212_PROFILE_CONFIRMED_EXECUTION",
+  "status": "SUBMISSION_IN_PROGRESS",
+  "token_id": "901a5df9-eec3-48f6-89f9-9381ca650aa5",
+  "token_secret_hash": "b400a13b99ac88ad721d47280258cc03c39608c679ef56e43faa6a4e9609e419",
+  "used": true
+}

@@ -1,0 +1,8 @@
+{
+  "changed_by": "startup_sync",
+  "mode": "ai_assisted",
+  "note_ai_assisted": "Champion-Signale + Entwürfe; jede Order nur nach Ihrem Dialog. Kein Auto-Trading.",
+  "note_manual": "App sendet keine Orders — Sie handeln selbst außerhalb oder gar nicht.",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-07T21:53:15+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "required_read": true,
+  "storage_key": "r3_manifest_v2_ack",
+  "title_de": "R3 — Kurz erklärt",
+  "one_liner_de": "Offenes Research: ein Cockpit, kollektive Rechenkraft — ohne Black Box.",
+  "sections": [
+    {
+      "id": "goal",
+      "headline_de": "Was ist R3?",
+      "body_de": "Ein lokales Research-Cockpit — Software für gemeinsames, nachvollziehbares Arbeiten. Kein geschlossener Fonds."
+    },
+    {
+      "id": "you_give",
+      "headline_de": "So kannst du helfen",
+      "body_de": "Rechenkraft (/join) oder Spende (/spende). Kein Broker, keine Passwörter, keine Pflicht zum Aktienprojekt."
+    },
+    {
+      "id": "king",
+      "headline_de": "Cockpit",
+      "body_de": "Alles läuft sichtbar in der Oberfläche — du behältst die Kontrolle."
+    },
+    {
+      "id": "federation",
+      "headline_de": "Netzwerk",
+      "body_de": "Weitere Rechner können sich verbinden und Rechenkraft beisteuern."
+    },
+    {
+      "id": "limits",
+      "headline_de": "Ehrlich",
+      "body_de": "Pilot-Phase. Spenden und Mitwirkende beschleunigen den Ausbau."
+    }
+  ],
+  "ack_button_de": "Verstanden — Cockpit öffnen",
+  "community_de": "Mitmachen: /join · Spende: /spende · Cockpit: :17890"
+}

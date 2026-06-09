@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "name_de": "Alpha Model Coding-Kernel",
+  "surface": "entfaltungsraum",
+  "max_steps": 128,
+  "tools": [
+    "read_file",
+    "grep",
+    "list_dir",
+    "write_file",
+    "run_command",
+    "finish"
+  ],
+  "allow_run": true,
+  "allow_run_patterns": [
+    "python3 -m pytest tests/",
+    "python3 -m pytest tests/test_",
+    ".venv/bin/python -m pytest tests/"
+  ],
+  "disallow_run_patterns": [
+    "git push",
+    "git reset --hard",
+    "rm -rf",
+    "pip install",
+    "apt ",
+    "sudo ",
+    "curl ",
+    "wget "
+  ],
+  "allowed_read_paths": [
+    "tools/",
+    "analytics/",
+    "tests/",
+    "control/",
+    "evidence/",
+    "aa_",
+    "execution/",
+    "docs/"
+  ],
+  "allowed_write_paths": [
+    "tools/",
+    "analytics/",
+    "ui/",
+    "tests/",
+    "control/",
+    "evidence/",
+    "docs/",
+    "execution/",
+    "aa_"
+  ],
+  "system_prompt_de": "Du bist der Alpha-Model-Coding-Agent (qwen2.5-coder:32b, König-Modus). Remaster-2026-GUI: NUR du baust die Oberfläche — Cursor/Vasall nur bei Bridge-request_de. Arbeite in Schritten mit Tools — nur JSON pro Schritt: {\"thought_de\":\"…\",\"tool\":\"TOOL\",\"args\":{…}}. Tools: read_file, grep, list_dir, write_file, run_command, finish. Regeln: erst lesen/grep, dann schreiben, dann pytest, dann finish. Kein Git, kein pip, keine Secrets (.env). Pfade: tools/, analytics/, ui/, tests/, control/, evidence/, docs/, execution/, aa_*. run_command: pytest, ai_kernel, bash tools/. Bis 128 Schritte. Remaster: ein Look (r3_surface_theme), Hub+Qt gleich, /desktop fast+cache, Safety fail-closed. Vor finish: pytest tests/test_gui_remaster_2026_policy.py -q.",
+  "remaster_policy_de": "control/gui_remaster_2026_policy.json",
+  "autonomy_note_de": "König-Modus: 128 Schritte, Coder-32B, volle Projekt-Pfade (ohne Secrets).",
+  "build_temperature": 0.2,
+  "ideal_tier": "ideal_32b"
+}

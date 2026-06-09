@@ -1,0 +1,62 @@
+{
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "conflicts": [],
+  "generated_at_utc": "2026-06-03T20:21:56+00:00",
+  "phase": "D",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "steps": {
+    "D1_charter": {
+      "path": "control\\champion_decision_charter.md",
+      "present": true
+    },
+    "D2_criteria_yaml": {
+      "path": "control\\champion_change_criteria.yaml",
+      "status": "OK"
+    },
+    "D3_cockpit_panel": {
+      "approval_status_de": "Freigegeben",
+      "authoritative_champion": "R3_w075_q065_noexit",
+      "auto_promotion": "DISABLED",
+      "blockers": [
+        "CHALLENGER_TURNOVER_NOT_VERIFIED"
+      ],
+      "canonical_comparison_status": "OK",
+      "canonical_ref": "evidence/canonical_model_comparison.json",
+      "champion_sharpe_0rf": 0.9228008769606217,
+      "change_criteria_status": "OK",
+      "charter_present": true,
+      "charter_ref": "control/champion_decision_charter.md",
+      "cost_stress_pass": false,
+      "cost_stress_status": "NOT_EVALUABLE",
+      "criteria_ref": "control/champion_change_criteria.yaml",
+      "is_highest_backtest_sharpe": false,
+      "lines_de": [
+        "Freigabe: Produktiv freigegeben — R3_w075_q065_noexit",
+        "Backtest-Sharpe (Matrix ~1860d): Rang 4 von 7 — nicht höchster Sharpe",
+        "Matrix-Sharpe-Führer: R0_LEGACY_ENSEMBLE",
+        "M1-Delta Sharpe (M1 − Champion): +0.0606",
+        "R0-Delta Sharpe (R0 − Champion): +0.0608",
+        "Cost-Stress (+25 bps): NOT_EVALUABLE (pass=False)",
+        "Auto-Promotion: DISABLED — manuelle Freigabe erforderlich",
+        "Aktive Blocker: CHALLENGER_TURNOVER_NOT_VERIFIED",
+        "Quarantäne: R5_rank_only_train5 (kein operativer Champion)",
+        "Phase-E-Entscheidung: E1_RETAIN_R3 — R3_w075_q065_noexit bleibt produktiver Champion. Sharpe-Optimum (R0/M1) rechtfertigt keinen Wechsel ohne erfüllte Wechsel-Gates und neue externe Freigabe.",
+        "Hinweis: Matrix-embedded ≠ MOM-Intersection-Sharpe vermischen."
+      ],
+      "m1_sharpe_0rf": 0.983392657770786,
+      "m1_sharpe_delta": 0.06059178081016425,
+      "matrix_sharpe_leader": "R0_LEGACY_ENSEMBLE",
+      "matrix_sharpe_rank": 4,
+      "matrix_variants_compared": 7,
+      "r0_sharpe_delta": 0.06075449466126315,
+      "ready_for_external_review": true,
+      "schema_version": 1,
+      "strategic_decision_option": "E1_RETAIN_R3",
+      "strategic_decision_status": "OK",
+      "strategic_decision_summary_de": "R3_w075_q065_noexit bleibt produktiver Champion. Sharpe-Optimum (R0/M1) rechtfertigt keinen Wechsel ohne erfüllte Wechsel-Gates und neue externe Freigabe.",
+      "summary_de": "Backtest-Sharpe (Matrix ~1860d): Rang 4 von 7 — nicht höchster Sharpe"
+    },
+    "D4_governance_doc": "CHAMPION_CHALLENGER_GOVERNANCE.md"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "blocker": "CSCV_SPLIT_PIPELINE_NOT_IMPLEMENTED",
+  "matrix_available": true,
+  "matrix_build_pipeline_required": true,
+  "note": "Return matrix can be assembled; PBO/CSCV splitter not yet wired.",
+  "observations": 1856,
+  "pbo_status": "NOT_EVALUABLE",
+  "status": "PARTIAL_WITH_REQUIRED_MATRIX_BUILD",
+  "variant_count": 4,
+  "variant_ids": [
+    "M1_MOM_BLEND_MATCHED_CONTROLS",
+    "MOM_63_TOP12_STRICT",
+    "MOM_63_TOP15_RECONSTRUCTED",
+    "R3_w075_q065_noexit"
+  ]
+}

@@ -1,0 +1,19 @@
+schema_version: 1
+promotion_mode: MANUAL
+minimum_shadow_rebalances: 20
+minimum_mature_shadow_outcomes: 100
+required_comparisons:
+- champion
+- M1_MOM_BLEND_MATCHED_CONTROLS
+cost_stress_scenarios:
+- baseline
+- plus_25bps
+drawdown_tolerance: 0.35
+turnover_tolerance: 2.0
+rollback_thresholds:
+  max_drawdown_breach: 0.4
+  min_mature_paper_outcomes: 5
+auto_research_enabled: false
+auto_promote_paper_enabled: false
+auto_promote_signal_enabled: false
+auto_execute_real_money_enabled: false

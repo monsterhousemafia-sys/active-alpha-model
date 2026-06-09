@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "status": "AUTHORITATIVE",
+  "updated_at_utc": "2026-06-08",
+  "pc": "machinax7",
+  "headline_de": "R3 lokale App = Spiegel der technischen Exekutive",
+  "local_app_de": {
+    "name": "R3",
+    "install_de": "bash tools/install_r3_app.sh",
+    "hub_path": "/r3",
+    "role_de": "Lokales Qt-Fenster — Ergebnisse + Auftrag-Button (kein Browser)"
+  },
+  "functional_technical_executive_de": [
+    "bash tools/r3_cockpit.sh oder Befehl r3 → natives Qt-Fenster /r3",
+    "Ergebnis-Spiegel: Paket, T212, Kurse, letzter Auftrag (Evidence read-only)",
+    "Button „Auftrag an T212“ → POST /api/r3/order (confirm true)",
+    "auto_prepare: T212, Kurse, Order-Zeilen",
+    "GET /api/r3/mirror — JSON-Spiegel für Refresh"
+  ],
+  "removed_non_functional_de": [
+    "Gutachter, Freigabe-Layer, Shell-Kacheln, Einzelaktien-Grid",
+    "Autostart r3-os-session, 42× ~/.local/bin-Hilfsapps",
+    "install_desktop_os (volles Desktop-OS) — blockiert bei PURGED/EXEC_MIRROR_ONLY"
+  ],
+  "purge_command_de": "bash tools/purge_r3_local_apps.sh",
+  "evidence_ref": "evidence/r3_local_apps_purge_latest.json"
+}

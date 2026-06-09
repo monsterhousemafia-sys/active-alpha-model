@@ -1,0 +1,13 @@
+{
+  "budget_breach_confirmed": true,
+  "cash_reserve_breach_confirmed": true,
+  "p16e_aggregate_budget_breach_eur": 82.122,
+  "p16e_aggregate_reserved_cash_breach_eur": 82.122,
+  "p16e_policy_max_deployable_after_reserve_eur": 450.0,
+  "p16e_policy_max_real_capital_eur": 500.0,
+  "p16e_policy_minimum_cash_reserve_eur": 50.0,
+  "p16e_ready_ticket_aggregate_estimated_cost_eur": 1.062,
+  "p16e_ready_ticket_aggregate_notional_eur": 531.06,
+  "p16e_ready_ticket_aggregate_total_eur": 532.122,
+  "p16e_ready_ticket_count": 6
+}

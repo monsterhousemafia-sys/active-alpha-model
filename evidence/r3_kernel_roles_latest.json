@@ -1,0 +1,53 @@
+{
+  "checked_at_utc": "2026-06-09T21:47:20+00:00",
+  "cursor": {
+    "active": false,
+    "headline_de": "Cursor — optional; R3-Kern läuft lokal",
+    "not_kernel_de": "Vasall — ersetzt nicht den König.",
+    "role_de": "Vasall des Königs: Code/Evidence auf Anfrage, keine H1-Pipeline",
+    "status_de": "König (alpha-model-agent) führt /h1-benchmark /h1-watch /könig-puls selbst",
+    "title_de": "Cursor — Vasall"
+  },
+  "ok": false,
+  "r3_kernel": {
+    "components": [
+      {
+        "id": "agent_chamber",
+        "label_de": "Entfaltungsraum",
+        "ok": false,
+        "role_de": "alpha-model-agent — Auto lokal, Kill-Handoff"
+      },
+      {
+        "id": "hub",
+        "label_de": "Hub",
+        "ok": true,
+        "role_de": "Cockpit :17890/desktop — System-Oberfläche"
+      },
+      {
+        "id": "evidence",
+        "label_de": "Evidence",
+        "ok": true,
+        "role_de": "Wahrheit, Spur, Läufe im Arbeitsbaum"
+      },
+      {
+        "id": "build_kernel",
+        "label_de": "Bau-Kernel",
+        "ok": true,
+        "role_de": "/bau und /beitrag — Umsetzung mit Tests"
+      },
+      {
+        "id": "ollama",
+        "label_de": "Ollama",
+        "ok": true,
+        "role_de": "Motor — Entfaltungsraum alpha-model-agent"
+      }
+    ],
+    "definition_de": "Hub + Evidence + Ollama auf dem Desktop — Sprache lokal über R3 KI.",
+    "headline_de": "R3 Kern — Bau-Kernel + Hub + Evidence",
+    "not_part_of_kernel_de": "Entfaltungsraum ist der Sprachkanal — Cockpit ist Runtime.",
+    "ok": false,
+    "title_de": "R3 Kern"
+  },
+  "schema_version": 1,
+  "separation_de": "Bau-Kernel ist der Kernel: /bau <Aufgabe> — Agent wie Cursor, lokal über Ollama."
+}

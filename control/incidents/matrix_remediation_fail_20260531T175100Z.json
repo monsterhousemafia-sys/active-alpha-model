@@ -1,0 +1,27 @@
+{
+  "blockers": [
+    {
+      "blocker_id": "INSUFFICIENT_CLASSIFICATION_RISK_CONTROL",
+      "module": "aa_portfolio.py / tools/v5r_matrix_remediation_eval.py",
+      "note": "Governance blocks new matrix backtests without separate approval.",
+      "remediation_status": "CODE_FIX_APPLIED_RE_RUN_NOT_AUTHORIZED",
+      "rule": "Unknown sector bucket must respect max_sector cap (0.55)"
+    },
+    {
+      "blocker_id": "INCOMPLETE_COST_STRESS_MATRIX",
+      "module": "cost_stress/",
+      "remediation_status": "PARTIAL_OR_NOT_PRESENT",
+      "rule": "4 cost scenarios required"
+    }
+  ],
+  "detected_at_utc": "2026-05-31T19:43:43+00:00",
+  "incident_type": "V5R_MATRIX_REMEDIATION_FAIL",
+  "operative_rerun_authorized": false,
+  "output_present_on_disk": true,
+  "primary_blocker": "INSUFFICIENT_CLASSIFICATION_RISK_CONTROL",
+  "production_state_modified": false,
+  "recommended_next_step": "Separate technical approval for isolated matrix re-run after G1 governance track",
+  "remediation_dir": "validation_runs/v5r_matrix_remediation_20260531T175100Z",
+  "severity": "TECHNICAL_EVIDENCE_BLOCKER",
+  "stamp": "20260531T175100Z"
+}

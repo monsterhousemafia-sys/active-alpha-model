@@ -1,0 +1,9 @@
+{
+  "python_version": "3.14",
+  "apt_packages_required": ["python3.14-venv", "python3-pip", "libxcb-cursor0"],
+  "system_venv_module": 1,
+  "system_pip": 0,
+  "project_venv_pip_ok": 0,
+  "display_set": 1,
+  "install_command": "sudo apt install python3.14-venv python3-pip libxcb-cursor0 libxkbcommon-x11-0"
+}

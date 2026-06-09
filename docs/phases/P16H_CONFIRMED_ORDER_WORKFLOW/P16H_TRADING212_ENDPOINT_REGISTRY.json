@@ -1,0 +1,41 @@
+{
+  "api_version": "v0",
+  "auth": "HTTP Basic (API Key : API Secret)",
+  "beta": true,
+  "demo_base_url": "https://demo.trading212.com/api/v0",
+  "fetched_at_utc": "2026-06-01T16:25:30+00:00",
+  "forbidden_order_paths": [
+    "/equity/history/exports",
+    "/equity/orders",
+    "/equity/orders/limit",
+    "/equity/orders/market",
+    "/equity/orders/stop",
+    "/equity/orders/stop_limit",
+    "/equity/pies"
+  ],
+  "live_base_url": "https://live.trading212.com/api/v0",
+  "pagination": {
+    "cursor_based": true,
+    "limit_default": 20,
+    "limit_max": 50
+  },
+  "rate_limit_headers": [
+    "x-ratelimit-limit",
+    "x-ratelimit-period",
+    "x-ratelimit-remaining",
+    "x-ratelimit-reset",
+    "x-ratelimit-used"
+  ],
+  "readonly_get_paths": [
+    "/equity/account/cash",
+    "/equity/account/summary",
+    "/equity/history/dividends",
+    "/equity/history/orders",
+    "/equity/history/transactions",
+    "/equity/metadata/exchanges",
+    "/equity/metadata/instruments",
+    "/equity/positions"
+  ],
+  "source": "https://docs.trading212.com/api",
+  "write_methods_blocked": true
+}

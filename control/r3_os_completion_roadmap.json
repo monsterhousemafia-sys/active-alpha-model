@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "approved_by": "operator",
+  "headline_de": "R3 OS-Vervollständigung — Control-Plane auf Ubuntu, nicht vmlinuz-Ersatz",
+  "completion_percent": 80,
+  "phase_a_percent": 100,
+  "phase_b_percent": 80,
+  "cursor_required": false,
+  "primary_interface": "r3_ki",
+  "linux_mainline_de": "Ubuntu vmlinuz unverändert — tunen nur Cognitive Kernel v2",
+  "kernel_tune_target_de": "Cognitive Kernel v2 (aa_scheduler, ebpf_observer, kernel_boundary, Ollama, ai_kernel)",
+  "local_ki_evolution_de": [
+    "control/local_llm.json — Modellwechsel",
+    "python3 tools/ai_kernel.py llm-setup",
+    "active-alpha-chat",
+    "python3 tools/ai_kernel.py learn",
+    "python3 tools/ai_kernel.py evolve (nach H1-Seal)"
+  ],
+  "next_milestones_de": [
+    "H1-Seal 2026-06-08 (Trading-Pilot)",
+    "python3 tools/ai_kernel.py h1-finish nach Seal",
+    "Phase B 5/5 — H1 parallel integriert",
+    "Pilot Day Trading live (manuelle Orders)",
+    "Optional: stabiler Cloudflare Named Tunnel"
+  ],
+  "refs": [
+    "control/r3_os_fusion.json",
+    "control/r3_step_b.json",
+    "control/cognitive_kernel_manifest.json",
+    "evidence/r3_step_b_latest.json"
+  ]
+}

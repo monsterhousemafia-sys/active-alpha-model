@@ -1,0 +1,12 @@
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-09T21:06:56+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-09T21:07:21+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-09T21:19:21+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:19:54+00:00"}
+{"event": "preflight", "ok": true, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-09T21:23:09+00:00"}
+{"event": "sustain", "ok": true, "whatsapp_ok": null, "at_utc": "2026-06-09T21:23:09+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:23:11+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:31:36+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:35:20+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:43:11+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:44:39+00:00"}
+{"event": "resume", "at_utc": "2026-06-09T21:50:10+00:00"}

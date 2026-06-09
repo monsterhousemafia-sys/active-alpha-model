@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "enabled": true,
+  "headline_de": "König 32B — Follow-on-Vorschläge (wo sich Nachinvestieren lohnt)",
+  "role_de": "trading_local (qwen2.5-coder:32b)",
+  "advisory_only_de": "Keine Orders, kein Plan-Ersatz — nur Vorschläge für weiterführendes Investieren",
+  "execution_source_de": "pilot_investment_plan gibt den ersten Takt vor",
+  "decision_layer_de": "König follow_on → Plan-Merge (Hintergrund) → T212-Umschichtung → R3",
+  "plan_integration": {
+    "enabled": true,
+    "weight_boost_pct_per_priority": 0.15,
+    "max_weight_boost_pct": 2.0
+  },
+  "cooldown_min": 60,
+  "event_triggers_de": [
+    "plan_changed",
+    "worthwhile_changed",
+    "trade_required",
+    "rebalance_due",
+    "signal_changed"
+  ],
+  "timeout_s": 120,
+  "temperature": 0.15,
+  "max_context_chars": 6000,
+  "evidence_ref": "evidence/king_trading_assist_latest.json",
+  "forbidden_de": [
+    "champion_change",
+    "auto_orders",
+    "override_quantitative_signals",
+    "execute_live_rebalance"
+  ],
+  "trigger_de": [
+    "alpha_model_background_engine tick (vor Plan-Merge/Rebalance)",
+    "python3 tools/ai_kernel.py king-trading",
+    "bash tools/king_ops.sh king-trading"
+  ]
+}

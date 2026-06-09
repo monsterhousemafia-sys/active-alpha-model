@@ -1,0 +1,109 @@
+{
+  "updated_at_utc": "2026-06-09T20:41:28+00:00",
+  "schema_version": 1,
+  "status": "OK",
+  "refreshed": true,
+  "universe_refreshed": false,
+  "yfinance": {
+    "requested": 5,
+    "resolved_records": 1,
+    "network_fetches": 0,
+    "cache_hits": 5,
+    "failures": [],
+    "cache_path": "/home/machinax7/active_alpha_model/sector_yfinance_cache.json",
+    "added": 0,
+    "updated": 1,
+    "as_of_utc": "2026-06-09T20:41:27+00:00",
+    "path": "/home/machinax7/active_alpha_model/sector_reference.csv",
+    "row_count": 506
+  },
+  "champion_coverage": {
+    "symbol_count": 14,
+    "mapped_count": 14,
+    "unknown_count": 0,
+    "unknown_tickers": [],
+    "symbols": [
+      {
+        "ticker": "STX",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "WDC",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "SNDK",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "INTC",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "CIEN",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "GOOGL",
+        "sector_coarse": "Communication",
+        "is_unknown": false
+      },
+      {
+        "ticker": "GOOG",
+        "sector_coarse": "Communication",
+        "is_unknown": false
+      },
+      {
+        "ticker": "AMD",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "CAT",
+        "sector_coarse": "Industrials",
+        "is_unknown": false
+      },
+      {
+        "ticker": "ON",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "MU",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "VRT",
+        "sector_coarse": "Industrials",
+        "is_unknown": false
+      },
+      {
+        "ticker": "TXN",
+        "sector_coarse": "Technology",
+        "is_unknown": false
+      },
+      {
+        "ticker": "OXY",
+        "sector_coarse": "Energy",
+        "is_unknown": false
+      }
+    ],
+    "ok": true
+  },
+  "run_ticker_count": 510,
+  "still_unknown": [
+    "BHI",
+    "COV",
+    "DNR",
+    "GHC",
+    "GR"
+  ],
+  "summary_de": "Sektor-Refresh: Universum=nein, yfinance=1, Champion 14/14",
+  "message_de": "Sektor-Refresh: Universum=nein, yfinance=1, Champion 14/14"
+}

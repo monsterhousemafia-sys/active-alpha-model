@@ -1,0 +1,114 @@
+{
+  "conflicts": [
+    "Multiple champion-like variant ids in pointers: ['R3_W070_Q070_NOEXIT', 'R3_W075_Q065_NOEXIT', 'R3_W075_Q065_NOEXIT\" IF INCLUDE_CHAMPION ELSE NONE', 'R3_W075_Q065_NOEXIT\", \"VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"}', 'R3_W075_Q065_NOEXIT\"} IF INCLUDE_CHAMPION ELSE {}', 'R3_W075_Q065_NOEXIT\"})', 'R5_RANK_ONLY_TRAIN5', 'TRUE, \"CHAMPION_VARIANT_ID\": \"R3_W075_Q065_NOEXIT\"})', '`VALIDATED_VARIANT_ID` / `VARIANT_ID` = `R3_W075_Q065_NOEXIT`', '`VALIDATED_VARIANT_ID` = `R3_W075_Q065_NOEXIT`']"
+  ],
+  "critical_artifacts": {
+    "control/authorization/current_authorization_status.json": {
+      "allowed_actions": [
+        "manual_read_only_review"
+      ],
+      "authoritative_champion": "R3_w075_q065_noexit",
+      "authoritative_review_forbids_operations": true,
+      "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "authoritative_source_present": true,
+      "authoritative_source_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "blocked_actions": [
+        "shadow_monitoring_activation",
+        "paper_monitoring_activation",
+        "promotion_execution",
+        "champion_change",
+        "real_money_execution",
+        "operative_jobs",
+        "backtest_execution",
+        "matrix_rerun",
+        "replay_execution",
+        "broker_connectivity",
+        "exe_build",
+        "exe_execution"
+      ],
+      "champion_change_authorized": false,
+      "conflict_details": [
+        "Unsealed operational champion claim 'R5_rank_only_train5' conflicts with authoritative champion 'R3_w075_q065_noexit'"
+      ],
+      "conflicting_or_unsealed_sources": [
+        "R5_rank_only_train5_operational_claims"
+      ],
+      "conflicting_sources": [
+        "R5_rank_only_train5_operational_claims"
+      ],
+      "g1_execution_authorized": false,
+      "generated_at_utc": "2026-06-01T01:02:36+00:00",
+      "operational_authorized": false,
+      "operational_status": "BLOCKED_FOR_SAFETY",
+      "paper_monitoring_authorized": false,
+      "promotion_authorized": false,
+      "real_money_authorized": false,
+      "registry_sealed_for_terminal": true,
+      "resolution_required": "CORRECTED_G0_EXTERNAL_SEAL_THEN_SEPARATE_G1_EXTERNAL_APPROVAL",
+      "schema_version": 1,
+      "shadow_monitoring_authorized": false,
+      "status": "CONFLICT_BLOCKED_FOR_SAFETY",
+      "terminal_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION"
+    },
+    "model_output_sp500_pit_t212/latest_validated_run.json": {
+      "artifacts_present": {
+        "canonical_run_dir_exists": false,
+        "model_output_returns_exists": true
+      },
+      "integrity_status": "PASS",
+      "phase_b_repair_at_utc": "2026-06-03T20:42:49+00:00",
+      "prior_pointer": {
+        "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+        "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+        "variant_id": "R3_w075_q065_noexit"
+      },
+      "published_at_utc": "2026-05-30T15:30:00.466948+00:00",
+      "repair_note": "Phase B: aligned variant_id, run_id, and run_dir; removed R5 run_id split. Champion metrics must not be read from model_output/ until matrix returns restored.",
+      "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "schema_version": 1,
+      "status": "PASS",
+      "variant_id": "R3_w075_q065_noexit"
+    }
+  },
+  "full_audit_ref": "evidence/champion_pointer_audit.json",
+  "generated_at_utc": "2026-06-05T14:54:10+00:00",
+  "latest_validated_run": {
+    "artifacts_present": {
+      "canonical_run_dir_exists": false,
+      "model_output_returns_exists": true
+    },
+    "integrity_status": "PASS",
+    "phase_b_repair_at_utc": "2026-06-03T20:42:49+00:00",
+    "prior_pointer": {
+      "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    "published_at_utc": "2026-05-30T15:30:00.466948+00:00",
+    "repair_note": "Phase B: aligned variant_id, run_id, and run_dir; removed R5 run_id split. Champion metrics must not be read from model_output/ until matrix returns restored.",
+    "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+    "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+    "schema_version": 1,
+    "status": "PASS",
+    "variant_id": "R3_w075_q065_noexit"
+  },
+  "locked_champion": "R3_w075_q065_noexit",
+  "phase": "M1.1",
+  "returns_candidates": [
+    {
+      "exists": false,
+      "n_days": null,
+      "path": "runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32\\strategy_daily_returns.csv",
+      "sha256": null
+    },
+    {
+      "exists": false,
+      "n_days": null,
+      "path": "model_output_sp500_pit_t212\\strategy_daily_returns.csv",
+      "sha256": null
+    }
+  ],
+  "run_dir_exists": false,
+  "schema_version": 1
+}

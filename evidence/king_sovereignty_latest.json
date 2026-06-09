@@ -1,0 +1,21 @@
+{
+  "actions_taken": [
+    {
+      "id": "seal_optional_sync",
+      "status": "COMPLETE — Benchmark nicht erforderlich"
+    }
+  ],
+  "architecture_de": "Orchestrator = König auf diesem Host. Bash weltweit ist normal, aber ohne König-Orchestrierung nutzlos isoliert.",
+  "cursor_role_de": "Vasall — Orchestrator-Modell geliefert; König führt lokal",
+  "federation_lane": "future_not_mom_1",
+  "h1_status": "COMPLETE",
+  "headline_de": "König-Orchestrator: H1 COMPLETE — Seal optional (mom_1 informativ)",
+  "mom_1_lane": "local_only",
+  "next_action_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+  "ok": true,
+  "orchestrator": "king_rtx_host",
+  "pulsed_at_utc": "2026-06-09T17:25:55+00:00",
+  "schema_version": 2,
+  "sealed": false,
+  "sovereignty_de": "Orchestrator = König (Coder-32B) auf diesem Host. Jobs: bash tools/king_ops.sh pipeline (status→maintain→h1-seal). Einzeln: king_ops status|h1-seal|maintain|distribute|pulse. mom_1 lokal (king_h1) — flock, ein Benchmark. Cursor = Vasall (/cursor anfrage)."
+}

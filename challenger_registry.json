@@ -1,0 +1,81 @@
+{
+  "auto_promotion": "DISABLED",
+  "challengers": [
+    {
+      "enabled": true,
+      "id": "R0_LEGACY_ENSEMBLE",
+      "integrity_pass": true,
+      "promoted": false,
+      "role": "shadow",
+      "status": "standby"
+    },
+    {
+      "enabled": true,
+      "id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+      "integrity_pass": true,
+      "promoted": false,
+      "role": "shadow",
+      "status": "standby"
+    },
+    {
+      "enabled": true,
+      "id": "MOM_63_TOP12",
+      "integrity_pass": true,
+      "promoted": false,
+      "role": "shadow",
+      "status": "active"
+    },
+    {
+      "enabled": false,
+      "id": "B4_CROWDING_OVERLAY",
+      "status": "planned"
+    },
+    {
+      "enabled": false,
+      "feature_groups": [],
+      "id": "B0_DAILY_REFERENCE",
+      "integrity_pass": true,
+      "production_active": false,
+      "promoted": false,
+      "role": "behavioral_research",
+      "status": "research_ready"
+    },
+    {
+      "enabled": false,
+      "feature_groups": [],
+      "id": "B1_REALTIME_EXECUTION_ONLY",
+      "integrity_pass": true,
+      "production_active": false,
+      "promoted": false,
+      "role": "behavioral_research",
+      "status": "research_ready"
+    },
+    {
+      "enabled": false,
+      "feature_groups": [
+        "attention",
+        "continuation"
+      ],
+      "id": "B2_ATTENTION_CONTINUATION",
+      "integrity_pass": true,
+      "production_active": false,
+      "promoted": false,
+      "role": "behavioral_research",
+      "status": "research_ready"
+    },
+    {
+      "enabled": false,
+      "feature_groups": [
+        "liquidity_stress"
+      ],
+      "id": "B3_LIQUIDITY_STRESS",
+      "integrity_pass": true,
+      "production_active": false,
+      "promoted": false,
+      "role": "behavioral_research",
+      "status": "research_ready"
+    }
+  ],
+  "shadow_challenger_id": "MOM_63_TOP12",
+  "updated_at_utc": "2026-05-30T18:05:01+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "chunk_size": 25,
+  "detail_de": "Verteilung aktiv: Path-Sim-Chunks + mom_1-Prep an Worker. König orchestriert, merge + Seal lokal.",
+  "enabled": true,
+  "enqueue_tasks": true,
+  "estimated_total_steps": 1867,
+  "min_worker_bundle": "full",
+  "mode": "execute",
+  "prefetch_chunks": 16,
+  "schema_version": 1,
+  "worker_requires": [
+    "h1"
+  ]
+}

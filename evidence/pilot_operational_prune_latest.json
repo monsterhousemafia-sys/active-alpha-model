@@ -1,0 +1,42 @@
+{
+  "dry_run": false,
+  "actions": [
+    {
+      "msg": "removed_confirmation_tokens",
+      "count": 35
+    },
+    {
+      "msg": "removed_submitted_orders",
+      "count": 2
+    },
+    {
+      "msg": "removed_order_drafts",
+      "count": 0
+    },
+    {
+      "msg": "archived_execution_ledger",
+      "count": 1
+    },
+    {
+      "msg": "capped_recovery_sessions",
+      "count": 112
+    },
+    {
+      "msg": "reset_t212_stock_buy_gate",
+      "count": 1
+    },
+    {
+      "msg": "archived_live_quote_snapshot",
+      "count": 1
+    },
+    {
+      "msg": "synced_legacy_latest_json_cash",
+      "count": 1
+    },
+    {
+      "msg": "removed_marktanalyse_exe_old",
+      "count": 1
+    }
+  ],
+  "completed_at_utc": "2026-06-02T10:55:39+00:00"
+}

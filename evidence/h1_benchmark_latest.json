@@ -1,0 +1,11 @@
+{
+  "benchmark_path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/naive_mom_1_daily_returns.csv",
+  "eta_de": "~45–60 Min (king_h1, 1867 Tages-Rebalances)",
+  "log_path": "evidence/h1_benchmark_generate.log",
+  "message_de": "Benchmark-Job gestartet (PID 24864). Log: evidence/h1_benchmark_generate.log. Nach Abschluss: automatisch Evaluate+Seal.",
+  "ok": true,
+  "pid": 24864,
+  "progress_path": "evidence/h1_benchmark_progress.json",
+  "status": "started",
+  "updated_at_utc": "2026-06-07T20:41:11+00:00"
+}

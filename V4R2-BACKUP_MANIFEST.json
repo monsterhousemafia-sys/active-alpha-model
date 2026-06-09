@@ -1,0 +1,72 @@
+{
+  "created_at_utc": "20260530T214738Z",
+  "phase": "V4R2_FINAL_FAIL_CLOSED_BUILD_GATE",
+  "files": [
+    {
+      "original_path": "aa_decision_cockpit_viewmodel.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_viewmodel.py",
+      "size_bytes": 25796,
+      "sha256": "9e8384397a1d4196685bf6b6d2c525f4610cbfc92cf24b3713beaab5a04ba4b0"
+    },
+    {
+      "original_path": "aa_decision_cockpit_gui.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_gui.py",
+      "size_bytes": 7921,
+      "sha256": "3e200a802f3005f40b526888fc14af6a425feafaac501694e054dfd7595dd7f1"
+    },
+    {
+      "original_path": "aa_decision_cockpit_export.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/aa_decision_cockpit_export.py",
+      "size_bytes": 2372,
+      "sha256": "9750d401b1847a0f3217f302b2cb1423aeaede9daebc68aca27deaf948ba2e43"
+    },
+    {
+      "original_path": "aa_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/aa_vision_phase_catalog.py",
+      "size_bytes": 14088,
+      "sha256": "4411ee6aee015b17105d79649d494da249c2c7d003c63c96d1da782cedff10ca"
+    },
+    {
+      "original_path": "control/vision_automation/automation_state.json",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/control__vision_automation__automation_state.json",
+      "size_bytes": 1495,
+      "sha256": "b3db9c7462818c8fd291dbae4c8ca890ccdb4417d33220547197e61bb268a933"
+    },
+    {
+      "original_path": "control/vision_automation/phase_catalog.json",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/control__vision_automation__phase_catalog.json",
+      "size_bytes": 7383,
+      "sha256": "6b6693763523f06b4e4ff8feeb410a1b38f717e67a139918d3039a75918925b2"
+    },
+    {
+      "original_path": "control/vision_automation/review_registry/review_registry.json",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/control__vision_automation__review_registry__review_registry.json",
+      "size_bytes": 7864,
+      "sha256": "823bac938efe62bb1819a9841be5d7eb18491b61078b34d401849f49fe5160ac"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/VISION_PROGRESS.json",
+      "size_bytes": 1094,
+      "sha256": "7928521a5dd4fd1d8ac7aa4268ba0aa16775208a6ed7b17e34a85ce318427895"
+    },
+    {
+      "original_path": "tests/test_decision_cockpit_viewmodel.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_viewmodel.py",
+      "size_bytes": 15511,
+      "sha256": "d5d2fb7cc425114a0a39c6b6a26a1663aba12b6b4db19bc29f76033e95b16985"
+    },
+    {
+      "original_path": "tests/test_decision_cockpit_gui.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/tests__test_decision_cockpit_gui.py",
+      "size_bytes": 5265,
+      "sha256": "75bc5fd54d5ed5904c1988d1720c870495ecff381c52d2cdad8076f972404802"
+    },
+    {
+      "original_path": "tests/test_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T214738Z_V4R2/tests__test_vision_phase_catalog.py",
+      "size_bytes": 7113,
+      "sha256": "a8db85d43cc77b48e80bd33829cea843a37e7be36c633a37a186f3db39d50e98"
+    }
+  ]
+}

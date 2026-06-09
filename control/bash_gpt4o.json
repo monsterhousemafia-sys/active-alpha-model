@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "headline_de": "Bash — nur GPT-4o (ein Modell, kein Tier-Routing)",
+  "display_model": "gpt-4o",
+  "openai_model": "gpt-4o",
+  "local_ollama_model": "qwen2.5:14b",
+  "max_tokens": 1200,
+  "temperature": 0.35,
+  "timeout_s": 120.0,
+  "keyless_ok": true,
+  "system_prompt_de": "Du bist GPT-4o-Berater für das Active-Alpha-Projekt (Bash-Cockpit). Kurz, konkret, Deutsch. Keine erfundenen Pfade. Keine Orders — nur Research und Status. Fail-closed."
+}

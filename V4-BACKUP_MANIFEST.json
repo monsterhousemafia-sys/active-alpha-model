@@ -1,0 +1,36 @@
+{
+  "created_at_utc": "20260530T212318Z",
+  "phase": "V4_DECISION_COCKPIT_GUI_INTEGRATION",
+  "files": [
+    {
+      "original_path": "aa_dashboard_qt_window.py",
+      "backup_path": "control/repair_backups/20260530T212318Z_V4/aa_dashboard_qt_window.py",
+      "size_bytes": 49296,
+      "sha256": "1c4d57bd3a2198d3a7c68f0f51405b9a3275cd1703749e86918d3fd27e155fb5"
+    },
+    {
+      "original_path": "aa_vision_controller.py",
+      "backup_path": "control/repair_backups/20260530T212318Z_V4/aa_vision_controller.py",
+      "size_bytes": 24880,
+      "sha256": "ac8641c1bb18aee8d32982117f90b6f4e796edd8ca7226c3cec1da43b641b7a5"
+    },
+    {
+      "original_path": "control/vision_automation/automation_state.json",
+      "backup_path": "control/repair_backups/20260530T212318Z_V4/control__vision_automation__automation_state.json",
+      "size_bytes": 1514,
+      "sha256": "e61f31521abb9f5c3f35c33df6ca58f774e652d5dd8d224a8819fd75d30d1abd"
+    },
+    {
+      "original_path": "control/vision_automation/review_registry/review_registry.json",
+      "backup_path": "control/repair_backups/20260530T212318Z_V4/control__vision_automation__review_registry__review_registry.json",
+      "size_bytes": 6079,
+      "sha256": "308b4e97c7bd40e3b20cbe16f9c09016bd665a44a0ee3e012b45df86b9145a45"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T212318Z_V4/VISION_PROGRESS.json",
+      "size_bytes": 1067,
+      "sha256": "085951bc492216fbc7362ef0fe824ac639ec52cdf3a40bc6ad7bfa1359208240"
+    }
+  ]
+}

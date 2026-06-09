@@ -1,0 +1,48 @@
+{
+  "beats_benchmark_sharpe": false,
+  "beats_benchmark_sharpe_after_cost_stress": false,
+  "benchmark_returns_path": null,
+  "benchmark_variant": "mom_1_top12",
+  "cost_stress_extra_bps_on_turnover": 25.0,
+  "daily_trading_fee_context": {
+    "cost_stress_incremental_bps": 25.0,
+    "fee_model": "trading212_us",
+    "fx_bps_per_side": 0.0,
+    "horizon": 1,
+    "note_de": "Tages-Rebalance (h=1): Kosten skaliieren mit Turnover pro Tag — Baseline ~4.0 bps Roundtrip + Stress +25 bps auf Rebalance-Turnover. Ohne sealed PASS vs mom_1_top12 netto ist Live-Echtgeld Forschung.",
+    "rebalance_every": 1,
+    "roundtrip_bps_baseline": 4.0,
+    "schema_version": 1,
+    "slippage_bps_per_side": 2.0
+  },
+  "evaluated_at_utc": "2026-06-09T21:17:08+00:00",
+  "max_drawdown_not_worse": true,
+  "max_drawdown_not_worse_after_cost_stress": true,
+  "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
+  "metrics_benchmark": {},
+  "metrics_benchmark_cost_stress": {},
+  "metrics_strategy": {
+    "annual_vol": 0.19825243917571733,
+    "cagr": 0.1449496479478598,
+    "daily_hit_rate": 0.5466237942122186,
+    "max_drawdown": -0.22945094905846275,
+    "n_days": 1866,
+    "sharpe_0rf": 0.782267724738531,
+    "total_return": 1.7245777497482102
+  },
+  "metrics_strategy_cost_stress": {
+    "annual_vol": 0.19825243917571733,
+    "cagr": 0.1449496479478598,
+    "daily_hit_rate": 0.5466237942122186,
+    "max_drawdown": -0.22945094905846275,
+    "n_days": 1866,
+    "sharpe_0rf": 0.782267724738531,
+    "total_return": 1.7245777497482102
+  },
+  "objective_ref": "control/r0_migration/alpha_objective.json",
+  "ok": true,
+  "pass_alpha_objective": false,
+  "pass_daily_cost_stress": false,
+  "pass_full_seal": false,
+  "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+}

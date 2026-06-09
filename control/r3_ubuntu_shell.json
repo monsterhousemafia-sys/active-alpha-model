@@ -1,0 +1,22 @@
+{
+  "schema_version": 3,
+  "section_title_de": "Handel",
+  "section_subtitle_de": "KI-Prognose und Order-Desk — Systemfunktionen über Ubuntu.",
+  "linux_mainline_de": "Dateien, Terminal, WLAN, Ton und Einstellungen: Ubuntu — nicht R3.",
+  "categories": [
+    {"id": "markt", "label_de": "Handel"}
+  ],
+  "features": [
+    {
+      "id": "aktien",
+      "category": "markt",
+      "label_de": "Order-Desk",
+      "detail_de": "Handelsergebnis bestätigen und an T212 senden",
+      "exec": ["{root}/run_marktanalyse_linux.sh"],
+      "fallback_exec": ["{root}/tools/marktanalyse_bash.sh", "start"],
+      "desktop_icon": "r3-os",
+      "model_only": "DAILY_ALPHA_H1"
+    }
+  ],
+  "quick_bin_commands": {}
+}

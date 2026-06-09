@@ -1,0 +1,14 @@
+{
+  "applied_at_utc": "2026-06-08T07:10:59+00:00",
+  "cache_stale_sec": 240,
+  "confirmed_proposal_id": "fluid_mirror_v2",
+  "label_de": "Flüssig — bestätigt",
+  "mirror_poll_ms": 45000,
+  "mirror_prep_every_n_polls": 6,
+  "mirror_reload_on_evidence_change": false,
+  "mirror_soft_update": true,
+  "profile_id": "fluid_v2",
+  "schema_version": 1,
+  "source_de": "Bestätigt: Flüssigerer R3-Spiegel",
+  "status": "AUTHORITATIVE"
+}

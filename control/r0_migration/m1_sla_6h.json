@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "binding_hours": 6,
+  "sla_start_utc": "2026-06-04T15:17:42+00:00",
+  "sla_deadline_utc": "2026-06-04T21:17:42+00:00",
+  "success_criterion": "3/3 strategy_daily_returns.csv integrity_pass + M1 phase seal",
+  "breach_if": [
+    "no_restart_or_duplicate_matrix",
+    "each_variant_avg_max_2h",
+    "r0_log_idle_over_10min_before_74pct_path_phase"
+  ],
+  "honest_note": "PASS only with 3/3 returns + seal before deadline. No claim before evidence.",
+  "status": "PARALLEL_UNBLOCKED",
+  "last_check_utc": "2026-06-04T20:36:00+00:00",
+  "reason": "operator_requested_remove_all_locks: R3+M1 run in parallel alongside running R0; serial fast-path disabled to prevent re-serialization/respawn.",
+  "canonical_r0_stamp": "20260604T153044Z",
+  "deadline_enforced": false
+}

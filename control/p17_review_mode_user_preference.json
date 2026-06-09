@@ -1,0 +1,7 @@
+{
+  "changed_by": "startup_sync",
+  "note": "True = keine Live-Orders aus der App (Review Mode AN).",
+  "review_mode_enabled": false,
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-07T21:53:15+00:00"
+}

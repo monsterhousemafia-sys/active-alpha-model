@@ -1,0 +1,39 @@
+{
+  "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+  "authoritative_review_document": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+  "authoritative_review_scope": "OPTIONAL_INFORMATIONAL",
+  "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+  "current_allowed_actions": [
+    "manual_read_only_review"
+  ],
+  "current_forbidden_actions": [
+    "shadow_monitoring_activation",
+    "paper_monitoring_activation",
+    "promotion_execution",
+    "champion_change",
+    "real_money_execution",
+    "operative_jobs",
+    "backtest_execution",
+    "matrix_rerun",
+    "replay_execution",
+    "broker_connectivity",
+    "exe_build",
+    "exe_execution"
+  ],
+  "current_terminal_state": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+  "default_on_conflict": "BLOCKED_FOR_SAFETY",
+  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "informational_only_sources": [
+    "VISION_PROGRESS.json",
+    "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+    "control/vision_automation/review_registry/review_registry.json"
+  ],
+  "operational_authorization_requires": [
+    "phase_catalog_permission",
+    "evidence_gate_pass",
+    "no_source_conflict"
+  ],
+  "prior_champion": "R3_w075_q065_noexit",
+  "schema_version": 1,
+  "strategic_governance_ref": "control/strategic_governance.json"
+}

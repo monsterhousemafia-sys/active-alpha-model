@@ -1,0 +1,26 @@
+============================================================
+  Active Alpha - Automatisierung - Systemcheck
+============================================================
+
+  Ergebnis:  BEREIT
+  Checkliste OK — geplanter Mark-Lauf erlaubt.
+
+  Pflichtpunkte: 9/9
+  ----------------------------------------------------------
+  [OK] .venv + Python lauffähig
+  [OK] Projektroot intakt (active_alpha_model.py)
+  [OK] Live-Trading Policy aktiv
+  [OK] Rebalance-Rhythmus = 1 Mark-Tag (daily_alpha_h1)
+  [OK] auto_execute_real_money = false (Governance)
+  [OK] Geplanter Lauf: armed_auto=false (nur Vormerkung)
+  [OK] T212 Read-only API (Konto-Sync)
+  [OK] Champion-Portfolio CSV vorhanden
+  [OK] Champion-Guard ohne Hard-Blocker
+
+  Optional:
+  ----------------------------------------------------------
+  [OK] Signal aktuell (EOD predict gelaufen)
+  [OK] Profil daily_alpha_h1 aktiv
+  [OK] KI-unterstützt + Order-API (für Auto-US-Open optional)
+
+============================================================

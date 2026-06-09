@@ -1,0 +1,12 @@
+{
+  "message_de": "Vorcheck fehlgeschlagen — STX, WDC, AMD, LRCX (Kurse prüfen, Seite neu laden).",
+  "mode": "precheck_blocked",
+  "notional_eur": null,
+  "ok": false,
+  "orders_submitted": null,
+  "orders_total": null,
+  "partial": false,
+  "results": [],
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T10:01:48+00:00"
+}

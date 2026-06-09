@@ -1,0 +1,789 @@
+ticker,company,first_seen,last_seen,active,source_first_seen,source_last_seen
+A,Agilent Technologies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AA,Alcoa,2012-01-01,2016-11-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AAL,American Airlines Group,2015-03-23,2024-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AAP,Advance Auto Parts,2015-07-08,2023-08-25,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AAPL,Apple Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ABBV,AbbVie,2013-01-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ABMD,Abiomed,2018-05-31,2022-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ABNB,Airbnb,2023-09-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ABT,Abbott Laboratories,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ACE,Chubb,2012-01-01,2016-01-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ACGL,Arch Capital Group,2022-11-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ACN,Accenture,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ADBE,Adobe Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ADI,Analog Devices,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ADM,Archer Daniels Midland,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ADP,Automatic Data Processing,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ADS,Alliance Data Systems,2013-12-23,2020-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ADSK,Autodesk,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ADT,ADT,2012-10-01,2016-05-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AEE,Ameren,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AEP,American Electric Power,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AES,AES Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AET,Aetna,2012-01-01,2018-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AFL,Aflac,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AGN,Allergan,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AIG,American International Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AIV,Apartment Investment & Management,2012-01-01,2020-12-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AIZ,Assurant,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AJG,Arthur J. Gallagher & Co.,2016-05-31,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AKAM,Akamai Technologies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ALB,Albemarle Corporation,2016-07-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ALGN,Align Technology,2017-06-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ALK,Alaska Air Group,2016-05-13,2023-12-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALL,Allstate,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ALLE,Allegion,2013-12-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ALTR,Altera,2012-01-01,2015-12-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ALXN,Alexion Pharmaceuticals,2012-05-21,2021-07-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMAT,Applied Materials,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AMCR,Amcor,2019-06-11,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AMD,Advanced Micro Devices,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AME,Ametek,2013-09-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AMG,Affiliated Managers Group,2014-07-01,2019-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMGN,Amgen,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AMP,Ameriprise Financial,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AMT,American Tower,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AMTM,Amentum,2024-09-30,2024-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AMZN,Amazon,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AN,Amoco,2012-01-01,2017-08-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANDV,Andeavor,2012-01-01,2018-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANET,Arista Networks,2018-08-28,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ANF,Abercrombie & Fitch,2012-01-01,2013-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANR,Alpha Natural Resources,2012-01-01,2012-10-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ANSS,Ansys,2017-06-19,2025-07-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AON,Aon plc,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AOS,A. O. Smith,2017-07-26,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+APA,APA Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+APC,Anadarko Petroleum,2012-01-01,2019-08-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APD,Air Products,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+APH,Amphenol,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+APO,Apollo Global Management,2024-12-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+APOL,Apollo Education Group,2012-01-01,2013-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+APP,AppLovin,2025-09-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+APTV,Aptiv,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ARE,Alexandria Real Estate Equities,2017-03-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ARES,Ares Management,2025-12-11,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ARG,Airgas,2012-01-01,2016-05-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ARNC,Arconic,2016-11-01,2020-04-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ATI,Allegheny Technologies,2012-01-01,2015-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ATO,Atmos Energy,2019-02-15,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ATVI,Activision Blizzard,2015-08-28,2023-10-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AVB,AvalonBay Communities,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AVGO,Broadcom,2014-05-08,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AVP,Avon Products,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AVY,Avery Dennison,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AWK,American Water Works,2016-03-04,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AXON,Axon Enterprise,2023-05-04,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AXP,American Express,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+AYI,Acuity Brands,2016-05-03,2018-06-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+AZO,AutoZone,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BA,Boeing,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BAC,Bank of America,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BALL,Ball Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BAX,Baxter International,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BBBY,Bed Bath & Beyond,2012-01-01,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BBWI,"Bath & Body Works, Inc.",2012-01-01,2024-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BBY,Best Buy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BCR,CR Bard,2012-01-01,2018-01-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BDX,Becton Dickinson,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BEAM,Suntory Global Spirits,2012-01-01,2014-05-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BEN,Franklin Resources,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BF-B,Brown–Forman,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BG,Bunge Global,2023-03-15,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BHF,Brighthouse Financial,2017-08-08,2019-04-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BHI,Baker Hughes,2012-01-01,2017-07-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BIG,Big Lots,2012-01-01,2013-02-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BIIB,Biogen,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BIO,Bio-Rad Laboratories,2020-06-22,2024-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BKNG,Booking Holdings,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BKR,Baker Hughes,2017-07-07,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BLDR,Builders FirstSource,2023-12-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BLK,BlackRock,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BMC,BMC Software,2012-01-01,2013-09-10,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BMS,Bemis Company,2012-01-01,2019-06-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BMY,Bristol Myers Squibb,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BNY,BNY Mellon,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BR,Broadridge Financial Solutions,2018-06-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BRCM,Broadcom Corporation,2012-01-01,2016-02-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BRK-B,Berkshire Hathaway,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BRO,Brown & Brown,2021-09-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BSX,Boston Scientific,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BTU,Peabody Energy,2012-01-01,2014-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BWA,BorgWarner,2012-01-01,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BX,Blackstone Inc.,2023-09-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+BXLT,Baxalta,2015-07-01,2016-06-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+BXP,"BXP, Inc.",2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+C,Citigroup,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CA,CA Technologies,2012-01-01,2018-11-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CAG,Conagra Brands,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CAH,Cardinal Health,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CAM,Cameron International,2012-01-01,2016-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CARR,Carrier Global,2020-04-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CASY,Casey's,2026-04-09,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CAT,Caterpillar Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CB,Chubb Limited,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CBE,Cooper Industries,2012-01-01,2012-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CBOE,Cboe Global Markets,2017-03-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CBRE,CBRE Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CCE,Coca-Cola Enterprises,2012-01-01,2016-05-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CCI,Crown Castle,2012-03-13,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CCL,Carnival Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CDAY,Ceridian,2021-09-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CDNS,Cadence Design Systems,2017-09-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CDW,CDW Corporation,2019-09-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CE,Celanese,2018-12-24,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CEG,Constellation Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CELG,Celgene,2012-01-01,2019-11-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CERN,Cerner,2012-01-01,2022-06-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CF,CF Industries,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CFG,Citizens Financial Group,2016-02-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CFN,Carefusion,2012-01-01,2015-03-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CHD,Church & Dwight,2015-12-29,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CHK,Chesapeake Energy,2012-01-01,2018-03-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CHRW,C.H. Robinson,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CHTR,Charter Communications,2016-09-08,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CI,Cigna,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CIEN,Ciena,2026-02-09,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CINF,Cincinnati Financial,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CL,Colgate-Palmolive,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CLF,Cliffs Natural Resources,2012-01-01,2014-04-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CLX,Clorox,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CMA,Comerica,2012-01-01,2024-06-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CMCSA,Comcast,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CMCSK,Comcast Class K Special,2015-09-18,2015-12-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CME,CME Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CMG,Chipotle Mexican Grill,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CMI,Cummins,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CMS,CMS Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CNC,Centene Corporation,2016-03-30,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CNP,CenterPoint Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CNX,Consol Energy,2012-01-01,2016-03-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COF,Capital One,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COHR,Coherent Corp.,2026-03-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COIN,Coinbase,2025-05-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COL,Rockwell Collins,2012-01-01,2018-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COO,Cooper Companies (The),2016-09-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COP,ConocoPhillips,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COR,Cencora,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COST,Costco,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+COTY,Coty,2016-09-30,2020-09-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+COV,Covidien,2012-01-01,2015-01-27,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPAY,Corpay,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CPB,Campbell's Company (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CPGX,Columbia Pipeline Group,2015-07-02,2016-07-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPRI,Capri Holdings,2012-01-01,2020-05-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CPRT,Copart,2018-07-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CPT,Camden Property Trust,2022-04-04,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CRH,CRH plc,2025-12-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CRL,Charles River Laboratories,2021-05-14,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CRM,Salesforce,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CRWD,CrowdStrike,2024-06-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CSC,Computer Sciences Corporation,2012-01-01,2015-12-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSCO,Cisco,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CSGP,CoStar Group,2022-09-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CSRA,CSRA,2015-12-01,2018-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CSX,CSX Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CTAS,Cintas,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CTLT,Catalent,2020-09-21,2024-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTRA,Coterra Energy,2012-01-01,2026-05-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CTSH,Cognizant,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CTVA,Corteva,2019-06-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CTXS,Citrix Systems,2012-01-01,2022-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVC,Cablevision,2012-01-01,2016-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVH,Coventry Health Care,2012-01-01,2013-05-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CVNA,Carvana,2025-12-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CVS,CVS Health,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CVX,Chevron Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+CXO,Concho Resources,2016-02-22,2021-01-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+CZR,Caesars Entertainment,2021-03-22,2025-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+D,Dominion Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DAL,Delta Air Lines,2013-09-10,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DASH,DoorDash,2025-03-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DAY,Dayforce,2012-01-01,2026-02-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DD,DuPont,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DDOG,Datadog,2025-07-09,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DE,Deere & Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DECK,Deckers Brands,2024-03-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DELL,Dell Technologies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DF,Dean Foods,2012-01-01,2013-05-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DFS,Discover Financial,2012-01-01,2025-05-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DG,Dollar General,2012-12-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DGX,Quest Diagnostics,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DHI,D. R. Horton,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DHR,Danaher Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DIS,Walt Disney Company (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DISCA,"Discovery, Inc.",2012-01-01,2022-04-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DISCK,Discovery Communications,2014-08-06,2022-04-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DISH,Dish Network,2017-03-13,2023-06-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DLPH,Delphi Automotive,2012-12-21,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DLR,Digital Realty,2016-05-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DLTR,Dollar Tree,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DNB,Dun & Bradstreet,2012-01-01,2017-04-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DNR,Denbury Resources,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DO,Diamond Offshore Drilling,2012-01-01,2016-09-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DOC,Healthpeak Properties,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DOV,Dover Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DOW,Dow Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DPS,Dr Pepper Snapple Group,2012-01-01,2018-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DPZ,Domino's,2020-05-12,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DRE,Duke Realty Corp,2017-07-26,2022-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DRI,Darden Restaurants,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DTE,DTE Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DTV,DirecTV,2012-01-01,2015-07-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DUK,Duke Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DV,DeVry,2012-01-01,2012-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DVA,DaVita,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DVN,Devon Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+DWDP,DuPont,2017-09-01,2019-06-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DXC,DXC Technology,2017-04-04,2023-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+DXCM,Dexcom,2020-05-12,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EA,Electronic Arts,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EBAY,eBay Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ECL,Ecolab,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ED,Consolidated Edison,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EFX,Equifax,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EG,Everest Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EIX,Edison International,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EL,Estée Lauder Companies (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ELV,Elevance Health,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EMC,EMC Corporation,2012-01-01,2016-09-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EME,Emcor,2025-09-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EMN,Eastman Chemical Co.,2012-01-01,2025-11-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EMR,Emerson Electric,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ENDP,Endo International,2015-01-27,2017-03-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ENPH,Enphase Energy,2021-01-07,2025-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EOG,EOG Resources,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EP,El Paso Corporation,2012-01-01,2012-05-17,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EPAM,EPAM Systems,2021-12-14,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EQIX,Equinix,2015-03-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EQR,Equity Residential,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EQT,EQT Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ERIE,Erie Indemnity,2024-09-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ES,Eversource Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ESRX,Express Scripts,2012-01-01,2018-12-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ESS,Essex Property Trust,2014-04-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ESV,Ensco,2012-07-31,2016-03-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ETFC,E-Trade,2012-01-01,2020-10-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ETN,Eaton Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ETR,Entergy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ETSY,Etsy,2020-09-21,2024-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EVHC,Envision Healthcare,2016-12-02,2018-10-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+EVRG,Evergy,2018-06-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EW,Edwards Lifesciences,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EXC,Exelon,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EXE,Expand Energy,2025-03-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EXPD,Expeditors International,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EXPE,Expedia Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+EXR,Extra Space Storage,2016-01-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+F,Ford Motor Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FANG,Diamondback Energy,2018-12-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FAST,Fastenal,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FB,Facebook,2013-12-23,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FBHS,Fortune Brands Home & Security,2016-06-22,2022-12-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FCX,Freeport-McMoRan,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FDO,Family Dollar,2012-01-01,2015-07-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FDS,FactSet,2021-12-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FDX,FedEx,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FE,FirstEnergy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FFIV,"F5, Inc.",2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FHN,First Horizon,2012-01-01,2013-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FICO,Fair Isaac,2023-03-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FII,Federated Investors,2012-01-01,2013-01-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FIS,Fidelity National Information Services,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FISV,Fiserv,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FITB,Fifth Third Bancorp,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FIX,Comfort Systems USA,2025-12-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FL,Foot Locker,2016-04-04,2019-08-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLIR,FLIR Systems,2012-01-01,2021-05-14,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLR,Fluor Corporation,2012-01-01,2019-06-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLS,Flowserve,2012-01-01,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FLT,FleetCor Technologies,2018-06-20,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FMC,FMC Corporation,2012-01-01,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FOSL,Fossil,2012-04-03,2016-01-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FOX,Fox Corporation (Class B),2015-09-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FOXA,Fox Corporation (Class A),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FRC,First Republic Bank,2019-01-02,2023-05-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FRT,Federal Realty Investment Trust,2016-02-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FRX,Forest Laboratories,2012-01-01,2014-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FSLR,First Solar,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FTI,FMC Technologies,2012-01-01,2021-02-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FTNT,Fortinet,2018-10-11,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+FTR,Frontier Communications,2012-01-01,2017-03-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+FTV,Fortive,2016-07-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GAS,AGL Resources.,2012-01-01,2016-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GD,General Dynamics,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GDDY,GoDaddy,2024-06-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GE,GE Aerospace,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GEHC,GE HealthCare,2023-01-04,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GEN,Gen Digital,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GEV,GE Vernova,2024-04-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GGP,General Growth Properties,2013-12-10,2018-08-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GHC,Graham Holdings,2012-01-01,2014-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GILD,Gilead Sciences,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GIS,General Mills,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GL,Globe Life,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GLW,Corning Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GM,General Motors,2013-06-06,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GMCR,Keurig Green Mountain,2014-03-21,2016-03-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GME,GameStop,2012-01-01,2016-04-25,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GNRC,Generac,2021-03-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GNW,Genworth Financial,2012-01-01,2015-11-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GOOG,Alphabet Inc. (Class C),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GOOGL,Alphabet Inc. (Class A),2014-04-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GPC,Genuine Parts Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GPN,Global Payments,2016-04-25,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GPS,Gap,2012-01-01,2022-02-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GR,Goodrich Corporation,2012-01-01,2012-07-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GRMN,Garmin,2012-12-11,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GS,Goldman Sachs,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+GT,The Goodyear Tire & Rubber Company,2012-01-01,2019-02-27,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+GWW,W. W. Grainger,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HAL,Halliburton,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HAR,Harman International,2012-01-01,2017-03-16,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HAS,Hasbro,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HBAN,Huntington Bancshares,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HBI,Hanesbrands,2015-03-23,2021-12-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HCA,HCA Healthcare,2015-01-27,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HCBK,Hudson City Bancorp,2012-01-01,2015-11-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HD,Home Depot (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HES,Hess Corporation,2012-01-01,2025-07-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HFC,HollyFrontier,2018-06-18,2021-06-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HIG,Hartford (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HII,Huntington Ingalls Industries,2018-01-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HLT,Hilton Worldwide,2017-06-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HNZ,Heinz,2012-01-01,2013-06-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HOG,Harley-Davidson,2012-01-01,2020-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HOLX,Hologic,2016-03-30,2026-04-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HON,Honeywell,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HOOD,Robinhood Markets,2025-09-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HOT,Starwood,2012-01-01,2016-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HP,Helmerich & Payne,2012-01-01,2020-05-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HPE,Hewlett Packard Enterprise,2015-11-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HPQ,HP Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HRB,H&R Block,2012-01-01,2020-09-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HRL,Hormel Foods,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HSIC,Henry Schein,2015-03-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HSP,Hospira,2012-01-01,2015-09-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+HST,Host Hotels & Resorts,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HSY,Hershey Company (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HUBB,Hubbell Incorporated,2023-10-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HUM,Humana,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+HWM,Howmet Aerospace,2020-04-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IBKR,Interactive Brokers,2025-08-28,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IBM,IBM,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ICE,Intercontinental Exchange,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IDXX,Idexx Laboratories,2017-01-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IEX,IDEX Corporation,2019-08-09,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IFF,International Flavors & Fragrances,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IGT,International Game Technology,2012-01-01,2014-06-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ILMN,Illumina,2015-11-19,2024-06-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INCY,Incyte,2017-02-28,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+INFO,IHS Markit,2017-06-02,2022-03-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+INTC,Intel,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+INTU,Intuit,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+INVH,Invitation Homes,2022-09-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IP,International Paper,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IPG,Interpublic Group,2012-01-01,2025-11-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IPGP,IPG Photonics,2018-03-07,2022-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+IQV,IQVIA,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IR,Ingersoll Rand,2020-03-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IRM,Iron Mountain,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ISRG,Intuitive Surgical,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IT,Gartner,2017-04-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ITW,Illinois Tool Works,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+IVZ,Invesco,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+J,Jacobs Solutions,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JBHT,J.B. Hunt,2015-07-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JBL,Jabil,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JCI,Johnson Controls,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JCP,JCPenney,2012-01-01,2013-12-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JDSU,JDS Uniphase,2012-01-01,2013-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JEF,Jefferies Financial Group,2012-01-01,2019-09-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JKHY,Jack Henry & Associates,2018-11-13,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JNJ,Johnson & Johnson,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JNPR,Juniper Networks,2012-01-01,2025-07-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JOY,Joy Global,2012-01-01,2015-10-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+JPM,JPMorgan Chase,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+JWN,Nordstrom,2012-01-01,2020-06-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+K,Kellanova,2012-01-01,2025-12-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KDP,Keurig Dr Pepper,2022-06-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KEY,KeyCorp,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KEYS,Keysight Technologies,2018-11-06,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KFT,Kraft Foods,2012-01-01,2012-10-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KHC,Kraft Heinz,2015-07-06,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KIM,Kimco Realty,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KKR,KKR & Co.,2024-06-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KLAC,KLA Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KMB,Kimberly-Clark,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KMI,Kinder Morgan,2012-05-17,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KMX,CarMax,2012-01-01,2025-10-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KO,Coca-Cola Company (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KORS,Michael Kors,2013-11-13,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KR,Kroger,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+KRFT,Kraft Foods,2012-10-02,2015-07-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KSS,Kohl's,2012-01-01,2020-09-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KSU,Kansas City Southern,2013-05-23,2021-12-14,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+KVUE,Kenvue,2023-08-25,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+L,Loews Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LDOS,Leidos,2019-08-09,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LEG,Leggett & Platt,2012-01-01,2021-12-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LEN,Lennar,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LH,Labcorp,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LHX,L3Harris,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LIFE,Life Technologies,2012-01-01,2014-01-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LII,Lennox International,2024-12-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LIN,Linde plc,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LITE,Lumentum,2026-03-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LKQ,LKQ Corporation,2016-05-23,2025-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LLL,L3 Technologies,2012-01-01,2019-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LLTC,Linear Technology,2012-01-01,2017-03-13,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LLY,Lilly (Eli),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LM,Legg Mason,2012-01-01,2016-12-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LMT,Lockheed Martin,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LNC,Lincoln National Corporation,2012-01-01,2023-09-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LNT,Alliant Energy,2016-07-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LO,Lorillard Tobacco Company,2012-01-01,2015-06-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LOW,Lowe's,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LRCX,Lam Research,2012-06-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LSI,LSI Corporation,2012-01-01,2014-05-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LULU,Lululemon Athletica,2023-10-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LUMN,Lumen Technologies,2012-01-01,2023-03-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LUV,Southwest Airlines,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LVLT,Level 3 Communications,2014-11-05,2017-10-13,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LVS,Las Vegas Sands,2019-10-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LW,Lamb Weston,2018-12-03,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LXK,Lexmark,2012-01-01,2012-10-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+LYB,LyondellBasell,2012-09-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+LYV,Live Nation Entertainment,2019-12-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+M,Macy's,2012-01-01,2020-04-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MA,Mastercard,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MAA,Mid-America Apartment Communities,2016-12-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MAC,Macerich,2013-05-08,2019-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MAR,Marriott International,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MAS,Masco,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MAT,Mattel,2012-01-01,2019-06-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MBC,MasterBrand,2022-12-15,2022-12-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MCD,McDonald's,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MCHP,Microchip Technology,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MCK,McKesson Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MCO,Moody's Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MDLZ,Mondelez International,2012-10-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MDT,Medtronic,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MET,MetLife,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+META,Meta Platforms,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MGM,MGM Resorts,2017-07-26,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MHK,Mohawk Industries,2013-12-23,2025-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MHS,Medco Health Solutions,2012-01-01,2012-04-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MJN,Mead Johnson Nutrition,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MKC,McCormick & Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MKTX,MarketAxess,2019-07-01,2025-09-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MLM,Martin Marietta Materials,2014-07-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MMI,Motorola Mobility,2012-01-01,2012-05-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MMM,3M,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MNK,Mallinckrodt,2014-08-18,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MNST,Monster Beverage,2012-06-29,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MO,Altria,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MOH,Molina Healthcare,2022-03-02,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MOLX,Molex,2012-01-01,2013-12-10,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MON,Monsanto,2012-01-01,2018-06-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MOS,Mosaic Company (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MPC,Marathon Petroleum,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MPWR,Monolithic Power Systems,2021-02-12,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MRK,Merck & Co.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MRNA,Moderna,2021-07-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MRO,Marathon Oil,2012-01-01,2024-11-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MRSH,Marsh McLennan,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MS,Morgan Stanley,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MSCI,MSCI Inc.,2018-04-04,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MSFT,Microsoft,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MSI,Motorola Solutions,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MTB,M&T Bank,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MTCH,Match Group,2021-09-20,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MTD,Mettler Toledo,2016-09-06,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MU,Micron Technology,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+MUR,Murphy Oil,2012-01-01,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+MXIM,Maxim Integrated Products,2018-12-03,2021-08-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NAVI,Navient,2014-05-01,2018-06-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NBL,Noble Energy,2012-01-01,2020-10-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NBR,Nabors Industries,2012-01-01,2015-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NCLH,Norwegian Cruise Line Holdings,2017-10-13,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NDAQ,"Nasdaq, Inc.",2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NDSN,Nordson Corporation,2022-02-15,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NE,Noble Corporation,2012-01-01,2015-07-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NEE,NextEra Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NEM,Newmont,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NFLX,Netflix,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NFX,Newfield Exploration,2012-01-01,2019-02-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NI,NiSource,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NKE,"Nike, Inc.",2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NKTR,Nektar Therapeutics,2018-03-19,2019-10-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NLSN,Nielsen Holdings,2013-07-08,2022-10-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NOC,Northrop Grumman,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NOV,Nov,2012-01-01,2021-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NOW,ServiceNow,2019-11-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NRG,NRG Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NSC,Norfolk Southern,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NTAP,NetApp,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NTRS,Northern Trust,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NUE,Nucor,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NVDA,Nvidia,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NVLS,Novellus Systems,2012-01-01,2012-06-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NVR,"NVR, Inc.",2019-09-26,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NWL,Newell Brands,2012-01-01,2023-09-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+NWS,News Corp (Class B),2015-09-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NWSA,News Corp (Class A),2013-07-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NXPI,NXP Semiconductors,2021-03-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+NYX,NYSE Euronext,2012-01-01,2013-11-13,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+O,Realty Income,2015-04-07,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ODFL,Old Dominion,2019-12-09,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+OGN,Organon & Co.,2021-06-03,2023-10-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OI,Owens-Illinois,2012-01-01,2016-12-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+OKE,Oneok,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+OMC,Omnicom Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ON,ON Semiconductor,2022-06-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ORCL,Oracle Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ORLY,O’Reilly Automotive,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+OTIS,Otis Worldwide,2020-04-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+OXY,Occidental Petroleum,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PANW,Palo Alto Networks,2023-06-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PAYC,Paycom,2020-01-28,2026-03-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PAYX,Paychex,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PBCT,People's United Financial,2012-01-01,2022-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PBI,Pitney Bowes,2012-01-01,2017-03-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCAR,Paccar,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PCG,PG&E Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PCL,Plum Creek Timber,2012-01-01,2016-02-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCP,Precision Castparts Corporation,2012-01-01,2016-02-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PCS,MetroPCS,2012-01-01,2013-04-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PDCO,Patterson Companies,2012-01-01,2018-03-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PEG,Public Service Enterprise Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PENN,Penn National Gaming,2021-03-22,2022-09-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PEP,PepsiCo,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PETM,PetSmart,2012-10-10,2015-03-12,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PFE,Pfizer,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PFG,Principal Financial Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PG,Procter & Gamble,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PGN,Progress Energy,2012-01-01,2012-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PGR,Progressive Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PH,Parker Hannifin,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PHM,PulteGroup,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PKG,Packaging Corporation of America,2017-07-26,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PLD,Prologis,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PLL,Pall Corporation,2012-01-01,2015-08-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PLTR,Palantir Technologies,2024-09-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PM,Philip Morris International,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PNC,PNC Financial Services,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PNR,Pentair,2012-10-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PNW,Pinnacle West Capital,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PODD,Insulet Corporation,2023-03-15,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+POM,Pepco Holdings,2012-01-01,2016-03-30,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+POOL,Pool Corporation,2020-10-07,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PPG,PPG Industries,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PPL,PPL Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PRGO,Perrigo,2012-01-01,2021-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PRU,Prudential Financial,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PSA,Public Storage,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PSKY,Paramount Skydance Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PSX,Phillips 66,2012-04-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PTC,PTC Inc.,2021-04-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PVH,PVH,2013-02-15,2022-09-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PWR,Quanta Services,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+PXD,Pioneer Natural Resources,2012-01-01,2024-05-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+PYPL,PayPal,2015-07-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+Q,Qnity Electronics,2017-08-29,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+QCOM,Qualcomm,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+QEP,QEP Resources,2012-01-01,2015-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+QRVO,Qorvo,2015-06-11,2024-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+R,Ryder System,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RAI,Reynolds American,2012-01-01,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RCL,Royal Caribbean Group,2014-12-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RDC,Rowan Companies,2012-01-01,2014-08-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RE,Everest Re,2017-06-19,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+REG,Regency Centers,2017-03-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+REGN,Regeneron Pharmaceuticals,2013-04-30,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RF,Regions Financial Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RHI,Robert Half,2012-01-01,2024-06-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RHT,Red Hat,2012-01-01,2019-07-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RIG,Transocean,2013-10-29,2017-07-26,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RJF,Raymond James Financial,2017-03-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RL,Ralph Lauren Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RMD,ResMed,2017-07-26,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ROK,Rockwell Automation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ROL,"Rollins, Inc.",2018-10-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ROP,Roper Technologies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ROST,Ross Stores,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RRC,Range Resources,2012-01-01,2018-06-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RRD,RR Donnelley,2012-01-01,2012-12-11,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RSG,Republic Services,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RTN,Raytheon Company,2012-01-01,2020-04-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+RTX,RTX Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+RVTY,Revvity,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+S,Sprint Nextel,2012-01-01,2013-07-08,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SAI,SAIC,2012-01-01,2013-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SATS,EchoStar,2026-03-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SBAC,SBA Communications,2017-09-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SBNY,Signature Bank,2021-12-20,2023-03-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SBUX,Starbucks,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SCG,SCANA,2012-01-01,2019-01-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SCHW,Charles Schwab Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SE,Spectra Energy,2012-01-01,2017-02-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SEDG,SolarEdge,2021-12-20,2023-12-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SEE,Sealed Air,2012-01-01,2023-12-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SHLD,Sears Holdings,2012-01-01,2012-09-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SHW,Sherwin-Williams,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SIAL,Sigma-Aldrich,2012-01-01,2015-11-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SIG,Signet Jewelers,2015-07-29,2018-03-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SIVB,SVB Financial Group,2018-03-19,2023-03-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SJM,J.M. Smucker Company (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SLB,Schlumberger,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SLE,Sara Lee Corporation,2012-01-01,2012-06-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SLG,SL Green Realty,2015-03-23,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SLM,SLM Corporation,2012-01-01,2014-05-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SMCI,Supermicro,2024-03-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SNA,Snap-on,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SNDK,Sandisk,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SNI,Scripps Networks Interactive,2012-01-01,2018-03-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SNPS,Synopsys,2017-03-16,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SO,Southern Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SOLS,Solstice Advanced Materials,2025-10-30,2025-12-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SOLV,Solventum,2024-04-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SPG,Simon Property Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SPGI,S&P Global,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SPLS,Staples,2012-01-01,2017-09-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SRCL,Stericycle,2012-01-01,2018-12-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SRE,Sempra,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+STE,Steris,2019-12-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+STI,SunTrust Banks,2012-01-01,2019-12-09,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STJ,St Jude Medical,2012-01-01,2017-01-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+STLD,Steel Dynamics,2022-12-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+STT,State Street Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+STX,Seagate Technology,2012-07-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+STZ,Constellation Brands,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SUN,SunAmerica,2012-01-01,2012-10-10,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SVU,Supervalu,2012-01-01,2012-04-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SW,Smurfit Westrock,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SWK,Stanley Black & Decker,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SWKS,Skyworks Solutions,2015-03-12,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SWN,Southwestern Energy,2012-01-01,2017-04-04,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SWY,Safeway,2012-01-01,2015-01-27,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+SYF,Synchrony Financial,2015-11-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SYK,Stryker Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+SYY,Sysco,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+T,AT&T,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TAP,Molson Coors Beverage Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TDC,Teradata,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TDG,TransDigm Group,2016-06-03,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TDY,Teledyne Technologies,2020-06-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TE,TECO Energy,2012-01-01,2016-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TECH,Bio-Techne,2021-08-30,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TEG,Integrys Energy Group,2012-01-01,2015-07-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TEL,TE Connectivity,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TER,Teradyne,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TFC,Truist Financial,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TFX,Teleflex,2019-01-18,2025-03-24,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TGNA,Tegna,2012-01-01,2017-06-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TGT,Target Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+THC,Tenet Healthcare,2012-01-01,2016-04-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TIE,Titanium Metals,2012-01-01,2012-12-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TIF,Tiffany & Co,2012-01-01,2021-01-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TJX,TJX Companies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TKO,TKO Group Holdings,2025-03-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TMO,Thermo Fisher Scientific,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TMUS,T-Mobile US,2019-07-15,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TPL,Texas Pacific Land Corporation,2024-11-26,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TPR,"Tapestry, Inc.",2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TRGP,Targa Resources,2022-10-12,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TRIP,TripAdvisor,2012-01-01,2019-12-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TRMB,Trimble Inc.,2021-01-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TROW,T. Rowe Price,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TRV,Travelers Companies (The),2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TSCO,Tractor Supply,2014-01-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TSLA,"Tesla, Inc.",2020-12-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TSN,Tyson Foods,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TSS,TSYS,2012-01-01,2019-09-23,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TT,Trane Technologies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TTD,Trade Desk (The),2025-07-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TTWO,Take-Two Interactive,2018-03-19,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TWC,Time Warner Cable,2012-01-01,2016-05-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TWTR,Twitter,2018-06-07,2022-11-01,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TWX,Time Warner,2012-01-01,2018-06-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TXN,Texas Instruments,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TXT,Textron,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+TYC,Tyco International,2012-01-01,2016-09-06,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+TYL,Tyler Technologies,2020-06-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UA,Under Armour,2014-05-01,2022-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UAA,Under Armour (Class A),2012-01-01,2022-06-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UAL,United Airlines Holdings,2015-09-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UBER,Uber,2023-12-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UDR,"UDR, Inc.",2016-03-07,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UHS,Universal Health Services,2014-09-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ULTA,Ulta Beauty,2016-04-18,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UNH,UnitedHealth Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UNM,Unum,2012-01-01,2021-09-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+UNP,Union Pacific Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+UPS,United Parcel Service,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+URBN,Urban Outfitters,2012-01-01,2017-03-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+URI,United Rentals,2014-09-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+USB,U.S. Bancorp,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+V,Visa Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VAR,Varian Medical Systems,2012-01-01,2021-04-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VEEV,Veeva Systems,2026-05-07,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VFC,VF Corporation,2012-01-01,2024-04-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VIAB,Viacom,2012-01-01,2019-12-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VICI,Vici Properties,2022-06-08,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VLO,Valero Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VLTO,Veralto,2023-10-02,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VMC,Vulcan Materials Company,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VNO,Vornado Realty Trust,2012-01-01,2023-01-05,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VNT,Vontier,2020-10-09,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+VRSK,Verisk Analytics,2015-10-07,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VRSN,Verisign,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VRT,Vertiv,2026-03-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VRTX,Vertex Pharmaceuticals,2013-09-20,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VST,Vistra Corp.,2024-05-08,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VTR,Ventas,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VTRS,Viatris,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+VZ,Verizon,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WAB,Wabtec,2019-02-27,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WAT,Waters Corporation,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WBA,Walgreens Boots Alliance,2012-01-01,2025-08-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WBD,Warner Bros. Discovery,2022-04-11,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WCG,WellCare,2018-09-14,2020-01-28,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WDAY,"Workday, Inc.",2024-12-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WDC,Western Digital,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WEC,WEC Energy Group,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WELL,Welltower,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WFC,Wells Fargo,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WFM,Whole Foods Market,2012-01-01,2017-08-29,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WHR,Whirlpool Corporation,2012-01-01,2024-03-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WIN,Windstream Communications,2012-01-01,2015-04-07,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WLTW,Willis Towers Watson,2016-01-05,,True,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WM,Waste Management,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WMB,Williams Companies,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WMT,Walmart,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WPX,WPX Energy,2012-01-01,2014-03-21,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WRB,W. R. Berkley Corporation,2019-12-05,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WSM,"Williams-Sonoma, Inc.",2025-03-24,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WST,West Pharmaceutical Services,2020-05-22,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WTW,Willis Towers Watson,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WU,Western Union,2012-01-01,2021-12-20,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WY,Weyerhaeuser,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+WYN,Wyndham Worldwide,2012-01-01,2018-05-31,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+WYNN,Wynn Resorts,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+X,United States Steel,2012-01-01,2014-07-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XEC,Cimarex Energy,2014-06-20,2020-03-02,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XEL,Xcel Energy,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+XL,XL Group,2012-01-01,2018-09-14,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XLNX,Xilinx,2012-01-01,2022-02-15,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XOM,ExxonMobil,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+XRAY,Dentsply Sirona,2012-01-01,2024-04-03,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XRX,Xerox,2012-01-01,2021-03-22,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+XYL,Xylem Inc.,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+XYZ,"Block, Inc.",2025-07-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+YHOO,Yahoo!,2012-01-01,2017-06-19,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+YUM,Yum! Brands,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ZBH,Zimmer Biomet,2012-01-01,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ZBRA,Zebra Technologies,2019-12-23,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv
+ZION,Zions Bancorporation,2012-01-01,2024-03-18,False,wikipedia_sp500_reconstructed,wikipedia_sp500_reconstructed
+ZTS,Zoetis,2013-06-21,2026-05-28,True,wikipedia_sp500_reconstructed,cached_sp500_fresh:universe_snapshots\sp500_latest.csv

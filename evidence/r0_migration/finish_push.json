@@ -1,0 +1,21 @@
+{
+  "actions": [
+    {
+      "prevent_sleep": "on"
+    },
+    {
+      "watch_loop": {
+        "ok": true,
+        "pid": 27412,
+        "started": true
+      }
+    }
+  ],
+  "at_utc": "2026-06-04T14:52:31+00:00",
+  "returns": false,
+  "stall": {
+    "reason": "batch_not_active",
+    "stalled": false
+  },
+  "verdict": "HOLD_LIVE_MATRIX"
+}

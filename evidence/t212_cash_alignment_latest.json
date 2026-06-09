@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "stored_cash_eur": 444.2,
+  "cash_breakdown": {
+    "available_to_trade_eur": 444.2,
+    "reserved_for_orders_eur": 0.0,
+    "in_pies_eur": 0.0,
+    "total_account_value_eur": 492.4,
+    "invested_current_value_eur": 48.2,
+    "currency": "EUR",
+    "source": "account_summary.cash.availableToTrade",
+    "planning_cash_eur": 444.2
+  },
+  "alignment": {
+    "ok": true,
+    "cash_eur": 444.2,
+    "available_to_trade_eur": 444.2,
+    "source": "account_summary.cash.availableToTrade",
+    "total_account_value_eur": 492.4,
+    "reserved_for_orders_eur": 0.0,
+    "in_pies_eur": 0.0
+  },
+  "planning_uses_total_value": false,
+  "note_de": "Strategie und Orders nutzen nur availableToTrade. reservedForOrders und inPies werden nicht eingeplant."
+}

@@ -1,0 +1,52 @@
+{
+  "activated_at_utc": "2026-06-07T18:49:15+00:00",
+  "config": {
+    "chunk_size": 25,
+    "detail_de": "Verteilung aktiv: Path-Sim-Chunks + mom_1-Prep an Worker. König orchestriert, merge + Seal lokal.",
+    "enabled": true,
+    "enqueue_tasks": true,
+    "estimated_total_steps": 1867,
+    "min_worker_bundle": "full",
+    "mode": "execute",
+    "prefetch_chunks": 16,
+    "schema_version": 1,
+    "worker_requires": [
+      "h1"
+    ]
+  },
+  "dispatch": {
+    "chunks_pending_worker": 76,
+    "chunks_total": 152,
+    "headline_de": "H1-Dispatch: 76 Chunks für Worker",
+    "workers_online": 1
+  },
+  "headline_de": "Verteilung aktiv — 51 Jobs in Queue (51 Tasks, Worker online: 1)",
+  "log": [],
+  "naive_prep_sync_log": [],
+  "next_step_de": "Worker starten (preview-export-lite / universal_preview_worker) · König: /h1-benchmark --wait nach Prep-Merge",
+  "ok": true,
+  "path_sync_log": [],
+  "queue_active_total": 0,
+  "queue_pending_by_kind": {
+    "backend_preview": 1,
+    "compute_pulse": 4,
+    "h1_naive_prep_chunk": 11,
+    "h1_path_chunk": 32,
+    "hub_verify": 2,
+    "snapshot_refresh": 1
+  },
+  "queue_pending_total": 51,
+  "schema_version": 1,
+  "utilization": {
+    "active_cpus": 0,
+    "active_tasks": 0,
+    "cpu_seconds_total": 0.0,
+    "headline_de": "Keine Worker",
+    "measurement": "cpu_seconds",
+    "pending_tasks": 51,
+    "tasks_completed_ok": 0,
+    "total_cpus": 0,
+    "utilization_pct": 0,
+    "workers_online": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "killed": [
+        5588,
+        5908,
+        9596,
+        35056
+      ]
+    }
+  ],
+  "after": {
+    "matrix": 0,
+    "workers": {
+      "method": "cim_validation_runs",
+      "worker_count": 4
+    }
+  }
+}

@@ -1,0 +1,558 @@
+{
+  "entries": [
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/phases/G0R3/CODEX_G0R3_PREFLIGHT.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "41a4ecab7a30ef1cd52e91b7a7a34995ad54bd533c5a85c5295744b6df53a0ce",
+      "zip_path": "docs/phases/G0R3/CODEX_G0R3_PREFLIGHT.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/phases/G0R3/CODEX_G0R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "83943dcb5a6bebd20486db63d5501e176f6c3a69349c4919b46f77080ef6ca98",
+      "zip_path": "docs/phases/G0R3/CODEX_G0R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/integrity/session_logs/G0R3/CODEX_G0R3_GIT_STATUS.txt",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "648f97b74db3626d9a57b6bcedf4b0df9b9f011f78ff7530f1b460ccdeab7b3c",
+      "zip_path": "docs/integrity/session_logs/G0R3/CODEX_G0R3_GIT_STATUS.txt"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/phases/G0R3/CODEX_G0R3_PACKAGE_INPUT_MANIFEST.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "523f433f6889c90798c50232b163b86246708bac85a515980711e3deb377dc0c",
+      "zip_path": "docs/phases/G0R3/CODEX_G0R3_PACKAGE_INPUT_MANIFEST.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/phases/G0R3/CODEX_G0R3_V5R_BASELINE_COMPARISON.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "b5e74dd07cddebe62c356d7101e70f6b5059f0f7d3aa402719f25d72a2119274",
+      "zip_path": "docs/phases/G0R3/CODEX_G0R3_V5R_BASELINE_COMPARISON.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_BEFORE.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "0cc012de0d87369695a45a33a0bc99afface7cff06e8caf73f0e680112b7ba55",
+      "zip_path": "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_BEFORE.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_AFTER.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "0cc012de0d87369695a45a33a0bc99afface7cff06e8caf73f0e680112b7ba55",
+      "zip_path": "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_AFTER.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/integrity/session_logs/G0R3/CODEX_G0R3_TEST_OUTPUT.txt",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "657c32b8765569e24c30779bb655877d8a7abe9a52b0aa1421d7c88112c2efa1",
+      "zip_path": "docs/integrity/session_logs/G0R3/CODEX_G0R3_TEST_OUTPUT.txt"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "G0R3-CHANGE_MANIFEST.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "ae2950ba3345fe68dc54c102702c0466b6641a00e980c19385484648d88c3c2f",
+      "zip_path": "G0R3-CHANGE_MANIFEST.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/review_snapshot/g0r_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "941c4691fb9d1c2826dd4c3e7b987eb25f4f68ebb8c67d1f505ce21f5570cfa4",
+      "zip_path": "control/review_snapshot/g0r_decision_cockpit_snapshot.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/review_snapshot/g0r2_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "f5ae8b5beb5d95db040f4067e81dba4fac2ffb0c6b3441080a53fc74fe03140f",
+      "zip_path": "control/review_snapshot/g0r2_decision_cockpit_snapshot.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/review_snapshot/g0r3_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "f086a26e34971ed16587789c1979b8fe11c113fcc6b904ae46434c24c892dd15",
+      "zip_path": "control/review_snapshot/g0r3_decision_cockpit_snapshot.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/review_snapshot/v5r_decision_cockpit_snapshot.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "4055d919b70dbf2340ed8e487679234b2aee2d93c5ee8f9624e0f3816e0db7d7",
+      "zip_path": "control/review_snapshot/v5r_decision_cockpit_snapshot.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "DEVELOPMENT_PIPELINE.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "cdde61834d70bb491e81fd10b99dfaf796713c5545998541d36de1c7da868674",
+      "zip_path": "DEVELOPMENT_PIPELINE.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "DEVELOPMENT_PIPELINE.yaml",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "032b428673cc5e67ea02a3979712287ce56ab2e4ec355aaae54d376692b63e6a",
+      "zip_path": "DEVELOPMENT_PIPELINE.yaml"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/auto_promotion_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "e2901234d1f4bceb3606a55095da804c6baacc1a454c3342f394626dbff100e7",
+      "zip_path": "control/auto_promotion_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/cost_stress_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "bbe231ac7f5e375bf4fa498ac827d22ddfa816d61e98c06008160cec341a9404",
+      "zip_path": "control/evidence/cost_stress_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/current_evidence_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "c51237d27c4ca56196fc2bb52346a924b7a94ee28be36d38ddf944abd60c979f",
+      "zip_path": "control/evidence/current_evidence_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/forward_monitoring_data_requirements.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "38ff1ae40d05858d2d98621ac9405c658e88b9d7add102ae99eabf6a5dde527d",
+      "zip_path": "control/evidence/forward_monitoring_data_requirements.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/forward_monitoring_readiness_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "538fab6de3b6333d74846819f345b632b6043ba9101074fcbef0c1dc2167dc3b",
+      "zip_path": "control/evidence/forward_monitoring_readiness_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/multiple_testing_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "91a4c04151e862d3e36e567f2b98391f353e7621207666f3da0181ad5a01ffe2",
+      "zip_path": "control/evidence/multiple_testing_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/paper_monitor_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "5290a3ad9ad52f8ecacef81214d96095efaaec995519a6bdad6ecb87cb09335d",
+      "zip_path": "control/evidence/paper_monitor_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/robustness_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "4c219ab56218ea6ec68c454a6c57fad3045fd70b4bba0282978745805af78e45",
+      "zip_path": "control/evidence/robustness_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/evidence/shadow_monitor_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "fb73200c5834713d2e9a9c09791b164778b0d95348f1dcd20113cfed15e59764",
+      "zip_path": "control/evidence/shadow_monitor_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "6c385efecb43c303726ecf4a5baff4dd779a425417f5012185ea82bfb73430b2",
+      "zip_path": "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/last_known_good_state.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "f67b37eba2807702f1ffbada01e0f6153046d66a23136e0dc307f01fa4ff9bcc",
+      "zip_path": "control/last_known_good_state.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/p9_shadow_paper_prep_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "d47657dcfa5e478c51453809eff7e9386eebd4c3f47e2429c1e27f7704937636",
+      "zip_path": "control/p9_shadow_paper_prep_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/promotion_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "14b8f53f9e95ec03234cbfdf60c9a437db4a4fb3c33dc9fd3146e199901b693a",
+      "zip_path": "control/promotion_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "model_output_sp500_pit_t212/background_research_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "2401c9cd2340d186c98eced96356315cd0c03dab41607c94c60c1df9b5a53d70",
+      "zip_path": "model_output_sp500_pit_t212/background_research_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "model_output_sp500_pit_t212/latest_validated_run.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "e5a821da3cae03952cc0bbbad9c43d9f813fa60fb48d58d60fe6947314a9a58d",
+      "zip_path": "model_output_sp500_pit_t212/latest_validated_run.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "promotion_gate_config.yaml",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e",
+      "zip_path": "promotion_gate_config.yaml"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/authorization/authorization_source_policy.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "a53d37001f56950a3448d5f07621f35e76731ad59c085a109728da26d5cdb740",
+      "zip_path": "control/authorization/authorization_source_policy.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/authorization/current_authorization_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "620347960a7a8a4567e92a0044a2673ec864272f52b35839518c5629d6e5554c",
+      "zip_path": "control/authorization/current_authorization_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/authorization/champion_lineage_status.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "ed85d41676c9bb1e45f51f2f084181241bc31d58db282d07fb5a1f4b267ce335",
+      "zip_path": "control/authorization/champion_lineage_status.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/vision_automation/automation_state.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "d95411cf2a068f705ac41dacdd4b91c711e0784d52d7d78ae9db3f59c1685a38",
+      "zip_path": "control/vision_automation/automation_state.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/vision_automation/phase_catalog.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "16e8814b19e765e086936ccd4e7c829b890c245d5956437787037d1d8aa25684",
+      "zip_path": "control/vision_automation/phase_catalog.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/vision_automation/review_registry/review_registry.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "9b09307c862f11f8ea103811110d653605bca1da4bfc3b3db65a480635fa0efe",
+      "zip_path": "control/vision_automation/review_registry/review_registry.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/vision_automation/transition_log.jsonl",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "ea3a7feb038bb3beba72b2ff0750dd88749c5664466cb2b1c6ab16d9ae822cd4",
+      "zip_path": "control/vision_automation/transition_log.jsonl"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/system_health.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "e6aa5e4cb1ba1083551259adaa7f09922065897c9702d5bce0c3d4b09d757baa",
+      "zip_path": "control/system_health.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "VISION_PROGRESS.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "7a712716eb87c4d89e2c4295b6844b492c6a6943f4816d8526f9d4470d637cd9",
+      "zip_path": "VISION_PROGRESS.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": ".cursor/hooks.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "21d21d4fab45e66f97501a390d866f0b6c801cfd8f2b6656a252d1a50b692827",
+      "zip_path": ".cursor/hooks.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "zip_path": "EXTERNAL_REVIEW_APPROVAL_FINAL.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "V5R_EXTERNAL_ACCEPTANCE_REPORT.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "08a18385f8e6498b0c63437c372ec4d43980e70e8ad32e5ca6220e9a30b1c97f",
+      "zip_path": "V5R_EXTERNAL_ACCEPTANCE_REPORT.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "291b1d75d0774dff20db4cd2efc113239254adfcd3a0193b7a5d1bb4180abd17",
+      "zip_path": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G0_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "93780d13c7803053b29c468b97fae8d45d3eca3c345d3839f47c070510e82cd8",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G0_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G1_NOT_APPROVED.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "fa903323562a830816c1cf236462b2104f2f447b4e68db04fc0d1e508b8759b9",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_DECISION_G1_NOT_APPROVED.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_SUMMARY_G0_G1.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "9659c55f2ab80f834c9d7ce22707f7169b14309e85c801528d8eae976751650a",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_SUMMARY_G0_G1.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_OBSERVED_HASHES_G0_G1.sha256",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "ce7308cbd9522db9b70b8b191d6b6a4673e21023584ed9a63adc50d39db082cf",
+      "zip_path": "control/external_reviews/g0_g1_rejection/EXTERNAL_REVIEW_OBSERVED_HASHES_G0_G1.sha256"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_DECISION_G0R_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "1db90a39c646dd4b47cc823d6620e11e3ce34f079160d2afabe09a9f00bb2cc0",
+      "zip_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_DECISION_G0R_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R.sha256",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "d0ff3869f2519ade06717c6f7eea03d3c60e0a005a9ee4a8ad34bfa5bbd70175",
+      "zip_path": "control/external_reviews/g0r_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R.sha256"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_DECISION_G0R2_REMEDIATION_REQUIRED.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "676bde1933a828e7bd4353080d53889b555c523d5b0456ac1f55849317d510c5",
+      "zip_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_DECISION_G0R2_REMEDIATION_REQUIRED.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R2.sha256",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "2f1a2b13a6e8b9ff34152daa49c57c8ff3fa1450d23b5c70a6c9b0abd7968860",
+      "zip_path": "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R2.sha256"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "NEXT_CURSOR_PROMPT.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "4679bbbdd247a4fe5c9477de4269311b70f1ba11097413f26e3bb453785bf15e",
+      "zip_path": "NEXT_CURSOR_PROMPT.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "EXTERNAL_REVIEW_APPROVAL_G0R3_TEMPLATE.md",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "17e1f15e45a96310f07b15ed3ca9973232b78aa312ff8791d0423eb1230727d0",
+      "zip_path": "EXTERNAL_REVIEW_APPROVAL_G0R3_TEMPLATE.md"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "tools/complete_g0r3_submission.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "621fb135c76ced8f54e42331c274f9efbdd109c9b3aba595c5432eadcabb64ca",
+      "zip_path": "tools/complete_g0r3_submission.py"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "tests/test_g0r3_submission_integrity.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "971fe5c2b2dd73fb5f70674ec1fe181b7192d0d8fa699bdb88b73311ec11950f",
+      "zip_path": "tests/test_g0r3_submission_integrity.py"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "tests/test_authorization_conflict_fail_closed.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "f695ed67fd98f302085060217647a13fb29bc186e27253074918b2d57dddecdf",
+      "zip_path": "tests/test_authorization_conflict_fail_closed.py"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "tests/test_g0r_remediation.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "c6227edb77d2942279846ebc790881fc374e9e8c6544204b58817eb1cb78b41e",
+      "zip_path": "tests/test_g0r_remediation.py"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "tests/test_g0r2_remediation.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "9a0ceddd8ed5b7359778c2293947fdd8dfa77a4009f21c903b457e8e35cfda47",
+      "zip_path": "tests/test_g0r2_remediation.py"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "aa_decision_cockpit_readonly_snapshot.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "cf3f833ff9d7d84fd9d63a0c3dceb3dc7d03d9afd41b9c022fef29d858e23afc",
+      "zip_path": "aa_decision_cockpit_readonly_snapshot.py"
+    },
+    {
+      "git_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+      "head_byte_match_verified": true,
+      "included_as": "COMMITTED_INPUT",
+      "repository_path": "aa_doc_paths.py",
+      "required_for_review": true,
+      "sha256_of_included_bytes": "ffc51feb697398a00109af0e8220993b83ef6ebb07aead6f6a4daaca497c30e9",
+      "zip_path": "aa_doc_paths.py"
+    }
+  ],
+  "final_input_commit": "__G0R3_FINAL_INPUT_COMMIT__",
+  "generated_at_utc": "2026-05-31T22:04:30+00:00",
+  "packaging_method": "git_show_committed_bytes",
+  "phase": "G0R3_FINAL_COMMIT_BOUND_PACKAGE_AND_MANIFEST_REMEDIATION",
+  "schema_version": 1
+}

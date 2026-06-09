@@ -1,0 +1,65 @@
+{
+  "all_ok": true,
+  "design_ref": "control/r3_surface_identity.json",
+  "fail_count": 0,
+  "headline_de": "R3 Exec-Spiegel — einzige operative Oberfläche (EXEC_MIRROR_ONLY)",
+  "next_de": "bash tools/king_ops.sh gui-rebuild",
+  "ok_count": 5,
+  "schema_version": 1,
+  "surfaces": [
+    {
+      "detail_de": "OK",
+      "id": "hub_r3",
+      "issues_de": [],
+      "label_de": "R3 Exec-Spiegel",
+      "ok": true,
+      "path": "/r3",
+      "tier": "hub"
+    },
+    {
+      "detail_de": "OK",
+      "id": "hub_desktop",
+      "issues_de": [],
+      "label_de": "R3 Spiegel (/desktop)",
+      "ok": true,
+      "path": "/desktop",
+      "tier": "hub"
+    },
+    {
+      "detail_de": "OK",
+      "id": "hub_login",
+      "issues_de": [],
+      "label_de": "Anmeldung",
+      "ok": true,
+      "path": "/login",
+      "tier": "hub"
+    },
+    {
+      "detail_de": "OK",
+      "id": "qt_cockpit",
+      "issues_de": [],
+      "label_de": "R3 Cockpit-Fenster",
+      "ok": true,
+      "path": null,
+      "tier": "native"
+    },
+    {
+      "detail_de": "OK",
+      "id": "api_mirror",
+      "issues_de": [],
+      "label_de": "Mirror-JSON",
+      "ok": true,
+      "path": "/api/r3/mirror",
+      "tier": "api"
+    }
+  ],
+  "tests_de": [
+    "tests/test_r3_exec_mirror.py",
+    "tests/test_preview_hub.py",
+    "tests/test_desktop_shell_cache.py",
+    "tests/test_r3_crash_guard.py",
+    "tests/test_local_apps_registry.py"
+  ],
+  "total": 5,
+  "updated_at_utc": "2026-06-08T07:37:14+00:00"
+}

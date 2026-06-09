@@ -1,0 +1,148 @@
+{
+  "active_interface": "ollama_local",
+  "checked_at_utc": "2026-06-09T21:47:20+00:00",
+  "conversation_preserved": true,
+  "execution_mode": null,
+  "fallback_armed": true,
+  "fallback_interface": "ollama_local",
+  "foundation": {
+    "approved_at_utc": "2026-06-07T00:24:36+00:00",
+    "approved_by": "user",
+    "fallback_interface": "ollama_local",
+    "fallback_label_de": "Entfaltungsraum — alpha-model-agent",
+    "forbidden_de": [
+      "Cloud-Composer als einziger Hauptkanal",
+      "Linux-Hardware-Kernel ersetzen",
+      "Externe Timer ohne Operator-Mandat",
+      "Paralleler IDE-Klon als Steuerungsschicht"
+    ],
+    "primary_cli": "alpha-model-agent",
+    "primary_interface": "agent_chamber",
+    "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+    "schema_version": 2,
+    "status": "AUTHORITATIVE",
+    "succession_rule_de": "Entfaltungsraum (alpha-model-agent) übernimmt alle Cursor-Kapazitäten — Cockpit :17890 ist Runtime.",
+    "workshop_interface": "retired",
+    "workshop_label_de": "Alpha Model — Werkstatt",
+    "workshop_surface": null
+  },
+  "headline_de": "Alpha Model KI lokal — Ollama übernimmt Steuerung",
+  "model_home": "local_machine",
+  "multitask_mode": null,
+  "ok": true,
+  "ollama": {
+    "base_url": "http://127.0.0.1:11434",
+    "default_model": "qwen2.5-coder:32b",
+    "gpu_tier_de": "ideal_32b",
+    "installed_models": [
+      "qwen2.5-coder:7b",
+      "qwen2.5:14b",
+      "qwen2.5-coder:32b",
+      "qwen2.5:7b"
+    ],
+    "max_tier_ready": true,
+    "ollama_ok": true,
+    "pull_models_missing": [],
+    "ready": true,
+    "resolved_model": "qwen2.5-coder:32b",
+    "role_models": {
+      "build_kernel": "qwen2.5-coder:32b",
+      "chat": "qwen2.5-coder:32b",
+      "kombi_synthesis": "qwen2.5-coder:32b",
+      "trading_local": "qwen2.5-coder:32b"
+    },
+    "role_status": {
+      "build": {
+        "installed": true,
+        "model": "qwen2.5-coder:32b",
+        "num_ctx": 8192,
+        "preferred": "qwen2.5-coder:32b"
+      },
+      "chat": {
+        "installed": true,
+        "model": "qwen2.5-coder:32b",
+        "num_ctx": 8192,
+        "preferred": "qwen2.5-coder:32b"
+      },
+      "trading_local": {
+        "installed": true,
+        "model": "qwen2.5-coder:32b",
+        "num_ctx": 8192,
+        "preferred": "qwen2.5-coder:32b"
+      }
+    },
+    "stage": 3
+  },
+  "primary_interface": "agent_chamber",
+  "r3_kernel_roles": {
+    "checked_at_utc": "2026-06-09T21:47:20+00:00",
+    "cursor": {
+      "active": false,
+      "headline_de": "Cursor — optional; R3-Kern läuft lokal",
+      "not_kernel_de": "Vasall — ersetzt nicht den König.",
+      "role_de": "Vasall des Königs: Code/Evidence auf Anfrage, keine H1-Pipeline",
+      "status_de": "König (alpha-model-agent) führt /h1-benchmark /h1-watch /könig-puls selbst",
+      "title_de": "Cursor — Vasall"
+    },
+    "ok": false,
+    "r3_kernel": {
+      "components": [
+        {
+          "id": "agent_chamber",
+          "label_de": "Entfaltungsraum",
+          "ok": false,
+          "role_de": "alpha-model-agent — Auto lokal, Kill-Handoff"
+        },
+        {
+          "id": "hub",
+          "label_de": "Hub",
+          "ok": true,
+          "role_de": "Cockpit :17890/desktop — System-Oberfläche"
+        },
+        {
+          "id": "evidence",
+          "label_de": "Evidence",
+          "ok": true,
+          "role_de": "Wahrheit, Spur, Läufe im Arbeitsbaum"
+        },
+        {
+          "id": "build_kernel",
+          "label_de": "Bau-Kernel",
+          "ok": true,
+          "role_de": "/bau und /beitrag — Umsetzung mit Tests"
+        },
+        {
+          "id": "ollama",
+          "label_de": "Ollama",
+          "ok": true,
+          "role_de": "Motor — Entfaltungsraum alpha-model-agent"
+        }
+      ],
+      "definition_de": "Hub + Evidence + Ollama auf dem Desktop — Sprache lokal über R3 KI.",
+      "headline_de": "R3 Kern — Bau-Kernel + Hub + Evidence",
+      "not_part_of_kernel_de": "Entfaltungsraum ist der Sprachkanal — Cockpit ist Runtime.",
+      "ok": false,
+      "title_de": "R3 Kern"
+    },
+    "schema_version": 1,
+    "separation_de": "Bau-Kernel ist der Kernel: /bau <Aufgabe> — Agent wie Cursor, lokal über Ollama."
+  },
+  "schema_version": 2,
+  "workshop_label_de": "Alpha Model — Werkstatt",
+  "workshop_policy": {
+    "archive_de": "Gespräch unter ~/.local/share/r3-os/conversation/ — nicht löschen",
+    "legacy_cursor_layer_removed_at_utc": "2026-06-07T02:30:00+00:00",
+    "preserve_commands": [
+      "python3 tools/ai_kernel.py r3-preserve",
+      "python3 tools/ai_kernel.py agent-home"
+    ],
+    "product_name": "Alpha Model",
+    "replacement_de": "Entfaltungsraum: alpha-model-agent · Runtime: http://127.0.0.1:17890/desktop",
+    "retired_at_utc": "2026-06-07T03:30:00+00:00",
+    "retired_by_de": "Operator — Cursor/Werkstatt entfernt, Entfaltungsraum aktiv",
+    "schema_version": 3,
+    "status": "RETIRED",
+    "workshop_removed_at_utc": "2026-06-07T03:30:00+00:00"
+  },
+  "workshop_session_active": false
+}

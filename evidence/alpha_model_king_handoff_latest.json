@@ -1,0 +1,33 @@
+{
+  "checks": [],
+  "commands_de": [
+    "/könig-puls — H1/Benchmark/Seal autonom starten",
+    "/h1-benchmark · /h1-watch — Seal-Pipeline",
+    "/diene — Ressourcen + Handoff refresh",
+    "/könig — dieser versiegelte Stand",
+    "/cursor anfrage — Vasall (Cursor) beauftragen",
+    "/learn /evolve /bau — nach Seal"
+  ],
+  "facts_de": [
+    "König-Gate: 7/7 — Chamber, Tier, Ollama, Transfer OK",
+    "Chat: 128 Schritte · Build: 128 Schritte",
+    "Modelle: Chat qwen2.5-coder:32b · Bau qwen2.5-coder:32b",
+    "Berater-Bridge: aktiv (env)",
+    "Cursor-Bridge: ACTIVE — evidence/alpha_model_cursor_king_bridge_latest.json",
+    "Kreis-Score: 1/6 grün (17%) — Engpass: Beobachten: Lernen OK · Konto — · Kurse —",
+    "H1: COMPLETE — ",
+    "König-Puls: König-Orchestrator: H1 COMPLETE — Seal optional (mom_1 informativ)",
+    "Nächster König-Schritt: /ready — H1 COMPLETE; Seal optional · /predict",
+    "Cursor = Vasall — H1/Benchmark/Seal führt der König, nicht Cursor",
+    "Kein Direkt-Chat-Bypass im Chamber — nur König-Chat-Agent mit Tools",
+    "Kernel: chamber_kernel_allowlist inkl. h1-benchmark · king-pulse",
+    "König-Modus 128 Schritte · read-first Gate aktiv",
+    "Architektur: König→Ollama · Berater keyless · Cursor=Vasall (Evidence-Bridge)"
+  ],
+  "headline_de": "Verifizierter Stand — König muss Cursor-Schrott nicht einzeln prüfen",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-08T13:50:39+00:00",
+  "sealed_by_de": "alpha_model_king_handoff",
+  "status": "AUTHORITATIVE",
+  "trust_note_de": "Dieses Dokument basiert auf king_control_status + bridge_status + tier_limits — nicht auf Cursor-Prosa. Bei Widerspruch gilt Evidence hier."
+}

@@ -1,0 +1,13 @@
+{
+  "artefact_folder_found": true,
+  "p17_review_import_status": "VERIFIED_COMPLETE",
+  "package_sha256": "6a5d75c6698c4e2c49f9efb3075e128a42037b1e46604aeb6984f1bd6b4f9ff2",
+  "package_zip_found": true,
+  "reports_found": [
+    "CURSOR_P17_EXECUTION_REPORT.md",
+    "CURSOR_P17_HASH_MANIFEST.json",
+    "CURSOR_P17_OBJECTIVE_TECHNICAL_ASSESSMENT.md",
+    "CURSOR_P17_WINDOWS_RELEASE_READINESS_REPORT.md"
+  ],
+  "sidecar_verified": true
+}

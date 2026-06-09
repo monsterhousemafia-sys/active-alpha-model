@@ -1,0 +1,98 @@
+{
+  "behavioral_research_status": "PASS",
+  "challenger_results": [
+    {
+      "comparison": {
+        "baseline": "R3_w075_q065_noexit",
+        "champion_sharpe": 0.9228008769606217,
+        "note": "Daily champion reference — no behavioral overlay."
+      },
+      "enabled": false,
+      "feature_groups": [],
+      "note": "Validated champion daily reference without behavioral overlay.",
+      "production_active": false,
+      "status": "RESEARCH_ONLY",
+      "variant_id": "B0_DAILY_REFERENCE"
+    },
+    {
+      "comparison": {
+        "baseline": "R3_w075_q065_noexit",
+        "note": "Execution scaffold only; features not applied to alpha."
+      },
+      "enabled": false,
+      "feature_groups": [],
+      "note": "Execution-timing scaffold; no alpha overlay in P6.",
+      "production_active": false,
+      "status": "RESEARCH_ONLY",
+      "variant_id": "B1_REALTIME_EXECUTION_ONLY"
+    },
+    {
+      "comparison": {
+        "baseline": "R3_w075_q065_noexit",
+        "champion_sharpe": 0.9228008769606217,
+        "feature_means": {
+          "close_vs_vwap": 0.0014165066270983573,
+          "intraday_realized_volatility": 0.0012229111450711525,
+          "relative_intraday_return_vs_spy": 0.0,
+          "relative_volume": 6.0,
+          "spread_bps": 1.6631344324596697,
+          "volume_shock": -0.25649458802128794
+        },
+        "m1_control_variant": "M1_MOM_BLEND_MATCHED_CONTROLS",
+        "m1_sharpe": 0.983392657770786,
+        "note": "Research-only overlay; not promoted."
+      },
+      "enabled": false,
+      "feature_groups": [
+        "attention",
+        "continuation"
+      ],
+      "note": "Attention + continuation intraday features (research only).",
+      "production_active": false,
+      "status": "RESEARCH_ONLY",
+      "variant_id": "B2_ATTENTION_CONTINUATION"
+    },
+    {
+      "comparison": {
+        "baseline": "R3_w075_q065_noexit",
+        "champion_sharpe": 0.9228008769606217,
+        "feature_means": {
+          "close_vs_vwap": 0.0014165066270983573,
+          "intraday_realized_volatility": 0.0012229111450711525,
+          "relative_intraday_return_vs_spy": 0.0,
+          "relative_volume": 6.0,
+          "spread_bps": 1.6631344324596697,
+          "volume_shock": -0.25649458802128794
+        },
+        "m1_control_variant": "M1_MOM_BLEND_MATCHED_CONTROLS",
+        "m1_sharpe": 0.983392657770786,
+        "note": "Research-only overlay; not promoted."
+      },
+      "enabled": false,
+      "feature_groups": [
+        "liquidity_stress"
+      ],
+      "note": "Liquidity stress intraday features (research only).",
+      "production_active": false,
+      "status": "RESEARCH_ONLY",
+      "variant_id": "B3_LIQUIDITY_STRESS"
+    }
+  ],
+  "champion_unchanged": true,
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "data_quality_status": "PASS",
+  "errors": [],
+  "feature_groups_available": [
+    "attention",
+    "continuation",
+    "liquidity_stress"
+  ],
+  "feature_row_count": 2,
+  "m1_control_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "production_active": false,
+  "session_dates": [
+    "2020-01-02"
+  ],
+  "signal_earliest_use_rule": "next_trading_day_after_session_close",
+  "updated_at_utc": "2026-05-30T18:05:01+00:00"
+}

@@ -1,0 +1,80 @@
+{
+  "agent_cli": "alpha-model-agent",
+  "component_id": "king_32b_forschung",
+  "forschungszweig_branch_id": "forschungszweig_finanzierung",
+  "forschungszweig_title_de": "Projekt unterstützen",
+  "growth": {
+    "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
+    "model": "qwen2.5-coder:32b",
+    "next_growth_de": [
+      "python3 tools/ai_kernel.py evolve",
+      "H1-Seal prüfen"
+    ],
+    "ollama_ok": true,
+    "phase": "forschung_reif",
+    "phase_de": "Learn/Evolve + Forschungszweig + öffentliches Lernen",
+    "phase_kpi_de": "Stufe-A KPI — wachstum=True reif=True",
+    "wants_to_grow_de": "32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence."
+  },
+  "growth_commands_de": [
+    "bash tools/king_ops.sh stufe-a",
+    "bash tools/setup_gemini_key.sh",
+    "python3 tools/ai_kernel.py gemini-key-test",
+    "python3 tools/ai_kernel.py stufe-a --force",
+    "python3 tools/ai_kernel.py king-trading",
+    "python3 tools/ai_kernel.py learn",
+    "python3 tools/ai_kernel.py evolve",
+    "bash tools/king_ops.sh king-trading",
+    "/kombi <frage>",
+    "/beitrag forschung <Idee>"
+  ],
+  "headline_de": "König 32B — Bestandteil des Forschungsprojekts Active Alpha",
+  "is_forschungsprojekt": true,
+  "mission_de": "32B wächst mit dem Forschungsprojekt: lernt aus Evidence, unterstützt Gas/Sell-Steuerung, H1 und /learn — kein isolierter Chat-Bot.",
+  "model": "qwen2.5-coder:32b",
+  "policy_ref": "control/king_32b_forschungsprojekt.json",
+  "roles_de": [
+    "trading_local — Gas/Sell-Beratung und Entscheidungs-Sanktion",
+    "build_kernel — /bau im Forschungsbaum",
+    "chat — Entfaltungsraum mit Forschungs-Kontext",
+    "kombi_synthesis — Cloud-Tipp + lokale Umsetzung"
+  ],
+  "schema_version": 1,
+  "stufe_a_kpis": {
+    "blockers": [],
+    "checks": [
+      {
+        "detail_de": "signal=2026-06-09 ok=True",
+        "id": "prediction_ready",
+        "pass": true
+      },
+      {
+        "detail_de": "status=COMPLETE",
+        "id": "h1_complete",
+        "pass": true
+      },
+      {
+        "detail_de": "sharpe=0.782267724738531 min=0.5",
+        "id": "h1_sharpe",
+        "pass": true,
+        "value": 0.782267724738531
+      },
+      {
+        "age_s": 7.65948,
+        "detail_de": "age_s=7.7 max=900.0",
+        "id": "prognosis_fresh",
+        "pass": true
+      },
+      {
+        "detail_de": "score=63.0 min=40.0",
+        "id": "learn_score",
+        "pass": true
+      }
+    ],
+    "evaluated_at_utc": "2026-06-09T21:16:53+00:00",
+    "forschung_reif_ok": true,
+    "ok": true,
+    "wachstum_ok": true
+  },
+  "updated_at_utc": "2026-06-09T21:17:08+00:00"
+}

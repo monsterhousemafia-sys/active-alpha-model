@@ -1,0 +1,88 @@
+{
+  "auto_apply": {
+    "skipped": true
+  },
+  "evolution_state": {
+    "current_stage_id": "sportwagen",
+    "history": [],
+    "promoted_at_utc": null,
+    "schema_version": 1,
+    "updated_at_utc": "2026-06-05T17:45:12+00:00"
+  },
+  "generated_at_utc": "2026-06-09T21:16:54+00:00",
+  "governance": {
+    "blocked_actions": [
+      "auto_execute_us_open",
+      "remove_gui_confirm_gate"
+    ],
+    "evolution_allow_full_auto": false,
+    "kernel_blocks_full_auto": true
+  },
+  "message_de": "Evolution Sportwagen: 4 passive OK, 0 Tuning angewendet.",
+  "ok": true,
+  "passive_actions": [
+    {
+      "action": "outcome_sync",
+      "detail": {
+        "added_from_submitted": 0,
+        "generated_at_utc": "2026-06-09T21:16:54+00:00",
+        "history_sync": {
+          "skipped": true
+        },
+        "ledger_counts": {
+          "last_feedback_update_utc": "2026-06-09T18:48:14+00:00",
+          "mature_outcomes": 73350,
+          "pending_predictions": 150,
+          "stored_predictions": 73500
+        },
+        "live_rows_total": 0,
+        "matured_live": 0,
+        "message_de": "Live-Fills -> Ledger: +0 neu, 0 reif, 0 LIVE_T212 gesamt.",
+        "ok": true,
+        "schema_version": 1
+      },
+      "ok": true
+    },
+    {
+      "action": "learning_capture",
+      "ok": true
+    },
+    {
+      "action": "feedback_update",
+      "ok": true
+    },
+    {
+      "action": "price_refresh_on_predict",
+      "ok": true
+    }
+  ],
+  "progress": {
+    "auto_actions_next": [
+      "slippage_calibrate",
+      "quote_refresh_tune",
+      "weekly_audit"
+    ],
+    "current_label_de": "Sportwagen",
+    "current_stage_id": "sportwagen",
+    "gaps_de": [
+      "Live reif: 0/3 Fills",
+      "Signed Hit-Rate: — (Ziel ≥40%)"
+    ],
+    "next_label_de": "Sport Plus",
+    "next_stage_id": "sport_plus",
+    "ready_for_next": false
+  },
+  "schema_version": 1,
+  "stage": {
+    "auto_actions_allowed": [
+      "outcome_sync",
+      "feedback_update",
+      "learning_capture",
+      "price_refresh_on_predict"
+    ],
+    "next_stage_id": "sport_plus",
+    "stage_id": "sportwagen",
+    "stage_label_de": "Sportwagen",
+    "stage_order": 0
+  }
+}

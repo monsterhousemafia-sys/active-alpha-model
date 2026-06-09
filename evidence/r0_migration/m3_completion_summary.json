@@ -1,0 +1,8 @@
+{
+  "authoritative_champion_unchanged": "R3_w075_q065_noexit",
+  "blockers": [],
+  "completed_at_utc": "2026-06-05T15:38:50+00:00",
+  "phase": "M3",
+  "seal_path": "evidence\\r0_migration\\m3_phase_seal.json",
+  "status": "SEALED"
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Orders nur über R3 — Active Alpha Model führt keine Orders aus",
+  "separation_de": {
+    "active_alpha_model": "Signal, Zielgewichte, Rebalance-Plan, H1-Monitor — keine Broker-Orders",
+    "r3": "Einzige Oberfläche für T212-Order-Ausführung (GUI-Bestätigung, Order-Desk, Cockpit)"
+  },
+  "allowed_order_sources": [
+    "ORDER_WORKFLOW_DIALOG",
+    "LIVE_DASHBOARD_PORTFOLIO",
+    "LIVE_DASHBOARD_REBALANCE",
+    "USER_CLICK",
+    "R3_ORDER_DESK",
+    "R3_COCKPIT",
+    "R3_DESKTOP"
+  ],
+  "forbidden_order_sources": [
+    "LIVE_BAT_REBALANCE",
+    "LIVE_BAT_REBALANCE_FORCE",
+    "LIVE_AUTO_REBALANCE",
+    "LIVE_FORCED_REBALANCE",
+    "LIVE_REBALANCE",
+    "LIVE_REBALANCE_ENQUEUE",
+    "DEFERRED_INTENT",
+    "alpha_engine",
+    "background",
+    "scheduler",
+    "session",
+    "aa_scheduler",
+    "sync_r3_flow",
+    "headless"
+  ],
+  "rules_de": [
+    "Hintergrund-Engine schreibt nur Pläne/Evidence",
+    "Kein Auto-Execute aus daily_cycle, Scheduler oder Session",
+    "Batch/CLI-Rebalance ohne R3-Oberfläche ist blockiert",
+    "GUI-Bestätigungs-Lease muss von R3-Oberfläche stammen"
+  ],
+  "safety_de": "fail-closed — unbekannte source blockiert Live-Submit"
+}

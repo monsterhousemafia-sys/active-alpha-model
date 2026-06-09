@@ -1,0 +1,72 @@
+{
+  "created_at_utc": "20260530T203050Z",
+  "phase": "V1R3_AUTHORIZED_COMPLETION_GATE",
+  "files": [
+    {
+      "original_path": "aa_vision_controller.py",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/aa_vision_controller.py",
+      "size_bytes": 23764,
+      "sha256": "c139a9b6cf4182ad1d09ec8f6b5923722bbaed03963e6a4130b02ff26874667c"
+    },
+    {
+      "original_path": "aa_vision_review_gate.py",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/aa_vision_review_gate.py",
+      "size_bytes": 12216,
+      "sha256": "a001fdaf407b62f01ea733f04e73a5f876a84576b94809af322b7e8f43d43c31"
+    },
+    {
+      "original_path": "aa_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/aa_vision_phase_catalog.py",
+      "size_bytes": 10590,
+      "sha256": "4d98cf48c4e5f5ada28094b4a1e0283631a67316066e25105a3c200998f9d863"
+    },
+    {
+      "original_path": "control/vision_automation/phase_catalog.json",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/control__vision_automation__phase_catalog.json",
+      "size_bytes": 6092,
+      "sha256": "fe603494a207b04e05f3d61cde503199ed14b6b815b1fde2281b83e6bdd2de2e"
+    },
+    {
+      "original_path": "control/vision_automation/automation_state.json",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/control__vision_automation__automation_state.json",
+      "size_bytes": 1240,
+      "sha256": "91b3282236931d56c1eab347a5947a899c6bdbffbe0b52d3c26562d65004d8ce"
+    },
+    {
+      "original_path": "control/vision_automation/review_registry/review_registry.json",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/control__vision_automation__review_registry__review_registry.json",
+      "size_bytes": 2440,
+      "sha256": "4fd18329b781ecf4daceb9a9162dbd6361a6f3bbf7bca3fcdf6c7afbf655c214"
+    },
+    {
+      "original_path": "control/vision_automation/transition_log.jsonl",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/control__vision_automation__transition_log.jsonl",
+      "size_bytes": 997,
+      "sha256": "bbb8b36733c28f0ff7a0fb043b13a748fd30296c7ea4d5f5a20813d9d67eb972"
+    },
+    {
+      "original_path": "VISION_PROGRESS.json",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/VISION_PROGRESS.json",
+      "size_bytes": 749,
+      "sha256": "0c5687cd1c5a6bb6dae009918c5afc3e203024efcfd3350094f04515407af6a8"
+    },
+    {
+      "original_path": "tests/test_vision_controller.py",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_controller.py",
+      "size_bytes": 18118,
+      "sha256": "a3e5553ca01f75e188ade06f6170ac57c30cb912434512b7b6dd6b7e9905f2e5"
+    },
+    {
+      "original_path": "tests/test_vision_phase_catalog.py",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_phase_catalog.py",
+      "size_bytes": 3544,
+      "sha256": "d3048a7e7fab8fe5c731050a9b71b5945de9d4d044f0a69de09f855e29b9653e"
+    },
+    {
+      "original_path": "tests/test_vision_review_gate.py",
+      "backup_path": "control/repair_backups/20260530T203050Z_V1R3/tests__test_vision_review_gate.py",
+      "size_bytes": 5608,
+      "sha256": "aff13fd46a2f9acd95d9c0717bc64d5005b443b7e1e00791ecb72daa99c73ccb"
+    }
+  ]
+}

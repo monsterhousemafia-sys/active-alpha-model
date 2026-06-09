@@ -1,0 +1,7 @@
+{
+  "automatic_promotion": false,
+  "broker_order_routing": "DISABLED",
+  "champion_changed": false,
+  "real_money": false,
+  "simulation_only": true
+}

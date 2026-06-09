@@ -1,0 +1,66 @@
+{
+  "cash_eur": 153.7288,
+  "cumulative_net_pnl_eur": -0.4676,
+  "historical_to_validated_epoch_adjustment_eur": -0.365,
+  "initial_allocation_executed": true,
+  "initial_capital_eur": 500.0,
+  "initial_execution_cost_eur": 0.6912,
+  "initial_mtm_recorded": true,
+  "initial_post_fill_portfolio_value_eur": 499.3088,
+  "last_mark_value_eur": 499.5324,
+  "mark_count": 1,
+  "market_move_eur": 0.5886,
+  "migrated_from_p16c": true,
+  "no_reinitialization": true,
+  "p16c_baseline_mark_count": 1,
+  "portfolio_id": "PROVISIONAL_EXECUTABLE_PORTFOLIO_6_POSITION_500_EUR",
+  "positions": [
+    {
+      "avg_cost_eur": 51.32187871733935,
+      "last_mark_eur": 51.371848549852864,
+      "market_value_eur": 88.5962,
+      "shares": 1.724605610941839,
+      "symbol": "OXY"
+    },
+    {
+      "avg_cost_eur": 473.02018888123445,
+      "last_mark_eur": 471.2613875653842,
+      "market_value_eur": 75.6776,
+      "shares": 0.16058511197937891,
+      "symbol": "WDC"
+    },
+    {
+      "avg_cost_eur": 775.42643054888,
+      "last_mark_eur": 776.5495902560879,
+      "market_value_eur": 62.951,
+      "shares": 0.08106507274391589,
+      "symbol": "STX"
+    },
+    {
+      "avg_cost_eur": 95.54811475271086,
+      "last_mark_eur": 96.65135577391787,
+      "market_value_eur": 42.4344,
+      "shares": 0.43904581590721353,
+      "symbol": "INTC"
+    },
+    {
+      "avg_cost_eur": 886.0780317202699,
+      "last_mark_eur": 882.0123587889371,
+      "market_value_eur": 38.2736,
+      "shares": 0.04339346945025995,
+      "symbol": "MU"
+    },
+    {
+      "avg_cost_eur": 484.75878529596883,
+      "last_mark_eur": 485.0251328200524,
+      "market_value_eur": 37.8708,
+      "shares": 0.0780800702289299,
+      "symbol": "CIEN"
+    }
+  ],
+  "post_baseline_baseline_value_eur": 498.9438,
+  "post_baseline_mark_count": 2,
+  "subsequent_fx_pnl_eur": 0.0,
+  "subsequent_market_price_pnl_eur": 0.5886,
+  "updated_at_utc": "2026-06-01T15:25:03+00:00"
+}

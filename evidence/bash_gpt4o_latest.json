@@ -1,0 +1,11 @@
+{
+  "cloud_key": false,
+  "display_model": "gpt-4o",
+  "headline_de": "GPT-4o bereit (ollama_keyless)",
+  "local_model": "qwen2.5:14b",
+  "mode": "ollama_keyless",
+  "ollama_ready": true,
+  "ready": true,
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-07T21:51:21+00:00"
+}

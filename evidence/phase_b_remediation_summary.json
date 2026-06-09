@@ -1,0 +1,84 @@
+{
+  "challenger_report_champion": "R3_w075_q065_noexit",
+  "conflicts": [],
+  "generated_at_utc": "2026-06-03T20:42:49+00:00",
+  "locked_champion": "R3_w075_q065_noexit",
+  "phase": "B",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "steps": {
+    "B1_pointer_repair": {
+      "artifacts_present": {
+        "canonical_run_dir_exists": false,
+        "model_output_returns_exists": true
+      },
+      "integrity_status": "PASS",
+      "phase_b_repair_at_utc": "2026-06-03T20:42:49+00:00",
+      "prior_pointer": {
+        "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+        "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+        "variant_id": "R3_w075_q065_noexit"
+      },
+      "published_at_utc": "2026-05-30T15:30:00.466948+00:00",
+      "repair_note": "Phase B: aligned variant_id, run_id, and run_dir; removed R5 run_id split. Champion metrics must not be read from model_output/ until matrix returns restored.",
+      "run_dir": "E:\\active_alpha_model\\runs\\20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "run_id": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "schema_version": 1,
+      "status": "PASS",
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    "B2_output_archive": {
+      "archive_dir": "E:\\active_alpha_model\\evidence\\archive_phase_b_contaminated_model_output",
+      "archive_sha256": null,
+      "archived": true,
+      "n_days": 2450,
+      "returns_path": "E:\\active_alpha_model\\model_output_sp500_pit_t212\\strategy_daily_returns.csv",
+      "threshold_n_days": 1900
+    },
+    "B3_unauthorized_claims_registry": {
+      "authoritative_champion": "R3_w075_q065_noexit",
+      "claims": [
+        {
+          "classification": "UNAUTHORIZED_OR_UNSEALED_STATE",
+          "note": "Must not be used as operational champion; quarantined per EXTERNAL_REVIEW and Phase B.",
+          "pointers": [
+            "control/quarantine/g0r_r5_unauthorized/operational_champion_r5_claim.json",
+            "control/r5_challenger_registry.json"
+          ],
+          "status": "INVALID",
+          "variant_id": "R5_rank_only_train5"
+        }
+      ],
+      "generated_at_utc": "2026-06-03T20:42:49+00:00",
+      "schema_version": 1
+    },
+    "B3b_r5_registry_patch": {
+      "patched": true,
+      "role": "QUARANTINED_RESEARCH_ONLY",
+      "variant_id": "R5_rank_only_train5"
+    },
+    "B3c_champion_registry_r3": {
+      "patched": true,
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    "B5_reports_rebuilt": {
+      "background_research_status": "control/background_research_status.json",
+      "challenger_json": "model_output_sp500_pit_t212/challenger_report.json",
+      "challenger_txt": "model_output_sp500_pit_t212/challenger_report.txt",
+      "champion_variant_id": "R3_w075_q065_noexit",
+      "variants_compared": 5
+    },
+    "B6_lineage_hashes": {
+      "hashes": {
+        "control/background_research_status.json": "4b4a032322d398a1a9a1ac43e6a089a5906992d4932608ac4ba5781f788c5c38",
+        "control/champion_lineage_policy.json": "588e245ab275afb992fcde04d56c6dede58edbdcd6a90b4463c896744a27e370",
+        "control/champion_registry.json": "8bb3c4fc9dba76d23e12fd213d8d9a9bad6ed42c52473559346543d4dd4e1c24",
+        "control/quarantine/unauthorized_champion_claims.json": "1502c5683c722ff2501cc2f798882c3f4c386197643125b04f75da0c6b6f4fe3",
+        "model_output_sp500_pit_t212/challenger_report.json": "f0973957d2e17f29b03dcafafd2e6a816c5cf50c5eca30d8355150e4cccdcd88",
+        "model_output_sp500_pit_t212/challenger_report.txt": "8808334a403da72442a826e956ad2786c5ebede82cb0fb6fa6d44ca1d3ed1cfa",
+        "model_output_sp500_pit_t212/latest_validated_run.json": "b7eec03a36d34d753126aa40ba0eefcce6f3e8391215ca466b3beade8a20914f"
+      },
+      "policy_path": "control/champion_lineage_policy.json"
+    }
+  }
+}

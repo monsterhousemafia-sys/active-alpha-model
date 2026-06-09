@@ -1,0 +1,7 @@
+{
+  "credential_profile": "MONITORING_READONLY",
+  "fetch_error": "HTTP 401",
+  "fetch_status": "ERROR",
+  "generated_at_utc": "2026-06-09T21:47:26+00:00",
+  "prices_eur_by_symbol": {}
+}

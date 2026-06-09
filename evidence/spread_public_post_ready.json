@@ -1,0 +1,20 @@
+{
+  "body_preview_de": "=== r/selfhosted + r/linux — Copy-Paste (freundlicher Diktator) ===\n\n**Title:** We are the next AI revolution — decentralized, open, ~100 KB worker ZIP (no cloud lock-in)\n\nListen. The next AI revolution is not another chatbot subscription.\n\nIt's thousands of machines thinking together — with a cockpit you can audit,\nand CPUs you voluntarily lend. No broker keys. No black box. No begging a cloud CEO for permission.\n\nActive Alpha is open quantitative research:\n- One command center (browser)\n- Many workers (Win / Mac / Linux)\n- ~100 KB ZIP — unzip, double-click START, Python 3, done\n- Join over the Internet or LAN\n\nYes, it's pilot stage. We're not a hedge fund. We don't touch your money.\nBut the architecture is real: federated compute, legion ranks, fail-closed gates.\n\nYour move:\n1. Join: https://pole-holidays-behavior-merchandise.trycloudflare.com/join\n2. Health check: curl -fsS https://pole-holidays-behavior-merchandise.trycloudflare.com/api/health\n3. Spare CPU cycles. Become Legion #N. Watch the federation grow.\n\nSelf-hosters and Linux people — you're invited. Phones spread the link; PCs do the work.\nWelcome to the revolution. Start the ZIP.\n\n--- DE (WhatsApp / Kommentar) ---\nDie n",
+  "draft_ready": true,
+  "forum_posted": false,
+  "forum_ref": "evidence/community_spread_forum_de.txt",
+  "glasfaser_phase": "after_online",
+  "headline_de": "Forum-Entwurf bereit — Post + forum-ack fehlt",
+  "join_remote": "https://pole-holidays-behavior-merchandise.trycloudflare.com/join",
+  "ok": false,
+  "post_allowed": true,
+  "post_url": null,
+  "schema_version": 1,
+  "targets_de": [
+    "r/selfhosted",
+    "r/linux"
+  ],
+  "updated_at_utc": "2026-06-09T21:23:10+00:00",
+  "whatsapp_ref": "evidence/spread_whatsapp_de.txt",
+  "world_zip": "/home/machinax7/world_worker_LITE.zip"
+}

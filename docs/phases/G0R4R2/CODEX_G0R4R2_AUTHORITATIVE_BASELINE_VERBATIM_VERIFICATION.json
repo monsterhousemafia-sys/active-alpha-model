@@ -1,0 +1,70 @@
+{
+  "entries": [
+    {
+      "included_zip_entry_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "source_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "source_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "source_to_target_byte_identical": true,
+      "target_path": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "target_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+      "target_to_zip_byte_identical": true
+    },
+    {
+      "included_zip_entry_sha256": "08a18385f8e6498b0c63437c372ec4d43980e70e8ad32e5ca6220e9a30b1c97f",
+      "source_path": "incoming_external_reviews/g0r4r2/V5R_EXTERNAL_ACCEPTANCE_REPORT.md",
+      "source_sha256": "08a18385f8e6498b0c63437c372ec4d43980e70e8ad32e5ca6220e9a30b1c97f",
+      "source_to_target_byte_identical": true,
+      "target_path": "V5R_EXTERNAL_ACCEPTANCE_REPORT.md",
+      "target_sha256": "08a18385f8e6498b0c63437c372ec4d43980e70e8ad32e5ca6220e9a30b1c97f",
+      "target_to_zip_byte_identical": true
+    },
+    {
+      "included_zip_entry_sha256": "291b1d75d0774dff20db4cd2efc113239254adfcd3a0193b7a5d1bb4180abd17",
+      "source_path": "incoming_external_reviews/g0r4r2/CODEX_V5R_PROTECTED_HASHES_AFTER.json",
+      "source_sha256": "291b1d75d0774dff20db4cd2efc113239254adfcd3a0193b7a5d1bb4180abd17",
+      "source_to_target_byte_identical": true,
+      "target_path": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json",
+      "target_sha256": "291b1d75d0774dff20db4cd2efc113239254adfcd3a0193b7a5d1bb4180abd17",
+      "target_to_zip_byte_identical": true
+    },
+    {
+      "included_zip_entry_sha256": "80d7cf81152e43504a2cfeb0610c71aab40f3c988d94716747f81e1d9045cbfd",
+      "source_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_DECISION_G0R4R_REMEDIATION_REQUIRED.md",
+      "source_sha256": "80d7cf81152e43504a2cfeb0610c71aab40f3c988d94716747f81e1d9045cbfd",
+      "source_to_target_byte_identical": true,
+      "target_path": "control/external_reviews/g0r4r_rejection/EXTERNAL_REVIEW_DECISION_G0R4R_REMEDIATION_REQUIRED.md",
+      "target_sha256": "80d7cf81152e43504a2cfeb0610c71aab40f3c988d94716747f81e1d9045cbfd",
+      "target_to_zip_byte_identical": true
+    },
+    {
+      "included_zip_entry_sha256": "b6db87062a1d2380525b157237632f393b2eb73c996bdb699c685f5c233e82f8",
+      "source_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_OBSERVED_HASH_G0R4R.sha256",
+      "source_sha256": "b6db87062a1d2380525b157237632f393b2eb73c996bdb699c685f5c233e82f8",
+      "source_to_target_byte_identical": true,
+      "target_path": "control/external_reviews/g0r4r_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R4R.sha256",
+      "target_sha256": "b6db87062a1d2380525b157237632f393b2eb73c996bdb699c685f5c233e82f8",
+      "target_to_zip_byte_identical": true
+    },
+    {
+      "included_zip_entry_sha256": "296e20abd3d88ca9f6c7138b97ec2a19e9a51836406393067a8e6282b9d16af2",
+      "source_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md",
+      "source_sha256": "296e20abd3d88ca9f6c7138b97ec2a19e9a51836406393067a8e6282b9d16af2",
+      "source_to_target_byte_identical": true,
+      "target_path": "control/external_reviews/g0r4r2_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md",
+      "target_sha256": "296e20abd3d88ca9f6c7138b97ec2a19e9a51836406393067a8e6282b9d16af2",
+      "target_to_zip_byte_identical": true
+    },
+    {
+      "included_zip_entry_sha256": "a8cfa43988bbf2372187f8b013fff212db0bc1f35e21558512e6c4ffc8039491",
+      "source_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md.sha256",
+      "source_sha256": "a8cfa43988bbf2372187f8b013fff212db0bc1f35e21558512e6c4ffc8039491",
+      "source_to_target_byte_identical": true,
+      "target_path": "control/external_reviews/g0r4r2_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md.sha256",
+      "target_sha256": "a8cfa43988bbf2372187f8b013fff212db0bc1f35e21558512e6c4ffc8039491",
+      "target_to_zip_byte_identical": true
+    }
+  ],
+  "line_ending_normalization_mismatch_remaining": false,
+  "phase": "G0R4R2_VERBATIM_AUTHORITATIVE_BASELINE_RESUBMISSION",
+  "verification_status": "PASS"
+}

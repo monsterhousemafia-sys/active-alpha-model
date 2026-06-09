@@ -1,0 +1,23 @@
+{
+  "artifacts": {
+    "champion_lineage_policy": "control/champion_lineage_policy.json",
+    "cost_stress_status": "control/evidence/cost_stress_status.json",
+    "multiple_testing_status": "control/evidence/multiple_testing_status.json",
+    "review_snapshot": "control/review_snapshot/v5r_decision_cockpit_snapshot.json",
+    "robustness_status": "control/evidence/robustness_status.json"
+  },
+  "champion_resolved": "R0_LEGACY_ENSEMBLE",
+  "cost_stress_blockers": [
+    "BASELINE_COST_TREATMENT_NOT_VERIFIED:M1_MOM_BLEND_MATCHED_CONTROLS",
+    "CHALLENGER_TURNOVER_NOT_VERIFIED"
+  ],
+  "cost_stress_gate_pass": false,
+  "g1_blockers": [
+    "CHALLENGER_TURNOVER_NOT_VERIFIED",
+    "CHALLENGER_RETURNS_MISSING",
+    "G1_NOT_EXTERNALLY_APPROVED"
+  ],
+  "generated_at_utc": "2026-06-07T20:14:02+00:00",
+  "operational_user_override_removed": true,
+  "schema_version": 1
+}

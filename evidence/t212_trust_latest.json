@@ -1,0 +1,18 @@
+{
+  "broker_status": null,
+  "cash_eur": null,
+  "display_live_cash": false,
+  "fail_closed": true,
+  "last_sync_utc": null,
+  "message_de": "✗ T212 nicht vertrauenswürdig — T212 API nicht konfiguriert",
+  "orders_allowed": false,
+  "plan_capital_allowed": false,
+  "policy_ref": "control/t212_trust_policy.json",
+  "positions_count": null,
+  "reason_code": "NOT_CONFIGURED",
+  "reason_de": "T212 API nicht konfiguriert",
+  "schema_version": 1,
+  "sync_age_s": null,
+  "trusted": false,
+  "updated_at_utc": "2026-06-09T21:27:37+00:00"
+}

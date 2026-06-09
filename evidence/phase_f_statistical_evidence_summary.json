@@ -1,0 +1,95 @@
+{
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "champion_gate_row": {
+    "champion_row": true,
+    "cost_stress_baseline": "BLOCKED",
+    "cost_stress_plus_25_bps": "BLOCKED",
+    "dsr_multiple_testing": "N/A",
+    "overall": "CHAMPION_ARTIFACT_BLOCKED",
+    "paper_forward": "BLOCKED",
+    "paper_shadow_blocker": "NOT_EXTERNALLY_APPROVED_PHASE_F",
+    "robustness_subperiod": "NOT_EVALUABLE",
+    "role": "CHAMPION",
+    "shadow_collection": "BLOCKED",
+    "variant_id": "R3_w075_q065_noexit"
+  },
+  "generated_at_utc": "2026-06-03T20:24:37+00:00",
+  "n_variants": 11,
+  "outputs": [
+    "evidence/phase_f_gate_matrix.json",
+    "evidence/phase_f_gate_matrix.md",
+    "research_evidence/cost_stress_comparison.csv",
+    "research_evidence/trial_ledger_preregistered.json"
+  ],
+  "phase": "F",
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "steps": {
+    "F0_trial_ledger": {
+      "path": "research_evidence/trial_ledger_preregistered.json",
+      "status": "EXISTING"
+    },
+    "F1_cost_stress_artifacts": {
+      "cost_stress_comparison.csv": "research_evidence/cost_stress_comparison.csv",
+      "cost_stress_gate_report.md": "research_evidence/cost_stress_gate_report.md"
+    },
+    "F1_export_cost_stress_status": "E:\\active_alpha_model\\control\\evidence\\cost_stress_status.json",
+    "F2_export_robustness_status": "E:\\active_alpha_model\\control\\evidence\\robustness_status.json",
+    "F2_robustness_report": "research_evidence/robustness_gate_report.md",
+    "F3_dsr": {
+      "multiple_testing_status": {
+        "MULTIPLE_TESTING_EVIDENCE": {
+          "blocker": "DSR_BELOW_REQUIRED_CONFIDENCE",
+          "detail": "dsr_probability=0.9287681547683038 trials=5",
+          "pass": false,
+          "status": "FAIL"
+        },
+        "PBO_BLOCKER": "INSUFFICIENT_CANDIDATE_MATRIX_FOR_PBO",
+        "PBO_STATUS": "NOT_EVALUABLE",
+        "challenger_variant_id": "MOM_63_TOP12",
+        "champion_variant_id": "R3_w075_q065_noexit",
+        "deflated_sharpe": {
+          "annualized_sharpe_display_only": 0.9911989434917188,
+          "blocker": "DSR_BELOW_REQUIRED_CONFIDENCE",
+          "dsr_probability": 0.9287681547683038,
+          "dsr_required_probability": 0.95,
+          "expected_max_sharpe": 0.02800208899957671,
+          "observation_frequency": "daily",
+          "observations_T": 1860,
+          "periodic_sharpe": 0.06243966438735838,
+          "sharpe_std": 0.023479984785913195,
+          "status": "FAIL",
+          "test_statistic": 1.4666779259772975
+        },
+        "generated_at_utc": "2026-06-03T20:24:37+00:00",
+        "independence_assumption": "Variants treated as non-independent unless externally validated",
+        "m1_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+        "mode": "READ_ONLY_HISTORICAL_EVIDENCE",
+        "observations": 1860,
+        "return_series_path": "evidence/autonomous_research/MOM_63_TOP15_RECONSTRUCTED/daily_returns.csv",
+        "return_series_sha256": "1c6235dbd7eeafdf2c011909f71e8644f2c520d946d18f2f0eba75b3c5b7ab11",
+        "schema_version": 2,
+        "tested_variant_count": 5,
+        "trial_count_derivation": "unique variant ids from challenger_report entries (5) + naive momentum columns",
+        "trial_count_source_files": [
+          {
+            "path": "control/challenger_report.json",
+            "sha256": "3bfb4d6fd8870d3a794040e49b982b99222c1676ff7af335132c511f9590a396"
+          }
+        ],
+        "trial_count_source_hashes": {
+          "control/challenger_report.json": "3bfb4d6fd8870d3a794040e49b982b99222c1676ff7af335132c511f9590a396"
+        }
+      },
+      "report": "research_evidence/dsr_multiple_testing_report.md"
+    },
+    "F4_paper_forward": {
+      "reason": "NOT_EXTERNALLY_APPROVED_PHASE_F",
+      "status": "BLOCKED"
+    },
+    "F5_shadow": {
+      "reason": "NOT_EXTERNALLY_APPROVED_PHASE_F",
+      "status": "BLOCKED"
+    }
+  }
+}

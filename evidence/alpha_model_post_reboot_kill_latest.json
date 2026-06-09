@@ -1,0 +1,15 @@
+{
+  "apt_remove_de": "apt retry exit=1",
+  "headline_de": "Post-Reboot-Kill fehlgeschlagen — alpha-model-agent → /self-uninstall execute",
+  "ran_at_utc": "2026-06-07T10:48:59+00:00",
+  "scheduled_at_utc": "2026-06-07T10:47:04+00:00",
+  "schema_version": 1,
+  "self_uninstall": {
+    "dry_run": false,
+    "headline_de": "Maschinen-Demontage ausgeführt — 14/15",
+    "ok": false,
+    "steps_passed": 14,
+    "steps_total": 15
+  },
+  "status": "FAILED"
+}

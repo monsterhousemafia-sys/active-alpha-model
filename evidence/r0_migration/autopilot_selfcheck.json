@@ -1,0 +1,36 @@
+{
+  "autopilot_success": false,
+  "blockers": [
+    "M1_NOT_SEALED"
+  ],
+  "checked_at_utc": "2026-06-04T13:43:18+00:00",
+  "checks": {
+    "batch_active": true,
+    "m0_sealed": true,
+    "m1_sealed": false,
+    "returns_integrity_pass": false,
+    "stall_detected": false
+  },
+  "may_advance_to_m2": false,
+  "next_action": "keep_watch_loop_and_matrix_running",
+  "schema_version": 1,
+  "stall": {
+    "idle_minutes": 8.2,
+    "lock_cpu_seconds": 0.140625,
+    "lock_pid": 17920,
+    "log_idle_minutes": 8.2,
+    "matrix_log_idle_minutes": 161.3,
+    "max_idle_minutes": 90.0,
+    "max_log_idle_minutes": 90.0,
+    "newest_run_dir": "validation_runs\\20260604T110159Z_R0_LEGACY_ENSEMBLE",
+    "reason": "activity_ok",
+    "recommended_action": null,
+    "run_log_path": "validation_runs\\20260604T110159Z_R0_LEGACY_ENSEMBLE\\validation_run.log",
+    "stalled": false,
+    "workers": {
+      "method": "cim_commandline",
+      "worker_count": 12
+    }
+  },
+  "verdict": "IN_PROGRESS"
+}

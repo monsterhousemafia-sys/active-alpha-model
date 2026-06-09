@@ -1,0 +1,130 @@
+{
+  "acceptance": {
+    "champion_all_mapped": true,
+    "snapshot_has_sector_gics": true
+  },
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "champion_coverage": {
+    "mapped_count": 14,
+    "ok": true,
+    "symbol_count": 14,
+    "symbols": [
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "STX"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "WDC"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "SNDK"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "INTC"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "CIEN"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Communication",
+        "ticker": "GOOGL"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Communication",
+        "ticker": "GOOG"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "AMD"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Industrials",
+        "ticker": "CAT"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "ON"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "MU"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Industrials",
+        "ticker": "VRT"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Technology",
+        "ticker": "TXN"
+      },
+      {
+        "is_unknown": false,
+        "sector_coarse": "Energy",
+        "ticker": "OXY"
+      }
+    ],
+    "unknown_count": 0,
+    "unknown_tickers": []
+  },
+  "generated_at_utc": "2026-06-04T10:13:57+00:00",
+  "lookup_chain": [
+    "sector_reference.csv",
+    "sector_yfinance_cache.json",
+    "SECTOR_MAP",
+    "Unknown"
+  ],
+  "phase": "S6",
+  "reference_file_exists": true,
+  "reference_path": "E:\\active_alpha_model\\sector_reference.csv",
+  "rollout_status": "PASS",
+  "schema_version": 1,
+  "sector_reference_status": {
+    "last_universe_sync": {
+      "added": 0,
+      "as_of_utc": "2026-06-04T10:13:52+00:00",
+      "path": "E:\\active_alpha_model\\sector_reference.csv",
+      "row_count": 504,
+      "updated": 503
+    },
+    "schema_version": 1,
+    "source_detail": "wikipedia_sp500",
+    "status": "OK",
+    "summary_de": "Sektor-Referenz: 504 Zeilen (+0, ~503 aktualisiert).",
+    "updated_at_utc": "2026-06-04T10:13:52+00:00",
+    "valid_from": "2026-06-04"
+  },
+  "sp500_latest_snapshot": {
+    "columns": [
+      "ticker",
+      "source_symbol",
+      "company",
+      "sector_gics",
+      "sector_coarse",
+      "source",
+      "source_detail",
+      "fetched_at_utc"
+    ],
+    "exists": true,
+    "has_sector_coarse": true,
+    "has_sector_gics": true,
+    "path": "E:\\active_alpha_model\\universe_snapshots\\sp500_latest.csv",
+    "row_count": 503
+  }
+}

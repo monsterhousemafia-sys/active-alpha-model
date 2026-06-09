@@ -1,0 +1,145 @@
+{
+  "schema_version": 3,
+  "enabled": true,
+  "primary_cloud_provider": "local",
+  "primary_de": "Stealth lokal — Ollama/König 32B; Gemini nur bei Key in control/secrets/ (kein Auto-Probe)",
+  "stealth_mode": {
+    "enabled": true,
+    "local_only_until_key_de": "Kein Google-Traffic ohne lokalen Secret-Key — unter dem Radar bleiben",
+    "suppress_startup_probe": true,
+    "key_sources_allowed": ["secret_file", "keyring"],
+    "no_env_key": true
+  },
+  "gemini": {
+    "enabled": true,
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "model": "gemini-2.0-flash",
+    "fallback_model": "gemini-2.0-flash",
+    "max_tokens": 4096,
+    "temperature": 0.3,
+    "timeout_s": 90.0,
+    "keyring_name": "gemini_api_key",
+    "env_var": "GEMINI_API_KEY",
+    "compute_boost_de": "Parallele Flash-Worker + Synthese bei deep/plan — massiv mehr Cloud-Rechenleistung",
+    "compute_boost": {
+      "enabled": true,
+      "parallel_workers": 3,
+      "deep_tiers": ["deep", "plan"],
+      "worker_model": "gemini-2.0-flash",
+      "synth_model": "gemini-2.0-flash"
+    },
+    "tiers": {
+      "fast": {
+        "model": "gemini-2.0-flash",
+        "fallback": "gemini-2.0-flash",
+        "max_tokens": 1200,
+        "temperature": 0.3,
+        "role_de": "Kurz-Tipps, Status, schnelle Ideen"
+      },
+      "plan": {
+        "model": "gemini-2.0-flash",
+        "fallback": "gemini-2.0-flash",
+        "max_tokens": 4096,
+        "temperature": 0.25,
+        "role_de": "Bau-Pläne, Schritte, Tests — 3× Parallel-Compute"
+      },
+      "deep": {
+        "model": "gemini-2.0-flash",
+        "fallback": "gemini-2.0-flash",
+        "max_tokens": 4096,
+        "temperature": 0.2,
+        "role_de": "Architektur, Roadmap — 3× Parallel-Compute + Synthese"
+      },
+      "trading": {
+        "model": "gemini-2.0-flash",
+        "fallback": "gemini-2.0-flash",
+        "max_tokens": 2048,
+        "temperature": 0.2,
+        "role_de": "Trading-Strategie — ergänzt DAILY_ALPHA_H1"
+      }
+    }
+  },
+  "openai": {
+    "enabled": true,
+    "keyless_mode": true,
+    "keyless_label_de": "Fallback: GPT-4o lokal via Ollama — wenn kein Gemini-Key",
+    "base_url": "https://api.openai.com/v1",
+    "local_base_url": "http://127.0.0.1:11434/v1",
+    "model": "gpt-4o-mini",
+    "fallback_model": "gpt-4o",
+    "local_tier_models": {
+      "fast": "qwen2.5:14b",
+      "plan": "qwen2.5-coder:32b",
+      "deep": "qwen2.5-coder:32b",
+      "trading": "qwen2.5:14b"
+    },
+    "max_tokens": 900,
+    "temperature": 0.35,
+    "timeout_s": 60.0,
+    "keyring_name": "openai_api_key",
+    "env_var": "OPENAI_API_KEY"
+  },
+  "synergy": {
+    "strategy_de": "Gemini Cloud (Rechenleistung) + ML für Märkte + Ollama für Ausführung und Datenschutz",
+    "gemini_tiers": {
+      "fast": "gemini-2.0-flash",
+      "plan": "gemini-2.0-flash (3× parallel)",
+      "deep": "gemini-2.0-flash (3× parallel + synth)",
+      "trading": "gemini-2.0-flash"
+    },
+    "openai_tiers": {
+      "fast": {
+        "model": "gpt-4o-mini",
+        "fallback": "gpt-4o",
+        "max_tokens": 700,
+        "temperature": 0.3,
+        "role_de": "Fallback Kurz-Tipps"
+      },
+      "plan": {
+        "model": "gpt-4o",
+        "fallback": "gpt-4o-mini",
+        "max_tokens": 1100,
+        "temperature": 0.25,
+        "role_de": "Fallback Bau-Pläne"
+      },
+      "deep": {
+        "model": "gpt-4o",
+        "fallback": "gpt-4o-mini",
+        "max_tokens": 1400,
+        "temperature": 0.2,
+        "role_de": "Fallback Architektur"
+      },
+      "trading": {
+        "model": "gpt-4o",
+        "fallback": "gpt-4o-mini",
+        "max_tokens": 1000,
+        "temperature": 0.2,
+        "role_de": "Fallback Trading"
+      }
+    },
+    "ollama_roles": {
+      "chat": "qwen2.5:14b",
+      "build_kernel": "qwen2.5-coder:32b",
+      "kombi_synthesis": "qwen2.5:14b",
+      "trading_local": "qwen2.5:7b"
+    },
+    "pairs_de": [
+      "Trading → /geheimnis (ML) + /kombi → Gemini Flash Strategie + Ollama Evidence",
+      "Code bauen → Gemini plan (3× parallel) + /bau → Ollama qwen2.5-coder lokal",
+      "Kurz-Tipp → Gemini Flash + Ollama final (/kombi)",
+      "Architektur → Gemini 3× Parallel-Compute + König 32B Sanktion"
+    ]
+  },
+  "commands_de": [
+    "/tipp",
+    "/kombi",
+    "/gemini",
+    "/berater",
+    "/synergie",
+    "/gemini-key"
+  ],
+  "system_prompt_de": "Du bist externer Senior-Berater für R3 (Linux Trading-Research + Cockpit). Kurze umsetzbare Tipps auf Deutsch. Keine erfundenen Pfade. R3-Kernel ist Ollama lokal; du lieferst nur Rat. Bei Trading: ergänze ML-Signale, erfinde keine Tickers.",
+  "kombi_prompt_de": "Externer Gemini-Cloud-Berater-Tipp unten — du (Ollama/König 32B) antwortest final: konkret für active_alpha_model, mit Evidence, auf Deutsch.",
+  "auto_tips_on_freetext": false,
+  "disclaimer_de": "Stealth: lokal/Ollama standardmäßig — kein Google-Traffic. Gemini nur mit Key in control/secrets/ (chmod 600). Kernel bleibt lokal."
+}

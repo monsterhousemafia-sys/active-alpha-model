@@ -1,0 +1,17 @@
+{
+  "export_current": true,
+  "export_detail_de": "Export aktuell (9a4f0077b852b423)",
+  "headline_de": "Worker-Stabilität — Tunnel/Hub prüfen",
+  "join_token_set": true,
+  "join_url": "https://dans-served-herald-guns.trycloudflare.com",
+  "king_registered": true,
+  "manual_step_de": "bash tools/king_ops.sh tunnel-stable setup",
+  "ok": true,
+  "public_base_url": "https://dans-served-herald-guns.trycloudflare.com",
+  "schema_version": 1,
+  "tunnel_pid_alive": false,
+  "tunnel_stable": false,
+  "tunnel_token_set": false,
+  "updated_at_utc": "2026-06-08T16:22:15+00:00",
+  "workers_online": 2
+}

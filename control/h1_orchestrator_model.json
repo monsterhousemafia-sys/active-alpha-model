@@ -1,0 +1,39 @@
+{
+  "bash_primary_de": "bash tools/king_ops.sh",
+  "bash_role_de": "Bash = König-Orchestrator: king_ops pipeline (status→maintain→h1-seal); distribute für Spread/Worker.",
+  "cursor_role_de": "Vasall — Code/Evidence; König rechnet H1-Prep nicht lokal",
+  "distributed_at_utc": "2026-06-07T18:49:14+00:00",
+  "federation_legion_lane": {
+    "active_for_mom_1_seal": true,
+    "commands_de": [
+      "bash tools/king_distribute.sh",
+      "/könig-verteilen",
+      "/bash-verteilen",
+      "/welt-verteilen",
+      "/h1-distribute",
+      "/spread-intensiv",
+      "/legion"
+    ],
+    "mode": "execute",
+    "purpose_de": "Path-Sim + mom_1-Prep-Chunks an Worker — König merged Ergebnisse",
+    "scope": "active",
+    "transport_de": "Worker lädt features.parquet vom König · sendet naive-prep-*.pkl zurück · Tunnel/Internet über Hub-URL"
+  },
+  "mom_1_benchmark_lane": {
+    "artifact": "validation_runs/*/naive_mom_1_daily_returns.csv",
+    "commands_de": [
+      "/h1-workers",
+      "/h1-benchmark --wait",
+      "/h1-watch"
+    ],
+    "detail_de": "Prep-Chunks von externen Workern — König merged + Seal",
+    "path_dependent": true,
+    "runtime_profile": "worker_h1",
+    "scope": "federation"
+  },
+  "orchestrator_de": "König (alpha-model-agent) auf diesem RTX-Host — einziger Orchestrator für mom_1_top12-Seal",
+  "orchestrator_id": "king_rtx_host",
+  "schema_version": 1,
+  "weg_b_active": true,
+  "weg_b_at_utc": "2026-06-07T18:49:09+00:00"
+}

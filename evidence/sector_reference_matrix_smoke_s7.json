@@ -1,0 +1,71 @@
+{
+  "max_sector_cap": 0.55,
+  "max_unknown_sector_weight": 0.1349991799995733,
+  "pass": true,
+  "phase": "S7.4",
+  "portfolio_rows": [
+    {
+      "sector": "Unknown",
+      "ticker": "SPY",
+      "weight": 0.1349991799995733
+    },
+    {
+      "sector": "Technology",
+      "ticker": "STX",
+      "weight": 0.0670528307307483
+    },
+    {
+      "sector": "Technology",
+      "ticker": "WDC",
+      "weight": 0.0638468583594143
+    },
+    {
+      "sector": "Technology",
+      "ticker": "INTC",
+      "weight": 0.0552188582343919
+    },
+    {
+      "sector": "Communication",
+      "ticker": "GOOGL",
+      "weight": 0.0539642960267702
+    },
+    {
+      "sector": "Industrials",
+      "ticker": "CAT",
+      "weight": 0.0521027506225969
+    },
+    {
+      "sector": "Technology",
+      "ticker": "SNDK",
+      "weight": 0.051911372467422
+    },
+    {
+      "sector": "Communication",
+      "ticker": "GOOG",
+      "weight": 0.0503590240349901
+    },
+    {
+      "sector": "Technology",
+      "ticker": "AMD",
+      "weight": 0.0481205830396424
+    },
+    {
+      "sector": "Technology",
+      "ticker": "ON",
+      "weight": 0.0461518222993372
+    },
+    {
+      "sector": "Technology",
+      "ticker": "CIEN",
+      "weight": 0.0461408830412127
+    },
+    {
+      "sector": "Technology",
+      "ticker": "MU",
+      "weight": 0.0084713816261323
+    }
+  ],
+  "run_dir": null,
+  "schema_version": 1,
+  "source": "latest_target_portfolio.csv"
+}

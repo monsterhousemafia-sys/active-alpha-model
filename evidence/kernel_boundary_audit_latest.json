@@ -1,0 +1,44 @@
+{
+  "audited_at_utc": "2026-06-09T21:17:13+00:00",
+  "forbidden_always_de": [
+    "Linux-Kernel-Image ersetzen oder kompilieren",
+    "Unsigned Kernel-Module laden",
+    "Bootloader (GRUB/systemd-boot) ohne dokumentierte Operator-Freigabe ändern",
+    "initramfs oder /boot ohne Review anfassen",
+    "Treiber (GPU/NVMe/Netz) neu schreiben statt Mainline-Kernel zu nutzen"
+  ],
+  "headline_de": "Kernel-Grenze auditiert — Mainline bleibt, Runtime + Whitelist-Tuning",
+  "kernel": {
+    "modules_sample": [
+      "exfat",
+      "uas",
+      "usb_storage",
+      "ntfs3",
+      "tcp_diag"
+    ],
+    "replacement_forbidden": true,
+    "uname": "Linux 7.0.0-22-generic #22-Ubuntu SMP PREEMPT_DYNAMIC Mon May 25 15:54:34 UTC 2026 x86_64"
+  },
+  "nvme_schedulers": [
+    {
+      "device": "nvme0n1",
+      "scheduler": "[none] mq-deadline"
+    }
+  ],
+  "ok": true,
+  "process_limits": {
+    "nofile_hard": 524288,
+    "nofile_soft": 524288
+  },
+  "recommendations_de": [
+    "vm.swappiness hoch — optional Level-D sysctl nach Operator-Ack (kein eigener Kernel)"
+  ],
+  "runtime_layer_installed": true,
+  "schema_version": 1,
+  "secure_path_de": "Kernel bleibt Distribution-Mainline. Verbesserung über Runtime-Schicht + begrenzte Tunables + Audit-Evidence — fail-closed bei Verbotenem.",
+  "sysctl_whitelist_read": {
+    "fs.file-max": "9223372036854775807",
+    "net.core.somaxconn": "4096",
+    "vm.swappiness": "60"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "autostart_allowlist": [
+    "r3-os-session.desktop",
+    "xdg-user-session.desktop"
+  ],
+  "autostart_essential_prefixes": [
+    "gnome-keyring",
+    "pulseaudio",
+    "at-spi",
+    "xdg-user-dirs",
+    "snap-userd",
+    "geoclue",
+    "tracker-",
+    "evolution-alarm",
+    "org.gnome.SettingsDaemon",
+    "org.gnome.DejaDup",
+    "nm-applet",
+    "blueman",
+    "ibus",
+    "caribou",
+    "onboard"
+  ],
+  "decommission_de": [
+    "Active Alpha Autostart und Menü",
+    "Parallele Preview/Legacy-Hub-Könige",
+    "Fremde Benutzer-Autostarts (außer System-Essentials)"
+  ],
+  "desktop_background_color": "#0a0a0f",
+  "doctrine_de": "GNOME bleibt nur als Display-Unterbau (vmlinuz/Wayland unverändert). Deine Sitzung ist R3 — Cockpit, Kernel, Arbeitsfläche.",
+  "gnome_minimize_ui": true,
+  "headline_de": "R3 — Ubuntu läuft in dir",
+  "legacy_autostart_ids": [
+    "active-alpha-preview.desktop",
+    "active-alpha-operator-status.desktop",
+    "active-alpha-marktanalyse.desktop",
+    "active-alpha-worker-bootstrap.desktop",
+    "ubuntu-advantage-notification.desktop",
+    "update-notifier.desktop",
+    "software-update-available.desktop"
+  ],
+  "legacy_desktop_ids": [
+    "active-alpha-preview.desktop",
+    "active-alpha-operator-status.desktop",
+    "active-alpha-marktanalyse.desktop",
+    "Marktanalyse.desktop",
+    "Active-Alpha-Chat.desktop"
+  ],
+  "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+  "mode": "takeover",
+  "remove_ubuntu_background": true,
+  "schema_version": 1,
+  "session": {
+    "browser_app_mode": false,
+    "browser_fallback_allowed": false,
+    "hub_path_fallback": "/r3",
+    "hub_path_kernel_ok": "/r3",
+    "native_shell_only": true,
+    "shell": "native",
+    "start_fullscreen": true,
+    "startup_delay_sec": 28,
+    "wm_class": "R3"
+  },
+  "survives_de": [
+    "Cognitive Kernel v2",
+    "Preview Hub / R3 Cockpit",
+    "R3 Arbeitsfläche (native Apps als Fenster)",
+    "Order-Desk bei Bedarf",
+    "H1 / Scheduler / Evidence"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "phase": "S0",
+  "classification": "INFRASTRUCTURE_ONLY",
+  "champion_unchanged": "R3_w075_q065_noexit",
+  "frozen_parameter_reference": {
+    "AUTHORITATIVE_CHAMPION": "R3_w075_q065_noexit",
+    "AA_ALPHA_MODEL_MODE": "rank_only",
+    "AA_RISK_OFF_SELECTION_MODE": "mom_blend_blend",
+    "AA_RISK_OFF_MOMENTUM_WEIGHT": "0.75",
+    "AA_RISK_OFF_MOMENTUM_RESCUE_QUANTILE": "0.65",
+    "AA_RISK_OFF_FORCE_EXIT_ENABLED": "0",
+    "AA_MAX_SECTOR": "0.55",
+    "AA_UNIVERSE_MODE": "diy_pit_liquidity",
+    "AA_UNIVERSE_TOP_N": "100"
+  },
+  "in_scope": [
+    "sector_reference.csv automated refresh",
+    "ticker_to_sector lookup chain",
+    "dashboard status display",
+    "wikipedia_gics in universe snapshots",
+    "yfinance fallback cache"
+  ],
+  "out_of_scope_without_external_approval": [
+    "change max_sector or gics_to_coarse buckets",
+    "champion variant change",
+    "signal weight or risk-off parameter change",
+    "auto_promotion"
+  ],
+  "s4_acceptance_criterion": {
+    "champion_symbols_all_mapped": [
+      "STX",
+      "WDC",
+      "SNDK",
+      "INTC",
+      "CIEN",
+      "GOOGL",
+      "GOOG",
+      "AMD",
+      "CAT",
+      "ON",
+      "MU",
+      "VRT",
+      "TXN",
+      "OXY"
+    ],
+    "rule": "After rollout, champion_sector_coverage unknown_count must be 0 when yfinance/wikipedia succeed"
+  },
+  "note_de": "Automatische Sektor-Referenz ändert keine Champion-Hyperparameter. Weniger Unknown-Ticker kann Portfolio-Caps und sector_rel_strength leicht beeinflussen — das ist dokumentierte Infrastruktur-Stabilisierung, kein neues Alpha."
+}

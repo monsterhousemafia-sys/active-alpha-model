@@ -1,0 +1,61 @@
+Active Alpha Live Trading - Dashboard
+=====================================
+
+status: ROT
+today_action: ⚠ 3 kritisch — vor US-Handel beheben: Live-Kurse unvollständig
+live_trading_enabled: True
+
+Rebalance schedule (Paper-parity)
+--------------------------------
+rebalance_every_recorded_trading_days: 1
+last_rebalance_date: 2026-06-02
+recorded_mark_days_since_rebalance: 6
+days_remaining_until_due: 0
+recommendation: REBALANCE_DUE
+summary: Live-Trading: Rebalance fällig (6/1 Mark-Tage).
+
+Sector reference
+----------------
+sector_summary: Sektoren: Stand 2026-06-04 · Champion 14/14
+sector_traffic: GRUEN
+
+T212 Konto
+----------
+cash_eur: 678.52
+n_positions: 0
+champion_ok: True
+signals_ok: True
+model_symbols: 11
+reeval_urgency: STALE_QUOTES
+trade_required: False
+
+US order queue
+---------------
+pending: 1
+queue_status: US-Session offen — 1 vorgemerkt (Auto-Ausführung nicht aktiviert)
+
+Pre-session warnings
+--------------------
+warning_severity: critical
+warning_headline: ⚠ 3 kritisch — vor US-Handel beheben: Live-Kurse unvollständig
+critical_count: 3
+
+KI learning
+-----------
+learning_score: 63
+learning_grade: C
+learning_stage: Sportwagen
+ic_pearson: 0.017102630157397
+live_mature: 0
+  [critical] STALE_QUOTES: Live-Kurse unvollständig
+  [critical] UNDER_INVESTED_CASH: Fast alles Cash — Modell will investiert sein
+  [critical] REBALANCE_DUE_NO_POSITIONS: Rebalance fällig — Depot leer
+  [warn] PENDING_NOT_ARMED: 1 Order(s) vorgemerkt — Auto-Ausführung aus
+  [info] REAL_MONEY_NOT_AUTHORIZED: Echtgeld-Gate: noch nicht freigegeben
+  [warn] TRADING_NOT_READY: Live-Orders noch nicht bereit
+
+Steps (wie Paper)
+-----------------
+① 1_live_daily_sync.bat  — täglicher Mark
+② 2_live_rebalance_when_due.bat — Signal + Rebalance
+③ Signal — nur Modell-CSV aktualisieren

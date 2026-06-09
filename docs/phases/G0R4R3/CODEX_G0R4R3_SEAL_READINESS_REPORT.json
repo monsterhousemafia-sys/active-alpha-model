@@ -1,0 +1,60 @@
+{
+  "seal_readiness_summary": "BLOCKED",
+  "baseline_crlf_required_hashes": {
+    "EXTERNAL_REVIEW_APPROVAL_FINAL.md": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+    "V5R_EXTERNAL_ACCEPTANCE_REPORT.md": "08a18385f8e6498b0c63437c372ec4d43980e70e8ad32e5ca6220e9a30b1c97f",
+    "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json": "291b1d75d0774dff20db4cd2efc113239254adfcd3a0193b7a5d1bb4180abd17"
+  },
+  "required_audit_zip_paths": [
+    "control/external_reviews/g0r4r2_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md",
+    "control/external_reviews/g0r4r2_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md.sha256",
+    "control/external_reviews/g0r4r2_rejection/EXTERNAL_REVIEW_DECISION_G0R4R2_REMEDIATION_REQUIRED.md",
+    "control/external_reviews/g0r4r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R4R2.sha256",
+    "control/external_reviews/g0r4r3_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R3_FINAL_BLOB_ZIP_VERBATIM_REMEDIATION_ONLY.md",
+    "control/external_reviews/g0r4r3_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R3_FINAL_BLOB_ZIP_VERBATIM_REMEDIATION_ONLY.md.sha256"
+  ],
+  "checks": [
+    {
+      "label": "G0R4R2_CURRENT",
+      "path": "E:\\active_alpha_model\\outgoing_external_reviews\\g0r4r2\\codex_g0r4r2_verbatim_authoritative_baseline_resubmission.zip",
+      "exists": true,
+      "gaps": [
+        "BASELINE_HASH_MISMATCH:EXTERNAL_REVIEW_APPROVAL_FINAL.md expected=efaf57ec9834 actual=017d0bc59df4 (LF-only)",
+        "BASELINE_HASH_MISMATCH:V5R_EXTERNAL_ACCEPTANCE_REPORT.md expected=08a18385f8e6 actual=6d65847e9d4a (LF-only)",
+        "BASELINE_HASH_MISMATCH:docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json expected=291b1d75d077 actual=255f9a7db48d (LF-only)",
+        "AUDIT_INPUT_MISSING_IN_ZIP:control/external_reviews/g0r4r2_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md",
+        "AUDIT_INPUT_MISSING_IN_ZIP:control/external_reviews/g0r4r2_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md.sha256",
+        "AUDIT_INPUT_MISSING_IN_ZIP:control/external_reviews/g0r4r2_rejection/EXTERNAL_REVIEW_DECISION_G0R4R2_REMEDIATION_REQUIRED.md",
+        "AUDIT_INPUT_MISSING_IN_ZIP:control/external_reviews/g0r4r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R4R2.sha256",
+        "AUDIT_INPUT_MISSING_IN_ZIP:control/external_reviews/g0r4r3_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R3_FINAL_BLOB_ZIP_VERBATIM_REMEDIATION_ONLY.md",
+        "AUDIT_INPUT_MISSING_IN_ZIP:control/external_reviews/g0r4r3_approval/EXTERNAL_REVIEW_APPROVAL_G0R4R3_FINAL_BLOB_ZIP_VERBATIM_REMEDIATION_ONLY.md.sha256",
+        "GITATTRIBUTES_MISSING_IN_ZIP"
+      ],
+      "pass": false
+    },
+    {
+      "label": "G0R4R3_TARGET",
+      "path": "E:\\active_alpha_model\\outgoing_external_reviews\\g0r4r3\\codex_g0r4r3_final_blob_zip_verbatim_remediation_review.zip",
+      "exists": false,
+      "gaps": [
+        "ZIP_MISSING"
+      ]
+    },
+    {
+      "label": "G0R4R3_ROOT",
+      "path": "E:\\active_alpha_model\\codex_g0r4r3_final_blob_zip_verbatim_remediation_review.zip",
+      "exists": false,
+      "gaps": [
+        "ZIP_MISSING"
+      ]
+    }
+  ],
+  "g0r4r2_known_gaps_closed_by_g0r4r3": [
+    "Git CRLF->LF normalization blocked via .gitattributes -text",
+    "Final git blob verbatim gate before ZIP build",
+    "Final ZIP entry verbatim gate after ZIP build",
+    "Six audit inputs mandatory in ZIP include list",
+    "No internal false ZIP-PASS in committed payload",
+    "Detached post-build report only claims final verification"
+  ]
+}

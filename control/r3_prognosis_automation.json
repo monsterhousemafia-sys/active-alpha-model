@@ -1,0 +1,14 @@
+{
+  "auto_refresh_on_display": true,
+  "enabled": true,
+  "force_t212_sync": false,
+  "headline_de": "Prognose-Freischaltung — ein Kanal, T212 throttled (max 5 min)",
+  "max_stale_prognosis_s": 300,
+  "prepare_freigabe": true,
+  "rebuild_plan_on_live_cash": true,
+  "refresh_on_mirror_poll": true,
+  "schema_version": 2,
+  "sync_policy_ref": "control/r3_t212_sync_policy.json",
+  "updated_at_utc": "2026-06-08T20:00:00+00:00",
+  "warm_desktop_cache": false
+}

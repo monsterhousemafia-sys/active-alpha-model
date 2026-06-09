@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "title": "Daily Alpha Ops — Alias auf R3 Ops Kernel",
+  "kernel_ref": "control/r3_ops_kernel_policy.json",
+  "kernel_module": "analytics.r3_ops_kernel",
+  "updated_at_utc": "2026-06-09T21:00:00+00:00",
+  "deprecated_note_de": "Phasen und Schritte liegen in r3_ops_kernel_policy.json — daily-alpha nutzt denselben Kernel.",
+  "objective_ref": "control/r0_migration/alpha_objective.json",
+  "active_signal_profile": "daily_alpha_h1",
+  "architecture": {
+    "layer_1_data": "Kurse, T212-Sync, Daytrading-Datenpflege, Internet-Gate",
+    "layer_2_signal": "EOD/Pre-US daily_alpha_h1 — run_tomorrow_prediction (kein Champion-Wechsel)",
+    "layer_3_capital": "Live-Cash → Investment-Plan → lohnende Positionen (priority_score)",
+    "layer_4_action_prep": "Prognose, Trading-Funktionen, Freigabe-Paket — ohne auto_execute",
+    "layer_5_surface": "Hub, GUI-Cache, Mirror, R3 Desktop",
+    "layer_6_learning": "Observe-only Learning-Capture, Postmortem EOD"
+  },
+  "governance": {
+    "auto_execute_real_money_enabled": false,
+    "orders_require_gui_confirmation": true,
+    "champion_change_requires_external_approval": true,
+    "note_de": "Maximale Rendite-Vorbereitung 24/7 automatisiert; Echtgeld-Orders nur nach R3-Freigabe (fail-closed)."
+  },
+  "phases": {
+    "pre_us": {
+      "description": "Mo–Fr vor US-Open: Kurse, Signal-Check, Top-Picks, Freigabe vorbereiten",
+      "steps": ["quotes", "signal_check", "capital", "prognosis", "top_picks", "gui_light"]
+    },
+    "intraday": {
+      "description": "Handelstag: Kurse + Kreislauf-Status, stale Prognose nachziehen",
+      "steps": ["quotes", "cycle_status", "prognosis_if_stale"]
+    },
+    "eod": {
+      "description": "Nach US-Close: EOD-Signal, Postmortem, Learning",
+      "steps": ["eod_signal", "prognosis", "postmortem", "learning_capture"]
+    },
+    "full": {
+      "description": "Vollständiger Tages-Durchlauf (alle Schichten)",
+      "steps": [
+        "quotes",
+        "daytrading_data",
+        "signal_check",
+        "capital",
+        "prognosis",
+        "top_picks",
+        "cycle",
+        "gui_full",
+        "learning_capture"
+      ]
+    }
+  },
+  "automation": {
+    "max_top_picks": 12,
+    "min_priority_score": 8.0,
+    "force_t212_on_pre_us": true,
+    "run_eod_signal_when_due": true,
+    "warm_gui_on_pre_us": true,
+    "full_gui_on_full_phase": true
+  },
+  "timers_ref": "tools/setup_linux_daily_timers.sh",
+  "bash_entry": "bash tools/king_ops.sh daily-alpha [pre-us|intraday|eod|full]"
+}

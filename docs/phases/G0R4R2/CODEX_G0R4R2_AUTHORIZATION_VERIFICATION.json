@@ -1,0 +1,11 @@
+{
+  "approval_actual_sha256": "296e20abd3d88ca9f6c7138b97ec2a19e9a51836406393067a8e6282b9d16af2",
+  "approval_expected_sha256": "296e20abd3d88ca9f6c7138b97ec2a19e9a51836406393067a8e6282b9d16af2",
+  "approval_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md",
+  "approval_sidecar_path": "incoming_external_reviews/g0r4r2/EXTERNAL_REVIEW_APPROVAL_G0R4R2_REMEDIATION_RESUBMISSION_ONLY.md.sha256",
+  "approval_sidecar_verified": true,
+  "authorization_document_verified": true,
+  "authorized_phase_found": true,
+  "g1_authorized": false,
+  "operative_permissions_detected": false
+}

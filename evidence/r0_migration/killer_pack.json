@@ -1,0 +1,30 @@
+{
+  "affinity_enabled": false,
+  "boosted": [
+    {
+      "pid": 7660,
+      "priority": "high"
+    },
+    {
+      "pid": 20796,
+      "priority": "high"
+    }
+  ],
+  "cpus": 32,
+  "executive_deduped": [],
+  "power": {
+    "/change disk-timeout-ac 0": 0,
+    "/change disk-timeout-dc 0": 0,
+    "/setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c": 0,
+    "/setactive SCHEME_CURRENT": 0,
+    "/setacvalueindex SCHEME_CURRENT SUB_PROCESSOR CPMINCORES 100": 0,
+    "/setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFBOOSTMODE 2": 0,
+    "/setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PERFINCPOL 2": 0,
+    "/setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMAX 100": 0,
+    "/setacvalueindex SCHEME_CURRENT SUB_PROCESSOR PROCTHROTTLEMIN 100": 0
+  },
+  "target_pids": [
+    7660,
+    20796
+  ]
+}

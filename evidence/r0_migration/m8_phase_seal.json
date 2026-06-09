@@ -1,0 +1,52 @@
+{
+  "artifact_hashes": {
+    "control/rollback/r3_last_known_good/latest_validated_run.json": "675372c7734c10e33de82fb6502ad10dba0dc3b90cc5548c611488333577b2fe",
+    "docs/R0_PRODUCTION_CUTOVER_RUNBOOK.md": "735c1460249748ce0755595295be7ee3a71d3acc9c450e10e52df5b8c3f6eec6"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M9",
+  "phase": "M8",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M7 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m7_phase_seal.json"
+      },
+      {
+        "check": "file_exists:docs/R0_PRODUCTION_CUTOVER_RUNBOOK.md",
+        "detail": "present",
+        "pass": true,
+        "path": "docs/R0_PRODUCTION_CUTOVER_RUNBOOK.md"
+      },
+      {
+        "check": "file_exists:control/rollback/r3_last_known_good/latest_validated_run.json",
+        "detail": "present",
+        "pass": true,
+        "path": "control/rollback/r3_last_known_good/latest_validated_run.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M8",
+    "title": "Operative Vorbereitung",
+    "verified_at_utc": "2026-06-05T15:39:08+00:00"
+  }
+}

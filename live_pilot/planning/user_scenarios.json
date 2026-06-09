@@ -1,0 +1,875 @@
+{
+  "scenarios": [
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T19:57:35+00:00",
+      "id": "3d90e97c-448b-4f4b-abd1-d78ce5217396",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T19:57:35+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T19:57:35+00:00",
+      "id": "2a34b43f-d613-4bef-8cf4-4c7cc3d65376",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T19:57:35+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T19:58:13+00:00",
+      "id": "c0274ff8-4927-42a1-a91a-46703101c3ae",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T19:58:13+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T19:58:13+00:00",
+      "id": "222a3c6c-b8fb-46d2-a3f7-7d1e51c0bf01",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T19:58:13+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:00:12+00:00",
+      "id": "eabd3669-90a4-4d29-991c-882917702e62",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:00:12+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:00:12+00:00",
+      "id": "1e8b001c-48da-4e56-af24-362ac3304948",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:00:12+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:02:58+00:00",
+      "id": "1d4c1b9b-3602-41d2-9723-b59153eddce6",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:02:58+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:02:58+00:00",
+      "id": "47e0141b-4c3c-4b46-afad-0c066d1b14d9",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:02:58+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:05:48+00:00",
+      "id": "7195d292-e994-4f13-bf93-b8514f780e85",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:05:48+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:05:48+00:00",
+      "id": "4f515db5-3f6f-41f4-ba52-6f3c3d24f664",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:05:48+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:08:03+00:00",
+      "id": "dda4ff01-69c8-4e4a-b71b-dda8893c5a79",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:08:03+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:08:03+00:00",
+      "id": "a9e2def1-2545-4447-b6f6-07abcfc091de",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:08:03+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:13:43+00:00",
+      "id": "25c50f74-377a-4d14-a5ab-7ba66456368c",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:13:43+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:13:44+00:00",
+      "id": "f44ffc1e-c74e-4fa5-80bb-003efc558180",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:13:43+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:15:38+00:00",
+      "id": "166aaf3e-8193-4024-9e59-7f0ab6513d7f",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:15:38+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:15:38+00:00",
+      "id": "072c7e3d-beba-4a69-b191-2345c0237813",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:15:38+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:19:15+00:00",
+      "id": "68cd30bb-0044-4949-9d86-5823ac0df609",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:19:15+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:19:15+00:00",
+      "id": "9fe44952-db2d-467b-b82e-4b875233caac",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:19:15+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:24:43+00:00",
+      "id": "95223df5-c2ef-40a3-a66e-a799eeb45ef3",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:24:43+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:24:43+00:00",
+      "id": "2417eb11-1d83-4745-bd15-0283a0b6e1b0",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:24:43+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:28:44+00:00",
+      "id": "2f7fdf39-baaf-4954-a0fe-7b6a4e4fb27d",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:28:44+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:28:44+00:00",
+      "id": "21474183-efa5-4df2-8d42-42b2716e6ae6",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:28:44+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:36:54+00:00",
+      "id": "c75e81f6-0d4c-4d8a-83aa-fb3a07d75003",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:36:54+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:36:54+00:00",
+      "id": "39941e2c-5348-435b-9119-0deb48e3a05f",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:36:54+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:40:52+00:00",
+      "id": "d6da960b-135b-4ae1-a2bf-2fa6ce662381",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:40:52+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:40:52+00:00",
+      "id": "1c995f5d-947a-481b-9095-3edd4e90e565",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:40:52+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:49:13+00:00",
+      "id": "72859424-c7cc-4ed0-9521-568feeba48a3",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:49:13+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:49:13+00:00",
+      "id": "894de679-19df-4f94-84b5-138d815d171c",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:49:13+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:52:26+00:00",
+      "id": "2fc578f5-879b-44c1-8c34-d1fce4459418",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:52:26+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:52:26+00:00",
+      "id": "378ae660-e77a-4ebe-8a4c-c3ba9ed9246a",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:52:26+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:55:21+00:00",
+      "id": "05fcac9a-9e7c-4948-bf4a-b72e7d7fa1ac",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:55:21+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T20:55:21+00:00",
+      "id": "c0c4384d-8fc4-4329-a650-f62d609b110c",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T20:55:21+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T21:05:50+00:00",
+      "id": "7d21df60-7b6d-444f-a7a8-4c65bd4c9bbf",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T21:05:50+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T21:05:51+00:00",
+      "id": "8b560059-e25d-404a-acda-099ad9d8be73",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T21:05:50+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T21:08:43+00:00",
+      "id": "b9f5e182-5c38-446c-a5bd-6cb956f10ab8",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T21:08:43+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T21:08:43+00:00",
+      "id": "eb950fd6-8954-4721-9674-d04c7bc8fc56",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T21:08:43+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T21:11:47+00:00",
+      "id": "6b12e234-1624-4c64-95a8-968f5625ddd1",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T21:11:47+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T21:11:47+00:00",
+      "id": "f5e39746-8e8c-4989-9424-2b62cff21c08",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T21:11:47+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:02:36+00:00",
+      "id": "20232930-324a-4f55-a7b9-33f5e62b36c4",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:02:36+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:02:36+00:00",
+      "id": "e6960cc9-287e-43ff-903b-d0f1588c0fb0",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:02:36+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:03:14+00:00",
+      "id": "ab5c8474-a4fa-4b09-814a-d09247815328",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:03:14+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:03:14+00:00",
+      "id": "5aba80d3-2955-4a24-a2a5-46bdb7ce2b7e",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:03:14+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:03:51+00:00",
+      "id": "70ccc9da-8560-4b19-ba09-947338f24aa4",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:03:51+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:03:51+00:00",
+      "id": "c7a4305b-d02a-4c22-b894-6f692687b2d6",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:03:51+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:26:31+00:00",
+      "id": "1e176942-7256-499c-833e-9be72592f034",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:26:31+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:26:31+00:00",
+      "id": "7413c8ef-192d-4460-ba72-77b93262b893",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:26:31+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:44:36+00:00",
+      "id": "cefd8de2-8240-44c6-a19d-fcf4e1dcfa07",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:44:36+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T22:44:36+00:00",
+      "id": "265f0bd2-d2b9-4aba-b615-538d96b3bc78",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T22:44:36+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:28:15+00:00",
+      "id": "095b7177-154b-47c1-9b1c-37f90b18957c",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:28:15+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:28:15+00:00",
+      "id": "71ef8152-9e66-452d-b944-0fca924f46c1",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:28:15+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:29:38+00:00",
+      "id": "fe9b107d-32cc-41c0-bf47-50061b0683fa",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:29:38+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:29:38+00:00",
+      "id": "23faa66f-982b-4f25-b5fe-a98e1d95119e",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:29:38+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:32:03+00:00",
+      "id": "8a275f6e-7858-4ce1-a4cc-afecb51bbed5",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:32:03+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:32:03+00:00",
+      "id": "b7360950-7f2d-4709-a530-ee8345ead4ba",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:32:03+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:50:36+00:00",
+      "id": "ff7ab630-b206-498f-879c-6563579a8fd9",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:50:36+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:50:36+00:00",
+      "id": "7e7db93c-8dc7-407f-a3cd-fe347a2ccfdf",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:50:36+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:58:37+00:00",
+      "id": "bcb8afa0-5814-4fc3-a3e3-ae069fe27710",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:58:37+00:00"
+    },
+    {
+      "capital_eur": 500.0,
+      "comment": "",
+      "created_at_utc": "2026-06-01T23:58:37+00:00",
+      "id": "6d78b208-42c1-4244-a398-00dabcd7b93a",
+      "items": [
+        {
+          "amount_eur": 50.0,
+          "symbol": "OXY"
+        }
+      ],
+      "name": "Mein Szenario (Kopie)",
+      "reserve_eur": 50.0,
+      "updated_at_utc": "2026-06-01T23:58:37+00:00"
+    }
+  ],
+  "updated_at_utc": "2026-06-01T23:58:37+00:00"
+}

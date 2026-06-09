@@ -1,0 +1,1295 @@
+{
+  "alignment_mode": "INTERSECTION_RECOMPUTED",
+  "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+  "calendar": {
+    "calendar_delta_days": {
+      "M1_MOM_BLEND_MATCHED_CONTROLS": 1,
+      "MOM_63_TOP12": 1,
+      "MOM_63_TOP12_STRICT": 0,
+      "MOM_63_TOP15_RECONSTRUCTED": 1,
+      "R0_LEGACY_ENSEMBLE": 1,
+      "R3_w075_q065_noexit": 1
+    },
+    "calendar_warning": false,
+    "end_date": "2026-05-28 00:00:00",
+    "n_aligned": 1859,
+    "raw_n_days": {
+      "M1_MOM_BLEND_MATCHED_CONTROLS": 1860,
+      "MOM_63_TOP12": 1860,
+      "MOM_63_TOP12_STRICT": 1859,
+      "MOM_63_TOP15_RECONSTRUCTED": 1860,
+      "R0_LEGACY_ENSEMBLE": 1860,
+      "R3_w075_q065_noexit": 1860
+    },
+    "start_date": "2019-01-03 00:00:00",
+    "status": "OK",
+    "variants_included": [
+      "R3_w075_q065_noexit",
+      "M1_MOM_BLEND_MATCHED_CONTROLS",
+      "R0_LEGACY_ENSEMBLE",
+      "MOM_63_TOP12",
+      "MOM_63_TOP12_STRICT",
+      "MOM_63_TOP15_RECONSTRUCTED"
+    ]
+  },
+  "cost_stress": {
+    "blockers": [],
+    "gate": {
+      "approved_scenario": "PLUS_25_BPS",
+      "beats_champion": true,
+      "beats_m1": true,
+      "blockers": [],
+      "detail": "challenger_sharpe=0.954677 champion_sharpe=0.746227 m1_sharpe=0.697365",
+      "evaluation_status": "PASS",
+      "pass": true
+    },
+    "scenarios": {
+      "BASELINE": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.2069547319682181,
+            "cagr": 0.17790705342809132,
+            "daily_hit_rate": 0.5548387096774193,
+            "max_drawdown": -0.2746301008045754,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8952040081074486,
+            "total_return": 2.3486292775936004
+          },
+          "reason": "",
+          "scenario": "BASELINE",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260604T210245Z_R0_LEGACY_ENSEMBLE/strategy_daily_returns.csv",
+              "sha256": "61866fe2225fca37394c656f4c552042f4f0d8d3455514a6afd35f52cd5c0363"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 490,
+            "extra_bps": 0.0,
+            "total_drag": 0.0,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "R0_LEGACY_ENSEMBLE"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "aeeed43179701318fffb9ef18b4bcd0e5d665675198b8e867f2abde1cdffdb3d",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20706768269764336,
+            "cagr": 0.1769711526236324,
+            "daily_hit_rate": 0.553763440860215,
+            "max_drawdown": -0.27397674526664784,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8909897143159259,
+            "total_return": 2.3290409427966843
+          },
+          "reason": "",
+          "scenario": "BASELINE",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/strategy_daily_returns.csv",
+              "sha256": "f507977731d8d3203cb611a8d41e655182847aebb7dd91a117dce095cab4fe12"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+              "sha256": "68c8de3d6defde72af3cf23bed1860a0508aaea02a6046a46edd8bca427b985d"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 0.0,
+            "total_drag": 0.0,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Execution cost ledger documents tx_cost / slippage fields",
+            "source_path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/costs/execution_costs.csv",
+            "source_sha256": "748dafdd64efc7582c403fbf7f60f6d55f9121291defe292ae60161c23ca4791",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.22107599693439978,
+            "cagr": 0.22485523440538757,
+            "daily_hit_rate": 0.5526881720430108,
+            "max_drawdown": -0.26651299208430745,
+            "n_days": 1860,
+            "sharpe_0rf": 1.0285274774509336,
+            "total_return": 3.4683731898392445
+          },
+          "reason": "",
+          "scenario": "BASELINE",
+          "source_files": {
+            "returns": {
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/daily_returns.csv",
+              "sha256": "3c9dcde08951d482b498df9e627207a8adb3f3f5331c897fe179e77d60951cfc"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/turnover/rebalance_turnover.csv",
+              "sha256": "bc38f2bdafa57a7e677160ee8630ad71646492b37e387af180c9aec8de16b01a"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 0.0,
+            "total_drag": 0.0,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_10_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20740882620818657,
+            "cagr": 0.16395228370913473,
+            "daily_hit_rate": 0.5526881720430108,
+            "max_drawdown": -0.2786951335608281,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8362182341870061,
+            "total_return": 2.0666513240446096
+          },
+          "reason": "",
+          "scenario": "PLUS_10_BPS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260604T210245Z_R0_LEGACY_ENSEMBLE/strategy_daily_returns.csv",
+              "sha256": "61866fe2225fca37394c656f4c552042f4f0d8d3455514a6afd35f52cd5c0363"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 490,
+            "extra_bps": 10.0,
+            "total_drag": 0.08729941847438272,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "R0_LEGACY_ENSEMBLE"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "aeeed43179701318fffb9ef18b4bcd0e5d665675198b8e867f2abde1cdffdb3d",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20716286037448256,
+            "cagr": 0.1583257506379181,
+            "daily_hit_rate": 0.5521505376344086,
+            "max_drawdown": -0.28152992152681067,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8135531397654212,
+            "total_return": 1.9589078491710814
+          },
+          "reason": "",
+          "scenario": "PLUS_10_BPS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/strategy_daily_returns.csv",
+              "sha256": "f507977731d8d3203cb611a8d41e655182847aebb7dd91a117dce095cab4fe12"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+              "sha256": "68c8de3d6defde72af3cf23bed1860a0508aaea02a6046a46edd8bca427b985d"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 10.0,
+            "total_drag": 0.11777918534810307,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Execution cost ledger documents tx_cost / slippage fields",
+            "source_path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/costs/execution_costs.csv",
+            "source_sha256": "748dafdd64efc7582c403fbf7f60f6d55f9121291defe292ae60161c23ca4791",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.22107238918526526,
+            "cagr": 0.21688846522386762,
+            "daily_hit_rate": 0.5526881720430108,
+            "max_drawdown": -0.2695655388690623,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9990017095744105,
+            "total_return": 3.258257371623835
+          },
+          "reason": "",
+          "scenario": "PLUS_10_BPS",
+          "source_files": {
+            "returns": {
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/daily_returns.csv",
+              "sha256": "3c9dcde08951d482b498df9e627207a8adb3f3f5331c897fe179e77d60951cfc"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/turnover/rebalance_turnover.csv",
+              "sha256": "bc38f2bdafa57a7e677160ee8630ad71646492b37e387af180c9aec8de16b01a"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 10.0,
+            "total_drag": 0.048205315285567416,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_25_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.2086462448948419,
+            "cagr": 0.1431825394142614,
+            "daily_hit_rate": 0.5494623655913978,
+            "max_drawdown": -0.28475145890630205,
+            "n_days": 1860,
+            "sharpe_0rf": 0.7462274135960031,
+            "total_return": 1.685025085204392
+          },
+          "reason": "",
+          "scenario": "PLUS_25_BPS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260604T210245Z_R0_LEGACY_ENSEMBLE/strategy_daily_returns.csv",
+              "sha256": "61866fe2225fca37394c656f4c552042f4f0d8d3455514a6afd35f52cd5c0363"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 490,
+            "extra_bps": 25.0,
+            "total_drag": 0.21824854618595702,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "R0_LEGACY_ENSEMBLE"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "aeeed43179701318fffb9ef18b4bcd0e5d665675198b8e867f2abde1cdffdb3d",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20735523092728186,
+            "cagr": 0.1308961437851197,
+            "daily_hit_rate": 0.546236559139785,
+            "max_drawdown": -0.2927187040449223,
+            "n_days": 1860,
+            "sharpe_0rf": 0.6973647345582261,
+            "total_return": 1.479194363562954
+          },
+          "reason": "",
+          "scenario": "PLUS_25_BPS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/strategy_daily_returns.csv",
+              "sha256": "f507977731d8d3203cb611a8d41e655182847aebb7dd91a117dce095cab4fe12"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+              "sha256": "68c8de3d6defde72af3cf23bed1860a0508aaea02a6046a46edd8bca427b985d"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 25.0,
+            "total_drag": 0.2944479633702578,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Execution cost ledger documents tx_cost / slippage fields",
+            "source_path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/costs/execution_costs.csv",
+            "source_sha256": "748dafdd64efc7582c403fbf7f60f6d55f9121291defe292ae60161c23ca4791",
+            "verified": true
+          },
+          "comparison_result": "PASS",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.22107491314811176,
+            "cagr": 0.20503287222097089,
+            "daily_hit_rate": 0.55,
+            "max_drawdown": -0.2741750107572487,
+            "n_days": 1860,
+            "sharpe_0rf": 0.9546769810114856,
+            "total_return": 2.961402590839813
+          },
+          "reason": "",
+          "scenario": "PLUS_25_BPS",
+          "source_files": {
+            "returns": {
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/daily_returns.csv",
+              "sha256": "3c9dcde08951d482b498df9e627207a8adb3f3f5331c897fe179e77d60951cfc"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/turnover/rebalance_turnover.csv",
+              "sha256": "bc38f2bdafa57a7e677160ee8630ad71646492b37e387af180c9aec8de16b01a"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 25.0,
+            "total_drag": 0.1205132882139184,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_50_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.21215928876003676,
+            "cagr": 0.1089771075266619,
+            "daily_hit_rate": 0.5440860215053763,
+            "max_drawdown": -0.2947363593162067,
+            "n_days": 1860,
+            "sharpe_0rf": 0.5944985513064122,
+            "total_return": 1.1457120114551662
+          },
+          "reason": "",
+          "scenario": "PLUS_50_BPS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260604T210245Z_R0_LEGACY_ENSEMBLE/strategy_daily_returns.csv",
+              "sha256": "61866fe2225fca37394c656f4c552042f4f0d8d3455514a6afd35f52cd5c0363"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 490,
+            "extra_bps": 50.0,
+            "total_drag": 0.43649709237191403,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "R0_LEGACY_ENSEMBLE"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "aeeed43179701318fffb9ef18b4bcd0e5d665675198b8e867f2abde1cdffdb3d",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20780768620396017,
+            "cagr": 0.08658034439450879,
+            "daily_hit_rate": 0.5387096774193548,
+            "max_drawdown": -0.3138279436962599,
+            "n_days": 1860,
+            "sharpe_0rf": 0.503875855660712,
+            "total_return": 0.845740993950064
+          },
+          "reason": "",
+          "scenario": "PLUS_50_BPS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/strategy_daily_returns.csv",
+              "sha256": "f507977731d8d3203cb611a8d41e655182847aebb7dd91a117dce095cab4fe12"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+              "sha256": "68c8de3d6defde72af3cf23bed1860a0508aaea02a6046a46edd8bca427b985d"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 50.0,
+            "total_drag": 0.5888959267405156,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Execution cost ledger documents tx_cost / slippage fields",
+            "source_path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/costs/execution_costs.csv",
+            "source_sha256": "748dafdd64efc7582c403fbf7f60f6d55f9121291defe292ae60161c23ca4791",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.22110027975223742,
+            "cagr": 0.18552312544253868,
+            "daily_hit_rate": 0.5473118279569893,
+            "max_drawdown": -0.2837318229021245,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8807203866478706,
+            "total_return": 2.511772807964652
+          },
+          "reason": "",
+          "scenario": "PLUS_50_BPS",
+          "source_files": {
+            "returns": {
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/daily_returns.csv",
+              "sha256": "3c9dcde08951d482b498df9e627207a8adb3f3f5331c897fe179e77d60951cfc"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/turnover/rebalance_turnover.csv",
+              "sha256": "bc38f2bdafa57a7e677160ee8630ad71646492b37e387af180c9aec8de16b01a"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 50.0,
+            "total_drag": 0.2410265764278368,
+            "turnover_multiplier": 1.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "SLIPPAGE_TURNOVER_STRESS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+            "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20702166332888194,
+            "cagr": 0.17510901320550243,
+            "daily_hit_rate": 0.5543010752688172,
+            "max_drawdown": -0.2754448733084913,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8834880851795681,
+            "total_return": 2.290360950883507
+          },
+          "reason": "",
+          "scenario": "SLIPPAGE_TURNOVER_STRESS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260604T210245Z_R0_LEGACY_ENSEMBLE/strategy_daily_returns.csv",
+              "sha256": "61866fe2225fca37394c656f4c552042f4f0d8d3455514a6afd35f52cd5c0363"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 490,
+            "extra_bps": 0.0,
+            "total_drag": 0.01745988369487656,
+            "turnover_multiplier": 2.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "R0_LEGACY_ENSEMBLE"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "aeeed43179701318fffb9ef18b4bcd0e5d665675198b8e867f2abde1cdffdb3d",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.20708459929249748,
+            "cagr": 0.17321882837487457,
+            "daily_hit_rate": 0.5532258064516129,
+            "max_drawdown": -0.27549344008027976,
+            "n_days": 1860,
+            "sharpe_0rf": 0.8755056632901668,
+            "total_return": 2.251496368810377
+          },
+          "reason": "",
+          "scenario": "SLIPPAGE_TURNOVER_STRESS",
+          "source_files": {
+            "returns": {
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/strategy_daily_returns.csv",
+              "sha256": "f507977731d8d3203cb611a8d41e655182847aebb7dd91a117dce095cab4fe12"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+              "sha256": "68c8de3d6defde72af3cf23bed1860a0508aaea02a6046a46edd8bca427b985d"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 0.0,
+            "total_drag": 0.023555837069620646,
+            "turnover_multiplier": 2.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+        },
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Execution cost ledger documents tx_cost / slippage fields",
+            "source_path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/costs/execution_costs.csv",
+            "source_sha256": "748dafdd64efc7582c403fbf7f60f6d55f9121291defe292ae60161c23ca4791",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "EVALUABLE",
+          "gate_evidence_eligible": true,
+          "metrics": {
+            "annual_vol": 0.22107493680591916,
+            "cagr": 0.22325782679667605,
+            "daily_hit_rate": 0.5526881720430108,
+            "max_drawdown": -0.26712448493804497,
+            "n_days": 1860,
+            "sharpe_0rf": 1.0226239671263073,
+            "total_return": 3.425539425484156
+          },
+          "reason": "",
+          "scenario": "SLIPPAGE_TURNOVER_STRESS",
+          "source_files": {
+            "returns": {
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/daily_returns.csv",
+              "sha256": "3c9dcde08951d482b498df9e627207a8adb3f3f5331c897fe179e77d60951cfc"
+            },
+            "turnover_decisions": {
+              "is_proxy": false,
+              "label": "VERIFIED_VARIANT_TURNOVER",
+              "path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/turnover/rebalance_turnover.csv",
+              "sha256": "bc38f2bdafa57a7e677160ee8630ad71646492b37e387af180c9aec8de16b01a"
+            }
+          },
+          "stress_detail": {
+            "applied": true,
+            "events": 372,
+            "extra_bps": 0.0,
+            "total_drag": 0.009641063057113472,
+            "turnover_multiplier": 2.0
+          },
+          "turnover_is_proxy": false,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ]
+    }
+  },
+  "generated_at_utc": "2026-06-05T17:44:36+00:00",
+  "governance_blockers": [],
+  "headline": {
+    "aligned_intersection_sharpe_leader": "MOM_63_TOP12",
+    "champion_is_sharpe_leader": false,
+    "champion_sharpe_rank": null,
+    "champion_sharpe_rank_matrix": null,
+    "do_not_cross_compare_frames": true,
+    "matrix_embedded_sharpe_leader": "R2_MOM_BLEND_REPLACE",
+    "primary_ranking_frame": "matrix_embedded",
+    "primary_sharpe_leader": "R2_MOM_BLEND_REPLACE"
+  },
+  "phase": "C",
+  "quarantined": [
+    {
+      "note": "Excluded from main rankings; unauthorized operational champion claim.",
+      "role": "QUARANTINED",
+      "skip_reason": "returns_file_missing",
+      "variant_id": "R5_rank_only_train5"
+    }
+  ],
+  "rankings": {
+    "cost_plus_25_bps_sharpe": [
+      {
+        "rank": 1,
+        "role": "RESEARCH_CANDIDATE",
+        "sharpe_plus_25_bps": 0.9546769810114856,
+        "variant_id": "MOM_63_TOP12"
+      },
+      {
+        "rank": 2,
+        "role": "SIBLING_MATRIX",
+        "sharpe_plus_25_bps": 0.7462274135960031,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "rank": 3,
+        "role": "M1_CONTROL",
+        "sharpe_plus_25_bps": 0.6973647345582261,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      }
+    ],
+    "max_drawdown_aligned_intersection": [
+      {
+        "max_drawdown": -0.2799019777918448,
+        "rank": 1,
+        "role": "RESEARCH_CANDIDATE",
+        "variant_id": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "max_drawdown": -0.276656323952126,
+        "rank": 2,
+        "role": "RESEARCH_CANDIDATE",
+        "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "max_drawdown": -0.2746301008045754,
+        "rank": 3,
+        "role": "SIBLING_MATRIX",
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "max_drawdown": -0.27397674526664784,
+        "rank": 4,
+        "role": "M1_CONTROL",
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "max_drawdown": -0.26651299208430745,
+        "rank": 5,
+        "role": "RESEARCH_CANDIDATE",
+        "variant_id": "MOM_63_TOP12"
+      },
+      {
+        "max_drawdown": -0.26520719664987313,
+        "rank": 6,
+        "role": "CHAMPION",
+        "variant_id": "R3_w075_q065_noexit"
+      }
+    ],
+    "max_drawdown_matrix_embedded": [
+      {
+        "max_drawdown": -0.3132759516837291,
+        "rank": 1,
+        "role": "SIBLING_MATRIX",
+        "variant_id": "R1_GATE_BASE_ONLY"
+      },
+      {
+        "max_drawdown": -0.2609375706684086,
+        "rank": 2,
+        "role": "SIBLING_MATRIX",
+        "variant_id": "R3_w070_q070_noexit"
+      },
+      {
+        "max_drawdown": -0.2596882296072619,
+        "rank": 3,
+        "role": "SIBLING_MATRIX",
+        "variant_id": "R4_w070_q070_forceexit"
+      },
+      {
+        "max_drawdown": -0.24287574809223278,
+        "rank": 4,
+        "role": "SIBLING_MATRIX",
+        "variant_id": "R2_MOM_BLEND_REPLACE"
+      }
+    ],
+    "segment_3_sharpe": [
+      {
+        "rank": 1,
+        "role": "RESEARCH_CANDIDATE",
+        "segment_3_sharpe": 1.5071804053172764,
+        "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "rank": 2,
+        "role": "RESEARCH_CANDIDATE",
+        "segment_3_sharpe": 1.5054822579131744,
+        "variant_id": "MOM_63_TOP12"
+      },
+      {
+        "rank": 3,
+        "role": "RESEARCH_CANDIDATE",
+        "segment_3_sharpe": 1.4846093574396528,
+        "variant_id": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "rank": 4,
+        "role": "CHAMPION",
+        "segment_3_sharpe": 1.1691645657781127,
+        "variant_id": "R3_w075_q065_noexit"
+      },
+      {
+        "rank": 5,
+        "role": "SIBLING_MATRIX",
+        "segment_3_sharpe": 1.0945295433576625,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "rank": 6,
+        "role": "M1_CONTROL",
+        "segment_3_sharpe": 1.0806669255924972,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      }
+    ],
+    "sharpe_aligned_intersection": [
+      {
+        "rank": 1,
+        "role": "RESEARCH_CANDIDATE",
+        "sharpe_0rf": 1.031096213925337,
+        "variant_id": "MOM_63_TOP12"
+      },
+      {
+        "rank": 2,
+        "role": "RESEARCH_CANDIDATE",
+        "sharpe_0rf": 0.998285209882352,
+        "variant_id": "MOM_63_TOP12_STRICT"
+      },
+      {
+        "rank": 3,
+        "role": "RESEARCH_CANDIDATE",
+        "sharpe_0rf": 0.993757945535734,
+        "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+      },
+      {
+        "rank": 4,
+        "role": "SIBLING_MATRIX",
+        "sharpe_0rf": 0.8946047221769763,
+        "variant_id": "R0_LEGACY_ENSEMBLE"
+      },
+      {
+        "rank": 5,
+        "role": "M1_CONTROL",
+        "sharpe_0rf": 0.8903897108723912,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "rank": 6,
+        "role": "CHAMPION",
+        "sharpe_0rf": 0.8620838594379521,
+        "variant_id": "R3_w075_q065_noexit"
+      }
+    ],
+    "sharpe_matrix_embedded": [
+      {
+        "rank": 1,
+        "role": "SIBLING_MATRIX",
+        "sharpe_0rf": 0.9734499822344412,
+        "variant_id": "R2_MOM_BLEND_REPLACE"
+      },
+      {
+        "rank": 2,
+        "role": "SIBLING_MATRIX",
+        "sharpe_0rf": 0.9118927531483968,
+        "variant_id": "R3_w070_q070_noexit"
+      },
+      {
+        "rank": 3,
+        "role": "SIBLING_MATRIX",
+        "sharpe_0rf": 0.9054585330387559,
+        "variant_id": "R4_w070_q070_forceexit"
+      },
+      {
+        "rank": 4,
+        "role": "SIBLING_MATRIX",
+        "sharpe_0rf": 0.8501252965218753,
+        "variant_id": "R1_GATE_BASE_ONLY"
+      }
+    ]
+  },
+  "schema_version": 1,
+  "validation_runs_present": true,
+  "variants": [
+    {
+      "is_champion": false,
+      "is_m1_control": false,
+      "metrics": {
+        "annual_vol": 0.21688862260271655,
+        "cagr": 0.17743043651973922,
+        "daily_hit_rate": 0.5626681011296396,
+        "max_drawdown": -0.26520719664987313,
+        "n_days": 1859,
+        "sharpe_0rf": 0.8620838594379521,
+        "total_return": 2.336478058277699
+      },
+      "metrics_mode": "aligned_recomputed",
+      "n_aligned": 1859,
+      "raw_n_days": 1860,
+      "returns_path": "validation_runs/20260604T203857Z_R3_w075_q065_noexit/strategy_daily_returns.csv",
+      "returns_sha256": "c87f496b5a0c4d49207ad6e0951514de21d18580259022d3c15cee02daef9195",
+      "role": "CHAMPION",
+      "subperiods": [
+        {
+          "cagr": 0.2924940214734879,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.26520719664987313,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.1831199843166056,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.015282490705524898,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.2545253403898654,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.17607913018914131,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.24410102145821733,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.2383246620151298,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.1691645657781127,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "is_champion": false,
+      "is_m1_control": true,
+      "metrics": {
+        "annual_vol": 0.20712329894024867,
+        "cagr": 0.17686969928880591,
+        "daily_hit_rate": 0.5535233996772458,
+        "max_drawdown": -0.27397674526664784,
+        "n_days": 1859,
+        "sharpe_0rf": 0.8903897108723912,
+        "total_return": 2.324774124634588
+      },
+      "metrics_mode": "aligned_recomputed",
+      "n_aligned": 1859,
+      "raw_n_days": 1860,
+      "returns_path": "validation_runs/20260605T125544Z_M1_MOM_BLEND_MATCHED_CONTROLS/strategy_daily_returns.csv",
+      "returns_sha256": "f507977731d8d3203cb611a8d41e655182847aebb7dd91a117dce095cab4fe12",
+      "role": "M1_CONTROL",
+      "subperiods": [
+        {
+          "cagr": 0.29636199779402506,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.2424565030143061,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.2631589439686028,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.03483074502979755,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.27397674526664684,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.2726880931050612,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.21522660152105222,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.22513950349778367,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.0806669255924972,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "is_champion": true,
+      "is_m1_control": false,
+      "metrics": {
+        "annual_vol": 0.20701031889303692,
+        "cagr": 0.1778060341176455,
+        "daily_hit_rate": 0.5545992469069392,
+        "max_drawdown": -0.2746301008045754,
+        "n_days": 1859,
+        "sharpe_0rf": 0.8946047221769763,
+        "total_return": 2.344337585605506
+      },
+      "metrics_mode": "aligned_recomputed",
+      "n_aligned": 1859,
+      "raw_n_days": 1860,
+      "returns_path": "validation_runs/20260604T210245Z_R0_LEGACY_ENSEMBLE/strategy_daily_returns.csv",
+      "returns_sha256": "61866fe2225fca37394c656f4c552042f4f0d8d3455514a6afd35f52cd5c0363",
+      "role": "SIBLING_MATRIX",
+      "subperiods": [
+        {
+          "cagr": 0.2969439016448012,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.24245567676828694,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.2652708241412733,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.034606724929139965,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.2746301008045752,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.2714405566857919,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.21784588304466612,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.22514106105882425,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.0945295433576625,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "integrity_pass": true,
+      "metrics": {
+        "annual_vol": 0.2084174884043623,
+        "cagr": 0.16805513278321293,
+        "daily_hit_rate": 0.5532258064516129,
+        "excess_cagr_approx": -0.006227997421769093,
+        "information_ratio": -0.05699794216704712,
+        "max_drawdown": -0.3132759516837291,
+        "n_days": 1860,
+        "sharpe_0rf": 0.8501252965218753,
+        "total_return": 2.1473403968741054,
+        "tracking_error": 0.10926705745825604
+      },
+      "metrics_mode": "matrix_embedded",
+      "n_days": 1860,
+      "returns_path": null,
+      "role": "SIBLING_MATRIX",
+      "skip_reason": "returns_file_missing",
+      "variant_id": "R1_GATE_BASE_ONLY"
+    },
+    {
+      "integrity_pass": true,
+      "metrics": {
+        "annual_vol": 0.2068711412519061,
+        "cagr": 0.19706316136473712,
+        "daily_hit_rate": 0.55,
+        "excess_cagr_approx": 0.017969732224614447,
+        "information_ratio": 0.16387795368523078,
+        "max_drawdown": -0.24287574809223278,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9734499822344412,
+        "total_return": 2.7720578437409484,
+        "tracking_error": 0.10965314016020643
+      },
+      "metrics_mode": "matrix_embedded",
+      "n_days": 1860,
+      "returns_path": null,
+      "role": "SIBLING_MATRIX",
+      "skip_reason": "returns_file_missing",
+      "variant_id": "R2_MOM_BLEND_REPLACE"
+    },
+    {
+      "integrity_pass": true,
+      "metrics": {
+        "annual_vol": 0.2166491472905297,
+        "cagr": 0.19002078458773464,
+        "daily_hit_rate": 0.5575268817204301,
+        "excess_cagr_approx": 0.014151810838141541,
+        "information_ratio": 0.128653608375964,
+        "max_drawdown": -0.2609375706684086,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9118927531483968,
+        "total_return": 2.6113078471758038,
+        "tracking_error": 0.10999933089156586
+      },
+      "metrics_mode": "matrix_embedded",
+      "n_days": 1860,
+      "returns_path": null,
+      "role": "SIBLING_MATRIX",
+      "skip_reason": "returns_file_missing",
+      "variant_id": "R3_w070_q070_noexit"
+    },
+    {
+      "integrity_pass": true,
+      "metrics": {
+        "annual_vol": 0.21523630267909113,
+        "cagr": 0.18719618319258235,
+        "daily_hit_rate": 0.5591397849462365,
+        "excess_cagr_approx": 0.011478570328623393,
+        "information_ratio": 0.10348362748300784,
+        "max_drawdown": -0.2596882296072619,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9054585330387559,
+        "total_return": 2.5485175909142006,
+        "tracking_error": 0.11092160767661735
+      },
+      "metrics_mode": "matrix_embedded",
+      "n_days": 1860,
+      "returns_path": null,
+      "role": "SIBLING_MATRIX",
+      "skip_reason": "returns_file_missing",
+      "variant_id": "R4_w070_q070_forceexit"
+    },
+    {
+      "is_champion": false,
+      "is_m1_control": false,
+      "metrics": {
+        "annual_vol": 0.22112901036492397,
+        "cagr": 0.22560294481874665,
+        "daily_hit_rate": 0.5529854760623991,
+        "max_drawdown": -0.26651299208430745,
+        "n_days": 1859,
+        "sharpe_0rf": 1.031096213925337,
+        "total_return": 3.484923516071672
+      },
+      "metrics_mode": "aligned_recomputed",
+      "n_aligned": 1859,
+      "raw_n_days": 1860,
+      "returns_path": "evidence/g1_independent_next_level/challenger/MOM_63_TOP12/daily_returns.csv",
+      "returns_sha256": "3c9dcde08951d482b498df9e627207a8adb3f3f5331c897fe179e77d60951cfc",
+      "role": "RESEARCH_CANDIDATE",
+      "subperiods": [
+        {
+          "cagr": 0.29010399526935204,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.25005621366480724,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.2066243012388334,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.033958799238153814,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.2665129920843068,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.2686386432054519,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.380248745139661,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.24182159199423048,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.5054822579131744,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "MOM_63_TOP12"
+    },
+    {
+      "is_champion": false,
+      "is_m1_control": false,
+      "metrics": {
+        "annual_vol": 0.22637634376141702,
+        "cagr": 0.2216982679243582,
+        "daily_hit_rate": 0.5481441635287789,
+        "max_drawdown": -0.2799019777918448,
+        "n_days": 1859,
+        "sharpe_0rf": 0.998285209882352,
+        "total_return": 3.380581239595225
+      },
+      "metrics_mode": "aligned_recomputed",
+      "n_aligned": 1859,
+      "raw_n_days": 1859,
+      "returns_path": "evidence/autonomous_research/MOM_63_TOP12_STRICT/daily_returns.csv",
+      "returns_sha256": "70f9500a1ee15224faee293f5cf02d2ab7865bc00267891a17a7869aa3872128",
+      "role": "RESEARCH_CANDIDATE",
+      "subperiods": [
+        {
+          "cagr": 0.2760718348506406,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.25532173904110866,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.133154488460541,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.03225866182494319,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.26943146049181044,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.25957362743513723,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.38439084111338806,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.23193614552751007,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.4846093574396528,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "MOM_63_TOP12_STRICT"
+    },
+    {
+      "is_champion": false,
+      "is_m1_control": false,
+      "metrics": {
+        "annual_vol": 0.22411220717908611,
+        "cagr": 0.21831631214081604,
+        "daily_hit_rate": 0.5508337816030123,
+        "max_drawdown": -0.276656323952126,
+        "n_days": 1859,
+        "sharpe_0rf": 0.993757945535734,
+        "total_return": 3.2919098814364096
+      },
+      "metrics_mode": "aligned_recomputed",
+      "n_aligned": 1859,
+      "raw_n_days": 1860,
+      "returns_path": "evidence/autonomous_research/MOM_63_TOP15_RECONSTRUCTED/daily_returns.csv",
+      "returns_sha256": "1c6235dbd7eeafdf2c011909f71e8644f2c520d946d18f2f0eba75b3c5b7ab11",
+      "role": "RESEARCH_CANDIDATE",
+      "subperiods": [
+        {
+          "cagr": 0.2763802173907419,
+          "end": "2021-06-17 00:00:00",
+          "max_drawdown": -0.276656323952126,
+          "observations": 619,
+          "segment": 1,
+          "sharpe_0rf": 1.1228930973950197,
+          "start": "2019-01-03 00:00:00"
+        },
+        {
+          "cagr": 0.02659962071026456,
+          "end": "2023-12-04 00:00:00",
+          "max_drawdown": -0.26283379928071515,
+          "observations": 620,
+          "segment": 2,
+          "sharpe_0rf": 0.23237314093656036,
+          "start": "2021-06-18 00:00:00"
+        },
+        {
+          "cagr": 0.3801669587240639,
+          "end": "2026-05-28 00:00:00",
+          "max_drawdown": -0.24178132680201248,
+          "observations": 620,
+          "segment": 3,
+          "sharpe_0rf": 1.5071804053172764,
+          "start": "2023-12-05 00:00:00"
+        }
+      ],
+      "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+    }
+  ]
+}

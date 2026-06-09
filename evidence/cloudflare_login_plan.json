@@ -1,0 +1,30 @@
+{
+  "cloudflare_cert": false,
+  "headline_de": "Zuerst bei Cloudflare anmelden",
+  "login_url": "https://one.dash.cloudflare.com/?to=/:account/networks/tunnels",
+  "phase": "oauth",
+  "public_url": null,
+  "schema_version": 1,
+  "steps": [
+    {
+      "action_de": "Im Tresor: „Cloudflare öffnen“ — Passwort nur dort",
+      "done": false,
+      "id": "oauth",
+      "label_de": "Cloudflare anmelden (Browser)"
+    },
+    {
+      "action_de": "Tresor öffnet sich automatisch — ai_kernel vault-open",
+      "done": false,
+      "id": "vault",
+      "label_de": "Token, URL + Tresor-Passphrase im Schlüssel-Tresor"
+    },
+    {
+      "action_de": "Läuft automatisch nach „Sichern“ im Tresor",
+      "done": false,
+      "id": "tunnel",
+      "label_de": "Tunnel starten + Remote prüfen"
+    }
+  ],
+  "updated_at_utc": "2026-06-06T23:39:37+00:00",
+  "vault_configured": false
+}

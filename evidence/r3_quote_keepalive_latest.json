@@ -1,0 +1,53 @@
+{
+  "assess_after": {
+    "headline_de": "Kurse aktualisieren — quotes_stale",
+    "ingest_age_s": 2.7,
+    "ingest_ok": true,
+    "needs_refresh": true,
+    "price_current": true,
+    "price_latest": "2026-06-09",
+    "quote_age_s": null,
+    "quote_fresh_reeval": null,
+    "quote_status": "STALE",
+    "reasons": [
+      "quotes_stale"
+    ],
+    "us_session_open": false
+  },
+  "assess_before": {
+    "headline_de": "Kurse aktualisieren — quotes_stale",
+    "ingest_age_s": 21.9,
+    "ingest_ok": true,
+    "needs_refresh": true,
+    "price_current": true,
+    "price_latest": "2026-06-09",
+    "quote_age_s": null,
+    "quote_fresh_reeval": null,
+    "quote_status": "STALE",
+    "reasons": [
+      "quotes_stale"
+    ],
+    "us_session_open": false
+  },
+  "headline_de": "Kurse aktualisieren — quotes_stale",
+  "message_de": "Kurse aktualisieren — quotes_stale",
+  "ok": false,
+  "owner": "mirror_poll",
+  "price_latest": "2026-06-09",
+  "quote_status": "STALE",
+  "schema_version": 1,
+  "skipped": false,
+  "steps": [
+    {
+      "ok": true,
+      "price_latest": "2026-06-09",
+      "step": "ingest"
+    },
+    {
+      "ok": false,
+      "status": "STALE",
+      "step": "live_quotes"
+    }
+  ],
+  "updated_at_utc": "2026-06-09T21:47:26+00:00"
+}

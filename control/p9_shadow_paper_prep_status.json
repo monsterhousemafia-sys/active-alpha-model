@@ -1,0 +1,49 @@
+{
+  "all_gates_pass": true,
+  "auto_execute_real_money": false,
+  "blocked_reasons": [],
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "gates": {
+    "CHAMPION_REFERENCE_GATE": {
+      "detail": "champion=R3_w075_q065_noexit lkg=R3_w075_q065_noexit integrity=True",
+      "pass": true
+    },
+    "M1_CONTROL_GATE": {
+      "detail": "M1_MOM_BLEND_MATCHED_CONTROLS",
+      "pass": true
+    },
+    "NO_SIGNAL_PROMOTION_GATE": {
+      "detail": "no promoted signal pointer",
+      "pass": true
+    },
+    "PAPER_SCAFFOLD_GATE": {
+      "detail": "paper_trading_engine.py",
+      "pass": true
+    },
+    "PROMOTION_BLOCKED_GATE": {
+      "detail": "promotion_allowed=False",
+      "pass": true
+    },
+    "REAL_MONEY_DISABLED_GATE": {
+      "detail": "AUTO_EXECUTE_REAL_MONEY=DISABLED",
+      "pass": true
+    },
+    "SHADOW_CHALLENGER_GATE": {
+      "detail": "shadow_challenger=MOM_63_TOP12 signals=10955 mature=10893 min=100",
+      "pass": true
+    }
+  },
+  "m1_control_variant": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "mature_shadow_comparisons": 10893,
+  "note": "Preparation gate only — no shadow/paper execution or promotion in P9.",
+  "paper_dir": "paper_output",
+  "paper_dir_configured": true,
+  "phase_id": "P9_CONTROLLED_PAPER_SHADOW_VALIDATION_PREPARATION",
+  "preparation_ready": true,
+  "promotion_allowed": false,
+  "schema_version": 1,
+  "shadow_challenger_id": "MOM_63_TOP12",
+  "shadow_signal_count": 10955,
+  "sync_status": "OK",
+  "updated_at_utc": "2026-05-30T18:48:36+00:00"
+}

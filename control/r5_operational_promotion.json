@@ -1,0 +1,10 @@
+{
+  "auto_promotion": "DISABLED",
+  "model_output": "E:\\active_alpha_model\\model_output_sp500_pit_t212",
+  "ok": true,
+  "previous_champion": "R3_w075_q065_noexit",
+  "promoted_at_utc": "2026-05-31T17:20:36+00:00",
+  "source_run": "E:\\active_alpha_model\\validation_runs\\20260531T163000Z_R5_rank_only_train5",
+  "user_config": "E:\\active_alpha_model\\active_alpha_user_config.bat",
+  "variant_id": "R5_rank_only_train5"
+}

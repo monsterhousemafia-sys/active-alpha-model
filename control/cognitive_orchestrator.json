@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "fast_mode": true,
+  "scheduler_interval": "1min",
+  "observer_interval": "5min",
+  "headline_de": "Orchestrator schnell — Modell-/Funktions-Meldungen zügig umsetzen",
+  "dispatch_allowlist": [
+    "learn",
+    "warnings",
+    "h1-status",
+    "r3-preserve",
+    "spread-remote-status",
+    "launch-status",
+    "cognitive-status",
+    "lean-on",
+    "lean-turbo",
+    "lean-max"
+  ],
+  "evidence_pending_sources": [
+    "evidence/ki_tunnel_connection_latest.json",
+    "evidence/r3_step_b_latest.json",
+    "evidence/launch_progress_latest.json"
+  ],
+  "pending_json_keys": ["commands_pending_de", "monday_checklist_de"]
+}

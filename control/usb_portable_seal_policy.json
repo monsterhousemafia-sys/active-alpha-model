@@ -1,0 +1,19 @@
+{
+  "blessing_title_de": "USB-Portable-Kopie — Operator-Abnahme",
+  "governance_invariants_de": [
+    "auto_execute_real_money_enabled bleibt false",
+    "Champion unverändert — keine stille Promotion",
+    "T212-Orders weiterhin mit R3-GUI-Bestätigung",
+    "Spread autonom: Aktien-Veto beim Operator"
+  ],
+  "required_checks": [
+    "verify_portable_copy",
+    "usb_deploy_manifest",
+    "usb_pip_freeze",
+    "usb_autostart_policy",
+    "safety_flags",
+    "portable_tests"
+  ],
+  "schema_version": 1,
+  "seal_evidence": "evidence/usb_portable_seal_latest.json"
+}

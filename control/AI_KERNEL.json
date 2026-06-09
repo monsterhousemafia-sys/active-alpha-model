@@ -1,0 +1,103 @@
+{
+  "agent_role": "Lernen und vorbereiten — kein autonomer Trader.",
+  "alpha_model_interface": "control/alpha_model_interface.json",
+  "chamber_resources": "control/alpha_model_chamber_resources.json",
+  "cognitive_kernel": "control/cognitive_kernel_manifest.json",
+  "cursor_provider_required": false,
+  "entry": {
+    "cli": "python3 tools/ai_kernel.py",
+    "setup": "bash tools/setup_linux_native.sh",
+    "start": "bash run_marktanalyse_linux.sh"
+  },
+  "forschungsprojekt": {
+    "headline_de": "König 32B — Bestandteil des Forschungsprojekts, wächst mit /learn",
+    "king_32b_ref": "control/king_32b_forschungsprojekt.json",
+    "status_command": "python3 tools/ai_kernel.py king-forschung"
+  },
+  "go_live_date": "2026-06-08",
+  "hardware_bond": {
+    "bond_command": "python3 tools/ai_kernel.py kernel-bond",
+    "enabled": true,
+    "evidence_ref": "evidence/ai_kernel_hardware_bond_latest.json",
+    "headline_de": "Kernel direkt an König-32B — GPU/RAM/NVMe über king_hardware",
+    "king_cli": "alpha-model-agent",
+    "king_model": "qwen2.5-coder:32b",
+    "nvme_policy_ref": "control/linux_nvme_storage.json",
+    "policy_ref": "control/king_hardware_policy.json"
+  },
+  "harmonized_commands": {
+    "autostart": "python3 tools/ai_kernel.py autostart-all",
+    "cognitive": "python3 tools/ai_kernel.py cognitive-kernel",
+    "preview": "active-alpha-preview",
+    "status": "python3 tools/ai_kernel.py status",
+    "timers": "python3 tools/ai_kernel.py timers"
+  },
+  "human_interface": "control/alpha_model_human_interface.json",
+  "learning": {
+    "agent_must_not": [
+      "place_live_orders_without_user",
+      "auto_execute_real_money",
+      "auto_promote_champion",
+      "auto_model_training_without_seal"
+    ],
+    "daily_command": "python3 tools/ai_kernel.py learn",
+    "evolution_command": "python3 tools/ai_kernel.py evolve",
+    "go_live_date": "2026-06-08",
+    "phase": "PRE_GO_LIVE_LEARNING",
+    "principle_de": "Öffentlich messbares Lernen — IC, Hit-Rate, Live-Fills; kein verstecktes Retrain.",
+    "principles_file": "control/public_learning_principles.json",
+    "report_file": "evidence/public_learning_report_latest.json"
+  },
+  "linux_operator": {
+    "approved_at_utc": "2026-06-06T12:35:00+00:00",
+    "approved_by": "user",
+    "approved_levels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "maintain_command": "python3 tools/ai_kernel.py maintain",
+    "max_level": "D",
+    "operator_actions_log": "evidence/linux_operator_actions.jsonl",
+    "scope_command": "python3 tools/ai_kernel.py scope",
+    "scope_file": "control/linux_operator_scope.json",
+    "visibility_panel": "ui/live_trading_dashboard/auto_operator_panel.py"
+  },
+  "linux_runtime_unified": "control/linux_runtime_unified.json",
+  "local_runtime": "control/alpha_model_local_runtime.json",
+  "mode": "linux_native_pilot",
+  "operator_sovereignty": "control/operator_sovereignty_policy.json",
+  "operator_surfaces_de": [
+    "Cockpit: http://127.0.0.1:17890/desktop",
+    "Entfaltungsraum: alpha-model-agent",
+    "CLI: python3 tools/ai_kernel.py",
+    "Ollama: http://127.0.0.1:11434"
+  ],
+  "primary_channel": "r3_local",
+  "primary_channel_de": "alpha-model-agent + Cockpit 127.0.0.1:17890 + Ollama 127.0.0.1 (lokal only)",
+  "primary_interface": "agent_chamber",
+  "safety": {
+    "auto_execute_real_money": false,
+    "gui_confirm_required": true
+  },
+  "schema_version": 1,
+  "status_spine": {
+    "builder": "analytics/preview_system_status.py",
+    "cli_status_field": "system_status",
+    "hub_api": "/api/system/status"
+  },
+  "surfaces_de": "Entfaltungsraum alpha-model-agent + Cockpit :17890 — LAN + Tunnel",
+  "tunnel": {
+    "local_hub": "http://127.0.0.1:17890",
+    "local_only": false,
+    "migration_complete": true,
+    "mirror_ref": "control/r3_https_mirror.json",
+    "mode": "local_only",
+    "public_base_url": null,
+    "stable": null,
+    "tunnel_required": true
+  },
+  "unified_product": "control/active_alpha_unified.json",
+  "workshop_policy": "control/alpha_model_workshop_policy.json"
+}

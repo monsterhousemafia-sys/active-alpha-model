@@ -1,0 +1,9 @@
+{
+  "classification": "REJECTED_V5_BUILD_NOT_AUTHORIZED_FOR_EXECUTION",
+  "sha256": "44c84873f38f009c2cae5f504cd0f5644ca5f743fb74e34e5cf20013723d3fad",
+  "executed": false,
+  "path": "E:\\active_alpha_model\\Marktanalyse.exe",
+  "note": "V5 onedir artefact baseline captured before V5R rebuild",
+  "size_bytes": 27856626,
+  "last_write_time_utc": 1780180883.1896417
+}

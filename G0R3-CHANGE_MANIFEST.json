@@ -1,0 +1,61 @@
+{
+  "champion_changed": false,
+  "change_scope": "PACKAGING_CHECKPOINT_AND_EVIDENCE_MANIFEST_ONLY",
+  "economic_model_changed": false,
+  "external_review_inputs_included_unchanged": [
+    "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_DECISION_G0R2_REMEDIATION_REQUIRED.md",
+    "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R2.sha256"
+  ],
+  "generated_at_utc": "2026-05-31T22:04:30+00:00",
+  "governance_or_packaging_files_modified_in_g0r3": [
+    "EXTERNAL_REVIEW_APPROVAL_G0R3_TEMPLATE.md",
+    "G0R3-CHANGE_MANIFEST.json",
+    "NEXT_CURSOR_PROMPT.md",
+    "aa_decision_cockpit_readonly_snapshot.py",
+    "aa_doc_paths.py",
+    "control/authorization/authorization_source_policy.json",
+    "control/authorization/champion_lineage_status.json",
+    "control/authorization/current_authorization_status.json",
+    "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_DECISION_G0R2_REMEDIATION_REQUIRED.md",
+    "control/external_reviews/g0r2_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R2.sha256",
+    "control/review_snapshot/g0r3_decision_cockpit_snapshot.json",
+    "control/vision_automation/phase_catalog.json",
+    "control/vision_automation/review_registry/review_registry.json",
+    "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_AFTER.json",
+    "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_BEFORE.json",
+    "docs/integrity/session_logs/G0R3/CODEX_G0R3_GIT_STATUS.txt",
+    "docs/integrity/session_logs/G0R3/CODEX_G0R3_TEST_OUTPUT.txt",
+    "docs/phases/G0R3/CODEX_G0R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "docs/phases/G0R3/CODEX_G0R3_PACKAGE_INPUT_MANIFEST.json",
+    "docs/phases/G0R3/CODEX_G0R3_PREFLIGHT.md",
+    "docs/phases/G0R3/CODEX_G0R3_V5R_BASELINE_COMPARISON.json",
+    "tests/test_g0r3_submission_integrity.py",
+    "tools/complete_g0r3_submission.py"
+  ],
+  "historical_unsealed_conflict_artefacts_included_for_audit_only": [],
+  "new_review_files_created_in_g0r3": [
+    "docs/phases/G0R3/CODEX_G0R3_PREFLIGHT.md",
+    "docs/phases/G0R3/CODEX_G0R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "docs/integrity/session_logs/G0R3/CODEX_G0R3_GIT_STATUS.txt",
+    "docs/phases/G0R3/CODEX_G0R3_PACKAGE_INPUT_MANIFEST.json",
+    "docs/phases/G0R3/CODEX_G0R3_V5R_BASELINE_COMPARISON.json",
+    "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_BEFORE.json",
+    "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_AFTER.json",
+    "docs/integrity/session_logs/G0R3/CODEX_G0R3_TEST_OUTPUT.txt",
+    "G0R3-CHANGE_MANIFEST.json",
+    "control/review_snapshot/g0r3_decision_cockpit_snapshot.json",
+    "EXTERNAL_REVIEW_APPROVAL_G0R3_TEMPLATE.md",
+    "tools/complete_g0r3_submission.py",
+    "tests/test_g0r3_submission_integrity.py"
+  ],
+  "note": "G0R3 documents governance/packaging mutations explicitly. Protected V5R artefacts were verified unchanged, not modified.",
+  "operative_actions_executed": false,
+  "phase": "G0R3_FINAL_COMMIT_BOUND_PACKAGE_AND_MANIFEST_REMEDIATION",
+  "previously_restored_protected_artefacts_verified_unchanged": [
+    "model_output_sp500_pit_t212/background_research_status.json",
+    "model_output_sp500_pit_t212/latest_validated_run.json"
+  ],
+  "productive_signal_weights_changed": false,
+  "protected_artefacts_modified_during_g0r3": false,
+  "schema_version": 1
+}

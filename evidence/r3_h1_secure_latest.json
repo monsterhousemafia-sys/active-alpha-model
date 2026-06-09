@@ -1,0 +1,88 @@
+{
+  "archive_dir": "/home/machinax7/.local/share/r3-os/h1-secure/20260606T164847Z",
+  "copied_files": [
+    {
+      "bytes": 105,
+      "name": "path_sim_checkpoint_meta.json",
+      "sha256": "fee3d4fe187b2902"
+    },
+    {
+      "bytes": 23299,
+      "name": "path_sim_checkpoint.pkl",
+      "sha256": "af2f16a043dbf8f2"
+    },
+    {
+      "bytes": 17536,
+      "name": "validation_run.log",
+      "sha256": "306704bb043ccd5c"
+    },
+    {
+      "bytes": 1289,
+      "name": "run_config_snapshot.txt",
+      "sha256": "5370e1ce61988fbb"
+    },
+    {
+      "bytes": 395,
+      "name": "data_quality_report.csv",
+      "sha256": "03a74ce85a9ccc24"
+    },
+    {
+      "bytes": 219,
+      "name": "phase_timings.json",
+      "sha256": "b1d04daa5fbc8067"
+    },
+    {
+      "bytes": 67557,
+      "name": "prediction_cache_meta.json",
+      "sha256": "61c7b18d4b80afd0"
+    }
+  ],
+  "evidence_copied": [
+    "evidence/daily_alpha_h1_pipeline_latest.json",
+    "evidence/h1_federation_dispatch_latest.json"
+  ],
+  "governance": {
+    "banner_de": "H1: RUNNING ~75% — Gate öffnet nach Seal",
+    "detail_de": "Path-Simulation läuft (Features fertig)",
+    "gate_blockers": [
+      "DAILY_ALPHA_H1_NOT_SEALED"
+    ],
+    "progress_pct": 75,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "schema_version": 1,
+    "sealed": false,
+    "status": "RUNNING",
+    "updated_at_utc": "2026-06-06T16:48:47+00:00"
+  },
+  "h1_backtest": {
+    "detail_de": "Path-Simulation läuft (Features fertig)",
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "RUNNING"
+  },
+  "headline_de": "H1 in R3 gesichert — 75% · RUNNING",
+  "large_file_refs": [
+    {
+      "bytes": 190862822,
+      "copied": false,
+      "name": "features.parquet",
+      "note_de": "Großdatei — bleibt im Laufverzeichnis, Referenz gesichert.",
+      "path": "/home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1/features.parquet",
+      "sha256": "e1198d205f981ff5"
+    },
+    {
+      "bytes": 526796986,
+      "copied": false,
+      "name": "prediction_cache.pkl",
+      "note_de": "Großdatei — bleibt im Laufverzeichnis, Referenz gesichert.",
+      "path": "/home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1/prediction_cache.pkl",
+      "sha256": "5a6bdc38678e2602"
+    }
+  ],
+  "message_de": "Checkpoint und Metadaten liegen unter ~/.local/share/r3-os/h1-secure/",
+  "ok": true,
+  "r3_share_dir": "/home/machinax7/.local/share/r3-os",
+  "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+  "run_dir_abs": "/home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+  "schema_version": 1,
+  "secured_at_utc": "2026-06-06T16:48:47+00:00"
+}

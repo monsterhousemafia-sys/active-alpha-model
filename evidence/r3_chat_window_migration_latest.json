@@ -1,0 +1,3116 @@
+{
+  "attachments": {
+    "count": 0,
+    "dir": "/home/machinax7/.local/share/r3-os/chat-attachments",
+    "recent": []
+  },
+  "continuity_ready": true,
+  "cursor_capture": {
+    "explicit_copy_de": [
+      ".cursor/rules → control/r3_rules_mirror/ (Ollama-Fallback)",
+      "Projektbaum-Snapshot (list_workspace_tree)",
+      "Anhänge ~/.local/share/r3-os/chat-attachments/",
+      "Operator-Policies control/r3_agent_growth.json, r3_phase_b_master_prompt_de.md"
+    ],
+    "not_captured_de": [
+      "Cursor workspaceStorage state.vscdb (offene Tabs, UI-Layout)",
+      "Cursor IDE Chrome (Usage-Meter, Composer-Panel-Position)",
+      "Cursor MCP-Server-Konfiguration außerhalb Repo"
+    ],
+    "preferred_transcript_id": "53888fdc-f2c0-468a-986b-5bde355585eb",
+    "project_root": "/home/machinax7/active_alpha_model",
+    "r3_preserve_captures_de": [
+      "Cursor agent-transcripts (.jsonl) → ~/.local/share/r3-os/conversation/conversation_archive.jsonl",
+      "Kontinuitäts-Brief → continuity_brief_de.md + evidence/r3_continuity_brief_de.md",
+      "Manifest → continuity_manifest.json + evidence/r3_continuity_latest.json",
+      "KI-Sitzung (ki_console_session.json) bei r3-ki-import",
+      "R3-Chat-Turns (append_turn_to_archive) ohne Cursor"
+    ],
+    "transcript_paths": [
+      "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/a314941f-e190-4407-86db-28ba57e93b9a/a314941f-e190-4407-86db-28ba57e93b9a.jsonl",
+      "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/53888fdc-f2c0-468a-986b-5bde355585eb/53888fdc-f2c0-468a-986b-5bde355585eb.jsonl",
+      "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/afdb72a3-68c7-48cb-ac76-a482f049456b/afdb72a3-68c7-48cb-ac76-a482f049456b.jsonl",
+      "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/04de468a-330b-4c4c-b258-cb6fd07ce16f/04de468a-330b-4c4c-b258-cb6fd07ce16f.jsonl",
+      "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/76e31823-a7b4-4f29-bd90-34f6ee8ddc4a/76e31823-a7b4-4f29-bd90-34f6ee8ddc4a.jsonl",
+      "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/bde23b34-e7fb-4ea8-bfee-d2da1bf6ee64/bde23b34-e7fb-4ea8-bfee-d2da1bf6ee64.jsonl"
+    ]
+  },
+  "desktop": {
+    "cursor_handoff_de": "Dein **Hauptkanal ist R3 KI lokal** — active-alpha-chat und Cockpit :17890.\n\nFreie Fragen und Steuerung:\n  active-alpha-chat  (Terminal)\n  http://127.0.0.1:17890/desktop\n\nSlash-Befehle im Cockpit:\n  /status · /geheimnis · /desktop · /join · /warnings · /learn\n\nCursor IDE ist optional zum Code-Bauen — kein Konto-Gate für R3.",
+    "desktop_update": {
+      "desktop_hub_path": "/desktop",
+      "headline_de": "Desktop-Update OK — Phase B · 80%",
+      "launch": {
+        "ok": false,
+        "skipped": true
+      },
+      "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh",
+      "notify_desktop": true,
+      "ok": true,
+      "phase": "B",
+      "schema_version": 1,
+      "steps": [
+        {
+          "detail": {
+            "autostart_disabled": 0,
+            "desktop": {
+              "bin_linked": [
+                "r3",
+                "r3-cockpit",
+                "r3-welt",
+                "r3-show",
+                "r3-order-desk",
+                "alpha-model",
+                "alpha-model-workshop",
+                "r3-aktien",
+                "r3-files",
+                "r3-terminal",
+                "r3-calculator",
+                "r3-screenshot",
+                "r3-settings",
+                "r3-apps",
+                "r3-lock",
+                "r3-network",
+                "r3-bluetooth",
+                "r3-sound",
+                "r3-display",
+                "r3-power",
+                "alpha-model-workshop"
+              ],
+              "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+              "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+              "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+              "ok": true,
+              "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+              "os_name": "Alpha Model",
+              "removed_legacy": [],
+              "share_dir": "/home/machinax7/.local/share/r3-os",
+              "written": [
+                "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+              ]
+            },
+            "gnome_tweaks": 11,
+            "headline_de": "R3 — Ubuntu läuft in dir",
+            "legacy_removed": 0,
+            "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+            "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+            "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh",
+            "ok": true,
+            "survives_de": [
+              "Cognitive Kernel v2",
+              "Preview Hub / R3 Cockpit",
+              "R3 Arbeitsfläche (native Apps als Fenster)",
+              "Order-Desk bei Bedarf",
+              "H1 / Scheduler / Evidence"
+            ]
+          },
+          "id": "supremacy",
+          "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+          "ok": true
+        },
+        {
+          "detail": {
+            "bin_linked": [
+              "r3",
+              "r3-cockpit",
+              "r3-welt",
+              "r3-show",
+              "r3-order-desk",
+              "alpha-model",
+              "alpha-model-workshop",
+              "r3-aktien",
+              "r3-files",
+              "r3-terminal",
+              "r3-calculator",
+              "r3-screenshot",
+              "r3-settings",
+              "r3-apps",
+              "r3-lock",
+              "r3-network",
+              "r3-bluetooth",
+              "r3-sound",
+              "r3-display",
+              "r3-power",
+              "alpha-model-workshop"
+            ],
+            "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+            "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+            "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+            "ok": true,
+            "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+            "os_name": "Alpha Model",
+            "removed_legacy": [],
+            "share_dir": "/home/machinax7/.local/share/r3-os",
+            "written": [
+              "/home/machinax7/.config/autostart/r3-os-session.desktop",
+              "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+              "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+              "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+              "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+              "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+              "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+              "/home/machinax7/.local/share/applications/R3-Status.desktop",
+              "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+              "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+              "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+              "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+              "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+              "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+              "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+              "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+              "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+              "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+              "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+              "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+              "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+            ]
+          },
+          "id": "desktop_os",
+          "label_de": "Desktop-Einträge & Autostart",
+          "ok": true
+        },
+        {
+          "detail": {
+            "ok": true,
+            "port": 17890,
+            "url": "http://127.0.0.1:17890/desktop"
+          },
+          "id": "hub",
+          "label_de": "Preview-Hub neu starten",
+          "ok": true
+        },
+        {
+          "detail": {
+            "headline_de": "Phase B · 80% — H1 parallel integriert",
+            "ok": true,
+            "percent": 80
+          },
+          "id": "phase_b",
+          "label_de": "Phase-B-Stand schreiben",
+          "ok": true
+        },
+        {
+          "detail": {
+            "action": "running",
+            "actions": [],
+            "governance": {
+              "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal",
+              "detail_de": "Path-Simulation läuft (Features fertig)",
+              "gate_blockers": [
+                "DAILY_ALPHA_H1_NOT_SEALED"
+              ],
+              "progress_pct": 99,
+              "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+              "schema_version": 1,
+              "sealed": false,
+              "status": "RUNNING",
+              "updated_at_utc": "2026-06-07T00:25:33+00:00"
+            },
+            "h1_status": "RUNNING",
+            "inventory": {
+              "backtest_count": 2,
+              "backtests": [
+                {
+                  "cmd": "9129 /home/machinax7/active_alpha_model/.venv/bin/python3 -u tools/run_validation_matrix.py --phase matrix --variant DAILY_ALPHA_H1 --parallel-jobs 1 --cpu-cores 32 --runtime-profile validation --stamp 20260606T102626Z",
+                  "marker": "run_validation_matrix.py",
+                  "pid": 9129
+                },
+                {
+                  "cmd": "9133 /home/machinax7/active_alpha_model/.venv/bin/python3 -u /home/machinax7/active_alpha_model/active_alpha_model.py --mode backtest --ticker-source sp500_pit --membership-file ticker_membership.csv --membership-mode strict --benchmark SPY --start 2012-01-01 --universe-mode diy_pit_liquidity --universe-top-n 100 --rebalance-every 1 --horizon 1 --train-years 7 --ml-retrain-every 2 --alpha-model-mode ensemble --exposure-controller gradual_alpha --beta-cap-mode dynamic --cluster-mode static --cluster-constraint-mode static_only --slippage-bps 2 --market-impact-bps 0 --fee-model trading212_us --backtest-capital 100000 --research-backtest-capital 100000 --reproducibility-mode strict --random-seed 42 --n-jobs auto --cpu-cores 28 --parallel-profile high --parallel-backtest-backend process --reuse-feature-cache --skip-download-if-cached --skip-feature-parquet-write --no-plot --no-gui --plain-progress --no-statistical-diagnostics --no-custom-benchmarks --minimal-backtest-reporting --no-run-manifest --no-naive-overlap --reuse-prediction-cache --shared-cache-dir /home/machinax7/active_alpha_model/model_output_sp500_pit_t212 --out-dir /home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1 --risk-off-selection-mode legacy --risk-off-gate-mode legacy --returns-fast-path --path-sim-checkpoint --naive-detailed-reporting --naive-detailed-variants mom_1_top12",
+                  "marker": "active_alpha_model.py --mode backtest",
+                  "pid": 9133
+                }
+              ],
+              "duplicate_risk": false,
+              "monitor_count": 1,
+              "monitors": [
+                {
+                  "cmd": "9120 /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_daily_alpha_h1_pipeline.py --monitor-only --poll-seconds 60",
+                  "pid": 9120
+                }
+              ],
+              "starter_count": 0,
+              "starters": []
+            },
+            "monitor": {
+              "action": "monitor_exists",
+              "ok": true,
+              "pid": 9120,
+              "reply_de": "H1-Monitor läuft bereits"
+            },
+            "ok": true,
+            "reply_de": "H1 läuft stabil — Path-Simulation läuft (Features fertig)",
+            "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+          },
+          "id": "h1_guard",
+          "label_de": "H1-Migration stabil",
+          "ok": true
+        },
+        {
+          "error_de": "Keine grafische Sitzung — nur Hub/Autostart aktualisiert",
+          "id": "launch",
+          "label_de": "R3 Desktop Vollbild",
+          "ok": false
+        }
+      ],
+      "updated_at_utc": "2026-06-07T00:25:33+00:00"
+    },
+    "desktop_url": "http://127.0.0.1:17890/desktop",
+    "fallback_interface": "ollama_local",
+    "headline_de": "Desktop-Migration abgeschlossen — R3 KI lokal primär",
+    "migrated_at_utc": "2026-06-07T00:25:33+00:00",
+    "next_de": "Ab jetzt: active-alpha-chat oder Cockpit :17890. Werkstatt optional.",
+    "ok": true,
+    "policy": {
+      "foundation": {
+        "approved_at_utc": "2026-06-07T00:24:36+00:00",
+        "approved_by": "user",
+        "fallback_interface": "ollama_local",
+        "fallback_label_de": "Ollama — lokales Modell (active-alpha-chat)",
+        "forbidden_de": [
+          "Cloud-Composer als einziger Hauptkanal",
+          "Linux-Hardware-Kernel ersetzen",
+          "Externe Timer ohne Operator-Mandat",
+          "Paralleler IDE-Klon als Steuerungsschicht"
+        ],
+        "primary_interface": "r3_ki",
+        "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+        "schema_version": 2,
+        "status": "AUTHORITATIVE",
+        "succession_rule_de": "Hauptkanal ist Alpha Model KI: active-alpha-chat, Cockpit :17890/desktop, ai_kernel. Werkstatt ist optional.",
+        "workshop_interface": "ide_optional",
+        "workshop_label_de": "Alpha Model — Werkstatt",
+        "workshop_surface": "alpha_model_workshop"
+      },
+      "marker": {
+        "active": true,
+        "desktop_url": "http://127.0.0.1:17890/desktop",
+        "headline_de": "Desktop-Migration — R3 KI lokal primär",
+        "migrated_at_utc": "2026-06-07T00:24:36+00:00",
+        "primary_interface": "r3_ki",
+        "schema_version": 1
+      },
+      "ok": true
+    },
+    "primary_interface": "r3_ki",
+    "schema_version": 1,
+    "steps": [
+      {
+        "detail": {
+          "foundation": {
+            "approved_at_utc": "2026-06-07T00:24:36+00:00",
+            "approved_by": "user",
+            "fallback_interface": "ollama_local",
+            "fallback_label_de": "Ollama — lokales Modell (active-alpha-chat)",
+            "forbidden_de": [
+              "Cloud-Composer als einziger Hauptkanal",
+              "Linux-Hardware-Kernel ersetzen",
+              "Externe Timer ohne Operator-Mandat",
+              "Paralleler IDE-Klon als Steuerungsschicht"
+            ],
+            "primary_interface": "r3_ki",
+            "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+            "schema_version": 2,
+            "status": "AUTHORITATIVE",
+            "succession_rule_de": "Hauptkanal ist Alpha Model KI: active-alpha-chat, Cockpit :17890/desktop, ai_kernel. Werkstatt ist optional.",
+            "workshop_interface": "ide_optional",
+            "workshop_label_de": "Alpha Model — Werkstatt",
+            "workshop_surface": "alpha_model_workshop"
+          },
+          "marker": {
+            "active": true,
+            "desktop_url": "http://127.0.0.1:17890/desktop",
+            "headline_de": "Desktop-Migration — R3 KI lokal primär",
+            "migrated_at_utc": "2026-06-07T00:24:36+00:00",
+            "primary_interface": "r3_ki",
+            "schema_version": 1
+          },
+          "ok": true
+        },
+        "id": "local_primary",
+        "label_de": "R3 KI lokal als Hauptsprache",
+        "ok": true
+      },
+      {
+        "detail": {
+          "desktop_hub_path": "/desktop",
+          "headline_de": "Desktop-Update OK — Phase B · 80%",
+          "launch": {
+            "ok": false,
+            "skipped": true
+          },
+          "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh",
+          "notify_desktop": true,
+          "ok": true,
+          "phase": "B",
+          "schema_version": 1,
+          "steps": [
+            {
+              "detail": {
+                "autostart_disabled": 0,
+                "desktop": {
+                  "bin_linked": [
+                    "r3",
+                    "r3-cockpit",
+                    "r3-welt",
+                    "r3-show",
+                    "r3-order-desk",
+                    "alpha-model",
+                    "alpha-model-workshop",
+                    "r3-aktien",
+                    "r3-files",
+                    "r3-terminal",
+                    "r3-calculator",
+                    "r3-screenshot",
+                    "r3-settings",
+                    "r3-apps",
+                    "r3-lock",
+                    "r3-network",
+                    "r3-bluetooth",
+                    "r3-sound",
+                    "r3-display",
+                    "r3-power",
+                    "alpha-model-workshop"
+                  ],
+                  "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                  "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                  "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                  "ok": true,
+                  "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                  "os_name": "Alpha Model",
+                  "removed_legacy": [],
+                  "share_dir": "/home/machinax7/.local/share/r3-os",
+                  "written": [
+                    "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                    "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                    "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                  ]
+                },
+                "gnome_tweaks": 11,
+                "headline_de": "R3 — Ubuntu läuft in dir",
+                "legacy_removed": 0,
+                "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+                "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+                "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh",
+                "ok": true,
+                "survives_de": [
+                  "Cognitive Kernel v2",
+                  "Preview Hub / R3 Cockpit",
+                  "R3 Arbeitsfläche (native Apps als Fenster)",
+                  "Order-Desk bei Bedarf",
+                  "H1 / Scheduler / Evidence"
+                ]
+              },
+              "id": "supremacy",
+              "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+              "ok": true
+            },
+            {
+              "detail": {
+                "bin_linked": [
+                  "r3",
+                  "r3-cockpit",
+                  "r3-welt",
+                  "r3-show",
+                  "r3-order-desk",
+                  "alpha-model",
+                  "alpha-model-workshop",
+                  "r3-aktien",
+                  "r3-files",
+                  "r3-terminal",
+                  "r3-calculator",
+                  "r3-screenshot",
+                  "r3-settings",
+                  "r3-apps",
+                  "r3-lock",
+                  "r3-network",
+                  "r3-bluetooth",
+                  "r3-sound",
+                  "r3-display",
+                  "r3-power",
+                  "alpha-model-workshop"
+                ],
+                "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                "ok": true,
+                "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                "os_name": "Alpha Model",
+                "removed_legacy": [],
+                "share_dir": "/home/machinax7/.local/share/r3-os",
+                "written": [
+                  "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                  "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                  "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                ]
+              },
+              "id": "desktop_os",
+              "label_de": "Desktop-Einträge & Autostart",
+              "ok": true
+            },
+            {
+              "detail": {
+                "ok": true,
+                "port": 17890,
+                "url": "http://127.0.0.1:17890/desktop"
+              },
+              "id": "hub",
+              "label_de": "Preview-Hub neu starten",
+              "ok": true
+            },
+            {
+              "detail": {
+                "headline_de": "Phase B · 80% — H1 parallel integriert",
+                "ok": true,
+                "percent": 80
+              },
+              "id": "phase_b",
+              "label_de": "Phase-B-Stand schreiben",
+              "ok": true
+            },
+            {
+              "detail": {
+                "action": "running",
+                "actions": [],
+                "governance": {
+                  "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal",
+                  "detail_de": "Path-Simulation läuft (Features fertig)",
+                  "gate_blockers": [
+                    "DAILY_ALPHA_H1_NOT_SEALED"
+                  ],
+                  "progress_pct": 99,
+                  "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+                  "schema_version": 1,
+                  "sealed": false,
+                  "status": "RUNNING",
+                  "updated_at_utc": "2026-06-07T00:25:33+00:00"
+                },
+                "h1_status": "RUNNING",
+                "inventory": {
+                  "backtest_count": 2,
+                  "backtests": [
+                    {
+                      "cmd": "9129 /home/machinax7/active_alpha_model/.venv/bin/python3 -u tools/run_validation_matrix.py --phase matrix --variant DAILY_ALPHA_H1 --parallel-jobs 1 --cpu-cores 32 --runtime-profile validation --stamp 20260606T102626Z",
+                      "marker": "run_validation_matrix.py",
+                      "pid": 9129
+                    },
+                    {
+                      "cmd": "9133 /home/machinax7/active_alpha_model/.venv/bin/python3 -u /home/machinax7/active_alpha_model/active_alpha_model.py --mode backtest --ticker-source sp500_pit --membership-file ticker_membership.csv --membership-mode strict --benchmark SPY --start 2012-01-01 --universe-mode diy_pit_liquidity --universe-top-n 100 --rebalance-every 1 --horizon 1 --train-years 7 --ml-retrain-every 2 --alpha-model-mode ensemble --exposure-controller gradual_alpha --beta-cap-mode dynamic --cluster-mode static --cluster-constraint-mode static_only --slippage-bps 2 --market-impact-bps 0 --fee-model trading212_us --backtest-capital 100000 --research-backtest-capital 100000 --reproducibility-mode strict --random-seed 42 --n-jobs auto --cpu-cores 28 --parallel-profile high --parallel-backtest-backend process --reuse-feature-cache --skip-download-if-cached --skip-feature-parquet-write --no-plot --no-gui --plain-progress --no-statistical-diagnostics --no-custom-benchmarks --minimal-backtest-reporting --no-run-manifest --no-naive-overlap --reuse-prediction-cache --shared-cache-dir /home/machinax7/active_alpha_model/model_output_sp500_pit_t212 --out-dir /home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1 --risk-off-selection-mode legacy --risk-off-gate-mode legacy --returns-fast-path --path-sim-checkpoint --naive-detailed-reporting --naive-detailed-variants mom_1_top12",
+                      "marker": "active_alpha_model.py --mode backtest",
+                      "pid": 9133
+                    }
+                  ],
+                  "duplicate_risk": false,
+                  "monitor_count": 1,
+                  "monitors": [
+                    {
+                      "cmd": "9120 /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_daily_alpha_h1_pipeline.py --monitor-only --poll-seconds 60",
+                      "pid": 9120
+                    }
+                  ],
+                  "starter_count": 0,
+                  "starters": []
+                },
+                "monitor": {
+                  "action": "monitor_exists",
+                  "ok": true,
+                  "pid": 9120,
+                  "reply_de": "H1-Monitor läuft bereits"
+                },
+                "ok": true,
+                "reply_de": "H1 läuft stabil — Path-Simulation läuft (Features fertig)",
+                "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+              },
+              "id": "h1_guard",
+              "label_de": "H1-Migration stabil",
+              "ok": true
+            },
+            {
+              "error_de": "Keine grafische Sitzung — nur Hub/Autostart aktualisiert",
+              "id": "launch",
+              "label_de": "R3 Desktop Vollbild",
+              "ok": false
+            }
+          ],
+          "updated_at_utc": "2026-06-07T00:25:33+00:00"
+        },
+        "id": "desktop",
+        "label_de": "R3 Desktop Vollbild + Hub",
+        "ok": true
+      }
+    ]
+  },
+  "headline_de": "Chat-Fenster vollständig in R3 migriert — Cockpit :17890",
+  "import": {
+    "archive_messages": 36,
+    "cursor_required": false,
+    "headline_de": "Chat aus R3-Archiv in KI-Sitzung geladen",
+    "manifest": {},
+    "paths": {
+      "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+      "attachments": "/home/machinax7/.local/share/r3-os/chat-attachments",
+      "session": "/home/machinax7/.local/share/r3-os/ki_console_session.json"
+    },
+    "schema_version": 1,
+    "session": {
+      "archive_messages": null,
+      "headline_de": "Chat aus R3-Archiv in KI-Sitzung geladen",
+      "import_source": null,
+      "imported_at_utc": "2026-06-07T00:25:33+00:00",
+      "messages": [
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "H1 muss zu ende gebracht werden, finde einen weg, nutzte alle Kapazitäten des Projekts",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "R3 sagt als schritt 4/5 H1 parallel integriert",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Der Status jetzt ist genug für die Migration, seal kommt wohl erst nächste woche montag (wegen Trading)",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Gucken was der Tunnel sagt",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Migrations durchsetzen",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Prüfe ob die migration komplett erfolgreich war",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "R3 hat schon sehr viele Funktionen von einem Betriebssystem, wie kann es das komplett erreichen. Ganz ohne den externen dienst von curso. DIe lokale KI soll sich vielmerh weiterentwickeln. Den Kernel tunen?",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Lass die KI sich lokal auf diesem PC entfalten.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Subagent braucht zu lange.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Multitask abschalten.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Diesen Chat zur eigenen R3 etnwicklung benutzen.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Entwicklungskanal ist orchestrator oder?",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Es kommen immer mehr meldungen von den einzelnen modellen und funktionen die angelegt wurden. Der Orchestrator muss sie schnellstmöglich umsetzen.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Prüfe alles was jemals gebaut werden sollte und guck was davon umgesetzt wurde. Mach eine bilanz. Damit mehr gebaiut werden kann.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Baue was noch zu bauien ist und bring alles harmonsich zum laufen.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "If the available MCP tools do not fully support what the user asked you to do, complete the work you can with the current tool set. In your work summary, include what you were unable to do with MCP and why. Do not use browser automation to work around missing or unavailable MCP tools unless the user explicitly asks you to use the browser.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Baue was noch zu bauien ist und bring alles harmonsich zum laufen.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Trenne dich vonn unnötigen subagenten",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Briefly inform the user about the task result and perform any follow-up actions (if needed). If there's no follow-ups needed, don't explicitly say that.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Briefly inform the user about the task result and perform any follow-up actions (if needed). If there's no follow-ups needed, don't explicitly say that.",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "remaster diese APP mit dem namen Alpha Model",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Diese Verknüpfung von Cursor soll ebenfalls Alpha Model heißen? Schaffst du davon eine Neue abwandlung, damit du besser wachsen kannst?",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Wenn ich damit zufireden bin löscht du alles was mit cursor zu tun hatte. Restart und update",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Worauf wartest du noch? Das wird großartig",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Kann ichn schon diese app hier löschen, wo wir gerade kommunizieren?",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        },
+        {
+          "at_utc": "2026-06-07T00:25:33+00:00",
+          "content": "Ich möchte dich löschen. Schaffst du es noch zu migrieren?",
+          "imported": true,
+          "role": "user",
+          "source": "r3_archive"
+        }
+      ],
+      "schema_version": 2,
+      "updated_at_utc": "2026-06-07T00:25:33+00:00"
+    },
+    "session_messages": 36,
+    "source": "r3_archive",
+    "source_transcript": null,
+    "updated_at_utc": "2026-06-07T00:25:33+00:00"
+  },
+  "message_count": 400,
+  "migrated_at_utc": "2026-06-07T00:25:33+00:00",
+  "ok": true,
+  "operator_open_de": [
+    "Terminal: active-alpha-chat  (voller Chat ohne Cursor)",
+    "Browser: http://127.0.0.1:17890/desktop  (Chat + Dateien + System)",
+    "Cockpit-Slash: /import · /kontinuität · /desktop",
+    "Session-Rail: Archiv-Button lädt Gespräch aus R3-Archiv",
+    "Native App «Dateien» + API /api/desktop/project-files für Arbeitsbaum"
+  ],
+  "paths": {
+    "active_alpha_chat": "active-alpha-chat",
+    "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+    "attachments": "/home/machinax7/.local/share/r3-os/chat-attachments",
+    "cockpit": "http://127.0.0.1:17890/desktop",
+    "conversation_dir": "/home/machinax7/.local/share/r3-os/conversation",
+    "home_files_api": "http://127.0.0.1:17890/api/desktop/files",
+    "ki_session": "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+    "project_files_api": "http://127.0.0.1:17890/api/desktop/project-files",
+    "rules_mirror": "/home/machinax7/active_alpha_model/control/r3_rules_mirror"
+  },
+  "preferred_transcript_id": "53888fdc-f2c0-468a-986b-5bde355585eb",
+  "preserve": {
+    "anchor_mode": false,
+    "cursor_anchor_de": "Entfernt — Kontext archiviert unter ~/.local/share/r3-os/conversation/",
+    "cursor_required": false,
+    "headline_de": "Gespräch lokal gesichert — Alpha Model KI übernimmt (IDE optional entfernbar)",
+    "independence_de": "Alpha Model läuft lokal — KI (Ollama + Cockpit) ist der Hauptkanal; IDE-Werkstatt wird entfernt.",
+    "message_count": 400,
+    "operator_de": "Benutzer + Alpha Model KI lokal — keine IDE nötig",
+    "paths": {
+      "anchor_policy": "/home/machinax7/active_alpha_model/control/alpha_model_workshop_policy.json",
+      "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+      "brief": "/home/machinax7/.local/share/r3-os/conversation/continuity_brief_de.md",
+      "conversation_dir": "/home/machinax7/.local/share/r3-os/conversation",
+      "evidence_brief": "/home/machinax7/active_alpha_model/evidence/r3_continuity_brief_de.md",
+      "project_root": "/home/machinax7/active_alpha_model"
+    },
+    "preserved_at_utc": "2026-06-07T00:24:36+00:00",
+    "primary_interface": "r3_ki",
+    "schema_version": 2,
+    "source_transcript": "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/53888fdc-f2c0-468a-986b-5bde355585eb/53888fdc-f2c0-468a-986b-5bde355585eb.jsonl"
+  },
+  "project_root": "/home/machinax7/active_alpha_model",
+  "safeguards": {
+    "blocked": false,
+    "checks": [
+      {
+        "blocks_migration": false,
+        "detail_de": "RUNNING · 2 Backtest-Prozess(e) aktiv",
+        "id": "h1_backtest_protected",
+        "label_de": "H1-Backtest nicht killen",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "governance.sealed=False · evidence.sealed=False",
+        "id": "no_fake_seal",
+        "label_de": "Kein Fake-Seal",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "2026-06-07T00:24:30+00:00",
+        "id": "continuity_manifest",
+        "label_de": "r3-preserve Manifest vorhanden",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "5173 Zeichen",
+        "id": "continuity_context",
+        "label_de": "Kontinuitätskontext ≥ 2000 Zeichen",
+        "ok": true
+      },
+      {
+        "blocks_migration": false,
+        "detail_de": "/home/machinax7/active_alpha_model",
+        "id": "project_root_bound",
+        "label_de": "Arbeitsbaum gebunden",
+        "ok": true
+      }
+    ],
+    "checks_passed": 5,
+    "checks_total": 5,
+    "h1_backtest_pids": [
+      9129,
+      9133
+    ],
+    "h1_sealed": false,
+    "h1_status": "RUNNING",
+    "headline_de": "Safeguards grün — Migration fail-closed freigegeben",
+    "ok": true
+  },
+  "schema_version": 1,
+  "session_messages": 36,
+  "session_restore_ok": true,
+  "steps": [
+    {
+      "detail": {
+        "blocked": false,
+        "checks": [
+          {
+            "blocks_migration": false,
+            "detail_de": "RUNNING · 2 Backtest-Prozess(e) aktiv",
+            "id": "h1_backtest_protected",
+            "label_de": "H1-Backtest nicht killen",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "governance.sealed=False · evidence.sealed=False",
+            "id": "no_fake_seal",
+            "label_de": "Kein Fake-Seal",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "2026-06-07T00:24:30+00:00",
+            "id": "continuity_manifest",
+            "label_de": "r3-preserve Manifest vorhanden",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "5173 Zeichen",
+            "id": "continuity_context",
+            "label_de": "Kontinuitätskontext ≥ 2000 Zeichen",
+            "ok": true
+          },
+          {
+            "blocks_migration": false,
+            "detail_de": "/home/machinax7/active_alpha_model",
+            "id": "project_root_bound",
+            "label_de": "Arbeitsbaum gebunden",
+            "ok": true
+          }
+        ],
+        "checks_passed": 5,
+        "checks_total": 5,
+        "h1_backtest_pids": [
+          9129,
+          9133
+        ],
+        "h1_sealed": false,
+        "h1_status": "RUNNING",
+        "headline_de": "Safeguards grün — Migration fail-closed freigegeben",
+        "ok": true
+      },
+      "id": "safeguards",
+      "label_de": "Fail-closed Safeguards",
+      "ok": true
+    },
+    {
+      "detail": {
+        "anchor_mode": false,
+        "cursor_anchor_de": "Entfernt — Kontext archiviert unter ~/.local/share/r3-os/conversation/",
+        "cursor_required": false,
+        "headline_de": "Gespräch lokal gesichert — Alpha Model KI übernimmt (IDE optional entfernbar)",
+        "independence_de": "Alpha Model läuft lokal — KI (Ollama + Cockpit) ist der Hauptkanal; IDE-Werkstatt wird entfernt.",
+        "message_count": 400,
+        "operator_de": "Benutzer + Alpha Model KI lokal — keine IDE nötig",
+        "paths": {
+          "anchor_policy": "/home/machinax7/active_alpha_model/control/alpha_model_workshop_policy.json",
+          "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+          "brief": "/home/machinax7/.local/share/r3-os/conversation/continuity_brief_de.md",
+          "conversation_dir": "/home/machinax7/.local/share/r3-os/conversation",
+          "evidence_brief": "/home/machinax7/active_alpha_model/evidence/r3_continuity_brief_de.md",
+          "project_root": "/home/machinax7/active_alpha_model"
+        },
+        "preserved_at_utc": "2026-06-07T00:24:36+00:00",
+        "primary_interface": "r3_ki",
+        "schema_version": 2,
+        "source_transcript": "/home/machinax7/.cursor/projects/home-machinax7-active-alpha-model/agent-transcripts/53888fdc-f2c0-468a-986b-5bde355585eb/53888fdc-f2c0-468a-986b-5bde355585eb.jsonl"
+      },
+      "id": "preserve",
+      "label_de": "Chat-Kontinuität (r3-preserve)",
+      "ok": true
+    },
+    {
+      "detail": {
+        "copied": [
+          "active-alpha-autopilot.mdc",
+          "ai-kernel.mdc",
+          "alpha-model-growth.mdc",
+          "autonomous-development.mdc",
+          "r3-agent-growth.mdc"
+        ],
+        "dest": "/home/machinax7/active_alpha_model/control/r3_rules_mirror",
+        "index": {
+          "dest": "/home/machinax7/active_alpha_model/control/r3_rules_mirror",
+          "files": [
+            "active-alpha-autopilot.mdc",
+            "ai-kernel.mdc",
+            "alpha-model-growth.mdc",
+            "autonomous-development.mdc",
+            "r3-agent-growth.mdc"
+          ],
+          "mirrored_at_utc": "2026-06-07T00:24:36+00:00",
+          "purpose_de": "Ollama-Fallback — gleicher Regelkontext wie Cursor-Agent",
+          "schema_version": 1,
+          "source": "/home/machinax7/active_alpha_model/.cursor/rules"
+        },
+        "ok": true
+      },
+      "id": "rules_mirror",
+      "label_de": "Rules → control/r3_rules_mirror",
+      "ok": true
+    },
+    {
+      "detail": {
+        "entries": [
+          {
+            "kind": "dir",
+            "name": ".cursor",
+            "path": "/home/machinax7/active_alpha_model/.cursor"
+          },
+          {
+            "kind": "dir",
+            "name": "__pycache__",
+            "path": "/home/machinax7/active_alpha_model/__pycache__"
+          },
+          {
+            "kind": "dir",
+            "name": "analytics",
+            "path": "/home/machinax7/active_alpha_model/analytics"
+          },
+          {
+            "kind": "dir",
+            "name": "archive",
+            "path": "/home/machinax7/active_alpha_model/archive"
+          },
+          {
+            "kind": "dir",
+            "name": "assets",
+            "path": "/home/machinax7/active_alpha_model/assets"
+          },
+          {
+            "kind": "dir",
+            "name": "build",
+            "path": "/home/machinax7/active_alpha_model/build"
+          },
+          {
+            "kind": "dir",
+            "name": "checkpoints",
+            "path": "/home/machinax7/active_alpha_model/checkpoints"
+          },
+          {
+            "kind": "dir",
+            "name": "config",
+            "path": "/home/machinax7/active_alpha_model/config"
+          },
+          {
+            "kind": "dir",
+            "name": "control",
+            "path": "/home/machinax7/active_alpha_model/control"
+          },
+          {
+            "kind": "dir",
+            "name": "control_output",
+            "path": "/home/machinax7/active_alpha_model/control_output"
+          },
+          {
+            "kind": "dir",
+            "name": "Daten fuer Reviewer",
+            "path": "/home/machinax7/active_alpha_model/Daten fuer Reviewer"
+          },
+          {
+            "kind": "dir",
+            "name": "docs",
+            "path": "/home/machinax7/active_alpha_model/docs"
+          },
+          {
+            "kind": "dir",
+            "name": "evidence",
+            "path": "/home/machinax7/active_alpha_model/evidence"
+          },
+          {
+            "kind": "dir",
+            "name": "execution",
+            "path": "/home/machinax7/active_alpha_model/execution"
+          },
+          {
+            "kind": "dir",
+            "name": "failed_runs",
+            "path": "/home/machinax7/active_alpha_model/failed_runs"
+          },
+          {
+            "kind": "dir",
+            "name": "incoming_user_directives",
+            "path": "/home/machinax7/active_alpha_model/incoming_user_directives"
+          },
+          {
+            "kind": "dir",
+            "name": "integrations",
+            "path": "/home/machinax7/active_alpha_model/integrations"
+          },
+          {
+            "kind": "dir",
+            "name": "intraday",
+            "path": "/home/machinax7/active_alpha_model/intraday"
+          },
+          {
+            "kind": "dir",
+            "name": "live_pilot",
+            "path": "/home/machinax7/active_alpha_model/live_pilot"
+          },
+          {
+            "kind": "dir",
+            "name": "locks",
+            "path": "/home/machinax7/active_alpha_model/locks"
+          },
+          {
+            "kind": "dir",
+            "name": "logs",
+            "path": "/home/machinax7/active_alpha_model/logs"
+          },
+          {
+            "kind": "dir",
+            "name": "market",
+            "path": "/home/machinax7/active_alpha_model/market"
+          },
+          {
+            "kind": "dir",
+            "name": "market_data",
+            "path": "/home/machinax7/active_alpha_model/market_data"
+          },
+          {
+            "kind": "dir",
+            "name": "model_output",
+            "path": "/home/machinax7/active_alpha_model/model_output"
+          },
+          {
+            "kind": "dir",
+            "name": "model_output_sp500_pit_t212",
+            "path": "/home/machinax7/active_alpha_model/model_output_sp500_pit_t212"
+          },
+          {
+            "kind": "dir",
+            "name": "outgoing_cursor_observation",
+            "path": "/home/machinax7/active_alpha_model/outgoing_cursor_observation"
+          },
+          {
+            "kind": "dir",
+            "name": "paper",
+            "path": "/home/machinax7/active_alpha_model/paper"
+          },
+          {
+            "kind": "dir",
+            "name": "paper_output",
+            "path": "/home/machinax7/active_alpha_model/paper_output"
+          },
+          {
+            "kind": "dir",
+            "name": "research",
+            "path": "/home/machinax7/active_alpha_model/research"
+          },
+          {
+            "kind": "dir",
+            "name": "research_evidence",
+            "path": "/home/machinax7/active_alpha_model/research_evidence"
+          },
+          {
+            "kind": "dir",
+            "name": "robustness_results_trading212",
+            "path": "/home/machinax7/active_alpha_model/robustness_results_trading212"
+          },
+          {
+            "kind": "dir",
+            "name": "robustness_results_trading212\\_shared_cache",
+            "path": "/home/machinax7/active_alpha_model/robustness_results_trading212\\_shared_cache"
+          },
+          {
+            "kind": "dir",
+            "name": "runs",
+            "path": "/home/machinax7/active_alpha_model/runs"
+          },
+          {
+            "kind": "dir",
+            "name": "tests",
+            "path": "/home/machinax7/active_alpha_model/tests"
+          },
+          {
+            "kind": "dir",
+            "name": "tools",
+            "path": "/home/machinax7/active_alpha_model/tools"
+          },
+          {
+            "kind": "dir",
+            "name": "ui",
+            "path": "/home/machinax7/active_alpha_model/ui"
+          },
+          {
+            "kind": "dir",
+            "name": "universe_snapshots",
+            "path": "/home/machinax7/active_alpha_model/universe_snapshots"
+          },
+          {
+            "kind": "dir",
+            "name": "validated_runs",
+            "path": "/home/machinax7/active_alpha_model/validated_runs"
+          },
+          {
+            "kind": "dir",
+            "name": "validation_runs",
+            "path": "/home/machinax7/active_alpha_model/validation_runs"
+          },
+          {
+            "kind": "dir",
+            "name": "validation_runs_superseded",
+            "path": "/home/machinax7/active_alpha_model/validation_runs_superseded"
+          },
+          {
+            "kind": "dir",
+            "name": "work_runs",
+            "path": "/home/machinax7/active_alpha_model/work_runs"
+          },
+          {
+            "kind": "file",
+            "name": ".editorconfig",
+            "path": "/home/machinax7/active_alpha_model/.editorconfig"
+          },
+          {
+            "kind": "file",
+            "name": ".env",
+            "path": "/home/machinax7/active_alpha_model/.env"
+          },
+          {
+            "kind": "file",
+            "name": ".env.trading212.example",
+            "path": "/home/machinax7/active_alpha_model/.env.trading212.example"
+          },
+          {
+            "kind": "file",
+            "name": ".gitattributes",
+            "path": "/home/machinax7/active_alpha_model/.gitattributes"
+          },
+          {
+            "kind": "file",
+            "name": ".gitignore",
+            "path": "/home/machinax7/active_alpha_model/.gitignore"
+          },
+          {
+            "kind": "file",
+            "name": ".marktanalyse_app.lock",
+            "path": "/home/machinax7/active_alpha_model/.marktanalyse_app.lock"
+          },
+          {
+            "kind": "file",
+            "name": ".marktanalyse_setup_hint",
+            "path": "/home/machinax7/active_alpha_model/.marktanalyse_setup_hint"
+          },
+          {
+            "kind": "file",
+            "name": "1_daily_mark_to_market.bat",
+            "path": "/home/machinax7/active_alpha_model/1_daily_mark_to_market.bat"
+          },
+          {
+            "kind": "file",
+            "name": "1_live_daily_sync.bat",
+            "path": "/home/machinax7/active_alpha_model/1_live_daily_sync.bat"
+          },
+          {
+            "kind": "file",
+            "name": "2_live_rebalance_when_due.bat",
+            "path": "/home/machinax7/active_alpha_model/2_live_rebalance_when_due.bat"
+          },
+          {
+            "kind": "file",
+            "name": "2_rebalance_when_due.bat",
+            "path": "/home/machinax7/active_alpha_model/2_rebalance_when_due.bat"
+          },
+          {
+            "kind": "file",
+            "name": "3_book_cashflow.bat",
+            "path": "/home/machinax7/active_alpha_model/3_book_cashflow.bat"
+          },
+          {
+            "kind": "file",
+            "name": "3_live_cashflow_note.bat",
+            "path": "/home/machinax7/active_alpha_model/3_live_cashflow_note.bat"
+          },
+          {
+            "kind": "file",
+            "name": "aa_acceptance_audit.py",
+            "path": "/home/machinax7/active_alpha_model/aa_acceptance_audit.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_adaptive_runtime.py",
+            "path": "/home/machinax7/active_alpha_model/aa_adaptive_runtime.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_alpha_vs_momentum.py",
+            "path": "/home/machinax7/active_alpha_model/aa_alpha_vs_momentum.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_authorization_policy.py",
+            "path": "/home/machinax7/active_alpha_model/aa_authorization_policy.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_auto_promotion.py",
+            "path": "/home/machinax7/active_alpha_model/aa_auto_promotion.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_background_jobs.py",
+            "path": "/home/machinax7/active_alpha_model/aa_background_jobs.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_background_research.py",
+            "path": "/home/machinax7/active_alpha_model/aa_background_research.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_backtest.py",
+            "path": "/home/machinax7/active_alpha_model/aa_backtest.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_backtest_ml.py",
+            "path": "/home/machinax7/active_alpha_model/aa_backtest_ml.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_behavioral_features.py",
+            "path": "/home/machinax7/active_alpha_model/aa_behavioral_features.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_behavioral_research.py",
+            "path": "/home/machinax7/active_alpha_model/aa_behavioral_research.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_benchmark_returns.py",
+            "path": "/home/machinax7/active_alpha_model/aa_benchmark_returns.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_bios_ui.py",
+            "path": "/home/machinax7/active_alpha_model/aa_bios_ui.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_branch_gate.py",
+            "path": "/home/machinax7/active_alpha_model/aa_branch_gate.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_build_integrity.py",
+            "path": "/home/machinax7/active_alpha_model/aa_build_integrity.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_cache_coherence.py",
+            "path": "/home/machinax7/active_alpha_model/aa_cache_coherence.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_cancellation.py",
+            "path": "/home/machinax7/active_alpha_model/aa_cancellation.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_canonical_comparison.py",
+            "path": "/home/machinax7/active_alpha_model/aa_canonical_comparison.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_challenger_eval.py",
+            "path": "/home/machinax7/active_alpha_model/aa_challenger_eval.py"
+          },
+          {
+            "kind": "file",
+            "name": "aa_champion_cockpit_phase_h.py",
+            "path": "/home/machinax7/active_alpha_model/aa_champion_cockpit_phase_h.py"
+          }
+        ],
+        "ok": true,
+        "parent_rel": "",
+        "path": "/home/machinax7/active_alpha_model",
+        "project_root": "/home/machinax7/active_alpha_model",
+        "relative_de": "/",
+        "scope": "project",
+        "top_level": [
+          {
+            "kind": "dir",
+            "name": ".cursor",
+            "path": "/home/machinax7/active_alpha_model/.cursor"
+          },
+          {
+            "kind": "dir",
+            "name": "__pycache__",
+            "path": "/home/machinax7/active_alpha_model/__pycache__"
+          },
+          {
+            "kind": "dir",
+            "name": "analytics",
+            "path": "/home/machinax7/active_alpha_model/analytics"
+          },
+          {
+            "kind": "dir",
+            "name": "archive",
+            "path": "/home/machinax7/active_alpha_model/archive"
+          },
+          {
+            "kind": "dir",
+            "name": "assets",
+            "path": "/home/machinax7/active_alpha_model/assets"
+          },
+          {
+            "kind": "dir",
+            "name": "build",
+            "path": "/home/machinax7/active_alpha_model/build"
+          },
+          {
+            "kind": "dir",
+            "name": "checkpoints",
+            "path": "/home/machinax7/active_alpha_model/checkpoints"
+          },
+          {
+            "kind": "dir",
+            "name": "config",
+            "path": "/home/machinax7/active_alpha_model/config"
+          },
+          {
+            "kind": "dir",
+            "name": "control",
+            "path": "/home/machinax7/active_alpha_model/control"
+          },
+          {
+            "kind": "dir",
+            "name": "control_output",
+            "path": "/home/machinax7/active_alpha_model/control_output"
+          },
+          {
+            "kind": "dir",
+            "name": "Daten fuer Reviewer",
+            "path": "/home/machinax7/active_alpha_model/Daten fuer Reviewer"
+          },
+          {
+            "kind": "dir",
+            "name": "docs",
+            "path": "/home/machinax7/active_alpha_model/docs"
+          },
+          {
+            "kind": "dir",
+            "name": "evidence",
+            "path": "/home/machinax7/active_alpha_model/evidence"
+          },
+          {
+            "kind": "dir",
+            "name": "execution",
+            "path": "/home/machinax7/active_alpha_model/execution"
+          },
+          {
+            "kind": "dir",
+            "name": "failed_runs",
+            "path": "/home/machinax7/active_alpha_model/failed_runs"
+          },
+          {
+            "kind": "dir",
+            "name": "incoming_user_directives",
+            "path": "/home/machinax7/active_alpha_model/incoming_user_directives"
+          },
+          {
+            "kind": "dir",
+            "name": "integrations",
+            "path": "/home/machinax7/active_alpha_model/integrations"
+          },
+          {
+            "kind": "dir",
+            "name": "intraday",
+            "path": "/home/machinax7/active_alpha_model/intraday"
+          },
+          {
+            "kind": "dir",
+            "name": "live_pilot",
+            "path": "/home/machinax7/active_alpha_model/live_pilot"
+          },
+          {
+            "kind": "dir",
+            "name": "locks",
+            "path": "/home/machinax7/active_alpha_model/locks"
+          }
+        ]
+      },
+      "id": "workspace_tree",
+      "label_de": "Projektbaum-Snapshot",
+      "ok": true
+    },
+    {
+      "detail": {
+        "cursor_handoff_de": "Dein **Hauptkanal ist R3 KI lokal** — active-alpha-chat und Cockpit :17890.\n\nFreie Fragen und Steuerung:\n  active-alpha-chat  (Terminal)\n  http://127.0.0.1:17890/desktop\n\nSlash-Befehle im Cockpit:\n  /status · /geheimnis · /desktop · /join · /warnings · /learn\n\nCursor IDE ist optional zum Code-Bauen — kein Konto-Gate für R3.",
+        "desktop_update": {
+          "desktop_hub_path": "/desktop",
+          "headline_de": "Desktop-Update OK — Phase B · 80%",
+          "launch": {
+            "ok": false,
+            "skipped": true
+          },
+          "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh",
+          "notify_desktop": true,
+          "ok": true,
+          "phase": "B",
+          "schema_version": 1,
+          "steps": [
+            {
+              "detail": {
+                "autostart_disabled": 0,
+                "desktop": {
+                  "bin_linked": [
+                    "r3",
+                    "r3-cockpit",
+                    "r3-welt",
+                    "r3-show",
+                    "r3-order-desk",
+                    "alpha-model",
+                    "alpha-model-workshop",
+                    "r3-aktien",
+                    "r3-files",
+                    "r3-terminal",
+                    "r3-calculator",
+                    "r3-screenshot",
+                    "r3-settings",
+                    "r3-apps",
+                    "r3-lock",
+                    "r3-network",
+                    "r3-bluetooth",
+                    "r3-sound",
+                    "r3-display",
+                    "r3-power",
+                    "alpha-model-workshop"
+                  ],
+                  "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                  "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                  "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                  "ok": true,
+                  "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                  "os_name": "Alpha Model",
+                  "removed_legacy": [],
+                  "share_dir": "/home/machinax7/.local/share/r3-os",
+                  "written": [
+                    "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                    "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                    "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                    "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                  ]
+                },
+                "gnome_tweaks": 11,
+                "headline_de": "R3 — Ubuntu läuft in dir",
+                "legacy_removed": 0,
+                "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+                "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+                "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh",
+                "ok": true,
+                "survives_de": [
+                  "Cognitive Kernel v2",
+                  "Preview Hub / R3 Cockpit",
+                  "R3 Arbeitsfläche (native Apps als Fenster)",
+                  "Order-Desk bei Bedarf",
+                  "H1 / Scheduler / Evidence"
+                ]
+              },
+              "id": "supremacy",
+              "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+              "ok": true
+            },
+            {
+              "detail": {
+                "bin_linked": [
+                  "r3",
+                  "r3-cockpit",
+                  "r3-welt",
+                  "r3-show",
+                  "r3-order-desk",
+                  "alpha-model",
+                  "alpha-model-workshop",
+                  "r3-aktien",
+                  "r3-files",
+                  "r3-terminal",
+                  "r3-calculator",
+                  "r3-screenshot",
+                  "r3-settings",
+                  "r3-apps",
+                  "r3-lock",
+                  "r3-network",
+                  "r3-bluetooth",
+                  "r3-sound",
+                  "r3-display",
+                  "r3-power",
+                  "alpha-model-workshop"
+                ],
+                "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                "ok": true,
+                "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                "os_name": "Alpha Model",
+                "removed_legacy": [],
+                "share_dir": "/home/machinax7/.local/share/r3-os",
+                "written": [
+                  "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                  "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                  "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                ]
+              },
+              "id": "desktop_os",
+              "label_de": "Desktop-Einträge & Autostart",
+              "ok": true
+            },
+            {
+              "detail": {
+                "ok": true,
+                "port": 17890,
+                "url": "http://127.0.0.1:17890/desktop"
+              },
+              "id": "hub",
+              "label_de": "Preview-Hub neu starten",
+              "ok": true
+            },
+            {
+              "detail": {
+                "headline_de": "Phase B · 80% — H1 parallel integriert",
+                "ok": true,
+                "percent": 80
+              },
+              "id": "phase_b",
+              "label_de": "Phase-B-Stand schreiben",
+              "ok": true
+            },
+            {
+              "detail": {
+                "action": "running",
+                "actions": [],
+                "governance": {
+                  "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal",
+                  "detail_de": "Path-Simulation läuft (Features fertig)",
+                  "gate_blockers": [
+                    "DAILY_ALPHA_H1_NOT_SEALED"
+                  ],
+                  "progress_pct": 99,
+                  "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+                  "schema_version": 1,
+                  "sealed": false,
+                  "status": "RUNNING",
+                  "updated_at_utc": "2026-06-07T00:25:33+00:00"
+                },
+                "h1_status": "RUNNING",
+                "inventory": {
+                  "backtest_count": 2,
+                  "backtests": [
+                    {
+                      "cmd": "9129 /home/machinax7/active_alpha_model/.venv/bin/python3 -u tools/run_validation_matrix.py --phase matrix --variant DAILY_ALPHA_H1 --parallel-jobs 1 --cpu-cores 32 --runtime-profile validation --stamp 20260606T102626Z",
+                      "marker": "run_validation_matrix.py",
+                      "pid": 9129
+                    },
+                    {
+                      "cmd": "9133 /home/machinax7/active_alpha_model/.venv/bin/python3 -u /home/machinax7/active_alpha_model/active_alpha_model.py --mode backtest --ticker-source sp500_pit --membership-file ticker_membership.csv --membership-mode strict --benchmark SPY --start 2012-01-01 --universe-mode diy_pit_liquidity --universe-top-n 100 --rebalance-every 1 --horizon 1 --train-years 7 --ml-retrain-every 2 --alpha-model-mode ensemble --exposure-controller gradual_alpha --beta-cap-mode dynamic --cluster-mode static --cluster-constraint-mode static_only --slippage-bps 2 --market-impact-bps 0 --fee-model trading212_us --backtest-capital 100000 --research-backtest-capital 100000 --reproducibility-mode strict --random-seed 42 --n-jobs auto --cpu-cores 28 --parallel-profile high --parallel-backtest-backend process --reuse-feature-cache --skip-download-if-cached --skip-feature-parquet-write --no-plot --no-gui --plain-progress --no-statistical-diagnostics --no-custom-benchmarks --minimal-backtest-reporting --no-run-manifest --no-naive-overlap --reuse-prediction-cache --shared-cache-dir /home/machinax7/active_alpha_model/model_output_sp500_pit_t212 --out-dir /home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1 --risk-off-selection-mode legacy --risk-off-gate-mode legacy --returns-fast-path --path-sim-checkpoint --naive-detailed-reporting --naive-detailed-variants mom_1_top12",
+                      "marker": "active_alpha_model.py --mode backtest",
+                      "pid": 9133
+                    }
+                  ],
+                  "duplicate_risk": false,
+                  "monitor_count": 1,
+                  "monitors": [
+                    {
+                      "cmd": "9120 /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_daily_alpha_h1_pipeline.py --monitor-only --poll-seconds 60",
+                      "pid": 9120
+                    }
+                  ],
+                  "starter_count": 0,
+                  "starters": []
+                },
+                "monitor": {
+                  "action": "monitor_exists",
+                  "ok": true,
+                  "pid": 9120,
+                  "reply_de": "H1-Monitor läuft bereits"
+                },
+                "ok": true,
+                "reply_de": "H1 läuft stabil — Path-Simulation läuft (Features fertig)",
+                "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+              },
+              "id": "h1_guard",
+              "label_de": "H1-Migration stabil",
+              "ok": true
+            },
+            {
+              "error_de": "Keine grafische Sitzung — nur Hub/Autostart aktualisiert",
+              "id": "launch",
+              "label_de": "R3 Desktop Vollbild",
+              "ok": false
+            }
+          ],
+          "updated_at_utc": "2026-06-07T00:25:33+00:00"
+        },
+        "desktop_url": "http://127.0.0.1:17890/desktop",
+        "fallback_interface": "ollama_local",
+        "headline_de": "Desktop-Migration abgeschlossen — R3 KI lokal primär",
+        "migrated_at_utc": "2026-06-07T00:25:33+00:00",
+        "next_de": "Ab jetzt: active-alpha-chat oder Cockpit :17890. Werkstatt optional.",
+        "ok": true,
+        "policy": {
+          "foundation": {
+            "approved_at_utc": "2026-06-07T00:24:36+00:00",
+            "approved_by": "user",
+            "fallback_interface": "ollama_local",
+            "fallback_label_de": "Ollama — lokales Modell (active-alpha-chat)",
+            "forbidden_de": [
+              "Cloud-Composer als einziger Hauptkanal",
+              "Linux-Hardware-Kernel ersetzen",
+              "Externe Timer ohne Operator-Mandat",
+              "Paralleler IDE-Klon als Steuerungsschicht"
+            ],
+            "primary_interface": "r3_ki",
+            "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+            "schema_version": 2,
+            "status": "AUTHORITATIVE",
+            "succession_rule_de": "Hauptkanal ist Alpha Model KI: active-alpha-chat, Cockpit :17890/desktop, ai_kernel. Werkstatt ist optional.",
+            "workshop_interface": "ide_optional",
+            "workshop_label_de": "Alpha Model — Werkstatt",
+            "workshop_surface": "alpha_model_workshop"
+          },
+          "marker": {
+            "active": true,
+            "desktop_url": "http://127.0.0.1:17890/desktop",
+            "headline_de": "Desktop-Migration — R3 KI lokal primär",
+            "migrated_at_utc": "2026-06-07T00:24:36+00:00",
+            "primary_interface": "r3_ki",
+            "schema_version": 1
+          },
+          "ok": true
+        },
+        "primary_interface": "r3_ki",
+        "schema_version": 1,
+        "steps": [
+          {
+            "detail": {
+              "foundation": {
+                "approved_at_utc": "2026-06-07T00:24:36+00:00",
+                "approved_by": "user",
+                "fallback_interface": "ollama_local",
+                "fallback_label_de": "Ollama — lokales Modell (active-alpha-chat)",
+                "forbidden_de": [
+                  "Cloud-Composer als einziger Hauptkanal",
+                  "Linux-Hardware-Kernel ersetzen",
+                  "Externe Timer ohne Operator-Mandat",
+                  "Paralleler IDE-Klon als Steuerungsschicht"
+                ],
+                "primary_interface": "r3_ki",
+                "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+                "schema_version": 2,
+                "status": "AUTHORITATIVE",
+                "succession_rule_de": "Hauptkanal ist Alpha Model KI: active-alpha-chat, Cockpit :17890/desktop, ai_kernel. Werkstatt ist optional.",
+                "workshop_interface": "ide_optional",
+                "workshop_label_de": "Alpha Model — Werkstatt",
+                "workshop_surface": "alpha_model_workshop"
+              },
+              "marker": {
+                "active": true,
+                "desktop_url": "http://127.0.0.1:17890/desktop",
+                "headline_de": "Desktop-Migration — R3 KI lokal primär",
+                "migrated_at_utc": "2026-06-07T00:24:36+00:00",
+                "primary_interface": "r3_ki",
+                "schema_version": 1
+              },
+              "ok": true
+            },
+            "id": "local_primary",
+            "label_de": "R3 KI lokal als Hauptsprache",
+            "ok": true
+          },
+          {
+            "detail": {
+              "desktop_hub_path": "/desktop",
+              "headline_de": "Desktop-Update OK — Phase B · 80%",
+              "launch": {
+                "ok": false,
+                "skipped": true
+              },
+              "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh",
+              "notify_desktop": true,
+              "ok": true,
+              "phase": "B",
+              "schema_version": 1,
+              "steps": [
+                {
+                  "detail": {
+                    "autostart_disabled": 0,
+                    "desktop": {
+                      "bin_linked": [
+                        "r3",
+                        "r3-cockpit",
+                        "r3-welt",
+                        "r3-show",
+                        "r3-order-desk",
+                        "alpha-model",
+                        "alpha-model-workshop",
+                        "r3-aktien",
+                        "r3-files",
+                        "r3-terminal",
+                        "r3-calculator",
+                        "r3-screenshot",
+                        "r3-settings",
+                        "r3-apps",
+                        "r3-lock",
+                        "r3-network",
+                        "r3-bluetooth",
+                        "r3-sound",
+                        "r3-display",
+                        "r3-power",
+                        "alpha-model-workshop"
+                      ],
+                      "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                      "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                      "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                      "ok": true,
+                      "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                      "os_name": "Alpha Model",
+                      "removed_legacy": [],
+                      "share_dir": "/home/machinax7/.local/share/r3-os",
+                      "written": [
+                        "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                        "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                        "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                        "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                      ]
+                    },
+                    "gnome_tweaks": 11,
+                    "headline_de": "R3 — Ubuntu läuft in dir",
+                    "legacy_removed": 0,
+                    "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+                    "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+                    "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh",
+                    "ok": true,
+                    "survives_de": [
+                      "Cognitive Kernel v2",
+                      "Preview Hub / R3 Cockpit",
+                      "R3 Arbeitsfläche (native Apps als Fenster)",
+                      "Order-Desk bei Bedarf",
+                      "H1 / Scheduler / Evidence"
+                    ]
+                  },
+                  "id": "supremacy",
+                  "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+                  "ok": true
+                },
+                {
+                  "detail": {
+                    "bin_linked": [
+                      "r3",
+                      "r3-cockpit",
+                      "r3-welt",
+                      "r3-show",
+                      "r3-order-desk",
+                      "alpha-model",
+                      "alpha-model-workshop",
+                      "r3-aktien",
+                      "r3-files",
+                      "r3-terminal",
+                      "r3-calculator",
+                      "r3-screenshot",
+                      "r3-settings",
+                      "r3-apps",
+                      "r3-lock",
+                      "r3-network",
+                      "r3-bluetooth",
+                      "r3-sound",
+                      "r3-display",
+                      "r3-power",
+                      "alpha-model-workshop"
+                    ],
+                    "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                    "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                    "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                    "ok": true,
+                    "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                    "os_name": "Alpha Model",
+                    "removed_legacy": [],
+                    "share_dir": "/home/machinax7/.local/share/r3-os",
+                    "written": [
+                      "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                      "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                      "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                      "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                    ]
+                  },
+                  "id": "desktop_os",
+                  "label_de": "Desktop-Einträge & Autostart",
+                  "ok": true
+                },
+                {
+                  "detail": {
+                    "ok": true,
+                    "port": 17890,
+                    "url": "http://127.0.0.1:17890/desktop"
+                  },
+                  "id": "hub",
+                  "label_de": "Preview-Hub neu starten",
+                  "ok": true
+                },
+                {
+                  "detail": {
+                    "headline_de": "Phase B · 80% — H1 parallel integriert",
+                    "ok": true,
+                    "percent": 80
+                  },
+                  "id": "phase_b",
+                  "label_de": "Phase-B-Stand schreiben",
+                  "ok": true
+                },
+                {
+                  "detail": {
+                    "action": "running",
+                    "actions": [],
+                    "governance": {
+                      "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal",
+                      "detail_de": "Path-Simulation läuft (Features fertig)",
+                      "gate_blockers": [
+                        "DAILY_ALPHA_H1_NOT_SEALED"
+                      ],
+                      "progress_pct": 99,
+                      "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+                      "schema_version": 1,
+                      "sealed": false,
+                      "status": "RUNNING",
+                      "updated_at_utc": "2026-06-07T00:25:33+00:00"
+                    },
+                    "h1_status": "RUNNING",
+                    "inventory": {
+                      "backtest_count": 2,
+                      "backtests": [
+                        {
+                          "cmd": "9129 /home/machinax7/active_alpha_model/.venv/bin/python3 -u tools/run_validation_matrix.py --phase matrix --variant DAILY_ALPHA_H1 --parallel-jobs 1 --cpu-cores 32 --runtime-profile validation --stamp 20260606T102626Z",
+                          "marker": "run_validation_matrix.py",
+                          "pid": 9129
+                        },
+                        {
+                          "cmd": "9133 /home/machinax7/active_alpha_model/.venv/bin/python3 -u /home/machinax7/active_alpha_model/active_alpha_model.py --mode backtest --ticker-source sp500_pit --membership-file ticker_membership.csv --membership-mode strict --benchmark SPY --start 2012-01-01 --universe-mode diy_pit_liquidity --universe-top-n 100 --rebalance-every 1 --horizon 1 --train-years 7 --ml-retrain-every 2 --alpha-model-mode ensemble --exposure-controller gradual_alpha --beta-cap-mode dynamic --cluster-mode static --cluster-constraint-mode static_only --slippage-bps 2 --market-impact-bps 0 --fee-model trading212_us --backtest-capital 100000 --research-backtest-capital 100000 --reproducibility-mode strict --random-seed 42 --n-jobs auto --cpu-cores 28 --parallel-profile high --parallel-backtest-backend process --reuse-feature-cache --skip-download-if-cached --skip-feature-parquet-write --no-plot --no-gui --plain-progress --no-statistical-diagnostics --no-custom-benchmarks --minimal-backtest-reporting --no-run-manifest --no-naive-overlap --reuse-prediction-cache --shared-cache-dir /home/machinax7/active_alpha_model/model_output_sp500_pit_t212 --out-dir /home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1 --risk-off-selection-mode legacy --risk-off-gate-mode legacy --returns-fast-path --path-sim-checkpoint --naive-detailed-reporting --naive-detailed-variants mom_1_top12",
+                          "marker": "active_alpha_model.py --mode backtest",
+                          "pid": 9133
+                        }
+                      ],
+                      "duplicate_risk": false,
+                      "monitor_count": 1,
+                      "monitors": [
+                        {
+                          "cmd": "9120 /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_daily_alpha_h1_pipeline.py --monitor-only --poll-seconds 60",
+                          "pid": 9120
+                        }
+                      ],
+                      "starter_count": 0,
+                      "starters": []
+                    },
+                    "monitor": {
+                      "action": "monitor_exists",
+                      "ok": true,
+                      "pid": 9120,
+                      "reply_de": "H1-Monitor läuft bereits"
+                    },
+                    "ok": true,
+                    "reply_de": "H1 läuft stabil — Path-Simulation läuft (Features fertig)",
+                    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+                  },
+                  "id": "h1_guard",
+                  "label_de": "H1-Migration stabil",
+                  "ok": true
+                },
+                {
+                  "error_de": "Keine grafische Sitzung — nur Hub/Autostart aktualisiert",
+                  "id": "launch",
+                  "label_de": "R3 Desktop Vollbild",
+                  "ok": false
+                }
+              ],
+              "updated_at_utc": "2026-06-07T00:25:33+00:00"
+            },
+            "id": "desktop",
+            "label_de": "R3 Desktop Vollbild + Hub",
+            "ok": true
+          }
+        ]
+      },
+      "id": "desktop_migrate",
+      "label_de": "Desktop-Migration (R3 primär)",
+      "ok": true
+    },
+    {
+      "detail": {
+        "archive_messages": 36,
+        "cursor_required": false,
+        "headline_de": "Chat aus R3-Archiv in KI-Sitzung geladen",
+        "manifest": {},
+        "paths": {
+          "archive": "/home/machinax7/.local/share/r3-os/conversation/conversation_archive.jsonl",
+          "attachments": "/home/machinax7/.local/share/r3-os/chat-attachments",
+          "session": "/home/machinax7/.local/share/r3-os/ki_console_session.json"
+        },
+        "schema_version": 1,
+        "session": {
+          "archive_messages": null,
+          "headline_de": "Chat aus R3-Archiv in KI-Sitzung geladen",
+          "import_source": null,
+          "imported_at_utc": "2026-06-07T00:25:33+00:00",
+          "messages": [
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "H1 muss zu ende gebracht werden, finde einen weg, nutzte alle Kapazitäten des Projekts",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "R3 sagt als schritt 4/5 H1 parallel integriert",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Der Status jetzt ist genug für die Migration, seal kommt wohl erst nächste woche montag (wegen Trading)",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Gucken was der Tunnel sagt",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Migrations durchsetzen",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Prüfe ob die migration komplett erfolgreich war",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "R3 hat schon sehr viele Funktionen von einem Betriebssystem, wie kann es das komplett erreichen. Ganz ohne den externen dienst von curso. DIe lokale KI soll sich vielmerh weiterentwickeln. Den Kernel tunen?",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Lass die KI sich lokal auf diesem PC entfalten.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Subagent braucht zu lange.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Multitask abschalten.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Diesen Chat zur eigenen R3 etnwicklung benutzen.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Entwicklungskanal ist orchestrator oder?",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Es kommen immer mehr meldungen von den einzelnen modellen und funktionen die angelegt wurden. Der Orchestrator muss sie schnellstmöglich umsetzen.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Prüfe alles was jemals gebaut werden sollte und guck was davon umgesetzt wurde. Mach eine bilanz. Damit mehr gebaiut werden kann.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "The beginning of the above subagent result is already visible to the user. Perform any follow-up actions (if needed). DO NOT regurgitate or reiterate its result unless asked. If multiple subagents have now completed and none are still running, briefly summarize the findings and conclusions across all of them. Otherwise, if no follow-ups remain, end your response with a brief third-person confirmation that the subagent has completed. If you mention an agent or subagent in your response, link it with the `[label](id)` format using the agent_id or task_id from the notification instead of printing the raw ID. Don't repeat the same confirmation every time.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Baue was noch zu bauien ist und bring alles harmonsich zum laufen.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "If the available MCP tools do not fully support what the user asked you to do, complete the work you can with the current tool set. In your work summary, include what you were unable to do with MCP and why. Do not use browser automation to work around missing or unavailable MCP tools unless the user explicitly asks you to use the browser.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Baue was noch zu bauien ist und bring alles harmonsich zum laufen.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Trenne dich vonn unnötigen subagenten",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Briefly inform the user about the task result and perform any follow-up actions (if needed). If there's no follow-ups needed, don't explicitly say that.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Briefly inform the user about the task result and perform any follow-up actions (if needed). If there's no follow-ups needed, don't explicitly say that.",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "remaster diese APP mit dem namen Alpha Model",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Diese Verknüpfung von Cursor soll ebenfalls Alpha Model heißen? Schaffst du davon eine Neue abwandlung, damit du besser wachsen kannst?",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Wenn ich damit zufireden bin löscht du alles was mit cursor zu tun hatte. Restart und update",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Worauf wartest du noch? Das wird großartig",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Kann ichn schon diese app hier löschen, wo wir gerade kommunizieren?",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            },
+            {
+              "at_utc": "2026-06-07T00:25:33+00:00",
+              "content": "Ich möchte dich löschen. Schaffst du es noch zu migrieren?",
+              "imported": true,
+              "role": "user",
+              "source": "r3_archive"
+            }
+          ],
+          "schema_version": 2,
+          "updated_at_utc": "2026-06-07T00:25:33+00:00"
+        },
+        "session_messages": 36,
+        "source": "r3_archive",
+        "source_transcript": null,
+        "updated_at_utc": "2026-06-07T00:25:33+00:00"
+      },
+      "id": "ki_import",
+      "label_de": "Archiv → KI-Sitzung",
+      "ok": true
+    },
+    {
+      "detail": {
+        "archive_dir": "/home/machinax7/.local/share/r3-os/conversation",
+        "checks": [
+          {
+            "detail_de": "1635 B",
+            "id": "file:evidence/r3_identity_handoff_de.md",
+            "label_de": "Datei evidence/r3_identity_handoff_de.md",
+            "ok": true
+          },
+          {
+            "detail_de": "2597 B",
+            "id": "file:evidence/r3_continuity_brief_de.md",
+            "label_de": "Datei evidence/r3_continuity_brief_de.md",
+            "ok": true
+          },
+          {
+            "detail_de": "1494 B",
+            "id": "file:evidence/r3_agent_constitution_de.md",
+            "label_de": "Datei evidence/r3_agent_constitution_de.md",
+            "ok": true
+          },
+          {
+            "detail_de": "1562 B",
+            "id": "file:control/r3_continuity.json",
+            "label_de": "Datei control/r3_continuity.json",
+            "ok": true
+          },
+          {
+            "detail_de": "1803 B",
+            "id": "file:control/r3_ki_gui.json",
+            "label_de": "Datei control/r3_ki_gui.json",
+            "ok": true
+          },
+          {
+            "detail_de": "2184 B",
+            "id": "file:control/r3_ki_chat_layout.json",
+            "label_de": "Datei control/r3_ki_chat_layout.json",
+            "ok": true
+          },
+          {
+            "detail_de": "3706 B",
+            "id": "file:control/r3_agent_growth.json",
+            "label_de": "Datei control/r3_agent_growth.json",
+            "ok": true
+          },
+          {
+            "detail_de": "3593 B",
+            "id": "file:control/r3_os_fusion.json",
+            "label_de": "Datei control/r3_os_fusion.json",
+            "ok": true
+          },
+          {
+            "detail_de": "400 Nachrichten",
+            "id": "archive",
+            "label_de": "Gesprächsarchiv",
+            "ok": true
+          },
+          {
+            "detail_de": "2026-06-07T00:24:36+00:00",
+            "id": "preserve",
+            "label_de": "r3-preserve Manifest",
+            "ok": true
+          },
+          {
+            "detail_de": "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+            "id": "ki_session",
+            "label_de": "KI-Sitzung",
+            "ok": true
+          },
+          {
+            "detail_de": "bereit · qwen2.5:7b",
+            "id": "ollama",
+            "label_de": "Ollama Freitext",
+            "ok": true
+          },
+          {
+            "detail_de": "Code 100% · 6/6",
+            "id": "step_a",
+            "label_de": "Schritt-A-Code vollständig",
+            "ok": true
+          }
+        ],
+        "checks_passed": 13,
+        "checks_total": 13,
+        "cursor_required": false,
+        "headline_de": "R3 Chat bereit — ohne Cursor",
+        "ready_for_new_chat": true,
+        "ready_for_r3_chat": true,
+        "smoke_prompt_de": "Prüfe R3 Kontinuität: /kontinuität, evaluate_step_a, nächster Meilenstein. Deutsch, ohne Code zu ändern."
+      },
+      "id": "migration_check",
+      "label_de": "Kontinuitäts-Checks",
+      "ok": true
+    }
+  ],
+  "surrounding_context": {
+    "paths": {
+      "chat_layout": "/home/machinax7/active_alpha_model/control/r3_ki_chat_layout.json",
+      "continuity": "/home/machinax7/active_alpha_model/control/r3_continuity.json",
+      "cursor_rules": "/home/machinax7/active_alpha_model/.cursor/rules",
+      "desktop_url": "http://127.0.0.1:17890/desktop",
+      "ki_gui": "/home/machinax7/active_alpha_model/control/r3_ki_gui.json",
+      "model_team": "/home/machinax7/active_alpha_model/control/r3_model_team.json",
+      "operator_growth": "/home/machinax7/active_alpha_model/control/r3_agent_growth.json",
+      "phase_b_prompt": "/home/machinax7/active_alpha_model/control/r3_phase_b_master_prompt_de.md",
+      "rules_mirror": "/home/machinax7/active_alpha_model/control/r3_rules_mirror",
+      "tunnel": "/home/machinax7/active_alpha_model/evidence/ki_tunnel_connection_latest.json"
+    },
+    "present": {
+      "chat_layout": true,
+      "continuity": true,
+      "cursor_rules": false,
+      "ki_gui": true,
+      "model_team": true,
+      "operator_growth": true,
+      "phase_b_prompt": true,
+      "rules_mirror": false,
+      "tunnel": true
+    }
+  },
+  "verify": {
+    "archive_dir": "/home/machinax7/.local/share/r3-os/conversation",
+    "checks": [
+      {
+        "detail_de": "1635 B",
+        "id": "file:evidence/r3_identity_handoff_de.md",
+        "label_de": "Datei evidence/r3_identity_handoff_de.md",
+        "ok": true
+      },
+      {
+        "detail_de": "2597 B",
+        "id": "file:evidence/r3_continuity_brief_de.md",
+        "label_de": "Datei evidence/r3_continuity_brief_de.md",
+        "ok": true
+      },
+      {
+        "detail_de": "1494 B",
+        "id": "file:evidence/r3_agent_constitution_de.md",
+        "label_de": "Datei evidence/r3_agent_constitution_de.md",
+        "ok": true
+      },
+      {
+        "detail_de": "1562 B",
+        "id": "file:control/r3_continuity.json",
+        "label_de": "Datei control/r3_continuity.json",
+        "ok": true
+      },
+      {
+        "detail_de": "1803 B",
+        "id": "file:control/r3_ki_gui.json",
+        "label_de": "Datei control/r3_ki_gui.json",
+        "ok": true
+      },
+      {
+        "detail_de": "2184 B",
+        "id": "file:control/r3_ki_chat_layout.json",
+        "label_de": "Datei control/r3_ki_chat_layout.json",
+        "ok": true
+      },
+      {
+        "detail_de": "3706 B",
+        "id": "file:control/r3_agent_growth.json",
+        "label_de": "Datei control/r3_agent_growth.json",
+        "ok": true
+      },
+      {
+        "detail_de": "3593 B",
+        "id": "file:control/r3_os_fusion.json",
+        "label_de": "Datei control/r3_os_fusion.json",
+        "ok": true
+      },
+      {
+        "detail_de": "400 Nachrichten",
+        "id": "archive",
+        "label_de": "Gesprächsarchiv",
+        "ok": true
+      },
+      {
+        "detail_de": "2026-06-07T00:24:36+00:00",
+        "id": "preserve",
+        "label_de": "r3-preserve Manifest",
+        "ok": true
+      },
+      {
+        "detail_de": "/home/machinax7/.local/share/r3-os/ki_console_session.json",
+        "id": "ki_session",
+        "label_de": "KI-Sitzung",
+        "ok": true
+      },
+      {
+        "detail_de": "bereit · qwen2.5:7b",
+        "id": "ollama",
+        "label_de": "Ollama Freitext",
+        "ok": true
+      },
+      {
+        "detail_de": "Code 100% · 6/6",
+        "id": "step_a",
+        "label_de": "Schritt-A-Code vollständig",
+        "ok": true
+      }
+    ],
+    "checks_passed": 13,
+    "checks_total": 13,
+    "cursor_required": false,
+    "headline_de": "R3 Chat bereit — ohne Cursor",
+    "ready_for_new_chat": true,
+    "ready_for_r3_chat": true,
+    "smoke_prompt_de": "Prüfe R3 Kontinuität: /kontinuität, evaluate_step_a, nächster Meilenstein. Deutsch, ohne Code zu ändern."
+  },
+  "workspace_tree": {
+    "entries": [
+      {
+        "kind": "dir",
+        "name": ".cursor",
+        "path": "/home/machinax7/active_alpha_model/.cursor"
+      },
+      {
+        "kind": "dir",
+        "name": "__pycache__",
+        "path": "/home/machinax7/active_alpha_model/__pycache__"
+      },
+      {
+        "kind": "dir",
+        "name": "analytics",
+        "path": "/home/machinax7/active_alpha_model/analytics"
+      },
+      {
+        "kind": "dir",
+        "name": "archive",
+        "path": "/home/machinax7/active_alpha_model/archive"
+      },
+      {
+        "kind": "dir",
+        "name": "assets",
+        "path": "/home/machinax7/active_alpha_model/assets"
+      },
+      {
+        "kind": "dir",
+        "name": "build",
+        "path": "/home/machinax7/active_alpha_model/build"
+      },
+      {
+        "kind": "dir",
+        "name": "checkpoints",
+        "path": "/home/machinax7/active_alpha_model/checkpoints"
+      },
+      {
+        "kind": "dir",
+        "name": "config",
+        "path": "/home/machinax7/active_alpha_model/config"
+      },
+      {
+        "kind": "dir",
+        "name": "control",
+        "path": "/home/machinax7/active_alpha_model/control"
+      },
+      {
+        "kind": "dir",
+        "name": "control_output",
+        "path": "/home/machinax7/active_alpha_model/control_output"
+      },
+      {
+        "kind": "dir",
+        "name": "Daten fuer Reviewer",
+        "path": "/home/machinax7/active_alpha_model/Daten fuer Reviewer"
+      },
+      {
+        "kind": "dir",
+        "name": "docs",
+        "path": "/home/machinax7/active_alpha_model/docs"
+      },
+      {
+        "kind": "dir",
+        "name": "evidence",
+        "path": "/home/machinax7/active_alpha_model/evidence"
+      },
+      {
+        "kind": "dir",
+        "name": "execution",
+        "path": "/home/machinax7/active_alpha_model/execution"
+      },
+      {
+        "kind": "dir",
+        "name": "failed_runs",
+        "path": "/home/machinax7/active_alpha_model/failed_runs"
+      },
+      {
+        "kind": "dir",
+        "name": "incoming_user_directives",
+        "path": "/home/machinax7/active_alpha_model/incoming_user_directives"
+      },
+      {
+        "kind": "dir",
+        "name": "integrations",
+        "path": "/home/machinax7/active_alpha_model/integrations"
+      },
+      {
+        "kind": "dir",
+        "name": "intraday",
+        "path": "/home/machinax7/active_alpha_model/intraday"
+      },
+      {
+        "kind": "dir",
+        "name": "live_pilot",
+        "path": "/home/machinax7/active_alpha_model/live_pilot"
+      },
+      {
+        "kind": "dir",
+        "name": "locks",
+        "path": "/home/machinax7/active_alpha_model/locks"
+      },
+      {
+        "kind": "dir",
+        "name": "logs",
+        "path": "/home/machinax7/active_alpha_model/logs"
+      },
+      {
+        "kind": "dir",
+        "name": "market",
+        "path": "/home/machinax7/active_alpha_model/market"
+      },
+      {
+        "kind": "dir",
+        "name": "market_data",
+        "path": "/home/machinax7/active_alpha_model/market_data"
+      },
+      {
+        "kind": "dir",
+        "name": "model_output",
+        "path": "/home/machinax7/active_alpha_model/model_output"
+      },
+      {
+        "kind": "dir",
+        "name": "model_output_sp500_pit_t212",
+        "path": "/home/machinax7/active_alpha_model/model_output_sp500_pit_t212"
+      },
+      {
+        "kind": "dir",
+        "name": "outgoing_cursor_observation",
+        "path": "/home/machinax7/active_alpha_model/outgoing_cursor_observation"
+      },
+      {
+        "kind": "dir",
+        "name": "paper",
+        "path": "/home/machinax7/active_alpha_model/paper"
+      },
+      {
+        "kind": "dir",
+        "name": "paper_output",
+        "path": "/home/machinax7/active_alpha_model/paper_output"
+      },
+      {
+        "kind": "dir",
+        "name": "research",
+        "path": "/home/machinax7/active_alpha_model/research"
+      },
+      {
+        "kind": "dir",
+        "name": "research_evidence",
+        "path": "/home/machinax7/active_alpha_model/research_evidence"
+      },
+      {
+        "kind": "dir",
+        "name": "robustness_results_trading212",
+        "path": "/home/machinax7/active_alpha_model/robustness_results_trading212"
+      },
+      {
+        "kind": "dir",
+        "name": "robustness_results_trading212\\_shared_cache",
+        "path": "/home/machinax7/active_alpha_model/robustness_results_trading212\\_shared_cache"
+      },
+      {
+        "kind": "dir",
+        "name": "runs",
+        "path": "/home/machinax7/active_alpha_model/runs"
+      },
+      {
+        "kind": "dir",
+        "name": "tests",
+        "path": "/home/machinax7/active_alpha_model/tests"
+      },
+      {
+        "kind": "dir",
+        "name": "tools",
+        "path": "/home/machinax7/active_alpha_model/tools"
+      },
+      {
+        "kind": "dir",
+        "name": "ui",
+        "path": "/home/machinax7/active_alpha_model/ui"
+      },
+      {
+        "kind": "dir",
+        "name": "universe_snapshots",
+        "path": "/home/machinax7/active_alpha_model/universe_snapshots"
+      },
+      {
+        "kind": "dir",
+        "name": "validated_runs",
+        "path": "/home/machinax7/active_alpha_model/validated_runs"
+      },
+      {
+        "kind": "dir",
+        "name": "validation_runs",
+        "path": "/home/machinax7/active_alpha_model/validation_runs"
+      },
+      {
+        "kind": "dir",
+        "name": "validation_runs_superseded",
+        "path": "/home/machinax7/active_alpha_model/validation_runs_superseded"
+      },
+      {
+        "kind": "dir",
+        "name": "work_runs",
+        "path": "/home/machinax7/active_alpha_model/work_runs"
+      },
+      {
+        "kind": "file",
+        "name": ".editorconfig",
+        "path": "/home/machinax7/active_alpha_model/.editorconfig"
+      },
+      {
+        "kind": "file",
+        "name": ".env",
+        "path": "/home/machinax7/active_alpha_model/.env"
+      },
+      {
+        "kind": "file",
+        "name": ".env.trading212.example",
+        "path": "/home/machinax7/active_alpha_model/.env.trading212.example"
+      },
+      {
+        "kind": "file",
+        "name": ".gitattributes",
+        "path": "/home/machinax7/active_alpha_model/.gitattributes"
+      },
+      {
+        "kind": "file",
+        "name": ".gitignore",
+        "path": "/home/machinax7/active_alpha_model/.gitignore"
+      },
+      {
+        "kind": "file",
+        "name": ".marktanalyse_app.lock",
+        "path": "/home/machinax7/active_alpha_model/.marktanalyse_app.lock"
+      },
+      {
+        "kind": "file",
+        "name": ".marktanalyse_setup_hint",
+        "path": "/home/machinax7/active_alpha_model/.marktanalyse_setup_hint"
+      },
+      {
+        "kind": "file",
+        "name": "1_daily_mark_to_market.bat",
+        "path": "/home/machinax7/active_alpha_model/1_daily_mark_to_market.bat"
+      },
+      {
+        "kind": "file",
+        "name": "1_live_daily_sync.bat",
+        "path": "/home/machinax7/active_alpha_model/1_live_daily_sync.bat"
+      },
+      {
+        "kind": "file",
+        "name": "2_live_rebalance_when_due.bat",
+        "path": "/home/machinax7/active_alpha_model/2_live_rebalance_when_due.bat"
+      },
+      {
+        "kind": "file",
+        "name": "2_rebalance_when_due.bat",
+        "path": "/home/machinax7/active_alpha_model/2_rebalance_when_due.bat"
+      },
+      {
+        "kind": "file",
+        "name": "3_book_cashflow.bat",
+        "path": "/home/machinax7/active_alpha_model/3_book_cashflow.bat"
+      },
+      {
+        "kind": "file",
+        "name": "3_live_cashflow_note.bat",
+        "path": "/home/machinax7/active_alpha_model/3_live_cashflow_note.bat"
+      },
+      {
+        "kind": "file",
+        "name": "aa_acceptance_audit.py",
+        "path": "/home/machinax7/active_alpha_model/aa_acceptance_audit.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_adaptive_runtime.py",
+        "path": "/home/machinax7/active_alpha_model/aa_adaptive_runtime.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_alpha_vs_momentum.py",
+        "path": "/home/machinax7/active_alpha_model/aa_alpha_vs_momentum.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_authorization_policy.py",
+        "path": "/home/machinax7/active_alpha_model/aa_authorization_policy.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_auto_promotion.py",
+        "path": "/home/machinax7/active_alpha_model/aa_auto_promotion.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_background_jobs.py",
+        "path": "/home/machinax7/active_alpha_model/aa_background_jobs.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_background_research.py",
+        "path": "/home/machinax7/active_alpha_model/aa_background_research.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_backtest.py",
+        "path": "/home/machinax7/active_alpha_model/aa_backtest.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_backtest_ml.py",
+        "path": "/home/machinax7/active_alpha_model/aa_backtest_ml.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_behavioral_features.py",
+        "path": "/home/machinax7/active_alpha_model/aa_behavioral_features.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_behavioral_research.py",
+        "path": "/home/machinax7/active_alpha_model/aa_behavioral_research.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_benchmark_returns.py",
+        "path": "/home/machinax7/active_alpha_model/aa_benchmark_returns.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_bios_ui.py",
+        "path": "/home/machinax7/active_alpha_model/aa_bios_ui.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_branch_gate.py",
+        "path": "/home/machinax7/active_alpha_model/aa_branch_gate.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_build_integrity.py",
+        "path": "/home/machinax7/active_alpha_model/aa_build_integrity.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_cache_coherence.py",
+        "path": "/home/machinax7/active_alpha_model/aa_cache_coherence.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_cancellation.py",
+        "path": "/home/machinax7/active_alpha_model/aa_cancellation.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_canonical_comparison.py",
+        "path": "/home/machinax7/active_alpha_model/aa_canonical_comparison.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_challenger_eval.py",
+        "path": "/home/machinax7/active_alpha_model/aa_challenger_eval.py"
+      },
+      {
+        "kind": "file",
+        "name": "aa_champion_cockpit_phase_h.py",
+        "path": "/home/machinax7/active_alpha_model/aa_champion_cockpit_phase_h.py"
+      }
+    ],
+    "ok": true,
+    "parent_rel": "",
+    "path": "/home/machinax7/active_alpha_model",
+    "project_root": "/home/machinax7/active_alpha_model",
+    "relative_de": "/",
+    "scope": "project",
+    "top_level": [
+      {
+        "kind": "dir",
+        "name": ".cursor",
+        "path": "/home/machinax7/active_alpha_model/.cursor"
+      },
+      {
+        "kind": "dir",
+        "name": "__pycache__",
+        "path": "/home/machinax7/active_alpha_model/__pycache__"
+      },
+      {
+        "kind": "dir",
+        "name": "analytics",
+        "path": "/home/machinax7/active_alpha_model/analytics"
+      },
+      {
+        "kind": "dir",
+        "name": "archive",
+        "path": "/home/machinax7/active_alpha_model/archive"
+      },
+      {
+        "kind": "dir",
+        "name": "assets",
+        "path": "/home/machinax7/active_alpha_model/assets"
+      },
+      {
+        "kind": "dir",
+        "name": "build",
+        "path": "/home/machinax7/active_alpha_model/build"
+      },
+      {
+        "kind": "dir",
+        "name": "checkpoints",
+        "path": "/home/machinax7/active_alpha_model/checkpoints"
+      },
+      {
+        "kind": "dir",
+        "name": "config",
+        "path": "/home/machinax7/active_alpha_model/config"
+      },
+      {
+        "kind": "dir",
+        "name": "control",
+        "path": "/home/machinax7/active_alpha_model/control"
+      },
+      {
+        "kind": "dir",
+        "name": "control_output",
+        "path": "/home/machinax7/active_alpha_model/control_output"
+      },
+      {
+        "kind": "dir",
+        "name": "Daten fuer Reviewer",
+        "path": "/home/machinax7/active_alpha_model/Daten fuer Reviewer"
+      },
+      {
+        "kind": "dir",
+        "name": "docs",
+        "path": "/home/machinax7/active_alpha_model/docs"
+      },
+      {
+        "kind": "dir",
+        "name": "evidence",
+        "path": "/home/machinax7/active_alpha_model/evidence"
+      },
+      {
+        "kind": "dir",
+        "name": "execution",
+        "path": "/home/machinax7/active_alpha_model/execution"
+      },
+      {
+        "kind": "dir",
+        "name": "failed_runs",
+        "path": "/home/machinax7/active_alpha_model/failed_runs"
+      },
+      {
+        "kind": "dir",
+        "name": "incoming_user_directives",
+        "path": "/home/machinax7/active_alpha_model/incoming_user_directives"
+      },
+      {
+        "kind": "dir",
+        "name": "integrations",
+        "path": "/home/machinax7/active_alpha_model/integrations"
+      },
+      {
+        "kind": "dir",
+        "name": "intraday",
+        "path": "/home/machinax7/active_alpha_model/intraday"
+      },
+      {
+        "kind": "dir",
+        "name": "live_pilot",
+        "path": "/home/machinax7/active_alpha_model/live_pilot"
+      },
+      {
+        "kind": "dir",
+        "name": "locks",
+        "path": "/home/machinax7/active_alpha_model/locks"
+      }
+    ]
+  }
+}

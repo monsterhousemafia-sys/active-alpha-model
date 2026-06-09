@@ -1,0 +1,17 @@
+{
+  "confirmation_de": "Bau abgeschlossen — R3 abgestimmt",
+  "mandate_preview": "R3 Lokal-Bau — effizient umsetzen (König 32B, nicht Cursor).\nProfil aktiv: Flüssig — bestätigt\nStack: OK\nKein offener Update-Vorschlag — Stabilität und Tests absichern.\nSchritte:\n1. Evidence lesen: ev",
+  "ok": true,
+  "steps": [
+    {
+      "ok": true,
+      "step": "align_r3_surface"
+    },
+    {
+      "exit_code": 0,
+      "ok": true,
+      "step": "r3_sync"
+    }
+  ],
+  "updated_at_utc": "2026-06-08T15:27:08+00:00"
+}

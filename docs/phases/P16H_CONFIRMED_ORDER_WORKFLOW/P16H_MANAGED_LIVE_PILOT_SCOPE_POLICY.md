@@ -1,0 +1,3 @@
+# Managed Scope
+
+Baseline required.

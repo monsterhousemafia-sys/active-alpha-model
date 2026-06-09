@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "engine_de": "Active Alpha Model",
+  "presentation_de": "R3 zeigt Ergebnisse und führt Orders aus — Engine nur Plan/Signal",
+  "r3_role_de": "Anzeige + einzige Order-Ausführung — Engine startet keine Orders",
+  "jobs_de": {
+    "predict": "Tagesprognose / Signal (run_tomorrow_prediction)",
+    "rebalance_plan": "Rebalance-Plan mit R3-Kontostand (r3_closed_loop) — keine Order-Ausführung",
+    "king_trading": "König 32B — Trading-Beratung (read-only, trading_local)",
+    "h1_monitor": "H1-Backtest-Status + evaluate-only wenn COMPLETE",
+    "r3_refresh": "Nach Rebalance: ensure_r3_prognosis_fresh (kanonische Pipeline, T212 coalesced)"
+  },
+  "cooldown_min": {
+    "predict": 90,
+    "rebalance_plan": 45,
+    "king_trading": 60,
+    "h1_monitor": 5,
+    "r3_refresh": 15
+  },
+  "closed_loop_ref": "control/r3_closed_loop_policy.json",
+  "internet_policy_ref": "control/r3_internet_requirement_policy.json",
+  "forbidden_de": [
+    "auto_orders",
+    "sync_broker_and_quotes_for_cash_in_engine_tick",
+    "execute_live_rebalance",
+    "champion_change",
+    "new_backtest_start",
+    "auto_model_training_enabled"
+  ],
+  "tick_triggers_de": [
+    "aa_scheduler cognitive-scheduler",
+    "bash tools/king_ops.sh alpha-engine",
+    "Session-Autostart (Hintergrund-Thread)"
+  ],
+  "safety_de": "fail-closed, read-only Orders, governance unverändert"
+}

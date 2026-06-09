@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Gas (Kaufen) + Sell (Verkaufen) — Modellsteuerung mit Gewinn-Hürde",
+  "steering_de": {
+    "gas": "BUY — Cash in Top-Signale (Champion priority_score)",
+    "sell": "SELL — Übergewicht abbauen, Cash für Gas freigeben"
+  },
+  "order_sequence_de": "Sell zuerst → dann Gas (Gewinn durch weniger Turnover-FX)",
+  "profit_gates_de": [
+    "T212-Gebühren-Hürde (min_trade_cost_multiple)",
+    "Stress-Kosten-Pass (require_stress_pass_for_trade)",
+    "prediction_readiness.ok",
+    "Investierbar-Deckel für Gas-Summe"
+  ],
+  "require_prediction_ok": true,
+  "require_fee_hurdle": true,
+  "enforce_sell_before_gas": true,
+  "gas_budget_buffer_pct": 2.0,
+  "evidence_ref": "evidence/gas_sell_steering_latest.json"
+}

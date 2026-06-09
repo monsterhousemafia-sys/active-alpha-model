@@ -1,0 +1,24 @@
+{
+  "artefact_folder_found": true,
+  "bytecode_found": false,
+  "expected_sha256": "16164687875c68481ef093ccfd29314cc00e6f2792af5d62fd25d1f0885cd223",
+  "manifest_coverage": "COMPLETE",
+  "p16h_claims_fully_verified": true,
+  "p16h_review_import_status": "VERIFIED_COMPLETE",
+  "p16h_status_claimed": "PASS_INTERACTIVE_CONFIRMED_ORDER_PRODUCT_BUILT_AWAITING_LOCAL_T212_CONFIGURATION",
+  "package_sha256": "16164687875c68481ef093ccfd29314cc00e6f2792af5d62fd25d1f0885cd223",
+  "package_zip_found": true,
+  "reports_found": [
+    "CURSOR_P16H_EXECUTION_REPORT.md",
+    "CURSOR_P16H_HASH_MANIFEST.json",
+    "CURSOR_P16H_OBJECTIVE_TECHNICAL_ASSESSMENT.md",
+    "CURSOR_P16H_PRODUCT_READINESS_ASSESSMENT.md",
+    "CURSOR_P16H_CONFIRMED_ORDER_WORKFLOW_POLICY.md",
+    "CURSOR_P16H_GUI_AND_EXE_BUILD_REPORT.md"
+  ],
+  "reports_missing": [],
+  "secrets_found": false,
+  "sidecar_found": true,
+  "sidecar_verified": true,
+  "verification_level": "ARTIFACT_VERIFIED"
+}

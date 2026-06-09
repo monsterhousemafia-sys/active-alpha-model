@@ -1,0 +1,106 @@
+{
+  "blockers_de": [],
+  "h1": {
+    "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "detail_de": null,
+    "evaluated_at_utc": "2026-06-09T20:25:28+00:00",
+    "gate_blockers": [],
+    "metrics_strategy": {
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531
+    },
+    "operational_ok": true,
+    "pass_full_seal": false,
+    "progress_pct": 100,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "schema_version": 1,
+    "seal_policy_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "seal_required": false,
+    "sealed": false,
+    "status": "COMPLETE",
+    "updated_at_utc": "2026-06-09T21:16:18+00:00"
+  },
+  "headline_de": "Bereit — öffentlicher Zugang freigegeben",
+  "hub_url": "http://127.0.0.1:17890/",
+  "join_url": "http://127.0.0.1:17890/join",
+  "king_local_surface": true,
+  "milestones": [
+    {
+      "done": true,
+      "id": "setup",
+      "label_de": "Grundstein"
+    },
+    {
+      "done": true,
+      "id": "preview",
+      "label_de": "Systemcheck"
+    },
+    {
+      "done": true,
+      "id": "remote",
+      "label_de": "Welt-Zugang"
+    },
+    {
+      "done": true,
+      "id": "h1",
+      "label_de": "Validierung"
+    },
+    {
+      "done": true,
+      "id": "launch",
+      "label_de": "Welt-Start"
+    }
+  ],
+  "overall_pct": 100,
+  "phase": "ready",
+  "preview": {
+    "detail_de": "Preview 9/10 · 3.8h frisch",
+    "ok": true,
+    "passed": 9,
+    "total": 10
+  },
+  "preview_url": "http://127.0.0.1:17890/",
+  "public_launch_ready": true,
+  "remote": {
+    "public_base_url": "http://127.0.0.1:17890",
+    "public_base_url_remote_de": "https://can-tribal-ward-polished.trycloudflare.com",
+    "remote_ready": true,
+    "stable": false,
+    "tunnel_token_set": false
+  },
+  "schema_version": 1,
+  "tiles": [
+    {
+      "detail_de": "Lokal · :17890",
+      "id": "hub",
+      "label_de": "Cockpit",
+      "ok": true,
+      "value_de": "Online"
+    },
+    {
+      "detail_de": "ULWO unter /download · Mitmachen unter /join",
+      "id": "remote",
+      "label_de": "Worker-Einladung",
+      "ok": true,
+      "value_de": "Bereit"
+    },
+    {
+      "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+      "id": "h1",
+      "label_de": "Validierung",
+      "ok": true,
+      "value_de": "Abgeschlossen"
+    },
+    {
+      "detail_de": "Preview 9/10 · 3.8h frisch",
+      "id": "preview",
+      "label_de": "Systemcheck",
+      "ok": true,
+      "value_de": "9/10 OK"
+    }
+  ],
+  "updated_at_utc": "2026-06-09T21:16:40+00:00"
+}

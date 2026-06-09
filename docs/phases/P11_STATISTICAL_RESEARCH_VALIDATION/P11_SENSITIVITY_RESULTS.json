@@ -1,0 +1,224 @@
+{
+  "MOM_63_TOP12_STRICT": {
+    "grid": [
+      {
+        "applied": true,
+        "cagr": 0.2216982679243582,
+        "extra_bps": 0,
+        "sharpe_0rf": 0.998285209882352,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.22079605049108264,
+        "extra_bps": 0,
+        "sharpe_0rf": 0.9950224528759837,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.2198944819810218,
+        "extra_bps": 0,
+        "sharpe_0rf": 0.9917594358548518,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.21270524066278385,
+        "extra_bps": 10,
+        "sharpe_0rf": 0.9656462160743693,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.21180949204686206,
+        "extra_bps": 10,
+        "sharpe_0rf": 0.9623809627890971,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.21091438782320182,
+        "extra_bps": 10,
+        "sharpe_0rf": 0.9591154725813593,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.1993364676449807,
+        "extra_bps": 25,
+        "sharpe_0rf": 0.9166435926883346,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.1984503376559974,
+        "extra_bps": 25,
+        "sharpe_0rf": 0.9133750285755485,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.19756484532053942,
+        "extra_bps": 25,
+        "sharpe_0rf": 0.9101062622744386,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.177373490178534,
+        "extra_bps": 50,
+        "sharpe_0rf": 0.8348741718873401,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.17650316818558642,
+        "extra_bps": 50,
+        "sharpe_0rf": 0.831601249602769,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.17563347276709051,
+        "extra_bps": 50,
+        "sharpe_0rf": 0.8283281832068485,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.1558024062134149,
+        "extra_bps": 75,
+        "sharpe_0rf": 0.7530132341708471,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.15494761749587238,
+        "extra_bps": 75,
+        "sharpe_0rf": 0.7497374073682146,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.15409344446118434,
+        "extra_bps": 75,
+        "sharpe_0rf": 0.7464614946529609,
+        "turnover_multiplier": 2.0
+      }
+    ],
+    "status": "EVALUABLE",
+    "variant_id": "MOM_63_TOP12_STRICT"
+  },
+  "MOM_63_TOP15_RECONSTRUCTED": {
+    "grid": [
+      {
+        "applied": true,
+        "cagr": 0.21756822369927264,
+        "extra_bps": 0,
+        "sharpe_0rf": 0.9911989434917188,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.21675663222984798,
+        "extra_bps": 0,
+        "sharpe_0rf": 0.9882254167341257,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.21594556774936313,
+        "extra_bps": 0,
+        "sharpe_0rf": 0.9852516623875963,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.20947598355980257,
+        "extra_bps": 10,
+        "sharpe_0rf": 0.9614536422384247,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.20866964700791457,
+        "extra_bps": 10,
+        "sharpe_0rf": 0.9584779175439541,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.207863834121641,
+        "extra_bps": 10,
+        "sharpe_0rf": 0.9555019825912978,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.1974357697493736,
+        "extra_bps": 25,
+        "sharpe_0rf": 0.916796484861934,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.19663725349749317,
+        "extra_bps": 25,
+        "sharpe_0rf": 0.9138177886902621,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.19583925596446683,
+        "extra_bps": 25,
+        "sharpe_0rf": 0.9108389083317892,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.17762772688773487,
+        "extra_bps": 50,
+        "sharpe_0rf": 0.8422778326063234,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.17684208062213203,
+        "extra_bps": 50,
+        "sharpe_0rf": 0.8392950547416851,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.17605694493170665,
+        "extra_bps": 50,
+        "sharpe_0rf": 0.8363121363009197,
+        "turnover_multiplier": 2.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.15813900208116993,
+        "extra_bps": 75,
+        "sharpe_0rf": 0.7676702349921256,
+        "turnover_multiplier": 1.0
+      },
+      {
+        "applied": true,
+        "cagr": 0.15736602370812824,
+        "extra_bps": 75,
+        "sharpe_0rf": 0.7646844674134915,
+        "turnover_multiplier": 1.5
+      },
+      {
+        "applied": true,
+        "cagr": 0.15659354789111402,
+        "extra_bps": 75,
+        "sharpe_0rf": 0.7616986029982256,
+        "turnover_multiplier": 2.0
+      }
+    ],
+    "status": "EVALUABLE",
+    "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+  }
+}

@@ -1,0 +1,3 @@
+ticker,sector_coarse,sector_gics,valid_from,valid_to,source,as_of_utc
+AAPL,Technology,Information Technology,2012-01-01,,legacy_map_seed,2012-01-01T00:00:00+00:00
+CIEN,Communication,Communication Services,2012-01-01,,legacy_map_seed,2012-01-01T00:00:00+00:00

@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "headline_de": "R3 Exec-Spiegel — einzige operative Oberfläche (EXEC_MIRROR_ONLY)",
+  "primary_surface_de": "/r3 Exec-Spiegel — Ergebnisse + ein Auftrags-Button",
+  "design_ref": "control/r3_surface_identity.json",
+  "policy_ref": "control/gui_remaster_2026_policy.json",
+  "disposition_ref": "control/r3_pc_app_disposition.json",
+  "manifest_ref": "control/local_apps_manifest.json",
+  "principles_de": [
+    "Primär: /r3 Exec-Spiegel — Live-Refresh via GET /api/r3/mirror",
+    "Modell-Plan (pilot_investment_plan) + T212-Paket (r3_stock_orders) getrennt sichtbar",
+    "Fail-closed: keine Orders außer POST /api/r3/order",
+    "Legacy-Hub-Oberflächen deaktiviert (410) im EXEC_MIRROR_ONLY-Modus",
+    "Optik-Remaster: König 32B — nicht Cursor"
+  ],
+  "surfaces": [
+    {
+      "id": "hub_r3",
+      "tier": "hub",
+      "status": "active",
+      "label_de": "R3 Exec-Spiegel",
+      "path": "/r3",
+      "modules": [
+        "analytics/r3_exec_mirror.py",
+        "analytics/r3_mirror_state.py",
+        "analytics/r3_mirror_view.py",
+        "analytics/r3_trading_functions.py",
+        "analytics/preview_hub_page.py",
+        "analytics/desktop_shell_cache.py"
+      ]
+    },
+    {
+      "id": "hub_desktop",
+      "tier": "hub",
+      "status": "active",
+      "label_de": "R3 Spiegel (/desktop)",
+      "path": "/desktop",
+      "modules": ["analytics/r3_exec_mirror.py", "analytics/preview_hub_page.py"]
+    },
+    {
+      "id": "hub_login",
+      "tier": "hub",
+      "status": "supporting",
+      "label_de": "Anmeldung",
+      "path": "/login",
+      "modules": ["analytics/r3_login_shell.py"]
+    },
+    {
+      "id": "qt_cockpit",
+      "tier": "native",
+      "status": "active",
+      "label_de": "R3 Cockpit-Fenster",
+      "modules": ["analytics/r3_local_cockpit.py", "tools/r3_cockpit.sh"]
+    },
+    {
+      "id": "api_mirror",
+      "tier": "api",
+      "status": "active",
+      "label_de": "Mirror-JSON",
+      "path": "/api/r3/mirror",
+      "modules": ["analytics/r3_exec_mirror.py"]
+    }
+  ],
+  "legacy_archived_de": [
+    "hub_home (/), hub_launch, hub_agent, Shell-Kacheln, Einzelaktien-Grid, Gutachter-UI, Order-Desk GUI"
+  ],
+  "tests_de": [
+    "tests/test_r3_exec_mirror.py",
+    "tests/test_preview_hub.py",
+    "tests/test_desktop_shell_cache.py",
+    "tests/test_r3_crash_guard.py",
+    "tests/test_local_apps_registry.py"
+  ]
+}

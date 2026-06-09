@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-06-05T14:58:29+00:00",
+  "note": "Run full episode engine when risk_off flags available in returns CSV.",
+  "phase": "M2.5",
+  "schema_version": 1,
+  "status": "PLACEHOLDER",
+  "variants": [
+    "R0_LEGACY_ENSEMBLE",
+    "R3_w075_q065_noexit"
+  ]
+}

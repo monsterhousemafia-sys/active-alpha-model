@@ -1,0 +1,19 @@
+{
+  "activation_status": "PASS",
+  "challenger_variant_id": "R0_LEGACY_ENSEMBLE",
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "display_messages": [
+    "Accelerated track B: historical shadow replay from promotion_status."
+  ],
+  "generated_at_utc": "2026-06-05T15:39:07+00:00",
+  "mature_shadow_comparisons": 10893,
+  "minimum_outcomes_met": true,
+  "minimum_outcomes_required": 30,
+  "mode": "ACCELERATED_BACKTEST_REPLAY",
+  "observation_type": "SHADOW_OBSERVATION",
+  "operative_jobs_started": false,
+  "schema_version": 1,
+  "shadow_signal_count": 10955,
+  "status": "PASS",
+  "waiver_ref": "control/r0_migration/migration_time_gate_waiver.json"
+}

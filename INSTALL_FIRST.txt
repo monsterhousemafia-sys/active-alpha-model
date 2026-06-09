@@ -1,0 +1,14 @@
+ACTIVE ALPHA AUTOPILOT BOOTSTRAP PATCH
+
+1. Sichern Sie zuerst Ihren Active-Alpha-Projektordner.
+2. Kopieren Sie diese beiden Dateien und den Ordner `_autopilot_patch_payload` in das Hauptverzeichnis des Projekts:
+   - install_autopilot_patch.py
+   - install_autopilot_patch.bat
+   - _autopilot_patch_payload\
+3. Starten Sie dort:
+   install_autopilot_patch.bat
+   run_autopilot_control.bat init
+   run_autopilot_control.bat self-test
+4. Danach Cursor Agent/Automation mit `AUTOPILOT_START_PROMPT.txt` starten.
+
+Der Installer überschreibt bestehende Dateien standardmäßig nicht.

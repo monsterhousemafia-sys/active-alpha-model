@@ -1,0 +1,30 @@
+{
+  "cash_eur": 678.52,
+  "headline_de": "✗ T212 API-Key prüfen — Stand 2026-06-08 16:05:02 (Cache)",
+  "last_sync_utc": "2026-06-08T16:05:02+00:00",
+  "learning_ref": "market_data/live_learning/",
+  "ok": false,
+  "policy_ref": "control/learning_collection_policy.json",
+  "positions_count": 0,
+  "schema_version": 1,
+  "stale_cache": true,
+  "steps": [
+    {
+      "cash_eur": 678.52,
+      "last_error": "🔑 API Key oder Secret ist ungültig.\nBitte in der Trading-212-App einen neuen Key mit Lese- und Order-Rechten erzeugen.",
+      "ok": false,
+      "positions_count": 0,
+      "status": "CREDENTIALS_EXPIRED_SHOWING_CACHED_DATA",
+      "step": "t212_api",
+      "sync_utc": "2026-06-08T16:05:02+00:00"
+    },
+    {
+      "confirmation_de": "✗ Kontostand veraltet — Stand 2026-06-08 16:05:02 · «Aktualisieren»",
+      "ok": true,
+      "step": "r3_bond"
+    }
+  ],
+  "t212_trust_reason": "CREDENTIALS_EXPIRED_SHOWING_CACHED_DATA",
+  "t212_trusted": false,
+  "updated_at_utc": "2026-06-09T18:39:01+00:00"
+}

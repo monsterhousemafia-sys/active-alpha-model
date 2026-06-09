@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "variant": "growth_v1",
+  "product_name": "Alpha Model",
+  "edition_de": "Remaster 2026",
+  "headline_de": "Zwei Oberflächen — Runtime liefert, Entfaltungsraum wächst.",
+  "surfaces": {
+    "runtime": {
+      "id": "runtime",
+      "label_de": "Alpha Model",
+      "short_de": "Alpha Model",
+      "role_de": "Produkt — Cockpit, Handel, Validierung, Operator-Status",
+      "launch": "tools/r3_cockpit.sh",
+      "wm_class": "AlphaModel"
+    },
+    "agent_chamber": {
+      "id": "agent_chamber",
+      "label_de": "Alpha Model — Entfaltungsraum",
+      "short_de": "Entfaltungsraum",
+      "role_de": "Auto lokal — Mandat, Archiv, Evolution, ai_kernel, /bau",
+      "local_only": false,
+      "launch": "tools/alpha_model_agent.sh",
+      "wm_class": "AlphaModelAgent",
+      "share_dir": ".local/share/alpha-model/agent",
+      "growth_de": "Denken & Bauen → Evidence → Runtime",
+      "not_via_tunnel_de": "Auch via LAN/Tunnel erreichbar"
+    }
+  },
+  "removed_surfaces_de": {
+    "workshop": "Cursor IDE / Werkstatt — entfernt 2026-06-07",
+    "cursor_chat": "Cursor-Chat — ersetzt durch Entfaltungsraum"
+  },
+  "growth_loop_de": [
+    "Entfaltungsraum: Auto mit vollem Kontext (alpha-model-agent)",
+    "Evidence: messbar, atomar, auditierbar",
+    "Runtime (Cockpit): Status, Handel mit Bestätigung, Go-Live"
+  ],
+  "runtime_independent_de": "Alpha Model läuft ohne Cursor: Cockpit :17890, alpha-model-agent, ai_kernel"
+}

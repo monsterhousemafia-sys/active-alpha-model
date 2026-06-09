@@ -1,0 +1,27 @@
+{
+  "checkpoint_meta": {
+    "fingerprint": "6f455c0d0e0c5d855a66df79",
+    "last_n": 1865,
+    "n_daily": 1866,
+    "schema_version": 1
+  },
+  "cpu_cores": 32,
+  "h1_status_before": {
+    "detail_de": "Path-Simulation läuft (Features fertig)",
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "RUNNING"
+  },
+  "headline_de": "Force-Sprint path-only — Checkpoint Rebalance 1866 (1866 Tage)",
+  "killed_pids": [
+    9350,
+    9369,
+    9373
+  ],
+  "lean": "Turbo-Lean — Hub/Tunnel/API aus, 4 Timer pausiert, H1 priorisiert",
+  "mode": "path-only-checkpoint",
+  "ok": true,
+  "profile": "turbo",
+  "restart_pid": 15303,
+  "schema_version": 1,
+  "stopped_services": []
+}

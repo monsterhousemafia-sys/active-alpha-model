@@ -1,0 +1,31 @@
+{
+  "alignment_mode": "INTERSECTION_RECOMPUTED",
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "generated_at_utc": "2026-06-05T14:58:29+00:00",
+  "go_no_go": {
+    "dd_ok": true,
+    "decision": "CONDITIONAL",
+    "go_no_go": "CONDITIONAL",
+    "max_dd_degradation_allowed": 0.02,
+    "min_sharpe_delta_required": 0.02,
+    "r0_max_drawdown": 0.0,
+    "r0_sharpe": 0.0,
+    "r3_max_drawdown": 0.0,
+    "r3_sharpe": 0.0,
+    "sharpe_delta": 0.0,
+    "sharpe_ok": false
+  },
+  "governance_blockers": [],
+  "headline": {
+    "aligned_intersection_sharpe_leader": "MOM_63_TOP12",
+    "champion_is_sharpe_leader": false,
+    "champion_sharpe_rank": null,
+    "champion_sharpe_rank_matrix": null,
+    "do_not_cross_compare_frames": true,
+    "matrix_embedded_sharpe_leader": "R2_MOM_BLEND_REPLACE",
+    "primary_ranking_frame": "matrix_embedded",
+    "primary_sharpe_leader": "R2_MOM_BLEND_REPLACE"
+  },
+  "phase": "M2",
+  "schema_version": 1
+}

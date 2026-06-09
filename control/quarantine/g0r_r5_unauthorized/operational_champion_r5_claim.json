@@ -1,0 +1,12 @@
+{
+  "alpha_model_mode": "rank_only",
+  "auto_promotion": "DISABLED",
+  "note": "HISTORICAL_UNSEALED_CONFLICT_ARTIFACT \u2014 NOT AUTHORITATIVE",
+  "previous_champion_variant_id": "R3_w075_q065_noexit",
+  "promoted_at_utc": "2026-05-31T17:12:43+00:00",
+  "promotion_evidence_dir": "E:\\active_alpha_model\\validation_runs\\20260531T163000Z_R5_rank_only_train5",
+  "train_years": 5,
+  "variant_id": "R5_rank_only_train5",
+  "quarantine_classification": "UNAUTHORIZED_OR_UNSEALED_STATE",
+  "quarantined_at_utc": "2026-05-31T21:19:53+00:00"
+}

@@ -1,0 +1,8 @@
+"""Auto-generated at V5R release build — do not edit manually."""
+from __future__ import annotations
+
+BUILD_SOURCE_COMMIT = '26551e6f2e82e47e646e6f475458ebab52a45c90'
+VALIDATED_SOURCE_BASE = 'a47a8fef276358d63a5ed9a55d8b64dc5dccf194'
+BUILD_SCOPE = 'V5R_NEUTRAL_READ_ONLY_RELEASE'
+RELEASE_SNAPSHOT_SCOPE = 'V5R_READ_ONLY_NEUTRAL'
+GENERATED_AT_UTC = '2026-06-05T17:23:59+00:00'

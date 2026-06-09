@@ -1,0 +1,7 @@
+{
+  "intraday_area_locked_until_trigger": true,
+  "intraday_area_visible": true,
+  "p16e_invalid_tickets_found": 6,
+  "p16e_invalid_tickets_superseded": 6,
+  "p16e_tickets_execution_allowed": false
+}

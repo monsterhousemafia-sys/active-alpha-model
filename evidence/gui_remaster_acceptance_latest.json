@@ -1,0 +1,97 @@
+{
+  "checks": [
+    {
+      "detail_de": "/home/machinax7/active_alpha_model/analytics/r3_surface_theme.py",
+      "id": "theme",
+      "label_de": "R3 Surface Theme",
+      "ok": true
+    },
+    {
+      "detail_de": "/home/machinax7/active_alpha_model/control/r3_surface_identity.json",
+      "id": "identity",
+      "label_de": "Surface Identity",
+      "ok": true
+    },
+    {
+      "detail_de": "/home/machinax7/active_alpha_model/analytics/desktop_shell_cache.py",
+      "id": "cache",
+      "label_de": "Desktop Shell Cache",
+      "ok": true
+    },
+    {
+      "detail_de": "preview_hub_page + preview_hub cache",
+      "id": "fast_render",
+      "label_de": "/desktop fast=True + cache",
+      "ok": true
+    },
+    {
+      "detail_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+      "id": "bridge_king",
+      "label_de": "Bridge: König führt GUI",
+      "ok": false
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_r3_surface_theme",
+      "label_de": "Modul analytics/r3_surface_theme.py",
+      "ok": true
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_r3_exec_mirror",
+      "label_de": "Modul analytics/r3_exec_mirror.py",
+      "ok": true
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_r3_trading_functions",
+      "label_de": "Modul analytics/r3_trading_functions.py",
+      "ok": true
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_preview_hub_page",
+      "label_de": "Modul analytics/preview_hub_page.py",
+      "ok": true
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_desktop_shell_cache",
+      "label_de": "Modul analytics/desktop_shell_cache.py",
+      "ok": true
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_gui_preview_visual",
+      "label_de": "Modul analytics/gui_preview_visual.py",
+      "ok": true
+    },
+    {
+      "detail_de": "OK",
+      "id": "mod_aa_dashboard_qt_window",
+      "label_de": "Modul aa_dashboard_qt_window.py",
+      "ok": true
+    },
+    {
+      "detail_de": "keine Real-Money-Auto-Flags",
+      "id": "safety",
+      "label_de": "Safety fail-closed",
+      "ok": true
+    }
+  ],
+  "edition_de": "Remaster 2026",
+  "finish_gate_de": "finish nur wenn: pytest tests/test_gui_remaster_2026_policy.py -q grün UND evidence/gui_remaster_acceptance_latest.json ok=true",
+  "invariants_de": [
+    "Ein Look: Typo, Farben, Nav, Kacheln — überall gleich (R3_CSS_ROOT / r3_surface_theme)",
+    "Hub-HTML + Qt-native — kein zweites paralleles Design-System",
+    "/desktop bleibt schnell: render_desktop_shell_page(fast=True) + desktop_shell_cache",
+    "Safety unverändert: fail-closed, dry_run, keine Orders, keine auto_promote Flags aktivieren",
+    "Cursor baut die GUI nicht — nur König 32B via build-kernel"
+  ],
+  "ok": false,
+  "ok_count": 12,
+  "owner_de": "König 32B (build-kernel) — nicht Cursor",
+  "schema_version": 1,
+  "total": 13,
+  "updated_at_utc": "2026-06-08T13:56:52+00:00"
+}

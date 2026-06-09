@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-06-02T00:19:00+00:00",
+  "operational_ready": true,
+  "exe_sha256": "547a73712cd7f8e0e4af25674a07e1634f9a00376ca3e18a24c410a67e4605b2",
+  "static_verify": "PASS",
+  "preflight": "PASS",
+  "tests_core": "31 passed",
+  "entrypoints": [
+    "run_pilot_dev_fast.bat",
+    "run_pilot_start.bat",
+    "Marktanalyse.exe"
+  ],
+  "ui": "minimal_invest",
+  "order_confirm": "Ja/Nein + Enter"
+}

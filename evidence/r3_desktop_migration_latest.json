@@ -1,0 +1,561 @@
+{
+  "cursor_handoff_de": "Dein **Hauptkanal ist R3 KI lokal** — active-alpha-chat und Cockpit :17890.\n\nFreie Fragen und Steuerung:\n  active-alpha-chat  (Terminal)\n  http://127.0.0.1:17890/desktop\n\nSlash-Befehle im Cockpit:\n  /status · /geheimnis · /desktop · /join · /warnings · /learn\n\nCursor IDE ist optional zum Code-Bauen — kein Konto-Gate für R3.",
+  "desktop_update": {
+    "desktop_hub_path": "/desktop",
+    "headline_de": "Desktop-Update OK — Phase B · 80%",
+    "launch": {
+      "ok": false,
+      "skipped": true
+    },
+    "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh",
+    "notify_desktop": true,
+    "ok": true,
+    "phase": "B",
+    "schema_version": 1,
+    "steps": [
+      {
+        "detail": {
+          "autostart_disabled": 0,
+          "desktop": {
+            "bin_linked": [
+              "r3",
+              "r3-cockpit",
+              "r3-welt",
+              "r3-show",
+              "r3-order-desk",
+              "alpha-model",
+              "alpha-model-workshop",
+              "r3-aktien",
+              "r3-files",
+              "r3-terminal",
+              "r3-calculator",
+              "r3-screenshot",
+              "r3-settings",
+              "r3-apps",
+              "r3-lock",
+              "r3-network",
+              "r3-bluetooth",
+              "r3-sound",
+              "r3-display",
+              "r3-power",
+              "alpha-model-workshop"
+            ],
+            "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+            "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+            "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+            "ok": true,
+            "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+            "os_name": "Alpha Model",
+            "removed_legacy": [],
+            "share_dir": "/home/machinax7/.local/share/r3-os",
+            "written": [
+              "/home/machinax7/.config/autostart/r3-os-session.desktop",
+              "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+              "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+              "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+              "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+              "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+              "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+              "/home/machinax7/.local/share/applications/R3-Status.desktop",
+              "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+              "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+              "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+              "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+              "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+              "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+              "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+              "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+              "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+              "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+              "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+              "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+              "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+            ]
+          },
+          "gnome_tweaks": 11,
+          "headline_de": "R3 — Ubuntu läuft in dir",
+          "legacy_removed": 0,
+          "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+          "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+          "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh",
+          "ok": true,
+          "survives_de": [
+            "Cognitive Kernel v2",
+            "Preview Hub / R3 Cockpit",
+            "R3 Arbeitsfläche (native Apps als Fenster)",
+            "Order-Desk bei Bedarf",
+            "H1 / Scheduler / Evidence"
+          ]
+        },
+        "id": "supremacy",
+        "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+        "ok": true
+      },
+      {
+        "detail": {
+          "bin_linked": [
+            "r3",
+            "r3-cockpit",
+            "r3-welt",
+            "r3-show",
+            "r3-order-desk",
+            "alpha-model",
+            "alpha-model-workshop",
+            "r3-aktien",
+            "r3-files",
+            "r3-terminal",
+            "r3-calculator",
+            "r3-screenshot",
+            "r3-settings",
+            "r3-apps",
+            "r3-lock",
+            "r3-network",
+            "r3-bluetooth",
+            "r3-sound",
+            "r3-display",
+            "r3-power",
+            "alpha-model-workshop"
+          ],
+          "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+          "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+          "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+          "ok": true,
+          "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+          "os_name": "Alpha Model",
+          "removed_legacy": [],
+          "share_dir": "/home/machinax7/.local/share/r3-os",
+          "written": [
+            "/home/machinax7/.config/autostart/r3-os-session.desktop",
+            "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+            "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+            "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+            "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+            "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+            "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+            "/home/machinax7/.local/share/applications/R3-Status.desktop",
+            "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+            "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+            "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+            "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+            "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+            "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+            "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+            "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+            "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+            "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+            "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+            "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+            "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+          ]
+        },
+        "id": "desktop_os",
+        "label_de": "Desktop-Einträge & Autostart",
+        "ok": true
+      },
+      {
+        "detail": {
+          "ok": true,
+          "port": 17890,
+          "url": "http://127.0.0.1:17890/desktop"
+        },
+        "id": "hub",
+        "label_de": "Preview-Hub neu starten",
+        "ok": true
+      },
+      {
+        "detail": {
+          "headline_de": "Phase B · 80% — H1 parallel integriert",
+          "ok": true,
+          "percent": 80
+        },
+        "id": "phase_b",
+        "label_de": "Phase-B-Stand schreiben",
+        "ok": true
+      },
+      {
+        "detail": {
+          "action": "running",
+          "actions": [],
+          "governance": {
+            "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal",
+            "detail_de": "Path-Simulation läuft (Features fertig)",
+            "gate_blockers": [
+              "DAILY_ALPHA_H1_NOT_SEALED"
+            ],
+            "progress_pct": 99,
+            "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+            "schema_version": 1,
+            "sealed": false,
+            "status": "RUNNING",
+            "updated_at_utc": "2026-06-07T00:25:33+00:00"
+          },
+          "h1_status": "RUNNING",
+          "inventory": {
+            "backtest_count": 2,
+            "backtests": [
+              {
+                "cmd": "9129 /home/machinax7/active_alpha_model/.venv/bin/python3 -u tools/run_validation_matrix.py --phase matrix --variant DAILY_ALPHA_H1 --parallel-jobs 1 --cpu-cores 32 --runtime-profile validation --stamp 20260606T102626Z",
+                "marker": "run_validation_matrix.py",
+                "pid": 9129
+              },
+              {
+                "cmd": "9133 /home/machinax7/active_alpha_model/.venv/bin/python3 -u /home/machinax7/active_alpha_model/active_alpha_model.py --mode backtest --ticker-source sp500_pit --membership-file ticker_membership.csv --membership-mode strict --benchmark SPY --start 2012-01-01 --universe-mode diy_pit_liquidity --universe-top-n 100 --rebalance-every 1 --horizon 1 --train-years 7 --ml-retrain-every 2 --alpha-model-mode ensemble --exposure-controller gradual_alpha --beta-cap-mode dynamic --cluster-mode static --cluster-constraint-mode static_only --slippage-bps 2 --market-impact-bps 0 --fee-model trading212_us --backtest-capital 100000 --research-backtest-capital 100000 --reproducibility-mode strict --random-seed 42 --n-jobs auto --cpu-cores 28 --parallel-profile high --parallel-backtest-backend process --reuse-feature-cache --skip-download-if-cached --skip-feature-parquet-write --no-plot --no-gui --plain-progress --no-statistical-diagnostics --no-custom-benchmarks --minimal-backtest-reporting --no-run-manifest --no-naive-overlap --reuse-prediction-cache --shared-cache-dir /home/machinax7/active_alpha_model/model_output_sp500_pit_t212 --out-dir /home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1 --risk-off-selection-mode legacy --risk-off-gate-mode legacy --returns-fast-path --path-sim-checkpoint --naive-detailed-reporting --naive-detailed-variants mom_1_top12",
+                "marker": "active_alpha_model.py --mode backtest",
+                "pid": 9133
+              }
+            ],
+            "duplicate_risk": false,
+            "monitor_count": 1,
+            "monitors": [
+              {
+                "cmd": "9120 /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_daily_alpha_h1_pipeline.py --monitor-only --poll-seconds 60",
+                "pid": 9120
+              }
+            ],
+            "starter_count": 0,
+            "starters": []
+          },
+          "monitor": {
+            "action": "monitor_exists",
+            "ok": true,
+            "pid": 9120,
+            "reply_de": "H1-Monitor läuft bereits"
+          },
+          "ok": true,
+          "reply_de": "H1 läuft stabil — Path-Simulation läuft (Features fertig)",
+          "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+        },
+        "id": "h1_guard",
+        "label_de": "H1-Migration stabil",
+        "ok": true
+      },
+      {
+        "error_de": "Keine grafische Sitzung — nur Hub/Autostart aktualisiert",
+        "id": "launch",
+        "label_de": "R3 Desktop Vollbild",
+        "ok": false
+      }
+    ],
+    "updated_at_utc": "2026-06-07T00:25:33+00:00"
+  },
+  "desktop_url": "http://127.0.0.1:17890/desktop",
+  "fallback_interface": "ollama_local",
+  "headline_de": "Desktop-Migration abgeschlossen — R3 KI lokal primär",
+  "migrated_at_utc": "2026-06-07T00:25:33+00:00",
+  "next_de": "Ab jetzt: active-alpha-chat oder Cockpit :17890. Werkstatt optional.",
+  "ok": true,
+  "policy": {
+    "foundation": {
+      "approved_at_utc": "2026-06-07T00:24:36+00:00",
+      "approved_by": "user",
+      "fallback_interface": "ollama_local",
+      "fallback_label_de": "Ollama — lokales Modell (active-alpha-chat)",
+      "forbidden_de": [
+        "Cloud-Composer als einziger Hauptkanal",
+        "Linux-Hardware-Kernel ersetzen",
+        "Externe Timer ohne Operator-Mandat",
+        "Paralleler IDE-Klon als Steuerungsschicht"
+      ],
+      "primary_interface": "r3_ki",
+      "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+      "schema_version": 2,
+      "status": "AUTHORITATIVE",
+      "succession_rule_de": "Hauptkanal ist Alpha Model KI: active-alpha-chat, Cockpit :17890/desktop, ai_kernel. Werkstatt ist optional.",
+      "workshop_interface": "ide_optional",
+      "workshop_label_de": "Alpha Model — Werkstatt",
+      "workshop_surface": "alpha_model_workshop"
+    },
+    "marker": {
+      "active": true,
+      "desktop_url": "http://127.0.0.1:17890/desktop",
+      "headline_de": "Desktop-Migration — R3 KI lokal primär",
+      "migrated_at_utc": "2026-06-07T00:24:36+00:00",
+      "primary_interface": "r3_ki",
+      "schema_version": 1
+    },
+    "ok": true
+  },
+  "primary_interface": "r3_ki",
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail": {
+        "foundation": {
+          "approved_at_utc": "2026-06-07T00:24:36+00:00",
+          "approved_by": "user",
+          "fallback_interface": "ollama_local",
+          "fallback_label_de": "Ollama — lokales Modell (active-alpha-chat)",
+          "forbidden_de": [
+            "Cloud-Composer als einziger Hauptkanal",
+            "Linux-Hardware-Kernel ersetzen",
+            "Externe Timer ohne Operator-Mandat",
+            "Paralleler IDE-Klon als Steuerungsschicht"
+          ],
+          "primary_interface": "r3_ki",
+          "primary_label_de": "Alpha Model KI — lokaler Hauptkanal (Cockpit :17890 + Ollama)",
+          "schema_version": 2,
+          "status": "AUTHORITATIVE",
+          "succession_rule_de": "Hauptkanal ist Alpha Model KI: active-alpha-chat, Cockpit :17890/desktop, ai_kernel. Werkstatt ist optional.",
+          "workshop_interface": "ide_optional",
+          "workshop_label_de": "Alpha Model — Werkstatt",
+          "workshop_surface": "alpha_model_workshop"
+        },
+        "marker": {
+          "active": true,
+          "desktop_url": "http://127.0.0.1:17890/desktop",
+          "headline_de": "Desktop-Migration — R3 KI lokal primär",
+          "migrated_at_utc": "2026-06-07T00:24:36+00:00",
+          "primary_interface": "r3_ki",
+          "schema_version": 1
+        },
+        "ok": true
+      },
+      "id": "local_primary",
+      "label_de": "R3 KI lokal als Hauptsprache",
+      "ok": true
+    },
+    {
+      "detail": {
+        "desktop_hub_path": "/desktop",
+        "headline_de": "Desktop-Update OK — Phase B · 80%",
+        "launch": {
+          "ok": false,
+          "skipped": true
+        },
+        "next_de": "R3 sollte im Vollbild erscheinen. Falls nicht: bash tools/r3_cockpit.sh",
+        "notify_desktop": true,
+        "ok": true,
+        "phase": "B",
+        "schema_version": 1,
+        "steps": [
+          {
+            "detail": {
+              "autostart_disabled": 0,
+              "desktop": {
+                "bin_linked": [
+                  "r3",
+                  "r3-cockpit",
+                  "r3-welt",
+                  "r3-show",
+                  "r3-order-desk",
+                  "alpha-model",
+                  "alpha-model-workshop",
+                  "r3-aktien",
+                  "r3-files",
+                  "r3-terminal",
+                  "r3-calculator",
+                  "r3-screenshot",
+                  "r3-settings",
+                  "r3-apps",
+                  "r3-lock",
+                  "r3-network",
+                  "r3-bluetooth",
+                  "r3-sound",
+                  "r3-display",
+                  "r3-power",
+                  "alpha-model-workshop"
+                ],
+                "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+                "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+                "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+                "ok": true,
+                "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+                "os_name": "Alpha Model",
+                "removed_legacy": [],
+                "share_dir": "/home/machinax7/.local/share/r3-os",
+                "written": [
+                  "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                  "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                  "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                  "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+                ]
+              },
+              "gnome_tweaks": 11,
+              "headline_de": "R3 — Ubuntu läuft in dir",
+              "legacy_removed": 0,
+              "linux_mainline_de": "Der Linux-Kernel (vmlinuz) bleibt unverändert — R3 ersetzt die sichtbare Desktop-Umgebung.",
+              "message_de": "Ubuntu läuft jetzt in R3 — alte Oberfläche ist deaktiviert, nur der R3-Stack bleibt.",
+              "next_de": "Neu anmelden oder: bash tools/r3_session_browser.sh",
+              "ok": true,
+              "survives_de": [
+                "Cognitive Kernel v2",
+                "Preview Hub / R3 Cockpit",
+                "R3 Arbeitsfläche (native Apps als Fenster)",
+                "Order-Desk bei Bedarf",
+                "H1 / Scheduler / Evidence"
+              ]
+            },
+            "id": "supremacy",
+            "label_de": "R3 Supremacy (GNOME zurücknehmen)",
+            "ok": true
+          },
+          {
+            "detail": {
+              "bin_linked": [
+                "r3",
+                "r3-cockpit",
+                "r3-welt",
+                "r3-show",
+                "r3-order-desk",
+                "alpha-model",
+                "alpha-model-workshop",
+                "r3-aktien",
+                "r3-files",
+                "r3-terminal",
+                "r3-calculator",
+                "r3-screenshot",
+                "r3-settings",
+                "r3-apps",
+                "r3-lock",
+                "r3-network",
+                "r3-bluetooth",
+                "r3-sound",
+                "r3-display",
+                "r3-power",
+                "alpha-model-workshop"
+              ],
+              "headline_de": "Alpha Model — Quantitative Decision Cockpit — Desktop installiert",
+              "icon": "/home/machinax7/.local/share/icons/hicolor/scalable/apps/r3-os.svg",
+              "message_de": "Menü, Autostart und Befehle sind jetzt R3 — kein Active Alpha auf dem Desktop.",
+              "ok": true,
+              "os_full_de": "Alpha Model — Quantitative Decision Cockpit",
+              "os_name": "Alpha Model",
+              "removed_legacy": [],
+              "share_dir": "/home/machinax7/.local/share/r3-os",
+              "written": [
+                "/home/machinax7/.config/autostart/r3-os-session.desktop",
+                "/home/machinax7/.local/share/applications/R3-Weltneuheit.desktop",
+                "/home/machinax7/.local/share/applications/Alpha-Model.desktop",
+                "/home/machinax7/.local/share/applications/Alpha-Model-Workshop.desktop",
+                "/home/machinax7/.local/share/applications/R3-Cockpit.desktop",
+                "/home/machinax7/.local/share/applications/R3-Order-Desk.desktop",
+                "/home/machinax7/.local/share/applications/R3-Assistent.desktop",
+                "/home/machinax7/.local/share/applications/R3-Status.desktop",
+                "/home/machinax7/.local/share/applications/R3-Aktien.desktop",
+                "/home/machinax7/.local/share/applications/R3-Dateien.desktop",
+                "/home/machinax7/.local/share/applications/R3-Terminal.desktop",
+                "/home/machinax7/.local/share/applications/R3-Rechner.desktop",
+                "/home/machinax7/.local/share/applications/R3-Screenshot.desktop",
+                "/home/machinax7/.local/share/applications/R3-Einstellungen.desktop",
+                "/home/machinax7/.local/share/applications/R3-Programme.desktop",
+                "/home/machinax7/.local/share/applications/R3-Sperren.desktop",
+                "/home/machinax7/.local/share/applications/R3-Netzwerk.desktop",
+                "/home/machinax7/.local/share/applications/R3-Bluetooth.desktop",
+                "/home/machinax7/.local/share/applications/R3-Ton.desktop",
+                "/home/machinax7/.local/share/applications/R3-Bildschirm.desktop",
+                "/home/machinax7/.local/share/applications/R3-Energie.desktop"
+              ]
+            },
+            "id": "desktop_os",
+            "label_de": "Desktop-Einträge & Autostart",
+            "ok": true
+          },
+          {
+            "detail": {
+              "ok": true,
+              "port": 17890,
+              "url": "http://127.0.0.1:17890/desktop"
+            },
+            "id": "hub",
+            "label_de": "Preview-Hub neu starten",
+            "ok": true
+          },
+          {
+            "detail": {
+              "headline_de": "Phase B · 80% — H1 parallel integriert",
+              "ok": true,
+              "percent": 80
+            },
+            "id": "phase_b",
+            "label_de": "Phase-B-Stand schreiben",
+            "ok": true
+          },
+          {
+            "detail": {
+              "action": "running",
+              "actions": [],
+              "governance": {
+                "banner_de": "H1: RUNNING ~99% — Gate öffnet nach Seal",
+                "detail_de": "Path-Simulation läuft (Features fertig)",
+                "gate_blockers": [
+                  "DAILY_ALPHA_H1_NOT_SEALED"
+                ],
+                "progress_pct": 99,
+                "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+                "schema_version": 1,
+                "sealed": false,
+                "status": "RUNNING",
+                "updated_at_utc": "2026-06-07T00:25:33+00:00"
+              },
+              "h1_status": "RUNNING",
+              "inventory": {
+                "backtest_count": 2,
+                "backtests": [
+                  {
+                    "cmd": "9129 /home/machinax7/active_alpha_model/.venv/bin/python3 -u tools/run_validation_matrix.py --phase matrix --variant DAILY_ALPHA_H1 --parallel-jobs 1 --cpu-cores 32 --runtime-profile validation --stamp 20260606T102626Z",
+                    "marker": "run_validation_matrix.py",
+                    "pid": 9129
+                  },
+                  {
+                    "cmd": "9133 /home/machinax7/active_alpha_model/.venv/bin/python3 -u /home/machinax7/active_alpha_model/active_alpha_model.py --mode backtest --ticker-source sp500_pit --membership-file ticker_membership.csv --membership-mode strict --benchmark SPY --start 2012-01-01 --universe-mode diy_pit_liquidity --universe-top-n 100 --rebalance-every 1 --horizon 1 --train-years 7 --ml-retrain-every 2 --alpha-model-mode ensemble --exposure-controller gradual_alpha --beta-cap-mode dynamic --cluster-mode static --cluster-constraint-mode static_only --slippage-bps 2 --market-impact-bps 0 --fee-model trading212_us --backtest-capital 100000 --research-backtest-capital 100000 --reproducibility-mode strict --random-seed 42 --n-jobs auto --cpu-cores 28 --parallel-profile high --parallel-backtest-backend process --reuse-feature-cache --skip-download-if-cached --skip-feature-parquet-write --no-plot --no-gui --plain-progress --no-statistical-diagnostics --no-custom-benchmarks --minimal-backtest-reporting --no-run-manifest --no-naive-overlap --reuse-prediction-cache --shared-cache-dir /home/machinax7/active_alpha_model/model_output_sp500_pit_t212 --out-dir /home/machinax7/active_alpha_model/validation_runs/20260606T102626Z_DAILY_ALPHA_H1 --risk-off-selection-mode legacy --risk-off-gate-mode legacy --returns-fast-path --path-sim-checkpoint --naive-detailed-reporting --naive-detailed-variants mom_1_top12",
+                    "marker": "active_alpha_model.py --mode backtest",
+                    "pid": 9133
+                  }
+                ],
+                "duplicate_risk": false,
+                "monitor_count": 1,
+                "monitors": [
+                  {
+                    "cmd": "9120 /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_daily_alpha_h1_pipeline.py --monitor-only --poll-seconds 60",
+                    "pid": 9120
+                  }
+                ],
+                "starter_count": 0,
+                "starters": []
+              },
+              "monitor": {
+                "action": "monitor_exists",
+                "ok": true,
+                "pid": 9120,
+                "reply_de": "H1-Monitor läuft bereits"
+              },
+              "ok": true,
+              "reply_de": "H1 läuft stabil — Path-Simulation läuft (Features fertig)",
+              "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1"
+            },
+            "id": "h1_guard",
+            "label_de": "H1-Migration stabil",
+            "ok": true
+          },
+          {
+            "error_de": "Keine grafische Sitzung — nur Hub/Autostart aktualisiert",
+            "id": "launch",
+            "label_de": "R3 Desktop Vollbild",
+            "ok": false
+          }
+        ],
+        "updated_at_utc": "2026-06-07T00:25:33+00:00"
+      },
+      "id": "desktop",
+      "label_de": "R3 Desktop Vollbild + Hub",
+      "ok": true
+    }
+  ]
+}

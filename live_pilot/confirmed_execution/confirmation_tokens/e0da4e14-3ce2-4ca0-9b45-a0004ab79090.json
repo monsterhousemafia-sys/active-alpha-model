@@ -1,0 +1,30 @@
+{
+  "consumed_at_utc": "2026-06-02T19:40:52+00:00",
+  "expires_at_utc": "2026-06-02T19:41:52+00:00",
+  "issued_at_utc": "2026-06-02T19:40:52+00:00",
+  "payload": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T19:40:52+00:00",
+    "draft_id": "0e50435c-4efc-4b98-ba0b-e9106f4a6d9e",
+    "execution_style": "market",
+    "expires_at_utc": "2026-06-02T19:55:52+00:00",
+    "instrument": "INTC",
+    "limit_price": 91.92,
+    "max_notional_eur": 22.98,
+    "order_type": "MARKET_BUY",
+    "quantity": 0.25,
+    "reference_price_eur": 91.92,
+    "side": "BUY",
+    "source": "LIVE_DASHBOARD_REBALANCE",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "INTC_US_EQ",
+    "updated_at_utc": "2026-06-02T19:40:52+00:00"
+  },
+  "payload_hash_sha256": "f2cf500f00adecf7749dd2974198c20584874feee864256bea1006f12a76b82e",
+  "profile": "T212_PROFILE_CONFIRMED_EXECUTION",
+  "status": "SUBMISSION_IN_PROGRESS",
+  "token_id": "e0da4e14-3ce2-4ca0-9b45-a0004ab79090",
+  "token_secret_hash": "0d9507db7dd506c86e36c712e2691815f985a5e236c649a813d4d064d814e5c6",
+  "used": true
+}

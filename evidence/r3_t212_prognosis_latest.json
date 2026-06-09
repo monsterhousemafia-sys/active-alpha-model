@@ -1,0 +1,164 @@
+{
+  "available_cash_eur": 678.52,
+  "blockers": [
+    "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 er"
+  ],
+  "broker_de": "Trading212",
+  "browser_mode_de": "Lokaler Browser — Oberfläche auf 127.0.0.1, Prognose-Daten direkt aus dem Internet",
+  "daily_postmortem": {
+    "as_of_date": "2026-06-09",
+    "bad_day": true,
+    "benchmark_return_pct": -0.29,
+    "headline_de": "⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+    "ok": true,
+    "portfolio_return_pct": -2.55,
+    "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %"
+  },
+  "data_source_de": "internet",
+  "delivery_de": "Präsentiert Handelsergebnisse und führt als einzige Oberfläche T212-Orders aus (GUI-Bestätigung)",
+  "disclaimer_de": "Research signal only — not investment advice; real-money gates unchanged.",
+  "engine_de": "Active Alpha Model",
+  "engine_note_de": "Täglich (EOD) — Ergebnis erscheint auf R3",
+  "eod_local_time_cet": "22:15",
+  "h1_evidence": {
+    "detail_de": null,
+    "evaluated_at_utc": "2026-06-09T21:17:08+00:00",
+    "h1_status": "COMPLETE",
+    "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
+    "metrics_strategy": {
+      "cagr": 0.1449496479478598,
+      "daily_hit_rate": 0.5466237942122186,
+      "max_drawdown": -0.22945094905846275,
+      "n_days": 1866,
+      "sharpe_0rf": 0.782267724738531
+    },
+    "operational_ok": true,
+    "pass_full_seal": false,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "seal_policy_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
+    "seal_required": false,
+    "sealed": false
+  },
+  "headline_de": "R3 Handelsergebnis · Trading212",
+  "ingest_updated_at_utc": "2026-06-09T21:17:06+00:00",
+  "internet_ok": true,
+  "investable_eur": 678.52,
+  "message_de": "Predict bereit · König: Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX. · Überprüfen Sie die aktuellen Marktbedingungen und technischen Indikatoren von STX, bevor Sie den Nac",
+  "model_result_at_utc": "2026-06-09T18:48:14+00:00",
+  "ok": false,
+  "order_gate_ok": false,
+  "platform_de": "Zentrale Handelsplattform",
+  "portfolio_path": "model_output_sp500_pit_t212/latest_target_portfolio.csv",
+  "positions": 11,
+  "presentation_only_de": "Keine Trainings-UI — nur Ergebnisse",
+  "price_current": true,
+  "price_latest": "2026-06-09",
+  "product_de": "R3",
+  "profile_used": "daily_alpha_h1",
+  "schema_version": 1,
+  "signal_date": "2026-06-09",
+  "summary_de": "Profil daily_alpha_h1 (DAILY_ALPHA_H1): 11 Positionen auf 679 € investierbar (volles T212-Guthaben 679 €). Umstellung zum Tagesende ab 22:15 CET.",
+  "t212_orders_blocked": true,
+  "t212_trust_reason": "CONNECTION_FAILED_RETRY_AVAILABLE",
+  "t212_trusted": false,
+  "top_picks": [
+    {
+      "king_boost_pct": 0.15,
+      "target_weight": 0.0618,
+      "target_weight_pct": 6.18,
+      "ticker": "STX"
+    },
+    {
+      "target_weight": 0.0564,
+      "target_weight_pct": 5.64,
+      "ticker": "WDC"
+    },
+    {
+      "target_weight": 0.0562,
+      "target_weight_pct": 5.62,
+      "ticker": "AMD"
+    },
+    {
+      "target_weight": 0.053899999999999997,
+      "target_weight_pct": 5.39,
+      "ticker": "INTC"
+    },
+    {
+      "target_weight": 0.0495,
+      "target_weight_pct": 4.95,
+      "ticker": "LRCX"
+    },
+    {
+      "target_weight": 0.0492,
+      "target_weight_pct": 4.92,
+      "ticker": "GOOGL"
+    },
+    {
+      "target_weight": 0.0467,
+      "target_weight_pct": 4.67,
+      "ticker": "GOOG"
+    },
+    {
+      "target_weight": 0.0464,
+      "target_weight_pct": 4.64,
+      "ticker": "MU"
+    },
+    {
+      "target_weight": 0.0403,
+      "target_weight_pct": 4.03,
+      "ticker": "ON"
+    },
+    {
+      "target_weight": 0.0384,
+      "target_weight_pct": 3.84,
+      "ticker": "CIEN"
+    },
+    {
+      "target_weight": 0.037200000000000004,
+      "target_weight_pct": 3.72,
+      "ticker": "TXN"
+    }
+  ],
+  "trading_functions": {
+    "evidence_ref": "evidence/r3_trading_functions_latest.json",
+    "functions": [
+      {
+        "active": false,
+        "id": "initial_order",
+        "label_de": "Initial Bestellung",
+        "notional_eur": 0.0,
+        "order_count": 0,
+        "required": false
+      },
+      {
+        "active": false,
+        "id": "sell_notice",
+        "label_de": "Verkauf",
+        "notional_eur": 0.0,
+        "order_count": 0,
+        "required": false
+      },
+      {
+        "active": false,
+        "drift_pct": 0.0,
+        "id": "rebalance_notice",
+        "label_de": "Umschichtung",
+        "notional_eur": 0.0,
+        "order_count": 0,
+        "rebalance_due": true,
+        "required": false
+      }
+    ],
+    "functions_active": 0,
+    "primary_function_id": null
+  },
+  "updated_at_utc": "2026-06-09T21:17:08+00:00",
+  "voice_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent.",
+  "warnings_de": [
+    "⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %"
+  ],
+  "worthwhile_buy_count": 0,
+  "worthwhile_buys": [],
+  "worthwhile_sell_count": 0,
+  "worthwhile_sells": []
+}

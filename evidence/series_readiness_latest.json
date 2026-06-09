@@ -1,0 +1,91 @@
+{
+  "blockers_de": [
+    "Lokal-first Runtime"
+  ],
+  "confirmation_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
+  "critical_ok": 6,
+  "critical_total": 7,
+  "gates": [
+    {
+      "detail_de": "alle Auto-Flags aus",
+      "id": "safety_flags",
+      "label_de": "Safety-Flags",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "R0_LEGACY_ENSEMBLE · auto_promotion=DISABLED",
+      "id": "governance_locked",
+      "label_de": "Governance gesperrt",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "http://127.0.0.1:17890",
+      "id": "local_runtime",
+      "label_de": "Lokal-first Runtime",
+      "ok": false,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "OK",
+      "id": "stack_integrity",
+      "label_de": "Stack-Integrität",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "100% · 4/4 Meilensteine",
+      "id": "r3_growth",
+      "label_de": "R3 lokales Wachstum",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "Stack + Mirror OK",
+      "id": "mirror_operational",
+      "label_de": "Mirror operativ",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "auto_execute=false · king_verify OK",
+      "id": "dry_run_guard",
+      "label_de": "Ausführungsschutz",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "detail_de": "Linux 100% — 9/9 Dimensionen",
+      "id": "linux_potential",
+      "label_de": "Linux-Potenzial",
+      "ok": true,
+      "tier": "warn"
+    },
+    {
+      "detail_de": "Profil: Flüssig — bestätigt",
+      "id": "pending_upgrade",
+      "label_de": "R3-Upgrade offen",
+      "ok": true,
+      "tier": "warn"
+    },
+    {
+      "detail_de": "2026-06-08T13:58:00Z",
+      "id": "king_verify",
+      "label_de": "König verify",
+      "ok": true,
+      "tier": "warn"
+    }
+  ],
+  "headline_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
+  "local_surface_de": "http://127.0.0.1:17890/r3",
+  "next_de": "Beheben: Lokal-first Runtime — bash tools/king_ops.sh series-ready --repair",
+  "policy_ref": "control/series_readiness_policy.json",
+  "readiness_pct": 86,
+  "schema_version": 1,
+  "scope_de": "Lokales R3-Produkt — kein Public-Launch-Gate",
+  "series_ready": false,
+  "updated_at_utc": "2026-06-09T21:47:20+00:00",
+  "warnings_de": [],
+  "warnings_open": 0
+}

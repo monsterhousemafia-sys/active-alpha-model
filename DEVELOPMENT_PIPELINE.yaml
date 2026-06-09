@@ -1,0 +1,162 @@
+pipeline_name: active_alpha_continuous_improvement
+pipeline_version: 4
+auto_continue_after_pass: true
+automatic_real_money_execution: false
+failsafe_required: true
+current_phase: P16G_READONLY_REAL_ACCOUNT_CONFIGURATION_AND_MANUAL_TICKET_GENERATION
+control_policy:
+  atomic_publication_required: true
+  checkpoints_required: true
+  enqueue_next_phase_after_pass: true
+  latest_validated_state_protected: true
+  locks_required: true
+  never_chain_multiple_phases_inside_same_work_unit: true
+  one_new_phase_per_run: true
+  rollback_required: true
+  separate_autopilot_branch_required: true
+  stop_on_data_quality_failure: true
+  stop_on_integrity_failure: true
+  stop_on_unrecoverable_error: true
+automation_defaults:
+  auto_execute_real_money: false
+  auto_promote_paper: false
+  auto_promote_signal: false
+  auto_research: false
+phases:
+- id: P0_SAFETY_CONTROL_PLANE
+  status: PASS
+  next_phase: P1_INTEGRITY_FOUNDATION
+  goal: Sichere Kontrollstruktur mit atomaren Writes, Locks, Checkpoints, Statusdateien,
+    Incident Logging und Recovery-Grundlage.
+- id: P1_INTEGRITY_FOUNDATION
+  status: PASS
+  next_phase: P2_PREDICTION_OUTCOME_LEDGER
+  goal: Backtest-, Reporting-, Cash-/Exposure- und EXE-Statuspfad validierbar machen
+    ohne ökonomische Modelllogik zu ändern.
+- id: P2_PREDICTION_OUTCOME_LEDGER
+  status: PASS
+  next_phase: P3_BACKGROUND_RESEARCH_EXISTING_MODELS
+  goal: Prognosen immutable speichern und nach Horizontreife mit realisiertem Ergebnis
+    ergänzen.
+- id: P3_BACKGROUND_RESEARCH_EXISTING_MODELS
+  status: PASS
+  next_phase: P4_SHADOW_CHAMPION_FRAMEWORK
+  goal: Bestehende Modellvarianten kontrolliert im Hintergrund prüfen.
+- id: P4_SHADOW_CHAMPION_FRAMEWORK
+  status: PASS
+  next_phase: P5_REALTIME_REPLAY_FOUNDATION
+  goal: Champion-/Challenger-Registry, Shadow-Auswertung, Promotion-Gate, Rollback-Grundlage.
+- id: P5_REALTIME_REPLAY_FOUNDATION
+  status: PASS
+  next_phase: P6_BEHAVIORAL_FEATURE_RESEARCH
+  goal: Providerneutrale Intraday-/Quote-Struktur mit Replay-Provider.
+- id: P6_BEHAVIORAL_FEATURE_RESEARCH
+  status: PASS
+  next_phase: P7_AUTO_PROMOTION_EXE_VISIBILITY
+  goal: Behavioral Features als deaktivierte Challenger-Infrastruktur.
+- id: P7_AUTO_PROMOTION_EXE_VISIBILITY
+  status: PASS
+  next_phase: P9_CONTROLLED_PAPER_SHADOW_VALIDATION_PREPARATION
+  goal: Automatische Promotion technisch vorbereiten; Echtgeldorders dauerhaft DISABLED.
+- id: P9_CONTROLLED_PAPER_SHADOW_VALIDATION_PREPARATION
+  status: PASS
+  next_phase: P10_RESEARCH_EVIDENCE_INTEGRATION_AND_STRATEGY_IDENTITY_RESOLUTION
+  goal: Champion als Referenz belassen; Challenger nur Shadow/Paper prüfen; M1-Kontrolle;
+    keine Promotion.
+- id: P10_RESEARCH_EVIDENCE_INTEGRATION_AND_STRATEGY_IDENTITY_RESOLUTION
+  status: PASS
+  next_phase: P11_COST_STRESS_AND_STATISTICAL_RESEARCH_VALIDATION
+  goal: Research evidence adjudication bridge; strategy identity; ledger integration.
+- id: P11_COST_STRESS_AND_STATISTICAL_RESEARCH_VALIDATION
+  status: PASS
+  next_phase: P12A_READ_ONLY_ONLINE_MARKET_DATA_INGESTION
+  goal: Offline cost-stress and statistical research validation.
+- id: P12A_READ_ONLY_ONLINE_MARKET_DATA_INGESTION
+  status: PASS
+  next_phase: P12B_VIRTUAL_EXECUTION_AND_PAPER_PORTFOLIO_ENGINE
+  goal: Read-only online market data ingestion and recording.
+- id: P12B_VIRTUAL_EXECUTION_AND_PAPER_PORTFOLIO_ENGINE
+  status: PASS
+  next_phase: P12C_PROSPECTIVE_FORWARD_PAPER_TRADING_EVALUATION
+  goal: Virtual execution engine with 500 EUR paper portfolio.
+- id: P12C_PROSPECTIVE_FORWARD_PAPER_TRADING_EVALUATION
+  status: PASS
+  next_phase: P13_CAPITAL_SCALING_READINESS_AND_DISABLED_BROKER_ADAPTER
+  goal: Prospective forward paper trading evaluation.
+- id: P13_CAPITAL_SCALING_READINESS_AND_DISABLED_BROKER_ADAPTER
+  status: PASS
+  next_phase: P14_PAPER_FORWARD_500_EUR_WITH_TRADING212_DEMO_READONLY_OBSERVATION
+  goal: Capital scaling readiness and disabled-by-default broker adapter.
+- id: P14_PAPER_FORWARD_500_EUR_WITH_TRADING212_DEMO_READONLY_OBSERVATION
+  status: PASS
+  next_phase: P15_PAPER_RUNTIME_VALIDATION_AND_VIRTUAL_CAPITAL_SCALING_DECISION_SUPPORT
+  goal: 500 EUR paper forward with T212 demo read-only observation.
+- id: P15_PAPER_RUNTIME_VALIDATION_AND_VIRTUAL_CAPITAL_SCALING_DECISION_SUPPORT
+  status: PASS
+  next_phase: P16_READ_ONLY_FORWARD_OBSERVATION_AND_VIRTUAL_SCALING_EVIDENCE
+  goal: Paper runtime validation and virtual capital scaling decision support.
+- id: P16_READ_ONLY_FORWARD_OBSERVATION_AND_VIRTUAL_SCALING_EVIDENCE
+  status: PASS
+  next_phase: P16B_CONTINUOUS_FORWARD_PAPER_RUNTIME_REMEDIATION_AND_OBSERVATION_WINDOW
+  goal: Virtual scaling evaluation and real-money decision dossier (no execution).
+- id: P16B_CONTINUE_FORWARD_OBSERVATION_WINDOW
+  status: NOT_STARTED
+  next_phase: null
+  goal: Continue forward observation window.
+- id: P17_VIRTUAL_SCALING_ASSESSMENT_AND_REAL_MONEY_DECISION_DOSSIER_PREPARATION
+  status: NOT_STARTED
+  next_phase: null
+  goal: Virtual scaling assessment and real-money decision dossier preparation (no
+    execution).
+- id: P16B_CONTINUOUS_FORWARD_PAPER_RUNTIME_REMEDIATION_AND_OBSERVATION_WINDOW
+  status: PASS
+  next_phase: P16C_FORWARD_RUNTIME_CORRECTION_AND_VALIDATED_OBSERVATION_WINDOW_CONTINUATION
+  goal: Continuous forward paper runtime remediation.
+- id: P16C_CONTINUE_VALIDATED_FORWARD_OBSERVATION_WINDOW
+  status: NOT_STARTED
+  next_phase: null
+  goal: Continue observation window.
+- id: P17_VIRTUAL_SCALING_EVALUATION_AND_DECISION_SUPPORT_SIMULATION_ONLY
+  status: NOT_STARTED
+  next_phase: null
+  goal: Virtual scaling evaluation simulation only.
+- id: P16C_FORWARD_RUNTIME_CORRECTION_AND_VALIDATED_OBSERVATION_WINDOW_CONTINUATION
+  status: PASS
+  next_phase: P16D_VALIDATED_FORWARD_RUNTIME_HARDENING_AND_OBSERVATION_CONTINUATION
+  goal: Forward runtime correction.
+- id: P16D_CONTINUE_VALIDATED_FORWARD_OBSERVATION_WINDOW
+  status: NOT_STARTED
+  next_phase: null
+  goal: Continue validated observation window.
+- id: P16D_VALIDATED_FORWARD_RUNTIME_HARDENING_AND_OBSERVATION_CONTINUATION
+  status: PASS
+  next_phase: P16E_FAST_TRACK_RECONCILIATION_AND_MANUAL_LIVE_PILOT_READINESS
+  goal: Runtime hardening and observation.
+- id: P16E_CONTINUE_POST_BASELINE_VALIDATED_OBSERVATION_WINDOW
+  status: NOT_STARTED
+  next_phase: null
+  goal: Continue post-baseline observation.
+- id: P16E_FAST_TRACK_RECONCILIATION_AND_MANUAL_LIVE_PILOT_READINESS
+  status: PASS
+  next_phase: P16F_MANUAL_TICKET_RISK_REMEDIATION_AND_READONLY_ACCOUNT_RECONCILIATION_PREPARATION
+  goal: Manual live pilot readiness.
+- id: P16F_MANUAL_LIVE_PILOT_TICKET_REVIEW_AND_READONLY_RECONCILIATION
+  status: NOT_STARTED
+  next_phase: null
+  goal: Manual ticket review and reconciliation.
+- id: P17_MANUAL_LIVE_PILOT_OBSERVATION_AND_RISK_MONITORING
+  status: NOT_STARTED
+  next_phase: null
+  goal: Manual live pilot monitoring.
+- id: P16F_MANUAL_TICKET_RISK_REMEDIATION_AND_READONLY_ACCOUNT_RECONCILIATION_PREPARATION
+  status: PASS
+  next_phase: P16G_READONLY_REAL_ACCOUNT_CONFIGURATION_AND_MANUAL_TICKET_GENERATION
+  goal: Ticket risk remediation.
+- id: P16G_READONLY_REAL_ACCOUNT_CONFIGURATION_AND_MANUAL_TICKET_GENERATION
+  status: PASS
+  next_phase: null
+  goal: Readonly account and ticket generation.
+stages:
+  phase2_outcome_ledger:
+    blockers: []
+acceptance_audit_p8: PASS

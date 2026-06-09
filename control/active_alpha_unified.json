@@ -1,0 +1,52 @@
+{
+  "agent_name": "Auto",
+  "cli_banner_de": "Alpha Model · lokale KI + Cockpit · ein Kern",
+  "edition_de": "Remaster 2026",
+  "local_runtime": "control/alpha_model_local_runtime.json",
+  "primary_surface": "agent_chamber",
+  "product_name": "Alpha Model",
+  "public_status_file_de": "~/.local/share/r3-os/operator_latest.txt",
+  "public_visibility_de": "Jeder Ubuntu-Nutzer: active-alpha-show oder Cockpit-Panel «Auto — Ubuntu Operator»",
+  "schema_version": 2,
+  "surfaces": {
+    "agent_chamber": {
+      "all_resources_transferred": true,
+      "id": "agent_chamber",
+      "kernel_foundation": true,
+      "label_de": "Alpha Model — Entfaltungsraum",
+      "launch": "alpha-model-agent",
+      "role_de": "Alle Cursor-Kapazitäten — Mandat, /bau, /self-uninstall, Kernel-Slash"
+    },
+    "marktanalyse_app": {
+      "id": "marktanalyse_app",
+      "label_de": "Alpha Model Cockpit",
+      "role_de": "Live-Status, Evolution, Orders mit GUI-Bestätigung"
+    },
+    "ollama_local": {
+      "id": "ollama_local",
+      "kernel_engine": true,
+      "label_de": "Ollama (lokal)",
+      "role_de": "Motor unter Entfaltungsraum — qwen2.5:7b"
+    },
+    "r3_ki": {
+      "id": "r3_ki",
+      "kernel_foundation": true,
+      "label_de": "Alpha Model KI (lokal)",
+      "role_de": "Alias — nutze alpha-model-agent (Entfaltungsraum)"
+    }
+  },
+  "tagline_de": "Quantitatives Entscheidungs-Cockpit — lokale KI und Handel in einem System.",
+  "tunnel": {
+    "local_hub": "http://127.0.0.1:17890",
+    "local_only": true,
+    "public_base_url": null,
+    "tunnel_required": false
+  },
+  "unified_rules_de": [
+    "Alpha Model KI und Cockpit sind Oberflächen desselben Systems — kein Cursor-Konto nötig.",
+    "Auto baut und wartet die App; die App zeigt und führt (mit deiner Bestätigung) aus.",
+    "Kein Autotrading: Orders nur im Cockpit nach deinem Klick.",
+    "Cursor/Werkstatt entfernt — Entfaltungsraum (alpha-model-agent) ist der Agent-Kanal."
+  ],
+  "window_title": "Alpha Model"
+}

@@ -1,0 +1,12 @@
+{
+  "checks": [],
+  "headline_de": "OK",
+  "ok": true,
+  "ready": true,
+  "repaired": [
+    "agent_home",
+    "transfer",
+    "tier",
+    "king_pulse"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "credentials_configured": false,
+  "demo_read_only_status": "CLIENT_TESTED_READY",
+  "live_read_only_account_observation_status": "AWAITING_SECURE_LOCAL_CREDENTIAL_CONFIGURATION",
+  "order_endpoints_blocked": true,
+  "positions_observation_verified": false,
+  "real_cash_observation_verified": false,
+  "secrets_excluded": true,
+  "write_methods_blocked": true
+}

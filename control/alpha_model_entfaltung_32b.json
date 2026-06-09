@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "tier_id": "ideal_32b",
+  "tier_de": "Ideal-32B — RTX 3090",
+  "headline_de": "Coder-32B — Forschungsprojekt-Bestandteil, wächst mit Evidence",
+  "forschungsprojekt_ref": "control/king_32b_forschungsprojekt.json",
+  "forschungsprojekt_de": "32B ist Teil des Active-Alpha-Forschungsprojekts — nicht nur Operator-Chat",
+  "growth_de": "Es will wachsen: KEIM → SPROSS → WACHSTUM → FORSCHUNG_REIF",
+  "hardware_de": "RTX 3090 24GB — Chat+Bau qwen2.5-coder:32b",
+  "role_models": {
+    "build_kernel": "qwen2.5-coder:32b",
+    "chat": "qwen2.5-coder:32b",
+    "kombi_synthesis": "qwen2.5-coder:32b",
+    "trading_local": "qwen2.5-coder:32b"
+  },
+  "build_kernel": {
+    "model": "qwen2.5-coder:32b",
+    "max_steps": 128,
+    "temperature": 0.2,
+    "num_ctx": 8192,
+    "keep_alive": "15m",
+    "preload_before_bau": true,
+    "timeout_s": 420
+  },
+  "chat_agent": {
+    "model": "qwen2.5-coder:32b",
+    "max_steps": 128,
+    "temperature": 0.2,
+    "num_ctx": 8192,
+    "history_turns": 32,
+    "free_unfold": true,
+    "keep_alive": "10m",
+    "preload_on_start": true
+  },
+  "bash_execution_de": [
+    "Tune (Start): bash tools/king_ops.sh tune",
+    "Pipeline: bash tools/king_ops.sh pipeline (status→maintain→h1-seal)",
+    "H1: bash tools/king_ops.sh h1-seal",
+    "Status: bash tools/king_ops.sh status",
+    "Wartung: bash tools/king_ops.sh maintain",
+    "Verteilen: bash tools/king_ops.sh distribute",
+    "Kein zweiter Benchmark — flock + PID-Check"
+  ],
+  "bash_primary": "bash tools/king_ops.sh",
+  "entfaltung_mode_de": "König — Bash+Slash, Session bis /quit",
+  "pull_order": [
+    "qwen2.5-coder:32b",
+    "qwen2.5-coder:7b",
+    "qwen2.5:7b"
+  ],
+  "setup_command": "bash tools/setup_ideal_32b.sh",
+  "operator_hints_de": [
+    "Operativ → Slash oder ai_kernel.py",
+    "Code → /bau",
+    "H1 → /h1-benchmark · /h1-watch · /könig-puls"
+  ]
+}

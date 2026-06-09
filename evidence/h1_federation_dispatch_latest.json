@@ -1,0 +1,1315 @@
+{
+  "asset_manifest": {
+    "files": [
+      {
+        "bytes": 190862822,
+        "name": "features.parquet",
+        "path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/features.parquet"
+      },
+      {
+        "bytes": 526796986,
+        "name": "prediction_cache.pkl",
+        "path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/prediction_cache.pkl"
+      },
+      {
+        "bytes": 67557,
+        "name": "prediction_cache_meta.json",
+        "path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/prediction_cache_meta.json",
+        "sha256": "61c7b18d4b80afd0e18c09af4c02e5815bf12831fe27226d55e71c07cfd0b232"
+      },
+      {
+        "bytes": 87326,
+        "name": "path_sim_checkpoint.pkl",
+        "path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/path_sim_checkpoint.pkl",
+        "sha256": "1e106f7194155218a0c71b7b192e3118a1ac6ac8ca91c0ca48e15c5836b1489f"
+      },
+      {
+        "bytes": 107,
+        "name": "path_sim_checkpoint_meta.json",
+        "path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/path_sim_checkpoint_meta.json",
+        "sha256": "0282992897d0f4ab04e07e71e3579b45faa9879a036c0887d86f1330d3aadac8"
+      },
+      {
+        "bytes": 1288,
+        "name": "run_config_snapshot.txt",
+        "path": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1/run_config_snapshot.txt",
+        "sha256": "cbc17ed58d15c55e56881cdcb22609b98570dd13dea93db4641a8729eaa55558"
+      }
+    ],
+    "ready": true,
+    "required_present": [
+      "features.parquet"
+    ],
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "total_bytes": 717816086,
+    "updated_at_utc": "2026-06-09T21:52:32+00:00"
+  },
+  "blockers": [],
+  "chunks": [
+    {
+      "depends_on": null,
+      "end_n": 25,
+      "id": "chunk-0000",
+      "rebalance_range_de": "1–25",
+      "start_n": 0,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0000",
+      "end_n": 50,
+      "id": "chunk-0001",
+      "rebalance_range_de": "26–50",
+      "start_n": 25,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0001",
+      "end_n": 75,
+      "id": "chunk-0002",
+      "rebalance_range_de": "51–75",
+      "start_n": 50,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0002",
+      "end_n": 100,
+      "id": "chunk-0003",
+      "rebalance_range_de": "76–100",
+      "start_n": 75,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0003",
+      "end_n": 125,
+      "id": "chunk-0004",
+      "rebalance_range_de": "101–125",
+      "start_n": 100,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0004",
+      "end_n": 150,
+      "id": "chunk-0005",
+      "rebalance_range_de": "126–150",
+      "start_n": 125,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0005",
+      "end_n": 175,
+      "id": "chunk-0006",
+      "rebalance_range_de": "151–175",
+      "start_n": 150,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0006",
+      "end_n": 200,
+      "id": "chunk-0007",
+      "rebalance_range_de": "176–200",
+      "start_n": 175,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0007",
+      "end_n": 225,
+      "id": "chunk-0008",
+      "rebalance_range_de": "201–225",
+      "start_n": 200,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0008",
+      "end_n": 250,
+      "id": "chunk-0009",
+      "rebalance_range_de": "226–250",
+      "start_n": 225,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0009",
+      "end_n": 275,
+      "id": "chunk-0010",
+      "rebalance_range_de": "251–275",
+      "start_n": 250,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0010",
+      "end_n": 300,
+      "id": "chunk-0011",
+      "rebalance_range_de": "276–300",
+      "start_n": 275,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0011",
+      "end_n": 325,
+      "id": "chunk-0012",
+      "rebalance_range_de": "301–325",
+      "start_n": 300,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0012",
+      "end_n": 350,
+      "id": "chunk-0013",
+      "rebalance_range_de": "326–350",
+      "start_n": 325,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0013",
+      "end_n": 375,
+      "id": "chunk-0014",
+      "rebalance_range_de": "351–375",
+      "start_n": 350,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0014",
+      "end_n": 400,
+      "id": "chunk-0015",
+      "rebalance_range_de": "376–400",
+      "start_n": 375,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0015",
+      "end_n": 425,
+      "id": "chunk-0016",
+      "rebalance_range_de": "401–425",
+      "start_n": 400,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0016",
+      "end_n": 450,
+      "id": "chunk-0017",
+      "rebalance_range_de": "426–450",
+      "start_n": 425,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0017",
+      "end_n": 475,
+      "id": "chunk-0018",
+      "rebalance_range_de": "451–475",
+      "start_n": 450,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0018",
+      "end_n": 500,
+      "id": "chunk-0019",
+      "rebalance_range_de": "476–500",
+      "start_n": 475,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0019",
+      "end_n": 525,
+      "id": "chunk-0020",
+      "rebalance_range_de": "501–525",
+      "start_n": 500,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0020",
+      "end_n": 550,
+      "id": "chunk-0021",
+      "rebalance_range_de": "526–550",
+      "start_n": 525,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0021",
+      "end_n": 575,
+      "id": "chunk-0022",
+      "rebalance_range_de": "551–575",
+      "start_n": 550,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0022",
+      "end_n": 600,
+      "id": "chunk-0023",
+      "rebalance_range_de": "576–600",
+      "start_n": 575,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0023",
+      "end_n": 625,
+      "id": "chunk-0024",
+      "rebalance_range_de": "601–625",
+      "start_n": 600,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0024",
+      "end_n": 650,
+      "id": "chunk-0025",
+      "rebalance_range_de": "626–650",
+      "start_n": 625,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0025",
+      "end_n": 675,
+      "id": "chunk-0026",
+      "rebalance_range_de": "651–675",
+      "start_n": 650,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0026",
+      "end_n": 700,
+      "id": "chunk-0027",
+      "rebalance_range_de": "676–700",
+      "start_n": 675,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0027",
+      "end_n": 725,
+      "id": "chunk-0028",
+      "rebalance_range_de": "701–725",
+      "start_n": 700,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0028",
+      "end_n": 750,
+      "id": "chunk-0029",
+      "rebalance_range_de": "726–750",
+      "start_n": 725,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0029",
+      "end_n": 775,
+      "id": "chunk-0030",
+      "rebalance_range_de": "751–775",
+      "start_n": 750,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0030",
+      "end_n": 800,
+      "id": "chunk-0031",
+      "rebalance_range_de": "776–800",
+      "start_n": 775,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0031",
+      "end_n": 825,
+      "id": "chunk-0032",
+      "rebalance_range_de": "801–825",
+      "start_n": 800,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0032",
+      "end_n": 850,
+      "id": "chunk-0033",
+      "rebalance_range_de": "826–850",
+      "start_n": 825,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0033",
+      "end_n": 875,
+      "id": "chunk-0034",
+      "rebalance_range_de": "851–875",
+      "start_n": 850,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0034",
+      "end_n": 900,
+      "id": "chunk-0035",
+      "rebalance_range_de": "876–900",
+      "start_n": 875,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0035",
+      "end_n": 925,
+      "id": "chunk-0036",
+      "rebalance_range_de": "901–925",
+      "start_n": 900,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0036",
+      "end_n": 950,
+      "id": "chunk-0037",
+      "rebalance_range_de": "926–950",
+      "start_n": 925,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0037",
+      "end_n": 975,
+      "id": "chunk-0038",
+      "rebalance_range_de": "951–975",
+      "start_n": 950,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0038",
+      "end_n": 1000,
+      "id": "chunk-0039",
+      "rebalance_range_de": "976–1000",
+      "start_n": 975,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0039",
+      "end_n": 1025,
+      "id": "chunk-0040",
+      "rebalance_range_de": "1001–1025",
+      "start_n": 1000,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0040",
+      "end_n": 1050,
+      "id": "chunk-0041",
+      "rebalance_range_de": "1026–1050",
+      "start_n": 1025,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0041",
+      "end_n": 1075,
+      "id": "chunk-0042",
+      "rebalance_range_de": "1051–1075",
+      "start_n": 1050,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0042",
+      "end_n": 1100,
+      "id": "chunk-0043",
+      "rebalance_range_de": "1076–1100",
+      "start_n": 1075,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0043",
+      "end_n": 1125,
+      "id": "chunk-0044",
+      "rebalance_range_de": "1101–1125",
+      "start_n": 1100,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0044",
+      "end_n": 1150,
+      "id": "chunk-0045",
+      "rebalance_range_de": "1126–1150",
+      "start_n": 1125,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0045",
+      "end_n": 1175,
+      "id": "chunk-0046",
+      "rebalance_range_de": "1151–1175",
+      "start_n": 1150,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0046",
+      "end_n": 1200,
+      "id": "chunk-0047",
+      "rebalance_range_de": "1176–1200",
+      "start_n": 1175,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0047",
+      "end_n": 1225,
+      "id": "chunk-0048",
+      "rebalance_range_de": "1201–1225",
+      "start_n": 1200,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0048",
+      "end_n": 1250,
+      "id": "chunk-0049",
+      "rebalance_range_de": "1226–1250",
+      "start_n": 1225,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0049",
+      "end_n": 1275,
+      "id": "chunk-0050",
+      "rebalance_range_de": "1251–1275",
+      "start_n": 1250,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0050",
+      "end_n": 1300,
+      "id": "chunk-0051",
+      "rebalance_range_de": "1276–1300",
+      "start_n": 1275,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0051",
+      "end_n": 1325,
+      "id": "chunk-0052",
+      "rebalance_range_de": "1301–1325",
+      "start_n": 1300,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0052",
+      "end_n": 1350,
+      "id": "chunk-0053",
+      "rebalance_range_de": "1326–1350",
+      "start_n": 1325,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0053",
+      "end_n": 1375,
+      "id": "chunk-0054",
+      "rebalance_range_de": "1351–1375",
+      "start_n": 1350,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0054",
+      "end_n": 1400,
+      "id": "chunk-0055",
+      "rebalance_range_de": "1376–1400",
+      "start_n": 1375,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0055",
+      "end_n": 1425,
+      "id": "chunk-0056",
+      "rebalance_range_de": "1401–1425",
+      "start_n": 1400,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0056",
+      "end_n": 1450,
+      "id": "chunk-0057",
+      "rebalance_range_de": "1426–1450",
+      "start_n": 1425,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0057",
+      "end_n": 1475,
+      "id": "chunk-0058",
+      "rebalance_range_de": "1451–1475",
+      "start_n": 1450,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0058",
+      "end_n": 1500,
+      "id": "chunk-0059",
+      "rebalance_range_de": "1476–1500",
+      "start_n": 1475,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0059",
+      "end_n": 1525,
+      "id": "chunk-0060",
+      "rebalance_range_de": "1501–1525",
+      "start_n": 1500,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0060",
+      "end_n": 1550,
+      "id": "chunk-0061",
+      "rebalance_range_de": "1526–1550",
+      "start_n": 1525,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0061",
+      "end_n": 1575,
+      "id": "chunk-0062",
+      "rebalance_range_de": "1551–1575",
+      "start_n": 1550,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0062",
+      "end_n": 1600,
+      "id": "chunk-0063",
+      "rebalance_range_de": "1576–1600",
+      "start_n": 1575,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0063",
+      "end_n": 1625,
+      "id": "chunk-0064",
+      "rebalance_range_de": "1601–1625",
+      "start_n": 1600,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0064",
+      "end_n": 1650,
+      "id": "chunk-0065",
+      "rebalance_range_de": "1626–1650",
+      "start_n": 1625,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0065",
+      "end_n": 1675,
+      "id": "chunk-0066",
+      "rebalance_range_de": "1651–1675",
+      "start_n": 1650,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0066",
+      "end_n": 1700,
+      "id": "chunk-0067",
+      "rebalance_range_de": "1676–1700",
+      "start_n": 1675,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0067",
+      "end_n": 1725,
+      "id": "chunk-0068",
+      "rebalance_range_de": "1701–1725",
+      "start_n": 1700,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0068",
+      "end_n": 1750,
+      "id": "chunk-0069",
+      "rebalance_range_de": "1726–1750",
+      "start_n": 1725,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0069",
+      "end_n": 1775,
+      "id": "chunk-0070",
+      "rebalance_range_de": "1751–1775",
+      "start_n": 1750,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0070",
+      "end_n": 1800,
+      "id": "chunk-0071",
+      "rebalance_range_de": "1776–1800",
+      "start_n": 1775,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0071",
+      "end_n": 1825,
+      "id": "chunk-0072",
+      "rebalance_range_de": "1801–1825",
+      "start_n": 1800,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0072",
+      "end_n": 1850,
+      "id": "chunk-0073",
+      "rebalance_range_de": "1826–1850",
+      "start_n": 1825,
+      "status": "done"
+    },
+    {
+      "depends_on": "chunk-0073",
+      "end_n": 1875,
+      "id": "chunk-0074",
+      "rebalance_range_de": "1851–1875",
+      "start_n": 1850,
+      "status": "king_active"
+    },
+    {
+      "depends_on": "chunk-0074",
+      "end_n": 1900,
+      "id": "chunk-0075",
+      "rebalance_range_de": "1876–1900",
+      "start_n": 1875,
+      "status": "king_active"
+    },
+    {
+      "depends_on": "chunk-0075",
+      "end_n": 1925,
+      "id": "chunk-0076",
+      "rebalance_range_de": "1901–1925",
+      "start_n": 1900,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0076",
+      "end_n": 1950,
+      "id": "chunk-0077",
+      "rebalance_range_de": "1926–1950",
+      "start_n": 1925,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0077",
+      "end_n": 1975,
+      "id": "chunk-0078",
+      "rebalance_range_de": "1951–1975",
+      "start_n": 1950,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0078",
+      "end_n": 2000,
+      "id": "chunk-0079",
+      "rebalance_range_de": "1976–2000",
+      "start_n": 1975,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0079",
+      "end_n": 2025,
+      "id": "chunk-0080",
+      "rebalance_range_de": "2001–2025",
+      "start_n": 2000,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0080",
+      "end_n": 2050,
+      "id": "chunk-0081",
+      "rebalance_range_de": "2026–2050",
+      "start_n": 2025,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0081",
+      "end_n": 2075,
+      "id": "chunk-0082",
+      "rebalance_range_de": "2051–2075",
+      "start_n": 2050,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0082",
+      "end_n": 2100,
+      "id": "chunk-0083",
+      "rebalance_range_de": "2076–2100",
+      "start_n": 2075,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0083",
+      "end_n": 2125,
+      "id": "chunk-0084",
+      "rebalance_range_de": "2101–2125",
+      "start_n": 2100,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0084",
+      "end_n": 2150,
+      "id": "chunk-0085",
+      "rebalance_range_de": "2126–2150",
+      "start_n": 2125,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0085",
+      "end_n": 2175,
+      "id": "chunk-0086",
+      "rebalance_range_de": "2151–2175",
+      "start_n": 2150,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0086",
+      "end_n": 2200,
+      "id": "chunk-0087",
+      "rebalance_range_de": "2176–2200",
+      "start_n": 2175,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0087",
+      "end_n": 2225,
+      "id": "chunk-0088",
+      "rebalance_range_de": "2201–2225",
+      "start_n": 2200,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0088",
+      "end_n": 2250,
+      "id": "chunk-0089",
+      "rebalance_range_de": "2226–2250",
+      "start_n": 2225,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0089",
+      "end_n": 2275,
+      "id": "chunk-0090",
+      "rebalance_range_de": "2251–2275",
+      "start_n": 2250,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0090",
+      "end_n": 2300,
+      "id": "chunk-0091",
+      "rebalance_range_de": "2276–2300",
+      "start_n": 2275,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0091",
+      "end_n": 2325,
+      "id": "chunk-0092",
+      "rebalance_range_de": "2301–2325",
+      "start_n": 2300,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0092",
+      "end_n": 2350,
+      "id": "chunk-0093",
+      "rebalance_range_de": "2326–2350",
+      "start_n": 2325,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0093",
+      "end_n": 2375,
+      "id": "chunk-0094",
+      "rebalance_range_de": "2351–2375",
+      "start_n": 2350,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0094",
+      "end_n": 2400,
+      "id": "chunk-0095",
+      "rebalance_range_de": "2376–2400",
+      "start_n": 2375,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0095",
+      "end_n": 2425,
+      "id": "chunk-0096",
+      "rebalance_range_de": "2401–2425",
+      "start_n": 2400,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0096",
+      "end_n": 2450,
+      "id": "chunk-0097",
+      "rebalance_range_de": "2426–2450",
+      "start_n": 2425,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0097",
+      "end_n": 2475,
+      "id": "chunk-0098",
+      "rebalance_range_de": "2451–2475",
+      "start_n": 2450,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0098",
+      "end_n": 2500,
+      "id": "chunk-0099",
+      "rebalance_range_de": "2476–2500",
+      "start_n": 2475,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0099",
+      "end_n": 2525,
+      "id": "chunk-0100",
+      "rebalance_range_de": "2501–2525",
+      "start_n": 2500,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0100",
+      "end_n": 2550,
+      "id": "chunk-0101",
+      "rebalance_range_de": "2526–2550",
+      "start_n": 2525,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0101",
+      "end_n": 2575,
+      "id": "chunk-0102",
+      "rebalance_range_de": "2551–2575",
+      "start_n": 2550,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0102",
+      "end_n": 2600,
+      "id": "chunk-0103",
+      "rebalance_range_de": "2576–2600",
+      "start_n": 2575,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0103",
+      "end_n": 2625,
+      "id": "chunk-0104",
+      "rebalance_range_de": "2601–2625",
+      "start_n": 2600,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0104",
+      "end_n": 2650,
+      "id": "chunk-0105",
+      "rebalance_range_de": "2626–2650",
+      "start_n": 2625,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0105",
+      "end_n": 2675,
+      "id": "chunk-0106",
+      "rebalance_range_de": "2651–2675",
+      "start_n": 2650,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0106",
+      "end_n": 2700,
+      "id": "chunk-0107",
+      "rebalance_range_de": "2676–2700",
+      "start_n": 2675,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0107",
+      "end_n": 2725,
+      "id": "chunk-0108",
+      "rebalance_range_de": "2701–2725",
+      "start_n": 2700,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0108",
+      "end_n": 2750,
+      "id": "chunk-0109",
+      "rebalance_range_de": "2726–2750",
+      "start_n": 2725,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0109",
+      "end_n": 2775,
+      "id": "chunk-0110",
+      "rebalance_range_de": "2751–2775",
+      "start_n": 2750,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0110",
+      "end_n": 2800,
+      "id": "chunk-0111",
+      "rebalance_range_de": "2776–2800",
+      "start_n": 2775,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0111",
+      "end_n": 2825,
+      "id": "chunk-0112",
+      "rebalance_range_de": "2801–2825",
+      "start_n": 2800,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0112",
+      "end_n": 2850,
+      "id": "chunk-0113",
+      "rebalance_range_de": "2826–2850",
+      "start_n": 2825,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0113",
+      "end_n": 2875,
+      "id": "chunk-0114",
+      "rebalance_range_de": "2851–2875",
+      "start_n": 2850,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0114",
+      "end_n": 2900,
+      "id": "chunk-0115",
+      "rebalance_range_de": "2876–2900",
+      "start_n": 2875,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0115",
+      "end_n": 2925,
+      "id": "chunk-0116",
+      "rebalance_range_de": "2901–2925",
+      "start_n": 2900,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0116",
+      "end_n": 2950,
+      "id": "chunk-0117",
+      "rebalance_range_de": "2926–2950",
+      "start_n": 2925,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0117",
+      "end_n": 2975,
+      "id": "chunk-0118",
+      "rebalance_range_de": "2951–2975",
+      "start_n": 2950,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0118",
+      "end_n": 3000,
+      "id": "chunk-0119",
+      "rebalance_range_de": "2976–3000",
+      "start_n": 2975,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0119",
+      "end_n": 3025,
+      "id": "chunk-0120",
+      "rebalance_range_de": "3001–3025",
+      "start_n": 3000,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0120",
+      "end_n": 3050,
+      "id": "chunk-0121",
+      "rebalance_range_de": "3026–3050",
+      "start_n": 3025,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0121",
+      "end_n": 3075,
+      "id": "chunk-0122",
+      "rebalance_range_de": "3051–3075",
+      "start_n": 3050,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0122",
+      "end_n": 3100,
+      "id": "chunk-0123",
+      "rebalance_range_de": "3076–3100",
+      "start_n": 3075,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0123",
+      "end_n": 3125,
+      "id": "chunk-0124",
+      "rebalance_range_de": "3101–3125",
+      "start_n": 3100,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0124",
+      "end_n": 3150,
+      "id": "chunk-0125",
+      "rebalance_range_de": "3126–3150",
+      "start_n": 3125,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0125",
+      "end_n": 3175,
+      "id": "chunk-0126",
+      "rebalance_range_de": "3151–3175",
+      "start_n": 3150,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0126",
+      "end_n": 3200,
+      "id": "chunk-0127",
+      "rebalance_range_de": "3176–3200",
+      "start_n": 3175,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0127",
+      "end_n": 3225,
+      "id": "chunk-0128",
+      "rebalance_range_de": "3201–3225",
+      "start_n": 3200,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0128",
+      "end_n": 3250,
+      "id": "chunk-0129",
+      "rebalance_range_de": "3226–3250",
+      "start_n": 3225,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0129",
+      "end_n": 3275,
+      "id": "chunk-0130",
+      "rebalance_range_de": "3251–3275",
+      "start_n": 3250,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0130",
+      "end_n": 3300,
+      "id": "chunk-0131",
+      "rebalance_range_de": "3276–3300",
+      "start_n": 3275,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0131",
+      "end_n": 3325,
+      "id": "chunk-0132",
+      "rebalance_range_de": "3301–3325",
+      "start_n": 3300,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0132",
+      "end_n": 3350,
+      "id": "chunk-0133",
+      "rebalance_range_de": "3326–3350",
+      "start_n": 3325,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0133",
+      "end_n": 3375,
+      "id": "chunk-0134",
+      "rebalance_range_de": "3351–3375",
+      "start_n": 3350,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0134",
+      "end_n": 3400,
+      "id": "chunk-0135",
+      "rebalance_range_de": "3376–3400",
+      "start_n": 3375,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0135",
+      "end_n": 3425,
+      "id": "chunk-0136",
+      "rebalance_range_de": "3401–3425",
+      "start_n": 3400,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0136",
+      "end_n": 3450,
+      "id": "chunk-0137",
+      "rebalance_range_de": "3426–3450",
+      "start_n": 3425,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0137",
+      "end_n": 3475,
+      "id": "chunk-0138",
+      "rebalance_range_de": "3451–3475",
+      "start_n": 3450,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0138",
+      "end_n": 3500,
+      "id": "chunk-0139",
+      "rebalance_range_de": "3476–3500",
+      "start_n": 3475,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0139",
+      "end_n": 3525,
+      "id": "chunk-0140",
+      "rebalance_range_de": "3501–3525",
+      "start_n": 3500,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0140",
+      "end_n": 3550,
+      "id": "chunk-0141",
+      "rebalance_range_de": "3526–3550",
+      "start_n": 3525,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0141",
+      "end_n": 3575,
+      "id": "chunk-0142",
+      "rebalance_range_de": "3551–3575",
+      "start_n": 3550,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0142",
+      "end_n": 3600,
+      "id": "chunk-0143",
+      "rebalance_range_de": "3576–3600",
+      "start_n": 3575,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0143",
+      "end_n": 3625,
+      "id": "chunk-0144",
+      "rebalance_range_de": "3601–3625",
+      "start_n": 3600,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0144",
+      "end_n": 3650,
+      "id": "chunk-0145",
+      "rebalance_range_de": "3626–3650",
+      "start_n": 3625,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0145",
+      "end_n": 3675,
+      "id": "chunk-0146",
+      "rebalance_range_de": "3651–3675",
+      "start_n": 3650,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0146",
+      "end_n": 3700,
+      "id": "chunk-0147",
+      "rebalance_range_de": "3676–3700",
+      "start_n": 3675,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0147",
+      "end_n": 3725,
+      "id": "chunk-0148",
+      "rebalance_range_de": "3701–3725",
+      "start_n": 3700,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0148",
+      "end_n": 3750,
+      "id": "chunk-0149",
+      "rebalance_range_de": "3726–3750",
+      "start_n": 3725,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0149",
+      "end_n": 3775,
+      "id": "chunk-0150",
+      "rebalance_range_de": "3751–3775",
+      "start_n": 3750,
+      "status": "pending"
+    },
+    {
+      "depends_on": "chunk-0150",
+      "end_n": 3780,
+      "id": "chunk-0151",
+      "rebalance_range_de": "3776–3780",
+      "start_n": 3775,
+      "status": "pending"
+    }
+  ],
+  "chunks_done": 74,
+  "chunks_king_active": 2,
+  "chunks_pending_worker": 76,
+  "chunks_total": 152,
+  "config": {
+    "chunk_size": 25,
+    "enabled": true,
+    "mode": "execute",
+    "prefetch_chunks": 16
+  },
+  "h1": {
+    "assets": {
+      "features.parquet": {
+        "bytes": 190862822,
+        "present": true
+      },
+      "path_sim_checkpoint.pkl": {
+        "bytes": 87326,
+        "present": true
+      },
+      "path_sim_checkpoint_meta.json": {
+        "bytes": 107,
+        "present": true
+      },
+      "prediction_cache.pkl": {
+        "bytes": 526796986,
+        "present": true
+      },
+      "prediction_cache_meta.json": {
+        "bytes": 67557,
+        "present": true
+      },
+      "run_config_snapshot.txt": {
+        "bytes": 1288,
+        "present": true
+      }
+    },
+    "detail_de": null,
+    "king_active_chunk_end": 1890,
+    "last_n": 1865,
+    "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
+    "status": "COMPLETE",
+    "total_steps": 3781
+  },
+  "headline_de": "H1-Dispatch: 76 Chunks für Worker",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-09T21:52:32+00:00",
+  "workers_h1_capable": 0,
+  "workers_online": 2
+}

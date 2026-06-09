@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-06-05T16:57:51+00:00",
+  "ok": true,
+  "scheduled_enqueue_only": true,
+  "checklist_ref": "control\\live_trading_daily_task_checklist.json",
+  "items": [
+    {
+      "id": "venv_ready",
+      "label": ".venv + Python lauffähig",
+      "required": true,
+      "ok": true,
+      "detail_de": "E:\\active_alpha_model\\.venv\\Scripts\\python.exe",
+      "category": "infra"
+    },
+    {
+      "id": "project_root",
+      "label": "Projektroot intakt (active_alpha_model.py)",
+      "required": true,
+      "ok": true,
+      "detail_de": "Projektroot OK",
+      "category": "infra"
+    },
+    {
+      "id": "live_trading_enabled",
+      "label": "Live-Trading Policy aktiv",
+      "required": true,
+      "ok": true,
+      "detail_de": "live_trading.enabled=true",
+      "category": "policy"
+    },
+    {
+      "id": "rebalance_daily",
+      "label": "Rebalance-Rhythmus = 1 Mark-Tag (daily_alpha_h1)",
+      "required": true,
+      "ok": true,
+      "detail_de": "rebalance_every_trading_days=1 (OK)",
+      "category": "policy"
+    },
+    {
+      "id": "safety_no_auto_real_money",
+      "label": "auto_execute_real_money = false (Governance)",
+      "required": true,
+      "ok": true,
+      "detail_de": "auto_execute_real_money_enabled=False",
+      "category": "safety"
+    },
+    {
+      "id": "safety_enqueue_only",
+      "label": "Geplanter Lauf: armed_auto=false (nur Vormerkung)",
+      "required": true,
+      "ok": true,
+      "detail_de": "AA_SCHEDULED_LIVE_TASK=1 — armed_auto=false, nur Vormerkung",
+      "category": "safety"
+    },
+    {
+      "id": "t212_readonly_credentials",
+      "label": "T212 Read-only API (Konto-Sync)",
+      "required": true,
+      "ok": true,
+      "detail_de": "Read-only API (DPAPI) konfiguriert",
+      "category": "broker"
+    },
+    {
+      "id": "portfolio_csv",
+      "label": "Champion-Portfolio CSV vorhanden",
+      "required": true,
+      "ok": true,
+      "detail_de": "model_output_sp500_pit_t212\\latest_target_portfolio.csv",
+      "category": "signal"
+    },
+    {
+      "id": "champion_guard_ok",
+      "label": "Champion-Guard ohne Hard-Blocker",
+      "required": true,
+      "ok": true,
+      "detail_de": "Champion OK - R3_w075_q065_noexit | Signale aktuell (2026-06-05)",
+      "category": "signal"
+    },
+    {
+      "id": "signal_fresh",
+      "label": "Signal aktuell (EOD predict gelaufen)",
+      "required": false,
+      "ok": true,
+      "detail_de": "signal_date=2026-06-05, current=True",
+      "category": "signal"
+    },
+    {
+      "id": "prediction_profile",
+      "label": "Profil daily_alpha_h1 aktiv",
+      "required": false,
+      "ok": true,
+      "detail_de": "active_profile=daily_alpha_h1",
+      "category": "signal"
+    },
+    {
+      "id": "ki_mode_ready",
+      "label": "KI-unterstützt + Order-API (für Auto-US-Open optional)",
+      "required": false,
+      "ok": true,
+      "detail_de": "KI-unterstützt aktiv: OK · API mit Order-Rechten gespeichert: OK",
+      "category": "execution"
+    }
+  ],
+  "blockers": [],
+  "warnings": [],
+  "message_de": "Checkliste OK — geplanter Mark-Lauf erlaubt."
+}

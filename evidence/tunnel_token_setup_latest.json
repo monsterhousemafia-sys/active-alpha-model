@@ -1,0 +1,41 @@
+{
+  "apply": {
+    "message_de": "control/server.env fehlt oder Token/URL leer — wizard_status prüfen",
+    "ok": false,
+    "wizard": {
+      "cloudflared_cert": false,
+      "headline_de": "server.env anlegen — Token + stabile HTTPS-URL eintragen",
+      "schema_version": 1,
+      "server_env_exists": true,
+      "steps_de": [
+        "1. cp control/server.env.example control/server.env",
+        "2. Cloudflare Zero Trust: Tunnel → Public Hostname http://127.0.0.1:17890",
+        "3. AA_CLOUDFLARE_TUNNEL_TOKEN + AA_CLOUDFLARE_TUNNEL_URL eintragen",
+        "4. bash tools/setup_cloudflare_tunnel_token.sh",
+        "5. bash tools/king_ops.sh spread voll && bash tools/king_ops.sh whatsapp durch"
+      ],
+      "token_file": false,
+      "token_in_server_env": false,
+      "updated_at_utc": "2026-06-09T21:38:24+00:00",
+      "url_in_server_env": false
+    }
+  },
+  "headline_de": "Token fehlt — server.env ausfüllen, dann setup_cloudflare_tunnel_token.sh",
+  "wizard": {
+    "cloudflared_cert": false,
+    "headline_de": "server.env anlegen — Token + stabile HTTPS-URL eintragen",
+    "schema_version": 1,
+    "server_env_exists": true,
+    "steps_de": [
+      "1. cp control/server.env.example control/server.env",
+      "2. Cloudflare Zero Trust: Tunnel → Public Hostname http://127.0.0.1:17890",
+      "3. AA_CLOUDFLARE_TUNNEL_TOKEN + AA_CLOUDFLARE_TUNNEL_URL eintragen",
+      "4. bash tools/setup_cloudflare_tunnel_token.sh",
+      "5. bash tools/king_ops.sh spread voll && bash tools/king_ops.sh whatsapp durch"
+    ],
+    "token_file": false,
+    "token_in_server_env": false,
+    "updated_at_utc": "2026-06-09T21:38:24+00:00",
+    "url_in_server_env": false
+  }
+}

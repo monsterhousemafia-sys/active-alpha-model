@@ -1,0 +1,68 @@
+{
+  "boot_sequence_v2": [
+    "nvme_symlinks",
+    "refresh_boot",
+    "visibility",
+    "h1_governance",
+    "preview_hub_ensure",
+    "h1_watch",
+    "h1_resume"
+  ],
+  "control_plane": "cognitive_kernel_v2",
+  "deprecated_de": [
+    "server-bootstrap aus systemd-Boot",
+    "active-alpha-stable-server.service als König",
+    "Parallele daily-timer + cognitive-scheduler ohne Gates"
+  ],
+  "kernel_supremacy": {
+    "authoritative": true,
+    "doctrine_de": "Der einzig wahre Steuerungskernel — R3 Bau-Kernel, aa_scheduler, Preview Hub.",
+    "linux_mainline_de": "Ubuntu bleibt — nur Userspace-Steuerung ist autoritativ.",
+    "name_de": "Cognitive Kernel v2",
+    "supersedes_de": [
+      "Legacy daily timers",
+      "stable-server / server-bootstrap",
+      "Parallele Hub-Systemd-Könige"
+    ]
+  },
+  "legacy_plane": {
+    "block_after_decommission": true,
+    "installer": "tools/setup_linux_daily_timers.sh",
+    "superseded_by": "cognitive_kernel_v2"
+  },
+  "name_de": "Linux Runtime Unified — Cognitive Kernel v2",
+  "policies": {
+    "ai_kernel": "control/AI_KERNEL.json",
+    "build_kernel": "control/r3_build_kernel.json",
+    "cognitive_kernel": "control/cognitive_kernel_manifest.json",
+    "cursor_interface": "control/alpha_model_interface.json",
+    "kernel_boundary": "control/kernel_boundary_policy.json",
+    "operator_scope": "control/linux_operator_scope.json",
+    "operator_sovereignty": "control/operator_sovereignty_policy.json",
+    "timer_catalog": "control/linux_operator_timers.json",
+    "unified_product": "control/active_alpha_unified.json"
+  },
+  "schema_version": 1,
+  "status_spine": {
+    "builder": "analytics/preview_system_status.py",
+    "cli_commands": [
+      "status",
+      "launch-status",
+      "cognitive-status"
+    ],
+    "function": "build_preview_system_status",
+    "hub_api": "/api/system/status"
+  },
+  "surfaces": {
+    "dashboard": "run_marktanalyse_linux.sh",
+    "operator_text": "~/.local/share/r3-os/operator_latest.txt",
+    "primary": "preview_hub",
+    "primary_url": "http://127.0.0.1:17890/"
+  },
+  "v2_orchestrator": {
+    "observer_command": "ai_kernel cognitive-observe",
+    "observer_timer": "active-alpha-cognitive-observe.timer",
+    "scheduler_command": "ai_kernel cognitive-scheduler",
+    "scheduler_timer": "active-alpha-cognitive-scheduler.timer"
+  }
+}

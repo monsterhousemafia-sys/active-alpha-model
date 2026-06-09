@@ -1,0 +1,25 @@
+{
+  "generated_at_utc": "2026-06-03T20:26:31+00:00",
+  "note_de": "Wellen-Planner skaliert Summe der BUY-Notionals auf planning_cash vor T212-POST.",
+  "simulation": {
+    "cash_cap_ok": true,
+    "planning_cash_eur": 492.0,
+    "raw_buy_total_eur": 638.0,
+    "scale_factor": 0.771112,
+    "scaled_buy_total_eur": 492.0
+  },
+  "t212_sync": {
+    "alignment": {
+      "available_to_trade_eur": 34.34,
+      "cash_eur": 34.34,
+      "in_pies_eur": 0.0,
+      "ok": true,
+      "reserved_for_orders_eur": 0.0,
+      "source": "account_summary.cash.availableToTrade",
+      "total_account_value_eur": 688.6
+    },
+    "available_to_trade_eur": 34.34,
+    "planning_cash_eur": 34.34,
+    "status": "PASS"
+  }
+}

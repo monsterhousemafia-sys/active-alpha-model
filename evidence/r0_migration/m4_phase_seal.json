@@ -1,0 +1,26 @@
+{
+  "artifact_hashes": {
+    "evidence/r0_migration/hybrid_research_summary.md": "a37af3a04468003e193c9fd0fa7a053657c23977b7e48cbf5b5bdc9153ddd7cb"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M5",
+  "phase": "M4",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:07+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "optional_phase",
+        "detail": "skipped by flag",
+        "pass": true,
+        "path": null
+      }
+    ],
+    "pass": true,
+    "phase": "M4",
+    "skipped_optional": true
+  }
+}

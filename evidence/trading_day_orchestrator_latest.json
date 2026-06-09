@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "phase": "full",
+  "ok": true,
+  "skipped": false,
+  "steps": [
+    {
+      "step": "daily_mark",
+      "ok": true
+    },
+    {
+      "step": "snapshot",
+      "ok": true
+    },
+    {
+      "step": "checklist",
+      "ok": true
+    },
+    {
+      "step": "warnings",
+      "ok": false
+    },
+    {
+      "step": "h1_status",
+      "ok": true
+    }
+  ],
+  "cockpit": {
+    "schema_version": 2,
+    "generated_at_utc": "2026-06-06T11:48:47+00:00",
+    "date_de": "Saturday 06.06.2026",
+    "phase": "PRE_GO_LIVE",
+    "orchestrator_phase": "full",
+    "traffic": "ROT",
+    "next_step_de": "② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen",
+    "warnings": {
+      "count": 7,
+      "critical_count": 3,
+      "headline_de": "⚠ 3 kritisch — vor US-Handel beheben: Kurs-Abdeckung zu niedrig"
+    },
+    "quote_coverage_de": "5/12 Kurse",
+    "rebalance_due": true,
+    "h1": {
+      "status": "MISSING",
+      "progress_pct": 0,
+      "sealed": false,
+      "banner_de": "H1: MISSING — ai_kernel h1-status"
+    },
+    "evolution": {
+      "stage_id": "sportwagen",
+      "next_stage_id": "sport_plus",
+      "live_fills_mature": 0,
+      "fills_to_next": 3
+    },
+    "learning_message_de": "Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+    "checklist_items": [
+      "1. Dashboard «Aktualisieren» — Live-Kurse prüfen (Ziel 14/14)",
+      "2. warnings grün prüfen: python3 tools/ai_kernel.py warnings",
+      "3. ② Rebalance — Order-Welle nur mit GUI bestätigen (kein Autotrading)",
+      "4. Nach Orders: learn läuft 22:20 automatisch (oder jetzt: ai_kernel learn)",
+      "5. Ziel Sport Plus: ≥3 reife Live-Fills für Slippage-Kalibrierung",
+      "6. H1-Backtest: MISSING — ai_kernel h1-status"
+    ],
+    "steps": [
+      {
+        "step": "daily_mark",
+        "ok": true
+      },
+      {
+        "step": "snapshot",
+        "ok": true
+      },
+      {
+        "step": "checklist",
+        "ok": true
+      },
+      {
+        "step": "warnings",
+        "ok": false
+      },
+      {
+        "step": "h1_status",
+        "ok": true
+      }
+    ],
+    "snap_summary_de": "⚠ 3 kritisch — vor US-Handel beheben: Kurs-Abdeckung zu niedrig",
+    "circle_score": {
+      "schema_version": 1,
+      "generated_at_utc": "2026-06-06T11:48:47+00:00",
+      "green": 1,
+      "yellow": 1,
+      "total": 6,
+      "pct": 17,
+      "headline_de": "Kreis-Score 1/6 grün (17%)",
+      "tag": "START",
+      "summary_de": "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+      "stages": [
+        {
+          "id": "observe",
+          "label_de": "Beobachten",
+          "ok": true,
+          "partial": true,
+          "status": "gruen",
+          "detail_de": "Lernen OK · Konto OK · Kurse Wochenende/US zu — Kurse später"
+        },
+        {
+          "id": "decide",
+          "label_de": "Entscheiden",
+          "ok": false,
+          "partial": false,
+          "status": "rot",
+          "detail_de": "Warnungen 3× kritisch"
+        },
+        {
+          "id": "act",
+          "label_de": "Handeln",
+          "ok": false,
+          "partial": true,
+          "status": "gelb",
+          "detail_de": "Live-Fills reif: 0/3 · API-Scope offen"
+        },
+        {
+          "id": "learn",
+          "label_de": "Lernen",
+          "ok": false,
+          "partial": false,
+          "status": "rot",
+          "detail_de": "Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0."
+        },
+        {
+          "id": "evolve",
+          "label_de": "Evolieren",
+          "ok": false,
+          "partial": false,
+          "status": "rot",
+          "detail_de": "sportwagen → sport_plus · Auto-Apply 0"
+        },
+        {
+          "id": "seal",
+          "label_de": "H1/Seal",
+          "ok": false,
+          "partial": false,
+          "status": "rot",
+          "detail_de": "H1: MISSING — ai_kernel h1-status"
+        }
+      ],
+      "bottleneck_de": "Entscheiden: Warnungen 3× kritisch"
+    },
+    "circle_lines_de": [
+      "Kreis-Score 1/6 grün (17%)",
+      "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+      "  ✓ Beobachten: Lernen OK · Konto OK · Kurse Wochenende/US zu — Kurse später",
+      "  ✗ Entscheiden: Warnungen 3× kritisch",
+      "  ~ Handeln: Live-Fills reif: 0/3 · API-Scope offen",
+      "  ✗ Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+      "  ✗ Evolieren: sportwagen → sport_plus · Auto-Apply 0",
+      "  ✗ H1/Seal: H1: MISSING — ai_kernel h1-status",
+      "→ Engpass: Entscheiden: Warnungen 3× kritisch"
+    ],
+    "cockpit_lines_de": [
+      "Kreis-Score 1/6 grün (17%)",
+      "Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.",
+      "  ✓ Beobachten: Lernen OK · Konto OK · Kurse Wochenende/US zu — Kurse später",
+      "  ✗ Entscheiden: Warnungen 3× kritisch",
+      "  ~ Handeln: Live-Fills reif: 0/3 · API-Scope offen",
+      "  ✗ Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+      "  ✗ Evolieren: sportwagen → sport_plus · Auto-Apply 0",
+      "  ✗ H1/Seal: H1: MISSING — ai_kernel h1-status",
+      "→ Engpass: Entscheiden: Warnungen 3× kritisch",
+      "",
+      "Saturday 06.06.2026 · Phase: PRE_GO_LIVE",
+      "├── Auto: refresh ✓ · Warnungen 3× kritisch · Kurse 5/12 Kurse",
+      "├── Du: ② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen",
+      "├── H1: MISSING — ai_kernel h1-status",
+      "└── Evolution: sportwagen → sport_plus (0/3 Fills)"
+    ],
+    "warnings_doc": {
+      "schema_version": 1,
+      "generated_at_utc": "2026-06-06T11:48:47+00:00",
+      "severity": "critical",
+      "count": 7,
+      "critical_count": 3,
+      "warn_count": 3,
+      "headline_de": "⚠ 3 kritisch — vor US-Handel beheben: Kurs-Abdeckung zu niedrig",
+      "must_resolve_before_trading": true,
+      "warnings": [
+        {
+          "code": "PARTIAL_QUOTE_COVERAGE",
+          "severity": "critical",
+          "title_de": "Kurs-Abdeckung zu niedrig",
+          "detail_de": "5/12 Kurse",
+          "action_de": "Internet prüfen, dann «Aktualisieren»"
+        },
+        {
+          "code": "UNDER_INVESTED_CASH",
+          "severity": "critical",
+          "title_de": "Fast alles Cash — Modell will investiert sein",
+          "detail_de": "Cash 100 % · Exposure-Lücke 100 % · Regime RISK_ON",
+          "action_de": "Rebalance ② oder Champion-Portfolio senden — nicht manuell in iOS stückeln"
+        },
+        {
+          "code": "REBALANCE_DUE_NO_POSITIONS",
+          "severity": "critical",
+          "title_de": "Rebalance fällig — Depot leer",
+          "detail_de": "Live-Trading: Rebalance fällig (3/1 Mark-Tage).",
+          "action_de": "Schritt ② Rebalance — sonst verpasst du den Handelstag"
+        },
+        {
+          "code": "PENDING_NOT_ARMED",
+          "severity": "warn",
+          "title_de": "1 Order(s) vorgemerkt — Auto-Ausführung aus",
+          "detail_de": "1 US-Order(s) vorgemerkt — nächste Eröffnung Mon 08.06.2026 09:30 New York (Auto bei Eröffnung AUS)",
+          "action_de": "Champion-Portfolio per GUI bestätigen senden (kein Auto-Execute)"
+        },
+        {
+          "code": "AUTHORIZATION_CONFLICT",
+          "severity": "warn",
+          "title_de": "Governance: BLOCKED FOR SAFETY",
+          "detail_de": "Unsealed operational champion claim 'R5_rank_only_train5' conflicts with authoritative champion 'R3_w075_q065_noexit'",
+          "action_de": "Kein Echtgeld bis Konflikt geklärt — manuelle GUI-Orders mit Vorsicht"
+        },
+        {
+          "code": "REAL_MONEY_NOT_AUTHORIZED",
+          "severity": "info",
+          "title_de": "Echtgeld-Gate: noch nicht freigegeben",
+          "detail_de": "Echtgeld nur nach H1-Seal (experimental gate); EXE-Bestätigung pro Order-Welle.",
+          "action_de": "Go-Live-Ziel: 2026-06-05"
+        },
+        {
+          "code": "H1_NOT_SEALED_YET",
+          "severity": "warn",
+          "title_de": "H1-Profil noch nicht sealed — Lernphase",
+          "detail_de": "EXPERIMENTAL_PROFILE_UNSEALED_REAL_MONEY; DAILY_ALPHA_H1_NOT_SEALED",
+          "action_de": "Vor Go-Live H1-Backtest sealed; Orders nur mit GUI-Bestätigung"
+        }
+      ],
+      "infrastructure_open_points": []
+    }
+  },
+  "cockpit_paths": {
+    "json": "/home/machinax7/active_alpha_model/evidence/trading_day_latest.json",
+    "txt": "/home/machinax7/active_alpha_model/evidence/trading_day_latest.txt",
+    "home_txt": "/home/machinax7/.local/share/active-alpha/trading_day_latest.txt"
+  },
+  "next_step_de": "② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen"
+}

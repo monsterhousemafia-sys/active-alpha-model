@@ -1,0 +1,131 @@
+{
+  "blockers_de": [
+    "NVMe nicht gemountet — I/O langsamer (optional)",
+    "CuPy/CUDA nicht verfügbar"
+  ],
+  "gpu_ready": false,
+  "hardware": {
+    "actions": [],
+    "env_hint_de": "AA_H1_GPU_RETURNS=1 · AA_H1_UNLOAD_OLLAMA=1 für maximale GPU-Nutzung",
+    "gpu_returns": {
+      "enabled": false,
+      "reason_de": "CuPy/CUDA nicht verfügbar"
+    },
+    "ok": true,
+    "ollama_loaded": [],
+    "phase": "execute",
+    "prepared_at_utc": "2026-06-08T13:56:53+00:00",
+    "vram_policy_de": "H1-Phase execute: CPU-Returns (CuPy/CUDA nicht verfügbar)"
+  },
+  "headline_de": "H1-Prep · GPU=OFF · NVMe=nein",
+  "next_action_de": "bash tools/king_ops.sh h1-prep — GPU/VRAM prüfen",
+  "nvme": {
+    "constant_storage_active": false,
+    "constant_storage_priority": "high",
+    "data_root": null,
+    "enabled": true,
+    "env": {
+      "AA_KERNEL_STORE": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data/kernel_store",
+      "AA_NVME_DATA_ROOT": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data",
+      "AA_NVME_PRIORITY": "high",
+      "AA_SHARED_CACHE_DIR": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data/shared_cache",
+      "TMPDIR": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data/tmp"
+    },
+    "free_gb": null,
+    "migrated_dirs": [
+      {
+        "name": "validation_runs",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/validation_runs"
+      },
+      {
+        "name": "validation_runs_superseded",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/validation_runs_superseded"
+      },
+      {
+        "name": "robustness_results_trading212",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/robustness_results_trading212"
+      },
+      {
+        "name": "runs",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/runs"
+      },
+      {
+        "name": "build",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/build"
+      },
+      {
+        "name": "model_output_sp500_pit_t212",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/model_output_sp500_pit_t212"
+      }
+    ],
+    "mount": null,
+    "shared_cache": null
+  },
+  "nvme_mounted": false,
+  "ok": true,
+  "phase": "execute",
+  "prep_ready_de": false,
+  "pulse": {
+    "active_layer": "koenig",
+    "active_node": "koenig",
+    "beat": 8,
+    "benchmark_csv_ok": false,
+    "benchmark_hung": false,
+    "benchmark_over_eta": false,
+    "benchmark_running": false,
+    "gpu_returns_enabled": false,
+    "h1_sealed": false,
+    "h1_status": "COMPLETE",
+    "handoff_to": "koenig",
+    "hardware_ref": "evidence/king_hardware_latest.json",
+    "headline_de": "Takt 8 · ready · Schicht koenig → koenig · GPU-OFF",
+    "matrix_ref": "control/king_responsibility_matrix_de.md",
+    "network_ref": "control/king_network.json",
+    "next_action_de": "/ready — H1 COMPLETE; Seal optional · /predict",
+    "next_layer": "koenig",
+    "ok": true,
+    "phase": "ready",
+    "reason_de": "H1 COMPLETE — Seal optional (Policy)",
+    "schema_version": 1,
+    "source_node": "bash",
+    "synced_at_utc": "2026-06-08T13:56:53+00:00",
+    "vram_policy_de": "Phase ready: König/Cursor — Ollama preload OK (32B)"
+  },
+  "steps": [
+    {
+      "applied_env": {},
+      "message_de": "NVMe offline — bash tools/king_ops.sh nvme nach Mount",
+      "mount": null,
+      "ok": false,
+      "step": "nvme"
+    },
+    {
+      "actions": [],
+      "gpu_returns": {
+        "enabled": false,
+        "reason_de": "CuPy/CUDA nicht verfügbar"
+      },
+      "ok": true,
+      "step": "hardware",
+      "vram_policy_de": "H1-Phase execute: CPU-Returns (CuPy/CUDA nicht verfügbar)"
+    },
+    {
+      "beat": 8,
+      "ok": true,
+      "phase": "ready",
+      "step": "network_pulse"
+    }
+  ]
+}

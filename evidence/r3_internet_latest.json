@@ -1,0 +1,25 @@
+{
+  "confirmation_de": "✓ Internet OK — R3 und Active Alpha Model können rechnen",
+  "generic_ok": true,
+  "headline_de": "R3 und Active Alpha Model benötigen Internet",
+  "internet_ok": true,
+  "message_de": "Internet verfügbar",
+  "policy_ref": "control/r3_internet_requirement_policy.json",
+  "price_feed_ok": true,
+  "probes": [
+    {
+      "id": "price_feed",
+      "ok": true
+    },
+    {
+      "id": "generic",
+      "ok": true
+    }
+  ],
+  "required_for_de": [
+    "r3",
+    "active_alpha_model"
+  ],
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-09T21:46:37+00:00"
+}

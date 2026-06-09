@@ -1,0 +1,90 @@
+{
+  "blocked_profit": 0,
+  "checks": {
+    "cycle_closed": true,
+    "has_executable": true,
+    "prediction_ok": true,
+    "prediction_required": true,
+    "profit_gates_applied": true
+  },
+  "decisions_preview": [
+    {
+      "notional_eur": 69.83,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "STX"
+    },
+    {
+      "notional_eur": 65.32,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "WDC"
+    },
+    {
+      "notional_eur": 65.12,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "AMD"
+    },
+    {
+      "notional_eur": 62.41,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "INTC"
+    },
+    {
+      "notional_eur": 57.34,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "LRCX"
+    },
+    {
+      "notional_eur": 57.0,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "GOOGL"
+    },
+    {
+      "notional_eur": 53.77,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "MU"
+    },
+    {
+      "notional_eur": 54.08,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "GOOG"
+    },
+    {
+      "notional_eur": 46.71,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "ON"
+    },
+    {
+      "notional_eur": 44.46,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "CIEN"
+    },
+    {
+      "notional_eur": 43.03,
+      "sanctioned": true,
+      "steering_mode": "Gas",
+      "symbol": "TXN"
+    }
+  ],
+  "gas_count": 11,
+  "headline_de": "✓ Auf Kurs — 11 Gas · 0 Sell",
+  "on_course": true,
+  "policy_ref": "control/gas_sell_steering_policy.json",
+  "profit_target_de": "Gewinn-Ziel: Top-Signale + Gebühren-Hürde + Sell-vor-Gas — kein Garantieversprechen",
+  "schema_version": 1,
+  "sell_count": 0,
+  "steering_de": {
+    "gas": "BUY — Cash in Top-Signale (Champion priority_score)",
+    "sell": "SELL — Übergewicht abbauen, Cash für Gas freigeben"
+  },
+  "updated_at_utc": "2026-06-08T02:04:18+00:00"
+}

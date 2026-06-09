@@ -1,0 +1,32 @@
+{
+  "allowed_after_g1_approval": [
+    "generate_MOM_63_TOP12_turnover_artefacts",
+    "document_identical_comparison_logic",
+    "prepare_cost_stress_dsr_robustness_packages"
+  ],
+  "blockers": [
+    "CHALLENGER_TURNOVER_NOT_VERIFIED",
+    "CHALLENGER_RETURNS_MISSING",
+    "G1_NOT_EXTERNALLY_APPROVED"
+  ],
+  "champion_unchanged": "R0_LEGACY_ENSEMBLE",
+  "external_approval_required": "EXTERNAL_REVIEW_APPROVAL_G1_READ_ONLY_CHALLENGER_COST_EVIDENCE.md",
+  "forbidden_without_separate_approval": [
+    "shadow_monitoring",
+    "paper_monitoring",
+    "promotion",
+    "champion_change",
+    "real_money_execution",
+    "backtest_execution"
+  ],
+  "gate_eligible_variants": [
+    "R0_LEGACY_ENSEMBLE",
+    "M1_MOM_BLEND_MATCHED_CONTROLS"
+  ],
+  "generated_at_utc": "2026-06-07T20:14:02+00:00",
+  "phase": "G1_READ_ONLY_CHALLENGER_COST_EVIDENCE_PREPARATION",
+  "preparation_complete": false,
+  "schema_version": 1,
+  "status": "PREPARED_AWAITING_EXTERNAL_APPROVAL",
+  "turnover_gap": true
+}

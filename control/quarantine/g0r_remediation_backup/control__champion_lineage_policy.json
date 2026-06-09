@@ -1,0 +1,22 @@
+{
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+  "generated_at_utc": "2026-05-31T21:19:53+00:00",
+  "historical_review_baseline": {
+    "champion_at_external_seal": "R3_w075_q065_noexit",
+    "document": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+    "note": "Sealed review documents are immutable."
+  },
+  "legacy_labels": {
+    "V2_COST_STRESS_CONSTANT": "R3_w075_q065_noexit"
+  },
+  "quarantined_unsealed_claims": [
+    {
+      "classification": "UNAUTHORIZED_OR_UNSEALED_STATE",
+      "pointer": "control/quarantine/g0r_r5_unauthorized/operational_champion_r5_claim.json",
+      "variant_id": "R5_rank_only_train5"
+    }
+  ],
+  "schema_version": 1,
+  "status": "SEALED_BASELINE_R3_AUTHORITATIVE"
+}

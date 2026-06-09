@@ -1,0 +1,74 @@
+{
+  "initial_capital_eur": 500.0,
+  "cost_rate": 0.002,
+  "scale_factor": 1.0,
+  "net_investable_eur": 345.58,
+  "expected_max_cost_eur": 0.6912,
+  "tracking_error_vs_screenshot_eur": 0.0,
+  "positions": [
+    {
+      "display_name": "Occidental Petroleum",
+      "symbol_reference": "OXY",
+      "displayed_weight_pct": 17.7,
+      "normalized_weight_pct": 17.7018,
+      "paper_target_notional_eur": 88.51,
+      "visible_snapshot_value_eur": 48.18,
+      "original_target_eur": 88.51,
+      "cost_adjusted_target_eur": 88.51
+    },
+    {
+      "display_name": "Western Digital",
+      "symbol_reference": "WDC",
+      "displayed_weight_pct": 15.19,
+      "normalized_weight_pct": 15.1915,
+      "paper_target_notional_eur": 75.96,
+      "visible_snapshot_value_eur": 41.34,
+      "original_target_eur": 75.96,
+      "cost_adjusted_target_eur": 75.96
+    },
+    {
+      "display_name": "Seagate Technology",
+      "symbol_reference": "STX",
+      "displayed_weight_pct": 12.57,
+      "normalized_weight_pct": 12.5713,
+      "paper_target_notional_eur": 62.86,
+      "visible_snapshot_value_eur": 34.21,
+      "original_target_eur": 62.86,
+      "cost_adjusted_target_eur": 62.86
+    },
+    {
+      "display_name": "Intel",
+      "symbol_reference": "INTC",
+      "displayed_weight_pct": 8.39,
+      "normalized_weight_pct": 8.3908,
+      "paper_target_notional_eur": 41.95,
+      "visible_snapshot_value_eur": 22.81,
+      "original_target_eur": 41.95,
+      "cost_adjusted_target_eur": 41.95
+    },
+    {
+      "display_name": "Micron Technology",
+      "symbol_reference": "MU",
+      "displayed_weight_pct": 7.69,
+      "normalized_weight_pct": 7.6908,
+      "paper_target_notional_eur": 38.45,
+      "visible_snapshot_value_eur": 20.92,
+      "original_target_eur": 38.45,
+      "cost_adjusted_target_eur": 38.45
+    },
+    {
+      "display_name": "Ciena",
+      "symbol_reference": "CIEN",
+      "displayed_weight_pct": 7.57,
+      "normalized_weight_pct": 7.5708,
+      "paper_target_notional_eur": 37.85,
+      "visible_snapshot_value_eur": 20.65,
+      "original_target_eur": 37.85,
+      "cost_adjusted_target_eur": 37.85
+    }
+  ],
+  "excluded_observation_only": [
+    "VUSD",
+    "SNDK"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "generated_at_utc": "2026-06-01T15:00:37+00:00",
+  "trading212_provider_identity_bound_count": "0/8",
+  "entries": [
+    {
+      "user_reference_symbol": "OXY",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "VUSD",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "WDC",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "SNDK",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "STX",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "INTC",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "MU",
+      "allowed_actions": "OBSERVATION_ONLY"
+    },
+    {
+      "user_reference_symbol": "CIEN",
+      "allowed_actions": "OBSERVATION_ONLY"
+    }
+  ]
+}

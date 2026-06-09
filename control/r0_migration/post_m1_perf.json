@@ -1,0 +1,11 @@
+{
+  "status": "READY_AFTER_M1_M2_SEAL",
+  "created": "2026-06-05T13:10Z",
+  "host": "wsl",
+  "flags": [
+    "--returns-fast-path",
+    "--path-sim-checkpoint"
+  ],
+  "validate_before_use": "strategy_daily_returns.csv must match M1 reference (bit-identical floats) on a short smoke run before production use",
+  "launch": "bash tools/run_wsl_post_m1_matrix.sh"
+}

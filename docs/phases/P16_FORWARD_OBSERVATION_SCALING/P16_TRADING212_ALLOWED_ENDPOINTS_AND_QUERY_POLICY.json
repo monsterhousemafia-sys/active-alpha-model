@@ -1,0 +1,16 @@
+{
+  "allowed_get_paths": [
+    "/equity/account/cash",
+    "/equity/account/summary",
+    "/equity/metadata/exchanges",
+    "/equity/metadata/instruments",
+    "/equity/positions"
+  ],
+  "query_policy": {
+    "/equity/account/cash": [],
+    "/equity/account/summary": [],
+    "/equity/metadata/exchanges": [],
+    "/equity/metadata/instruments": [],
+    "/equity/positions": []
+  }
+}

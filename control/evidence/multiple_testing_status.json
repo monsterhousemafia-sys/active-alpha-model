@@ -1,0 +1,12 @@
+{
+  "MULTIPLE_TESTING_EVIDENCE": {
+    "detail": "challenger returns missing",
+    "pass": false,
+    "status": "NOT_EVALUABLE"
+  },
+  "PBO_BLOCKER": "INSUFFICIENT_CANDIDATE_MATRIX_FOR_PBO",
+  "PBO_STATUS": "NOT_EVALUABLE",
+  "generated_at_utc": "2026-06-07T20:14:01+00:00",
+  "schema_version": 2,
+  "tested_variant_count": 5
+}

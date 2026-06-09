@@ -1,0 +1,68 @@
+{
+  "all_predecessors_verified": true,
+  "highest_locally_verified_phase": "P13_CAPITAL_SCALING_READINESS_AND_DISABLED_BROKER_ADAPTER",
+  "phases": [
+    {
+      "execution_report": "outgoing_cursor_observation/p10_research_evidence_integration/CURSOR_P10_EXECUTION_REPORT.md",
+      "execution_report_sha256": "d3993e1d9314747b5ff9c0d33254d6bad11461315d634f4cf18a709eac5f378d",
+      "hash_manifest": "outgoing_cursor_observation/p10_research_evidence_integration/CURSOR_P10_HASH_MANIFEST.json",
+      "hash_manifest_sha256": "74ad940cd859bbde4bc18492438aab0abd36c8c877ab4daa49cc6f239d071a13",
+      "label": "P10",
+      "output_folder": "p10_research_evidence_integration",
+      "phase_id": "P10_RESEARCH_EVIDENCE_INTEGRATION_AND_STRATEGY_IDENTITY_RESOLUTION",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "execution_report": "outgoing_cursor_observation/p11_statistical_research_validation/CURSOR_P11_EXECUTION_REPORT.md",
+      "execution_report_sha256": "d0d0f4269e0c174a3295143e9a8503f374f78e1646cf481e42915ae0c6b1a579",
+      "hash_manifest": "outgoing_cursor_observation/p11_statistical_research_validation/CURSOR_P11_HASH_MANIFEST.json",
+      "hash_manifest_sha256": "74781be7be82bf73a568d98228a011c8fdbeef270fb6c050e14b30efa0fd7185",
+      "label": "P11",
+      "output_folder": "p11_statistical_research_validation",
+      "phase_id": "P11_COST_STRESS_AND_STATISTICAL_RESEARCH_VALIDATION",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "execution_report": "outgoing_cursor_observation/p12a_online_market_data_ingestion/CURSOR_P12A_EXECUTION_REPORT.md",
+      "execution_report_sha256": "85fa29180dfd22737f41531620bc322126b2238683cb28e0f689f5639ff2f661",
+      "hash_manifest": "outgoing_cursor_observation/p12a_online_market_data_ingestion/CURSOR_P12A_HASH_MANIFEST.json",
+      "hash_manifest_sha256": "82d22ba0dffdecf507e42a7df68c887ed0718e07de71ed09d0806099d2106be9",
+      "label": "P12A",
+      "output_folder": "p12a_online_market_data_ingestion",
+      "phase_id": "P12A_READ_ONLY_ONLINE_MARKET_DATA_INGESTION",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "execution_report": "outgoing_cursor_observation/p12b_virtual_execution_engine/CURSOR_P12B_EXECUTION_REPORT.md",
+      "execution_report_sha256": "9ddecbfeb2e51a5a8bda6f1771c4d8ee6c14f42c87cfa97b42e53f05498988a4",
+      "hash_manifest": "outgoing_cursor_observation/p12b_virtual_execution_engine/CURSOR_P12B_HASH_MANIFEST.json",
+      "hash_manifest_sha256": "ac5aef9298cacbc3bae9760d933f2c9d5532eedfa3ca895c1f5f4c4026a45c10",
+      "label": "P12B",
+      "output_folder": "p12b_virtual_execution_engine",
+      "phase_id": "P12B_VIRTUAL_EXECUTION_AND_PAPER_PORTFOLIO_ENGINE",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "execution_report": "outgoing_cursor_observation/p12c_forward_paper_trading/CURSOR_P12C_EXECUTION_REPORT.md",
+      "execution_report_sha256": "df8564d7b1b9db45f6842ebd8434398b7f98a843c6ec550a04e1405ed6ecde4c",
+      "hash_manifest": "outgoing_cursor_observation/p12c_forward_paper_trading/CURSOR_P12C_HASH_MANIFEST.json",
+      "hash_manifest_sha256": "8ac01b0a8b6f1e5f16884c7df52c4fd639f9677034294d781c07db15d746de19",
+      "label": "P12C",
+      "output_folder": "p12c_forward_paper_trading",
+      "phase_id": "P12C_PROSPECTIVE_FORWARD_PAPER_TRADING_EVALUATION",
+      "verification_status": "VERIFIED"
+    },
+    {
+      "execution_report": "outgoing_cursor_observation/p13_real_money_readiness_disabled_broker/CURSOR_P13_EXECUTION_REPORT.md",
+      "execution_report_sha256": "681636a231a53fc48d42db36497bd208eb227870e6acdd2e47148e545c9708f7",
+      "hash_manifest": "outgoing_cursor_observation/p13_real_money_readiness_disabled_broker/CURSOR_P13_HASH_MANIFEST.json",
+      "hash_manifest_sha256": "ca45a3d1d1d658817ae707695068168e181f5c15fe349cfd4ab587cb0edfd3ae",
+      "label": "P13",
+      "output_folder": "p13_real_money_readiness_disabled_broker",
+      "phase_id": "P13_CAPITAL_SCALING_READINESS_AND_DISABLED_BROKER_ADAPTER",
+      "verification_status": "VERIFIED"
+    }
+  ],
+  "previous_pass_phases_reset": false,
+  "routing_decision": "P14_PAPER_FORWARD_500_EUR_WITH_TRADING212_DEMO_READONLY_OBSERVATION"
+}

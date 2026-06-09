@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "mode_de": "Lokaler Browser — Oberfläche auf 127.0.0.1, Prognose-Daten direkt aus dem Internet",
+  "internet_first": true,
+  "price_source": "internet",
+  "session_env": {
+    "AA_PRICE_DATA_SOURCE": "internet"
+  },
+  "sources_de": [
+    "yfinance — Tages-OHLCV für Signal/Prognose",
+    "yfinance — Live-Quotes und FX",
+    "Sektor-Referenz — yfinance (bei vollem Ingest)"
+  ],
+  "session_autostart_ingest": true,
+  "fast_ingest_on_hub_open": true,
+  "ingest_timeout_s": 120,
+  "safety_de": "Nur Marktdaten — keine Orders, kein Champion-Wechsel"
+}

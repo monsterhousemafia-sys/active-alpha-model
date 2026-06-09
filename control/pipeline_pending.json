@@ -1,0 +1,24 @@
+{
+  "attempt_count": 0,
+  "blocked_reason": "",
+  "created_at_utc": "",
+  "created_from_phase": "",
+  "details": {
+    "batch_busy": false,
+    "champion_evidence_remediation": {
+      "followup": "External review of CHAMPION_EVIDENCE_GOVERNANCE_REMEDIATION_A_THROUGH_I; champion unchanged.",
+      "review_zip": "codex_champion_evidence_remediation_review.zip",
+      "status": "AWAITING_EXTERNAL_REVIEW"
+    },
+    "m1_complete": true
+  },
+  "followup_prompt": "Champion evidence Phases A–I submitted for external review (codex_champion_evidence_remediation_review.zip). Champion unchanged (R3). Await seal before any champion-change discussion.",
+  "has_work": false,
+  "last_attempt_at_utc": "",
+  "pending_phase": "",
+  "reason": "",
+  "requires_preflight": true,
+  "schema_version": 1,
+  "status": "IDLE",
+  "updated_at_utc": "2026-06-03T20:30:24+00:00"
+}

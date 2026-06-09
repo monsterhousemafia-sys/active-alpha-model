@@ -1,0 +1,39 @@
+{
+  "autostart": {
+    "autostart_entry": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+    "community_stealth": true,
+    "delay_sec": 28,
+    "message_de": "Stealth-Autostart in 28s — Hub-only, Hidden (xdg-user-session.desktop)",
+    "ok": true,
+    "systemd": {
+      "enabled": true,
+      "error_de": null,
+      "ok": true,
+      "unit_name": "xdg-user-session.service",
+      "unit_path": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+    }
+  },
+  "headline_de": "Linux-Community-Stealth installiert",
+  "message_de": "Login: xdg-user-session.desktop (Hidden) · Hub-only · systemd=xdg-user-session.service",
+  "ok": true,
+  "removed_legacy": [],
+  "scan": {
+    "autostart_installed": true,
+    "autostart_path": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+    "enabled": true,
+    "generic_name": true,
+    "headline_de": "Community-Stealth aktiv — Hub im Hintergrund",
+    "hidden_from_menus": true,
+    "legacy_removed": true,
+    "no_display": true,
+    "ok": true,
+    "systemd_unit": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+  },
+  "systemd": {
+    "enabled": true,
+    "error_de": null,
+    "ok": true,
+    "unit_name": "xdg-user-session.service",
+    "unit_path": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+  }
+}

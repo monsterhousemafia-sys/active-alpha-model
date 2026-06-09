@@ -1,0 +1,35 @@
+{
+  "observation_start_utc": "AUTO_SET_ON_FIRST_FORWARD_RUN",
+  "minimum_observation_duration_hours": 24,
+  "minimum_valid_market_observation_count": 10,
+  "minimum_independent_portfolio_marks": 3,
+  "minimum_independent_signal_or_rebalance_events": 1,
+  "minimum_data_quality_pass_rate": 0.5,
+  "maximum_feed_staleness_minutes": 1440,
+  "benchmark_definition": "CASH_EUR",
+  "maximum_paper_drawdown_for_scaling_review": 0.25,
+  "maximum_cost_ratio_for_scaling_review": 0.05,
+  "minimum_reconciliation_status": "PASS",
+  "criteria_for_pausing_runtime": [
+    "data_quality_gate_fail",
+    "forward_feed_unavailable",
+    "kill_switch_active"
+  ],
+  "criteria_for_technical_scaling_only": [
+    "observation_count_below_minimum",
+    "observation_duration_below_minimum"
+  ],
+  "criteria_for_performance_backed_virtual_scaling": [
+    "minimum_observation_duration_met",
+    "minimum_valid_market_observation_count_met",
+    "data_quality_pass_rate_met",
+    "reconciliation_pass"
+  ],
+  "criteria_for_future_real_money_dossier_readiness": [
+    "forward_observation_window_completed",
+    "virtual_scaling_evaluation_completed",
+    "explicit_human_decision_gate"
+  ],
+  "real_money_decision_authorized_in_p16": false,
+  "paper_capital_scaling": "SIMULATION_ONLY"
+}

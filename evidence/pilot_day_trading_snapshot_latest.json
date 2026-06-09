@@ -1,0 +1,461 @@
+{
+  "broker": {
+    "cash_breakdown": {},
+    "cash_eur": null,
+    "last_sync_utc": null,
+    "positions": [],
+    "positions_count": 0,
+    "status": "CONNECTION_FAILED_RETRY_AVAILABLE"
+  },
+  "deferred_process": {
+    "executed": 0,
+    "expired": 0,
+    "message_de": "Orders nur über R3 (Order-Desk / Cockpit mit Bestätigung). Active Alpha Model liefert nur Pläne — Quelle «DEFERRED_INTENT» ist nicht erlaubt.",
+    "mode": "r3_order_surface_required",
+    "processed": 0,
+    "skipped": [
+      "R3_ORDER_SURFACE_REQUIRED"
+    ]
+  },
+  "deferred_summary": {
+    "next_open_de": "Wed 10.06.2026 09:30 New York",
+    "pending": [],
+    "pending_count": 0,
+    "policy": {
+      "auto_capture": true,
+      "auto_execute": true,
+      "enabled": true,
+      "user_armed": false
+    },
+    "status_de": "Keine vorgemerkte Order — nächste US-Eröffnung Wed 10.06.2026 09:30 New York",
+    "us_session_open": false
+  },
+  "enqueue_result": null,
+  "generated_at_utc": "2026-06-09T20:28:45+00:00",
+  "health": {
+    "blocks_execute": true,
+    "broker_source": null,
+    "errors_de": [
+      "T212-Broker/Cash fehlt",
+      "Reeval: NOT_EVALUABLE"
+    ],
+    "ok": false,
+    "plan_pipeline_synced": null,
+    "plan_run_id": null,
+    "plan_safety": {
+      "blocks_execute": false,
+      "buy_rows": 11,
+      "errors_de": [],
+      "investable_eur": 678.52,
+      "max_single_buy_pct": 0.12,
+      "ok": true,
+      "warnings_de": []
+    },
+    "playbook_action": "ENQUEUE_OPEN",
+    "warnings_de": [
+      "plan:aus_evidence",
+      "Plan ohne updated_at_utc"
+    ]
+  },
+  "live_trading_ops": {
+    "daily_mark": {
+      "reason": "ALREADY_MARKED_TODAY",
+      "recorded": false,
+      "today": "2026-06-09"
+    },
+    "generated_at_utc": "2026-06-09T20:28:44+00:00",
+    "live_outcome_sync": {
+      "added_from_submitted": 0,
+      "generated_at_utc": "2026-06-09T20:28:44+00:00",
+      "history_sync": {
+        "observed_at_utc": "2026-06-09T20:28:44+00:00",
+        "status": "EMPTY",
+        "trades": [],
+        "verified": true
+      },
+      "ledger_counts": {
+        "last_feedback_update_utc": "2026-06-09T18:48:14+00:00",
+        "mature_outcomes": 73350,
+        "pending_predictions": 150,
+        "stored_predictions": 73500
+      },
+      "live_rows_total": 0,
+      "matured_live": 0,
+      "message_de": "Live-Fills -> Ledger: +0 neu, 0 reif, 0 LIVE_T212 gesamt.",
+      "ok": true,
+      "schema_version": 1
+    },
+    "message_de": "Sync OK — Mark-Tag war heute schon gezählt (6/1). Konto: 0.00 €. · Sektor-Refresh: Universum=nein, yfinance=1, Champion 14/14",
+    "mode": "live_trading",
+    "ok": false,
+    "rebalance": {
+      "enqueue": {
+        "enqueued": 0,
+        "message_de": "0 Walk-Forward-Order(s) vorgemerkt.",
+        "mode": "deferred_walkforward",
+        "ok": false,
+        "results": []
+      },
+      "message_de": "Rebalance fällig — 0 Verkauf(e), 0 Kauf(e) vorgemerkt (US-Eröffnung / «Order ausführen»).",
+      "mode": "live_enqueue",
+      "ok": false,
+      "orders_planned": 0,
+      "rebalance_status": {
+        "days_remaining": 0,
+        "is_due": true,
+        "last_mark_date": "2026-06-09",
+        "last_rebalance_date": "2026-06-02",
+        "rebalance_every_trading_days": 1,
+        "recommendation": "REBALANCE_DUE",
+        "recorded_trading_days_since_rebalance": 6,
+        "summary_de": "Live-Trading: Rebalance fällig (6/1 Mark-Tage)."
+      }
+    },
+    "rebalance_status": {
+      "days_remaining": 0,
+      "is_due": true,
+      "last_mark_date": "2026-06-09",
+      "last_rebalance_date": "2026-06-02",
+      "rebalance_every_trading_days": 1,
+      "recommendation": "REBALANCE_DUE",
+      "recorded_trading_days_since_rebalance": 6,
+      "summary_de": "Live-Trading: Rebalance fällig (6/1 Mark-Tage)."
+    },
+    "sector_refresh": {
+      "champion_coverage": {
+        "mapped_count": 14,
+        "ok": true,
+        "symbol_count": 14,
+        "symbols": [
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "STX"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "WDC"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "SNDK"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "INTC"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "CIEN"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Communication",
+            "ticker": "GOOGL"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Communication",
+            "ticker": "GOOG"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "AMD"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Industrials",
+            "ticker": "CAT"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "ON"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "MU"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Industrials",
+            "ticker": "VRT"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Technology",
+            "ticker": "TXN"
+          },
+          {
+            "is_unknown": false,
+            "sector_coarse": "Energy",
+            "ticker": "OXY"
+          }
+        ],
+        "unknown_count": 0,
+        "unknown_tickers": []
+      },
+      "message_de": "Sektor-Refresh: Universum=nein, yfinance=1, Champion 14/14",
+      "refreshed": true,
+      "status": {
+        "champion_coverage": {
+          "mapped_count": 14,
+          "ok": true,
+          "symbol_count": 14,
+          "symbols": [
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "STX"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "WDC"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "SNDK"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "INTC"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "CIEN"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Communication",
+              "ticker": "GOOGL"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Communication",
+              "ticker": "GOOG"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "AMD"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Industrials",
+              "ticker": "CAT"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "ON"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "MU"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Industrials",
+              "ticker": "VRT"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Technology",
+              "ticker": "TXN"
+            },
+            {
+              "is_unknown": false,
+              "sector_coarse": "Energy",
+              "ticker": "OXY"
+            }
+          ],
+          "unknown_count": 0,
+          "unknown_tickers": []
+        },
+        "message_de": "Sektor-Refresh: Universum=nein, yfinance=1, Champion 14/14",
+        "refreshed": true,
+        "run_ticker_count": 510,
+        "schema_version": 1,
+        "status": "OK",
+        "still_unknown": [
+          "BHI",
+          "COV",
+          "DNR",
+          "GHC",
+          "GR"
+        ],
+        "summary_de": "Sektor-Refresh: Universum=nein, yfinance=1, Champion 14/14",
+        "universe_refreshed": false,
+        "yfinance": {
+          "added": 0,
+          "as_of_utc": "2026-06-09T20:28:43+00:00",
+          "cache_hits": 5,
+          "cache_path": "/home/machinax7/active_alpha_model/sector_yfinance_cache.json",
+          "failures": [],
+          "network_fetches": 0,
+          "path": "/home/machinax7/active_alpha_model/sector_reference.csv",
+          "requested": 5,
+          "resolved_records": 1,
+          "row_count": 506,
+          "updated": 1
+        }
+      },
+      "still_unknown": [
+        "BHI",
+        "COV",
+        "DNR",
+        "GHC",
+        "GR"
+      ],
+      "universe_logs": [],
+      "universe_refreshed": false,
+      "yfinance": {
+        "cache_hits": 5,
+        "cache_path": "/home/machinax7/active_alpha_model/sector_yfinance_cache.json",
+        "failures": [],
+        "network_fetches": 0,
+        "requested": 5,
+        "resolved_records": 1
+      },
+      "yfinance_update": {
+        "added": 0,
+        "as_of_utc": "2026-06-09T20:28:43+00:00",
+        "path": "/home/machinax7/active_alpha_model/sector_reference.csv",
+        "row_count": 506,
+        "updated": 1
+      }
+    },
+    "summary_de": "Rebalance fällig — 0 Verkauf(e), 0 Kauf(e) vorgemerkt (US-Eröffnung / «Order ausführen»).",
+    "sync": {
+      "broker": {
+        "cash_eur": null,
+        "credentials_configured": true,
+        "error": "⏱ Bitte 5 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pro Minute.",
+        "positions": []
+      },
+      "quote_snapshot": {
+        "_quote_gate_ok": true,
+        "_quote_gate_reason": "",
+        "_us_session_open": false,
+        "executable_prices_eur": {},
+        "freshness": {
+          "reason": "No module named 'research'",
+          "status": "ERROR"
+        }
+      }
+    },
+    "sync_ok": false
+  },
+  "plan_pipeline_run_id": null,
+  "plan_ref": "evidence/pilot_investment_plan_latest.json",
+  "playbook": {
+    "deferred_execution_allowed": false,
+    "deferred_pending": 0,
+    "generated_at_utc": "2026-06-09T20:28:45+00:00",
+    "headline_de": "US-Session zu → Für Eröffnung vormerken",
+    "next_action": "ENQUEUE_OPEN",
+    "pause_new_buys": false,
+    "plan_safety": {
+      "blocks_execute": false,
+      "buy_rows": 11,
+      "errors_de": [],
+      "investable_eur": 678.52,
+      "max_single_buy_pct": 0.12,
+      "ok": true,
+      "warnings_de": []
+    },
+    "playbook_steps": [
+      "Session zu — «Order ausführen» vormerkt alle 11 Modell-Allokationen für Eröffnung.",
+      "T212-Kosten (Schätzung): FX ~0.15% ≈ 0.09 € · Reservierung +0% · All-in ~32288043.53 €"
+    ],
+    "policy": {
+      "armed": false,
+      "execution_window_mode": "full_session"
+    },
+    "primary_symbol": "MU",
+    "readiness": {
+      "api_execute_configured": false,
+      "api_execute_scope_proven": false,
+      "blockers": [
+        "EXECUTION_API_NOT_CONFIGURED",
+        "US_REGULAR_SESSION_CLOSED",
+        "CASH_NOT_VERIFIED",
+        "REVIEW_MODE_BLOCKS_LIVE_ORDERS"
+      ],
+      "cash_eur": null,
+      "cash_source": "readonly_sync",
+      "ok": false,
+      "session": {
+        "now_ny": "2026-06-09T16:28:45.008788-04:00",
+        "open": false,
+        "phase": "CLOSED",
+        "reason_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden."
+      },
+      "status_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden.\nHinweis: Ausserhalb US-Regular meldet T212 oft «Insufficient funds» — obwohl API «Orders ausführen» hat. Ihr Konto: keine Extended-Hours.\nAlternative: In der App «Order ausführen» zum Vormerken oder «Automatisch bei US-Eröffnung» aktivieren.\nAPI mit Order-Rechten in der App speichern.\nKontostand nicht verifiziert — «Aktualisieren».",
+      "us_session_open": false,
+      "warnings": []
+    },
+    "readiness_ok": false,
+    "reevaluation_urgency": "NONE",
+    "session": {
+      "detail_phase": "CLOSED",
+      "minutes_since_open": 0,
+      "minutes_until_close": 0,
+      "now_ny": "2026-06-09T16:28:45.008350-04:00",
+      "now_ny_hm": "16:28 NY",
+      "open": false,
+      "phase": "CLOSED",
+      "reason_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden."
+    },
+    "status": "OK",
+    "summary_de": "US-Session zu → Für Eröffnung vormerken · NY 16:28 NY · Kein Broker-Sync — zuerst «Aktualisieren». · Session zu — «Order ausführen» vormerkt alle 11 Modell-Allokationen für Eröffnung.",
+    "trade_required": false
+  },
+  "readiness": {
+    "api_execute_configured": false,
+    "api_execute_scope_proven": false,
+    "blockers": [
+      "EXECUTION_API_NOT_CONFIGURED",
+      "US_REGULAR_SESSION_CLOSED",
+      "CASH_NOT_VERIFIED",
+      "REVIEW_MODE_BLOCKS_LIVE_ORDERS"
+    ],
+    "cash_eur": null,
+    "cash_source": "readonly_sync",
+    "ok": false,
+    "session": {
+      "now_ny": "2026-06-09T16:28:44.984140-04:00",
+      "open": false,
+      "phase": "CLOSED",
+      "reason_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden."
+    },
+    "status_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden.\nHinweis: Ausserhalb US-Regular meldet T212 oft «Insufficient funds» — obwohl API «Orders ausführen» hat. Ihr Konto: keine Extended-Hours.\nAlternative: In der App «Order ausführen» zum Vormerken oder «Automatisch bei US-Eröffnung» aktivieren.\nAPI mit Order-Rechten in der App speichern.\nKontostand nicht verifiziert — «Aktualisieren».",
+    "us_session_open": false,
+    "warnings": []
+  },
+  "reevaluation": {
+    "generated_at_utc": "2026-06-09T20:28:42+00:00",
+    "status": "NOT_EVALUABLE",
+    "summary_de": "Kein Broker-Sync — zuerst «Aktualisieren».",
+    "trade_required": false,
+    "urgency": "NONE",
+    "us_session_open": false
+  },
+  "session": {
+    "now_ny": "2026-06-09T16:28:42.268564-04:00",
+    "open": false,
+    "phase": "CLOSED",
+    "reason_de": "US-Regular-Session geschlossen (Mo–Fr 09:30–16:00 New York). Orders können für die Eröffnung vorgemerkt werden."
+  }
+}

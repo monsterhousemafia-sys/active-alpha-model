@@ -1,0 +1,75 @@
+{
+  "active_assignments": [],
+  "assurance_checks": [
+    {
+      "detail_de": "1 Compute-Worker online (Heartbeat < 900s)",
+      "id": "workers_online",
+      "ok": true
+    },
+    {
+      "detail_de": "0 aktiv übernommen · 0 kürzlich fertig",
+      "id": "tasks_accepted",
+      "ok": false
+    },
+    {
+      "detail_de": "Alle aktiven Tasks haben online Worker",
+      "id": "assignee_online",
+      "ok": true
+    },
+    {
+      "detail_de": "Keine überfälligen aktiven Tasks",
+      "id": "not_stale",
+      "ok": true
+    },
+    {
+      "detail_de": "0 Prep-Chunks auf König · 0 aktiv",
+      "id": "h1_prep_delivery",
+      "ok": true
+    }
+  ],
+  "completed_recent": [],
+  "headline_de": "Keine Übernahme — 51 pending · 1 Worker online",
+  "next_step_de": "Benchmark-Merge: /h1-benchmark --wait",
+  "ok": false,
+  "pending_by_kind": {
+    "backend_preview": 1,
+    "compute_pulse": 4,
+    "h1_naive_prep_chunk": 11,
+    "h1_path_chunk": 32,
+    "hub_verify": 2,
+    "snapshot_refresh": 1
+  },
+  "pending_total": 51,
+  "prep_artifacts": {
+    "count": 0,
+    "files": [],
+    "ok": true,
+    "updated_at_utc": "2026-06-08T14:58:59+00:00"
+  },
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T14:58:59+00:00",
+  "utilization": {
+    "active_cpus": 0,
+    "active_tasks": 0,
+    "cpu_seconds_total": 0.0,
+    "headline_de": "32 CPUs · Warte auf Worker-Jobs · 0 Jobs erledigt",
+    "measurement": "cpu_seconds",
+    "pending_tasks": 51,
+    "tasks_completed_ok": 0,
+    "total_cpus": 32,
+    "utilization_pct": 0,
+    "workers_online": 1
+  },
+  "workers": [
+    {
+      "active_tasks": 0,
+      "completed_ok": 0,
+      "cpus": 32,
+      "hostname": "machinax7-X470-AORUS-GAMING-7-WIFI",
+      "last_seen_age_s": 16.6,
+      "last_seen_utc": "2026-06-08T14:58:43+00:00",
+      "online": true,
+      "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b"
+    }
+  ]
+}

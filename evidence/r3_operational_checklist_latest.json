@@ -1,0 +1,457 @@
+{
+  "blockers_de": [],
+  "checklist_ok": true,
+  "critical_fail": 0,
+  "headline_de": "R3 Checkliste OK — 1 Hinweis(e)",
+  "items_ok": 36,
+  "items_total": 37,
+  "next_de": "Betrieb OK — http://127.0.0.1:17890/r3",
+  "partial_count": 1,
+  "partial_de": [
+    "Einzel-Verkauf — klickbar, Bestätigung, T212"
+  ],
+  "policy_ref": "control/r3_operational_checklist.json",
+  "schema_version": 1,
+  "sections": [
+    {
+      "id": "safety",
+      "items": [
+        {
+          "detail_de": "{'auto_research_enabled': False, 'auto_promote_paper_enabled': False, 'auto_promote_signal_enabled': False, 'auto_execute_real_money_enabled': False}",
+          "fail_closed": true,
+          "id": "safety_flags_off",
+          "label_de": "Auto-Flags aus (research, promote, execute)",
+          "ok": true,
+          "section_id": "safety",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "king_verify OK",
+          "fail_closed": true,
+          "id": "governance_locked",
+          "label_de": "Champion gesperrt — kein Auto-Promote",
+          "ok": true,
+          "section_id": "safety",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Orders nur über R3 — Active Alpha Model führt keine Orders aus",
+          "fail_closed": true,
+          "id": "orders_only_r3",
+          "label_de": "Orders nur über R3 — Engine/Scheduler blockiert",
+          "ok": true,
+          "section_id": "safety",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "live_submit=False",
+          "fail_closed": true,
+          "id": "dry_run_guard",
+          "label_de": "Live-Submit nur nach GUI-Bestätigung + Gates",
+          "ok": true,
+          "section_id": "safety",
+          "status": "PASS",
+          "tier": "critical"
+        }
+      ],
+      "items_ok": 4,
+      "items_total": 4,
+      "tier": "critical",
+      "title_de": "A — Safety & Governance (Active Alpha)"
+    },
+    {
+      "id": "runtime",
+      "items": [
+        {
+          "detail_de": "127.0.0.1:17890",
+          "fail_closed": false,
+          "id": "hub_local",
+          "label_de": "Preview-Hub auf 127.0.0.1:17890",
+          "ok": true,
+          "section_id": "runtime",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "/r3",
+          "fail_closed": false,
+          "id": "r3_surface",
+          "label_de": "Oberfläche /r3 erreichbar",
+          "ok": true,
+          "section_id": "runtime",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "11/11",
+          "fail_closed": false,
+          "id": "autostart",
+          "label_de": "Login-Autostart + Desktop R3",
+          "ok": true,
+          "section_id": "runtime",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "OK",
+          "fail_closed": false,
+          "id": "stack_ok",
+          "label_de": "Stack-Integrität (Hub, Mirror, Cache)",
+          "ok": true,
+          "section_id": "runtime",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Besitz OK (0 korrigiert)",
+          "fail_closed": false,
+          "id": "home_ownership",
+          "label_de": "~/.local Besitz korrekt (kein root)",
+          "ok": true,
+          "section_id": "runtime",
+          "status": "PASS",
+          "tier": "critical"
+        }
+      ],
+      "items_ok": 5,
+      "items_total": 5,
+      "tier": "critical",
+      "title_de": "B — Laufzeit & Autostart"
+    },
+    {
+      "id": "cycle",
+      "items": [
+        {
+          "detail_de": "✓ Internet OK — R3 und Active Alpha Model können rechnen",
+          "fail_closed": false,
+          "id": "internet",
+          "label_de": "1 Internet — Probe OK",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "T212 · 675 €",
+          "fail_closed": false,
+          "id": "account",
+          "label_de": "2 Konto — T212-Bond verbunden, cash_eur",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "2026-06-05",
+          "fail_closed": false,
+          "id": "ingest",
+          "label_de": "3 Kurse — Browser-Ingest / price_latest",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Signal 2026-06-05",
+          "fail_closed": false,
+          "id": "engine",
+          "label_de": "4 Modell — Background-Engine Tick",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "11 Zeilen · 0 Pos · 641 € · live",
+          "fail_closed": false,
+          "id": "plan",
+          "label_de": "5 Plan — investable_eur + allocations",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "2026-06-05",
+          "fail_closed": false,
+          "id": "display",
+          "label_de": "6 Anzeige — R3 Mirror read-only",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Nur R3 — GUI-Bestätigung → T212",
+          "fail_closed": false,
+          "id": "orders",
+          "label_de": "7 Orders — Policy AUTHORITATIVE, nur R3-GUI",
+          "ok": true,
+          "section_id": "cycle",
+          "status": "PASS",
+          "tier": "critical"
+        }
+      ],
+      "items_ok": 7,
+      "items_total": 7,
+      "tier": "critical",
+      "title_de": "C — Trading-Kreislauf (7 Stufen)"
+    },
+    {
+      "id": "mirror_ui",
+      "items": [
+        {
+          "detail_de": "4 API-Metriken · Operator 86%",
+          "fail_closed": false,
+          "id": "metrics_traceable",
+          "label_de": "Faktenzeilen mit evidence_ref + fields_de",
+          "ok": true,
+          "section_id": "mirror_ui",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "investable=640.93",
+          "fail_closed": false,
+          "id": "plan_panel",
+          "label_de": "Plan-Panel — investable_eur aus Plan-Evidence",
+          "ok": true,
+          "section_id": "mirror_ui",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Verkauf+Kauf UI · sell=0 buy=11",
+          "fail_closed": false,
+          "id": "t212_panel",
+          "label_de": "T212-Panel — Verkauf + Kauf getrennt",
+          "ok": true,
+          "section_id": "mirror_ui",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Mirror-State OK",
+          "fail_closed": false,
+          "id": "status_compact",
+          "label_de": "Status: T212 · Paket · Kurse (Zahlen)",
+          "ok": true,
+          "section_id": "mirror_ui",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "poll=30000ms soft=True",
+          "fail_closed": false,
+          "id": "poll_refresh",
+          "label_de": "Live-Poll /api/r3/mirror ohne Seitenabbruch",
+          "ok": true,
+          "section_id": "mirror_ui",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Flüssig — bestätigt",
+          "fail_closed": true,
+          "id": "upgrade_confirm",
+          "label_de": "Runtime-Upgrade nur Übernehmen/Später",
+          "ok": true,
+          "section_id": "mirror_ui",
+          "status": "PASS",
+          "tier": "critical"
+        }
+      ],
+      "items_ok": 6,
+      "items_total": 6,
+      "tier": "critical",
+      "title_de": "D — Anzeige /r3 (Zahlen aus Evidence)"
+    },
+    {
+      "id": "trading",
+      "items": [
+        {
+          "detail_de": "11 BUY-Zeilen",
+          "fail_closed": false,
+          "id": "buy_single",
+          "label_de": "Einzel-Kauf — klickbar, Bestätigung, T212",
+          "ok": true,
+          "section_id": "trading",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "UI+Merge OK — 0 SELL (kein Reeval-Verkauf)",
+          "fail_closed": false,
+          "id": "sell_single",
+          "label_de": "Einzel-Verkauf — klickbar, Bestätigung, T212",
+          "ok": true,
+          "section_id": "trading",
+          "status": "PARTIAL",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Paket bereit — 641 € · 11 Zeilen",
+          "fail_closed": false,
+          "id": "initial_package",
+          "label_de": "Gesamtpaket Kauf — nur BUY, GUI-Bestätigung",
+          "ok": true,
+          "section_id": "trading",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "—",
+          "fail_closed": false,
+          "id": "sell_notice",
+          "label_de": "Verkauf-Funktion aktiv bei Reeval-SELL",
+          "ok": true,
+          "section_id": "trading",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "min=12.0",
+          "fail_closed": false,
+          "id": "min_trade",
+          "label_de": "Mindest-Trade ≥ min_trade_eur",
+          "ok": true,
+          "section_id": "trading",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "14 blockiert",
+          "fail_closed": true,
+          "id": "no_background_orders",
+          "label_de": "Kein Auto-Execute aus Engine/Scheduler",
+          "ok": true,
+          "section_id": "trading",
+          "status": "PASS",
+          "tier": "critical"
+        }
+      ],
+      "items_ok": 6,
+      "items_total": 6,
+      "tier": "critical",
+      "title_de": "E — Handel (Kauf + Verkauf)"
+    },
+    {
+      "id": "alpha_model",
+      "items": [
+        {
+          "detail_de": "investable=640.93",
+          "fail_closed": false,
+          "id": "signal_plan",
+          "label_de": "Champion-Signal → Plan (read-only für R3)",
+          "ok": true,
+          "section_id": "alpha_model",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "12 Aktionen",
+          "fail_closed": false,
+          "id": "reeval_actions",
+          "label_de": "Reevaluation — Kauf/Verkauf-Empfehlungen",
+          "ok": true,
+          "section_id": "alpha_model",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "Teilkreis Konto → Modell (Teil des Trading-Kreislaufs)",
+          "fail_closed": false,
+          "id": "closed_loop",
+          "label_de": "Closed Loop Konto→Modell synchron",
+          "ok": true,
+          "section_id": "alpha_model",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "True",
+          "fail_closed": false,
+          "id": "prediction_gate",
+          "label_de": "prediction_readiness — order_gate_ok",
+          "ok": true,
+          "section_id": "alpha_model",
+          "status": "PASS",
+          "tier": "critical"
+        },
+        {
+          "detail_de": "H1 König-Territorium — kein R3-Blocker",
+          "fail_closed": false,
+          "id": "h1_separate",
+          "label_de": "H1/Benchmark — König-Territorium, nicht R3-Blocker",
+          "ok": true,
+          "section_id": "alpha_model",
+          "status": "PASS",
+          "tier": "critical"
+        }
+      ],
+      "items_ok": 5,
+      "items_total": 5,
+      "tier": "critical",
+      "title_de": "F — Active Alpha Model (Hintergrund)"
+    },
+    {
+      "id": "operator",
+      "items": [
+        {
+          "detail_de": "verify",
+          "fail_closed": false,
+          "id": "king_ops",
+          "label_de": "king_ops status · r3-sync · verify",
+          "ok": true,
+          "section_id": "operator",
+          "status": "PASS",
+          "tier": "warn"
+        },
+        {
+          "detail_de": "http://127.0.0.1:11434",
+          "fail_closed": false,
+          "id": "king_agent",
+          "label_de": "König 32B — alpha-model-agent erreichbar",
+          "ok": true,
+          "section_id": "operator",
+          "status": "PASS",
+          "tier": "warn"
+        },
+        {
+          "detail_de": "König 32B baut autonom — Cursor nicht im Bau-Takt",
+          "fail_closed": false,
+          "id": "r3_bau",
+          "label_de": "UI-Änderungen via r3-bau / r3-apply",
+          "ok": true,
+          "section_id": "operator",
+          "status": "PASS",
+          "tier": "warn"
+        },
+        {
+          "detail_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
+          "fail_closed": false,
+          "id": "series_ready",
+          "label_de": "Serienreife-Gate dokumentiert",
+          "ok": false,
+          "section_id": "operator",
+          "status": "FAIL",
+          "tier": "warn"
+        }
+      ],
+      "items_ok": 3,
+      "items_total": 4,
+      "tier": "warn",
+      "title_de": "G — Operator & König"
+    }
+  ],
+  "test_suites_de": [
+    "pytest tests/test_r3_exec_mirror.py tests/test_r3_stock_orders.py tests/test_r3_trading_cycle.py -q",
+    "pytest tests/test_r3_evidence_metrics.py tests/test_r3_operational_independence.py -q",
+    "pytest tests/test_r3_trading_functions.py tests/test_r3_order_execution_gate.py -q"
+  ],
+  "updated_at_utc": "2026-06-08T15:28:49+00:00",
+  "verify_all_de": "bash tools/king_ops.sh series-ready && bash tools/king_ops.sh r3-sync --repair"
+}

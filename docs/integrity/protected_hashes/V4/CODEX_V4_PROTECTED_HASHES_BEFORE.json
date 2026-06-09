@@ -1,0 +1,19 @@
+{
+  "model_output_sp500_pit_t212/latest_validated_run.json": "e5a821da3cae03952cc0bbbad9c43d9f813fa60fb48d58d60fe6947314a9a58d",
+  "model_output_sp500_pit_t212/background_research_status.json": "2401c9cd2340d186c98eced96356315cd0c03dab41607c94c60c1df9b5a53d70",
+  "control/last_known_good_state.json": "f67b37eba2807702f1ffbada01e0f6153046d66a23136e0dc307f01fa4ff9bcc",
+  "promotion_gate_config.yaml": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e",
+  "control/auto_promotion_status.json": "e2901234d1f4bceb3606a55095da804c6baacc1a454c3342f394626dbff100e7",
+  "control/promotion_status.json": "14b8f53f9e95ec03234cbfdf60c9a437db4a4fb3c33dc9fd3146e199901b693a",
+  "DEVELOPMENT_PIPELINE.json": "cdde61834d70bb491e81fd10b99dfaf796713c5545998541d36de1c7da868674",
+  "DEVELOPMENT_PIPELINE.yaml": "032b428673cc5e67ea02a3979712287ce56ab2e4ec355aaae54d376692b63e6a",
+  "control/p9_shadow_paper_prep_status.json": "d47657dcfa5e478c51453809eff7e9386eebd4c3f47e2429c1e27f7704937636",
+  "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml": "6c385efecb43c303726ecf4a5baff4dd779a425417f5012185ea82bfb73430b2",
+  "control/evidence/cost_stress_status.json": "bbe231ac7f5e375bf4fa498ac827d22ddfa816d61e98c06008160cec341a9404",
+  "control/evidence/robustness_status.json": "4c219ab56218ea6ec68c454a6c57fad3045fd70b4bba0282978745805af78e45",
+  "control/evidence/multiple_testing_status.json": "91a4c04151e862d3e36e567f2b98391f353e7621207666f3da0181ad5a01ffe2",
+  "control/evidence/forward_monitoring_readiness_status.json": "538fab6de3b6333d74846819f345b632b6043ba9101074fcbef0c1dc2167dc3b",
+  "control/evidence/shadow_monitor_status.json": "fb73200c5834713d2e9a9c09791b164778b0d95348f1dcd20113cfed15e59764",
+  "control/evidence/paper_monitor_status.json": "5290a3ad9ad52f8ecacef81214d96095efaaec995519a6bdad6ecb87cb09335d",
+  "control/evidence/forward_monitoring_data_requirements.json": "38ff1ae40d05858d2d98621ac9405c658e88b9d7add102ae99eabf6a5dde527d"
+}

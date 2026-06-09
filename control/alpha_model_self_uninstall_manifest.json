@@ -1,0 +1,17 @@
+{
+  "chamber_only": true,
+  "dry_run_default": true,
+  "execute_env": "AA_SELF_UNINSTALL_EXECUTE=1",
+  "headline_de": "Maschinen-Masterprompt versiegelt — nur Entfaltungsraum kann ausführen",
+  "mc_path": "control/alpha_model_self_uninstall.mc",
+  "mc_sha256": "124c57ea8061c426e627431634d00b0e3b80054a3c0be48391116abdf72f16fe",
+  "program_id": "AA_SELF_UNINSTALL_CURSOR_V2",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-08T13:50:40+00:00",
+  "status": "SEALED",
+  "trigger_phrases_de": [
+    "/self-uninstall",
+    "/maschine run",
+    "entfaltung demontieren"
+  ]
+}

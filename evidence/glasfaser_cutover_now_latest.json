@@ -1,0 +1,359 @@
+{
+  "after_online_de": [
+    "bash tools/setup_cloudflare_tunnel_token.sh",
+    "bash tools/king_ops.sh glasfaser --comeback --repair"
+  ],
+  "before_offline_ready": true,
+  "cutover": true,
+  "headline_de": "NOTFALL-CUTOVER BEREIT — PC kann offline",
+  "health_detail_de": "HTTP 200",
+  "health_ok": true,
+  "home_zip": "/home/machinax7/glasfaser_NOTFALL_worker_LITE.zip",
+  "join_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com/join",
+  "next_de": "bash tools/king_ops.sh glasfaser --go-offline — Bagger/Offline jetzt",
+  "ok": true,
+  "project_zip": "evidence/glasfaser_offline/worker_LITE_backup.zip",
+  "public_base_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com",
+  "scan": {
+    "active_phase": {
+      "actions_de": [
+        "bash tools/setup_cloudflare_tunnel_token.sh (einmalig, stabile URL)",
+        "bash tools/king_ops.sh r3-stealth",
+        "bash tools/king_ops.sh community-spread --repair",
+        "bash tools/install_remote_systemd.sh",
+        "ZIP-Backup: evidence/glasfaser_offline/worker_LITE_backup.zip"
+      ],
+      "done": true,
+      "gates": [
+        {
+          "detail_de": "Notfall-Cutover — Quick-Tunnel LIVE (https://sport-supplied-rivers-macintosh.trycloudflar) · Token nach Online",
+          "id": "tunnel_token_set",
+          "ok": true
+        },
+        {
+          "detail_de": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+          "id": "session_autostart",
+          "ok": true
+        },
+        {
+          "detail_de": "Lite+Token: /home/machinax7/active_alpha_worker_LITE",
+          "id": "worker_export_ready",
+          "ok": true
+        },
+        {
+          "detail_de": "evidence/glasfaser_offline/worker_LITE_backup.zip",
+          "id": "zip_backup",
+          "ok": true
+        },
+        {
+          "detail_de": "6/6 Gates",
+          "id": "community_spread_ready",
+          "ok": true
+        },
+        {
+          "detail_de": "/home/machinax7/.config/systemd/user/active-alpha-preview-hub.service",
+          "id": "remote_systemd",
+          "ok": true
+        }
+      ],
+      "id": "before_offline",
+      "label_de": "Jetzt — vor Offline (Glasfaser-Umzug)",
+      "operator_note_de": "Quick-Tunnel-URLs sterben bei Neustart — Token-Pflicht vor Glasfaser-Cutover.",
+      "status": "active"
+    },
+    "active_phase_id": "before_offline",
+    "before_offline_ready": true,
+    "blockers_de": [],
+    "comeback_ack_at_utc": null,
+    "headline_de": "Glasfaser Phase before_offline — bereit",
+    "initiated_at_utc": "2026-06-08T10:42:17+00:00",
+    "next_de": "bash tools/king_ops.sh glasfaser --go-offline (wenn Glasfaser-Cutover startet)",
+    "offline_ack_at_utc": null,
+    "ok": true,
+    "phases": [
+      {
+        "actions_de": [
+          "bash tools/setup_cloudflare_tunnel_token.sh (einmalig, stabile URL)",
+          "bash tools/king_ops.sh r3-stealth",
+          "bash tools/king_ops.sh community-spread --repair",
+          "bash tools/install_remote_systemd.sh",
+          "ZIP-Backup: evidence/glasfaser_offline/worker_LITE_backup.zip"
+        ],
+        "done": true,
+        "gates": [
+          {
+            "detail_de": "Notfall-Cutover — Quick-Tunnel LIVE (https://sport-supplied-rivers-macintosh.trycloudflar) · Token nach Online",
+            "id": "tunnel_token_set",
+            "ok": true
+          },
+          {
+            "detail_de": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+            "id": "session_autostart",
+            "ok": true
+          },
+          {
+            "detail_de": "Lite+Token: /home/machinax7/active_alpha_worker_LITE",
+            "id": "worker_export_ready",
+            "ok": true
+          },
+          {
+            "detail_de": "evidence/glasfaser_offline/worker_LITE_backup.zip",
+            "id": "zip_backup",
+            "ok": true
+          },
+          {
+            "detail_de": "6/6 Gates",
+            "id": "community_spread_ready",
+            "ok": true
+          },
+          {
+            "detail_de": "/home/machinax7/.config/systemd/user/active-alpha-preview-hub.service",
+            "id": "remote_systemd",
+            "ok": true
+          }
+        ],
+        "id": "before_offline",
+        "label_de": "Jetzt — vor Offline (Glasfaser-Umzug)",
+        "operator_note_de": "Quick-Tunnel-URLs sterben bei Neustart — Token-Pflicht vor Glasfaser-Cutover.",
+        "status": "active"
+      },
+      {
+        "actions_de": [
+          "Kein Post auf r/selfhosted / r/linux",
+          "Worker warten — König-Host ist absichtlich offline",
+          "ZIP-Backup auf USB/Cloud behalten"
+        ],
+        "done": false,
+        "gates": [
+          {
+            "detail_de": "Noch in Vorbereitung — Phase before_offline abschließen",
+            "id": "offline_ack",
+            "ok": false
+          }
+        ],
+        "id": "during_offline",
+        "label_de": "Während Offline — kein öffentlicher Launch",
+        "operator_note_de": "PC aus oder ohne Internet — Federation pausiert, kein Echtgeld-Risiko.",
+        "status": "pending"
+      },
+      {
+        "actions_de": [
+          "bash tools/king_ops.sh glasfaser --comeback --repair",
+          "curl -fsS <share_url>/api/health (von außen testen)",
+          "cat evidence/community_spread_forum_de.txt",
+          "Dann: r/selfhosted + r/linux"
+        ],
+        "done": false,
+        "gates": [
+          {
+            "detail_de": "Hub :17890 OK",
+            "id": "hub_healthy",
+            "ok": true
+          },
+          {
+            "detail_de": "HTTP 200 https://sport-supplied-rivers-macintosh.trycloudflare.com/api/he",
+            "id": "remote_health_ok",
+            "ok": true
+          },
+          {
+            "detail_de": "6/6 Gates",
+            "id": "community_spread_ready",
+            "ok": true
+          },
+          {
+            "detail_de": "Forum synchron: https://sport-supplied-rivers-macintosh.trycloudflare.co",
+            "id": "forum_draft_synced",
+            "ok": true
+          },
+          {
+            "detail_de": "Comeback noch nicht eingeleitet",
+            "id": "comeback_ack",
+            "ok": false
+          }
+        ],
+        "id": "after_online",
+        "label_de": "Nach Online — Comeback + Forum",
+        "operator_note_de": "Erst posten wenn Health-Check von außen grün ist.",
+        "status": "pending"
+      }
+    ],
+    "policy_ref": "control/GLASFASER_OFFLINE_PLAN.json",
+    "schema_version": 1,
+    "updated_at_utc": "2026-06-08T10:49:03+00:00"
+  },
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail": {
+        "ok": true,
+        "port": 17890
+      },
+      "id": "hub",
+      "label_de": "Hub online",
+      "ok": true
+    },
+    {
+      "detail": {
+        "changed": [],
+        "mode": "cloudflared",
+        "ok": true,
+        "public_base_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com",
+        "stable": false,
+        "worker_note_de": "Gesperrte URL — Tunnel-Prozess läuft"
+      },
+      "id": "tunnel",
+      "label_de": "Quick-Tunnel sicherstellen",
+      "ok": true
+    },
+    {
+      "detail": {
+        "autostart": {
+          "autostart_entry": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+          "community_stealth": true,
+          "delay_sec": 28,
+          "message_de": "Stealth-Autostart in 28s — Hub-only, Hidden (xdg-user-session.desktop)",
+          "ok": true,
+          "systemd": {
+            "enabled": true,
+            "error_de": null,
+            "ok": true,
+            "unit_name": "xdg-user-session.service",
+            "unit_path": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+          }
+        },
+        "headline_de": "Linux-Community-Stealth installiert",
+        "message_de": "Login: xdg-user-session.desktop (Hidden) · Hub-only · systemd=xdg-user-session.service",
+        "ok": true,
+        "removed_legacy": [],
+        "scan": {
+          "autostart_installed": true,
+          "autostart_path": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+          "enabled": true,
+          "generic_name": true,
+          "headline_de": "Community-Stealth aktiv — Hub im Hintergrund",
+          "hidden_from_menus": true,
+          "legacy_removed": true,
+          "no_display": true,
+          "ok": true,
+          "systemd_unit": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+        },
+        "systemd": {
+          "enabled": true,
+          "error_de": null,
+          "ok": true,
+          "unit_name": "xdg-user-session.service",
+          "unit_path": "/home/machinax7/.config/systemd/user/xdg-user-session.service"
+        }
+      },
+      "id": "community_stealth",
+      "label_de": "Autostart (Stealth)",
+      "ok": true
+    },
+    {
+      "detail": {
+        "actions_run": [
+          "federation security: ['join_token=ok']",
+          "Hub ensure OK",
+          "worker-export: Export aktuell (3e8983c7c5ab67c7)",
+          "forum draft: community_spread_forum_de.txt",
+          "timers: 6"
+        ],
+        "blockers_de": [],
+        "export_command_de": "ai_kernel spread-remote",
+        "forum_draft": "evidence/community_spread_forum_de.txt",
+        "gates": [
+          {
+            "detail_de": "Hub :17890 OK",
+            "id": "hub_healthy",
+            "ok": true
+          },
+          {
+            "detail_de": "https://sport-supplied-rivers-macintosh.trycloudflare.com",
+            "id": "public_base_url_set",
+            "ok": true
+          },
+          {
+            "detail_de": "join_token aktiv",
+            "id": "join_token_active",
+            "ok": true
+          },
+          {
+            "detail_de": "Lite+Token: /home/machinax7/active_alpha_worker_LITE",
+            "id": "worker_export_ready",
+            "ok": true
+          },
+          {
+            "detail_de": "Forum synchron: https://sport-supplied-rivers-macintosh.trycloudflare.co",
+            "id": "forum_draft_synced",
+            "ok": true
+          },
+          {
+            "detail_de": "LINUX_COMMUNITY_DE.md bereit",
+            "id": "spread_text_ready",
+            "ok": true
+          }
+        ],
+        "gates_ok": 6,
+        "gates_total": 6,
+        "headline_de": "Linux-Community-Ausbreitung gesichert",
+        "join_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com/join",
+        "message_de": "Forum + Export + Timer synchron — bereit für r/selfhosted + r/linux",
+        "ok": true,
+        "schema_version": 1,
+        "share_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com/",
+        "spread_tick": {
+          "next_phase_id": null,
+          "sustain_ok": true
+        },
+        "updated_at_utc": "2026-06-08T10:48:29+00:00"
+      },
+      "id": "community_spread",
+      "label_de": "Community-Spread synchronisieren",
+      "ok": true
+    },
+    {
+      "detail": {
+        "backup": "evidence/glasfaser_offline/worker_LITE_backup.zip",
+        "bytes": 6239,
+        "ok": true,
+        "source": "/home/machinax7/active_alpha_worker_LITE.zip"
+      },
+      "id": "zip_backup",
+      "label_de": "Worker-ZIP Backup",
+      "ok": true
+    },
+    {
+      "detail": {
+        "hint_de": "bash tools/install_remote_systemd.sh",
+        "ok": true,
+        "skipped": false
+      },
+      "id": "remote_systemd",
+      "label_de": "Remote systemd",
+      "ok": true
+    },
+    {
+      "detail": {
+        "backup": "evidence/glasfaser_offline/worker_LITE_backup.zip",
+        "bytes": 6239,
+        "home_copy": "/home/machinax7/glasfaser_NOTFALL_worker_LITE.zip",
+        "ok": true,
+        "source": "/home/machinax7/active_alpha_worker_LITE.zip"
+      },
+      "id": "home_zip",
+      "label_de": "ZIP nach ~/",
+      "ok": true
+    },
+    {
+      "detail": {
+        "installed": [],
+        "ok": true
+      },
+      "id": "systemd",
+      "label_de": "systemd Remote-Runtime",
+      "ok": true
+    }
+  ],
+  "tunnel_mode_de": "Quick-Tunnel LIVE — Token nach Glasfaser-Online",
+  "updated_at_utc": "2026-06-08T10:49:03+00:00"
+}

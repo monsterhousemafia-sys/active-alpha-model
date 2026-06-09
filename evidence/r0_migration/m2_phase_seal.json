@@ -1,0 +1,58 @@
+{
+  "artifact_hashes": {
+    "evidence/canonical_model_comparison.json": "9fe24123262ebc908b7660247c415c669d7f26259eb0f9cb9accaced83d0e1e5",
+    "evidence/r0_migration/aligned_comparison.json": "a67742194af2c74ba67263c3bf344152531a7a82b694310343a29fa39eb07d83"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M3",
+  "phase": "M2",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T14:58:48+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M1 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m1_phase_seal.json"
+      },
+      {
+        "check": "file_exists:evidence/r0_migration/aligned_comparison.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/r0_migration/aligned_comparison.json"
+      },
+      {
+        "check": "file_exists:evidence/canonical_model_comparison.json",
+        "detail": "present",
+        "pass": true,
+        "path": "evidence/canonical_model_comparison.json"
+      },
+      {
+        "check": "m2_go_criteria_documented",
+        "detail": "decision=CONDITIONAL",
+        "pass": true,
+        "path": "evidence\\r0_migration\\aligned_comparison.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M2",
+    "title": "Einheitlicher Vergleichsrahmen",
+    "verified_at_utc": "2026-06-05T14:58:48+00:00"
+  }
+}

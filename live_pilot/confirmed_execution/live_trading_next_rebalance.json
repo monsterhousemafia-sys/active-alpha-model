@@ -1,0 +1,15 @@
+Active Alpha Live Trading - Next Rebalance
+========================================
+
+rebalance_every_recorded_trading_days: 1
+last_rebalance_date: 2026-06-02
+recorded_mark_days_since_rebalance: 6
+days_remaining_until_due: 0
+is_due: True
+recommendation: REBALANCE_DUE
+
+Operational rule (Paper-parity)
+---------------------------
+- MARK_TO_MARKET_ONLY: daily sync + quotes only (1_live_daily_sync.bat).
+- REBALANCE_DUE: run signal update then live rebalance (2_live_rebalance_when_due.bat).
+- Counter = app-run days since last rebalance, not exchange calendar.

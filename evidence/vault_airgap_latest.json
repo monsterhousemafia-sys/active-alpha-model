@@ -1,0 +1,34 @@
+{
+  "airgapped": false,
+  "headline_de": "Abschottung unvollständig — sofort prüfen",
+  "hub_isolation": {
+    "message_de": "Hub exponiert Vault nicht",
+    "notes": [],
+    "ok": true
+  },
+  "ok": false,
+  "principles_de": [
+    "Vault nur 127.0.0.1 — kein LAN, kein Internet, kein Tunnel",
+    "X-Forwarded-For wird ignoriert — kein Proxy-Bypass",
+    "Token nur verschlüsselt — kein Klartext im Keyring",
+    "Zusatz-Passphrase + 600k PBKDF2 — ohne Passwort kein Entschlüsseln"
+  ],
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T15:05:31+00:00",
+  "vault_bind": {
+    "addresses": [
+      "127.0.0.1"
+    ],
+    "exposed": [],
+    "listening": true,
+    "message_de": "Nur localhost",
+    "ok": true
+  },
+  "vault_hygiene": {
+    "cert_hardened": false,
+    "keyring_available": true,
+    "legacy_plaintext_token": false,
+    "server_env_has_plaintext_token": true,
+    "vault_encrypted": false
+  }
+}

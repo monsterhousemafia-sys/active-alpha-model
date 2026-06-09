@@ -1,0 +1,53 @@
+{
+  "all_gates_pass": false,
+  "auto_execute_real_money": false,
+  "auto_promotion_enabled": false,
+  "automation_modes": {
+    "AUTO_EXECUTE_REAL_MONEY": "DISABLED",
+    "AUTO_PROMOTE_PAPER": "DISABLED",
+    "AUTO_PROMOTE_SIGNAL": "DISABLED",
+    "AUTO_RESEARCH": "DISABLED"
+  },
+  "blocked_reasons": [
+    "auto_promotion_disabled",
+    "manual_approval_required"
+  ],
+  "gates": {
+    "COST_STRESS_GATE": {
+      "detail": "not evaluated in P4",
+      "pass": null
+    },
+    "DATA_QUALITY_GATE": {
+      "detail": "data_quality_report.csv",
+      "pass": true
+    },
+    "ECONOMIC_VALUE_GATE": {
+      "detail": "auto promotion disabled in P4",
+      "pass": false
+    },
+    "FORECAST_QUALITY_GATE": {
+      "detail": "mature_outcomes=36972",
+      "pass": true
+    },
+    "INTEGRITY_GATE": {
+      "detail": "PASS",
+      "pass": true
+    },
+    "RISK_GATE": {
+      "detail": "champion validated",
+      "pass": true
+    },
+    "ROLLBACK_READINESS_GATE": {
+      "detail": "20260530T153000Z_R3_w075_q065_noexit_d5eb43c3_b1143f32",
+      "pass": true
+    },
+    "SHADOW_GATE": {
+      "detail": "shadow_signals=10955",
+      "pass": true
+    }
+  },
+  "mature_shadow_comparisons": 10893,
+  "overall_status": "BLOCKED",
+  "shadow_signal_count": 10955,
+  "updated_at_utc": "2026-05-30T19:14:36+00:00"
+}

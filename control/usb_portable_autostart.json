@@ -1,0 +1,17 @@
+{
+  "auto_install_local": true,
+  "cooldown_minutes": 30,
+  "enabled": false,
+  "farewell_at_utc": "2026-06-08T18:28:16+00:00",
+  "install_dest": "~/active_alpha_model",
+  "note_de": "Verabschiedet — kein auto install-local mehr auf diesem Quell-PC.",
+  "post_install_spread": true,
+  "schema_version": 1,
+  "spread_community_sustain": true,
+  "spread_deploy_usb_worker_zip": true,
+  "spread_resume_autonomous": true,
+  "use_full_setup": true,
+  "watch_roots": [
+    "/run/media"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "artifact_hashes": {
+    "research_evidence/r0_tuning_trial_ledger.json": "315b348d3bf768dd3705083f715739fb022723ba2ea50d032ee6a592e5aedd25"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M4",
+  "phase": "M3",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:38:50+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M2 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m2_phase_seal.json"
+      },
+      {
+        "check": "file_exists:research_evidence/r0_tuning_trial_ledger.json",
+        "detail": "present",
+        "pass": true,
+        "path": "research_evidence/r0_tuning_trial_ledger.json"
+      },
+      {
+        "check": "m3_candidate_selected",
+        "detail": "R0_LEGACY_ENSEMBLE",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m3_candidate_decision.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M3",
+    "title": "R0* Tuning (Research)",
+    "verified_at_utc": "2026-06-05T15:38:50+00:00"
+  }
+}

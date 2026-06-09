@@ -1,0 +1,76 @@
+{
+  "generated_at_utc": "2026-06-02T15:23:11+00:00",
+  "overall_pass": true,
+  "blockers": [],
+  "steps": [
+    {
+      "name": "pilot_preflight",
+      "pass": true,
+      "blockers": [
+        "order_dry_run"
+      ],
+      "t212_connected": true
+    },
+    {
+      "name": "dashboard_snapshot",
+      "pass": true,
+      "cash_eur": 491.85,
+      "broker_error": null,
+      "broker_warning": null,
+      "pick_symbol": "INTC",
+      "pick_target_eur": 47.27,
+      "traffic": "GRUEN"
+    },
+    {
+      "name": "order_button_ready",
+      "pass": true,
+      "mode": "ai_assisted",
+      "readiness": {
+        "ready": true,
+        "mode": "ai_assisted",
+        "checks": [
+          {
+            "id": "mode",
+            "label": "KI-unterstützt aktiv",
+            "ok": true
+          },
+          {
+            "id": "broker",
+            "label": "API mit Order-Rechten gespeichert",
+            "ok": true
+          }
+        ],
+        "symbols": [
+          "AMD",
+          "CAT",
+          "CIEN",
+          "GOOG",
+          "GOOGL",
+          "INTC",
+          "ON",
+          "OXY",
+          "STX",
+          "TXN",
+          "VRT",
+          "WDC"
+        ]
+      },
+      "execution_credentials": true
+    },
+    {
+      "name": "rebalance_schedule",
+      "pass": true,
+      "is_due": false,
+      "recorded_days": 1,
+      "every": 5,
+      "summary_de": "Live-Trading: nur Mark — Rebalance in 4 Tag(en) (1/5)."
+    },
+    {
+      "name": "t212_connect_action",
+      "pass": true,
+      "cash_eur": 491.85,
+      "error": null
+    }
+  ],
+  "note_de": "Keine echte T212-Order gesendet — nur Lesen/Snapshot/Preflight."
+}

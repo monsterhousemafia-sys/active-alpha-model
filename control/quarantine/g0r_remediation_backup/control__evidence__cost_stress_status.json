@@ -1,0 +1,730 @@
+{
+  "COST_STRESS_GATE": {
+    "approved_scenario": "PLUS_25_BPS",
+    "blockers": [
+      "CHALLENGER_TURNOVER_NOT_VERIFIED"
+    ],
+    "detail": "CHALLENGER_TURNOVER_NOT_VERIFIED",
+    "evaluation_status": "NOT_EVALUABLE",
+    "pass": false
+  },
+  "baseline_cost_policy": {
+    "incremental_stress_only": true,
+    "note": "V2R requires verified baseline cost documentation per variant; no proxy turnover for gate pass."
+  },
+  "generated_at_utc": "2026-05-31T20:23:05+00:00",
+  "mode": "READ_ONLY_HISTORICAL_EVIDENCE",
+  "scenarios": {
+    "BASELINE": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.29890165388996914,
+          "cagr": 0.24525625702147913,
+          "daily_hit_rate": 0.5195918367346939,
+          "max_drawdown": -0.5436688199844164,
+          "n_days": 2450,
+          "sharpe_0rf": 0.8833124373370502,
+          "total_return": 7.435805676683101
+        },
+        "reason": "",
+        "scenario": "BASELINE",
+        "source_files": {
+          "returns": {
+            "path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+            "sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+            "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 490,
+          "extra_bps": 0.0,
+          "total_drag": 0.0,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "R5_rank_only_train5"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.2559794243226388,
+          "cagr": 0.2064696932893908,
+          "daily_hit_rate": 0.5494623655913978,
+          "max_drawdown": -0.3889374033994921,
+          "n_days": 1860,
+          "sharpe_0rf": 0.8619911813303781,
+          "total_return": 2.9963985334534224
+        },
+        "reason": "",
+        "scenario": "BASELINE",
+        "source_files": {
+          "returns": {
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+            "sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+            "sha256": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 372,
+          "extra_bps": 0.0,
+          "total_drag": 0.0,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "turnover_missing",
+        "scenario": "BASELINE",
+        "source_files": {
+          "returns": {
+            "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+            "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+          }
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "PLUS_10_BPS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.29891787375778905,
+          "cagr": 0.23412582596988774,
+          "daily_hit_rate": 0.5191836734693878,
+          "max_drawdown": -0.5502250644151827,
+          "n_days": 2450,
+          "sharpe_0rf": 0.8532249224779355,
+          "total_return": 6.730663761760274
+        },
+        "reason": "",
+        "scenario": "PLUS_10_BPS",
+        "source_files": {
+          "returns": {
+            "path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+            "sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+            "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 490,
+          "extra_bps": 10.0,
+          "total_drag": 0.08729941847438272,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "R5_rank_only_train5"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.25600682661819485,
+          "cagr": 0.1878329725907355,
+          "daily_hit_rate": 0.5467741935483871,
+          "max_drawdown": -0.4027820613306685,
+          "n_days": 1860,
+          "sharpe_0rf": 0.8010802871346454,
+          "total_return": 2.5625902442765707
+        },
+        "reason": "",
+        "scenario": "PLUS_10_BPS",
+        "source_files": {
+          "returns": {
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+            "sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+            "sha256": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 372,
+          "extra_bps": 10.0,
+          "total_drag": 0.11492131189634955,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "turnover_missing",
+        "scenario": "PLUS_10_BPS",
+        "source_files": {
+          "returns": {
+            "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+            "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+          }
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "PLUS_25_BPS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.2989519922283819,
+          "cagr": 0.2176121317145865,
+          "daily_hit_rate": 0.5183673469387755,
+          "max_drawdown": -0.559885529346704,
+          "n_days": 2450,
+          "sharpe_0rf": 0.8080733121312066,
+          "total_return": 5.781678149605942
+        },
+        "reason": "",
+        "scenario": "PLUS_25_BPS",
+        "source_files": {
+          "returns": {
+            "path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+            "sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+            "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 490,
+          "extra_bps": 25.0,
+          "total_drag": 0.21824854618595702,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "R5_rank_only_train5"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.25608550257048995,
+          "cagr": 0.16040299857307816,
+          "daily_hit_rate": 0.5446236559139785,
+          "max_drawdown": -0.4307046581506092,
+          "n_days": 1860,
+          "sharpe_0rf": 0.7096342591166316,
+          "total_return": 1.9982979582687976
+        },
+        "reason": "",
+        "scenario": "PLUS_25_BPS",
+        "source_files": {
+          "returns": {
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+            "sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+            "sha256": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 372,
+          "extra_bps": 25.0,
+          "total_drag": 0.2873032797408743,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "turnover_missing",
+        "scenario": "PLUS_25_BPS",
+        "source_files": {
+          "returns": {
+            "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+            "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+          }
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "PLUS_50_BPS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.2990349486810671,
+          "cagr": 0.19056764521512348,
+          "daily_hit_rate": 0.5146938775510204,
+          "max_drawdown": -0.5755333131560278,
+          "n_days": 2450,
+          "sharpe_0rf": 0.7327795817889704,
+          "total_return": 4.451273366968624
+        },
+        "reason": "",
+        "scenario": "PLUS_50_BPS",
+        "source_files": {
+          "returns": {
+            "path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+            "sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+            "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 490,
+          "extra_bps": 50.0,
+          "total_drag": 0.43649709237191403,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "R5_rank_only_train5"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.2563167053140314,
+          "cagr": 0.11605260574884224,
+          "daily_hit_rate": 0.539247311827957,
+          "max_drawdown": -0.47440603062361664,
+          "n_days": 1860,
+          "sharpe_0rf": 0.5571314020720635,
+          "total_return": 1.248838395124428
+        },
+        "reason": "",
+        "scenario": "PLUS_50_BPS",
+        "source_files": {
+          "returns": {
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+            "sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+            "sha256": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 372,
+          "extra_bps": 50.0,
+          "total_drag": 0.5746065594817485,
+          "turnover_multiplier": 1.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "turnover_missing",
+        "scenario": "PLUS_50_BPS",
+        "source_files": {
+          "returns": {
+            "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+            "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+          }
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ],
+    "SLIPPAGE_TURNOVER_STRESS": [
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "model_output_sp500_pit_t212/backtest_report.txt",
+          "source_sha256": "1c0fde3e8ec1505665f39c2099ebc02801ef5467d94ad1290c4aa01fdc027868",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.29890448015440507,
+          "cagr": 0.2430223564480527,
+          "daily_hit_rate": 0.5195918367346939,
+          "max_drawdown": -0.5449875691002894,
+          "n_days": 2450,
+          "sharpe_0rf": 0.8772958991270124,
+          "total_return": 7.289822802422933
+        },
+        "reason": "",
+        "scenario": "SLIPPAGE_TURNOVER_STRESS",
+        "source_files": {
+          "returns": {
+            "path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+            "sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+            "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 490,
+          "extra_bps": 0.0,
+          "total_drag": 0.01745988369487656,
+          "turnover_multiplier": 2.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "R5_rank_only_train5"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "EVALUABLE",
+        "gate_evidence_eligible": true,
+        "metrics": {
+          "annual_vol": 0.2559833011706705,
+          "cagr": 0.2027196895784531,
+          "daily_hit_rate": 0.5489247311827957,
+          "max_drawdown": -0.3916627311352838,
+          "n_days": 1860,
+          "sharpe_0rf": 0.849813282877471,
+          "total_return": 2.9056180811208305
+        },
+        "reason": "",
+        "scenario": "SLIPPAGE_TURNOVER_STRESS",
+        "source_files": {
+          "returns": {
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+            "sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07"
+          },
+          "turnover_decisions": {
+            "is_proxy": false,
+            "label": "VERIFIED_VARIANT_TURNOVER",
+            "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+            "sha256": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa"
+          }
+        },
+        "stress_detail": {
+          "applied": true,
+          "events": 372,
+          "extra_bps": 0.0,
+          "total_drag": 0.022984262379269923,
+          "turnover_multiplier": 2.0
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+      },
+      {
+        "baseline_cost_treatment": {
+          "interpretation": "Baseline transaction costs documented in backtest report",
+          "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+          "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+          "verified": true
+        },
+        "comparison_result": "NOT_APPLICABLE",
+        "evaluation_status": "NOT_EVALUABLE",
+        "gate_evidence_eligible": false,
+        "metrics": {},
+        "reason": "turnover_missing",
+        "scenario": "SLIPPAGE_TURNOVER_STRESS",
+        "source_files": {
+          "returns": {
+            "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+            "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+          }
+        },
+        "turnover_is_proxy": false,
+        "variant_id": "MOM_63_TOP12"
+      }
+    ]
+  },
+  "schema_version": 2,
+  "sensitivity_analysis": {
+    "label": "NOT_GATE_EVIDENCE",
+    "proxy_turnover_results": {
+      "BASELINE": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "turnover_proxy_only",
+          "scenario": "BASELINE",
+          "source_files": {
+            "returns": {
+              "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+              "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+            },
+            "turnover_decisions": {
+              "is_proxy": true,
+              "label": "NOT_GATE_EVIDENCE",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "turnover_is_proxy": true,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_10_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "turnover_proxy_only",
+          "scenario": "PLUS_10_BPS",
+          "source_files": {
+            "returns": {
+              "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+              "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+            },
+            "turnover_decisions": {
+              "is_proxy": true,
+              "label": "NOT_GATE_EVIDENCE",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "turnover_is_proxy": true,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_25_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "turnover_proxy_only",
+          "scenario": "PLUS_25_BPS",
+          "source_files": {
+            "returns": {
+              "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+              "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+            },
+            "turnover_decisions": {
+              "is_proxy": true,
+              "label": "NOT_GATE_EVIDENCE",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "turnover_is_proxy": true,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "PLUS_50_BPS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "turnover_proxy_only",
+          "scenario": "PLUS_50_BPS",
+          "source_files": {
+            "returns": {
+              "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+              "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+            },
+            "turnover_decisions": {
+              "is_proxy": true,
+              "label": "NOT_GATE_EVIDENCE",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "turnover_is_proxy": true,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ],
+      "SLIPPAGE_TURNOVER_STRESS": [
+        {
+          "baseline_cost_treatment": {
+            "interpretation": "Baseline transaction costs documented in backtest report",
+            "source_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+            "source_sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991",
+            "verified": true
+          },
+          "comparison_result": "NOT_APPLICABLE",
+          "evaluation_status": "NOT_EVALUABLE",
+          "gate_evidence_eligible": false,
+          "metrics": {},
+          "reason": "turnover_proxy_only",
+          "scenario": "SLIPPAGE_TURNOVER_STRESS",
+          "source_files": {
+            "returns": {
+              "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+              "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+            },
+            "turnover_decisions": {
+              "is_proxy": true,
+              "label": "NOT_GATE_EVIDENCE",
+              "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+              "sha256": "3dca0cd2f3206f590c7ff3befe7c65143a2e65788862e515d1b0614a8ba781d1"
+            }
+          },
+          "turnover_is_proxy": true,
+          "variant_id": "MOM_63_TOP12"
+        }
+      ]
+    }
+  },
+  "variants": [
+    "R5_rank_only_train5",
+    "M1_MOM_BLEND_MATCHED_CONTROLS",
+    "MOM_63_TOP12"
+  ]
+}

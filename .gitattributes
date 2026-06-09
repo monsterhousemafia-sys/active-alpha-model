@@ -1,0 +1,9 @@
+*.py text eol=lf
+*.sh text eol=lf
+*.bash text eol=lf
+*.md text eol=lf
+*.mdc text eol=lf
+control/*.json text eol=lf
+
+model_output_sp500_pit_t212/background_research_status.json -text
+model_output_sp500_pit_t212/latest_validated_run.json -text

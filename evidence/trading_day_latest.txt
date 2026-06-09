@@ -1,0 +1,15 @@
+Kreis-Score 0/6 grün (0%)
+Beobachten/Entscheiden zuerst — Montag Orders schließen den Kreis.
+  ~ Beobachten: Lernen OK · Konto OK · Kurse 0/11 Kurse
+  ✗ Entscheiden: Warnungen 3× kritisch
+  ✗ Handeln: Live-Fills reif: 0/3 · API-Scope offen
+  ✗ Lernen: Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.
+  ✗ Evolieren: sportwagen → sport_plus · Auto-Apply 0
+  ~ H1/Seal: H1-Seal optional — COMPLETE Backtest reicht für operative Gates
+→ Engpass: Entscheiden: Warnungen 3× kritisch
+
+Tuesday 09.06.2026 · Phase: PRE_GO_LIVE
+├── Auto: refresh — · Warnungen 3× kritisch · Kurse 0/11 Kurse
+├── Du: ② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen
+├── H1-Seal optional — COMPLETE Backtest reicht für operative Gates
+└── Evolution: sportwagen → sport_plus (0/3 Fills)

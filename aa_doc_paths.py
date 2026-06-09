@@ -1,0 +1,280 @@
+"""Canonical documentation paths (relocated under docs/)."""
+from __future__ import annotations
+
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+KEEP_AT_ROOT = frozenset({
+    "AGENTS.md",
+    "DEVELOPMENT_PIPELINE.json",
+    "DEVELOPMENT_PIPELINE.yaml",
+    "IMPLEMENTATION_STATUS.md",
+    "Marktanalyse.exe.sha256",
+    "NEXT_CURSOR_PROMPT.md",
+    "REPO_HYGIENE.md",
+    "V5R_EXTERNAL_ACCEPTANCE_REPORT.md",
+    "VISION_PROGRESS.json",
+})
+
+RELOCATED: dict[str, str] = {
+    "CODEX_EXTERNAL_REVIEW_DECISION_PACKET.md": "docs/review/CODEX_EXTERNAL_REVIEW_DECISION_PACKET.md",
+    "CODEX_G0_GIT_STATUS.txt": "docs/integrity/session_logs/G0/CODEX_G0_GIT_STATUS.txt",
+    "CODEX_G0_PREFLIGHT.md": "docs/phases/G0/CODEX_G0_PREFLIGHT.md",
+    "CODEX_G0R_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R/CODEX_G0R_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R_GIT_STATUS.txt": "docs/integrity/session_logs/G0R/CODEX_G0R_GIT_STATUS.txt",
+    "CODEX_G0R_PREFLIGHT.md": "docs/phases/G0R/CODEX_G0R_PREFLIGHT.md",
+    "CODEX_G0R_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R/CODEX_G0R_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R/CODEX_G0R_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R/CODEX_G0R_TEST_OUTPUT.txt",
+    "CODEX_G0R_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R/CODEX_G0R_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R2_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R2/CODEX_G0R2_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R2_GIT_STATUS.txt": "docs/integrity/session_logs/G0R2/CODEX_G0R2_GIT_STATUS.txt",
+    "CODEX_G0R2_PREFLIGHT.md": "docs/phases/G0R2/CODEX_G0R2_PREFLIGHT.md",
+    "CODEX_G0R2_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R2/CODEX_G0R2_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R2_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R2/CODEX_G0R2_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R2_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R2/CODEX_G0R2_TEST_OUTPUT.txt",
+    "CODEX_G0R2_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R2/CODEX_G0R2_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R3/CODEX_G0R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R3_GIT_STATUS.txt": "docs/integrity/session_logs/G0R3/CODEX_G0R3_GIT_STATUS.txt",
+    "CODEX_G0R3_PACKAGE_INPUT_MANIFEST.json": "docs/phases/G0R3/CODEX_G0R3_PACKAGE_INPUT_MANIFEST.json",
+    "CODEX_G0R3_PREFLIGHT.md": "docs/phases/G0R3/CODEX_G0R3_PREFLIGHT.md",
+    "CODEX_G0R3_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R3_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R3/CODEX_G0R3_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R3_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R3/CODEX_G0R3_TEST_OUTPUT.txt",
+    "CODEX_G0R3_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R3/CODEX_G0R3_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R4_COMMITTED_PAYLOAD_MANIFEST.json": "docs/phases/G0R4/CODEX_G0R4_COMMITTED_PAYLOAD_MANIFEST.json",
+    "CODEX_G0R4_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R4/CODEX_G0R4_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R4_GIT_STATUS.txt": "docs/integrity/session_logs/G0R4/CODEX_G0R4_GIT_STATUS.txt",
+    "CODEX_G0R4_PREFLIGHT.md": "docs/phases/G0R4/CODEX_G0R4_PREFLIGHT.md",
+    "CODEX_G0R4_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R4_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R4_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R4/CODEX_G0R4_TEST_OUTPUT.txt",
+    "CODEX_G0R4_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R4/CODEX_G0R4_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R4R_COMMITTED_PAYLOAD_MANIFEST.json": "docs/phases/G0R4R/CODEX_G0R4R_COMMITTED_PAYLOAD_MANIFEST.json",
+    "CODEX_G0R4R_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R4R/CODEX_G0R4R_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R4R_EXTERNAL_REVIEW_INPUT_VERBATIM_VERIFICATION.json": "docs/phases/G0R4R/CODEX_G0R4R_EXTERNAL_REVIEW_INPUT_VERBATIM_VERIFICATION.json",
+    "CODEX_G0R4R_GIT_STATUS.txt": "docs/integrity/session_logs/G0R4R/CODEX_G0R4R_GIT_STATUS.txt",
+    "CODEX_G0R4R_PREFLIGHT.md": "docs/phases/G0R4R/CODEX_G0R4R_PREFLIGHT.md",
+    "CODEX_G0R4R_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R4R/CODEX_G0R4R_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R4R_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R4R/CODEX_G0R4R_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R4R_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R4R/CODEX_G0R4R_TEST_OUTPUT.txt",
+    "CODEX_G0R4R_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R4R/CODEX_G0R4R_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R4R_INPUT_DISCOVERY_REPORT.md": "docs/phases/G0R4R/CODEX_G0R4R_INPUT_DISCOVERY_REPORT.md",
+    "CODEX_G0R4R_EXTERNAL_INPUT_HASH_VERIFICATION.json": "docs/phases/G0R4R/CODEX_G0R4R_EXTERNAL_INPUT_HASH_VERIFICATION.json",
+    "CODEX_G0R4R_AUTHORIZATION_VERIFICATION.json": "docs/phases/G0R4R/CODEX_G0R4R_AUTHORIZATION_VERIFICATION.json",
+    "CODEX_G0R4R2_COMMITTED_PAYLOAD_MANIFEST.json": "docs/phases/G0R4R2/CODEX_G0R4R2_COMMITTED_PAYLOAD_MANIFEST.json",
+    "CODEX_G0R4R2_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R4R2/CODEX_G0R4R2_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R4R2_AUTHORITATIVE_BASELINE_VERBATIM_VERIFICATION.json": "docs/phases/G0R4R2/CODEX_G0R4R2_AUTHORITATIVE_BASELINE_VERBATIM_VERIFICATION.json",
+    "CODEX_G0R4R2_GIT_STATUS.txt": "docs/integrity/session_logs/G0R4R2/CODEX_G0R4R2_GIT_STATUS.txt",
+    "CODEX_G0R4R2_PREFLIGHT.md": "docs/phases/G0R4R2/CODEX_G0R4R2_PREFLIGHT.md",
+    "CODEX_G0R4R2_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R4R2/CODEX_G0R4R2_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R4R2_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R4R2/CODEX_G0R4R2_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R4R2_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R4R2/CODEX_G0R4R2_TEST_OUTPUT.txt",
+    "CODEX_G0R4R2_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R4R2/CODEX_G0R4R2_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R4R2_INPUT_DISCOVERY_REPORT.md": "docs/phases/G0R4R2/CODEX_G0R4R2_INPUT_DISCOVERY_REPORT.md",
+    "CODEX_G0R4R2_EXTERNAL_INPUT_HASH_VERIFICATION.json": "docs/phases/G0R4R2/CODEX_G0R4R2_EXTERNAL_INPUT_HASH_VERIFICATION.json",
+    "CODEX_G0R4R2_AUTHORIZATION_VERIFICATION.json": "docs/phases/G0R4R2/CODEX_G0R4R2_AUTHORIZATION_VERIFICATION.json",
+    "CODEX_G0R4R3_COMMITTED_PAYLOAD_MANIFEST.json": "docs/phases/G0R4R3/CODEX_G0R4R3_COMMITTED_PAYLOAD_MANIFEST.json",
+    "CODEX_G0R4R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md": "docs/phases/G0R4R3/CODEX_G0R4R3_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "CODEX_G0R4R3_EXPECTED_VERBATIM_INPUTS.json": "docs/phases/G0R4R3/CODEX_G0R4R3_EXPECTED_VERBATIM_INPUTS.json",
+    "CODEX_G0R4R3_GIT_ATTRIBUTE_BYTE_PRESERVATION_VERIFICATION.json": "docs/phases/G0R4R3/CODEX_G0R4R3_GIT_ATTRIBUTE_BYTE_PRESERVATION_VERIFICATION.json",
+    "CODEX_G0R4R3_GIT_STATUS.txt": "docs/integrity/session_logs/G0R4R3/CODEX_G0R4R3_GIT_STATUS.txt",
+    "CODEX_G0R4R3_PREFLIGHT.md": "docs/phases/G0R4R3/CODEX_G0R4R3_PREFLIGHT.md",
+    "CODEX_G0R4R3_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0R4R3/CODEX_G0R4R3_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0R4R3_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0R4R3/CODEX_G0R4R3_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0R4R3_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0R4R3/CODEX_G0R4R3_TEST_OUTPUT.txt",
+    "CODEX_G0R4R3_V5R_BASELINE_COMPARISON.json": "docs/phases/G0R4R3/CODEX_G0R4R3_V5R_BASELINE_COMPARISON.json",
+    "CODEX_G0R4R3_INPUT_DISCOVERY_REPORT.md": "docs/phases/G0R4R3/CODEX_G0R4R3_INPUT_DISCOVERY_REPORT.md",
+    "CODEX_G0R4R3_EXTERNAL_INPUT_HASH_VERIFICATION.json": "docs/phases/G0R4R3/CODEX_G0R4R3_EXTERNAL_INPUT_HASH_VERIFICATION.json",
+    "CODEX_G0R4R3_AUTHORIZATION_VERIFICATION.json": "docs/phases/G0R4R3/CODEX_G0R4R3_AUTHORIZATION_VERIFICATION.json",
+    "codex_g0r4r2_verbatim_authoritative_baseline_resubmission.zip.sha256": "docs/review/sidecars/codex_g0r4r2_verbatim_authoritative_baseline_resubmission.zip.sha256",
+    "codex_g0r4r3_final_blob_zip_verbatim_remediation_review.zip.sha256": "docs/review/sidecars/codex_g0r4r3_final_blob_zip_verbatim_remediation_review.zip.sha256",
+    "CODEX_G0_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/G0/CODEX_G0_PROTECTED_HASHES_AFTER.json",
+    "CODEX_G0_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/G0/CODEX_G0_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_G0_TEST_OUTPUT.txt": "docs/integrity/session_logs/G0/CODEX_G0_TEST_OUTPUT.txt",
+    "CODEX_G1_EXTERNAL_REVIEW_SUBMISSION.md": "docs/phases/G1/CODEX_G1_EXTERNAL_REVIEW_SUBMISSION.md",
+    "CODEX_G1_PREFLIGHT.md": "docs/phases/G1/CODEX_G1_PREFLIGHT.md",
+    "CODEX_G2_PREREGISTRATION_PROTOCOL.md": "docs/phases/G2/CODEX_G2_PREREGISTRATION_PROTOCOL.md",
+    "CODEX_MATRIX_REMEDIATION_DIAGNOSIS.md": "docs/governance/CODEX_MATRIX_REMEDIATION_DIAGNOSIS.md",
+    "CODEX_P9A_REPAIR_PREFLIGHT.md": "docs/phases/P9A/CODEX_P9A_REPAIR_PREFLIGHT.md",
+    "CODEX_P9A_REPAIR_REPORT.md": "docs/phases/P9A/CODEX_P9A_REPAIR_REPORT.md",
+    "CODEX_RISK_OFF_CHALLENGER_EVIDENCE_REPORT.md": "docs/governance/CODEX_RISK_OFF_CHALLENGER_EVIDENCE_REPORT.md",
+    "CODEX_TEST_OUTPUT.txt": "docs/integrity/session_logs/TEST/CODEX_TEST_OUTPUT.txt",
+    "CODEX_V0R_HOOK_STATUS.txt": "docs/phases/V0R/CODEX_V0R_HOOK_STATUS.txt",
+    "CODEX_V0R_PREFLIGHT.md": "docs/phases/V0R/CODEX_V0R_PREFLIGHT.md",
+    "CODEX_V0R_REMEDIATION_REPORT.md": "docs/phases/V0R/CODEX_V0R_REMEDIATION_REPORT.md",
+    "CODEX_V0R_TEST_OUTPUT.txt": "docs/integrity/session_logs/V0R/CODEX_V0R_TEST_OUTPUT.txt",
+    "CODEX_V0_GIT_STATUS.txt": "docs/integrity/session_logs/V0/CODEX_V0_GIT_STATUS.txt",
+    "CODEX_V0_PREFLIGHT.md": "docs/phases/V0/CODEX_V0_PREFLIGHT.md",
+    "CODEX_V0_REPAIR_REPORT.md": "docs/phases/V0/CODEX_V0_REPAIR_REPORT.md",
+    "CODEX_V0_TEST_OUTPUT.txt": "docs/integrity/session_logs/V0/CODEX_V0_TEST_OUTPUT.txt",
+    "CODEX_V1R2_GIT_STATUS.txt": "docs/integrity/session_logs/V1R2/CODEX_V1R2_GIT_STATUS.txt",
+    "CODEX_V1R2_PREFLIGHT.md": "docs/phases/V1R2/CODEX_V1R2_PREFLIGHT.md",
+    "CODEX_V1R2_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V1R2/CODEX_V1R2_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V1R2_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V1R2/CODEX_V1R2_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V1R2_REVIEW_CHAIN_REPORT.md": "docs/phases/V1R2/CODEX_V1R2_REVIEW_CHAIN_REPORT.md",
+    "CODEX_V1R2_TEST_OUTPUT.txt": "docs/integrity/session_logs/V1R2/CODEX_V1R2_TEST_OUTPUT.txt",
+    "CODEX_V1R3_AUTHORIZED_COMPLETION_REPORT.md": "docs/phases/V1R3/CODEX_V1R3_AUTHORIZED_COMPLETION_REPORT.md",
+    "CODEX_V1R3_GIT_STATUS.txt": "docs/integrity/session_logs/V1R3/CODEX_V1R3_GIT_STATUS.txt",
+    "CODEX_V1R3_PREFLIGHT.md": "docs/phases/V1R3/CODEX_V1R3_PREFLIGHT.md",
+    "CODEX_V1R3_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V1R3/CODEX_V1R3_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V1R3_TEST_OUTPUT.txt": "docs/integrity/session_logs/V1R3/CODEX_V1R3_TEST_OUTPUT.txt",
+    "CODEX_V1R_EVIDENCE_CONTROLLER_REPORT.md": "docs/phases/V1R/CODEX_V1R_EVIDENCE_CONTROLLER_REPORT.md",
+    "CODEX_V1R_GIT_STATUS.txt": "docs/integrity/session_logs/V1R/CODEX_V1R_GIT_STATUS.txt",
+    "CODEX_V1R_PREFLIGHT.md": "docs/phases/V1R/CODEX_V1R_PREFLIGHT.md",
+    "CODEX_V1R_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V1R/CODEX_V1R_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V1R_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V1R/CODEX_V1R_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V1R_TEST_OUTPUT.txt": "docs/integrity/session_logs/V1R/CODEX_V1R_TEST_OUTPUT.txt",
+    "CODEX_V1_EVIDENCE_AND_CASCADE_REPORT.md": "docs/phases/V1/CODEX_V1_EVIDENCE_AND_CASCADE_REPORT.md",
+    "CODEX_V1_GIT_STATUS.txt": "docs/integrity/session_logs/V1/CODEX_V1_GIT_STATUS.txt",
+    "CODEX_V1_PREFLIGHT.md": "docs/phases/V1/CODEX_V1_PREFLIGHT.md",
+    "CODEX_V1_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V1/CODEX_V1_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V1_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V1/CODEX_V1_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V1_REVIEW_ZIP_SHA256.txt": "docs/integrity/session_logs/V1/CODEX_V1_REVIEW_ZIP_SHA256.txt",
+    "CODEX_V1_TEST_OUTPUT.txt": "docs/integrity/session_logs/V1/CODEX_V1_TEST_OUTPUT.txt",
+    "CODEX_V2R_GIT_STATUS.txt": "docs/integrity/session_logs/V2R/CODEX_V2R_GIT_STATUS.txt",
+    "CODEX_V2R_PREFLIGHT.md": "docs/phases/V2R/CODEX_V2R_PREFLIGHT.md",
+    "CODEX_V2R_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V2R/CODEX_V2R_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V2R_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V2R/CODEX_V2R_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V2R_SOURCE_INVENTORY.md": "docs/phases/V2R/CODEX_V2R_SOURCE_INVENTORY.md",
+    "CODEX_V2R_STATISTICAL_VALIDITY_REPORT.md": "docs/phases/V2R/CODEX_V2R_STATISTICAL_VALIDITY_REPORT.md",
+    "CODEX_V2R_TEST_OUTPUT.txt": "docs/integrity/session_logs/V2R/CODEX_V2R_TEST_OUTPUT.txt",
+    "CODEX_V2_GIT_STATUS.txt": "docs/integrity/session_logs/V2/CODEX_V2_GIT_STATUS.txt",
+    "CODEX_V2_PREFLIGHT.md": "docs/phases/V2/CODEX_V2_PREFLIGHT.md",
+    "CODEX_V2_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V2/CODEX_V2_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V2_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V2/CODEX_V2_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V2_ROBUSTNESS_REPORT.md": "docs/phases/V2/CODEX_V2_ROBUSTNESS_REPORT.md",
+    "CODEX_V2_SOURCE_INVENTORY.md": "docs/phases/V2/CODEX_V2_SOURCE_INVENTORY.md",
+    "CODEX_V2_TEST_OUTPUT.txt": "docs/integrity/session_logs/V2/CODEX_V2_TEST_OUTPUT.txt",
+    "CODEX_V3_GIT_STATUS.txt": "docs/integrity/session_logs/V3/CODEX_V3_GIT_STATUS.txt",
+    "CODEX_V3_MONITORING_FOUNDATION_REPORT.md": "docs/phases/V3/CODEX_V3_MONITORING_FOUNDATION_REPORT.md",
+    "CODEX_V3_PREFLIGHT.md": "docs/phases/V3/CODEX_V3_PREFLIGHT.md",
+    "CODEX_V3_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V3/CODEX_V3_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V3_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V3/CODEX_V3_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V3_TEST_OUTPUT.txt": "docs/integrity/session_logs/V3/CODEX_V3_TEST_OUTPUT.txt",
+    "CODEX_V4R2_FINAL_GUI_GATE_REPORT.md": "docs/phases/V4R2/CODEX_V4R2_FINAL_GUI_GATE_REPORT.md",
+    "CODEX_V4R2_GIT_STATUS.txt": "docs/integrity/session_logs/V4R2/CODEX_V4R2_GIT_STATUS.txt",
+    "CODEX_V4R2_PREFLIGHT.md": "docs/phases/V4R2/CODEX_V4R2_PREFLIGHT.md",
+    "CODEX_V4R2_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V4R2/CODEX_V4R2_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V4R2_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V4R2/CODEX_V4R2_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V4R2_TEST_OUTPUT.txt": "docs/integrity/session_logs/V4R2/CODEX_V4R2_TEST_OUTPUT.txt",
+    "CODEX_V4R3_FINAL_BUILD_GATE_REPORT.md": "docs/phases/V4R3/CODEX_V4R3_FINAL_BUILD_GATE_REPORT.md",
+    "CODEX_V4R3_GIT_STATUS.txt": "docs/integrity/session_logs/V4R3/CODEX_V4R3_GIT_STATUS.txt",
+    "CODEX_V4R3_PREFLIGHT.md": "docs/phases/V4R3/CODEX_V4R3_PREFLIGHT.md",
+    "CODEX_V4R3_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V4R3/CODEX_V4R3_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V4R3_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V4R3/CODEX_V4R3_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V4R3_TEST_OUTPUT.txt": "docs/integrity/session_logs/V4R3/CODEX_V4R3_TEST_OUTPUT.txt",
+    "CODEX_V4R_GIT_STATUS.txt": "docs/integrity/session_logs/V4R/CODEX_V4R_GIT_STATUS.txt",
+    "CODEX_V4R_GUI_SAFETY_REPORT.md": "docs/phases/V4R/CODEX_V4R_GUI_SAFETY_REPORT.md",
+    "CODEX_V4R_PREFLIGHT.md": "docs/phases/V4R/CODEX_V4R_PREFLIGHT.md",
+    "CODEX_V4R_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V4R/CODEX_V4R_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V4R_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V4R/CODEX_V4R_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V4R_TEST_OUTPUT.txt": "docs/integrity/session_logs/V4R/CODEX_V4R_TEST_OUTPUT.txt",
+    "CODEX_V4_GIT_STATUS.txt": "docs/integrity/session_logs/V4/CODEX_V4_GIT_STATUS.txt",
+    "CODEX_V4_GUI_REPORT.md": "docs/phases/V4/CODEX_V4_GUI_REPORT.md",
+    "CODEX_V4_PREFLIGHT.md": "docs/phases/V4/CODEX_V4_PREFLIGHT.md",
+    "CODEX_V4_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V4/CODEX_V4_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V4_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V4/CODEX_V4_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V4_TEST_OUTPUT.txt": "docs/integrity/session_logs/V4/CODEX_V4_TEST_OUTPUT.txt",
+    "CODEX_V5R_BUILD_CHAIN_AUDIT.md": "docs/phases/V5R/CODEX_V5R_BUILD_CHAIN_AUDIT.md",
+    "CODEX_V5R_BUILD_LOG.txt": "docs/integrity/session_logs/V5R/CODEX_V5R_BUILD_LOG.txt",
+    "CODEX_V5R_FINAL_RUNTIME_AND_INTEGRITY_REPORT.md": "docs/phases/V5R/CODEX_V5R_FINAL_RUNTIME_AND_INTEGRITY_REPORT.md",
+    "CODEX_V5R_GIT_STATUS.txt": "docs/integrity/session_logs/V5R/CODEX_V5R_GIT_STATUS.txt",
+    "CODEX_V5R_POSTBUILD_TEST_OUTPUT.txt": "docs/integrity/session_logs/V5R/CODEX_V5R_POSTBUILD_TEST_OUTPUT.txt",
+    "CODEX_V5R_PREBUILD_TEST_OUTPUT.txt": "docs/integrity/session_logs/V5R/CODEX_V5R_PREBUILD_TEST_OUTPUT.txt",
+    "CODEX_V5R_PREFLIGHT.md": "docs/phases/V5R/CODEX_V5R_PREFLIGHT.md",
+    "CODEX_V5R_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V5R_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V5R/CODEX_V5R_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V5R_REJECTED_V5_EXE_BASELINE.json": "docs/phases/V5R/CODEX_V5R_REJECTED_V5_EXE_BASELINE.json",
+    "CODEX_V5R_RESUME.log": "docs/integrity/session_logs/V5R/CODEX_V5R_RESUME.log",
+    "CODEX_V5R_RESUME2.log": "docs/integrity/session_logs/V5R/CODEX_V5R_RESUME2.log",
+    "CODEX_V5R_STANDALONE_EXE_REPORT.md": "docs/phases/V5R/CODEX_V5R_STANDALONE_EXE_REPORT.md",
+    "CODEX_V5R_STATIC_EXE_VERIFICATION.md": "docs/phases/V5R/CODEX_V5R_STATIC_EXE_VERIFICATION.md",
+    "CODEX_V5_BUILD_LOG.txt": "docs/integrity/session_logs/V5/CODEX_V5_BUILD_LOG.txt",
+    "CODEX_V5_EXE_BUILD_REPORT.md": "docs/phases/V5/CODEX_V5_EXE_BUILD_REPORT.md",
+    "CODEX_V5_GIT_STATUS.txt": "docs/integrity/session_logs/V5/CODEX_V5_GIT_STATUS.txt",
+    "CODEX_V5_GUI_PREBUILD_TEST.log": "docs/integrity/session_logs/V5/CODEX_V5_GUI_PREBUILD_TEST.log",
+    "CODEX_V5_INTERRUPTED_STATE_DIFF.json": "docs/phases/V5/CODEX_V5_INTERRUPTED_STATE_DIFF.json",
+    "CODEX_V5_ORCHESTRATOR_AUDIT.md": "docs/phases/V5/CODEX_V5_ORCHESTRATOR_AUDIT.md",
+    "CODEX_V5_POSTBUILD_TEST_OUTPUT.txt": "docs/integrity/session_logs/V5/CODEX_V5_POSTBUILD_TEST_OUTPUT.txt",
+    "CODEX_V5_PREBUILD_TEST_OUTPUT.txt": "docs/integrity/session_logs/V5/CODEX_V5_PREBUILD_TEST_OUTPUT.txt",
+    "CODEX_V5_PREEXISTING_EXE_BASELINE.json": "docs/phases/V5/CODEX_V5_PREEXISTING_EXE_BASELINE.json",
+    "CODEX_V5_PREFLIGHT.md": "docs/phases/V5/CODEX_V5_PREFLIGHT.md",
+    "CODEX_V5_PROTECTED_HASHES_AFTER.json": "docs/integrity/protected_hashes/V5/CODEX_V5_PROTECTED_HASHES_AFTER.json",
+    "CODEX_V5_PROTECTED_HASHES_BEFORE.json": "docs/integrity/protected_hashes/V5/CODEX_V5_PROTECTED_HASHES_BEFORE.json",
+    "CODEX_V5_RECOVERY_GIT_STATUS.txt": "docs/integrity/session_logs/V5/CODEX_V5_RECOVERY_GIT_STATUS.txt",
+    "CODEX_V5_RECOVERY_PREFLIGHT.md": "docs/phases/V5/CODEX_V5_RECOVERY_PREFLIGHT.md",
+    "CODEX_V5_RESUME.log": "docs/integrity/session_logs/V5/CODEX_V5_RESUME.log",
+    "CODEX_V5_STATIC_EXE_VERIFICATION.md": "docs/phases/V5/CODEX_V5_STATIC_EXE_VERIFICATION.md",
+    "CODEX_V5_V4R3_BASELINE_VERIFICATION.json": "docs/phases/V5/CODEX_V5_V4R3_BASELINE_VERIFICATION.json",
+    "CONTROL_AUTHORIZATION_CONFLICT_REPORT.md": "docs/governance/CONTROL_AUTHORIZATION_CONFLICT_REPORT.md",
+    "G0_EXTERNAL_REVIEW_STATUS.md": "docs/review/status/G0_EXTERNAL_REVIEW_STATUS.md",
+    "G1_COMPARISON_LOGIC.md": "docs/governance/G1_COMPARISON_LOGIC.md",
+    "G1_EXTERNAL_REVIEW_STATUS.md": "docs/review/status/G1_EXTERNAL_REVIEW_STATUS.md",
+    "P9_EXTERNAL_REVIEW_STATUS.md": "docs/review/status/P9_EXTERNAL_REVIEW_STATUS.md",
+    "codex_g0_authorization_conflict_remediation_review.zip.sha256": "docs/review/sidecars/codex_g0_authorization_conflict_remediation_review.zip.sha256",
+    "codex_g0r_authorization_champion_lineage_remediation_review.zip.sha256": "docs/review/sidecars/codex_g0r_authorization_champion_lineage_remediation_review.zip.sha256",
+    "codex_g0r2_clean_checkpoint_evidence_completeness_review.zip.sha256": "docs/review/sidecars/codex_g0r2_clean_checkpoint_evidence_completeness_review.zip.sha256",
+    "codex_g0r3_final_commit_bound_package_review.zip.sha256": "docs/review/sidecars/codex_g0r3_final_commit_bound_package_review.zip.sha256",
+    "codex_g0r4_detached_attestation_exact_byte_package_review.zip.sha256": "docs/review/sidecars/codex_g0r4_detached_attestation_exact_byte_package_review.zip.sha256",
+    "codex_g0r4r_verbatim_external_review_chain_resubmission.zip.sha256": "docs/review/sidecars/codex_g0r4r_verbatim_external_review_chain_resubmission.zip.sha256",
+    "codex_g1_readonly_challenger_cost_evidence_submission.zip.sha256": "docs/review/sidecars/codex_g1_readonly_challenger_cost_evidence_submission.zip.sha256",
+    "codex_risk_off_challenger_review.zip.sha256": "docs/review/sidecars/codex_risk_off_challenger_review.zip.sha256",
+    "codex_v1r2_review_chain_review.zip.sha256": "docs/review/sidecars/codex_v1r2_review_chain_review.zip.sha256",
+    "codex_v1r3_authorized_completion_review.zip.sha256": "docs/review/sidecars/codex_v1r3_authorized_completion_review.zip.sha256",
+    "codex_v1r_evidence_controller_review.zip.sha256": "docs/review/sidecars/codex_v1r_evidence_controller_review.zip.sha256",
+    "codex_v2_robustness_review.zip.sha256": "docs/review/sidecars/codex_v2_robustness_review.zip.sha256",
+    "codex_v2r_statistical_validity_review.zip.sha256": "docs/review/sidecars/codex_v2r_statistical_validity_review.zip.sha256",
+    "codex_v3_monitor_foundation_review.zip.sha256": "docs/review/sidecars/codex_v3_monitor_foundation_review.zip.sha256",
+    "codex_v4_gui_review.zip.sha256": "docs/review/sidecars/codex_v4_gui_review.zip.sha256",
+    "codex_v4r2_final_gui_gate_review.zip.sha256": "docs/review/sidecars/codex_v4r2_final_gui_gate_review.zip.sha256",
+    "codex_v4r3_final_build_gate_review.zip.sha256": "docs/review/sidecars/codex_v4r3_final_build_gate_review.zip.sha256",
+    "codex_v4r_gui_safety_review.zip.sha256": "docs/review/sidecars/codex_v4r_gui_safety_review.zip.sha256",
+    "codex_v5_exe_build_review.zip.sha256": "docs/review/sidecars/codex_v5_exe_build_review.zip.sha256",
+    "codex_v5r_final_review.zip.sha256": "docs/review/sidecars/codex_v5r_final_review.zip.sha256",
+    "codex_v5r_standalone_exe_review.zip.sha256": "docs/review/sidecars/codex_v5r_standalone_exe_review.zip.sha256",
+}
+
+
+def doc_path(name: str) -> Path:
+    """Resolve documentation file (legacy root basename -> docs layout)."""
+    rel = RELOCATED.get(name)
+    if rel:
+        candidate = ROOT / rel
+        if candidate.is_file() or not candidate.exists():
+            return candidate
+    direct = ROOT / name
+    if direct.is_file():
+        return direct
+    hits = sorted(ROOT.glob(f"docs/**/{name}"))
+    if hits:
+        return hits[0]
+    if rel:
+        return ROOT / rel
+    return direct
+
+
+def doc_rel(name: str) -> str:
+    """Relative path string for ZIP manifests and reports."""
+    return str(doc_path(name).relative_to(ROOT)).replace("\\", "/")
+
+
+def root_doc_path(root: Path, name: str) -> Path:
+    """Resolve a documentation path under an arbitrary project root (e.g. pytest tmp_path)."""
+    return Path(root) / doc_rel(name)
+
+
+def ensure_root_doc_path(root: Path, name: str) -> Path:
+    """Return documentation path under root, creating parent directories if needed."""
+    path = root_doc_path(root, name)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def write_root_doc_file(root: Path, name: str, content: str, *, encoding: str = "utf-8") -> Path:
+    """Write text to a documentation path under root (mkdir -p first)."""
+    path = ensure_root_doc_path(root, name)
+    path.write_text(content, encoding=encoding)
+    return path
+

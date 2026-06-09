@@ -1,0 +1,76 @@
+{
+  "activation_externally_approved": false,
+  "activation_status": "BLOCKED",
+  "active_blockers": [
+    "CHALLENGER_TURNOVER_NOT_VERIFIED",
+    "COST_STRESS_GATE_NOT_PASSED",
+    "COST_STRESS_NOT_PASSED",
+    "DSR_BELOW_REQUIRED_CONFIDENCE",
+    "ECONOMIC_VALUE_GATE: auto_promotion=True promotion_status=False",
+    "FORWARD_MONITORING_NOT_EXTERNALLY_APPROVED",
+    "MULTIPLE_TESTING_NOT_PASSED",
+    "P9_NOT_EXTERNALLY_REVIEWED",
+    "ROBUSTNESS_NOT_PASSED"
+  ],
+  "available_inputs": [
+    "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+    "model_output_sp500_pit_t212/backtest_decisions.csv",
+    "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+    "control/challenger_report.json",
+    "control/evidence/cost_stress_status.json",
+    "control/evidence/robustness_status.json",
+    "control/evidence/multiple_testing_status.json"
+  ],
+  "baseline_cost_reports": {
+    "external_inclusion_note": null,
+    "missing_paths": [],
+    "reports": [
+      {
+        "path": "model_output_sp500_pit_t212/backtest_report.txt",
+        "present": true,
+        "sha256": "ad855bab249a0418601a6e2c595602021f02c27d98411aad73021b0e5e214899"
+      },
+      {
+        "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_report.txt",
+        "present": true,
+        "sha256": "e197360d045f653ac10567c613284f9b181b88112c88dbfd446ae382ef6cf991"
+      }
+    ]
+  },
+  "candidate_variant_id": "MOM_63_TOP12",
+  "champion_variant_id": "R3_w075_q065_noexit",
+  "control_variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "display_messages": [
+    "Forward monitoring foundation is read-only; no observation jobs started.",
+    "Activation requires separate external approval after V3.",
+    "Cost stress remains blocked without verified Challenger turnover."
+  ],
+  "generated_at_utc": "2026-05-30T21:13:41+00:00",
+  "missing_inputs": [
+    "challenger_specific_turnover_or_position_change_evidence"
+  ],
+  "mode": "READ_ONLY_MONITORING_FOUNDATION",
+  "observation_type": "FORWARD_MONITORING",
+  "operative_jobs_started": false,
+  "paper_eligible": false,
+  "promotion_allowed": false,
+  "real_money_eligible": false,
+  "required_inputs": [
+    "challenger_specific_turnover_or_position_change_evidence",
+    "externally_approved_forward_monitoring_activation",
+    "verified_dsr_evidence",
+    "full_robustness_evidence",
+    "externally_reviewed_p9_classification"
+  ],
+  "schema_version": 1,
+  "source_artifacts": [
+    {
+      "path": "control/evidence/current_evidence_status.json",
+      "role": "unified_evidence"
+    },
+    {
+      "path": "control/evidence/cost_stress_status.json",
+      "role": "cost_stress"
+    }
+  ]
+}

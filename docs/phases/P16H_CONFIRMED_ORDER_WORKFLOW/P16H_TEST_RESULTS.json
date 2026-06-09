@@ -1,0 +1,6 @@
+{
+  "command": "E:\\active_alpha_model\\.venv\\Scripts\\python.exe -m pytest tests/test_p16h_confirmed_order_workflow.py tests/test_p16g_interactive_desktop_product.py -q --tb=no",
+  "passed": true,
+  "returncode": 0,
+  "tests_passed": 22
+}

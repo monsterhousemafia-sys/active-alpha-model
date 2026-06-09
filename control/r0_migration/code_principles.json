@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "title": "Code principles — WSL-first, maintenance-light",
+  "updated_at_utc": "2026-06-05T16:00:00+00:00",
+  "principle": "Good code reads like clear thought: self-explanatory flow, no tricks, no promises the runtime cannot keep. Beauty is in structure, not cleverness.",
+  "wsl_goal": "One host, one entry, small surface — no maintenance-heavy rival drivers on Linux.",
+  "rules": [
+    "ONE entry per concern: wsl_conductor.sh, _m1_autoseal.py, run_r0_migration_phase_orchestrator.py",
+    "Hardware truth in one module: tools/r0_migration_hw.py — no PowerShell fragments in call sites",
+    "No false parallelism: path-sim is serial; do not advertise multi-core speedups where physics forbids it",
+    "No fail-open gates: if a lock or seal check fails, say so plainly; never silently skip safety",
+    "Delete before abstract: retire rival .py drivers; extract pure helpers only when importers exist",
+    "Comments explain why, not what — the what must be readable from names and flow",
+    "WSL native path ~/active_alpha_model; cross-platform paths via Path(__file__), never hardcoded E:\\\\"
+  ],
+  "retire_not_carry_to_wsl": [
+    "run_r0_migration_*.bat",
+    "rival autonomous loops (executive, finish_push, watch_loop, autopilot)",
+    "duplicate status/processctl modules after consolidation"
+  ],
+  "canonical_read_order": [
+    "tools/wsl_conductor.sh",
+    "tools/r0_migration_hw.py",
+    "tools/_m1_autoseal.py",
+    "tools/run_r0_migration_phase_orchestrator.py",
+    "tools/run_validation_matrix.py"
+  ],
+  "consolidation_gate": "control/r0_migration/py_consolidation_plan.json — execute on WSL after M1+M2 seal, not before"
+}

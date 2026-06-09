@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Teilkreis Konto → Modell (Teil des Trading-Kreislaufs)",
+  "trading_cycle_ref": "control/r3_trading_cycle_policy.json",
+  "loop_de": [
+    "Internet erforderlich für R3 und Active Alpha Model",
+    "R3 synchronisiert T212-Kontostand (API-Bond)",
+    "Active Alpha Model rechnet mit vollem T212-Guthaben (cash_buffer_pct=0, Plan-Skalierung)",
+    "Vorschau-Override: budget.mode=fixed_preview mit planning_capital_eur=650 (Trainingsphase, wenige Tage)",
+    "Ergebnisse erscheinen auf R3",
+    "Orders nur über R3 zurück an T212"
+  ],
+  "internet_policy_ref": "control/r3_internet_requirement_policy.json",
+  "cash_source_authoritative": "evidence/r3_t212_api_bond_latest.json",
+  "cash_fallback_ref": "live_pilot/manual_execution/readonly_real_account_state/latest_sync.json",
+  "forbidden_engine_de": [
+    "eigener Broker-Sync für Kontostand im Hintergrund-Tick",
+    "still cash_eur=0 bei fehlendem R3-Konto"
+  ],
+  "refresh_order_de": [
+    "run_trading_cycle — bash tools/king_ops.sh r3-cycle"
+  ]
+}

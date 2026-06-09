@@ -1,0 +1,204 @@
+{
+  "generated_at_utc": "2026-06-08T13:50:42+00:00",
+  "locked_champion": "R0_LEGACY_ENSEMBLE",
+  "phase": "A2",
+  "schema_version": 1,
+  "validation_runs_gitignored": true,
+  "validation_runs_present": true,
+  "variants": [
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": false,
+        "status": "NOT_AVAILABLE"
+      },
+      "metrics_embedded": {},
+      "n_days": null,
+      "note": null,
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "M1_CONTROL",
+      "run_dir": "",
+      "source": "control/background_research_status.json",
+      "start_date": null,
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": false,
+        "status": "NOT_AVAILABLE"
+      },
+      "metrics_embedded": {},
+      "n_days": null,
+      "note": "Requires PASS M1 matched-controls run with embedded NAIVE_MOM_63 reference.",
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "RESEARCH",
+      "run_dir": null,
+      "source": "control/background_research_status.json",
+      "start_date": null,
+      "variant_id": "MOM_63_TOP12"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": false,
+        "status": "NOT_AVAILABLE"
+      },
+      "metrics_embedded": {},
+      "n_days": null,
+      "note": null,
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "CHAMPION",
+      "run_dir": "",
+      "source": "control/background_research_status.json",
+      "start_date": null,
+      "variant_id": "R0_LEGACY_ENSEMBLE"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": true,
+        "status": "PASS"
+      },
+      "metrics_embedded": {
+        "annual_vol": 0.2084174884043623,
+        "cagr": 0.16805513278321293,
+        "daily_hit_rate": 0.5532258064516129,
+        "excess_cagr_approx": -0.006227997421769093,
+        "information_ratio": -0.05699794216704712,
+        "max_drawdown": -0.3132759516837291,
+        "n_days": 1860,
+        "sharpe_0rf": 0.8501252965218753,
+        "total_return": 2.1473403968741054,
+        "tracking_error": 0.10926705745825604
+      },
+      "n_days": 1860,
+      "note": null,
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "RESEARCH",
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R1_GATE_BASE_ONLY",
+      "source": "model_output_sp500_pit_t212/challenger_report.json",
+      "start_date": null,
+      "variant_id": "R1_GATE_BASE_ONLY"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": true,
+        "status": "PASS"
+      },
+      "metrics_embedded": {
+        "annual_vol": 0.2068711412519061,
+        "cagr": 0.19706316136473712,
+        "daily_hit_rate": 0.55,
+        "excess_cagr_approx": 0.017969732224614447,
+        "information_ratio": 0.16387795368523078,
+        "max_drawdown": -0.24287574809223278,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9734499822344412,
+        "total_return": 2.7720578437409484,
+        "tracking_error": 0.10965314016020643
+      },
+      "n_days": 1860,
+      "note": null,
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "RESEARCH",
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R2_MOM_BLEND_REPLACE",
+      "source": "model_output_sp500_pit_t212/challenger_report.json",
+      "start_date": null,
+      "variant_id": "R2_MOM_BLEND_REPLACE"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": true,
+        "status": "PASS"
+      },
+      "metrics_embedded": {
+        "annual_vol": 0.2166491472905297,
+        "cagr": 0.19002078458773464,
+        "daily_hit_rate": 0.5575268817204301,
+        "excess_cagr_approx": 0.014151810838141541,
+        "information_ratio": 0.128653608375964,
+        "max_drawdown": -0.2609375706684086,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9118927531483968,
+        "total_return": 2.6113078471758038,
+        "tracking_error": 0.10999933089156586
+      },
+      "n_days": 1860,
+      "note": null,
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "RESEARCH",
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260529_R3_w070_q070_noexit",
+      "source": "model_output_sp500_pit_t212/challenger_report.json",
+      "start_date": null,
+      "variant_id": "R3_w070_q070_noexit"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": true,
+        "status": "PASS"
+      },
+      "metrics_embedded": {
+        "annual_vol": 0.21672573966539618,
+        "cagr": 0.19289920238427194,
+        "daily_hit_rate": 0.5586021505376344,
+        "max_drawdown": -0.2600859967860806,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9228008769606217,
+        "total_return": 2.6762803055879076
+      },
+      "n_days": 1860,
+      "note": "Matrix run dir absent locally; metrics from Phase A embedded inventory.",
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "RESEARCH",
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R3_w075_q065_noexit",
+      "source": "control/background_research_status.json",
+      "start_date": null,
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "end_date": null,
+      "integrity": {
+        "integrity_pass": true,
+        "status": "PASS"
+      },
+      "metrics_embedded": {
+        "annual_vol": 0.21523630267909113,
+        "cagr": 0.18719618319258235,
+        "daily_hit_rate": 0.5591397849462365,
+        "excess_cagr_approx": 0.011478570328623393,
+        "information_ratio": 0.10348362748300784,
+        "max_drawdown": -0.2596882296072619,
+        "n_days": 1860,
+        "sharpe_0rf": 0.9054585330387559,
+        "total_return": 2.5485175909142006,
+        "tracking_error": 0.11092160767661735
+      },
+      "n_days": 1860,
+      "note": null,
+      "returns_path": null,
+      "returns_sha256": null,
+      "role": "RESEARCH",
+      "run_dir": "E:\\active_alpha_model\\validation_runs\\20260530T145451Z_matrix_R4_w070_q070_forceexit",
+      "source": "model_output_sp500_pit_t212/challenger_report.json",
+      "start_date": null,
+      "variant_id": "R4_w070_q070_forceexit"
+    }
+  ],
+  "variants_found": 8,
+  "variants_missing_local_dir": [
+    "R5_rank_only_train5",
+    "MOM_63_TOP12_STRICT",
+    "MOM_63_TOP15_RECONSTRUCTED"
+  ]
+}

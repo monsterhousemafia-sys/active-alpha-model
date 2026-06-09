@@ -1,0 +1,443 @@
+{
+  "consolidation": {
+    "community_spread_ok": true,
+    "doctrine_de": "Orchestrator = König auf diesem Host. Bash weltweit ist normal, aber ohne König-Orchestrierung nutzlos isoliert.",
+    "evidence_refs": [
+      "evidence/world_spread_latest.json",
+      "evidence/community_spread_sustain_latest.json",
+      "evidence/king_distribute_latest.json",
+      "evidence/glasfaser_offline_latest.json",
+      "control/h1_orchestrator_model.json"
+    ],
+    "federation_worker_count": 1,
+    "federation_workers": [
+      {
+        "host": "machinax7-X470-AORUS-GAMING-7-WIFI",
+        "remote_join": false,
+        "role": "king",
+        "worker_id": "king"
+      }
+    ],
+    "headline_de": "Bash weltweit — 104 König-Skripte · 3/3 Worker-Plattformen · 1 Federation-Knoten",
+    "isolation_de": "Worker-Bash läuft isoliert — Rechenleistung nur mit gültiger Join-URL + Token. mom_1-Seal und Orders bleiben beim König.",
+    "layers": [
+      {
+        "entry_de": "bash tools/king_ops.sh",
+        "id": "koenig",
+        "label_de": "König-Host (Orchestrator)",
+        "primary_commands_de": [
+          "verify",
+          "status",
+          "maintain",
+          "pipeline",
+          "distribute",
+          "community-spread",
+          "glasfaser",
+          "series-ready",
+          "r3-stealth",
+          "pulse",
+          "h1-seal",
+          "workers",
+          "connect"
+        ],
+        "role_de": "Bash = König-Orchestrator: king_ops pipeline (status→maintain→h1-seal); distribute für Spread/Worker.",
+        "scripts_in_tools": 104
+      },
+      {
+        "chains_de": [
+          "world-spread → Tunnel + Lite-ZIP",
+          "spread-intensify → Forum + Timer",
+          "h1-distribute → Worker-Queue"
+        ],
+        "entry_de": "bash tools/king_distribute.sh",
+        "id": "verteilen",
+        "label_de": "König verteilt",
+        "last_headline_de": "Welt aktiv — https://uni-consists-policies-individually.trycloudflare.com/join"
+      },
+      {
+        "entry_de": "Doppelklick START-Skript — kein König-Bash nötig",
+        "id": "worker_weltweit",
+        "join_url": "https://uni-consists-policies-individually.trycloudflare.com/join",
+        "label_de": "Worker weltweit (ZIP)",
+        "lite_zip": "/home/machinax7/active_alpha_worker_LITE.zip",
+        "platforms": [
+          {
+            "os": "linux",
+            "path": "/home/machinax7/active_alpha_worker_LITE/Linux_START.sh",
+            "present": true,
+            "script": "Linux_START.sh"
+          },
+          {
+            "os": "windows",
+            "path": "/home/machinax7/active_alpha_worker_LITE/Windows_START.bat",
+            "present": true,
+            "script": "Windows_START.bat"
+          },
+          {
+            "os": "macos",
+            "path": "/home/machinax7/active_alpha_worker_LITE/Mac_START.command",
+            "present": true,
+            "script": "Mac_START.command"
+          }
+        ]
+      },
+      {
+        "entry_de": "bash tools/king_ops.sh community-spread",
+        "forum_ref": "evidence/community_spread_forum_de.txt",
+        "gates_ok": 6,
+        "id": "community_linux",
+        "label_de": "Linux-Community",
+        "share_url": "https://sport-supplied-rivers-macintosh.trycloudflare.com/"
+      },
+      {
+        "active_phase": "before_offline",
+        "blockers_de": [
+          "tunnel_token_set: Tunnel-Token fehlt — bash tools/setup_cloudflare_tunnel_token.sh",
+          "session_autostart: Autostart fehlt — bash tools/king_ops.sh r3-stealth",
+          "zip_backup: Backup fehlt — Repair legt evidence/glasfaser_offline/worker_LITE_backup.zip an"
+        ],
+        "entry_de": "bash tools/king_ops.sh glasfaser",
+        "id": "glasfaser",
+        "label_de": "Glasfaser-Umzug"
+      }
+    ],
+    "next_de": "Tunnel-Token stabilisieren — bash tools/setup_cloudflare_tunnel_token.sh",
+    "public_base_url": "https://uni-consists-policies-individually.trycloudflare.com",
+    "schema_version": 1,
+    "spread_map_de": [
+      "König: king_ops.sh → verify/maintain/distribute/pulse",
+      "Welt: king_distribute.sh → ai_kernel world-spread",
+      "Community: community-spread → Forum + Timer",
+      "Worker: Lite-ZIP → Linux/Win/Mac START (Python 3)",
+      "H1-Welt: Full-Worker → Prep-Chunks zurück zum König"
+    ],
+    "tunnel_stable": false,
+    "tunnel_token_set": false,
+    "updated_at_utc": "2026-06-08T10:44:41+00:00",
+    "world_spread_ok": true
+  },
+  "consolidation_ref": "evidence/bash_weltweit_consolidation_latest.json",
+  "doctrine_de": "Orchestrator = König auf diesem Host. Bash weltweit ist normal, aber ohne König-Orchestrierung nutzlos isoliert.",
+  "headline_de": "Bash weltweit — 104 König-Skripte · 3/3 Worker-Plattformen · 1 Federation-Knoten",
+  "message_de": "Erhaltungsprogramm aktiv — Bash-Welt konsolidiert in evidence/bash_weltweit_consolidation_latest.json",
+  "next_de": "Tunnel-Token stabilisieren — bash tools/setup_cloudflare_tunnel_token.sh",
+  "ok": false,
+  "schema_version": 1,
+  "started_at_utc": "2026-06-08T10:44:39+00:00",
+  "status": "ACTIVE",
+  "steps": [
+    {
+      "detail": {
+        "ok": true,
+        "returncode": 0,
+        "script": "tools/king_verify.sh",
+        "stdout_tail": "[verify] Projekt-Safety\n  OK   project_root — /home/machinax7/active_alpha_model\n  OK   dry_run — AA_EXECUTION_DRY_RUN=1\n  OK   no_live_orders\n  OK   python — /home/machinax7/active_alpha_model/.venv/bin/python3\n  OK   cursor_hooks_empty\n  WARN nested_worker_full — ghost 3MB — rm -rf nach Cursor-Neustart\n[verify] PASS\n"
+      },
+      "id": "verify",
+      "label_de": "Safety verify",
+      "ok": true
+    },
+    {
+      "detail": {
+        "ok": true,
+        "returncode": 0,
+        "script": "tools/king_clean.sh",
+        "stdout_tail": "/active_alpha_model/evidence/.r3_local_growth_latest.json.u8uldn6k (0 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.desktop_shell_cache_meta.json.77x5j7fm (124 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.desktop_shell_cache_meta.json.o_u79rz2 (125 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.desktop_shell_cache_meta.json.g0a19rlt (0 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.desktop_shell_cache_meta.json.dezocep1 (0 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.desktop_shell_cache_meta.json.fmw70rd2 (125 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.r3_kernel_roles_latest.json.k_y3pgwk (1722 B)\n  rm: /home/machinax7/active_alpha_model/evidence/.desktop_shell_cache_meta.json.vu28w56d (125 B)\n[clean] OK — 168 orphans (~339 KB), ghost=3MB\n"
+      },
+      "id": "maintain",
+      "label_de": "Maintain (clean)",
+      "ok": true
+    },
+    {
+      "error_de": "scan_community_spread() got an unexpected keyword argument 'persist'",
+      "id": "community_spread",
+      "label_de": "Community-Spread Scan",
+      "ok": false
+    },
+    {
+      "detail": {
+        "active_phase": {
+          "actions_de": [
+            "bash tools/setup_cloudflare_tunnel_token.sh (einmalig, stabile URL)",
+            "bash tools/king_ops.sh r3-stealth",
+            "bash tools/king_ops.sh community-spread --repair",
+            "bash tools/install_remote_systemd.sh",
+            "ZIP-Backup: evidence/glasfaser_offline/worker_LITE_backup.zip"
+          ],
+          "done": false,
+          "gates": [
+            {
+              "detail_de": "Tunnel-Token fehlt — bash tools/setup_cloudflare_tunnel_token.sh",
+              "id": "tunnel_token_set",
+              "ok": false
+            },
+            {
+              "detail_de": "Autostart fehlt — bash tools/king_ops.sh r3-stealth",
+              "id": "session_autostart",
+              "ok": false
+            },
+            {
+              "detail_de": "Lite+Token: /home/machinax7/active_alpha_worker_LITE",
+              "id": "worker_export_ready",
+              "ok": true
+            },
+            {
+              "detail_de": "Backup fehlt — Repair legt evidence/glasfaser_offline/worker_LITE_backup.zip an",
+              "id": "zip_backup",
+              "ok": false
+            },
+            {
+              "detail_de": "6/6 Gates",
+              "id": "community_spread_ready",
+              "ok": true
+            },
+            {
+              "detail_de": "/home/machinax7/.config/systemd/user/active-alpha-preview-hub.service",
+              "id": "remote_systemd",
+              "ok": true
+            }
+          ],
+          "id": "before_offline",
+          "label_de": "Jetzt — vor Offline (Glasfaser-Umzug)",
+          "operator_note_de": "Quick-Tunnel-URLs sterben bei Neustart — Token-Pflicht vor Glasfaser-Cutover.",
+          "status": "active"
+        },
+        "active_phase_id": "before_offline",
+        "before_offline_ready": false,
+        "blockers_de": [
+          "tunnel_token_set: Tunnel-Token fehlt — bash tools/setup_cloudflare_tunnel_token.sh",
+          "session_autostart: Autostart fehlt — bash tools/king_ops.sh r3-stealth",
+          "zip_backup: Backup fehlt — Repair legt evidence/glasfaser_offline/worker_LITE_backup.zip an"
+        ],
+        "comeback_ack_at_utc": null,
+        "headline_de": "Glasfaser Phase before_offline — 3 Blocker",
+        "initiated_at_utc": "2026-06-08T10:42:17+00:00",
+        "next_de": "Blocker: tunnel_token_set — Tunnel-Token fehlt — bash tools/setup_cloudflare_tunnel_token.sh",
+        "offline_ack_at_utc": null,
+        "ok": false,
+        "phases": [
+          {
+            "actions_de": [
+              "bash tools/setup_cloudflare_tunnel_token.sh (einmalig, stabile URL)",
+              "bash tools/king_ops.sh r3-stealth",
+              "bash tools/king_ops.sh community-spread --repair",
+              "bash tools/install_remote_systemd.sh",
+              "ZIP-Backup: evidence/glasfaser_offline/worker_LITE_backup.zip"
+            ],
+            "done": false,
+            "gates": [
+              {
+                "detail_de": "Tunnel-Token fehlt — bash tools/setup_cloudflare_tunnel_token.sh",
+                "id": "tunnel_token_set",
+                "ok": false
+              },
+              {
+                "detail_de": "Autostart fehlt — bash tools/king_ops.sh r3-stealth",
+                "id": "session_autostart",
+                "ok": false
+              },
+              {
+                "detail_de": "Lite+Token: /home/machinax7/active_alpha_worker_LITE",
+                "id": "worker_export_ready",
+                "ok": true
+              },
+              {
+                "detail_de": "Backup fehlt — Repair legt evidence/glasfaser_offline/worker_LITE_backup.zip an",
+                "id": "zip_backup",
+                "ok": false
+              },
+              {
+                "detail_de": "6/6 Gates",
+                "id": "community_spread_ready",
+                "ok": true
+              },
+              {
+                "detail_de": "/home/machinax7/.config/systemd/user/active-alpha-preview-hub.service",
+                "id": "remote_systemd",
+                "ok": true
+              }
+            ],
+            "id": "before_offline",
+            "label_de": "Jetzt — vor Offline (Glasfaser-Umzug)",
+            "operator_note_de": "Quick-Tunnel-URLs sterben bei Neustart — Token-Pflicht vor Glasfaser-Cutover.",
+            "status": "active"
+          },
+          {
+            "actions_de": [
+              "Kein Post auf r/selfhosted / r/linux",
+              "Worker warten — König-Host ist absichtlich offline",
+              "ZIP-Backup auf USB/Cloud behalten"
+            ],
+            "done": false,
+            "gates": [
+              {
+                "detail_de": "Noch in Vorbereitung — Phase before_offline abschließen",
+                "id": "offline_ack",
+                "ok": false
+              }
+            ],
+            "id": "during_offline",
+            "label_de": "Während Offline — kein öffentlicher Launch",
+            "operator_note_de": "PC aus oder ohne Internet — Federation pausiert, kein Echtgeld-Risiko.",
+            "status": "pending"
+          },
+          {
+            "actions_de": [
+              "bash tools/king_ops.sh glasfaser --comeback --repair",
+              "curl -fsS <share_url>/api/health (von außen testen)",
+              "cat evidence/community_spread_forum_de.txt",
+              "Dann: r/selfhosted + r/linux"
+            ],
+            "done": false,
+            "gates": [
+              {
+                "detail_de": "Hub :17890 OK",
+                "id": "hub_healthy",
+                "ok": true
+              },
+              {
+                "detail_de": "<urlopen error [Errno 104] Connection reset by peer>",
+                "id": "remote_health_ok",
+                "ok": false
+              },
+              {
+                "detail_de": "6/6 Gates",
+                "id": "community_spread_ready",
+                "ok": true
+              },
+              {
+                "detail_de": "Forum synchron: https://sport-supplied-rivers-macintosh.trycloudflare.co",
+                "id": "forum_draft_synced",
+                "ok": true
+              },
+              {
+                "detail_de": "Comeback noch nicht eingeleitet",
+                "id": "comeback_ack",
+                "ok": false
+              }
+            ],
+            "id": "after_online",
+            "label_de": "Nach Online — Comeback + Forum",
+            "operator_note_de": "Erst posten wenn Health-Check von außen grün ist.",
+            "status": "pending"
+          }
+        ],
+        "policy_ref": "control/GLASFASER_OFFLINE_PLAN.json",
+        "schema_version": 1,
+        "updated_at_utc": "2026-06-08T10:44:41+00:00"
+      },
+      "id": "glasfaser",
+      "label_de": "Glasfaser Scan",
+      "ok": false
+    },
+    {
+      "detail": {
+        "blockers_de": [
+          "R3 lokales Wachstum"
+        ],
+        "confirmation_de": "Serienreife 86% — Blocker: R3 lokales Wachstum",
+        "critical_ok": 6,
+        "critical_total": 7,
+        "gates": [
+          {
+            "detail_de": "alle Auto-Flags aus",
+            "id": "safety_flags",
+            "label_de": "Safety-Flags",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "R0_LEGACY_ENSEMBLE · auto_promotion=DISABLED",
+            "id": "governance_locked",
+            "label_de": "Governance gesperrt",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "http://127.0.0.1:17890",
+            "id": "local_runtime",
+            "label_de": "Lokal-first Runtime",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "OK",
+            "id": "stack_integrity",
+            "label_de": "Stack-Integrität",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "95% · 3/4 Meilensteine",
+            "id": "r3_growth",
+            "label_de": "R3 lokales Wachstum",
+            "ok": false,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "Stack + Mirror OK",
+            "id": "mirror_operational",
+            "label_de": "Mirror operativ",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "auto_execute=false · AA_EXECUTION_DRY_RUN=1 · AA_NO_LIVE_ORDER_SUBMISSION=1 · king_verify OK",
+            "id": "dry_run_guard",
+            "label_de": "Ausführungsschutz",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "Linux 86% — 8/9 Dimensionen",
+            "id": "linux_potential",
+            "label_de": "Linux-Potenzial",
+            "ok": false,
+            "tier": "warn"
+          },
+          {
+            "detail_de": "Profil: Flüssig — bestätigt",
+            "id": "pending_upgrade",
+            "label_de": "R3-Upgrade offen",
+            "ok": true,
+            "tier": "warn"
+          },
+          {
+            "detail_de": "2026-06-08T10:44:39Z",
+            "id": "king_verify",
+            "label_de": "König verify",
+            "ok": true,
+            "tier": "warn"
+          }
+        ],
+        "headline_de": "Serienreife 86% — Blocker: R3 lokales Wachstum",
+        "local_surface_de": "http://127.0.0.1:17890/r3",
+        "next_de": "Beheben: R3 lokales Wachstum — bash tools/king_ops.sh series-ready --repair",
+        "policy_ref": "control/series_readiness_policy.json",
+        "readiness_pct": 86,
+        "schema_version": 1,
+        "scope_de": "Lokales R3-Produkt — kein Public-Launch-Gate",
+        "series_ready": false,
+        "updated_at_utc": "2026-06-08T10:44:41+00:00",
+        "warnings_de": [
+          "Linux-Potenzial"
+        ],
+        "warnings_open": 1
+      },
+      "id": "series_ready",
+      "label_de": "Serienreife Scan",
+      "ok": true
+    },
+    {
+      "detail": {
+        "headline_de": "Bash weltweit — 104 König-Skripte · 3/3 Worker-Plattformen · 1 Federation-Knoten"
+      },
+      "id": "bash_consolidation",
+      "label_de": "Bash weltweit konsolidieren",
+      "ok": true
+    }
+  ],
+  "steps_ok": 4,
+  "steps_total": 6,
+  "updated_at_utc": "2026-06-08T10:44:39+00:00"
+}

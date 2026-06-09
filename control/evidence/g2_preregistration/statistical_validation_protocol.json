@@ -1,0 +1,44 @@
+{
+  "cost_stress": {
+    "approved_scenario": "PLUS_25_BPS",
+    "requires_variant_specific_turnover": true,
+    "scenarios": [
+      "BASELINE",
+      "PLUS_10_BPS",
+      "PLUS_25_BPS",
+      "PLUS_50_BPS",
+      "SLIPPAGE_TURNOVER_STRESS"
+    ]
+  },
+  "forbidden_before_g2_approval": [
+    "backtest_execution",
+    "cost_stress_recompute",
+    "dsr_pbo_cscv_recompute",
+    "promotion",
+    "shadow",
+    "paper",
+    "real_money"
+  ],
+  "gates_unchanged": true,
+  "generated_at_utc": "2026-05-31T19:43:43+00:00",
+  "multiple_testing": {
+    "dsr_required_probability": 0.95,
+    "pbo_cscv_requires_candidate_matrix": true,
+    "trial_ledger_required": true
+  },
+  "phase": "G2_PRE_REGISTERED_STATISTICAL_VALIDATION",
+  "prerequisite_phases": [
+    "G1_READ_ONLY_CHALLENGER_COST_EVIDENCE_PREPARATION"
+  ],
+  "robustness": {
+    "robustness_evidence_gate": "ROBUSTNESS_EVIDENCE",
+    "subperiod_stability_screen": "informational"
+  },
+  "schema_version": 1,
+  "status": "PREREGISTERED_AWAITING_G1_PASS_AND_EXTERNAL_APPROVAL",
+  "variants": {
+    "challenger": "MOM_63_TOP12",
+    "champion": "R5_rank_only_train5",
+    "m1_control": "M1_MOM_BLEND_MATCHED_CONTROLS"
+  }
+}

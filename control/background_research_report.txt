@@ -1,0 +1,15 @@
+Background Research Status (P3)
+Updated: 2026-05-30T17:59:58+00:00
+Research status: PASS
+Champion: R3_w075_q065_noexit (unchanged)
+Auto-promotion: DISABLED
+
+Checked variants:
+  R0_LEGACY_ENSEMBLE [CANDIDATE]: PASS integrity=True Sharpe=0.984
+  R3_w075_q065_noexit [CHAMPION]: PASS integrity=True Sharpe=0.923
+  M1_MOM_BLEND_MATCHED_CONTROLS [CANDIDATE]: PASS integrity=True Sharpe=0.983
+  MOM_63_TOP12 [CANDIDATE]: PASS integrity=True Sharpe=1.012
+
+Best research candidate (not active): MOM_63_TOP12 Sharpe=1.011797
+
+M1 comparison Sharpe: champion=0.9228008769606217 m1=0.983392657770786

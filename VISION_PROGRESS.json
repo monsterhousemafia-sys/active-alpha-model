@@ -1,0 +1,50 @@
+{
+  "authoritative_review_document": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+  "build_source_commit": "bde017fb41819efd821100aaa68fecb08dbac26f",
+  "champion_evidence_remediation": {
+    "authoritative_champion": "R3_w075_q065_noexit",
+    "champion_unchanged": true,
+    "informational_only": true,
+    "note": "Does not supersede EXTERNAL_REVIEW_APPROVAL_FINAL.md or authorize champion change.",
+    "phases_completed": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "review_zip": "codex_champion_evidence_remediation_review.zip",
+    "review_zip_sha256": "ef4ed5cdc8210c18e4f2adcf321f3e678b4ac9f08c51a05185162b777b4b46c1",
+    "status": "AWAITING_EXTERNAL_REVIEW",
+    "strategic_decision": "E1_RETAIN_R3",
+    "submission_approval_file": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_EVIDENCE_REMEDIATION.md",
+    "track": "CHAMPION_EVIDENCE_GOVERNANCE_REMEDIATION_A_THROUGH_I",
+    "updated_at_utc": "2026-06-03T20:30:24+00:00"
+  },
+  "current_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
+  "distribution_type": "ONEFILE_STANDALONE",
+  "exe_built": true,
+  "exe_executed": false,
+  "informational_only": true,
+  "next_expected_phase": "NONE",
+  "next_phase_authorized": false,
+  "note": "Informational progress file only. Does not authorize operations.",
+  "operational_approval_file": null,
+  "operational_authorization": "NONE",
+  "program": "MARKTANALYSE_DECISION_COCKPIT",
+  "review_zip_sha256": "b0e687522cdb7a5966b872756e3df97ba62a676ab0f3a8aa01acaf7b4eadffc3",
+  "safety_flags": {
+    "CHAMPION_CHANGE_AUTHORIZED": "NO",
+    "PAPER_MONITORING_ACTIVATED": "NO",
+    "PROMOTION_AUTHORIZED": "NO",
+    "REAL_MONEY_AUTHORIZED": "NO",
+    "SHADOW_MONITORING_ACTIVATED": "NO"
+  },
+  "submission_exe_sha256": "eb5f4b89e30a9d34b7e728638c7e668cb94b7f66d1fa73641c08789f0bb8be57",
+  "v5r_external_acceptance": "APPROVED_FOR_MANUAL_READ_ONLY_REVIEW",
+  "v5r_standalone_exe_rebuild": true
+}

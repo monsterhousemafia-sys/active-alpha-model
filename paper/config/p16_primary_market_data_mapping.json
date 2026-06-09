@@ -1,0 +1,55 @@
+{
+  "generated_at_utc": "2026-06-01T14:38:37+00:00",
+  "mapping_purpose": "PRIMARY_MARKET_DATA_MAPPING",
+  "instrument_mappings_verified": "8/8",
+  "entries": [
+    {
+      "symbol_reference": "OXY",
+      "yfinance_ticker": "OXY",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "VUSD",
+      "yfinance_ticker": "VUSD.L",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "WDC",
+      "yfinance_ticker": "WDC",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "SNDK",
+      "yfinance_ticker": "SNDK",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "STX",
+      "yfinance_ticker": "STX",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "INTC",
+      "yfinance_ticker": "INTC",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "MU",
+      "yfinance_ticker": "MU",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    },
+    {
+      "symbol_reference": "CIEN",
+      "yfinance_ticker": "CIEN",
+      "mapping_status": "PRIMARY_FEED_CANDIDATE_MAPPED",
+      "provider": "READONLY_YFINANCE"
+    }
+  ]
+}

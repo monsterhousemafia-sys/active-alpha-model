@@ -1,0 +1,245 @@
+{
+  "authoritative_champion_matches_locked": true,
+  "authorization_snapshot": {
+    "allowed_actions": [
+      "manual_read_only_review",
+      "operative_jobs",
+      "backtest_execution",
+      "matrix_rerun",
+      "replay_execution",
+      "shadow_monitoring_activation",
+      "paper_monitoring_activation",
+      "promotion_execution",
+      "broker_connectivity",
+      "exe_build",
+      "exe_execution"
+    ],
+    "authoritative_champion": "R0_LEGACY_ENSEMBLE",
+    "authoritative_review_forbids_operations": true,
+    "authoritative_source": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+    "authoritative_source_present": true,
+    "authoritative_source_sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3",
+    "blocked_actions": [
+      "real_money_execution",
+      "champion_change"
+    ],
+    "champion_change_authorized": true,
+    "conflict_details": [],
+    "conflicting_or_unsealed_sources": [],
+    "conflicting_sources": [],
+    "g1_execution_authorized": true,
+    "generated_at_utc": "2026-06-07T20:46:06+00:00",
+    "live_experimental_profile": "daily_alpha_h1",
+    "operational_authorized": true,
+    "operational_status": "M9_ACTIVE_LIVE_EXPERIMENTAL",
+    "paper_monitoring_authorized": true,
+    "prior_champion": "R3_w075_q065_noexit",
+    "production_fallback_variant": "R3_w075_q065_noexit",
+    "promotion_authorized": true,
+    "real_money_authorized": false,
+    "real_money_note_de": "Echtgeld nur nach H1-Seal (experimental gate); EXE-Bestätigung pro Order-Welle.",
+    "registry_sealed_for_terminal": false,
+    "resolution_required": "NONE",
+    "schema_version": 1,
+    "shadow_monitoring_authorized": true,
+    "status": "OPERATIONAL_AUTHORIZED",
+    "strategic_governance_ref": "control/strategic_governance.json",
+    "supersedes_g0_terminal_for": "champion_identity_only",
+    "terminal_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION"
+  },
+  "authorization_status_path": "control/authorization/current_authorization_status.json",
+  "conflicts_from_authorization": [],
+  "external_review_approvals_root": [
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "ded54061f183be82c220c7a6fbbece4b389272722035b5d2e90bf1882865dc85"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_EVIDENCE_REMEDIATION.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "7fd542f545331c87e755aee03d23efc74a0566582ae5a188a68c8b206fe54773"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_EVIDENCE_REMEDIATION_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "f75cd74004136065ba9fc9d2b1dce1b2069c4cb5cfdc7603b487fab075f9c11c"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "efaf57ec98345f5e571c6694d6b8aba64e40205a4ed85dfdbcdeba336ea90ec3"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G0R2_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "614b92afb3984eeb1d84812f81f5db213d287fabf8292f58680a9b4b782a4b13"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G0R3_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "17e1f15e45a96310f07b15ed3ca9973232b78aa312ff8791d0423eb1230727d0"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G0R4R2_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "6cbad4297835f81aa0d1e768fbafbd9d890c6602b0828269df5b3e91366fec8c"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G0R4R_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "e16490e5f5f4ab3ed8221c5248c36673aea7921031e337b83bf3141371cb5654"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G0R4_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "a84ca3d926eca1bbbda41ddc727e050f978df2d0feb66a6cc1de2d2aa78f8fb0"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G0R_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "863934190dc717a0f8fdf00ad9265f32cf3ea93880a3be970e5990c9d0dd4aef"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_G1_TEMPLATE.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "1899f12fbc45e63f3aba80268c72285b482f568ec4a605f873ff508d5bae459c"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V0R.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "51de4eb601e4537b3aabc6db99b1cd21845b7c5133f10da44d1ff3f93130fa95"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V1.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "6e63e364d11a027068809de0b201b79026eca5a20e246169d9128cc46d5d2835"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V1R.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "4c8f3f9e9e73413f1a40c4d5f6fad99373120599f11cad18c4f823ddde89e4aa"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V1R2.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "19f4a4e9ae5cae9b70676be82a25f13fe3deee3aed24de847cd03dc4caefb5d5"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V1R3.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "cfbe77210557d58c3cb888691c81f94db64d36f92956f0dc568f9ddc87292da3"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V2.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "1cb2ee281c362d3466661c10c716cc7107fdc72bcf758c68f776559168bf394e"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V2R.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "97a4ecee02cd599eaaf561f689ec10b0d28bb577e74c8b43c663a6d0f795963a"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V3.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "81716f4175f3005717e600c00b795c07a43307e46e7e98a4bed09c5d738d4567"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V4.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "cf7774106a3915a034602821f87284d645b5c57841bb2784790a1c87f6489a79"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V4R.md",
+      "mentions_R3_w075_q065_noexit": true,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "0ce918c9b47fe8d6771bcb61087e8651b730cf485edfff098d3c5ba192dafd4a"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V4R2.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "88ecce34ffbe39e3580b66fea10105a36171b2f9813c0848ee11d36b5c0d302a"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V4R3.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "35a98b4125187c37be677703ed1d53648c78a12da91a3e5650af5e454df81093"
+    },
+    {
+      "champion_unchanged_wording": true,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V5.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "b9beb4f9cb596393b8c5051b311ed32ebfbb58c9fd09d3a756e952f18697e782"
+    },
+    {
+      "champion_unchanged_wording": false,
+      "file": "EXTERNAL_REVIEW_APPROVAL_V5R.md",
+      "mentions_R3_w075_q065_noexit": false,
+      "mentions_R5_rank_only_train5": false,
+      "sha256": "ac23f71c398f72977207233b3c462360f8c1a5d29fa3a7f0d3c9c5ef9b784d62"
+    }
+  ],
+  "generated_at_utc": "2026-06-08T13:50:42+00:00",
+  "locked_champion_code": "R0_LEGACY_ENSEMBLE",
+  "phase": "A4",
+  "quarantined_r5_claim": {
+    "alpha_model_mode": "rank_only",
+    "auto_promotion": "DISABLED",
+    "note": "HISTORICAL_UNSEALED_CONFLICT_ARTIFACT — NOT AUTHORITATIVE",
+    "previous_champion_variant_id": "R3_w075_q065_noexit",
+    "promoted_at_utc": "2026-05-31T17:12:43+00:00",
+    "promotion_evidence_dir": "E:\\active_alpha_model\\validation_runs\\20260531T163000Z_R5_rank_only_train5",
+    "quarantine_classification": "UNAUTHORIZED_OR_UNSEALED_STATE",
+    "quarantined_at_utc": "2026-05-31T21:19:53+00:00",
+    "train_years": 5,
+    "variant_id": "R5_rank_only_train5"
+  },
+  "schema_version": 1
+}

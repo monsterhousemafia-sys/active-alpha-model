@@ -1,0 +1,28 @@
+{
+  "observation_start_utc": "AUTO_SET_ON_FIRST_RUN",
+  "minimum_observation_duration_hours": 24,
+  "minimum_valid_market_observations": 10,
+  "minimum_independent_signal_events": 1,
+  "data_quality_thresholds": {
+    "max_stale_minutes": 1440,
+    "require_pass_gate": true
+  },
+  "maximum_allowed_feed_staleness_minutes": 1440,
+  "maximum_allowed_cost_ratio": 0.05,
+  "maximum_allowed_drawdown_for_paper_readiness": 0.25,
+  "performance_measurement_method": "mark_to_market_net_of_simulated_costs",
+  "benchmark_definition": "CASH_EUR",
+  "criteria_for_continuing_observation": [
+    "data_quality_gate_pass",
+    "no_critical_safety_incident"
+  ],
+  "criteria_for_pausing_simulation": [
+    "data_quality_gate_fail",
+    "kill_switch_active"
+  ],
+  "criteria_for_virtual_scaling_analysis": [
+    "minimum_observation_duration_met",
+    "positive_net_after_costs_or_documented_limitation"
+  ],
+  "real_money_activation": "REQUIRES_SEPARATE_EXPLICIT_USER_DECISION"
+}

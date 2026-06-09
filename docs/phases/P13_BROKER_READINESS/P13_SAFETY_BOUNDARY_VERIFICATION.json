@@ -1,0 +1,8 @@
+{
+  "broker_adapter_enabled": false,
+  "champion_changed": false,
+  "real_money": false,
+  "real_money_enabled": false,
+  "real_order_routing_enabled": false,
+  "simulation_only": true
+}

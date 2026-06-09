@@ -1,0 +1,51 @@
+{
+  "artifact_hashes": {
+    "docs/R0_OS_ROLLOUT_RUNBOOK.md": "fb7e94d603ff2bc5911b69eac5d796d9e76a78314a1c6dc40a1bb29026287bdb"
+  },
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": null,
+  "phase": "M12",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M11 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m11_phase_seal.json"
+      },
+      {
+        "check": "file_exists:docs/R0_OS_ROLLOUT_RUNBOOK.md",
+        "detail": "present",
+        "pass": true,
+        "path": "docs/R0_OS_ROLLOUT_RUNBOOK.md"
+      },
+      {
+        "check": "m12_rollout_documented",
+        "detail": "WSL host ready; Windows sync via rsync from setup_wsl_host.sh",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m12_os_rollout_summary.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M12",
+    "title": "OS / Desktop Rollout",
+    "verified_at_utc": "2026-06-05T15:39:08+00:00"
+  }
+}

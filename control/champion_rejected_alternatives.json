@@ -1,0 +1,44 @@
+{
+  "authoritative_champion": "R3_w075_q065_noexit",
+  "generated_at_utc": "2026-06-03T20:21:55+00:00",
+  "rejected": [
+    {
+      "eligible": false,
+      "option_id": "E2_SWITCH_M1",
+      "recommended": false,
+      "rejected_reasons_de": [
+        "Kein EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE.",
+        "Cost-Stress NOT_EVALUABLE / blockiert.",
+        "Kein Auto-Switch — würde ökonomische Produktiv-Logik ändern."
+      ]
+    },
+    {
+      "eligible": false,
+      "option_id": "E3_SWITCH_R0_OR_R2",
+      "recommended": false,
+      "rejected_reasons_de": [
+        "Sharpe höher, aber Risk-off-Rescue-Hypothese entfällt.",
+        "Gleiche Gate-Blocker wie E2; validation_runs lokal fehlen für vollständiges Re-Align."
+      ]
+    },
+    {
+      "eligible": false,
+      "option_id": "E4_MOM_63_CHALLENGER_TRACK",
+      "recommended": false,
+      "rejected_reasons_de": [
+        "Höchster Sharpe auf intersection-aligned CSVs — nur Research.",
+        "CHALLENGER_TURNOVER_NOT_VERIFIED; erst F-Phase Gates, dann Shadow/Paper."
+      ]
+    },
+    {
+      "eligible": false,
+      "option_id": "E5_R5_REVALIDATE",
+      "recommended": true,
+      "rejected_reasons_de": [
+        "Unauthorized champion claim; kein operativer Wechsel ohne externes Seal und einheitlichen Kalender."
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "selected_option": "E1_RETAIN_R3"
+}

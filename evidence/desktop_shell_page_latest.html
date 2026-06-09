@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light"/>
+  <link rel="icon" type="image/svg+xml" href="/assets/r3-icon.svg"/><link rel="apple-touch-icon" href="/assets/r3-icon.svg"/><meta name="application-name" content="R3"/><meta name="theme-color" content="#e95420"/>
+  <title>R3</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    body {
+      height: 100dvh; max-height: 100dvh; display: flex; flex-direction: column;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+      background: var(--r3-bg); color: var(--r3-text);
+    }
+    .page {
+      flex: 1; min-height: 0; display: flex; flex-direction: column;
+      padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    }
+    
+
+:root {
+  --r3-orange: #e95420;
+  --r3-orange-top: #ff6b35;
+  --r3-orange-bottom: #e95420;
+  --r3-orange-bg: rgba(233,84,32,.08);
+  --r3-orange-border: rgba(233,84,32,.24);
+  --r3-text: #1d1d1f;
+  --r3-muted: #86868b;
+  --r3-bg: #f5f5f7;
+  --r3-surface: #ffffff;
+  --r3-border: rgba(0,0,0,.08);
+  --r3-radius: 12px;
+  --r3-radius-sm: 10px;
+  --r3-gap: 12px;
+  --r3-pad: 12px;
+  --r3-pad-lg: 16px;
+  --r3-pad-x: 20px;
+  --r3-ok: #248a3d;
+  --r3-ok-bg: #e8f8ec;
+  --r3-warn: #9a7b00;
+  --r3-warn-bg: #fff8e6;
+  --r3-fail: #ff3b30;
+  --r3-fail-bg: #ffeceb;
+  --bg: var(--r3-bg);
+  --text: var(--r3-text);
+  --muted: var(--r3-muted);
+  --line: var(--r3-border);
+}
+
+.r3-viewport-fit {
+  flex: 1; min-height: 0; width: 100%; overflow-x: hidden; overflow-y: auto;
+  display: flex; flex-direction: column; -webkit-overflow-scrolling: touch;
+}
+.r3-exec-mirror {
+  flex: 0 0 auto; display: flex; flex-direction: column; margin: 0; width: 100%;
+  transform: none;
+}
+.r3-mirror-results {
+  display: flex; flex-direction: column; margin: 0;
+  padding: var(--r3-pad-lg) var(--r3-pad-x);
+  background: var(--r3-surface);
+}
+.r3-mirror-brand {
+  display: flex; align-items: center; gap: var(--r3-gap);
+  margin: 0 0 var(--r3-pad-lg); padding-bottom: var(--r3-pad);
+  border-bottom: 1px solid var(--r3-border); flex-shrink: 0;
+  flex-wrap: wrap;
+}
+.r3-mirror-brand .r3-mirror-title { flex: 1; min-width: 0; }
+.r3-mirror-brand .r3-local-banner {
+  margin: 0; padding: 0; border: none; background: transparent;
+}
+.r3-mirror-mark {
+  width: 48px; height: 48px; flex-shrink: 0;
+  filter: drop-shadow(0 4px 12px rgba(233,84,32,.22));
+}
+.r3-mirror-mark svg { display: block; width: 100%; height: 100%; shape-rendering: geometricPrecision; }
+.r3-mirror-title {
+  margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -.04em;
+  color: var(--r3-orange); line-height: 1.1;
+}
+.r3-status-compact {
+  border-radius: var(--r3-radius-sm); overflow: hidden;
+  background: var(--r3-bg); border: 1px solid var(--r3-border);
+}
+.r3-stack {
+  display: flex; flex-direction: column; gap: var(--r3-gap); flex-shrink: 0;
+}
+.r3-section {
+  background: var(--r3-bg); border: 1px solid var(--r3-border);
+  border-radius: var(--r3-radius); padding: var(--r3-pad);
+}
+.r3-section-title {
+  margin: 0 0 var(--r3-gap); font-size: 11px; font-weight: 700;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--r3-muted);
+}
+.r3-panel {
+  background: var(--r3-bg); border: 1px solid var(--r3-border);
+  border-radius: var(--r3-radius-sm); padding: var(--r3-pad);
+  display: flex; flex-direction: column; min-height: 0; margin: 0;
+}
+.r3-facts {
+  background: var(--r3-bg); border: 1px solid var(--r3-border);
+  border-radius: var(--r3-radius-sm); padding: var(--r3-pad);
+}
+.r3-facts-list {
+  display: flex; flex-direction: column; align-items: stretch;
+}
+.r3-fact-row {
+  display: grid; grid-template-columns: 52px 1fr; gap: 8px; align-items: center;
+  padding: 6px 8px; border-radius: 6px; background: var(--r3-surface);
+  border: 1px solid var(--r3-border); font-family: inherit; text-align: left;
+  width: 100%;
+}
+button.r3-fact-row { cursor: pointer; }
+button.r3-fact-row:focus-visible {
+  outline: 2px solid var(--r3-orange); outline-offset: 1px;
+}
+.r3-fact-k {
+  font-size: 10px; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--r3-muted);
+}
+.r3-fact-v {
+  font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums;
+  color: var(--r3-text); text-align: right;
+}
+.r3-fact-ok .r3-fact-v { color: var(--r3-ok); }
+.r3-fact-warn .r3-fact-v { color: var(--r3-orange); }
+.r3-fact-fail .r3-fact-v { color: var(--r3-fail); opacity: .9; }
+.r3-fact-link {
+  width: 2px; height: 6px; margin: 0 auto; background: var(--r3-border);
+  border-radius: 1px;
+}
+.r3-facts-closed .r3-fact-row.r3-fact-ok:first-child {
+  border-color: rgba(36,138,61,.45);
+}
+.r3-panels-stack {
+  display: flex; flex-direction: column; gap: var(--r3-gap);
+}
+.r3-panels-stack .r3-panel { margin: 0; }
+.r3-exec-block { margin-bottom: var(--r3-gap); }
+.r3-exec-block:last-child { margin-bottom: 0; }
+.r3-exec-sell .r3-label { color: var(--r3-fail); }
+.r3-exec-buy .r3-label { color: var(--r3-ok); }
+.r3-king-amt {
+  font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums;
+  color: var(--r3-text); text-align: right; flex: 1;
+}
+.r3-king-row { display: flex; align-items: center; gap: 8px; padding: 6px 10px; }
+.r3-label {
+  display: block; font-size: 11px; font-weight: 600; color: var(--r3-muted); margin-bottom: 4px;
+}
+.r3-hero-amount {
+  display: block; font-size: 26px; font-weight: 700; letter-spacing: -.03em;
+  color: var(--r3-text); line-height: 1.1;
+}
+.r3-hero-amount-sm { font-size: 22px; }
+.r3-portfolio-source, .r3-portfolio-meta {
+  margin: 4px 0; font-size: 11px; color: var(--r3-muted);
+}
+.r3-portfolio-list, .r3-status-list, .r3-king-list {
+  border-radius: var(--r3-radius-sm); overflow: hidden;
+  background: var(--r3-surface); border: 1px solid var(--r3-border);
+}
+.r3-exec-pkg-list, .r3-portfolio-scroll, .r3-king-list {
+  max-height: 160px; overflow-y: auto; -webkit-overflow-scrolling: touch;
+}
+.r3-portfolio-row, .r3-king-row, .r3-mirror-row {
+  display: grid; align-items: center; gap: var(--r3-gap);
+  padding: var(--r3-pad); background: var(--r3-surface);
+  border-bottom: 1px solid var(--r3-border);
+}
+.r3-portfolio-row { grid-template-columns: 1.1fr 1fr 0.65fr; }
+.r3-king-row { grid-template-columns: 0.45fr 1fr; }
+.r3-mirror-row {
+  display: flex; justify-content: space-between;
+}
+.r3-portfolio-row:last-child, .r3-king-row:last-child, .r3-mirror-row:last-child {
+  border-bottom: none;
+}
+.r3-portfolio-head { background: var(--r3-bg) !important; }
+.r3-portfolio-head span {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--r3-muted);
+}
+.r3-portfolio-sym, .r3-king-sym { font-size: 13px; font-weight: 700; color: var(--r3-text); }
+.r3-portfolio-eur { font-size: 12px; font-weight: 600; text-align: right; color: var(--r3-text); }
+.r3-portfolio-pct, .r3-king-reason { font-size: 12px; color: var(--r3-muted); text-align: right; }
+.r3-king-reason { text-align: left; line-height: 1.35; }
+.r3-king-hint, .r3-king-summary {
+  margin: 0; padding: var(--r3-pad); font-size: 11px; color: var(--r3-muted);
+}
+.r3-mirror-k { font-size: 12px; color: var(--r3-text); }
+.r3-mirror-v { font-size: 12px; font-weight: 500; text-align: right; color: var(--r3-muted); }
+.r3-mirror-v.ok { color: var(--r3-text); font-weight: 700; }
+.r3-mirror-v.fail { color: var(--r3-fail); }
+.r3-mirror-empty { margin: 0; font-size: 12px; color: var(--r3-muted); }
+.r3-mirror-foot {
+  margin: var(--r3-pad-lg) 0 0; padding-top: var(--r3-pad);
+  border-top: 1px solid var(--r3-border);
+  font-size: 11px; color: var(--r3-muted); text-align: center;
+}
+.r3-mirror-live { color: var(--r3-muted); }
+.r3-submission-banner {
+  padding: var(--r3-pad); border-radius: var(--r3-radius-sm);
+  font-size: 12px; background: var(--r3-warn-bg); color: var(--r3-warn);
+  border: 1px solid rgba(154,123,0,.25);
+}
+.r3-submission-banner.live {
+  background: var(--r3-ok-bg); color: var(--r3-ok); border-color: rgba(36,138,61,.25);
+}
+.r3-local-banner {
+  display: flex; flex-wrap: wrap; align-items: center; gap: var(--r3-gap);
+  padding: var(--r3-pad); border-radius: var(--r3-radius-sm);
+  background: var(--r3-orange-bg); border: 1px solid var(--r3-orange-border);
+  font-size: 11px; color: var(--r3-text);
+}
+.r3-local-pill {
+  font-weight: 800; text-transform: uppercase; letter-spacing: .06em;
+  padding: 3px 8px; border-radius: 6px;
+  background: linear-gradient(145deg, #ff6b35 0%, #e95420 100%); color: #fff; font-size: 9px;
+}
+.r3-local-hub { font-weight: 700; font-family: ui-monospace, monospace; }
+.r3-local-growth { font-size: 11px; font-weight: 700; color: var(--r3-ok); }
+.r3-local-detail { color: var(--r3-muted); flex: 1 1 100%; }
+.r3-growth-milestones {
+  margin: 0 0 var(--r3-gap); padding: 0 0 0 18px;
+  font-size: 12px; color: var(--r3-text); line-height: 1.5;
+}
+.r3-growth-ms.r3-growth-ok { color: var(--r3-ok); }
+.r3-growth-ms.r3-growth-open { color: var(--r3-muted); }
+.r3-growth-next { margin: 0; font-size: 12px; color: var(--r3-text); }
+.r3-start-hero {
+  padding: var(--r3-pad-lg); text-align: center;
+  background: var(--r3-orange-bg); border: 1px solid var(--r3-orange-border);
+  border-radius: var(--r3-radius);
+}
+.r3-start-lead {
+  margin: 0 0 var(--r3-gap); font-size: 13px; font-weight: 600; color: var(--r3-text);
+}
+.r3-start-btn {
+  display: block; width: 100%; padding: var(--r3-pad-lg);
+  border: none; border-radius: var(--r3-radius);
+  background: linear-gradient(145deg, var(--r3-orange-top) 0%, var(--r3-orange-bottom) 100%);
+  color: #fff; font-size: 16px; font-weight: 800; cursor: pointer; font-family: inherit;
+  box-shadow: 0 4px 14px rgba(233,84,32,.28);
+}
+.r3-start-btn:disabled { opacity: .6; cursor: wait; }
+.r3-start-hint { margin: var(--r3-gap) 0 0; font-size: 11px; color: var(--r3-muted); }
+.r3-alerts { margin: 0 0 10px; }
+.r3-alert-banner {
+  margin: 0 0 6px; padding: 8px 12px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  border: 1px solid rgba(255,214,10,.35); background: rgba(255,214,10,.08); color: var(--warn, #ffd60a);
+}
+.r3-alert-banner.r3-alert-bad {
+  border-color: rgba(255,69,58,.4); background: rgba(255,69,58,.1); color: var(--fail, #ff453a);
+}
+.r3-mirror-postmortem .r3-postmortem-lead { font-size: 13px; margin: 0 0 4px; }
+.r3-mirror-postmortem .r3-postmortem-hint { font-size: 11px; color: var(--muted); margin: 0; }
+.r3-upgrade-banner {
+  padding: var(--r3-pad); border-radius: var(--r3-radius);
+  background: var(--r3-orange-bg); border: 1px solid var(--r3-orange-border);
+}
+.r3-upgrade-kicker {
+  margin: 0 0 4px; font-size: 10px; font-weight: 700;
+  text-transform: uppercase; color: var(--r3-orange);
+}
+.r3-upgrade-title { margin: 0 0 var(--r3-gap); font-size: 14px; font-weight: 700; color: var(--r3-text); }
+.r3-upgrade-summary { margin: 0 0 var(--r3-gap); font-size: 12px; color: var(--r3-text); line-height: 1.4; }
+.r3-upgrade-changes { margin: 0 0 var(--r3-gap) 18px; padding: 0; font-size: 11px; line-height: 1.45; }
+.r3-upgrade-confirm { margin: 0 0 var(--r3-gap); font-size: 11px; color: var(--r3-muted); }
+.r3-upgrade-actions { display: flex; gap: var(--r3-gap); flex-wrap: wrap; }
+.r3-upgrade-btn {
+  padding: var(--r3-pad) 14px; border-radius: var(--r3-radius-sm); border: none;
+  font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit;
+}
+.r3-upgrade-apply { background: linear-gradient(145deg, #ff6b35 0%, #e95420 100%); color: #fff; }
+.r3-upgrade-dismiss { background: var(--r3-bg); color: var(--r3-text); border: 1px solid var(--r3-border); }
+.r3-upgrade-toast { min-height: 1em; margin: var(--r3-gap) 0 0; font-size: 11px; color: var(--r3-ok); }
+.r3-layers-broker, .r3-layers-kreis {
+  margin: 0 0 var(--r3-gap); font-size: 12px; color: var(--r3-text);
+}
+.r3-layer-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+  gap: var(--r3-gap);
+}
+.r3-layer-card {
+  background: var(--r3-surface); border-radius: var(--r3-radius-sm);
+  border: 1px solid var(--r3-border); padding: var(--r3-pad);
+}
+.r3-layer-head {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: var(--r3-gap); margin-bottom: 6px;
+}
+.r3-layer-label { font-size: 11px; font-weight: 700; color: var(--r3-text); }
+.r3-layer-st {
+  font-size: 9px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .05em; padding: 2px 6px; border-radius: 6px;
+}
+.r3-layer-st-ok { background: var(--r3-ok-bg); color: var(--r3-ok); }
+.r3-layer-st-warn { background: var(--r3-warn-bg); color: var(--r3-warn); }
+.r3-layer-st-fail { background: var(--r3-fail-bg); color: var(--r3-fail); }
+.r3-layer-detail { margin: 0; font-size: 10px; color: var(--r3-muted); line-height: 1.4; }
+.r3-fn-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--r3-gap);
+}
+@media (max-width: 820px) { .r3-fn-grid { grid-template-columns: 1fr; } }
+.r3-fn-card {
+  background: var(--r3-surface); border-radius: var(--r3-radius-sm);
+  border: 1px solid var(--r3-border); padding: var(--r3-pad);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.r3-fn-card.r3-fn-ok { border-color: rgba(36,138,61,.3); }
+.r3-fn-card.r3-fn-warn { border-color: var(--r3-orange-border); }
+.r3-fn-label { font-size: 12px; font-weight: 700; color: var(--r3-text); }
+.r3-fn-st { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--r3-muted); }
+.r3-fn-meta { font-size: 11px; color: var(--r3-muted); }
+.r3-fn-ctx { margin: 0 0 var(--r3-gap); font-size: 12px; color: var(--r3-text); }
+
+    
+.r3-trading-functions {
+  flex-shrink: 0; margin: 0;
+  padding: var(--r3-pad-lg) var(--r3-pad-x);
+  background: var(--r3-surface);
+  border-top: 1px solid var(--r3-border);
+}
+.r3-freigabe-row { text-align: center; margin: 0 0 var(--r3-gap); }
+.r3-freigabe-btn {
+  display: block; width: 100%; max-width: none;
+  padding: var(--r3-pad-lg); border-radius: var(--r3-radius); border: none;
+  font-size: 15px; font-weight: 800; letter-spacing: .02em;
+  cursor: pointer; font-family: inherit;
+}
+.r3-freigabe-btn.ready {
+  background: linear-gradient(145deg, var(--r3-orange-top) 0%, var(--r3-orange-bottom) 100%);
+  color: #fff; box-shadow: 0 4px 14px rgba(233,84,32,.28);
+}
+.r3-freigabe-btn.ready:hover { filter: brightness(1.05); }
+.r3-freigabe-btn.blocked {
+  background: var(--r3-bg); color: var(--r3-muted);
+  border: 1px solid var(--r3-border); cursor: not-allowed;
+}
+.r3-freigabe-btn:disabled { opacity: .55; cursor: wait; }
+.r3-freigabe-hint {
+  margin: var(--r3-gap) 0 0; font-size: 12px; color: var(--r3-muted); line-height: 1.4;
+}
+.r3-einzel-wrap { margin-top: var(--r3-gap); }
+.r3-einzel-label {
+  margin: 0 0 var(--r3-gap); text-align: center; font-size: 11px; font-weight: 700;
+  color: var(--r3-muted); text-transform: uppercase; letter-spacing: .06em;
+}
+.r3-stocks-wrap { margin-top: var(--r3-gap); }
+.r3-stocks-grouped { display: flex; flex-direction: column; gap: var(--r3-gap); }
+.r3-stocks-section {
+  border: 1px solid var(--r3-border); border-radius: var(--r3-radius);
+  padding: var(--r3-pad); background: var(--r3-bg);
+}
+.r3-stocks-heading {
+  font-size: 10px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; margin: 0 0 6px; color: var(--r3-muted);
+}
+.r3-stocks-empty { margin: 0; padding: 8px 10px; font-size: 13px; color: var(--r3-muted); }
+.r3-stocks-sell { border-color: rgba(255,59,48,.28); background: var(--r3-fail-bg); }
+.r3-stocks-sell .r3-stocks-heading { color: var(--r3-fail); }
+.r3-stocks-buy { border-color: rgba(36,138,61,.28); background: var(--r3-ok-bg); }
+.r3-stocks-buy .r3-stocks-heading { color: var(--r3-ok); }
+.r3-stocks-new { border-color: rgba(36,138,61,.28); background: var(--r3-ok-bg); }
+.r3-stocks-rebuy { border-color: rgba(154,123,0,.28); background: var(--r3-warn-bg); }
+.r3-stocks-buy .r3-stocks-heading { color: var(--r3-ok); }
+.r3-stocks-meta {
+  text-align: center; font-size: 11px; color: var(--r3-muted); margin: 0 0 var(--r3-gap);
+}
+.r3-stocks-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: var(--r3-gap);
+}
+.r3-stock-btn {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: var(--r3-pad); border-radius: var(--r3-radius-sm);
+  border: 1px solid var(--r3-border); background: var(--r3-surface);
+  cursor: pointer; font-family: inherit; color: var(--r3-text);
+}
+.r3-stock-btn:disabled { opacity: .55; cursor: wait; }
+.r3-stock-buy, .r3-stock-gas { border-color: rgba(36,138,61,.3); }
+.r3-stock-sell { border-color: rgba(255,59,48,.3); }
+.r3-stock-sym { font-size: 14px; font-weight: 800; }
+.r3-stock-side { font-size: 9px; font-weight: 700; text-transform: uppercase; }
+.r3-stock-buy .r3-stock-side, .r3-stock-gas .r3-stock-side { color: var(--r3-ok); }
+.r3-stock-sell .r3-stock-side { color: var(--r3-fail); }
+.r3-stock-eur { font-size: 11px; color: var(--r3-muted); }
+.r3-order-toast {
+  min-height: 1.2em; text-align: center; font-size: 12px; font-weight: 600;
+  margin: var(--r3-gap) 0 0; color: var(--r3-muted);
+}
+.r3-order-toast.ok { color: var(--r3-ok); }
+.r3-order-toast.fail { color: var(--r3-fail); }
+
+  </style>
+</head>
+<body>
+    <div class="page">
+    <div class="r3-viewport-fit">
+      <div class="r3-exec-mirror" id="r3-desktop">
+        <section class="r3-mirror-results" id="r3-mirror-results" aria-label="R3" data-updated-at-utc="2026-06-09T21:27:37+00:00"><div class="r3-mirror-brand"><div class="r3-mirror-mark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="R3"><defs><linearGradient id="r3g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff6b35"/><stop offset="100%" stop-color="#e95420"/></linearGradient></defs><rect width="48" height="48" rx="10" fill="url(#r3g)"/><text x="24" y="29" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="700" fill="#ffffff">R3</text></svg></div><h1 class="r3-mirror-title">R3</h1></div><div class="r3-stack"><section class="r3-alerts" id="r3-alerts" aria-live="polite" data-voice-warning="✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.
+Trading 212 erlaubt nur wenige API-Anfragen pr Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent."><p class="r3-alert-banner r3-alert-bad" role="alert">✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.
+Trading 212 erlaubt nur wenige API-Anfragen pr</p><p class="r3-alert-banner r3-alert-bad" role="alert">⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %</p></section><section class="r3-start-hero" id="r3-start-hero" aria-label="Start"><p class="r3-start-lead">T212 verknüpfen · Zielportfolio laden · Gewinn starten</p><button type="button" class="r3-start-btn" id="r3-start-btn" onclick="r3OneClickStart()">Jetzt starten · 679 €</button><p class="r3-start-hint" id="r3-start-hint">System bereitet 24/7 vor — unten Paket einmal bestätigen, Kreislauf läuft weiter</p></section><section class="r3-panels-stack" id="r3-panels-stack" aria-label="Plan T212 Plus"><section class="r3-panel r3-mirror-model" id="r3-mirror-model" aria-label="R3"><p class="r3-portfolio-total"><span class="r3-label">Plan</span><strong class="r3-hero-amount">678,52 €</strong></p><div class="r3-portfolio-list r3-portfolio-scroll"><div class="r3-portfolio-row r3-portfolio-head"><span class="r3-portfolio-sym">Aktie</span><span class="r3-portfolio-eur">Betrag</span><span class="r3-portfolio-pct">%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">STX</span><span class="r3-portfolio-eur">73,78 €</span><span class="r3-portfolio-pct">10.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">WDC</span><span class="r3-portfolio-eur">69,01 €</span><span class="r3-portfolio-pct">10.2 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">AMD</span><span class="r3-portfolio-eur">68,77 €</span><span class="r3-portfolio-pct">10.1 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">INTC</span><span class="r3-portfolio-eur">65,96 €</span><span class="r3-portfolio-pct">9.7 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">LRCX</span><span class="r3-portfolio-eur">60,57 €</span><span class="r3-portfolio-pct">8.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOGL</span><span class="r3-portfolio-eur">60,20 €</span><span class="r3-portfolio-pct">8.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOG</span><span class="r3-portfolio-eur">57,15 €</span><span class="r3-portfolio-pct">8.4 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">MU</span><span class="r3-portfolio-eur">56,78 €</span><span class="r3-portfolio-pct">8.4 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">ON</span><span class="r3-portfolio-eur">49,31 €</span><span class="r3-portfolio-pct">7.3 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">CIEN</span><span class="r3-portfolio-eur">46,99 €</span><span class="r3-portfolio-pct">6.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">TXN</span><span class="r3-portfolio-eur">45,52 €</span><span class="r3-portfolio-pct">6.7 %</span></div></div></section><section class="r3-panel r3-mirror-postmortem" id="r3-mirror-postmortem" aria-label="Tagesbilanz"><p class="r3-postmortem-lead"><span class="r3-label">Tagesbilanz</span> Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 % · schwächste: CIEN -7.09 %</p><p class="r3-postmortem-hint">Details: /erklär-heute im KI-Chat</p></section><section class="r3-panel r3-mirror-prognosis" id="r3-mirror-prognosis" aria-label="Tagesprognose"><p class="r3-portfolio-total"><span class="r3-label">Prognose · 2026-06-09 · 11 Käufe</span><strong class="r3-hero-amount r3-hero-amount-sm">678,52 €</strong></p><p class="r3-prognosis-meta r3-trust-warn"></p><p class="r3-prognosis-meta">Kurse 2026-06-09 · STALE</p><div class="r3-portfolio-list r3-portfolio-scroll"><div class="r3-portfolio-row"><span class="r3-portfolio-sym">STX</span><span class="r3-portfolio-pct">6.2% <span class="r3-king-boost">+0.1%</span></span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">WDC</span><span class="r3-portfolio-pct">5.6%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">AMD</span><span class="r3-portfolio-pct">5.6%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">INTC</span><span class="r3-portfolio-pct">5.4%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">LRCX</span><span class="r3-portfolio-pct">5.0%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOGL</span><span class="r3-portfolio-pct">4.9%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOG</span><span class="r3-portfolio-pct">4.7%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">MU</span><span class="r3-portfolio-pct">4.6%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">ON</span><span class="r3-portfolio-pct">4.0%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">CIEN</span><span class="r3-portfolio-pct">3.8%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">TXN</span><span class="r3-portfolio-pct">3.7%</span></div></div></section><section class="r3-panel r3-mirror-exec-pkg" id="r3-mirror-exec-pkg" aria-label="T212"><div class="r3-exec-block r3-exec-sell"><p class="r3-portfolio-total"><span class="r3-label">Verkauf</span><strong class="r3-hero-amount r3-hero-amount-sm">—</strong></p><div class="r3-portfolio-list r3-portfolio-scroll r3-exec-pkg-list"><p class="r3-mirror-empty">—</p></div></div><div class="r3-exec-block r3-exec-buy"><p class="r3-portfolio-total"><span class="r3-label">Kauf</span><strong class="r3-hero-amount r3-hero-amount-sm">644,58 €</strong></p><div class="r3-portfolio-list r3-portfolio-scroll r3-exec-pkg-list"><div class="r3-portfolio-row r3-portfolio-head"><span class="r3-portfolio-sym">Aktie</span><span class="r3-portfolio-eur">Betrag</span><span class="r3-portfolio-pct">€</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">STX</span><span class="r3-portfolio-eur">73,78 €</span><span class="r3-portfolio-pct">73,78 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">WDC</span><span class="r3-portfolio-eur">69,01 €</span><span class="r3-portfolio-pct">69,01 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">AMD</span><span class="r3-portfolio-eur">68,77 €</span><span class="r3-portfolio-pct">68,77 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">INTC</span><span class="r3-portfolio-eur">65,96 €</span><span class="r3-portfolio-pct">65,96 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">LRCX</span><span class="r3-portfolio-eur">60,57 €</span><span class="r3-portfolio-pct">60,57 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOGL</span><span class="r3-portfolio-eur">60,20 €</span><span class="r3-portfolio-pct">60,20 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOG</span><span class="r3-portfolio-eur">57,15 €</span><span class="r3-portfolio-pct">57,15 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">MU</span><span class="r3-portfolio-eur">56,78 €</span><span class="r3-portfolio-pct">56,78 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">ON</span><span class="r3-portfolio-eur">49,31 €</span><span class="r3-portfolio-pct">49,31 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">CIEN</span><span class="r3-portfolio-eur">46,99 €</span><span class="r3-portfolio-pct">46,99 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">TXN</span><span class="r3-portfolio-eur">45,52 €</span><span class="r3-portfolio-pct">45,52 €</span></div></div></div></section><section class="r3-panel r3-mirror-king" id="r3-mirror-king" aria-label="Follow-on"><p class="r3-portfolio-total"><span class="r3-label">+</span></p><div class="r3-king-list"><div class="r3-king-row"><span class="r3-king-sym">STX</span><span class="r3-king-amt">25,00 €</span></div></div></section></section><div class="r3-status-list r3-status-compact" id="r3-status-list"><div class="r3-mirror-row"><span class="r3-mirror-k">T212</span><span class="r3-mirror-v fail">·</span></div><div class="r3-mirror-row"><span class="r3-mirror-k">Paket</span><span class="r3-mirror-v fail">✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.
+Trading 212 erlaubt nur wenige API-Anfragen p</span></div><div class="r3-mirror-row"><span class="r3-mirror-k">Kurse</span><span class="r3-mirror-v fail">·</span></div></div></div><p class="r3-mirror-foot">09.06.2026, 23:27 Uhr (CEST)<span class="r3-mirror-live" id="r3-mirror-live"></span></p></section><section class="r3-trading-functions" id="r3-trading-functions"><div class="r3-freigabe-row"><button type="button" class="r3-freigabe-btn blocked" id="r3-freigabe-btn" disabled>T212</button><p class="r3-freigabe-hint" id="r3-freigabe-governance" aria-label="Governance-Hinweis">Ehrlich: Gewinn „vollständig erwirtschaften“ ohne jeden Klick geht nur mit externer Freigabe für auto_execute_real_money. Aktuell: System bereitet 24/7 alles vor — du bestätigst das Paket einmal in R3, danach läuft der Kreislauf weiter.</p></div><div class="r3-einzel-wrap" id="r3-einzel-wrap"><div class="r3-stocks-section r3-stocks-sell" data-side-block="verkauf"><div class="r3-stocks-heading">Verkauf</div><p class="r3-stocks-empty">—</p></div><div class="r3-stocks-section r3-stocks-buy" data-side-block="kauf"><div class="r3-stocks-heading">Kauf</div><div class="r3-stocks-grid"><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="STX" data-side="BUY" onclick="r3OrderStock('STX', 'BUY', 73.78)" title="STX: Alpha LCB 0.0019 · Rang 0.9166 · Gewicht 6.0 %"><span class="r3-stock-sym">STX</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">74 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="WDC" data-side="BUY" onclick="r3OrderStock('WDC', 'BUY', 69.01)" title="WDC: Alpha LCB 0.0019 · Rang 0.9174 · Gewicht 5.6 %"><span class="r3-stock-sym">WDC</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">69 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="AMD" data-side="BUY" onclick="r3OrderStock('AMD', 'BUY', 68.77)" title="AMD: Alpha LCB 0.0021 · Rang 0.9125 · Gewicht 5.6 %"><span class="r3-stock-sym">AMD</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">69 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="INTC" data-side="BUY" onclick="r3OrderStock('INTC', 'BUY', 65.96)" title="INTC: Alpha LCB 0.0022 · Rang 0.9332 · Gewicht 5.4 %"><span class="r3-stock-sym">INTC</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">66 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="LRCX" data-side="BUY" onclick="r3OrderStock('LRCX', 'BUY', 60.57)" title="LRCX: Alpha LCB 0.0018 · Rang 0.8579 · Gewicht 5.0 %"><span class="r3-stock-sym">LRCX</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">61 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="GOOGL" data-side="BUY" onclick="r3OrderStock('GOOGL', 'BUY', 60.20)" title="GOOGL: Alpha LCB 0.0016 · Rang 0.7979 · Gewicht 4.9 %"><span class="r3-stock-sym">GOOGL</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">60 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="GOOG" data-side="BUY" onclick="r3OrderStock('GOOG', 'BUY', 57.15)" title="GOOG: Alpha LCB 0.0016 · Rang 0.7883 · Gewicht 4.7 %"><span class="r3-stock-sym">GOOG</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">57 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="MU" data-side="BUY" onclick="r3OrderStock('MU', 'BUY', 56.78)" title="MU: Alpha LCB 0.0023 · Rang 0.9316 · Gewicht 4.6 %"><span class="r3-stock-sym">MU</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">57 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="ON" data-side="BUY" onclick="r3OrderStock('ON', 'BUY', 49.31)" title="ON: Alpha LCB 0.0018 · Rang 0.8341 · Gewicht 4.0 %"><span class="r3-stock-sym">ON</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">49 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="CIEN" data-side="BUY" onclick="r3OrderStock('CIEN', 'BUY', 46.99)" title="CIEN: Alpha LCB 0.0019 · Rang 0.8451 · Gewicht 3.8 %"><span class="r3-stock-sym">CIEN</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">47 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="TXN" data-side="BUY" onclick="r3OrderStock('TXN', 'BUY', 45.52)" title="TXN: Alpha LCB 0.0016 · Rang 0.8200 · Gewicht 3.7 %"><span class="r3-stock-sym">TXN</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">46 €</span></button></div></div></div><p class="r3-order-toast" id="r3-order-toast" aria-live="polite"></p></section>
+      </div>
+    </div>
+  </div>
+  <script>window.R3_HUB_PORT = 17890;</script>
+  <script>
+function r3OrderToast(msg, ok) {
+  const el = document.getElementById('r3-order-toast');
+  if (!el) return;
+  el.className = 'r3-order-toast ' + (ok ? 'ok' : 'fail');
+  el.textContent = msg || '';
+}
+function r3SetOrderBusy(busy) {
+  document.querySelectorAll('.r3-stock-btn, .r3-freigabe-btn').forEach((b) => {
+    b.disabled = !!busy;
+  });
+}
+async function r3PostOrder(body) {
+  r3SetOrderBusy(true);
+  r3OrderToast('Sende…', true);
+  try {
+    const r = await fetch('/api/r3/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const j = await r.json();
+    r3OrderToast(j.message_de || j.error || (j.ok ? 'OK' : 'Fehler'), !!j.ok);
+    if (j.ok) setTimeout(() => location.reload(), 1800);
+    return j;
+  } catch (e) {
+    r3OrderToast('Verbindung fehlgeschlagen', false);
+    return { ok: false };
+  } finally {
+    r3SetOrderBusy(false);
+  }
+}
+async function r3OrderStock(symbol, side, notional) {
+  const sideDe = side === 'SELL' ? 'Verkauf' : 'Kauf';
+  const ok = window.confirm(sideDe + ' ' + symbol + ' — ' + Number(notional).toFixed(0) + ' €?');
+  if (!ok) return;
+  return r3PostOrder({ mode: 'single', symbol: symbol, side: side, confirm: true });
+}
+async function r3FreigabeSubmit() {
+  const ok = window.confirm('Zielportfolio jetzt an Trading212 senden? (einmalig bestätigen)');
+  if (!ok) return;
+  return r3PostOrder({ mode: 'initial_package', confirm: true });
+}
+async function r3RefreshOrderSurface() {
+  try {
+    await fetch('/api/r3/freigabe?prepare=1&auto=desktop', { cache: 'no-store' });
+    const btn = document.getElementById('r3-freigabe-btn');
+    if (btn && btn.classList.contains('blocked')) {
+      location.reload();
+    }
+  } catch (e) { /* silent */ }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('r3-freigabe-btn');
+  if (btn && btn.classList.contains('blocked')) {
+    r3RefreshOrderSurface();
+  }
+});
+</script>
+  <script>
+function r3EnsureNativeViewport() {
+  const inner = document.getElementById('r3-desktop');
+  if (!inner) return;
+  inner.style.transform = 'none';
+  inner.style.width = '100%';
+  inner.style.marginBottom = '0';
+  inner.style.zoom = '1';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  r3EnsureNativeViewport();
+  window.addEventListener('resize', r3EnsureNativeViewport);
+});
+</script>
+  <script>
+const R3_MIRROR_POLL_MS = 45000;
+const R3_MIRROR_PREP_EVERY = 6;
+const R3_MIRROR_HARD_RELOAD = false;
+const R3_MIRROR_SOFT_UPDATE = true;
+let r3MirrorPollN = 0;
+let r3LastUtc = (document.getElementById('r3-mirror-results') || {}).dataset?.updatedAtUtc || '';
+
+function r3GraphState(ok, partial) {
+  if (ok) return 'ok';
+  if (partial) return 'warn';
+  return 'fail';
+}
+
+function r3SetFactRow(nodeId, value, ok, partial) {
+  if (!nodeId) return;
+  const el = document.querySelector('.r3-fact-row[data-node="' + nodeId + '"]');
+  if (!el) return;
+  const v = el.querySelector('.r3-fact-v');
+  if (v && value != null && value !== '') v.textContent = String(value);
+  const st = r3GraphState(!!ok, !!partial);
+  el.classList.remove('r3-fact-ok', 'r3-fact-warn', 'r3-fact-fail');
+  el.classList.add('r3-fact-' + st);
+}
+
+function r3PatchStatusRow(label, value, ok) {
+  const rows = document.querySelectorAll('#r3-status-list .r3-mirror-row');
+  for (const row of rows) {
+    const k = row.querySelector('.r3-mirror-k');
+    const v = row.querySelector('.r3-mirror-v');
+    if (!k || !v || k.textContent !== label) continue;
+    v.textContent = value;
+    v.className = 'r3-mirror-v' + (ok === true ? ' ok' : ok === false ? ' fail' : '');
+    return;
+  }
+}
+
+let r3LastVoiceWarning = '';
+
+function r3SpeakWarning(text) {
+  const msg = String(text || '').trim();
+  if (!msg || !window.speechSynthesis) return;
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(msg);
+    u.lang = 'de-DE';
+    u.rate = 0.95;
+    window.speechSynthesis.speak(u);
+  } catch (e) { /* fail-closed */ }
+}
+
+function r3PatchMirrorDisplays(j) {
+  if (!j) return;
+  const vw = String(j.voice_warning_de || '').trim();
+  if (vw && vw !== r3LastVoiceWarning) {
+    r3LastVoiceWarning = vw;
+    r3SpeakWarning(vw);
+  }
+  r3PatchStatusRow('T212', j.t212_connected ? '✓' : '·', !!j.t212_connected);
+  const pkg = String(j.headline_de || '—').split(' · ')[0].trim() || '—';
+  r3PatchStatusRow('Paket', pkg, !!j.package_ready);
+  const qc = parseInt(j.quote_count || 0, 10);
+  r3PatchStatusRow('Kurse', qc > 0 ? String(qc) : '·', qc > 0);
+  const results = document.getElementById('r3-mirror-results');
+  if (results && j.updated_at_utc) results.dataset.updatedAtUtc = String(j.updated_at_utc);
+}
+
+function r3ScrollToTarget(id) {
+  if (!id) return;
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  document.querySelectorAll('.r3-fact-row.r3-fact-active').forEach((n) => n.classList.remove('r3-fact-active'));
+}
+
+function r3BindGraphNavigation() {
+  document.querySelectorAll('.r3-fact-row[data-scroll]').forEach((btn) => {
+    if (btn.dataset.r3Bound === '1') return;
+    btn.dataset.r3Bound = '1';
+    btn.addEventListener('click', () => {
+      r3ScrollToTarget(btn.getAttribute('data-scroll'));
+      btn.classList.add('r3-fact-active');
+    });
+  });
+}
+
+function r3ReinitMirrorUi() {
+  r3BindUpgradeActions();
+  r3BindGraphNavigation();
+  const btn = document.getElementById('r3-freigabe-btn');
+  if (btn && btn.classList.contains('blocked') && typeof r3RefreshOrderSurface === 'function') {
+    r3RefreshOrderSurface();
+  }
+}
+
+async function r3SoftMirrorRefresh() {
+  const r = await fetch('/api/r3/mirror/panel', { cache: 'no-store' });
+  if (!r.ok) return false;
+  const j = await r.json();
+  const shell = document.getElementById('r3-desktop');
+  if (!shell || !j || !j.body_html) return false;
+  const wrap = document.createElement('div');
+  wrap.innerHTML = j.body_html;
+  if (!wrap.firstElementChild) return false;
+  shell.innerHTML = wrap.innerHTML;
+  if (j.updated_at_utc) r3LastUtc = String(j.updated_at_utc);
+  if (typeof r3EnsureNativeViewport === 'function') r3EnsureNativeViewport();
+  r3ReinitMirrorUi();
+  return true;
+}
+
+async function r3PollMirror() {
+  try {
+    r3MirrorPollN += 1;
+    let freigabeDoc = null;
+    if (r3MirrorPollN % (R3_MIRROR_PREP_EVERY * 2) === 0) {
+      const fr = await fetch('/api/r3/freigabe?prepare=0', { cache: 'no-store' });
+      if (fr.ok) freigabeDoc = await fr.json();
+    }
+    const doScan = false;
+    const doQuoteRefresh = (r3MirrorPollN % R3_MIRROR_PREP_EVERY) === 0;
+    const q = doQuoteRefresh ? '?refresh=1' : (doScan ? '?scan=1' : '');
+    const r = await fetch('/api/r3/mirror' + q, { cache: 'no-store' });
+    if (!r.ok) return;
+    const j = await r.json();
+    const utc = (j && j.updated_at_utc) ? String(j.updated_at_utc) : '';
+    if (utc && r3LastUtc && utc !== r3LastUtc) {
+      if (R3_MIRROR_SOFT_UPDATE && await r3SoftMirrorRefresh()) {
+        r3PatchMirrorDisplays(j);
+        return;
+      }
+      if (R3_MIRROR_HARD_RELOAD) { location.reload(); return; }
+    }
+    if (utc) r3LastUtc = utc;
+    r3PatchMirrorDisplays(j);
+    if (freigabeDoc && freigabeDoc.package_ready) {
+      const btn = document.getElementById('r3-freigabe-btn');
+      if (btn && btn.classList.contains('blocked')) location.reload();
+    }
+    const liveEl = document.getElementById('r3-mirror-live');
+    if (liveEl) {
+      const t = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+      liveEl.textContent = ' · ' + t;
+    }
+  } catch (e) { /* fail-closed */ }
+}
+
+function r3BindUpgradeActions() {
+  const banner = document.getElementById('r3-upgrade-banner');
+  const toast = document.getElementById('r3-upgrade-toast');
+  const applyBtn = document.getElementById('r3-upgrade-apply');
+  const dismissBtn = document.getElementById('r3-upgrade-dismiss');
+  if (!banner || !applyBtn || !dismissBtn) return;
+  const pid = banner.dataset.proposalId || '';
+  const postUpgrade = async (action) => {
+    try {
+      const r = await fetch('/api/r3/upgrade?action=' + encodeURIComponent(action) + '&proposal_id=' + encodeURIComponent(pid), {
+        method: 'POST', cache: 'no-store'
+      });
+      const j = await r.json();
+      if (toast) toast.textContent = (j && j.message_de) ? j.message_de : '';
+      if (j && j.ok) setTimeout(() => location.reload(), 600);
+    } catch (e) {
+      if (toast) toast.textContent = 'Update fehlgeschlagen — bitte erneut versuchen.';
+    }
+  };
+  applyBtn.onclick = () => postUpgrade('confirm');
+  dismissBtn.onclick = () => postUpgrade('dismiss');
+}
+
+async function r3OneClickStart() {
+  const btn = document.getElementById('r3-start-btn');
+  const hint = document.getElementById('r3-start-hint');
+  if (btn) { btn.disabled = true; btn.textContent = 'Starte…'; }
+  if (hint) hint.textContent = 'T212 · Prognose · Paket…';
+  try {
+    const r = await fetch('/api/r3/start', { method: 'POST', cache: 'no-store' });
+    const j = await r.json();
+    if (hint) hint.textContent = j.headline_de || j.next_de || '';
+    if (j.package_ready) {
+      setTimeout(() => location.reload(), 800);
+      return;
+    }
+    if (btn) { btn.disabled = false; btn.textContent = j.cta_de || 'Erneut starten'; }
+  } catch (e) {
+    if (hint) hint.textContent = 'Start fehlgeschlagen — erneut versuchen';
+    if (btn) { btn.disabled = false; btn.textContent = 'Jetzt starten'; }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  r3ReinitMirrorUi();
+  r3PollMirror();
+  setInterval(r3PollMirror, R3_MIRROR_POLL_MS);
+});
+</script>
+</body>
+</html>

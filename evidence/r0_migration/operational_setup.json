@@ -1,0 +1,25 @@
+{
+  "blockers_remaining": [],
+  "finished_at_utc": "2026-06-08T14:01:52+00:00",
+  "started_at_utc": "2026-06-08T14:01:52+00:00",
+  "steps": [
+    {
+      "prevent_sleep": {
+        "skipped": "non_windows"
+      }
+    },
+    {
+      "scheduled_tasks": {
+        "method": "retired",
+        "ok": false,
+        "reason": "use tools/_m1_autoseal.py or wsl_conductor.sh autoseal"
+      }
+    },
+    {
+      "hkcu_logon_fallback": {
+        "ok": false,
+        "reason": "non_windows"
+      }
+    }
+  ]
+}

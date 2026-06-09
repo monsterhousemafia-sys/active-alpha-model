@@ -1,0 +1,102 @@
+{
+  "as_of_date": "2026-06-09",
+  "bad_day": true,
+  "benchmark_return_pct": -0.29,
+  "benchmark_ticker": "SPY",
+  "best": {
+    "daily_return_pct": 0.71,
+    "symbol": "GOOGL",
+    "vs_spy_bps": 100.4,
+    "weight_pct": 9.2
+  },
+  "delta_vs_benchmark_pct": -2.25,
+  "headline_de": "⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+  "message_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+  "missing_symbols": [],
+  "ok": true,
+  "pick_count": 11,
+  "picks": [
+    {
+      "daily_return_pct": -7.09,
+      "symbol": "CIEN",
+      "vs_spy_bps": -680.0,
+      "weight_pct": 7.18
+    },
+    {
+      "daily_return_pct": -4.52,
+      "symbol": "ON",
+      "vs_spy_bps": -422.3,
+      "weight_pct": 7.54
+    },
+    {
+      "daily_return_pct": -4.48,
+      "symbol": "MU",
+      "vs_spy_bps": -418.2,
+      "weight_pct": 8.68
+    },
+    {
+      "daily_return_pct": -3.43,
+      "symbol": "STX",
+      "vs_spy_bps": -313.4,
+      "weight_pct": 11.28
+    },
+    {
+      "daily_return_pct": -3.31,
+      "symbol": "INTC",
+      "vs_spy_bps": -301.7,
+      "weight_pct": 10.08
+    },
+    {
+      "daily_return_pct": -3.02,
+      "symbol": "AMD",
+      "vs_spy_bps": -273.0,
+      "weight_pct": 10.51
+    },
+    {
+      "daily_return_pct": -2.94,
+      "symbol": "WDC",
+      "vs_spy_bps": -265.0,
+      "weight_pct": 10.55
+    },
+    {
+      "daily_return_pct": -1.38,
+      "symbol": "TXN",
+      "vs_spy_bps": -108.1,
+      "weight_pct": 6.96
+    },
+    {
+      "daily_return_pct": 0.2,
+      "symbol": "LRCX",
+      "vs_spy_bps": 49.4,
+      "weight_pct": 9.26
+    },
+    {
+      "daily_return_pct": 0.61,
+      "symbol": "GOOG",
+      "vs_spy_bps": 90.8,
+      "weight_pct": 8.74
+    },
+    {
+      "daily_return_pct": 0.71,
+      "symbol": "GOOGL",
+      "vs_spy_bps": 100.4,
+      "weight_pct": 9.2
+    }
+  ],
+  "policy_ref": "control/r3_daily_postmortem_policy.json",
+  "portfolio_return_pct": -2.55,
+  "prev_date": "2026-06-08",
+  "read_only": true,
+  "schema_version": 1,
+  "signal_date": "2026-06-09",
+  "stale_sync_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr",
+  "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+  "updated_at_utc": "2026-06-09T21:17:08+00:00",
+  "voice_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent.",
+  "worst": {
+    "daily_return_pct": -7.09,
+    "symbol": "CIEN",
+    "vs_spy_bps": -680.0,
+    "weight_pct": 7.18
+  }
+}

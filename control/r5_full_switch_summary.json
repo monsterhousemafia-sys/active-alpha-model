@@ -1,0 +1,9 @@
+{
+  "app_version": "1.2.0",
+  "branding": "R5",
+  "finalized_at_utc": "2026-05-31T17:20:36+00:00",
+  "locked_champion": "R5_rank_only_train5",
+  "model_output": "E:\\active_alpha_model\\model_output_sp500_pit_t212",
+  "operational_exe": "E:\\active_alpha_model\\Marktanalyse\\Marktanalyse.exe",
+  "variant_id": "R5_rank_only_train5"
+}

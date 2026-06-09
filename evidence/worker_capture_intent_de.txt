@@ -1,0 +1,26 @@
+Worker-Einladung — freundlich, nur Rechenleistung
+===============================================
+
+So war es vorgesehen. Nicht mehr.
+
+Einladen heißt:
+  · ZIP (~100 KB) + Join-Link schicken
+  · Erklären: spare CPU, Python 3, START — freiwillig
+  · Kein Broker, kein Geld, jederzeit stoppen
+
+Eingefangen wird nur:
+  · Rolle: compute (Rechenleistung-Spender)
+  · Plattform: Windows / macOS / Linux mit Python 3
+
+Noch offen (ehrlich, nicht remote erzwingbar):
+  · Externer PC — Adoption 25%, 0 remote Compute-Hosts
+  · Stabile Join-URL — tunnel-stable finish (Cloudflare-Token)
+  · Öffentlich 86% — Reddit/Forum für Reichweite
+
+Bewusst nicht:
+  · Auto-Install, Browser-only, Broker, gefakte Worker
+
+Texte:
+  · WhatsApp: evidence/spread_whatsapp_de.txt
+  · Forum: evidence/community_spread_forum_de.txt
+  · ZIP: ~/world_worker_LITE.zip

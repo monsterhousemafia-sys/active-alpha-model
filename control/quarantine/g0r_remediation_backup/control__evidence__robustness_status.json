@@ -1,0 +1,132 @@
+{
+  "ROBUSTNESS_EVIDENCE": {
+    "blockers": [
+      "COST_STRESS_GATE_NOT_PASSED"
+    ],
+    "detail": "subperiod_screen=True cost_ok=False mt_ok=True",
+    "pass": false,
+    "status": "PARTIAL_ONLY"
+  },
+  "SUBPERIOD_STABILITY_SCREEN": {
+    "pass": true
+  },
+  "aligned_observations": 1857,
+  "blockers": [
+    "COST_STRESS_GATE_NOT_PASSED"
+  ],
+  "generated_at_utc": "2026-05-31T20:23:05+00:00",
+  "mode": "READ_ONLY_HISTORICAL_EVIDENCE",
+  "schema_version": 2,
+  "source_hashes": {
+    "M1_MOM_BLEND_MATCHED_CONTROLS": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07",
+    "MOM_63_TOP12": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7",
+    "R5_rank_only_train5": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653"
+  },
+  "variants": {
+    "M1_MOM_BLEND_MATCHED_CONTROLS": {
+      "full_sample": {
+        "annual_vol": 0.2561194407273461,
+        "cagr": 0.2048332917403659,
+        "daily_hit_rate": 0.5498115239633818,
+        "max_drawdown": -0.3889374033994921,
+        "n_days": 1857,
+        "sharpe_0rf": 0.8563572927509774,
+        "total_return": 2.9477952236845915
+      },
+      "source_sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07",
+      "subperiod_screen": {
+        "first_half": {
+          "annual_vol": 0.27117805576596,
+          "cagr": 0.08046961876705394,
+          "daily_hit_rate": 0.5549568965517241,
+          "max_drawdown": -0.3889374033994921,
+          "n_days": 928,
+          "sharpe_0rf": 0.4216909551112727,
+          "total_return": 0.32977935071176145
+        },
+        "pass": true,
+        "second_half": {
+          "annual_vol": 0.2401012855374051,
+          "cagr": 0.3433538632594577,
+          "daily_hit_rate": 0.5446716899892358,
+          "max_drawdown": -0.2242003761956699,
+          "n_days": 929,
+          "sharpe_0rf": 1.3502350407017374,
+          "total_return": 1.9687596078037646
+        },
+        "sharpe_delta": 0.9285440855904648,
+        "status": "PASS"
+      }
+    },
+    "MOM_63_TOP12": {
+      "full_sample": {
+        "annual_vol": 0.2167907409439901,
+        "cagr": 0.2152097957556387,
+        "daily_hit_rate": 0.5503500269251481,
+        "max_drawdown": -0.26923716478962734,
+        "n_days": 1857,
+        "sharpe_0rf": 1.0080704777331653,
+        "total_return": 3.2053212572022742
+      },
+      "source_sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7",
+      "subperiod_screen": {
+        "first_half": {
+          "annual_vol": 0.22347550882947334,
+          "cagr": 0.1426004781062975,
+          "daily_hit_rate": 0.5581896551724138,
+          "max_drawdown": -0.26923716478962734,
+          "n_days": 928,
+          "sharpe_0rf": 0.7087573438539706,
+          "total_return": 0.6337982657765222
+        },
+        "pass": true,
+        "second_half": {
+          "annual_vol": 0.20995300498758906,
+          "cagr": 0.2923475390611847,
+          "daily_hit_rate": 0.542518837459634,
+          "max_drawdown": -0.22994401569176603,
+          "n_days": 929,
+          "sharpe_0rf": 1.3270876310349964,
+          "total_return": 1.5739538015750871
+        },
+        "sharpe_delta": 0.6183302871810258,
+        "status": "PASS"
+      }
+    },
+    "R5_rank_only_train5": {
+      "full_sample": {
+        "annual_vol": 0.2912948077717279,
+        "cagr": 0.16928339114482815,
+        "daily_hit_rate": 0.5088852988691438,
+        "max_drawdown": -0.547935841036993,
+        "n_days": 1857,
+        "sharpe_0rf": 0.6823567025356868,
+        "total_return": 2.1659503484320943
+      },
+      "source_sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653",
+      "subperiod_screen": {
+        "first_half": {
+          "annual_vol": 0.28145399563266327,
+          "cagr": 0.038804761707252666,
+          "daily_hit_rate": 0.5,
+          "max_drawdown": -0.547935841036993,
+          "n_days": 928,
+          "sharpe_0rf": 0.2756503840641084,
+          "total_return": 0.1505006267058
+        },
+        "pass": true,
+        "second_half": {
+          "annual_vol": 0.3007621176134429,
+          "cagr": 0.3159831149120933,
+          "daily_hit_rate": 0.5177610333692142,
+          "max_drawdown": -0.39494169388861755,
+          "n_days": 929,
+          "sharpe_0rf": 1.0633672346480205,
+          "total_return": 1.7518023675459298
+        },
+        "sharpe_delta": 0.787716850583912,
+        "status": "PASS"
+      }
+    }
+  }
+}

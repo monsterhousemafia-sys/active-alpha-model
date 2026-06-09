@@ -1,0 +1,15 @@
+{
+  "built_at_utc": "2026-06-08T14:10:33+00:00",
+  "bundle_dir": "/home/machinax7/active_alpha_model/evidence/exports/Universal_Lite_Worker_OS",
+  "download_url": "http://127.0.0.1:17890/api/ulwo/bundle.zip",
+  "headline_de": "Universal Lite Worker OS — Launch-Paket bereit",
+  "hub_join_url": "http://127.0.0.1:17890",
+  "install_one_liner": "curl -fsSL http://127.0.0.1:17890/api/ulwo/install.sh | ULWO_HUB=http://127.0.0.1:17890 bash",
+  "install_sh_url": "http://127.0.0.1:17890/api/ulwo/install.sh",
+  "ok": true,
+  "product_name": "Universal Lite Worker OS",
+  "schema_version": 1,
+  "short_name": "ULWO",
+  "zip_bytes": 5974,
+  "zip_path": "/home/machinax7/active_alpha_model/evidence/exports/Universal_Lite_Worker_OS.zip"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "title": "Migration efficiency — one critical path",
+  "updated_at_utc": "2026-06-05T14:00:00+00:00",
+  "verdict": "The original 11-todo plan mixed three tracks. For migration efficiency: finish Track A on Windows, execute Track B once reboot_safe, defer Track C to WSL after M2 seal.",
+  "tracks": {
+    "A_m1_finish_windows": {
+      "priority": 1,
+      "status": "COMPLETE",
+      "do": ["Let path sim finish", "One autoseal instance polls", "Do NOT reboot", "Do NOT py-consolidate"],
+      "entry": "python tools/r0_migration_status.py",
+      "blocker": "strategy_daily_returns.csv for 20260605T125544Z_M1"
+    },
+    "B_wsl_switch": {
+      "priority": 2,
+      "status": "READY",
+      "reboot_safe": true,
+      "do": ["wsl --install when reboot_safe", "post_reboot_wsl.ps1", "wsl_conductor.sh setup", "wsl_conductor.sh autoseal"],
+      "skip_until": "reboot_safe=true OR M1 CSV on Windows",
+      "why_wsl_first": "Single host, no PowerShell/CIM bugs, native I/O on ext4, thread backend without Windows deadlock"
+    },
+    "C_py_consolidation": {
+      "priority": 3,
+      "status": "READY",
+      "execute_on": "WSL after setup — user_go + M2 sealed",
+      "not_now_because": "Import-entangled cluster; live M1 backtest + autoseal; consolidation on Windows gets thrown away after rsync to WSL",
+      "plan": "control/r0_migration/py_consolidation_plan.json",
+      "efficiency_note": "Do consolidation once on ~/active_alpha_model, not twice on E: then rsync"
+    }
+  },
+  "todo_disposition": {
+    "done_keep": [
+      "scan_rivals",
+      "depmap",
+      "del_launchers",
+      "verify_core",
+      "pyconsol_map",
+      "pyconsol_plan",
+      "wsl_hw",
+      "wsl_conductor",
+      "autoseal_linux",
+      "wsl_preflight"
+    ],
+    "cancel_as_separate_track": [
+      "pyconsol_exec_before_wsl",
+      "defer_pydelete_on_windows"
+    ],
+    "merged_into_track_B": ["wsl_install", "wsl_setup", "wsl_smoke"],
+    "merged_into_track_C": ["py_consolidation", "retire_rival_drivers"]
+  },
+  "do_not_do_during_migration": [
+    "Deep .py merge/delete while M1 running",
+    "Reboot while m1_productive=true",
+    "Second validation matrix on Windows",
+    "Matched-controls baseline before seal (fast-seal active)"
+  ],
+  "canonical_chain_windows_until_wsl": [
+    "tools/_m1_autoseal.py",
+    "tools/run_r0_migration_phase_orchestrator.py",
+    "tools/run_validation_matrix.py"
+  ],
+  "canonical_chain_wsl_after_setup": [
+    "tools/wsl_conductor.sh"
+  ]
+}

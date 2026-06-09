@@ -1,0 +1,17 @@
+{
+  "advisor_status_de": "Fallback: GPT-4o lokal via Ollama — wenn kein Gemini-Key · qwen2.5-coder:32b",
+  "cloud_teacher_ref": "evidence/king_cloud_teacher_latest.json",
+  "commands_de": [
+    "/kombi <frage>",
+    "/tipp <frage>",
+    "bash tools/king_ops.sh stufe-a",
+    "control/secrets/gemini_api_key (optional, Stealth)"
+  ],
+  "operator_de": "Teacher berät — Student (32B) führt nur king_ops/R3 aus, keine Auto-Orders.",
+  "schema_version": 1,
+  "student_de": "König 32B + king_ops — nur lokal",
+  "teacher_available": true,
+  "teacher_de": "Gemini Cloud /kombi /tipp — Parallel-Compute, Berater, keine Orders",
+  "teacher_provider": "keyless",
+  "updated_at_utc": "2026-06-09T21:16:54+00:00"
+}

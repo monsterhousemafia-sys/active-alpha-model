@@ -1,0 +1,100 @@
+{
+  "benchmark": {
+    "benchmark_elapsed_s": null,
+    "benchmark_hung": false,
+    "benchmark_over_eta": false,
+    "benchmark_over_eta_severe": false,
+    "benchmark_pid": null,
+    "benchmark_running": false,
+    "eta_max_s": 4200,
+    "progress_pct": null,
+    "progress_stale": false
+  },
+  "gpu_returns": {
+    "enabled": true,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "memory_free_mb": 12769,
+    "reason_de": "CuPy Returns — 12769 MB VRAM frei"
+  },
+  "headline_de": "GPU=ON · VRAM-Policy: Phase build: Ollama geladen — Chat bereit",
+  "host": {
+    "gpu": {
+      "device_id": 0,
+      "gpu_returns": true,
+      "memory_free_mb": 12769,
+      "memory_total_mb": 24124,
+      "name": "NVIDIA GeForce RTX 3090",
+      "ok": true
+    },
+    "gpu_available": true,
+    "logical_cores": 32,
+    "physical_cores": 16,
+    "ram_gb": 60
+  },
+  "memory_available_gb": 52.6,
+  "nvme": {
+    "constant_storage_active": true,
+    "constant_storage_priority": "high",
+    "data_root": "/mnt/active-alpha-nvme/active_alpha_fast_data",
+    "enabled": true,
+    "env": {
+      "AA_KERNEL_STORE": "",
+      "AA_NVME_DATA_ROOT": "",
+      "AA_NVME_PRIORITY": "",
+      "AA_SHARED_CACHE_DIR": "",
+      "TMPDIR": ""
+    },
+    "free_gb": 949.6,
+    "migrated_dirs": [
+      {
+        "name": "validation_runs",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/validation_runs"
+      },
+      {
+        "name": "validation_runs_superseded",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/validation_runs_superseded"
+      },
+      {
+        "name": "robustness_results_trading212",
+        "on_nvme": false,
+        "symlink": false,
+        "target": null
+      },
+      {
+        "name": "runs",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/runs"
+      },
+      {
+        "name": "build",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/build"
+      },
+      {
+        "name": "model_output_sp500_pit_t212",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/model_output_sp500_pit_t212"
+      }
+    ],
+    "mount": "/mnt/active-alpha-nvme",
+    "shared_cache": "/mnt/active-alpha-nvme/active_alpha_fast_data/shared_cache"
+  },
+  "nvme_mounted": true,
+  "ok": true,
+  "ollama_loaded": [
+    "qwen2.5:14b"
+  ],
+  "phase": "build",
+  "policy_ref": "control/king_hardware_policy.json",
+  "recommendations_de": [],
+  "schema_version": 1,
+  "snapshot_at_utc": "2026-06-09T20:28:09+00:00",
+  "vram_policy_de": "Phase build: Ollama geladen — Chat bereit"
+}

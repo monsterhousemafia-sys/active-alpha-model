@@ -1,0 +1,43 @@
+{
+  "files": [
+    {
+      "AA_ALPHA_MODEL_MODE": "ensemble",
+      "AA_RISK_OFF_GATE_MODE": "momentum_rescue",
+      "AA_RISK_OFF_MOMENTUM_RESCUE_QUANTILE": "0.65",
+      "AA_RISK_OFF_MOMENTUM_WEIGHT": "0.75",
+      "AA_RISK_OFF_SELECTION_MODE": "mom_blend_blend",
+      "file": "active_alpha_user_config.bat",
+      "present": true
+    },
+    {
+      "AA_ALPHA_MODEL_MODE": "ensemble",
+      "AA_RISK_OFF_GATE_MODE": "momentum_rescue",
+      "AA_RISK_OFF_MOMENTUM_RESCUE_QUANTILE": "0.65",
+      "AA_RISK_OFF_MOMENTUM_WEIGHT": "0.75",
+      "AA_RISK_OFF_SELECTION_MODE": "mom_blend_blend",
+      "file": "active_alpha_settings.bat",
+      "present": true
+    },
+    {
+      "AA_ALPHA_MODEL_MODE": null,
+      "file": "run_active_alpha_model.bat",
+      "present": true
+    },
+    {
+      "AA_ALPHA_MODEL_MODE": null,
+      "file": "run_paper_trading.bat",
+      "present": true
+    },
+    {
+      "AA_ALPHA_MODEL_MODE": null,
+      "file": "load_active_alpha_config.bat",
+      "present": true
+    }
+  ],
+  "generated_at_utc": "2026-06-05T14:54:10+00:00",
+  "issues": [],
+  "pass": true,
+  "phase": "M1.5",
+  "required_alpha_model_mode": "ensemble",
+  "schema_version": 1
+}

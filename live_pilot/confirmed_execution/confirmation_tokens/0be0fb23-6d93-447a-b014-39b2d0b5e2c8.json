@@ -1,0 +1,30 @@
+{
+  "consumed_at_utc": "2026-06-02T19:40:50+00:00",
+  "expires_at_utc": "2026-06-02T19:41:50+00:00",
+  "issued_at_utc": "2026-06-02T19:40:50+00:00",
+  "payload": {
+    "blockers": [],
+    "created_at_utc": "2026-06-02T19:40:50+00:00",
+    "draft_id": "2e7a6403-953e-4b68-b810-f50a18258f1d",
+    "execution_style": "market",
+    "expires_at_utc": "2026-06-02T19:55:50+00:00",
+    "instrument": "WDC",
+    "limit_price": 488.19,
+    "max_notional_eur": 24.41,
+    "order_type": "MARKET_BUY",
+    "quantity": 0.05,
+    "reference_price_eur": 488.19,
+    "side": "BUY",
+    "source": "LIVE_DASHBOARD_REBALANCE",
+    "status": "DRAFT_READY_FOR_REVIEW",
+    "strategy_class": "DAILY_OR_MULTI_DAY_MOMENTUM",
+    "t212_instrument_id": "WDC_US_EQ",
+    "updated_at_utc": "2026-06-02T19:40:50+00:00"
+  },
+  "payload_hash_sha256": "a447e389c03097a84f00dc985694a116834ed1b610755a6ba96cc33e37020caf",
+  "profile": "T212_PROFILE_CONFIRMED_EXECUTION",
+  "status": "SUBMISSION_IN_PROGRESS",
+  "token_id": "0be0fb23-6d93-447a-b014-39b2d0b5e2c8",
+  "token_secret_hash": "43f79dbfc8e8901042cf687509f26b86e9ad4785af7205804ab05a5907d1be84",
+  "used": true
+}

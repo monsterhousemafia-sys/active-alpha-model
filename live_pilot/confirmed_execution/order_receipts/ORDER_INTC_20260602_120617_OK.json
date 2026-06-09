@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-06-02T12:06:17+00:00",
+  "pdf": "E:\\active_alpha_model\\live_pilot\\confirmed_execution\\order_receipts\\ORDER_INTC_20260602_120617_OK.pdf",
+  "symbol": "INTC",
+  "ok": true,
+  "target_notional_eur": 91.61,
+  "limit_price_eur": 93.82,
+  "result_summary": {
+    "ok": true,
+    "stage": null,
+    "status": null,
+    "error": ""
+  }
+}

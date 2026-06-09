@@ -1,0 +1,67 @@
+{
+  "applied": [
+    "hardware_bond",
+    "transfer",
+    "tier",
+    "advisor_bridge",
+    "king_handoff"
+  ],
+  "catalog": [
+    {
+      "access_de": "Chat+Bau · qwen2.5-coder:32b",
+      "id": "ollama_32b",
+      "label_de": "Coder-32B"
+    },
+    {
+      "access_de": "/h1-benchmark /h1-watch /könig-puls · ai_kernel.py",
+      "id": "kernel_slash",
+      "label_de": "Slash/Kernel"
+    },
+    {
+      "access_de": "bash tools/king_ops.sh pipeline · status · h1-seal · maintain",
+      "id": "bash_orchestrator",
+      "label_de": "Bash"
+    },
+    {
+      "access_de": "/cursor anfrage — Vasall",
+      "id": "cursor_bridge",
+      "label_de": "Cursor"
+    },
+    {
+      "access_de": "control/alpha_model_h1_master_prompt_de.md",
+      "id": "h1_master",
+      "label_de": "H1-Seal"
+    },
+    {
+      "access_de": "bash tools/setup_ideal_32b.sh",
+      "id": "tier_ideal",
+      "label_de": "Ideal-32B"
+    },
+    {
+      "access_de": "GPU/RAM/NVMe — ai_kernel kernel-bond",
+      "id": "hardware_bond",
+      "label_de": "Hardware"
+    }
+  ],
+  "catalog_count": 7,
+  "commands_de": [
+    "/könig-puls — H1/Benchmark autonom",
+    "/h1-benchmark · /h1-watch",
+    "/bau · /learn · /diene"
+  ],
+  "errors": [
+    "agent_home: [Errno 13] Permission denied: '/home/machinax7/.local/share/alpha-mo",
+    "cursor_bridge: [Errno 13] Permission denied: '/home/machinax7/.local/share/alpha"
+  ],
+  "headline_de": "Alle Ressourcen dem König bereitgestellt",
+  "improve_de": "Slash oder .venv/bin/python tools/ai_kernel.py — ein Job, PID prüfen.",
+  "king_ready": true,
+  "max_tier_ready": false,
+  "ok": true,
+  "ollama_ready": false,
+  "resolved_build": "qwen2.5-coder:32b",
+  "resolved_chat": "qwen2.5-coder:32b",
+  "schema_version": 1,
+  "served_at_utc": "2026-06-08T13:50:39+00:00",
+  "transfer_ok": true
+}

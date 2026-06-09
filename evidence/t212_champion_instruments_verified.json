@@ -1,0 +1,163 @@
+{
+  "champion_instruments": [
+    {
+      "addedOn": "2020-08-20T16:55:22.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US1717793095",
+      "maxOpenQuantity": 34899.0,
+      "name": "Ciena",
+      "shortName": "CIEN",
+      "ticker": "CIEN_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 56
+    },
+    {
+      "addedOn": "2020-10-06T18:50:56.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US92537N1081",
+      "maxOpenQuantity": 54071.0,
+      "name": "Vertiv",
+      "shortName": "VRT",
+      "ticker": "VRT_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 56
+    },
+    {
+      "addedOn": "2018-07-12T07:10:12.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "IE00BKVD2N49",
+      "maxOpenQuantity": 34585.0,
+      "name": "Seagate Technology",
+      "shortName": "STX",
+      "ticker": "STX_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:15.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US8825081040",
+      "maxOpenQuantity": 69790.0,
+      "name": "Texas Instruments",
+      "shortName": "TXN",
+      "ticker": "TXN_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:16.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US4581401001",
+      "maxOpenQuantity": 307025.0,
+      "name": "Intel",
+      "shortName": "INTC",
+      "ticker": "INTC_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:17.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US02079K3059",
+      "maxOpenQuantity": 47117.0,
+      "name": "Alphabet (Class A)",
+      "shortName": "GOOGL",
+      "ticker": "GOOGL_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:14.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US5951121038",
+      "maxOpenQuantity": 40105.0,
+      "name": "Micron Technology",
+      "shortName": "MU",
+      "ticker": "MU_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:12.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US9581021055",
+      "maxOpenQuantity": 50091.0,
+      "name": "Western Digital",
+      "shortName": "WDC",
+      "ticker": "WDC_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:18.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US6821891057",
+      "maxOpenQuantity": 218815.0,
+      "name": "ON Semiconductor",
+      "shortName": "ON",
+      "ticker": "ON_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:18.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US0079031078",
+      "maxOpenQuantity": 66603.0,
+      "name": "Advanced Micro Devices",
+      "shortName": "AMD",
+      "ticker": "AMD_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    },
+    {
+      "addedOn": "2018-07-12T07:10:16.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US6745991058",
+      "maxOpenQuantity": 208446.0,
+      "name": "Occidental Petroleum",
+      "shortName": "OXY",
+      "ticker": "OXY_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 56
+    },
+    {
+      "addedOn": "2018-07-12T07:10:14.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US1491231015",
+      "maxOpenQuantity": 19125.0,
+      "name": "Caterpillar",
+      "shortName": "CAT",
+      "ticker": "CAT_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 56
+    },
+    {
+      "addedOn": "2018-07-12T07:10:15.000+03:00",
+      "currencyCode": "USD",
+      "extendedHours": true,
+      "isin": "US02079K1079",
+      "maxOpenQuantity": 47232.0,
+      "name": "Alphabet (Class C)",
+      "shortName": "GOOG",
+      "ticker": "GOOG_US_EQ",
+      "type": "STOCK",
+      "workingScheduleId": 71
+    }
+  ],
+  "champion_ticker_count": 13,
+  "generated_at_utc": "2026-06-02T16:53:17+00:00",
+  "source_status": "OK"
+}

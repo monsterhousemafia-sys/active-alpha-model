@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "vision_id": "PROFESSIONAL_EXE_MULTI_USER_WITH_HUMAN_COMPARISON",
+  "status": "SAVED_FOR_FUTURE_DEVELOPMENT",
+  "authored_by": "product_owner",
+  "saved_at_utc": "2026-06-02T00:00:00+00:00",
+  "authoritative_note": "Vision only — does not authorize execution, promotion, or multi-user release.",
+  "current_baseline_exe_sha256": "3d840c984c1dfd30875eca7ae25b91b65df8c09586a5bd95438f27f104378ff7",
+  "north_star": "Professionelle Marktanalyse.exe — auditierbar, sicher, skalierbar für weitere Nutzer; vergleicht Systemvorschläge mit menschlichem Trading anhand eines Basisportfolios.",
+  "product_pillars": [
+    {
+      "id": "professional_exe",
+      "title_de": "Professionelle EXE",
+      "description_de": "Standalone Windows-Produkt: signierbar, installierbar, versioniert, mit Integritätsnachweis und klarem Support-Pfad."
+    },
+    {
+      "id": "permission_onboarding",
+      "title_de": "Einwilligungs-Fragebogen beim Start",
+      "description_de": "Jeder neue Nutzer durchläuft — wie beim Hauptnutzer — einen strukturierten Fragebogen: Was darf die EXE (Read-only, manuelle Orders, Auto-Trading, Paper parallel, Promotion)? Antworten werden persistent gespeichert und fail-closed angewendet."
+    },
+    {
+      "id": "suggested_base_portfolio",
+      "title_de": "Vorgeschlagenes Basisportfolio",
+      "description_de": "Das System schlägt ein referenzierbares Basisportfolio vor (Champion/R3-Linie, 500-EUR-Pilot-Konfiguration als Ausgangspunkt). Nutzer sieht Vorschlag vor jeder operativen Freigabe."
+    },
+    {
+      "id": "human_vs_system_comparison",
+      "title_de": "Trading-Verlauf: System vs. Mensch",
+      "description_de": "Vergleich des tatsächlichen menschlichen Tradings (T212 Read-only Beobachtung / bestätigte Trades) mit dem, was das Basisportfolio und die Systemlogik nahegelegt hätten — inkl. Abweichungen, Timing, Größe, Kosten."
+    },
+    {
+      "id": "graphical_clarity",
+      "title_de": "Grafische Darstellung",
+      "description_de": "Klare Charts: Portfolio-Allokation, Performance vs. Basis, Trade-Timeline (Mensch vs. Vorschlag), Abweichungs-Heatmap, Kosten-/Slippage-Effekt. Keine versteckten virtuellen Zahlen neben echtem Broker-Geld ohne Kennzeichnung."
+    },
+    {
+      "id": "trust_path_to_others",
+      "title_de": "Weg zu anderen Nutzern",
+      "description_de": "Erst interner Pilot (aktuell), dann kontrollierte Freigabe an andere Menschen — nur nach Permission-Onboarding, eigener T212-Setup und dokumentierter Evidence."
+    }
+  ],
+  "onboarding_questionnaire_spec": {
+    "inherit_from": "control/exe_setup_permissions_questionnaire.json",
+    "extend_with": [
+      {
+        "id": "execution_mode",
+        "prompt_de": "Wie darf Marktanalyse für Sie arbeiten?",
+        "options": [
+          {"id": "observe_only", "label_de": "Nur beobachten (Read-only)"},
+          {"id": "suggest_manual", "label_de": "Vorschläge — ich trade manuell in T212"},
+          {"id": "confirm_api", "label_de": "Ich bestätige Orders über die App"},
+          {"id": "auto_limited", "label_de": "Begrenztes Auto-Trading nach Regeln"}
+        ]
+      },
+      {
+        "id": "base_portfolio_acceptance",
+        "prompt_de": "Basisportfolio als Vergleichsreferenz verwenden?",
+        "options": [
+          {"id": "yes_default", "label_de": "Ja — vorgeschlagenes Champion-Basisportfolio"},
+          {"id": "yes_custom", "label_de": "Ja — mit Anpassungen"},
+          {"id": "no_custom_only", "label_de": "Nein — nur mein eigenes Portfolio"}
+        ]
+      },
+      {
+        "id": "human_comparison_opt_in",
+        "prompt_de": "Dürfen wir Ihr T212-Trading mit Systemvorschlägen vergleichen und grafisch darstellen?",
+        "options": [
+          {"id": "yes_local_only", "label_de": "Ja — nur lokal auf diesem PC"},
+          {"id": "yes_export", "label_de": "Ja — inkl. exportierbarer Reports"},
+          {"id": "no", "label_de": "Nein — nur Rohdaten/Sync"}
+        ]
+      }
+    ],
+    "ui_requirements_de": [
+      "Apple-Style-Schalter für sicherheitskritische Optionen (Review Mode)",
+      "Pflicht-Bestätigung vor operativer Freigabe",
+      "Gespeicherte Antworten jederzeit in Einstellungen einsehbar",
+      "Pro Windows-Benutzer getrennte Speicherung (DPAPI)"
+    ]
+  },
+  "comparison_engine_spec": {
+    "data_sources": [
+      "T212 readonly account state and trade history sync",
+      "Suggested base portfolio from paper/config and champion reference",
+      "System draft tickets and confirmed execution ledger",
+      "Market prices at decision time (timestamped, stale-gated)"
+    ],
+    "metrics": [
+      "allocation_drift_vs_base_pct",
+      "trade_timing_delta_hours",
+      "notional_delta_eur",
+      "realized_pnl_human_vs_model_path",
+      "missed_suggested_actions",
+      "unplanned_human_actions",
+      "cost_and_slippage_attribution"
+    ],
+    "visualizations": [
+      "portfolio_allocation_bar_human_vs_base",
+      "equity_curve_overlay",
+      "trade_timeline_gantt",
+      "deviation_waterfall",
+      "instrument_level_diff_table"
+    ],
+    "fail_closed_rules": [
+      "Missing trade history => comparison marked NOT_EVALUABLE",
+      "Stale prices => no implied what-if PnL",
+      "No permission opt-in => comparison UI hidden"
+    ]
+  },
+  "roadmap_phases": [
+    {
+      "phase": "NOW",
+      "label_de": "Pilot Read-only (aktuell)",
+      "deliverables": ["T212 sync", "Review Mode Schalter", "Permission-Fragebogen gespeichert", "17/17 EXE Matrix"]
+    },
+    {
+      "phase": "NEXT",
+      "label_de": "Basisportfolio-Vorschau + Vergleichs-Dashboard (read-only)",
+      "deliverables": ["Base portfolio panel", "Human vs base drift charts", "No auto orders"]
+    },
+    {
+      "phase": "THEN",
+      "label_de": "Multi-User Onboarding Flow",
+      "deliverables": ["Installer/ZIP", "Per-user questionnaire apply", "Multi-user doc automated"]
+    },
+    {
+      "phase": "LATER",
+      "label_de": "Professionelle Distribution",
+      "deliverables": ["Authenticode signing", "Auto-update channel", "Support bundle", "Optional limited auto per user consent"]
+    }
+  ],
+  "links": {
+    "product_vision": "control/PRODUCT_VISION_PROFESSIONAL_EXE.json",
+    "revenue_expansion_roadmap": "control/ROADMAP_REVENUE_FUNDED_EXPANSION.json",
+    "owner_questionnaire": "control/exe_setup_permissions_questionnaire.json",
+    "multi_user_setup": "control/MARKTANALYSE_EXE_MULTI_USER_SETUP.md",
+    "program_execplan": "VISION_DECISION_COCKPIT_EXECPLAN.md",
+    "loader_module": "aa_product_vision.py"
+  },
+  "governance_reminder": "Champion R3_w075_q065_noexit bleibt gesperrt bis externe Freigabe. Vision ersetzt keine EXTERNAL_REVIEW_APPROVAL."
+}

@@ -1,0 +1,14 @@
+{
+  "advisory_only": true,
+  "compute_boost": false,
+  "headline_de": "Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading",
+  "model": "gpt-4o",
+  "ok": true,
+  "provider": "ollama_keyless",
+  "question_de": "Active Alpha Stufe A — Phase forschung_reif, alle KPIs grün. Nächster Forschungsschritt mit vollem T212-Guthaben (variable_free_cash) — king_ops-Befehle auf Deutsch.",
+  "schema_version": 1,
+  "source": "stufe_a",
+  "task_tier": "trading",
+  "tip_de": "Basierend auf den gegebenen Informationen und der aktuellen Phase empfehle ich folgende Schritte:\n\n1. **Aktualisierung des Investitionsplans:**\n   - Führe die Befehlszeile aus, um den nächsten Forschungsschritt zu starten:\n     ```bash\n     python3 tools/ai_kernel.py evolve\n     ```\n   - Überprüfe nach Abschluss der Evolution, ob ein H1-Seal erforderlich ist.\n\n2. **Trading-Bereitschaft prüfen:**\n   - Stelle sicher, dass die T212-API korrekt konfiguriert und vertrauenswürdig ist:\n     ```bash\n     python3 tools/t212_api_check.py\n     ```\n   - Aktualisiere den Broker-Sync, falls notwendig.\n\n3. **Investitionserfassung:**\n   - Überprüfe die Daytrading-Datenpflege und behebe alle Blocker:\n     ```bash\n     python3 tools/daytrading_data_care.py\n     ```\n\n4. **Portfolio-Analyse:**\n   - Führe eine Portfolio-Neuvaluierung durch, um sicherzustellen, dass keine Trades erforderlich sind:\n     ```bash\n     python3 tools/pilot_portfolio_reevaluation.py\n     ```\n   - Analysiere das tägliche Post-Mortem und ziehe die notwendigen Lektionen daraus.\n\n5. **Lernprozess optimieren:**\n   - Überprüfe den öffentlichen Lernbericht und verbessere die Lernqualität, insbesondere die Prediction-Feedback-Komponente:\n     ```bash\n     python3 tools/public_learning_report.py\n     ```\n\nDiese Schritte sollten Ihnen helfen, den nächsten Forschungsschritt erfolgreich durchzuführen und sicherzustellen, dass alle Systeme bereit für weitere Aktivitäten sind.",
+  "updated_at_utc": "2026-06-09T21:17:08+00:00"
+}

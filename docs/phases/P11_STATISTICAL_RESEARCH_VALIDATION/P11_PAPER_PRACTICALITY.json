@@ -1,0 +1,48 @@
+{
+  "top12": {
+    "feasible_position_slots_at_500eur": 12,
+    "fractional_shares": false,
+    "initial_paper_capital_eur": 500.0,
+    "issues": [
+      "whole_unit_constraint_may_block_small_names"
+    ],
+    "max_notional_per_name_eur": 60.0,
+    "max_position_weight": 0.12,
+    "min_economic_position_eur": 2.5,
+    "min_order_eur": 1.0,
+    "paper_capital_ladder_eur": [
+      500,
+      1000,
+      2500,
+      5000,
+      10000
+    ],
+    "real_money_capital_eur": 0.0,
+    "simulation_only": true,
+    "status": "PARTIAL",
+    "top_k": 12
+  },
+  "top15": {
+    "feasible_position_slots_at_500eur": 15,
+    "fractional_shares": false,
+    "initial_paper_capital_eur": 500.0,
+    "issues": [
+      "whole_unit_constraint_may_block_small_names"
+    ],
+    "max_notional_per_name_eur": 60.0,
+    "max_position_weight": 0.12,
+    "min_economic_position_eur": 2.5,
+    "min_order_eur": 1.0,
+    "paper_capital_ladder_eur": [
+      500,
+      1000,
+      2500,
+      5000,
+      10000
+    ],
+    "real_money_capital_eur": 0.0,
+    "simulation_only": true,
+    "status": "PARTIAL",
+    "top_k": 15
+  }
+}

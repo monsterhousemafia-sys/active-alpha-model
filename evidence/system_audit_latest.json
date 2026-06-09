@@ -1,0 +1,417 @@
+{
+  "audit_ok": true,
+  "blockers_de": [],
+  "critical_ok": 6,
+  "critical_total": 6,
+  "headline_de": "Systemaudit PASS mit Warnungen — Linux-Potenzial",
+  "next_de": "Optional: Linux-Potenzial",
+  "operator_commands_de": [
+    "bash tools/king_ops.sh system-audit",
+    "bash tools/king_ops.sh system-audit --tests",
+    "bash tools/king_ops.sh series-ready --repair"
+  ],
+  "schema_version": 1,
+  "sections": [
+    {
+      "data": {
+        "auto_execute_real_money_enabled": false,
+        "auto_promote_paper_enabled": false,
+        "auto_promote_signal_enabled": false,
+        "auto_research_enabled": false
+      },
+      "detail_de": "alle aus",
+      "id": "safety_flags",
+      "label_de": "Safety-Automation",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "data": {
+        "champion": "R0_LEGACY_ENSEMBLE",
+        "lineage_status": "M9_SYNCED"
+      },
+      "detail_de": "R0_LEGACY_ENSEMBLE · M9_SYNCED",
+      "id": "governance",
+      "label_de": "Champion-Governance",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "data": {
+        "checks": [
+          {
+            "detail_de": "HTTP /api/health",
+            "id": "hub_online",
+            "layer": "hub",
+            "ok": true
+          },
+          {
+            "detail_de": "200",
+            "id": "hub_login_route",
+            "layer": "hub",
+            "ok": true
+          },
+          {
+            "detail_de": "/api/r3/mirror",
+            "id": "r3_mirror_api",
+            "layer": "r3",
+            "ok": true
+          },
+          {
+            "detail_de": "Evidence auf Platte",
+            "id": "r3_mirror_state",
+            "layer": "r3",
+            "ok": true
+          },
+          {
+            "detail_de": "/r3",
+            "id": "r3_surface_page",
+            "layer": "r3",
+            "ok": true,
+            "warn_only": true
+          },
+          {
+            "detail_de": "Qt-Fenster",
+            "id": "r3_cockpit",
+            "layer": "r3",
+            "ok": false,
+            "warn_only": true
+          }
+        ],
+        "desktop_session": true,
+        "exec_mirror_only": true,
+        "failures_de": [],
+        "hub": {
+          "ensure_cmd_de": "python3 tools/preview_hub.py --ensure",
+          "hub_schema_version": 2,
+          "layer": "hub",
+          "ok": true,
+          "online": true,
+          "port": 17890,
+          "product": "preview-hub",
+          "route_login_detail": "200",
+          "route_login_ok": true
+        },
+        "hub_ok": true,
+        "port": 17890,
+        "r3": {
+          "cockpit_running": false,
+          "hub_online": true,
+          "layer": "r3",
+          "mirror_api_ok": true,
+          "mirror_state_ok": true,
+          "ok": true,
+          "port": 17890,
+          "start_cmd_de": "bash tools/r3_autonomous.sh",
+          "surface_page_ok": true,
+          "surface_path": "/r3"
+        },
+        "r3_ok": true,
+        "repair_cmd_de": "bash tools/stack_integrity.sh --repair --launch",
+        "schema_version": 1,
+        "stack_ok": true,
+        "updated_at_utc": "2026-06-08T06:50:33+00:00",
+        "warnings_de": [
+          "r3_cockpit: Qt-Fenster"
+        ]
+      },
+      "detail_de": "live OK",
+      "id": "stack",
+      "label_de": "Stack-Integrität",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "data": {
+        "capabilities": [
+          {
+            "detail_de": "127.0.0.1:17890 (stack)",
+            "id": "hub_local",
+            "label_de": "Hub lokal",
+            "ok": true,
+            "weight": 15
+          },
+          {
+            "detail_de": "/api/r3/mirror (stack)",
+            "id": "mirror_api",
+            "label_de": "Mirror-API",
+            "ok": true,
+            "weight": 15
+          },
+          {
+            "detail_de": "/r3 (stack)",
+            "id": "surface_r3",
+            "label_de": "Oberfläche /r3",
+            "ok": true,
+            "weight": 15
+          },
+          {
+            "detail_de": "/home/machinax7/active_alpha_model/evidence/pilot_investment_plan_latest.json",
+            "id": "plan_evidence",
+            "label_de": "Modell-Plan Evidence",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "3 Funktionen",
+            "id": "trading_functions",
+            "label_de": "3 Handelsfunktionen",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "Flüssig — bestätigt",
+            "id": "runtime_profile",
+            "label_de": "Laufzeitprofil",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "Gate aktiv",
+            "id": "upgrade_gate",
+            "label_de": "Upgrade mit Bestätigung",
+            "ok": 1,
+            "weight": 10
+          },
+          {
+            "detail_de": "OK",
+            "id": "stack_integrity",
+            "label_de": "Stack-Integrität",
+            "ok": true,
+            "weight": 10
+          },
+          {
+            "detail_de": "Ollama 127.0.0.1:11434",
+            "id": "king_local",
+            "label_de": "König 32B lokal",
+            "ok": true,
+            "weight": 5
+          }
+        ],
+        "capabilities_ok": 9,
+        "capabilities_total": 9,
+        "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
+        "growth_pct": 100,
+        "headline_de": "R3 lokal 100% — 4/4 Meilensteine",
+        "linux_potential_headline_de": "Linux 86% — 8/9 Dimensionen",
+        "linux_potential_pct": 86,
+        "local_only": true,
+        "local_primary_url": "http://127.0.0.1:17890/r3",
+        "milestones": [
+          {
+            "capabilities": [
+              "hub_local",
+              "mirror_api",
+              "surface_r3"
+            ],
+            "id": "local_first",
+            "label_de": "Lokal wirksam",
+            "ok": true
+          },
+          {
+            "capabilities": [
+              "plan_evidence",
+              "trading_functions"
+            ],
+            "id": "full_mirror",
+            "label_de": "Voller R3-Spiegel",
+            "ok": true
+          },
+          {
+            "capabilities": [
+              "runtime_profile",
+              "upgrade_gate"
+            ],
+            "id": "runtime_evolution",
+            "label_de": "Laufzeit wächst",
+            "ok": true
+          },
+          {
+            "capabilities": [
+              "stack_integrity",
+              "king_local"
+            ],
+            "id": "operational_loop",
+            "label_de": "Geschlossener Kreis",
+            "ok": true
+          }
+        ],
+        "milestones_ok": 4,
+        "milestones_total": 4,
+        "next_growth_de": "R3 lokal vollständig — neue Upgrades erscheinen im Katalog mit Bestätigung",
+        "policy_ref": "control/r3_local_growth.json",
+        "runtime_profile_id": "fluid_v2",
+        "schema_version": 1,
+        "updated_at_utc": "2026-06-08T06:50:33+00:00",
+        "upgrade_pending": false
+      },
+      "detail_de": "R3 lokal 100% — 4/4 Meilensteine",
+      "id": "r3_growth",
+      "label_de": "R3 lokales Wachstum",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "data": {
+        "blockers_de": [],
+        "confirmation_de": "Serienreife 100% — Warnungen: Linux-Potenzial",
+        "critical_ok": 7,
+        "critical_total": 7,
+        "gates": [
+          {
+            "detail_de": "alle Auto-Flags aus",
+            "id": "safety_flags",
+            "label_de": "Safety-Flags",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "R0_LEGACY_ENSEMBLE · auto_promotion=DISABLED",
+            "id": "governance_locked",
+            "label_de": "Governance gesperrt",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "http://127.0.0.1:17890",
+            "id": "local_runtime",
+            "label_de": "Lokal-first Runtime",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "OK",
+            "id": "stack_integrity",
+            "label_de": "Stack-Integrität",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "100% · 4/4 Meilensteine",
+            "id": "r3_growth",
+            "label_de": "R3 lokales Wachstum",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "Stack + Mirror OK",
+            "id": "mirror_operational",
+            "label_de": "Mirror operativ",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "auto_execute=false · king_verify OK",
+            "id": "dry_run_guard",
+            "label_de": "Ausführungsschutz",
+            "ok": true,
+            "tier": "critical"
+          },
+          {
+            "detail_de": "Linux 86% — 8/9 Dimensionen",
+            "id": "linux_potential",
+            "label_de": "Linux-Potenzial",
+            "ok": false,
+            "tier": "warn"
+          },
+          {
+            "detail_de": "Profil: Flüssig — bestätigt",
+            "id": "pending_upgrade",
+            "label_de": "R3-Upgrade offen",
+            "ok": true,
+            "tier": "warn"
+          },
+          {
+            "detail_de": "2026-06-08T02:29:48Z",
+            "id": "king_verify",
+            "label_de": "König verify",
+            "ok": true,
+            "tier": "warn"
+          }
+        ],
+        "headline_de": "Serienreife 100% — Warnungen: Linux-Potenzial",
+        "local_surface_de": "http://127.0.0.1:17890/r3",
+        "next_de": "Optional: Linux-Potenzial — [",
+        "policy_ref": "control/series_readiness_policy.json",
+        "readiness_pct": 100,
+        "schema_version": 1,
+        "scope_de": "Lokales R3-Produkt — kein Public-Launch-Gate",
+        "series_ready": true,
+        "updated_at_utc": "2026-06-08T06:50:33+00:00",
+        "warnings_de": [
+          "Linux-Potenzial"
+        ],
+        "warnings_open": 1
+      },
+      "detail_de": "Serienreife 100% — Warnungen: Linux-Potenzial",
+      "id": "series_readiness",
+      "label_de": "Serienreife",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "data": {
+        "applied_label_de": "Flüssig — bestätigt",
+        "applied_profile_id": "fluid_v2",
+        "candidates_found": 0,
+        "dismissed_ids": [],
+        "headline_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+        "history": [],
+        "pending": null,
+        "schema_version": 1,
+        "updated_at_utc": "2026-06-08T06:50:33+00:00"
+      },
+      "detail_de": "Profil: Flüssig — bestätigt",
+      "id": "runtime_upgrade",
+      "label_de": "R3-Laufzeitprofil",
+      "ok": true,
+      "tier": "critical"
+    },
+    {
+      "data": {
+        "open_de": [
+          "NVMe Fast-Data"
+        ],
+        "potential_pct": 86
+      },
+      "detail_de": "Linux 86% — 8/9 Dimensionen",
+      "id": "linux_potential",
+      "label_de": "Linux-Potenzial",
+      "ok": false,
+      "tier": "warn"
+    },
+    {
+      "data": {
+        "bash_de": "bash tools/king_ops.sh verify",
+        "ok": true,
+        "schema_version": 1,
+        "verified_at_utc": "2026-06-08T02:29:48Z",
+        "warnings": 1
+      },
+      "detail_de": "2026-06-08T02:29:48Z",
+      "id": "king_verify",
+      "label_de": "König verify",
+      "ok": true,
+      "tier": "warn"
+    },
+    {
+      "data": {
+        "blockers_de": [
+          "Tunnel-Token: ai_kernel spread-tunnel-secure (Browser-Login — Passwort nur im Browser, nie im Chat)",
+          "H1 sealed abwarten — ai_kernel h1-watch (läuft per Timer)"
+        ],
+        "note_de": "Nicht Teil der lokalen Serienreife"
+      },
+      "detail_de": "separat — 2 offene Remote-Punkte",
+      "id": "launch_scope",
+      "label_de": "Public-Launch (Info)",
+      "ok": true,
+      "tier": "info"
+    }
+  ],
+  "updated_at_utc": "2026-06-08T06:50:33+00:00",
+  "warnings_de": [
+    "Linux-Potenzial"
+  ],
+  "warnings_open": 1
+}

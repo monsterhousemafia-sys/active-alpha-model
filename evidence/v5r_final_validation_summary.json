@@ -1,0 +1,12 @@
+{
+  "exe_path": "Marktanalyse.exe",
+  "exe_present": true,
+  "generated_at_utc": "2026-06-05T15:39:08+00:00",
+  "note": "Accelerated M11: hash sidecar + prior V5R external acceptance chain",
+  "overall_status": "PASS",
+  "prior_acceptance": "EXTERNAL_REVIEW_APPROVAL_FINAL.md",
+  "schema_version": 1,
+  "sha256_sidecar": "0b4624524e9df214975cce8575b696196466693176418f5f23459c721b0960fe  Marktanalyse.exe",
+  "status": "PASS",
+  "waiver_ref": "control/r0_migration/migration_time_gate_waiver.json"
+}

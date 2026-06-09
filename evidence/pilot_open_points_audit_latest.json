@@ -1,0 +1,97 @@
+{
+  "ok": false,
+  "infrastructure": [
+    {
+      "id": "venv_pip",
+      "ok": true,
+      "detail_de": "OK"
+    },
+    {
+      "id": "champion_csv",
+      "ok": true,
+      "detail_de": "Champion-Portfolio CSV"
+    },
+    {
+      "id": "pilot_policy",
+      "ok": true,
+      "detail_de": "control/pilot_day_trading.json"
+    },
+    {
+      "id": "deferred_queue_hygiene",
+      "ok": true,
+      "detail_de": "Abgelaufene Intents werden beim Laden bereinigt"
+    },
+    {
+      "id": "ready_snapshot",
+      "ok": false,
+      "detail_de": "ai_kernel ready: Blocker «snapshot»"
+    }
+  ],
+  "dynamic_warnings": {
+    "schema_version": 1,
+    "generated_at_utc": "2026-06-07T01:11:43+00:00",
+    "severity": "critical",
+    "count": 6,
+    "critical_count": 3,
+    "critical_count_raw": 3,
+    "warn_count": 2,
+    "headline_de": "⚠ 3 kritisch — vor US-Handel beheben: Kein verlässlicher Internet-Preisfeed",
+    "must_resolve_before_trading": true,
+    "dampened_off_hours": [],
+    "us_session_open": false,
+    "warnings": [
+      {
+        "code": "PENDING_NOT_ARMED",
+        "severity": "warn",
+        "title_de": "1 Order(s) vorgemerkt — Auto-Ausführung aus",
+        "detail_de": "",
+        "action_de": "Champion-Portfolio per GUI bestätigen senden (kein Auto-Execute)"
+      },
+      {
+        "code": "AUTHORIZATION_CONFLICT",
+        "severity": "warn",
+        "title_de": "Governance: BLOCKED FOR SAFETY",
+        "detail_de": "Unsealed operational champion claim 'R5_rank_only_train5' conflicts with authoritative champion 'R3_w075_q065_noexit'",
+        "action_de": "Kein Echtgeld bis Konflikt geklärt — manuelle GUI-Orders mit Vorsicht"
+      },
+      {
+        "code": "REAL_MONEY_NOT_AUTHORIZED",
+        "severity": "info",
+        "title_de": "Echtgeld-Gate: noch nicht freigegeben",
+        "detail_de": "Echtgeld nur nach H1-Seal (experimental gate); EXE-Bestätigung pro Order-Welle.",
+        "action_de": "Go-Live-Ziel: 2026-06-06"
+      },
+      {
+        "code": "OFFLINE_OR_FICTIVE_PRICES",
+        "severity": "critical",
+        "title_de": "Kein verlässlicher Internet-Preisfeed",
+        "detail_de": "Live regime: RISK_ON; Fictive/offline OHLCV active (internet later)",
+        "action_de": "Netzwerk prüfen — ohne echte Kurse kein Rebalance"
+      },
+      {
+        "code": "CHAMPION_OR_SIGNAL",
+        "severity": "critical",
+        "title_de": "Champion oder Signal nicht OK",
+        "detail_de": "Governance OK — R0_LEGACY_ENSEMBLE | Signal DAILY_ALPHA_H1 | keine gültigen Signale — Portfolio-CSV fehlt oder leer",
+        "action_de": "③ Signal aktualisieren oder Champion-Guard prüfen"
+      },
+      {
+        "code": "INFRA_ready_snapshot",
+        "severity": "critical",
+        "title_de": "Setup offen",
+        "detail_de": "ai_kernel ready: Blocker «snapshot»",
+        "action_de": "bash tools/setup_linux_native.sh"
+      }
+    ],
+    "infrastructure_open_points": [
+      {
+        "id": "ready_snapshot",
+        "severity": "critical",
+        "detail_de": "ai_kernel ready: Blocker «snapshot»"
+      }
+    ]
+  },
+  "blockers": [
+    "ready_snapshot"
+  ]
+}

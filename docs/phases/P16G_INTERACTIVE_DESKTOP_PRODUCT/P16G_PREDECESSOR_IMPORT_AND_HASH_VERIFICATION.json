@@ -1,0 +1,14 @@
+{
+  "p16e_verification": {
+    "bytecode_detected": false,
+    "expected_sha256": "e67dce7875153e1c598210e708676518c87bed78ec3e917b0c843fb06ec2ec61",
+    "manifest_coverage": "INCOMPLETE",
+    "p16e_preserved": true,
+    "package_sha256": "",
+    "secrets_detected": false,
+    "sidecar_verified": false,
+    "verification_status": "FAILED"
+  },
+  "p16f_complete": false,
+  "predecessor": "P16F"
+}

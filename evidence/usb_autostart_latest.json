@@ -1,0 +1,14 @@
+{
+  "action": "--full-setup",
+  "decision_reason": "usb_newer_or_local_incomplete",
+  "enabled": true,
+  "headline_de": "USB install-local fehlgeschlagen",
+  "install_dest": "/home/machinax7/active_alpha_model",
+  "install_log_tail": "[usb] Spiegel nach /home/machinax7/active_alpha_model (ext4 — empfohlen für Dauerbetrieb) …\n",
+  "install_ok": false,
+  "ok": false,
+  "schema_version": 1,
+  "selected_usb": "/run/media/machinax7/USB Stick/active_alpha_model",
+  "updated_at_utc": "2026-06-08T18:24:57+00:00",
+  "usb_copies_found": 1
+}

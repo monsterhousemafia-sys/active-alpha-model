@@ -1,0 +1,105 @@
+{
+  "bonded_at_utc": "2026-06-08T13:50:39+00:00",
+  "commands_de": [
+    "python3 tools/ai_kernel.py kernel-bond",
+    "python3 tools/ai_kernel.py storage",
+    "bash tools/king_ops.sh nvme",
+    "alpha-model-agent — König mit Hardware-Zugriff"
+  ],
+  "gpu_returns": {
+    "enabled": false,
+    "reason_de": "CuPy/CUDA nicht verfügbar"
+  },
+  "hardware_access": true,
+  "hardware_policy_ref": "control/king_hardware_policy.json",
+  "headline_de": "Kernel ↔ 32B verbunden · qwen2.5-coder:32b · NVMe ausstehend · Ollama/Tier prüfen",
+  "host": {
+    "gpu": {
+      "gpu_returns": false,
+      "ok": false,
+      "reason_de": "CuPy/CUDA nicht verfügbar"
+    },
+    "gpu_available": false,
+    "logical_cores": 32,
+    "physical_cores": 16,
+    "ram_gb": 60
+  },
+  "kernel": "ai_kernel",
+  "king_cli": "alpha-model-agent",
+  "king_model": "qwen2.5-coder:32b",
+  "memory_available_gb": 54.8,
+  "nvme_env": {},
+  "nvme_mounted": false,
+  "nvme_priority": "high",
+  "nvme_storage": {
+    "constant_storage_active": false,
+    "constant_storage_priority": "high",
+    "data_root": null,
+    "enabled": true,
+    "env": {
+      "AA_KERNEL_STORE": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data/kernel_store",
+      "AA_NVME_DATA_ROOT": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data",
+      "AA_NVME_PRIORITY": "high",
+      "AA_SHARED_CACHE_DIR": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data/shared_cache",
+      "TMPDIR": "/tmp/pytest-of-machinax7/pytest-5/test_nvme_constant_storage_env0/nvme/active_alpha_fast_data/tmp"
+    },
+    "free_gb": null,
+    "migrated_dirs": [
+      {
+        "name": "validation_runs",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/validation_runs"
+      },
+      {
+        "name": "validation_runs_superseded",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/validation_runs_superseded"
+      },
+      {
+        "name": "robustness_results_trading212",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/robustness_results_trading212"
+      },
+      {
+        "name": "runs",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/runs"
+      },
+      {
+        "name": "build",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/build"
+      },
+      {
+        "name": "model_output_sp500_pit_t212",
+        "on_nvme": false,
+        "symlink": false,
+        "target": "/home/machinax7/active_alpha_model/model_output_sp500_pit_t212"
+      }
+    ],
+    "mount": null,
+    "shared_cache": null
+  },
+  "ok": true,
+  "ollama_loaded": [],
+  "ollama_ready": false,
+  "preload": null,
+  "recommendations_de": [
+    "NVMe — bash tools/ai_kernel.py nvme-setup",
+    "NVMe mount — bash tools/setup_nvme_storage.sh"
+  ],
+  "runtime_ready": false,
+  "schema_version": 1,
+  "tier": {
+    "build_32b_active": true,
+    "resolved_chat_model": "qwen2.5-coder:32b",
+    "tier_id": "ideal_32b",
+    "tier_ready": false
+  },
+  "tier_ref": "control/alpha_model_entfaltung_32b.json"
+}

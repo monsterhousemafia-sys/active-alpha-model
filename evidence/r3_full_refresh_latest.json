@@ -1,0 +1,46 @@
+{
+  "command_de": "bash tools/king_ops.sh r3-aktuell",
+  "desktop_url_de": "http://127.0.0.1:17890/desktop",
+  "gui_ok": true,
+  "headline_de": "R3 aktuell — GUI + Daten 4/5 OK",
+  "hub_url_de": "http://127.0.0.1:17890/r3",
+  "ok": true,
+  "policy_ref": "control/r3_full_refresh_policy.json",
+  "schema_version": 1,
+  "steps": [
+    {
+      "detail_de": "Hub :17890 ONLINE",
+      "id": "hub",
+      "ok": true,
+      "port": 17890
+    },
+    {
+      "cache_bytes": 42040,
+      "detail_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+      "fluidity_pct": 100,
+      "id": "align_gui",
+      "ok": true
+    },
+    {
+      "cache_bytes": 42040,
+      "detail_de": "Desktop-GUI-Cache 42040 B",
+      "id": "desktop_shell",
+      "ok": true
+    },
+    {
+      "detail_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p",
+      "headline_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 e",
+      "id": "mirror_state",
+      "ok": true
+    },
+    {
+      "detail_de": "Daytrading-Datenpflege — 1/4 (Blocker prüfen)",
+      "id": "daytrading_data",
+      "ok": false,
+      "steps_ok": 1
+    }
+  ],
+  "steps_ok": 4,
+  "steps_total": 5,
+  "updated_at_utc": "2026-06-09T20:28:48+00:00"
+}

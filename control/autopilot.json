@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "cursor_auto_continue": true,
+  "local_loop_enabled": true,
+  "loop_interval_seconds": 300,
+  "run_challenger_eval": true,
+  "run_quick_tests": true,
+  "sync_control_plane": true,
+  "sync_outcome_ledger": true,
+  "stuck_run_timeout_minutes": 45
+}

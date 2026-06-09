@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "title_de": "R3 System Plane",
+  "subtitle_de": "R3 nur für Markt/Cockpit — Ton und Bluetooth über Ubuntu (gnome-control-center)",
+  "future_stack_ref": "evidence/r3_linux_future_stack_de.md",
+  "domains": ["stack", "network", "display", "session", "power"],
+  "ubuntu_delegates_de": ["audio", "bluetooth", "sound"],
+  "network_tool": "nmcli",
+  "session_tool": "loginctl",
+  "actions": {
+    "wifi_radio": true,
+    "lock": true,
+    "logout": {"prefer": "loginctl", "fallback": "gnome-session-quit"}
+  }
+}

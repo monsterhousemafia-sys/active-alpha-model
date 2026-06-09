@@ -1,0 +1,87 @@
+{
+  "aligned_calendar_observations": 1860,
+  "aligned_calendar_ok": true,
+  "candidate_matrix": {
+    "challenger_report_path": "control/challenger_report.json",
+    "challenger_report_sha256": "aedd258af97c50389e2fd97b5e0dbf292a361a06ab023d29c7aba78c58ff0c83",
+    "pbo_inputs_available": false,
+    "variants_compared": 7
+  },
+  "challenger": "MOM_63_TOP12",
+  "champion": "R3_w075_q065_noexit",
+  "cost_assumptions": {
+    "baseline_costs_in_champion_returns": true,
+    "config_path": "promotion_gate_config.yaml",
+    "config_sha256": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e",
+    "cost_stress_scenarios_configured": [
+      "baseline",
+      "plus_25bps"
+    ],
+    "fee_model": "trading212_us+fx_0bps+slippage_2bps"
+  },
+  "generated_at_utc": "2026-05-30T21:02:50+00:00",
+  "m1_control": "M1_MOM_BLEND_MATCHED_CONTROLS",
+  "schema_version": 1,
+  "source_files": [
+    {
+      "path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+      "role": "champion_returns"
+    },
+    {
+      "path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+      "role": "champion_turnover"
+    },
+    {
+      "path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+      "role": "m1_returns"
+    },
+    {
+      "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+      "role": "challenger_naive_mom_63_returns"
+    }
+  ],
+  "variants": [
+    {
+      "available": true,
+      "baseline_costs_in_returns": null,
+      "calendar_end": "2026-05-28",
+      "calendar_start": "2019-01-03",
+      "decisions_path": "model_output_sp500_pit_t212/backtest_decisions.csv",
+      "decisions_sha256": "0ff3d8aa1470264f9300f4816dfcdf7a5670dd76f1048c6d078ea645864ae829",
+      "mean_rebalance_turnover": 0.28221454595706646,
+      "observations": 1860,
+      "returns_column": "strategy_return",
+      "returns_path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+      "returns_sha256": "98a580fe7ee2ba9fccab230a56ee98366a0df2b341a8262ab184ef57d38c1b07",
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "available": true,
+      "baseline_costs_in_returns": null,
+      "calendar_end": "2026-05-28",
+      "calendar_start": "2019-01-03",
+      "decisions_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/backtest_decisions.csv",
+      "decisions_sha256": "fc5113f046b4b1c43ef2bd79b2acc74a918471d6244f404df4f65e4e9280aaaa",
+      "mean_rebalance_turnover": 0.30892825778588606,
+      "observations": 1860,
+      "returns_column": null,
+      "returns_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+      "returns_sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07",
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "available": true,
+      "baseline_costs_in_returns": null,
+      "calendar_end": "2026-05-28",
+      "calendar_start": "2019-01-03",
+      "decisions_path": null,
+      "decisions_sha256": "",
+      "mean_rebalance_turnover": null,
+      "observations": 1860,
+      "returns_column": "NAIVE_MOMENTUM_MOM_63_TOP12",
+      "returns_path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+      "returns_sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7",
+      "variant_id": "MOM_63_TOP12"
+    }
+  ]
+}

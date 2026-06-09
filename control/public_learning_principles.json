@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "mission_de": "KI lernt aus echten Marktdaten und Order-Ergebnissen — transparent, reproduzierbar, ohne verstecktes Autotrading.",
+  "public_aspiration": "Open-evidence learning stack: jeder kann Ledger, Metriken und Audit-History prüfen.",
+  "principles": [
+    {
+      "id": "observe_first",
+      "de": "Erst beobachten (Quotes, EOD, Fills) — dann offline validieren."
+    },
+    {
+      "id": "no_hidden_promotion",
+      "de": "Kein Champion-Wechsel und kein Live-Retrain ohne Seal und menschliche Freigabe."
+    },
+    {
+      "id": "measurable_improvement",
+      "de": "Fortschritt nur über IC, Hit-Rate, MAE und Live-Outcomes — nicht Bauchgefühl."
+    },
+    {
+      "id": "full_evidence_trail",
+      "de": "Jeder Lernlauf schreibt JSON + History (jsonl) unter evidence/."
+    },
+    {
+      "id": "human_order_gate",
+      "de": "Echtgeld-Orders nur mit GUI-Bestätigung pro Welle."
+    }
+  ],
+  "quality_floors": {
+    "ic_pearson": 0.02,
+    "signed_hit_rate": 0.52,
+    "min_live_mature_for_calibration": 3
+  },
+  "forbidden_auto_actions": [
+    "auto_model_training_enabled",
+    "auto_champion_update_enabled",
+    "auto_execute_real_money_enabled"
+  ],
+  "updated_at_utc": "2026-06-06T00:00:00+00:00"
+}

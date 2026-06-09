@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Hard/Soft-Orchestrator — alles fließt visuell in R3",
+  "mission_de": "Hardware-Takt und Software-Feeds halten R3 stabil und flüssig; eine Oberfläche.",
+  "fluidity_stable_min_pct": 75,
+  "channels_de": {
+    "hardware": "GPU · RAM · NVMe",
+    "orchestrator": "Netzwerk-Takt · Schichten",
+    "hub": "Cockpit · Cache",
+    "kurse": "Internet-Kurse",
+    "modell": "Alpha Model (Hintergrund)",
+    "merge": "R3"
+  },
+  "desktop_visual_de": "Fluss-Streifen unter R3-Mark — keine separaten Panels",
+  "sync_triggers_de": [
+    "bash tools/king_ops.sh r3-flow",
+    "Session-Autostart",
+    "GET /api/r3/flow"
+  ],
+  "safety_de": "fail-closed, read-only, keine Orders, kein Champion-Wechsel"
+}

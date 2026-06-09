@@ -1,0 +1,161 @@
+{
+  "active_phase": {
+    "actions_de": [
+      "bash tools/king_ops.sh glasfaser --comeback --repair",
+      "curl -fsS <share_url>/api/health (von außen testen)",
+      "cat evidence/community_spread_forum_de.txt",
+      "Dann: r/selfhosted + r/linux"
+    ],
+    "done": true,
+    "gates": [
+      {
+        "detail_de": "Hub :17890 OK",
+        "id": "hub_healthy",
+        "ok": true
+      },
+      {
+        "detail_de": "HTTP 200 https://sport-supplied-rivers-macintosh.trycloudflare.com/api/he",
+        "id": "remote_health_ok",
+        "ok": true
+      },
+      {
+        "detail_de": "6/6 Gates",
+        "id": "community_spread_ready",
+        "ok": true
+      },
+      {
+        "detail_de": "Forum synchron (2 Kanäle)",
+        "id": "forum_draft_synced",
+        "ok": true
+      },
+      {
+        "detail_de": "Comeback 2026-06-08T11:34:14+00:00",
+        "id": "comeback_ack",
+        "ok": true
+      }
+    ],
+    "id": "after_online",
+    "label_de": "Nach Online — Comeback + Forum",
+    "operator_note_de": "Erst posten wenn Health-Check von außen grün ist.",
+    "status": "active"
+  },
+  "active_phase_id": "after_online",
+  "before_offline_ready": true,
+  "blockers_de": [],
+  "comeback_ack_at_utc": "2026-06-08T11:34:14+00:00",
+  "headline_de": "Glasfaser Phase after_online — bereit",
+  "initiated_at_utc": "2026-06-08T10:42:17+00:00",
+  "next_de": "Forum posten: evidence/community_spread_forum_de.txt",
+  "offline_ack_at_utc": "2026-06-08T10:49:03+00:00",
+  "ok": true,
+  "phases": [
+    {
+      "actions_de": [
+        "bash tools/setup_cloudflare_tunnel_token.sh (einmalig, stabile URL)",
+        "bash tools/king_ops.sh r3-stealth",
+        "bash tools/king_ops.sh community-spread --repair",
+        "bash tools/install_remote_systemd.sh",
+        "ZIP-Backup: evidence/glasfaser_offline/worker_LITE_backup.zip"
+      ],
+      "done": true,
+      "gates": [
+        {
+          "detail_de": "Notfall-Cutover — Quick-Tunnel LIVE (https://sport-supplied-rivers-macintosh.trycloudflar) · Token nach Online",
+          "id": "tunnel_token_set",
+          "ok": true
+        },
+        {
+          "detail_de": "/home/machinax7/.config/autostart/xdg-user-session.desktop",
+          "id": "session_autostart",
+          "ok": true
+        },
+        {
+          "detail_de": "Lite+Token: /home/machinax7/active_alpha_worker_LITE",
+          "id": "worker_export_ready",
+          "ok": true
+        },
+        {
+          "detail_de": "evidence/glasfaser_offline/worker_LITE_backup.zip",
+          "id": "zip_backup",
+          "ok": true
+        },
+        {
+          "detail_de": "6/6 Gates",
+          "id": "community_spread_ready",
+          "ok": true
+        },
+        {
+          "detail_de": "/home/machinax7/.config/systemd/user/active-alpha-preview-hub.service",
+          "id": "remote_systemd",
+          "ok": true
+        }
+      ],
+      "id": "before_offline",
+      "label_de": "Jetzt — vor Offline (Glasfaser-Umzug)",
+      "operator_note_de": "Quick-Tunnel-URLs sterben bei Neustart — Token-Pflicht vor Glasfaser-Cutover.",
+      "status": "done"
+    },
+    {
+      "actions_de": [
+        "Kein Post auf r/selfhosted / r/linux",
+        "Worker warten — König-Host ist absichtlich offline",
+        "ZIP-Backup auf USB/Cloud behalten"
+      ],
+      "done": true,
+      "gates": [
+        {
+          "detail_de": "Offline bestätigt 2026-06-08T10:49:03+00:00",
+          "id": "offline_ack",
+          "ok": true
+        }
+      ],
+      "id": "during_offline",
+      "label_de": "Während Offline — kein öffentlicher Launch",
+      "operator_note_de": "PC aus oder ohne Internet — Federation pausiert, kein Echtgeld-Risiko.",
+      "status": "done"
+    },
+    {
+      "actions_de": [
+        "bash tools/king_ops.sh glasfaser --comeback --repair",
+        "curl -fsS <share_url>/api/health (von außen testen)",
+        "cat evidence/community_spread_forum_de.txt",
+        "Dann: r/selfhosted + r/linux"
+      ],
+      "done": true,
+      "gates": [
+        {
+          "detail_de": "Hub :17890 OK",
+          "id": "hub_healthy",
+          "ok": true
+        },
+        {
+          "detail_de": "HTTP 200 https://sport-supplied-rivers-macintosh.trycloudflare.com/api/he",
+          "id": "remote_health_ok",
+          "ok": true
+        },
+        {
+          "detail_de": "6/6 Gates",
+          "id": "community_spread_ready",
+          "ok": true
+        },
+        {
+          "detail_de": "Forum synchron (2 Kanäle)",
+          "id": "forum_draft_synced",
+          "ok": true
+        },
+        {
+          "detail_de": "Comeback 2026-06-08T11:34:14+00:00",
+          "id": "comeback_ack",
+          "ok": true
+        }
+      ],
+      "id": "after_online",
+      "label_de": "Nach Online — Comeback + Forum",
+      "operator_note_de": "Erst posten wenn Health-Check von außen grün ist.",
+      "status": "active"
+    }
+  ],
+  "policy_ref": "control/GLASFASER_OFFLINE_PLAN.json",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-08T11:34:19+00:00"
+}

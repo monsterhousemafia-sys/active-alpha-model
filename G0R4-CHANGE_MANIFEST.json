@@ -1,0 +1,37 @@
+{
+  "change_scope": "PACKAGING_ATTESTATION_AND_EXACT_BYTE_BINDING_ONLY",
+  "generated_at_utc": "2026-05-31T22:37:33+00:00",
+  "governance_or_packaging_files_modified_in_g0r4": [
+    ".gitattributes",
+    "EXTERNAL_REVIEW_APPROVAL_G0R4_TEMPLATE.md",
+    "G0R4-CHANGE_MANIFEST.json",
+    "NEXT_CURSOR_PROMPT.md",
+    "aa_decision_cockpit_readonly_snapshot.py",
+    "aa_doc_paths.py",
+    "control/authorization/authorization_source_policy.json",
+    "control/authorization/champion_lineage_status.json",
+    "control/authorization/current_authorization_status.json",
+    "control/external_reviews/g0r3_rejection/EXTERNAL_REVIEW_DECISION_G0R3_REMEDIATION_REQUIRED.md",
+    "control/external_reviews/g0r3_rejection/EXTERNAL_REVIEW_OBSERVED_HASH_G0R3.sha256",
+    "control/review_snapshot/g0r4_decision_cockpit_snapshot.json",
+    "control/vision_automation/phase_catalog.json",
+    "control/vision_automation/review_registry/review_registry.json",
+    "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_AFTER.json",
+    "docs/integrity/protected_hashes/G0R4/CODEX_G0R4_PROTECTED_HASHES_BEFORE.json",
+    "docs/integrity/session_logs/G0R4/CODEX_G0R4_GIT_STATUS.txt",
+    "docs/integrity/session_logs/G0R4/CODEX_G0R4_TEST_OUTPUT.txt",
+    "docs/phases/G0R4/CODEX_G0R4_COMMITTED_PAYLOAD_MANIFEST.json",
+    "docs/phases/G0R4/CODEX_G0R4_EXTERNAL_REJECTION_REMEDIATION_REPORT.md",
+    "docs/phases/G0R4/CODEX_G0R4_PREFLIGHT.md",
+    "docs/phases/G0R4/CODEX_G0R4_V5R_BASELINE_COMPARISON.json",
+    "tests/test_g0r4_submission_integrity.py",
+    "tools/complete_g0r4_submission.py"
+  ],
+  "phase": "G0R4_DETACHED_ATTESTATION_AND_EXACT_BYTE_PACKAGE_BINDING_REMEDIATION",
+  "previously_restored_protected_artefacts_verified_unchanged": [
+    "model_output_sp500_pit_t212/background_research_status.json",
+    "model_output_sp500_pit_t212/latest_validated_run.json"
+  ],
+  "protected_artefacts_modified_during_g0r4": false,
+  "schema_version": 1
+}

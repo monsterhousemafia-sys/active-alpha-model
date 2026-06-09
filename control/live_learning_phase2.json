@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "title": "Phase 2 — Live-Lernen aus echten Fills (Vorbereitung)",
+  "updated_at_utc": "2026-06-05T22:00:00+00:00",
+  "status": "PREPARED",
+  "evolution_track_ref": "control/evolution_track.json",
+  "evolution_state_ref": "control/evolution_state.json",
+  "audit_tool": "tools/run_learning_cycle_audit.py",
+  "weekly_task_install": "setup_live_weekly_evolution_task.bat",
+  "principle": "Beobachten und reifen lassen — kein Auto-Train, kein Auto-Promote, kein Auto-Execute.",
+  "current_track": {
+    "live_outcome_bridge": "execution/live_learning/live_execution_outcome_bridge.py",
+    "sync_hooks": [
+      "tools/run_tomorrow_prediction.py",
+      "analytics/live_trading_operations.py (daily mark)",
+      "execution/confirmed_live/order_submission_service.py (post-submit)",
+      "tools/sync_live_execution_outcomes.py"
+    ],
+    "evidence": "evidence/live_execution_outcome_sync_latest.json"
+  },
+  "next_track": {
+    "id": "shadow_paper_parallel",
+    "goal": "Live vs. Shadow-Paper vergleichen (Slippage, Drift, signed_hit)",
+    "requires": [
+      "DAILY_ALPHA_H1 backtest sealed",
+      "min_live_fills_matured >= 20",
+      "weekly_feedback_report"
+    ],
+    "scheduled": {
+      "weekly_feedback_cet": "Sun 10:00",
+      "command": "python tools/run_feedback_update.py && python tools/sync_live_execution_outcomes.py"
+    }
+  },
+  "gates_before_full_auto": [
+    "M6_shadow_monitoring_time_window",
+    "M7_paper_forward_calendar_time",
+    "M9_external_human_approval_for_champion_change",
+    "auto_execute_real_money_enabled remains false until M9",
+    "gui_execution_confirmation remains required until governance lift"
+  ],
+  "metrics_to_watch": [
+    "live_rows_total",
+    "matured_live",
+    "signed_hit_rate_live_vs_backtest",
+    "median_slippage_bps",
+    "prediction_error_h1"
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 Betriebs-Checkliste — abgeleitet aus Active Alpha Model",
+  "basis_de": [
+    "control/r3_trading_cycle_policy.json",
+    "control/r3_order_execution_policy.json",
+    "control/r3_closed_loop_policy.json",
+    "control/r3_operational_independence.json",
+    "control/series_readiness_policy.json",
+    "AGENTS.md Safety-Invarianten"
+  ],
+  "verify_all_de": "bash tools/king_ops.sh series-ready && bash tools/king_ops.sh r3-sync --repair",
+  "evidence_de": "evidence/r3_operational_checklist_latest.json",
+  "sections": [
+    {
+      "id": "safety",
+      "title_de": "A — Safety & Governance (Active Alpha)",
+      "tier": "critical",
+      "items": [
+        {
+          "id": "safety_flags_off",
+          "label_de": "Auto-Flags aus (research, promote, execute)",
+          "verify_de": "bash tools/king_ops.sh verify",
+          "evidence_ref": "promotion_gate_config.yaml",
+          "fail_closed": true
+        },
+        {
+          "id": "governance_locked",
+          "label_de": "Champion gesperrt — kein Auto-Promote",
+          "verify_de": "control/champion_lineage_policy.json · control/operational_champion_status.json",
+          "evidence_ref": "evidence/king_verify_latest.json",
+          "fail_closed": true
+        },
+        {
+          "id": "orders_only_r3",
+          "label_de": "Orders nur über R3 — Engine/Scheduler blockiert",
+          "policy_ref": "control/r3_order_execution_policy.json",
+          "fail_closed": true
+        },
+        {
+          "id": "dry_run_guard",
+          "label_de": "Live-Submit nur nach GUI-Bestätigung + Gates",
+          "verify_de": "analytics/r3_mirror_state.resolve_submission_mode",
+          "evidence_ref": "evidence/r3_freigabe_latest.json",
+          "fail_closed": true
+        }
+      ]
+    },
+    {
+      "id": "runtime",
+      "title_de": "B — Laufzeit & Autostart",
+      "tier": "critical",
+      "items": [
+        {
+          "id": "hub_local",
+          "label_de": "Preview-Hub auf 127.0.0.1:17890",
+          "verify_de": "curl -sf http://127.0.0.1:17890/api/health",
+          "evidence_ref": "evidence/stack_integrity_latest.json",
+          "policy_ref": "control/alpha_model_local_runtime.json"
+        },
+        {
+          "id": "r3_surface",
+          "label_de": "Oberfläche /r3 erreichbar",
+          "verify_de": "curl -sf http://127.0.0.1:17890/api/r3/mirror",
+          "evidence_ref": "evidence/stack_integrity_latest.json"
+        },
+        {
+          "id": "autostart",
+          "label_de": "Login-Autostart + Desktop R3",
+          "verify_de": "bash tools/king_ops.sh r3-detach",
+          "evidence_ref": "evidence/r3_operational_independence_latest.json"
+        },
+        {
+          "id": "stack_ok",
+          "label_de": "Stack-Integrität (Hub, Mirror, Cache)",
+          "verify_de": "bash tools/king_ops.sh r3-sync --repair",
+          "evidence_ref": "evidence/stack_integrity_latest.json"
+        },
+        {
+          "id": "home_ownership",
+          "label_de": "~/.local Besitz korrekt (kein root)",
+          "verify_de": "bash tools/fix_r3_home_ownership.sh",
+          "evidence_ref": "evidence/r3_home_ownership_latest.json"
+        }
+      ]
+    },
+    {
+      "id": "cycle",
+      "title_de": "C — Trading-Kreislauf (7 Stufen)",
+      "tier": "critical",
+      "policy_ref": "control/r3_trading_cycle_policy.json",
+      "items": [
+        {
+          "id": "internet",
+          "label_de": "1 Internet — Probe OK",
+          "evidence_ref": "evidence/r3_internet_latest.json",
+          "fields_de": ["internet_ok"]
+        },
+        {
+          "id": "account",
+          "label_de": "2 Konto — T212-Bond verbunden, cash_eur",
+          "evidence_ref": "evidence/r3_t212_api_bond_latest.json",
+          "fields_de": ["connected", "cash_eur", "investable_eur"]
+        },
+        {
+          "id": "ingest",
+          "label_de": "3 Kurse — Browser-Ingest / price_latest",
+          "evidence_ref": "evidence/r3_browser_ingest_latest.json",
+          "fields_de": ["ok", "price_latest"]
+        },
+        {
+          "id": "engine",
+          "label_de": "4 Modell — Background-Engine Tick",
+          "evidence_ref": "evidence/alpha_model_background_engine_latest.json",
+          "fields_de": ["ok", "rebalance.planning_cash_eur"]
+        },
+        {
+          "id": "plan",
+          "label_de": "5 Plan — investable_eur + allocations",
+          "evidence_ref": "evidence/pilot_investment_plan_latest.json",
+          "fields_de": ["investable_eur", "allocations"]
+        },
+        {
+          "id": "display",
+          "label_de": "6 Anzeige — R3 Mirror read-only",
+          "evidence_ref": "evidence/r3_t212_prognosis_latest.json",
+          "verify_de": "GET /api/r3/mirror/panel"
+        },
+        {
+          "id": "orders",
+          "label_de": "7 Orders — Policy AUTHORITATIVE, nur R3-GUI",
+          "evidence_ref": "control/r3_order_execution_policy.json",
+          "fields_de": ["status"]
+        }
+      ],
+      "run_de": "bash tools/king_ops.sh r3-cycle"
+    },
+    {
+      "id": "mirror_ui",
+      "title_de": "D — Anzeige /r3 (Zahlen aus Evidence)",
+      "tier": "critical",
+      "items": [
+        {
+          "id": "metrics_traceable",
+          "label_de": "Faktenzeilen mit evidence_ref + fields_de",
+          "module_de": "analytics/r3_evidence_metrics.py",
+          "evidence_ref": "evidence/r3_operational_independence_latest.json"
+        },
+        {
+          "id": "plan_panel",
+          "label_de": "Plan-Panel — investable_eur aus Plan-Evidence",
+          "evidence_ref": "evidence/pilot_investment_plan_latest.json"
+        },
+        {
+          "id": "t212_panel",
+          "label_de": "T212-Panel — Verkauf + Kauf getrennt",
+          "evidence_ref": "evidence/r3_stock_orders_latest.json",
+          "fields_de": ["sell_lines", "lines"]
+        },
+        {
+          "id": "status_compact",
+          "label_de": "Status: T212 · Paket · Kurse (Zahlen)",
+          "module_de": "analytics/r3_mirror_state.build_exec_mirror_state"
+        },
+        {
+          "id": "poll_refresh",
+          "label_de": "Live-Poll /api/r3/mirror ohne Seitenabbruch",
+          "verify_de": "r3PollMirror · r3PatchMirrorDisplays"
+        },
+        {
+          "id": "upgrade_confirm",
+          "label_de": "Runtime-Upgrade nur Übernehmen/Später",
+          "policy_ref": "control/r3_runtime_profile.json",
+          "fail_closed": true
+        }
+      ]
+    },
+    {
+      "id": "trading",
+      "title_de": "E — Handel (Kauf + Verkauf)",
+      "tier": "critical",
+      "policy_ref": "control/r3_trading_functions_policy.json",
+      "items": [
+        {
+          "id": "buy_single",
+          "label_de": "Einzel-Kauf — klickbar, Bestätigung, T212",
+          "verify_de": "r3OrderStock(sym, BUY)",
+          "evidence_ref": "evidence/r3_stock_orders_latest.json"
+        },
+        {
+          "id": "sell_single",
+          "label_de": "Einzel-Verkauf — klickbar, Bestätigung, T212",
+          "verify_de": "r3OrderStock(sym, SELL)",
+          "evidence_ref": "evidence/r3_stock_orders_latest.json",
+          "source_de": "Plan-SELL + Reevaluation REDUZIEREN (gehalten)"
+        },
+        {
+          "id": "initial_package",
+          "label_de": "Gesamtpaket Kauf — nur BUY, GUI-Bestätigung",
+          "verify_de": "r3FreigabeSubmit",
+          "evidence_ref": "evidence/r3_order_batch_latest.json"
+        },
+        {
+          "id": "sell_notice",
+          "label_de": "Verkauf-Funktion aktiv bei Reeval-SELL",
+          "evidence_ref": "evidence/r3_trading_functions_latest.json",
+          "function_id": "sell_notice"
+        },
+        {
+          "id": "min_trade",
+          "label_de": "Mindest-Trade ≥ min_trade_eur",
+          "policy_ref": "control/r3_trading_functions_policy.json",
+          "fields_de": ["min_trade_eur"]
+        },
+        {
+          "id": "no_background_orders",
+          "label_de": "Kein Auto-Execute aus Engine/Scheduler",
+          "policy_ref": "control/r3_order_execution_policy.json",
+          "fail_closed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha_model",
+      "title_de": "F — Active Alpha Model (Hintergrund)",
+      "tier": "critical",
+      "items": [
+        {
+          "id": "signal_plan",
+          "label_de": "Champion-Signal → Plan (read-only für R3)",
+          "evidence_ref": "evidence/pilot_investment_plan_latest.json",
+          "locked_champion_de": "R3_w075_q065_noexit"
+        },
+        {
+          "id": "reeval_actions",
+          "label_de": "Reevaluation — Kauf/Verkauf-Empfehlungen",
+          "evidence_ref": "evidence/pilot_portfolio_reevaluation_latest.json",
+          "fields_de": ["recommended_actions"]
+        },
+        {
+          "id": "closed_loop",
+          "label_de": "Closed Loop Konto→Modell synchron",
+          "evidence_ref": "evidence/r3_closed_loop_latest.json",
+          "fields_de": ["loop_ok", "investable_eur"]
+        },
+        {
+          "id": "prediction_gate",
+          "label_de": "prediction_readiness — order_gate_ok",
+          "evidence_ref": "control/prediction_readiness.json"
+        },
+        {
+          "id": "h1_separate",
+          "label_de": "H1/Benchmark — König-Territorium, nicht R3-Blocker",
+          "note_de": "R3 läuft auch bei H1 offen; Seal optional per Policy"
+        }
+      ]
+    },
+    {
+      "id": "operator",
+      "title_de": "G — Operator & König",
+      "tier": "warn",
+      "items": [
+        {
+          "id": "king_ops",
+          "label_de": "king_ops status · r3-sync · verify",
+          "verify_de": "bash tools/king_ops.sh status"
+        },
+        {
+          "id": "king_agent",
+          "label_de": "König 32B — alpha-model-agent erreichbar",
+          "verify_de": "bash tools/alpha_model_agent.sh"
+        },
+        {
+          "id": "r3_bau",
+          "label_de": "UI-Änderungen via r3-bau / r3-apply",
+          "verify_de": "bash tools/king_ops.sh r3-apply"
+        },
+        {
+          "id": "series_ready",
+          "label_de": "Serienreife-Gate dokumentiert",
+          "verify_de": "bash tools/king_ops.sh series-ready",
+          "evidence_ref": "evidence/series_readiness_latest.json"
+        }
+      ]
+    }
+  ],
+  "test_suites_de": [
+    "pytest tests/test_r3_exec_mirror.py tests/test_r3_stock_orders.py tests/test_r3_trading_cycle.py -q",
+    "pytest tests/test_r3_evidence_metrics.py tests/test_r3_operational_independence.py -q",
+    "pytest tests/test_r3_trading_functions.py tests/test_r3_order_execution_gate.py -q"
+  ]
+}

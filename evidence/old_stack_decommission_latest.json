@@ -1,0 +1,32 @@
+{
+  "decommissioned_at_utc": "2026-06-06T16:09:32+00:00",
+  "disabled_timers": [
+    "active-alpha-h1-resume.timer",
+    "active-alpha-h1-watch.timer",
+    "active-alpha-evidence-watch.timer",
+    "active-alpha-refresh.timer",
+    "active-alpha-refresh-preus.timer",
+    "active-alpha-refresh-usopen.timer",
+    "active-alpha-trading-day.timer",
+    "active-alpha-warnings.timer",
+    "active-alpha-learn.timer",
+    "active-alpha-gui-preview.timer",
+    "active-alpha-spread-tick.timer",
+    "active-alpha-spread-tick-1.timer",
+    "active-alpha-spread-tick-2.timer",
+    "active-alpha-spread-tick-3.timer",
+    "active-alpha-spread-tick-4.timer",
+    "active-alpha-boot.timer"
+  ],
+  "errors": [],
+  "headline_de": "Alter Stack abgemeldet — 5 Services maskiert, 16 Timer aus",
+  "masked_services": [
+    "active-alpha-preview-hub.service",
+    "active-alpha-remote-tunnel.service",
+    "active-alpha-runtime-api.service",
+    "active-alpha-stable-server.service",
+    "active-alpha-preview-worker.service"
+  ],
+  "ok": true,
+  "schema_version": 1
+}

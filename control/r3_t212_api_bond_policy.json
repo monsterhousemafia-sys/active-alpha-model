@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 ↔ Trading212 API — zentrale feste Verbindung",
+  "bond_mode": "persistent",
+  "broker_de": "Trading212",
+  "api_central_de": "R3 ist zentrale API-Schicht — Read-only, fail-closed",
+  "read_only": true,
+  "allow_live_orders": false,
+  "auto_sync_on_session": true,
+  "auto_sync_on_flow": false,
+  "cache_stale_sec": 300,
+  "confirmation_only_de": "Eine Bestätigungszeile auf R3 reicht — kein separates Panel",
+  "endpoints_de": {
+    "status": "GET /api/r3/t212",
+    "sync": "GET /api/r3/t212?sync=1"
+  },
+  "safety_de": "Keine Auto-Orders, Kill-Switch respektieren, Credentials nie in Evidence"
+}

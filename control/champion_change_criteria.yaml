@@ -1,0 +1,55 @@
+# Manual champion-change gate (Phase D) — all criteria must pass for a legitimate switch.
+# Auto-promotion remains prohibited regardless of these thresholds.
+
+schema_version: 1
+updated_at_utc: "2026-06-03T20:15:00+00:00"
+authoritative_champion: R3_w075_q065_noexit
+
+auto_promotion_allowed: false
+manual_approval_required: true
+external_approval:
+  required_document_pattern: EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE
+  note: Template files never authorize execution.
+
+quarantined_variants:
+  - R5_rank_only_train5
+
+matrix_comparison:
+  reference_frame: matrix_embedded
+  expected_n_days: 1860
+  min_aligned_overlap_days: 200
+  min_sharpe_delta_vs_champion: 0.02
+  max_drawdown_degradation_vs_champion: 0.02
+  require_beat_m1_control: true
+  canonical_evidence: evidence/canonical_model_comparison.json
+
+cost_stress:
+  required_scenario: PLUS_25_BPS
+  must_pass: true
+  challenger_turnover_must_be_verified: true
+  no_champion_turnover_proxy_for_challenger: true
+  evidence: control/evidence/cost_stress_status.json
+
+multiple_testing:
+  dsr_required_probability: 0.95
+  evidence: control/evidence/multiple_testing_status.json
+
+robustness:
+  subperiod_stability_required: STABLE_POSITIVE
+  evidence: control/evidence/robustness_status.json
+
+forward_evidence:
+  paper_forward_min_days: 60
+  shadow_min_outcomes: 30
+  evidence_forward: control/evidence/forward_monitoring_readiness_status.json
+  evidence_shadow: control/evidence/shadow_monitor_status.json
+  evidence_paper: control/evidence/paper_monitor_status.json
+
+integrity:
+  require_validation_run_pass: true
+  require_pointer_alignment: true
+  forbid_contaminated_model_output_returns: true
+  contaminated_returns_sha256: 3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653
+
+charter_reference: control/champion_decision_charter.md
+governance_doc: CHAMPION_CHALLENGER_GOVERNANCE.md

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "user_facing_minimal": true,
+  "hide_trading_in_ui": true,
+  "tagline_de": "Offenes Research — ein Cockpit, kollektive Rechenkraft.",
+  "donate": {
+    "enabled": true,
+    "headline_de": "Projekt vorantreiben",
+    "body_de": "R3 ist frei nutzbar. Mit einer Spende hilfst du bei Entwicklung, Server und Pilot — damit das Cockpit für alle schneller reif wird.",
+    "cta_de": "Jetzt spenden",
+    "url": "",
+    "alt_de": "Noch kein Zahlungslink hinterlegt — schreib im Chat /spende oder frag den Betreiber.",
+    "thanks_de": "Jede Unterstützung zählt. Rechenkraft geht auch ohne Geld: /join"
+  },
+  "support_ways_de": [
+    {
+      "id": "cpu",
+      "title_de": "Rechenkraft",
+      "body_de": "PC ans Netzwerk hängen — kein Broker, kein Geld.",
+      "action_de": "/join"
+    },
+    {
+      "id": "donate",
+      "title_de": "Spende",
+      "body_de": "Einmalig oder regelmäßig — beschleunigt den Ausbau.",
+      "action_de": "/spende"
+    },
+    {
+      "id": "chat",
+      "title_de": "Mitmachen",
+      "body_de": "Fragen, Ideen, Feedback im Chat.",
+      "action_de": "/fragen"
+    }
+  ]
+}

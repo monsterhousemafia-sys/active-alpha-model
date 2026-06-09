@@ -1,0 +1,21 @@
+{
+  "portfolio_id": "PROVISIONAL_EXECUTABLE_PORTFOLIO_6_POSITION_500_EUR",
+  "initial_capital_eur": 500.0,
+  "base_currency": "EUR",
+  "position_count": 6,
+  "symbols": [
+    "OXY",
+    "WDC",
+    "STX",
+    "INTC",
+    "MU",
+    "CIEN"
+  ],
+  "classification": "LIMITED_EXECUTABLE_SUBSET_PERFORMANCE",
+  "excluded_from_execution": [
+    "VUSD",
+    "SNDK"
+  ],
+  "p16c_ledger_preserved": true,
+  "no_retroactive_inclusion": true
+}

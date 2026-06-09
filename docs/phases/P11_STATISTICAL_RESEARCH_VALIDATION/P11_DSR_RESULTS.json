@@ -1,0 +1,67 @@
+{
+  "independence_assumption": "Variants treated as non-independent unless externally validated",
+  "limitation": "CONDITIONAL_ON_RETURN_COST_LIMITATION",
+  "overall_status": "CONDITIONAL",
+  "trial_count": 13,
+  "trial_count_derivation": "unique variant ids from challenger_report entries (7) + naive momentum columns",
+  "trial_count_source_files": [
+    {
+      "path": "control/challenger_report.json",
+      "sha256": "140a079f50f6090719eb3ed25e00d99a0a290337b0eb525583c7a484deec37ed"
+    },
+    {
+      "path": "runs/20260530T162749569Z_M1_MOM_BLEND_MATCHED_CONTROLS_dec4af3a_012fe917_s2i0_15c6ce/naive_momentum_daily_returns.csv",
+      "sha256": "d7324e6647b07c807c8fed71fdecf5639a74bc003a4728e150647ff20b0f95a7"
+    }
+  ],
+  "variants": [
+    {
+      "dsr_probability": 0.8539537100153771,
+      "limitation_flag": "CONDITIONAL_ON_RETURN_COST_LIMITATION",
+      "note": "Research diagnosis only; not promotion evidence while gross-return reconciliation incomplete.",
+      "observations_T": 2450,
+      "periodic_sharpe": 0.05564345331343237,
+      "return_series_path": "model_output_sp500_pit_t212/strategy_daily_returns.csv",
+      "return_series_sha256": "3f8a1a3aea140bcb32dc46bff216ccda87b718727555109a2b8e394b4b7a2653",
+      "status": "FAIL",
+      "strategy_identity_hash": "",
+      "variant_id": "R3_w075_q065_noexit"
+    },
+    {
+      "dsr_probability": 0.7284660405801431,
+      "limitation_flag": "CONDITIONAL_ON_RETURN_COST_LIMITATION",
+      "note": "Research diagnosis only; not promotion evidence while gross-return reconciliation incomplete.",
+      "observations_T": 1860,
+      "periodic_sharpe": 0.054300340431689596,
+      "return_series_path": "validation_runs/20260530T162737Z_M1_MOM_BLEND_MATCHED_CONTROLS/mom_blend_matched_controls_daily_returns.csv",
+      "return_series_sha256": "8036cb3818518c411340ae1b8f5952b61663a80935e02b5a50e8d307411a0e07",
+      "status": "FAIL",
+      "strategy_identity_hash": "",
+      "variant_id": "M1_MOM_BLEND_MATCHED_CONTROLS"
+    },
+    {
+      "dsr_probability": 0.8359652715208128,
+      "limitation_flag": "CONDITIONAL_ON_RETURN_COST_LIMITATION",
+      "note": "Research diagnosis only; not promotion evidence while gross-return reconciliation incomplete.",
+      "observations_T": 1859,
+      "periodic_sharpe": 0.06288605721101483,
+      "return_series_path": "evidence/autonomous_research/MOM_63_TOP12_STRICT/daily_returns.csv",
+      "return_series_sha256": "70f9500a1ee15224faee293f5cf02d2ab7865bc00267891a17a7869aa3872128",
+      "status": "FAIL",
+      "strategy_identity_hash": "6efda590053ac9fc0e4e8a1c7cfb3b66f60a74dbf215b6f00c28046c76c44568",
+      "variant_id": "MOM_63_TOP12_STRICT"
+    },
+    {
+      "dsr_probability": 0.8304483163991592,
+      "limitation_flag": "CONDITIONAL_ON_RETURN_COST_LIMITATION",
+      "note": "Research diagnosis only; not promotion evidence while gross-return reconciliation incomplete.",
+      "observations_T": 1860,
+      "periodic_sharpe": 0.06243966438735838,
+      "return_series_path": "evidence/autonomous_research/MOM_63_TOP15_RECONSTRUCTED/daily_returns.csv",
+      "return_series_sha256": "1c6235dbd7eeafdf2c011909f71e8644f2c520d946d18f2f0eba75b3c5b7ab11",
+      "status": "FAIL",
+      "strategy_identity_hash": "714c922dfdb2779cfe248b3951e321e15d194d359107bb53e042eef49f72e5b5",
+      "variant_id": "MOM_63_TOP15_RECONSTRUCTED"
+    }
+  ]
+}

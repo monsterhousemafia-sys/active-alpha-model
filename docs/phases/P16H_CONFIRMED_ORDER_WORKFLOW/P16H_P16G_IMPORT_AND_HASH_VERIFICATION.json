@@ -1,0 +1,12 @@
+{
+  "bytecode_found": false,
+  "expected_sha256": "f8a19465d07404a2dfa70e5a6b3a0e4d95e791bd439d12f4e5be7344f277fb85",
+  "gui_stack_present": true,
+  "manifest_coverage": "COMPLETE",
+  "p16g_status": "PASS_INTERACTIVE_DESKTOP_RUNNING_AWAITING_SECURE_T212_READONLY_INPUT",
+  "readonly_clients_present": true,
+  "secrets_found": false,
+  "sidecar_verified": true,
+  "verification_status": "PASS",
+  "zip_sha256": "f8a19465d07404a2dfa70e5a6b3a0e4d95e791bd439d12f4e5be7344f277fb85"
+}

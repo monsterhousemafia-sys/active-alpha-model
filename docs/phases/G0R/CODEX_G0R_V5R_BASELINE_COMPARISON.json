@@ -1,0 +1,149 @@
+{
+  "entries": [
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "cdde61834d70bb491e81fd10b99dfaf796713c5545998541d36de1c7da868674",
+      "match": true,
+      "path": "DEVELOPMENT_PIPELINE.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "cdde61834d70bb491e81fd10b99dfaf796713c5545998541d36de1c7da868674"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "032b428673cc5e67ea02a3979712287ce56ab2e4ec355aaae54d376692b63e6a",
+      "match": true,
+      "path": "DEVELOPMENT_PIPELINE.yaml",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "032b428673cc5e67ea02a3979712287ce56ab2e4ec355aaae54d376692b63e6a"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "e2901234d1f4bceb3606a55095da804c6baacc1a454c3342f394626dbff100e7",
+      "match": true,
+      "path": "control/auto_promotion_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "e2901234d1f4bceb3606a55095da804c6baacc1a454c3342f394626dbff100e7"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "bbe231ac7f5e375bf4fa498ac827d22ddfa816d61e98c06008160cec341a9404",
+      "match": true,
+      "path": "control/evidence/cost_stress_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "bbe231ac7f5e375bf4fa498ac827d22ddfa816d61e98c06008160cec341a9404"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "c51237d27c4ca56196fc2bb52346a924b7a94ee28be36d38ddf944abd60c979f",
+      "match": true,
+      "path": "control/evidence/current_evidence_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "c51237d27c4ca56196fc2bb52346a924b7a94ee28be36d38ddf944abd60c979f"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "38ff1ae40d05858d2d98621ac9405c658e88b9d7add102ae99eabf6a5dde527d",
+      "match": true,
+      "path": "control/evidence/forward_monitoring_data_requirements.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "38ff1ae40d05858d2d98621ac9405c658e88b9d7add102ae99eabf6a5dde527d"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "538fab6de3b6333d74846819f345b632b6043ba9101074fcbef0c1dc2167dc3b",
+      "match": true,
+      "path": "control/evidence/forward_monitoring_readiness_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "538fab6de3b6333d74846819f345b632b6043ba9101074fcbef0c1dc2167dc3b"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "91a4c04151e862d3e36e567f2b98391f353e7621207666f3da0181ad5a01ffe2",
+      "match": true,
+      "path": "control/evidence/multiple_testing_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "91a4c04151e862d3e36e567f2b98391f353e7621207666f3da0181ad5a01ffe2"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "5290a3ad9ad52f8ecacef81214d96095efaaec995519a6bdad6ecb87cb09335d",
+      "match": true,
+      "path": "control/evidence/paper_monitor_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "5290a3ad9ad52f8ecacef81214d96095efaaec995519a6bdad6ecb87cb09335d"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "4c219ab56218ea6ec68c454a6c57fad3045fd70b4bba0282978745805af78e45",
+      "match": true,
+      "path": "control/evidence/robustness_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "4c219ab56218ea6ec68c454a6c57fad3045fd70b4bba0282978745805af78e45"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "fb73200c5834713d2e9a9c09791b164778b0d95348f1dcd20113cfed15e59764",
+      "match": true,
+      "path": "control/evidence/shadow_monitor_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "fb73200c5834713d2e9a9c09791b164778b0d95348f1dcd20113cfed15e59764"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "6c385efecb43c303726ecf4a5baff4dd779a425417f5012185ea82bfb73430b2",
+      "match": true,
+      "path": "control/experiments/EXP_INITIAL_MOM_63_TOP12.yaml",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "6c385efecb43c303726ecf4a5baff4dd779a425417f5012185ea82bfb73430b2"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "f67b37eba2807702f1ffbada01e0f6153046d66a23136e0dc307f01fa4ff9bcc",
+      "match": true,
+      "path": "control/last_known_good_state.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "f67b37eba2807702f1ffbada01e0f6153046d66a23136e0dc307f01fa4ff9bcc"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "d47657dcfa5e478c51453809eff7e9386eebd4c3f47e2429c1e27f7704937636",
+      "match": true,
+      "path": "control/p9_shadow_paper_prep_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "d47657dcfa5e478c51453809eff7e9386eebd4c3f47e2429c1e27f7704937636"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "14b8f53f9e95ec03234cbfdf60c9a437db4a4fb3c33dc9fd3146e199901b693a",
+      "match": true,
+      "path": "control/promotion_status.json",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "14b8f53f9e95ec03234cbfdf60c9a437db4a4fb3c33dc9fd3146e199901b693a"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "2401c9cd2340d186c98eced96356315cd0c03dab41607c94c60c1df9b5a53d70",
+      "match": true,
+      "path": "model_output_sp500_pit_t212/background_research_status.json",
+      "remediation_action": "RESTORED_FROM_BASELINE_ARCHIVE",
+      "v5r_external_baseline_sha256": "2401c9cd2340d186c98eced96356315cd0c03dab41607c94c60c1df9b5a53d70"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "e5a821da3cae03952cc0bbbad9c43d9f813fa60fb48d58d60fe6947314a9a58d",
+      "match": true,
+      "path": "model_output_sp500_pit_t212/latest_validated_run.json",
+      "remediation_action": "RESTORED_FROM_BASELINE_ARCHIVE",
+      "v5r_external_baseline_sha256": "e5a821da3cae03952cc0bbbad9c43d9f813fa60fb48d58d60fe6947314a9a58d"
+    },
+    {
+      "classification": "UNCHANGED",
+      "current_repository_sha256": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e",
+      "match": true,
+      "path": "promotion_gate_config.yaml",
+      "remediation_action": "NONE",
+      "v5r_external_baseline_sha256": "d4c73d780bedcb309869362ff9e90d7189b76acf00d120a317915430bff6210e"
+    }
+  ],
+  "generated_at_utc": "2026-05-31T21:22:13+00:00"
+}

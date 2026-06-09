@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "R3 Laufzeit-Verbesserungen — nur nach Bestätigung",
+  "mission_de": "Bessere Funktionsweise wird vorgeschlagen, erklärt und erst nach Operator-Freigabe aktiv.",
+  "upgrades": [
+    {
+      "id": "fluid_mirror_v2",
+      "label_de": "Flüssigerer R3-Spiegel",
+      "summary_de": "Weniger Vollbild-Neuladen und seltener Hintergrund-Prep — die Oberfläche bleibt ruhiger, Daten bleiben aktuell.",
+      "replaces_profile_id": "stable_v1",
+      "target_profile": {
+        "profile_id": "fluid_v2",
+        "label_de": "Flüssig — bestätigt",
+        "mirror_poll_ms": 60000,
+        "mirror_prep_every_n_polls": 6,
+        "mirror_reload_on_evidence_change": false,
+        "mirror_soft_update": true,
+        "cache_stale_sec": 240
+      },
+      "changes_de": [
+        "Live-Aktualisierung: 45 s → 60 s (weniger Flackern)",
+        "Freigabe-Vorbereitung: ca. alle 3 Min → alle 6 Min (weniger Hintergrund-Last)",
+        "Bei neuen Daten: sanftes Panel-Update statt kompletter Seiten-Neuladen",
+        "Cache-Frische: 300 s → 240 s (aktuellere Anzeige nach Pipeline-Tick)"
+      ],
+      "detection": {
+        "requires_mirror_state_ok": true
+      }
+    }
+  ],
+  "safety_de": "Kein Auto-Apply · keine Orders · kein Champion-Wechsel · nur R3-Laufzeitprofil"
+}

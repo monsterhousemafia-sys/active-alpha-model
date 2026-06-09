@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-07T21:10:00+00:00",
+  "headline_de": "Lokale PC-Anwendungen — fertiggestellt",
+  "audit_ref": "evidence/local_apps_audit_latest.json",
+  "all_ok": true,
+  "ok_count": 19,
+  "total": 19,
+  "king_32b": {
+    "model": "qwen2.5-coder:32b",
+    "orchestrator": "tools/king_32b_local_apps_finish.sh",
+    "build_kernel_required": false,
+    "note_de": "Audit grün — build-kernel übersprungen; bei Regression: bash tools/king_ops.sh local-apps"
+  },
+  "fixes_de": [
+    "control/local_apps_manifest.json — kanonische App-Liste",
+    "analytics/local_apps_registry.py — Audit + /desktop-Sektion",
+    "tools/king_32b_local_apps_finish.sh + king_ops local-apps",
+    "R3-Assistent/R3-Status → ptyxis statt gnome-terminal",
+    "Netzwerk-Takt immer sichtbar auf /desktop"
+  ],
+  "commands_de": [
+    "bash tools/king_ops.sh local-apps",
+    "bash tools/r3_desktop_health.sh",
+    "http://127.0.0.1:17890/desktop"
+  ]
+}

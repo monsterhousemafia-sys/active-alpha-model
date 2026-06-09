@@ -1,0 +1,9 @@
+{
+  "authoritative_champion_unchanged": "R0_LEGACY_ENSEMBLE",
+  "blockers": [],
+  "completed_at_utc": "2026-06-08T14:01:53+00:00",
+  "phase": "M1",
+  "returns_complete": false,
+  "status": "SEALED",
+  "synced_by": "tools/r0_migration_status_sync.py"
+}

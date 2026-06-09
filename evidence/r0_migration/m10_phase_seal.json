@@ -1,0 +1,43 @@
+{
+  "artifact_hashes": {},
+  "authoritative_champion_until_m9": "R3_w075_q065_noexit",
+  "next_phase": "M11",
+  "phase": "M10",
+  "schema_version": 1,
+  "sealed_at_utc": "2026-06-05T15:39:08+00:00",
+  "sealed_by": "tools/r0_migration_phase_guard.py",
+  "status": "SEALED",
+  "verification": {
+    "blockers": [],
+    "checks": [
+      {
+        "check": "authoritative_champion_unchanged",
+        "detail": "unchanged vs R3_w075_q065_noexit",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "auto_promotion_disabled",
+        "detail": "no auto_promote True in scanned files",
+        "pass": true,
+        "path": null
+      },
+      {
+        "check": "prerequisite_seal",
+        "detail": "M9 status=SEALED",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m9_phase_seal.json"
+      },
+      {
+        "check": "m10_stabilization_window",
+        "detail": "COMPLETE",
+        "pass": true,
+        "path": "evidence\\r0_migration\\m10_stabilization_summary.json"
+      }
+    ],
+    "pass": true,
+    "phase": "M10",
+    "title": "Stabilisierung",
+    "verified_at_utc": "2026-06-05T15:39:08+00:00"
+  }
+}
