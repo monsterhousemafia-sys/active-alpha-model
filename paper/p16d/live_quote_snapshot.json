@@ -9,35 +9,35 @@
   },
   "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
   "executable_prices_eur": {
-    "AMD": 473.8306,
-    "CAT": 807.9849,
-    "CIEN": 394.6699,
-    "GOOG": 318.3726,
-    "GOOGL": 320.1759,
-    "INTC": 109.8795,
-    "MU": 925.9955,
-    "ON": 107.4148,
-    "OXY": 47.0414,
-    "SNDK": 1814.0114,
-    "STX": 858.6286,
-    "TXN": 269.2177,
-    "VRT": 268.7733,
-    "WDC": 557.3605
+    "AMD": 471.6834,
+    "CAT": 804.9543,
+    "CIEN": 399.4131,
+    "GOOG": 316.4121,
+    "GOOGL": 318.3428,
+    "INTC": 110.2025,
+    "MU": 937.7386,
+    "ON": 108.5132,
+    "OXY": 46.9391,
+    "SNDK": 1816.7645,
+    "STX": 878.1037,
+    "TXN": 270.0677,
+    "VRT": 268.8525,
+    "WDC": 563.2775
   },
-  "forward_batch_generated_at_utc": "2026-06-15T17:41:06+00:00",
+  "forward_batch_generated_at_utc": "2026-06-16T11:57:07+00:00",
   "freshness": {
-    "age_seconds": 1.1,
+    "age_seconds": 1.0,
     "calculation_allowed": true,
     "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
     "executable_symbol_count": 14,
     "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
-    "generated_at_utc": "2026-06-15T17:41:12+00:00",
+    "generated_at_utc": "2026-06-16T11:57:09+00:00",
     "max_age_seconds": 120,
     "reason": "Live-Preise aktuell — Berechnung freigegeben.",
     "status": "FRESH"
   },
   "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
-  "generated_at_utc": "2026-06-15T17:41:12+00:00",
+  "generated_at_utc": "2026-06-16T11:57:09+00:00",
   "incident_count": 0,
   "max_age_seconds": 120,
   "price_sanitization": {
@@ -45,20 +45,20 @@
     "anchor_used": true,
     "blocked_symbols": {},
     "executable_prices_eur": {
-      "AMD": 473.8306,
-      "CAT": 807.9849,
-      "CIEN": 394.6699,
-      "GOOG": 318.3726,
-      "GOOGL": 320.1759,
-      "INTC": 109.8795,
-      "MU": 925.9955,
-      "ON": 107.4148,
-      "OXY": 47.0414,
-      "SNDK": 1814.0114,
-      "STX": 858.6286,
-      "TXN": 269.2177,
-      "VRT": 268.7733,
-      "WDC": 557.3605
+      "AMD": 471.6834,
+      "CAT": 804.9543,
+      "CIEN": 399.4131,
+      "GOOG": 316.4121,
+      "GOOGL": 318.3428,
+      "INTC": 110.2025,
+      "MU": 937.7386,
+      "ON": 108.5132,
+      "OXY": 46.9391,
+      "SNDK": 1816.7645,
+      "STX": 878.1037,
+      "TXN": 270.0677,
+      "VRT": 268.8525,
+      "WDC": 563.2775
     },
     "had_adjustments": false,
     "had_blocks": false
@@ -103,122 +103,122 @@
     "AMD": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:10+00:00",
-      "price_eur": 473.83058042359926,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 471.68338856265166,
       "quote_currency": "USD",
-      "raw_price": 549.8150024414062
+      "raw_price": 547.26
     },
     "CAT": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:11+00:00",
-      "price_eur": 807.9849119903774,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 804.9542577208589,
       "quote_currency": "USD",
-      "raw_price": 937.5549926757812
+      "raw_price": 933.93
     },
     "CIEN": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:09+00:00",
-      "price_eur": 394.66993006447,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 399.4130743957505,
       "quote_currency": "USD",
-      "raw_price": 457.9599914550781
+      "raw_price": 463.41
     },
     "GOOG": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:10+00:00",
-      "price_eur": 318.37261868976026,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 316.4120927270592,
       "quote_currency": "USD",
-      "raw_price": 369.427490234375
+      "raw_price": 367.1099853515625
     },
     "GOOGL": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:10+00:00",
-      "price_eur": 320.17593418083874,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 318.34276133029164,
       "quote_currency": "USD",
-      "raw_price": 371.5199890136719
+      "raw_price": 369.35
     },
     "INTC": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:09+00:00",
-      "price_eur": 109.87950262497094,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 110.20253272963609,
       "quote_currency": "USD",
-      "raw_price": 127.5
+      "raw_price": 127.86
     },
     "MU": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:09+00:00",
-      "price_eur": 925.9954957055922,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 937.7385701901827,
       "quote_currency": "USD",
-      "raw_price": 1074.489990234375
+      "raw_price": 1087.99
     },
     "ON": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:11+00:00",
-      "price_eur": 107.41475404008825,
+      "market_event_time_utc": "2026-06-16T11:57:09+00:00",
+      "price_eur": 108.51320874910984,
       "quote_currency": "USD",
-      "raw_price": 124.63999938964844
+      "raw_price": 125.9
     },
     "OXY": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:07+00:00",
-      "price_eur": 47.0413533347949,
+      "market_event_time_utc": "2026-06-16T11:57:07+00:00",
+      "price_eur": 46.939073458908034,
       "quote_currency": "USD",
-      "raw_price": 54.584999084472656
+      "raw_price": 54.46
     },
     "SNDK": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:08+00:00",
-      "price_eur": 1814.0114055917602,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 1816.7645130571777,
       "quote_currency": "USD",
-      "raw_price": 2104.909912109375
+      "raw_price": 2107.86
     },
     "STX": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:08+00:00",
-      "price_eur": 858.6286028242554,
+      "market_event_time_utc": "2026-06-16T11:57:08+00:00",
+      "price_eur": 878.1037098776259,
       "quote_currency": "USD",
-      "raw_price": 996.3200073242188
+      "raw_price": 1018.8
     },
     "TXN": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:12+00:00",
-      "price_eur": 269.2177210555114,
+      "market_event_time_utc": "2026-06-16T11:57:09+00:00",
+      "price_eur": 270.0677428867837,
       "quote_currency": "USD",
-      "raw_price": 312.3900146484375
+      "raw_price": 313.34
     },
     "VRT": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:11+00:00",
-      "price_eur": 268.7732765197473,
+      "market_event_time_utc": "2026-06-16T11:57:09+00:00",
+      "price_eur": 268.8524575880489,
       "quote_currency": "USD",
-      "raw_price": 311.8742980957031
+      "raw_price": 311.92999267578125
     },
     "VUSD": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_OBSERVATION_NOT_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:07+00:00",
-      "price_eur": 1.6604384458065033,
+      "market_event_time_utc": "2026-06-16T11:57:07+00:00",
+      "price_eur": 1.6592761860084533,
       "quote_currency": "GBP",
-      "raw_price": 143.5
+      "raw_price": 143.53599548339844
     },
     "WDC": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-15T17:41:07+00:00",
-      "price_eur": 557.3605368990721,
+      "market_event_time_utc": "2026-06-16T11:57:07+00:00",
+      "price_eur": 563.277500506797,
       "quote_currency": "USD",
-      "raw_price": 646.739990234375
+      "raw_price": 653.53
     }
   },
   "refresh_skipped": false,
