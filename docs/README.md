@@ -7,6 +7,10 @@ Logical layout for Marktanalyse / Active Alpha audit and phase documentation.
 | Path | Content |
 |------|---------|
 | [PUBLIC_ACCESS.md](PUBLIC_ACCESS.md) | Clone, ZIP, safety — **for anyone** |
+| [SHARE_KIT_EN.md](SHARE_KIT_EN.md) | English copy-paste posts (Reddit, HN, X, LinkedIn) |
+| [POST_CLIPBOARD.txt](POST_CLIPBOARD.txt) | Same texts, plain copy-paste |
+| [SHARE_TODAY_CHECKLIST.md](SHARE_TODAY_CHECKLIST.md) | What to post today (maintainer) |
+| [GITHUB_SYNC_PLAN_B.md](GITHUB_SYNC_PLAN_B.md) | Browser upload when token push fails |
 
 ## Live entry points (repository root)
 
