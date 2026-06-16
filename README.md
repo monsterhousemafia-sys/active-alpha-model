@@ -4,24 +4,30 @@ Auditable, **read-only** decision cockpit for quantitative research: champion/ch
 
 ## Public access (everyone)
 
-**Browse or clone** the public mirror on GitHub (repo name default: `active-alpha-model`):
+**Browse or clone** the public mirror:
+
+**https://github.com/monsterhousemafia-sys/active-alpha-model**
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USER/active-alpha-model.git
+git clone https://github.com/monsterhousemafia-sys/active-alpha-model.git
 ```
 
 No `git` installed? Use **Code → Download ZIP** on the GitHub page.
 
 Full guide: **[docs/PUBLIC_ACCESS.md](docs/PUBLIC_ACCESS.md)** — what is included, safety rules, developer bootstrap.
 
-Maintainer one-shot publish (public visibility + push):
+Share / post templates (English): **[docs/SHARE_KIT_EN.md](docs/SHARE_KIT_EN.md)** · copy-paste: **[docs/POST_CLIPBOARD.txt](docs/POST_CLIPBOARD.txt)**
+
+Maintainer publish (token with **repo** scope):
 
 ```bash
-export GITHUB_TOKEN='ghp_...'
+export GITHUB_TOKEN=ghp_...
+.venv/bin/python3 tools/verify_github_push_token.py
 bash tools/publish_public_access.sh
+unset GITHUB_TOKEN
 ```
 
-After publish, clone URL is also written to `control/public_github_mirror.json` (local, not secret).
+**Token push fails?** Browser upload: **[docs/GITHUB_SYNC_PLAN_B.md](docs/GITHUB_SYNC_PLAN_B.md)** · Share links: `bash tools/open_share_campaign.sh`
 
 ## Status
 
@@ -64,17 +70,18 @@ Do not enable `auto_research_enabled`, `auto_promote_*`, or `auto_execute_real_m
 
 ## Publish / mirror
 
+Primary (token + dulwich, no system git):
+
 ```bash
-bash tools/publish_public_git.sh
+export GITHUB_TOKEN='ghp_...'
+.venv/bin/python3 tools/verify_github_push_token.py
+bash tools/publish_public_access.sh
+unset GITHUB_TOKEN
 ```
 
-Preflight report: `evidence/publish_public_git_preflight_latest.json`
+Plan B (browser upload): **[docs/GITHUB_SYNC_PLAN_B.md](docs/GITHUB_SYNC_PLAN_B.md)**
 
-Environment overrides:
-
-- `AA_PUBLIC_GIT_REPO` — GitHub repo name (default: `active-alpha-model`)
-- `AA_PUBLIC_GIT_REMOTE` — explicit remote URL to push
-- `AA_PUBLISH_FORCE=1` — commit despite preflight warnings (not recommended)
+Preflight: `tools/publish_public_git_preflight.py` · manifest: `control/public_github_mirror.json`
 
 ## License
 
