@@ -1,58 +1,21 @@
 {
-  "assess_after": {
-    "headline_de": "Kurse aktualisieren — reeval_not_fresh",
-    "ingest_age_s": 7.1,
+  "assess": {
+    "headline_de": "Kurse frisch",
+    "ingest_age_s": 63.2,
     "ingest_ok": true,
-    "needs_refresh": true,
+    "needs_refresh": false,
     "price_current": true,
-    "price_latest": "2026-06-12",
+    "price_latest": "2026-06-15",
     "quote_age_s": null,
-    "quote_fresh_reeval": false,
+    "quote_fresh_reeval": true,
     "quote_status": "FRESH",
-    "reasons": [
-      "reeval_not_fresh"
-    ],
-    "us_session_open": true
+    "reasons": [],
+    "us_session_open": false
   },
-  "assess_before": {
-    "headline_de": "Kurse aktualisieren — quotes_stale, reeval_not_fresh",
-    "ingest_age_s": 67.9,
-    "ingest_ok": true,
-    "needs_refresh": true,
-    "price_current": true,
-    "price_latest": "2026-06-12",
-    "quote_age_s": null,
-    "quote_fresh_reeval": false,
-    "quote_status": "STALE",
-    "reasons": [
-      "quotes_stale",
-      "reeval_not_fresh"
-    ],
-    "us_session_open": true
-  },
-  "headline_de": "Kurse aktualisieren — reeval_not_fresh",
-  "message_de": "Kurse aktualisieren — reeval_not_fresh",
-  "ok": false,
+  "ok": true,
   "owner": "r3_quote_keepalive",
-  "price_latest": "2026-06-12",
-  "quote_status": "FRESH",
+  "reason_de": "fresh",
   "schema_version": 1,
-  "skipped": false,
-  "steps": [
-    {
-      "ok": true,
-      "price_latest": "2026-06-12",
-      "step": "ingest"
-    },
-    {
-      "ok": true,
-      "status": "FRESH",
-      "step": "live_quotes"
-    },
-    {
-      "ok": false,
-      "step": "reeval"
-    }
-  ],
-  "updated_at_utc": "2026-06-15T17:41:13+00:00"
+  "skipped": true,
+  "updated_at_utc": "2026-06-16T11:58:10+00:00"
 }
