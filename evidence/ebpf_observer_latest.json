@@ -5,7 +5,7 @@
   },
   "fd_pressure": [],
   "headline_de": "Kernel-Observer OK (proc/bpftrace)",
-  "observed_at_utc": "2026-06-16T10:36:34+00:00",
+  "observed_at_utc": "2026-06-16T12:01:42+00:00",
   "ok": true,
   "processes": {
     "mode": "proc",
@@ -929,22 +929,136 @@
         "pid": "517702"
       },
       {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-1398436a8036e941 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "519424"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-6efc5f80fc9ca54d -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "519668"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-b8b070288001d6b0 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "519998"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-0571b481d2722237 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "522515"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-dedcef7fd05440e6 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "523096"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-c6d64f9dc122ebcc -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "523646"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-ba52ad7d33a7e9d1 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "524205"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-b3f861d5147f2f36 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "524511"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-fb7441cdf2188c57 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "524719"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-5ceb9fba259c09a2 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "524934"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-063ef2c00f449263 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "525155"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-858a3b953ad88474 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "525374"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-469c852f79ca7480 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "525645"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-00aff6fa5027dc77 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "526467"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-b3c851ad104ffa2a -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "527367"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-5cb7f3780bb2088e -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "528496"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-0b2b7aede87a1f0a -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "529598"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-c2e6063917dccf6c -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "529812"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-be1fe754dedd5910 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "534098"
+      },
+      {
         "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/ai_kernel.py cognitive-observe",
         "cpu": "50.0",
         "mem": "0.0",
-        "pid": "518021"
+        "pid": "534798"
       },
       {
         "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 -c from pathlib import Path; from analytics.tunnel_control import tunnel_control_try_apply; import json, os; r=Path(os.environ.get('AA_PROJECT_ROOT",
-        "cpu": "50.0",
+        "cpu": "40.0",
         "mem": "0.0",
-        "pid": "518022"
+        "pid": "534799"
       },
       {
         "cmd": "/home/machinax7/active_alpha_model/tools/bin/cloudflared tunnel --url http://127.0.0.1:17890 --no-autoupdate",
-        "cpu": "150",
+        "cpu": "75.0",
         "mem": "0.0",
-        "pid": "518025"
+        "pid": "534801"
       }
     ]
   },
