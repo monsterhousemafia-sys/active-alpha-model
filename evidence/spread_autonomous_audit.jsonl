@@ -896,3 +896,9 @@
 {"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T09:58:54+00:00"}
 {"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T10:13:54+00:00"}
 {"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T10:28:55+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T10:43:56+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T10:58:56+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T11:13:56+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T11:28:56+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T11:43:58+00:00"}
+{"event": "preflight", "ok": false, "checks": ["autonomous_pause", "operator_stock_veto", "spread_security", "leak_scan", "join_reachable"], "at_utc": "2026-06-16T11:58:58+00:00"}
