@@ -9,23 +9,23 @@
     {
       "ok": true,
       "provider": "YAHOO_VALIDATED_ONLY",
-      "skipped": true,
+      "skipped": false,
       "step": "live_quotes"
     },
     {
       "fast": true,
       "ok": true,
-      "price_latest": "2026-06-12",
+      "price_latest": "2026-06-15",
       "refreshed": false,
       "step": "ohlcv"
     }
   ],
   "internet_ok": true,
-  "message_de": "R3 Browser: Prognose-Daten aus Internet · Preise 2026-06-12",
+  "message_de": "R3 Browser: Prognose-Daten aus Internet · Preise 2026-06-15",
   "mode_de": "Lokaler Browser — Oberfläche auf 127.0.0.1, Prognose-Daten direkt aus dem Internet",
   "ok": true,
   "price_current": true,
-  "price_latest": "2026-06-12",
+  "price_latest": "2026-06-15",
   "price_source": "internet",
   "providers_de": [
     "yfinance",
@@ -34,9 +34,11 @@
   "schema_version": 1,
   "signal_date": "2026-06-12",
   "sources_de": [
-    "yfinance — Tages-OHLCV für Signal/Prognose",
+    "yfinance — Tages-OHLCV für Signal/Prognose (primär, price_cache)",
+    "Stooq — read-only Cross-Check letzter Schlusskurs (Stufe B)",
     "yfinance — Live-Quotes und FX",
+    "T212 — Live-Quotes optional zur Beobachtung (Orders weiter T212-first)",
     "Sektor-Referenz — yfinance (bei vollem Ingest)"
   ],
-  "updated_at_utc": "2026-06-15T17:41:06+00:00"
+  "updated_at_utc": "2026-06-16T11:57:07+00:00"
 }
