@@ -4,10 +4,10 @@ This repository is a **public read-only mirror** of the Active Alpha / Marktanal
 
 ## Clone (anyone)
 
-Replace `YOUR_USER` with the GitHub account that hosts the mirror (default repo name: `active-alpha-model`):
+**Live mirror:** https://github.com/monsterhousemafia-sys/active-alpha-model
 
 ```bash
-git clone https://github.com/YOUR_USER/active-alpha-model.git
+git clone https://github.com/monsterhousemafia-sys/active-alpha-model.git
 cd active-alpha-model
 ```
 
@@ -42,10 +42,16 @@ Details: [DEVELOPER_SETUP.md](DEVELOPER_SETUP.md)
 
 ```bash
 export GITHUB_TOKEN='ghp_...'
+.venv/bin/python3 tools/verify_github_push_token.py
 bash tools/publish_public_access.sh
+unset GITHUB_TOKEN
 ```
 
 Preflight: `tools/publish_public_git_preflight.py`
+
+**403/404 on push?** Upload changed files in the browser: [GITHUB_SYNC_PLAN_B.md](GITHUB_SYNC_PLAN_B.md)
+
+Share campaign: `bash tools/open_share_campaign.sh` · texts: [POST_CLIPBOARD.txt](POST_CLIPBOARD.txt)
 
 ## License
 
