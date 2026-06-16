@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-06-16T08:43:49+00:00",
+  "updated_at_utc": "2026-06-16T09:43:51+00:00",
   "workers": {
     "king": {
-      "cpu_seconds": 465.0,
-      "last_heartbeat_stipend_utc": "2026-06-16T08:43:49+00:00",
-      "last_job_at_utc": "2026-06-16T08:43:49+00:00",
+      "cpu_seconds": 468.0,
+      "last_heartbeat_stipend_utc": "2026-06-16T09:43:51+00:00",
+      "last_job_at_utc": "2026-06-16T09:43:51+00:00",
       "last_job_kind": "heartbeat",
       "tasks_failed": 0,
-      "tasks_ok": 60,
-      "updated_at_utc": "2026-06-16T08:43:49+00:00",
+      "tasks_ok": 61,
+      "updated_at_utc": "2026-06-16T09:43:51+00:00",
       "worker_id": "king"
     },
     "machinax7-x470-aorus-gaming-7-wifi-a754601b": {

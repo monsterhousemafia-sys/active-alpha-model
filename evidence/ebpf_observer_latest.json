@@ -5,7 +5,7 @@
   },
   "fd_pressure": [],
   "headline_de": "Kernel-Observer OK (proc/bpftrace)",
-  "observed_at_utc": "2026-06-16T09:31:28+00:00",
+  "observed_at_utc": "2026-06-16T10:21:33+00:00",
   "ok": true,
   "processes": {
     "mode": "proc",
@@ -911,22 +911,34 @@
         "pid": "508314"
       },
       {
-        "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/ai_kernel.py cognitive-observe",
-        "cpu": "50.0",
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-5688221ab8e636ae -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
         "mem": "0.0",
-        "pid": "509269"
+        "pid": "509424"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-38d62ed8958305bf -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "510043"
+      },
+      {
+        "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/ai_kernel.py cognitive-observe",
+        "cpu": "55.5",
+        "mem": "0.0",
+        "pid": "515808"
       },
       {
         "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 -c from pathlib import Path; from analytics.tunnel_control import tunnel_control_try_apply; import json, os; r=Path(os.environ.get('AA_PROJECT_ROOT",
-        "cpu": "40.0",
+        "cpu": "44.4",
         "mem": "0.0",
-        "pid": "509270"
+        "pid": "515809"
       },
       {
         "cmd": "/home/machinax7/active_alpha_model/tools/bin/cloudflared tunnel --url http://127.0.0.1:17890 --no-autoupdate",
-        "cpu": "125",
+        "cpu": "100",
         "mem": "0.0",
-        "pid": "509272"
+        "pid": "515811"
       }
     ]
   },
