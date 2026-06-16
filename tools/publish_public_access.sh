@@ -7,7 +7,7 @@ cd "$ROOT"
 
 TOKEN_FILE="$ROOT/control/secrets/github_publish_token"
 if [[ -z "${GITHUB_TOKEN:-}" && -z "${GH_TOKEN:-}" && -f "$TOKEN_FILE" ]]; then
-  export GITHUB_TOKEN="$(tr -d '\n\r' < "$TOKEN_FILE")"
+  export GITHUB_TOKEN="$(grep -E '^ghp_|^github_pat_' "$TOKEN_FILE" | head -1 | tr -d '\n\r')"
 fi
 
 if [[ -z "${GITHUB_TOKEN:-}" && -z "${GH_TOKEN:-}" ]]; then
@@ -44,3 +44,4 @@ echo "=== Push + öffentliche Repo-Einstellungen ==="
 
 echo ""
 echo "Fertig. Link steht oben (Clone-URL). Token danach: unset GITHUB_TOKEN"
+echo "Push fehlgeschlagen? Plan B: docs/GITHUB_SYNC_PLAN_B.md (Browser-Upload)"
