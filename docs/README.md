@@ -2,6 +2,12 @@
 
 Logical layout for Marktanalyse / Active Alpha audit and phase documentation.
 
+## Public mirror
+
+| Path | Content |
+|------|---------|
+| [PUBLIC_ACCESS.md](PUBLIC_ACCESS.md) | Clone, ZIP, safety — **for anyone** |
+
 ## Live entry points (repository root)
 
 | File | Purpose |

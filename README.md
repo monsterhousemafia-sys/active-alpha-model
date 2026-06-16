@@ -2,6 +2,27 @@
 
 Auditable, **read-only** decision cockpit for quantitative research: champion/challenger evidence, governance gates, pipeline status, and safety blockers.
 
+## Public access (everyone)
+
+**Browse or clone** the public mirror on GitHub (repo name default: `active-alpha-model`):
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USER/active-alpha-model.git
+```
+
+No `git` installed? Use **Code → Download ZIP** on the GitHub page.
+
+Full guide: **[docs/PUBLIC_ACCESS.md](docs/PUBLIC_ACCESS.md)** — what is included, safety rules, developer bootstrap.
+
+Maintainer one-shot publish (public visibility + push):
+
+```bash
+export GITHUB_TOKEN='ghp_...'
+bash tools/publish_public_access.sh
+```
+
+After publish, clone URL is also written to `control/public_github_mirror.json` (local, not secret).
+
 ## Status
 
 - **Pipeline:** `COMPLETE_AWAITING_OPERATIONAL_DECISION` — manual read-only only
