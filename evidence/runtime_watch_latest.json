@@ -1,19 +1,6 @@
 {
-  "event_count": 1,
-  "events": [
-    {
-      "after": {
-        "mtime_utc": "2026-06-16T09:21:27+00:00",
-        "size": 142
-      },
-      "at_utc": "2026-06-16T09:21:47+00:00",
-      "before": {
-        "mtime_utc": "2026-06-16T09:16:27+00:00",
-        "size": 142
-      },
-      "path": "remote_hub_tunnel.json"
-    }
-  ],
+  "event_count": 0,
+  "events": [],
   "h1": {
     "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
     "status": "COMPLETE"
@@ -49,15 +36,15 @@
         "size": 2495
       },
       "preview_hub.json": {
-        "mtime_utc": "2026-06-16T09:13:51+00:00",
+        "mtime_utc": "2026-06-16T09:28:52+00:00",
         "size": 165
       },
       "remote_hub_tunnel.json": {
-        "mtime_utc": "2026-06-16T09:21:27+00:00",
+        "mtime_utc": "2026-06-16T09:26:28+00:00",
         "size": 142
       }
     },
-    "snapshotted_at_utc": "2026-06-16T09:21:47+00:00"
+    "snapshotted_at_utc": "2026-06-16T09:31:12+00:00"
   },
-  "updated_at_utc": "2026-06-16T09:21:47+00:00"
+  "updated_at_utc": "2026-06-16T09:31:12+00:00"
 }

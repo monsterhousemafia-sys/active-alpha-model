@@ -5,6 +5,11 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+TOKEN_FILE="$ROOT/control/secrets/github_publish_token"
+if [[ -z "${GITHUB_TOKEN:-}" && -z "${GH_TOKEN:-}" && -f "$TOKEN_FILE" ]]; then
+  export GITHUB_TOKEN="$(tr -d '\n\r' < "$TOKEN_FILE")"
+fi
+
 if [[ -z "${GITHUB_TOKEN:-}" && -z "${GH_TOKEN:-}" ]]; then
   echo "GITHUB_TOKEN fehlt. Token: https://github.com/settings/tokens/new (Scope: repo)" >&2
   exit 2

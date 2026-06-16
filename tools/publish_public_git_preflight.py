@@ -69,6 +69,20 @@ def _git_tracked_and_candidates(root: Path) -> list[Path]:
             paths.append(root / rel)
         return paths
 
+    try:
+        from dulwich.repo import Repo
+
+        repo = Repo(str(root))
+        idx = repo.open_index()
+        for p, _entry in idx.iteritems():
+            path = root / p.decode()
+            if path.is_file():
+                paths.append(path)
+        if paths:
+            return paths
+    except Exception:
+        pass
+
     for p in root.rglob("*"):
         if not p.is_file():
             continue

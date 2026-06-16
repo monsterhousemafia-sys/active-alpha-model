@@ -5,7 +5,7 @@
   },
   "fd_pressure": [],
   "headline_de": "Kernel-Observer OK (proc/bpftrace)",
-  "observed_at_utc": "2026-06-16T09:21:27+00:00",
+  "observed_at_utc": "2026-06-16T09:31:28+00:00",
   "ok": true,
   "processes": {
     "mode": "proc",
@@ -875,22 +875,58 @@
         "pid": "506424"
       },
       {
-        "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/ai_kernel.py cognitive-observe",
-        "cpu": "54.5",
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-e19f172365e4aa90 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
         "mem": "0.0",
-        "pid": "506495"
+        "pid": "506664"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-fcb4570d66b1bd70 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "506873"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-3bc7a2206091dcc5 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "507450"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-51458d01a8c44b87 -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "507700"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-2cdc12113c06103a -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "508005"
+      },
+      {
+        "cmd": "/usr/share/cursor/resources/app/resources/helpers/cursorsandbox --policy /tmp/sandbox-policy-3094d218b0cac36f -- /bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin ",
+        "cpu": "0.0",
+        "mem": "0.0",
+        "pid": "508314"
+      },
+      {
+        "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/ai_kernel.py cognitive-observe",
+        "cpu": "50.0",
+        "mem": "0.0",
+        "pid": "509269"
       },
       {
         "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 -c from pathlib import Path; from analytics.tunnel_control import tunnel_control_try_apply; import json, os; r=Path(os.environ.get('AA_PROJECT_ROOT",
-        "cpu": "36.3",
+        "cpu": "40.0",
         "mem": "0.0",
-        "pid": "506496"
+        "pid": "509270"
       },
       {
         "cmd": "/home/machinax7/active_alpha_model/tools/bin/cloudflared tunnel --url http://127.0.0.1:17890 --no-autoupdate",
-        "cpu": "75.0",
+        "cpu": "125",
         "mem": "0.0",
-        "pid": "506498"
+        "pid": "509272"
       }
     ]
   },
