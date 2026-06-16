@@ -10,8 +10,11 @@ Copy-paste texts: **[SHARE_KIT_EN.md](SHARE_KIT_EN.md)**
 
 - [x] Public push to GitHub
 - [x] `control/public_github_mirror.json`
-- [x] Share kit + README links updated locally
-- [ ] **You:** push doc updates (`bash tools/publish_public_access.sh` with token)
+- [x] Share kit on GitHub (`docs/SHARE_KIT_EN.md` — verified online)
+- [x] `docs/POST_CLIPBOARD.txt` — all texts copy-paste ready
+- [x] `tools/open_share_campaign.sh` — opens Reddit/HN/X/LinkedIn/GitHub in browser
+- [ ] **You:** run `bash tools/open_share_campaign.sh` and submit each form
+- [ ] **You:** GitHub About + Topics (Settings tab opens from script)
 
 ---
 
