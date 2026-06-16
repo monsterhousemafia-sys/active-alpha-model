@@ -1,0 +1,42 @@
+=== REDDIT r/Python — Title ===
+[OSS] Active Alpha — read-only quant decision cockpit (Python, governance, fail-closed)
+
+=== REDDIT r/Python — Body ===
+I open-sourced a Python project focused on research governance, not live execution.
+
+Repo: https://github.com/monsterhousemafia-sys/active-alpha-model
+
+Read-only "decision cockpit" for quantitative work:
+- Champion/challenger evidence and review gates
+- Pipeline + safety blockers in one place
+- Fail-closed defaults (auto-trading / auto-promotion disabled)
+
+NOT: a signal bot, broker integration, or performance promise. Not financial advice.
+
+No git? GitHub → Code → Download ZIP.
+
+Feedback on structure, tests, and governance design welcome.
+
+=== HACKER NEWS — First comment (after submit) ===
+Read-only Python project for quant research governance: evidence, gates, pipeline status, safety flags. Fail-closed by design. Not financial advice. Feedback on architecture and docs welcome.
+
+=== X (TWITTER) ===
+Open-sourced Active Alpha: read-only Python decision cockpit for quant research — governance gates, champion/challenger evidence, fail-closed safety.
+
+https://github.com/monsterhousemafia-sys/active-alpha-model
+
+Not a trading bot. Not financial advice. OSS + tests + docs.
+
+=== LINKEDIN ===
+Published an open-source project: Active Alpha / Marktanalyse Decision Cockpit — a read-only Python framework for quantitative research governance (evidence, review gates, pipeline visibility, fail-closed safety).
+
+Repo: https://github.com/monsterhousemafia-sys/active-alpha-model
+
+Research tooling and auditability only — not live trading or investment advice. Feedback from engineers and quants welcome.
+
+=== GITHUB ABOUT ===
+Description: Read-only Python decision cockpit for quant research — governance gates, fail-closed safety
+Topics: python quantitative-finance opensource governance algorithmic-trading research read-only
+
+=== REPLY TO COMMENTS ===
+Thanks — read-only governance tooling, not a live trading system. Not financial advice.
