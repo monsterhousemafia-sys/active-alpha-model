@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "public": true,
+  "clone_https": "https://github.com/monsterhousemafia-sys/active-alpha-model.git",
+  "browse_url": "https://github.com/monsterhousemafia-sys/active-alpha-model",
+  "default_branch": "main",
+  "headline_de": "Öffentlicher Read-only Mirror — clone, lesen, Tests lokal; keine Secrets im Repo"
+}
