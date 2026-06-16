@@ -1,22 +1,22 @@
 {
   "checks": [
     {
-      "detail_de": "Hub offline",
+      "detail_de": "HTTP /api/health",
       "id": "hub_online",
       "layer": "hub",
-      "ok": false
+      "ok": true
     },
     {
-      "detail_de": "offline",
+      "detail_de": "200",
       "id": "hub_login_route",
       "layer": "hub",
-      "ok": false
+      "ok": true
     },
     {
       "detail_de": "/api/r3/mirror",
       "id": "r3_mirror_api",
       "layer": "r3",
-      "ok": false
+      "ok": true
     },
     {
       "detail_de": "Evidence auf Platte",
@@ -28,7 +28,7 @@
       "detail_de": "/r3",
       "id": "r3_surface_page",
       "layer": "r3",
-      "ok": false,
+      "ok": true,
       "warn_only": true
     },
     {
@@ -41,23 +41,19 @@
   ],
   "desktop_session": true,
   "exec_mirror_only": true,
-  "failures_de": [
-    "hub_online: Hub offline",
-    "hub_login_route: offline",
-    "r3_mirror_api: /api/r3/mirror"
-  ],
+  "failures_de": [],
   "hub": {
     "ensure_cmd_de": "python3 tools/preview_hub.py --ensure",
     "hub_schema_version": 2,
     "layer": "hub",
-    "ok": false,
-    "online": false,
+    "ok": true,
+    "online": true,
     "port": 17890,
     "product": "preview-hub",
-    "route_login_detail": "offline",
-    "route_login_ok": false
+    "route_login_detail": "200",
+    "route_login_ok": true
   },
-  "hub_ok": false,
+  "hub_ok": true,
   "launch": {
     "exit_code": 0,
     "layer": "r3",
@@ -70,21 +66,21 @@
   "port": 17890,
   "r3": {
     "cockpit_running": false,
-    "hub_online": false,
+    "hub_online": true,
     "layer": "r3",
-    "mirror_api_ok": false,
+    "mirror_api_ok": true,
     "mirror_state_ok": true,
-    "ok": false,
+    "ok": true,
     "port": 17890,
     "start_cmd_de": "bash tools/r3_autonomous.sh",
-    "surface_page_ok": false,
+    "surface_page_ok": true,
     "surface_path": "/r3"
   },
-  "r3_ok": false,
+  "r3_ok": true,
   "repair_cmd_de": "bash tools/stack_integrity.sh --repair --launch",
-  "repaired": false,
+  "repaired": true,
   "schema_version": 1,
-  "stack_ok": false,
+  "stack_ok": true,
   "steps": [
     {
       "ok": true,
@@ -128,9 +124,8 @@
       "step": "launch_cockpit"
     }
   ],
-  "updated_at_utc": "2026-06-16T08:45:59+00:00",
+  "updated_at_utc": "2026-06-16T11:56:10+00:00",
   "warnings_de": [
-    "r3_surface_page: /r3",
     "r3_cockpit: Qt-Fenster"
   ]
 }
