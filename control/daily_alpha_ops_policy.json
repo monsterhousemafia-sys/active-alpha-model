@@ -3,7 +3,8 @@
   "title": "Daily Alpha Ops — Alias auf R3 Ops Kernel",
   "kernel_ref": "control/r3_ops_kernel_policy.json",
   "kernel_module": "analytics.r3_ops_kernel",
-  "updated_at_utc": "2026-06-09T21:00:00+00:00",
+  "updated_at_utc": "2026-06-10T08:30:00+00:00",
+  "monitoring_governance_ref": "control/r3_monitoring_governance.json",
   "deprecated_note_de": "Phasen und Schritte liegen in r3_ops_kernel_policy.json — daily-alpha nutzt denselben Kernel.",
   "objective_ref": "control/r0_migration/alpha_objective.json",
   "active_signal_profile": "daily_alpha_h1",
@@ -13,7 +14,8 @@
     "layer_3_capital": "Live-Cash → Investment-Plan → lohnende Positionen (priority_score)",
     "layer_4_action_prep": "Prognose, Trading-Funktionen, Freigabe-Paket — ohne auto_execute",
     "layer_5_surface": "Hub, GUI-Cache, Mirror, R3 Desktop",
-    "layer_6_learning": "Observe-only Learning-Capture, Postmortem EOD"
+    "layer_6_learning": "Observe-only Learning-Capture, Postmortem EOD",
+    "layer_7_monitoring": "Fall-Wächter + T212 Trust Gate — read-only, fail-closed (control/r3_monitoring_governance.json)"
   },
   "governance": {
     "auto_execute_real_money_enabled": false,
@@ -27,8 +29,8 @@
       "steps": ["quotes", "signal_check", "capital", "prognosis", "top_picks", "gui_light"]
     },
     "intraday": {
-      "description": "Handelstag: Kurse + Kreislauf-Status, stale Prognose nachziehen",
-      "steps": ["quotes", "cycle_status", "prognosis_if_stale"]
+      "description": "Handelstag: Kurse, Fall-Wächter, Kreislauf-Status, stale Prognose",
+      "steps": ["quotes", "fall_watch", "cycle_status", "prognosis_if_stale"]
     },
     "eod": {
       "description": "Nach US-Close: EOD-Signal, Postmortem, Learning",

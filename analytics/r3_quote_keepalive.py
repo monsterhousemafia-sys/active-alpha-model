@@ -234,11 +234,21 @@ def tick_quote_keepalive(
     try:
         from market.live_quote_engine import ensure_live_quotes_fresh
 
-        quote_doc = ensure_live_quotes_fresh(root, force=True)
+        quote_doc = ensure_live_quotes_fresh(root, force=True, owner=owner)
         fresh = (quote_doc.get("freshness") or {}).get("status")
         steps.append({"step": "live_quotes", "ok": fresh == "FRESH", "status": fresh})
     except Exception as exc:
         steps.append({"step": "live_quotes", "ok": False, "error": str(exc)[:80]})
+
+    live_quotes_ok = any(s.get("step") == "live_quotes" and s.get("ok") for s in steps)
+    if live_quotes_ok:
+        try:
+            from analytics.pilot_portfolio_reevaluation import run_periodic_reevaluation
+
+            reeval_doc = run_periodic_reevaluation(root, force=False)
+            steps.append({"step": "reeval", "ok": bool(reeval_doc.get("ok"))})
+        except Exception as exc:
+            steps.append({"step": "reeval", "ok": False, "error": str(exc)[:80]})
 
     after = assess_quote_freshness(root)
     ok = bool(ingest_doc.get("ok")) and not after.get("needs_refresh")

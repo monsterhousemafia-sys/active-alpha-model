@@ -15,8 +15,10 @@ See [IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md) for the current program
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements_active_alpha.txt
-.venv/bin/python -m pytest tests/test_p0_safety_control_plane.py -q
+bash tools/developer_bootstrap.sh
 ```
+
+See [docs/DEVELOPER_SETUP.md](docs/DEVELOPER_SETUP.md) (R3 desktop, T212 trust gate, safety).
 
 Windows-oriented launchers (`run_*.bat`) and PyInstaller build notes: [README_ACTIVE_ALPHA.md](README_ACTIVE_ALPHA.md), [OPS.md](OPS.md).
 

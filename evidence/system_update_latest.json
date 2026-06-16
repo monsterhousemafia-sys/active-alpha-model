@@ -1,0 +1,54 @@
+{
+  "evidence_refs": [
+    "evidence/system_update_latest.json",
+    "evidence/prediction_self_calibration_latest.json",
+    "evidence/price_crosscheck_latest.json",
+    "control/prediction_readiness.json"
+  ],
+  "headline_de": "System-Update — Governance, Refinement, Stufe B, Selbstkalibrierung",
+  "messages_de": [
+    "[OK] H1-Governance: COMPLETE",
+    "[INFO] Tages-Tail-Merge (SPY): Panel bis 2026-06-15 (Referenz 2026-06-16)",
+    "[OK] Preis-Cache via Tail-Merge aktuell — Stand 2026-06-15",
+    "[OK] Stufe B — 2/15 Symbole im Toleranzband (yfinance vs Stooq).",
+    "[INFO] Signal (2026-06-12) hinter Preisen (2026-06-15) — Neuberechnung …",
+    "[INFO] Signal-Update: berechne latest_target_portfolio.csv …",
+    "[OK] Modell-Signal aktualisiert — 2026-06-12",
+    "[OK] Prognose-Feedback: +0 neu, 0 reif",
+    "[OK] R3-Diagnose: Regime RISK_ON bestätigt (SPY Stand 2026-06-12)",
+    "[OK] Stufe B — 2/15 Symbole im Toleranzband (yfinance vs Stooq).",
+    "Selbstkalibrierung — ~55% Tage-Treffer, ~45.34% daneben (H1, kein Orakel)",
+    "Kein System (Modell, KI, Schlagzeile) hat immer recht — nur messbare Edge über viele Tage."
+  ],
+  "ok": false,
+  "schema_version": 1,
+  "steps": [
+    {
+      "ok": true,
+      "status": "COMPLETE",
+      "step": "h1_governance"
+    },
+    {
+      "ok": true,
+      "r3_regime_match": true,
+      "signal_refreshed": true,
+      "step": "operational_refinement"
+    },
+    {
+      "headline_de": "Tagesbilanz — Plan-Portfolio +nan % · SPY +nan % · Delta +nan %",
+      "ok": true,
+      "step": "daily_postmortem"
+    },
+    {
+      "ok": true,
+      "step": "stufe_b",
+      "verdict": "warn"
+    },
+    {
+      "headline_de": "Selbstkalibrierung — ~55% Tage-Treffer, ~45.34% daneben (H1, kein Orakel)",
+      "ok": false,
+      "step": "self_calibration"
+    }
+  ],
+  "updated_at_utc": "2026-06-16T08:41:17+00:00"
+}

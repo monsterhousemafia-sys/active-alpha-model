@@ -3,11 +3,11 @@
   "actions": [
     {
       "msg": "removed_confirmation_tokens",
-      "count": 35
+      "count": 46
     },
     {
       "msg": "removed_submitted_orders",
-      "count": 2
+      "count": 14
     },
     {
       "msg": "removed_order_drafts",
@@ -19,7 +19,7 @@
     },
     {
       "msg": "capped_recovery_sessions",
-      "count": 112
+      "count": 5
     },
     {
       "msg": "reset_t212_stock_buy_gate",
@@ -28,15 +28,7 @@
     {
       "msg": "archived_live_quote_snapshot",
       "count": 1
-    },
-    {
-      "msg": "synced_legacy_latest_json_cash",
-      "count": 1
-    },
-    {
-      "msg": "removed_marktanalyse_exe_old",
-      "count": 1
     }
   ],
-  "completed_at_utc": "2026-06-02T10:55:39+00:00"
+  "completed_at_utc": "2026-06-14T18:39:58+00:00"
 }

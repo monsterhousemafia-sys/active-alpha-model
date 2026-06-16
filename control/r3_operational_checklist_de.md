@@ -73,6 +73,27 @@ Quelle: `control/r3_trading_cycle_policy.json`
 
 ---
 
+## E — Neues T212-Konto + Zielportfolio (Operator)
+
+Freigabe: [`EXTERNAL_REVIEW_APPROVAL_T212_NEW_ACCOUNT_20260614.md`](../EXTERNAL_REVIEW_APPROVAL_T212_NEW_ACCOUNT_20260614.md)  
+Scope: [`control/authorization/t212_new_account_scope.json`](authorization/t212_new_account_scope.json)
+
+| # | Schritt | Befehl / Aktion |
+|---|---------|-----------------|
+| E1 | API-Key (Account + Orders) in T212 erzeugen | T212 App → Settings → API |
+| E2 | Credentials speichern | R3 Broker-Setup oder `.env` (siehe `control/broker/TRADING212_SETUP.md`) |
+| E3 | Verbindung testen | `python tools/setup_trading212_connection.py` |
+| E4 | Bond sync | `curl 'http://127.0.0.1:17890/api/r3/t212?sync=1'` |
+| E5 | **Neues Konto bestätigen** (fail-closed) | `curl 'http://127.0.0.1:17890/api/r3/t212?confirm_account=1'` |
+| E6 | Zielportfolio-Kette | `bash tools/king_ops.sh alpha-engine` → R3 **Jetzt starten** |
+| E7 | Paket ausführen | R3: Zielportfolio bestätigen (Confirmed Execution, kein Auto-Execute) |
+
+**Evidence:** `evidence/r3_t212_api_bond_latest.json` (`account_label`, `account_fingerprint`) · `control/r3_t212_confirmed_account.json` · `evidence/r3_freigabe_latest.json` (`package_ready`)
+
+**Hinweis:** Bei Konto-Wechsel blockiert Freigabe bis E5 erneut ausgeführt wurde.
+
+---
+
 ## D — Anzeige `/r3` (muss)
 
 | # | Muss funktionieren | Quelle |

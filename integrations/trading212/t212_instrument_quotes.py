@@ -238,6 +238,7 @@ def merge_t212_yahoo_prices(
     t212_sources: Dict[str, str],
     yahoo_prices: Dict[str, float],
     yahoo_valid: Optional[Dict[str, bool]] = None,
+    anchor_prices_eur: Optional[Dict[str, float]] = None,
 ) -> Tuple[Dict[str, float], Dict[str, str], Dict[str, Any]]:
     """Apply T212-first chain; Yahoo only when validated and not blocked."""
     from paper.p16d.quote_plausibility import sanitize_price_eur
@@ -262,7 +263,11 @@ def merge_t212_yahoo_prices(
             audit["blocked"][s] = "YAHOO_MISSING_OR_INVALID"
             continue
         px, changed, reason = sanitize_price_eur(
-            s, float(raw), source=PRICE_SOURCE_YAHOO_VALIDATED, for_orders=True
+            s,
+            float(raw),
+            source=PRICE_SOURCE_YAHOO_VALIDATED,
+            for_orders=True,
+            anchor_prices_eur=anchor_prices_eur,
         )
         if px and px > 0:
             out[s] = px

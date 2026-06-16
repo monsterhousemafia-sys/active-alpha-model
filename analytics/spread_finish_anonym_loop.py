@@ -157,7 +157,9 @@ def run_anonym_finish_tick(
         steps.append({"step": "tunnel_token", "ok": False, "error": str(exc)[:80]})
 
     forum_ack: Dict[str, Any] = {"skipped": True}
-    post_url = str(os.environ.get("AA_FORUM_POST_URL") or "").strip()
+    from analytics.spread_finish_operator_evidence import resolve_forum_post_url
+
+    post_url = resolve_forum_post_url(root)
     if post_url:
         try:
             from analytics.reddit_forum_post import complete_reddit_post
@@ -205,7 +207,10 @@ def run_anonym_finish_tick(
         and int(fed.get("remote_compute_workers") or 0) >= 1
     )
 
-    doc = {
+    from analytics.spread_anonym_policy import redact_evidence_doc, redact_federation_export
+
+    doc = redact_evidence_doc(
+        {
         "schema_version": 1,
         "updated_at_utc": _utc_now(),
         "iteration": iteration,
@@ -213,7 +218,7 @@ def run_anonym_finish_tick(
         "ok": done,
         "done": done,
         "facts": facts,
-        "federation": fed,
+        "federation": redact_federation_export(fed),
         "broadcast": broadcast,
         "spread_ok": bool(spread.get("ok")),
         "token": token_doc,
@@ -227,8 +232,16 @@ def run_anonym_finish_tick(
             if done
             else f"Anonym Finish — {len(remaining)} Blocker, Tick {iteration}"
         ),
-    }
+        }
+    )
     atomic_write_json(root / _EVIDENCE_REL, doc)
+    try:
+        from analytics.spread_finish_operator_evidence import sync_operator_evidence
+
+        doc["operator_evidence"] = sync_operator_evidence(root, doc)
+    except Exception as exc:
+        doc["operator_evidence"] = {"error": str(exc)[:120]}
+        atomic_write_json(root / _EVIDENCE_REL, doc)
     return doc
 
 

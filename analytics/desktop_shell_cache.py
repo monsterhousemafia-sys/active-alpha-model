@@ -101,6 +101,12 @@ def cache_stale_vs_evidence(root: Path) -> bool:
 
 def _cache_stale_sec(root: Path) -> float:
     try:
+        from analytics.r3_hw_software_bond import resolve_r3_runtime_tuning
+
+        return float((resolve_r3_runtime_tuning(root).get("cache") or {}).get("cache_stale_sec") or _STALE_SEC)
+    except Exception:
+        pass
+    try:
         from analytics.r3_runtime_upgrade import load_runtime_profile
 
         return float(load_runtime_profile(root).get("cache_stale_sec") or _STALE_SEC)
@@ -116,6 +122,15 @@ def read_cached_desktop_html(root: Path, *, max_age_sec: Optional[float] = None)
     if not cache_path.is_file():
         return None
     meta = _load_json(meta_path)
+    if not meta.get("surface_render_version"):
+        return None
+    try:
+        from analytics.r3_surface import surface_cache_valid
+
+        if not surface_cache_valid(root, meta):
+            return None
+    except Exception:
+        pass
     try:
         age = time.time() - cache_path.stat().st_mtime
     except OSError:
@@ -138,9 +153,16 @@ def write_desktop_cache(root: Path, body: bytes, *, fast: bool) -> None:
     atomic_write_bytes(cache_path, body)
     from aa_safe_io import atomic_write_json
 
+    try:
+        from analytics.r3_surface import surface_cache_meta
+
+        meta_doc = surface_cache_meta(root, fast=fast)
+    except Exception:
+        meta_doc = {}
     atomic_write_json(
         meta_path,
         {
+            **meta_doc,
             "updated_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
             "bytes": len(body),
             "fast": bool(fast),

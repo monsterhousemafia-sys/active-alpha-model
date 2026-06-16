@@ -1,0 +1,9 @@
+{
+  "allowed": true,
+  "message_de": "Live-Quote-Refresh erlaubt — r3_quote_keepalive",
+  "operation": "refresh",
+  "owner": "r3_quote_keepalive",
+  "policy_ref": "control/r3_live_quote_access_policy.json",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-15T17:41:06+00:00"
+}

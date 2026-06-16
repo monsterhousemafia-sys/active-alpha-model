@@ -151,11 +151,14 @@ def build_governance_manifest(root: Path) -> Dict[str, Any]:
         "h1_backtest_status": h1_backtest_status(root),
         "strategic_objective_ref": str(ops.get("objective_ref") or "control/r0_migration/alpha_objective.json"),
         "research_sharpe_leader": str(ops.get("research_sharpe_leader") or "MOM_63_TOP12"),
+        "monitoring_governance_ref": "control/r3_monitoring_governance.json",
         "rules_de": (
             f"Governance-Champion {governance} (M9-freigegeben) ist die autorisierte Produktionsidentität. "
             f"Live-Signal {signal_variant} über Profil {signal_profile} ist experimentell bis H1-Seal. "
             f"Orders nutzen {effective_orders} solange H1 unsealed. "
-            f"Validierter Fallback: {fallback_variant}."
+            f"Validierter Fallback: {fallback_variant}. "
+            "Monitoring (T212 Trust, Fall-Wächter, Security-Lock) ist read-only/fail-closed — "
+            "kein Champion-Wechsel, kein auto_execute."
         ),
         "coherence_ok": len(issues) == 0,
         "coherence_issues": issues,

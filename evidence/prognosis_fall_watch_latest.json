@@ -1,0 +1,139 @@
+{
+  "benchmark_return_pct": null,
+  "fall_detected": false,
+  "headline_de": "Kein Fall — Portfolio +nan % (überwachen)",
+  "justification": {
+    "delta_vs_spy_pct": null,
+    "fall_detected": false,
+    "historical_p_down_h1": 0.4534,
+    "n_down": 0,
+    "n_up": 0,
+    "reasons_de": [
+      "Gewichtetes Plan-Portfolio +nan % (Benchmark fehlt).",
+      "Modell erwartete +0.10 % — realisierte Abweichung +nan Prozentpunkte.",
+      "Einzelwerte: 0 fallend, 0 steigend (Basis Vortag 2026-06-09).",
+      "Schwächster: OMC +nan %.",
+      "Stärkster: OMC +nan %."
+    ],
+    "thresholds": {
+      "bad_day_portfolio_pct": -0.01,
+      "underperform_spy_bps": 50
+    },
+    "triggers": [],
+    "vs_model_mu_hat_pp": NaN
+  },
+  "missing_tickers": [
+    "GR",
+    "DNR",
+    "BHI",
+    "COV"
+  ],
+  "monitoring_de": "Read-only — kein Order-Impact",
+  "mu_hat_portfolio_pct": 0.1,
+  "ok": true,
+  "picks": [
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 75.61,
+      "mu_hat_pct": 0.113,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "OMC",
+      "weight_pct": 14.85
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 25.67,
+      "mu_hat_pct": 0.11,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "PFE",
+      "weight_pct": 13.07
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 135.31,
+      "mu_hat_pct": 0.103,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "CHTR",
+      "weight_pct": 10.54
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 95.67,
+      "mu_hat_pct": 0.102,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "EPAM",
+      "weight_pct": 9.38
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 83.76,
+      "mu_hat_pct": 0.089,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "GM",
+      "weight_pct": 7.59
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 1141.11,
+      "mu_hat_pct": 0.085,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "GHC",
+      "weight_pct": 7.45
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 618.97,
+      "mu_hat_pct": 0.099,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "TDY",
+      "weight_pct": 6.93
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 282.85,
+      "mu_hat_pct": 0.084,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "APD",
+      "weight_pct": 5.39
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 27.2,
+      "mu_hat_pct": 0.087,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "NWSA",
+      "weight_pct": 5.33
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 229.67,
+      "mu_hat_pct": 0.079,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "AME",
+      "weight_pct": 2.59
+    },
+    {
+      "intraday_return_pct": NaN,
+      "live_price": 38.63,
+      "mu_hat_pct": 0.068,
+      "prior_close": NaN,
+      "quote_utc": "2026-06-10T12:03:11+00:00",
+      "ticker": "MUR",
+      "weight_pct": 0.01
+    }
+  ],
+  "portfolio_return_pct": NaN,
+  "prior_close_date": "2026-06-09",
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-10T12:03:12+00:00"
+}

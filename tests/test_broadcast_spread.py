@@ -32,6 +32,7 @@ def test_collect_spread_urls_lan_and_remote(tmp_path: Path, monkeypatch) -> None
 
 
 def test_broadcast_spread_writes_files(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setenv("AA_SPREAD_ANONYM", "0")
     (tmp_path / "control").mkdir(parents=True)
     (tmp_path / "control/preview_federation.json").write_text(
         json.dumps(

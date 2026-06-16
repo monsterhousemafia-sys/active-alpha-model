@@ -1,5 +1,5 @@
 {
-  "audited_at_utc": "2026-06-09T21:17:13+00:00",
+  "audited_at_utc": "2026-06-14T17:41:29+00:00",
   "forbidden_always_de": [
     "Linux-Kernel-Image ersetzen oder kompilieren",
     "Unsigned Kernel-Module laden",
@@ -10,11 +10,11 @@
   "headline_de": "Kernel-Grenze auditiert — Mainline bleibt, Runtime + Whitelist-Tuning",
   "kernel": {
     "modules_sample": [
-      "exfat",
-      "uas",
-      "usb_storage",
-      "ntfs3",
-      "tcp_diag"
+      "ccm",
+      "rfcomm",
+      "snd_seq_dummy",
+      "snd_hrtimer",
+      "cmac"
     ],
     "replacement_forbidden": true,
     "uname": "Linux 7.0.0-22-generic #22-Ubuntu SMP PREEMPT_DYNAMIC Mon May 25 15:54:34 UTC 2026 x86_64"

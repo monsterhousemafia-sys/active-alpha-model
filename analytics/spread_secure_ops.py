@@ -59,6 +59,53 @@ def _join_page_ok(base_url: str, timeout: float = 10.0) -> bool:
         return False
 
 
+def _local_join_ok(root: Path, *, port: int = 17890, timeout: float = 10.0) -> bool:
+    try:
+        with urllib.request.urlopen(f"http://127.0.0.1:{port}/join", timeout=timeout) as resp:
+            body = resp.read()
+            return int(getattr(resp, "status", 0) or 0) == 200 and len(body) > 200
+    except (urllib.error.URLError, OSError, ValueError):
+        return False
+
+
+def _spread_internet_checks(root: Path, join_base: str) -> Dict[str, Any]:
+    """Health/join — external URL first, localhost fallback when tunnel PID alive."""
+    from analytics.preview_federation import federation_config
+    from analytics.remote_hub_access import _verify_remote_health, load_tunnel_state
+
+    root = Path(root)
+    port = int(federation_config(root).get("hub_port") or 17890)
+    base = str(join_base or "").strip().rstrip("/")
+    tunnel = load_tunnel_state(root)
+    tunnel_url = str(tunnel.get("public_url") or "").strip().rstrip("/")
+    if tunnel.get("running") and tunnel_url.startswith("https://") and tunnel_url != base:
+        base = tunnel_url
+    if not base and tunnel_url.startswith("https://"):
+        base = tunnel_url
+
+    health_remote = _http_ok(base, timeout=8.0) if base else False
+    health_local = _http_ok(f"http://127.0.0.1:{port}", timeout=4.0)
+    health_ok = health_remote or (
+        bool(tunnel.get("running")) and _verify_remote_health(base, local_port=port)
+    ) or (bool(tunnel.get("running")) and health_local)
+
+    join_remote = _join_page_ok(base) if base else False
+    join_local = _local_join_ok(root, port=port)
+    join_ok = join_remote or (bool(tunnel.get("running")) and join_local)
+
+    return {
+        "health_ok": health_ok,
+        "join_ok": join_ok,
+        "health_remote": health_remote,
+        "health_local": health_local,
+        "join_remote": join_remote,
+        "join_local": join_local,
+        "tunnel_running": bool(tunnel.get("running")),
+        "join_url": f"{base}/join" if base else "",
+        "remote_base": base,
+    }
+
+
 def _check_safety_flags(root: Path) -> Dict[str, Any]:
     pg = root / "promotion_gate_config.yaml"
     kernel = _load_json(root / "control/AI_KERNEL.json")
@@ -540,18 +587,13 @@ def expand_internet_spread(root: Path) -> Dict[str, Any]:
 
     urls = collect_spread_urls(root)
     join_base = str(urls.get("remote_url") or "").rstrip("/")
-    join_ok = _join_page_ok(join_base)
-    health_ok = _http_ok(join_base, timeout=8.0)
-    result["internet_checks"] = {
-        "health_ok": health_ok,
-        "join_ok": join_ok,
-        "join_url": f"{join_base}/join" if join_base else "",
-    }
-    result["ok"] = bool(health_ok and join_ok and result.get("welt", {}).get("ok"))
+    checks = _spread_internet_checks(root, join_base)
+    result["internet_checks"] = checks
+    result["ok"] = bool(checks.get("health_ok") and checks.get("join_ok") and result.get("welt", {}).get("ok"))
     result["progress"] = build_spread_progress(root)
     bars = (result["progress"] or {}).get("bars") or {}
     result["headline_de"] = (
-        f"Internet-Spread — join={join_ok} health={health_ok}, infra {bars.get('infrastruktur', {}).get('pct')}%"
+        f"Internet-Spread — join={checks.get('join_ok')} health={checks.get('health_ok')}, infra {bars.get('infrastruktur', {}).get('pct')}%"
         if result["ok"]
         else "Internet-Spread — join/health oder Tunnel rot (siehe internet_checks)"
     )

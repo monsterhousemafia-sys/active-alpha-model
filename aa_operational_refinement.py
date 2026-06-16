@@ -27,6 +27,7 @@ DEFAULT_REFINEMENT = {
     "refresh_cockpit_snapshot": True,
     "sync_control_plane": True,
     "sync_outcome_ledger": True,
+    "run_self_calibration": True,
     "run_background_research": False,
     "apply_turbo_env": True,
 }
@@ -270,6 +271,20 @@ def run_operational_refinement(
         except Exception as exc:
             report.add("cockpit_snapshot", "FAIL", error=str(exc))
             report.messages.append(f"[WARN] Cockpit-Snapshot: {exc}")
+
+    # 8 — Prognose-Selbstkalibrierung (read-only)
+    if refinement_cfg.get("run_self_calibration", True):
+        try:
+            from analytics.prediction_self_calibration import run_prediction_self_calibration
+
+            cal = run_prediction_self_calibration(root, persist=True)
+            report.add(
+                "self_calibration",
+                "OK" if cal.get("ok") or cal.get("skipped") else "WARN",
+                headline_de=str(cal.get("headline_de") or "")[:120],
+            )
+        except Exception as exc:
+            report.add("self_calibration", "FAIL", error=str(exc))
 
     failed = [s for s in report.steps if s.get("status") == "FAIL"]
     report.ok = not failed and bool(report.live_sync.get("ok", False) or report.cockpit_refreshed)

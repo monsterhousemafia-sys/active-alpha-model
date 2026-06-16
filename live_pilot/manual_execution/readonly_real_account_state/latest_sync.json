@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "id": 48217988,
+    "currency": "EUR",
+    "totalValue": 0,
+    "cash": {
+      "availableToTrade": 0,
+      "reservedForOrders": 0,
+      "inPies": 0
+    },
+    "investments": {
+      "currentValue": 0,
+      "totalCost": 0,
+      "realizedProfitLoss": 21.24,
+      "unrealizedProfitLoss": 0
+    }
+  },
+  "cash_eur": 0.0,
+  "cash_breakdown": {
+    "available_to_trade_eur": 0.0,
+    "reserved_for_orders_eur": 0.0,
+    "in_pies_eur": 0.0,
+    "total_account_value_eur": 0.0,
+    "invested_current_value_eur": 0.0,
+    "currency": "EUR",
+    "source": "account_summary.cash.availableToTrade",
+    "planning_cash_eur": 0.0
+  },
+  "cash_alignment": {
+    "ok": true,
+    "cash_eur": 0.0,
+    "available_to_trade_eur": 0.0,
+    "source": "account_summary.cash.availableToTrade",
+    "total_account_value_eur": 0.0,
+    "reserved_for_orders_eur": 0.0,
+    "in_pies_eur": 0.0
+  },
+  "positions_count": 0,
+  "positions": [],
+  "synced_at_utc": "2026-06-15T12:46:43+00:00",
+  "environment": "LIVE_READ_ONLY",
+  "status": "LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE"
+}

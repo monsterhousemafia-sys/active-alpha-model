@@ -1,0 +1,104 @@
+{
+  "blockers_de": [
+    "Broker-Status vertrauenswürdig: status ∉ ['CACHED_READONLY_DATA', 'CONNECTION_FAILED_RETRY_AVAILABLE', 'CREDENTIALS_EXPIRED_SHOWING_CACHED_DATA', 'NOT_CONFIGURED_SETUP_AVAILABLE_IN_GUI', 'RATE_LIMITED_SHOWING_CACHED_DATA'] — ist CONNECTION_FAILED_RETRY_AVAILABLE",
+    "Live-Readonly-Monitoring aktiv: status ∈ ['DEMO_READONLY_CONNECTED', 'LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE'] — ist CONNECTION_FAILED_RETRY_AVAILABLE",
+    "Sync frisch genug für Orders: sync_age_s ≤ 900 — ist 144055.2",
+    "Sync frisch genug für Cash-Anzeige: sync_age_s ≤ 1800 — ist 144055.2",
+    "Live-Kontostand (nicht nur Cache): cash_eur ≠ null aus frischem Sync — ist None"
+  ],
+  "consequence_de": "Orders und Plan-Skalierung blockiert (fail-closed).",
+  "criteria": [
+    {
+      "actual": true,
+      "detail_de": "",
+      "id": "credentials",
+      "label_de": "API-Zugang konfiguriert",
+      "passed": true,
+      "required_de": "credentials_configured = true"
+    },
+    {
+      "actual": "CONNECTION_FAILED_RETRY_AVAILABLE",
+      "detail_de": "✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pro Min",
+      "id": "broker_status",
+      "label_de": "Broker-Status vertrauenswürdig",
+      "passed": false,
+      "required_de": "status ∉ ['CACHED_READONLY_DATA', 'CONNECTION_FAILED_RETRY_AVAILABLE', 'CREDENTIALS_EXPIRED_SHOWING_CACHED_DATA', 'NOT_CONFIGURED_SETUP_AVAILABLE_IN_GUI', 'RATE_LIMITED_SHOWING_CACHED_DATA']"
+    },
+    {
+      "actual": "CONNECTION_FAILED_RETRY_AVAILABLE",
+      "detail_de": "",
+      "id": "live_status",
+      "label_de": "Live-Readonly-Monitoring aktiv",
+      "passed": false,
+      "required_de": "status ∈ ['DEMO_READONLY_CONNECTED', 'LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE']"
+    },
+    {
+      "actual": "2026-06-08T16:05:02+00:00",
+      "detail_de": "",
+      "id": "sync_present",
+      "label_de": "Erfolgreicher Sync vorhanden",
+      "passed": true,
+      "required_de": "last_sync_utc ≠ null"
+    },
+    {
+      "actual": 144055.2,
+      "detail_de": "Schwelle Orders: 900s (15 min)",
+      "id": "sync_fresh",
+      "label_de": "Sync frisch genug für Orders",
+      "passed": false,
+      "required_de": "sync_age_s ≤ 900"
+    },
+    {
+      "actual": 144055.2,
+      "detail_de": "Schwelle Anzeige: 1800s (30 min)",
+      "id": "sync_display",
+      "label_de": "Sync frisch genug für Cash-Anzeige",
+      "passed": false,
+      "required_de": "sync_age_s ≤ 1800"
+    },
+    {
+      "actual": null,
+      "detail_de": "Cache-Referenz (nicht für Orders): 678.52 EUR",
+      "id": "cash_live",
+      "label_de": "Live-Kontostand (nicht nur Cache)",
+      "passed": false,
+      "required_de": "cash_eur ≠ null aus frischem Sync"
+    }
+  ],
+  "fail_closed": true,
+  "measurements": {
+    "bonded": true,
+    "broker_status": "CONNECTION_FAILED_RETRY_AVAILABLE",
+    "cash_eur_cached_ref": 678.52,
+    "cash_eur_live": null,
+    "connected": false,
+    "last_sync_attempt_utc": "2026-06-10T08:05:52+00:00",
+    "last_sync_utc": "2026-06-08T16:05:02+00:00",
+    "learning_last_error": "🔑 API Key oder Secret ist ungültig.\nBitte in der Trading-212-App einen neuen Key mit Lese- und Order-Rechten erzeugen.",
+    "learning_stale_cache": true,
+    "positions_count": 0,
+    "rate_limit_wait_s": 119,
+    "sync_age_s": 144055.2
+  },
+  "message_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p",
+  "orders_allowed": false,
+  "plan_capital_allowed": false,
+  "policy": {
+    "block_orders_when_untrusted": true,
+    "block_plan_scaling_when_untrusted": true,
+    "max_stale_display_s": 1800,
+    "max_stale_sync_s": 900,
+    "ref": "control/t212_trust_policy.json"
+  },
+  "reason_code": "CONNECTION_FAILED_RETRY_AVAILABLE",
+  "reason_de": "✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p",
+  "refs": [
+    "evidence/t212_trust_latest.json",
+    "evidence/r3_t212_api_bond_latest.json",
+    "integrations/trading212/t212_trust_gate.py"
+  ],
+  "schema_version": 1,
+  "trusted": false,
+  "updated_at_utc": "2026-06-10T08:05:57+00:00",
+  "verdict_de": "T212 nicht vertrauenswürdig — 5 Blocker, 2/7 Kriterien"
+}

@@ -85,6 +85,49 @@ def compute_live_market_regime(
     }
 
 
+def enrich_snapshot_market_regime(
+    snapshot: pd.DataFrame,
+    cfg: Any,
+    out_dir: Path,
+    *,
+    as_of: Optional[pd.Timestamp] = None,
+) -> pd.DataFrame:
+    """Autoritative market_* aus price_cache — gleiche Quelle wie R3-Live-Diagnose.
+
+    Behebt falsches RISK_OFF wenn Feature-Tail `market_ret_63` fehlt und
+    select_portfolio sonst ret63=-1.0 annimmt (fail-closed Tyrann).
+    """
+    if snapshot is None or snapshot.empty:
+        return snapshot
+    out_dir = Path(out_dir)
+    benchmark = str(getattr(cfg, "benchmark", "SPY") or "SPY")
+    bench_close, _ = load_benchmark_close_series(out_dir, benchmark)
+    if bench_close is None or bench_close.empty:
+        return snapshot
+    close = bench_close.sort_index()
+    if as_of is not None:
+        close = close.loc[: pd.Timestamp(as_of)]
+    if close.empty or len(close) <= 63:
+        return snapshot
+    live = compute_live_market_regime(close, cfg)
+    snap = snapshot.copy()
+    mt = live.get("market_trend_200")
+    mr = live.get("market_ret_63")
+    if mt is not None:
+        snap["market_trend_200"] = float(mt)
+    if mr is not None:
+        snap["market_ret_63"] = float(mr)
+    try:
+        import math
+
+        bench_ret = close.pct_change()
+        vol20 = float(bench_ret.rolling(20).std().iloc[-1] * math.sqrt(252))
+        if vol20 == vol20:
+            snap["market_vol_20"] = vol20
+    except Exception:
+        pass
+    return snap
+
 def load_stored_signal_diagnosis(out_dir: Path) -> Dict[str, Any]:
     """Read regime + R3 selection diagnostics from latest signal export."""
     out_dir = Path(out_dir)

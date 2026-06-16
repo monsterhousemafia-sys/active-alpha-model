@@ -1,0 +1,89 @@
+{
+  "calibrated_de": "Prognose-Edge messbar, Regime konsistent — trotzdem ~45% Fehltage normal.",
+  "claims_vs_facts": [
+    {
+      "claim_de": "Das Modell liegt nicht immer richtig",
+      "evidence_de": "H1 daily_hit_rate ≈ 54.7%",
+      "status": "fact"
+    },
+    {
+      "claim_de": "Regime-Diagnose stimmt mit Signal überein",
+      "evidence_de": "regime_match=True, signal=2026-06-12",
+      "status": "fact"
+    },
+    {
+      "claim_de": "Letzter Plan-Tag vs SPY",
+      "evidence_de": "Tagesbilanz — Plan-Portfolio +nan % · SPY +nan % · Delta +nan %",
+      "status": "fact"
+    },
+    {
+      "claim_de": "Preis-Cross-Check (Stufe B)",
+      "evidence_de": "verdict=warn, spy=pass",
+      "status": "fact"
+    }
+  ],
+  "headline_de": "Selbstkalibrierung — ~55% Tage-Treffer, ~45.34% daneben (H1, kein Orakel)",
+  "honesty_de": "Kein System (Modell, KI, Schlagzeile) hat immer recht — nur messbare Edge über viele Tage.",
+  "integrity_checks": [
+    {
+      "approval_count": 26,
+      "detail_de": "26 Freigabe-MD, 0 Template(s) ignoriert",
+      "id": "phase_approvals",
+      "pass": true,
+      "template_count": 0
+    },
+    {
+      "champion": "R0_LEGACY_ENSEMBLE",
+      "detail_de": "Governance-Champion: R0_LEGACY_ENSEMBLE",
+      "id": "champion_locked",
+      "pass": true
+    },
+    {
+      "block_signal_refresh": false,
+      "detail_de": "Stufe B: warn",
+      "id": "price_crosscheck",
+      "pass": true,
+      "verdict": "warn"
+    },
+    {
+      "detail_de": "Regime-Match: True",
+      "id": "regime_match",
+      "live_regime": "RISK_ON",
+      "pass": true,
+      "signal_date": "2026-06-12"
+    },
+    {
+      "detail_de": "T212 nicht trusted oder fehlt",
+      "id": "t212_trust",
+      "pass": false,
+      "trusted": false
+    }
+  ],
+  "metrics": {
+    "h1_daily_hit_rate": 0.5466237942122186,
+    "h1_sharpe_0rf": 0.782267724738531,
+    "h1_wrong_day_pct": 45.34,
+    "outcomes_n_mature": 73350,
+    "postmortem_delta_vs_spy_pct": NaN,
+    "price_crosscheck_verdict": "warn",
+    "price_latest": "2026-06-12",
+    "regime_match": true,
+    "risk_off_signed_hit_rate": 0.5065365853658537,
+    "risk_on_signed_hit_rate": 0.5050704225352113,
+    "signal_date": "2026-06-12",
+    "stale_primary_count": 13
+  },
+  "ok": false,
+  "policy_ref": "control/prediction_self_calibration_policy.json",
+  "refs": {
+    "diagnosis": "model_output_sp500_pit_t212/r3_daily_diagnosis.json",
+    "last_refinement_ok": true,
+    "last_regime_match": true,
+    "postmortem": "evidence/r3_daily_postmortem_latest.json",
+    "price_crosscheck": "evidence/price_crosscheck_latest.json",
+    "readiness": "control/prediction_readiness.json",
+    "refinement_state": "control/operational_refinement_state.json"
+  },
+  "schema_version": 1,
+  "updated_at_utc": "2026-06-16T08:41:17+00:00"
+}

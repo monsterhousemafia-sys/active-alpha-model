@@ -1,25 +1,25 @@
 {
   "schema_version": 1,
-  "updated_at_utc": "2026-06-09T21:27:22+00:00",
+  "updated_at_utc": "2026-06-16T08:43:49+00:00",
   "workers": {
     "king": {
-      "cpu_seconds": 318.0,
-      "last_heartbeat_stipend_utc": "2026-06-09T21:06:35+00:00",
-      "last_job_at_utc": "2026-06-09T21:06:35+00:00",
+      "cpu_seconds": 465.0,
+      "last_heartbeat_stipend_utc": "2026-06-16T08:43:49+00:00",
+      "last_job_at_utc": "2026-06-16T08:43:49+00:00",
       "last_job_kind": "heartbeat",
       "tasks_failed": 0,
-      "tasks_ok": 11,
-      "updated_at_utc": "2026-06-09T21:06:35+00:00",
+      "tasks_ok": 60,
+      "updated_at_utc": "2026-06-16T08:43:49+00:00",
       "worker_id": "king"
     },
     "machinax7-x470-aorus-gaming-7-wifi-a754601b": {
-      "cpu_seconds": 90.0,
-      "last_heartbeat_stipend_utc": "2026-06-09T21:27:22+00:00",
-      "last_job_at_utc": "2026-06-09T21:27:22+00:00",
+      "cpu_seconds": 666.0,
+      "last_heartbeat_stipend_utc": "2026-06-16T08:28:51+00:00",
+      "last_job_at_utc": "2026-06-16T08:28:51+00:00",
       "last_job_kind": "heartbeat",
       "tasks_failed": 0,
-      "tasks_ok": 11,
-      "updated_at_utc": "2026-06-09T21:27:22+00:00",
+      "tasks_ok": 51,
+      "updated_at_utc": "2026-06-16T08:28:51+00:00",
       "worker_id": "machinax7-x470-aorus-gaming-7-wifi-a754601b"
     }
   }

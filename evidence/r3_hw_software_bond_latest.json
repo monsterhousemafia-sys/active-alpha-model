@@ -1,0 +1,34 @@
+{
+  "cache": {
+    "cache_stale_sec": 120.0,
+    "warm_live_prep": true
+  },
+  "evidence_ref": "evidence/r3_hw_software_bond_latest.json",
+  "exec_mirror_only": true,
+  "hardware": {
+    "gpu_available": true,
+    "h1_running": false,
+    "load_per_cpu": null,
+    "logical_cores": 32,
+    "mem_available_gb": null,
+    "nvme_ok": true,
+    "policy_headline_de": "RTX 3090 24GB · Ryzen 3950X 16C · 60GB RAM — Hard/Soft-Takt",
+    "ram_gb": 60
+  },
+  "headline_de": "HW/SW balanced — Poll 15s · Start 8s",
+  "mirror": {
+    "mirror_poll_ms": 15000,
+    "mirror_prep_every_n_polls": 3,
+    "mirror_reload_on_evidence_change": false,
+    "mirror_soft_update": true
+  },
+  "notes_de": [],
+  "pressure_class": "balanced",
+  "schema_version": 1,
+  "software_profile_id": "fluid_v3",
+  "startup": {
+    "cockpit_optional": true,
+    "startup_delay_sec": 8
+  },
+  "updated_at_utc": "2026-06-16T08:43:38+00:00"
+}

@@ -32,6 +32,7 @@ def fetch_live_quotes_fail_closed(root: Path, *, force: bool = True) -> Tuple[Di
             Path(root),
             force=force or us_open,
             timeout_s=quote_fetch_timeout_s(root),
+            owner="pilot_live_trade_gate",
         )
     except Exception as exc:
         snap = {"executable_prices_eur": {}, "freshness": {"status": "ERROR", "reason": str(exc)[:120]}}

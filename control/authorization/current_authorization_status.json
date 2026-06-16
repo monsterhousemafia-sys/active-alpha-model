@@ -26,7 +26,7 @@
   "conflicting_or_unsealed_sources": [],
   "conflicting_sources": [],
   "g1_execution_authorized": true,
-  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "generated_at_utc": "2026-06-14T20:15:09+00:00",
   "live_experimental_profile": "daily_alpha_h1",
   "operational_authorized": true,
   "operational_status": "M9_ACTIVE_LIVE_EXPERIMENTAL",
@@ -43,5 +43,8 @@
   "status": "OPERATIONAL_AUTHORIZED",
   "strategic_governance_ref": "control/strategic_governance.json",
   "supersedes_g0_terminal_for": "champion_identity_only",
+  "t212_confirmed_execution_scope_de": "Neues T212-Konto + Zielportfolio — nur R3-Bestätigung, kein auto_execute",
+  "t212_new_account_approval_ref": "EXTERNAL_REVIEW_APPROVAL_T212_NEW_ACCOUNT_20260614.md",
+  "t212_new_account_scope_ref": "control/authorization/t212_new_account_scope.json",
   "terminal_phase": "COMPLETE_AWAITING_OPERATIONAL_DECISION"
 }

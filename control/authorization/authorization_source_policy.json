@@ -22,7 +22,7 @@
   ],
   "current_terminal_state": "COMPLETE_AWAITING_OPERATIONAL_DECISION",
   "default_on_conflict": "BLOCKED_FOR_SAFETY",
-  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "generated_at_utc": "2026-06-14T20:15:09+00:00",
   "informational_only_sources": [
     "VISION_PROGRESS.json",
     "EXTERNAL_REVIEW_APPROVAL_FINAL.md",

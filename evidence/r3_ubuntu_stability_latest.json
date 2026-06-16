@@ -1,0 +1,42 @@
+{
+  "headline_de": "Ubuntu R3 stabil — Stack OK",
+  "launch": {
+    "layer": "r3",
+    "message_de": "R3 Cockpit lokal gestartet — nur 127.0.0.1, kein Web.",
+    "ok": true,
+    "pid": 36999,
+    "shell": "native",
+    "surface_path": "/r3",
+    "url": "http://127.0.0.1:17890/r3"
+  },
+  "qt_env_applied": {
+    "QTWEBENGINE_CHROMIUM_FLAGS": "--password-store=basic --disable-features=DBusSecretPortal,HardwareMediaKeyHandling",
+    "QTWEBENGINE_DISABLE_SANDBOX": "1",
+    "QT_QPA_PLATFORM": null
+  },
+  "schema_version": 1,
+  "session": {
+    "desktop_session": "ubuntu:GNOME",
+    "display": ":0",
+    "ubuntu": true,
+    "wayland": "wayland-0",
+    "xdg_runtime": "/run/user/1000"
+  },
+  "stack_ok": true,
+  "steps": [
+    {
+      "ok": true,
+      "pid": 35972,
+      "step": "stop_cockpit"
+    },
+    {
+      "ok": true,
+      "step": "repair_stack"
+    },
+    {
+      "ok": true,
+      "step": "reset_failed_tunnel_unit"
+    }
+  ],
+  "updated_at_utc": "2026-06-10T07:54:05+00:00"
+}

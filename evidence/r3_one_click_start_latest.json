@@ -1,0 +1,37 @@
+{
+  "bash_de": "bash tools/king_ops.sh r3-t212",
+  "credentials_configured": true,
+  "headline_de": "T212 API eingerichtet — Sync läuft, kurz warten und erneut Start",
+  "next_de": "Rate-Limit / Sync — 1–2 Minuten warten, dann «Jetzt starten»",
+  "ok": false,
+  "schema_version": 1,
+  "setup_ok": true,
+  "steps": [
+    {
+      "detail": "Internet OK — r3_start",
+      "ok": true,
+      "step": "internet"
+    },
+    {
+      "detail_de": "LOADED_FROM_PERSISTENT_STORE",
+      "migrated": false,
+      "ok": true,
+      "restored": true,
+      "step": "credentials_bootstrap"
+    },
+    {
+      "bonded": true,
+      "connected": false,
+      "credentials_configured": true,
+      "ok": true,
+      "step": "api_bond_sync",
+      "trusted": false
+    },
+    {
+      "ok": true,
+      "step": "account_confirm"
+    }
+  ],
+  "t212_trusted": false,
+  "updated_at_utc": "2026-06-14T19:21:59+00:00"
+}

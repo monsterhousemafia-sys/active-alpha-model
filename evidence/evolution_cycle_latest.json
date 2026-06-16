@@ -1,6 +1,41 @@
 {
   "auto_apply": {
-    "skipped": true
+    "applied": [],
+    "generated_at_utc": "2026-06-15T12:38:32+00:00",
+    "message_de": "Evolution Auto-Apply (Sportwagen): 0 angewendet, 7 uebersprungen.",
+    "ok": true,
+    "schema_version": 1,
+    "skipped": [
+      {
+        "action": "slippage_calibrate",
+        "reason": "stage_not_allowed"
+      },
+      {
+        "action": "quote_refresh_tune",
+        "reason": "stage_not_allowed"
+      },
+      {
+        "action": "cash_buffer_tune",
+        "reason": "stage_not_allowed"
+      },
+      {
+        "action": "min_trade_tune",
+        "reason": "stage_not_allowed"
+      },
+      {
+        "action": "shadow_metrics_log",
+        "reason": "stage_not_allowed"
+      },
+      {
+        "action": "challenger_offline_queue",
+        "reason": "stage_not_allowed"
+      },
+      {
+        "action": "execution_style_optimize",
+        "reason": "stage_not_allowed"
+      }
+    ],
+    "stage_id": "sportwagen"
   },
   "evolution_state": {
     "current_stage_id": "sportwagen",
@@ -9,7 +44,7 @@
     "schema_version": 1,
     "updated_at_utc": "2026-06-05T17:45:12+00:00"
   },
-  "generated_at_utc": "2026-06-09T21:16:54+00:00",
+  "generated_at_utc": "2026-06-15T12:38:32+00:00",
   "governance": {
     "blocked_actions": [
       "auto_execute_us_open",
@@ -18,35 +53,9 @@
     "evolution_allow_full_auto": false,
     "kernel_blocks_full_auto": true
   },
-  "message_de": "Evolution Sportwagen: 4 passive OK, 0 Tuning angewendet.",
+  "message_de": "Evolution Sportwagen: 2 passive OK, 0 Tuning angewendet.",
   "ok": true,
   "passive_actions": [
-    {
-      "action": "outcome_sync",
-      "detail": {
-        "added_from_submitted": 0,
-        "generated_at_utc": "2026-06-09T21:16:54+00:00",
-        "history_sync": {
-          "skipped": true
-        },
-        "ledger_counts": {
-          "last_feedback_update_utc": "2026-06-09T18:48:14+00:00",
-          "mature_outcomes": 73350,
-          "pending_predictions": 150,
-          "stored_predictions": 73500
-        },
-        "live_rows_total": 0,
-        "matured_live": 0,
-        "message_de": "Live-Fills -> Ledger: +0 neu, 0 reif, 0 LIVE_T212 gesamt.",
-        "ok": true,
-        "schema_version": 1
-      },
-      "ok": true
-    },
-    {
-      "action": "learning_capture",
-      "ok": true
-    },
     {
       "action": "feedback_update",
       "ok": true

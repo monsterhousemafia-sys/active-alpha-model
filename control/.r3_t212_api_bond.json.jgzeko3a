@@ -1,0 +1,13 @@
+{
+  "account_fingerprint": "d5a2115c795daf11",
+  "account_label": "T212 LIVE READ ONLY",
+  "bonded": true,
+  "bonded_at_utc": "2026-06-07T22:22:18+00:00",
+  "confirmation_de": "✗ T212 nicht vertrauenswürdig — ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pro Minute.\nAutomatischer Sync pausiert — später",
+  "connection_label": "T212 LIVE READ ONLY · #d5a2115c",
+  "credentials_fingerprint": "791b825266061d20",
+  "credentials_rotated_at": "2026-06-14T18:37:39+00:00",
+  "environment": "LIVE_READ_ONLY",
+  "last_confirmed_at_utc": "2026-06-14T18:39:22+00:00",
+  "last_sync_utc": null
+}

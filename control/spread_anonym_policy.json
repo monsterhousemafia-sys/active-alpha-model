@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "anonym_enforced": true,
+  "headline_de": "Anonym-Spread aktiv — Internet-only, kein König-Reddit-Profil",
+  "rules_de": [
+    "Öffentliche Texte nur HTTPS-Join (kein 192.168.*)",
+    "Kein bash tools/king_ops.sh reddit-post",
+    "Reddit: Inkognito + Wegwerf-Account + evidence/reddit_post_body_ready.txt",
+    "WhatsApp: nur HTTPS-Zeile in spread_whatsapp_de.txt",
+    "LAN nur in evidence/spread_broadcast_de.txt (intern, nicht posten)"
+  ],
+  "operator_ref": "evidence/reddit_post_operator_anonym_de.txt",
+  "loop_cmd_de": "bash tools/king_ops.sh spread-finish-anonym"
+}

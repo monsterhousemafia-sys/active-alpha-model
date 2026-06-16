@@ -1,6 +1,6 @@
 # Next Cursor Prompt
 
-Generated: 2026-06-09T18:48:14+00:00
+Generated: 2026-06-16T08:41:12+00:00
 
 ## Current phase: `P16G_READONLY_REAL_ACCOUNT_CONFIGURATION_AND_MANUAL_TICKET_GENERATION` — Readonly account and ticket generation.
 

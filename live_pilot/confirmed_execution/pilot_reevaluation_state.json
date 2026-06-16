@@ -1,7 +1,7 @@
 {
-  "last_fingerprint": "fb90b7d4297c8876",
-  "last_run_utc": "2026-06-09T20:28:42+00:00",
+  "last_fingerprint": "819f0240a8fa5a2e",
+  "last_run_utc": "2026-06-15T17:37:41+00:00",
   "last_trade_required": false,
-  "last_urgency": "NONE",
-  "last_us_session_open": false
+  "last_urgency": "STALE_QUOTES",
+  "last_us_session_open": true
 }

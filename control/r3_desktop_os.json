@@ -19,7 +19,7 @@
     "active-alpha-chat": "tools/alpha_model_agent.sh"
   },
   "autostart_delay_sec": 28,
-  "session_open_url": "/desktop",
+  "session_open_url": "/r3",
   "session_mode": "r3_supremacy",
   "session_browser": "tools/r3_session_browser.sh",
   "remove_legacy_desktop_ids": [

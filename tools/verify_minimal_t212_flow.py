@@ -137,7 +137,7 @@ def run_minimal_flow(root: Path, *, dry_run_order: bool = True) -> Dict[str, Any
                 primary = plan.get("primary_action") or {}
                 sym = str(primary.get("symbol") or "").upper()
                 notional = float(primary.get("target_eur") or 40)
-                snap = ensure_live_quotes_fresh(root, force=False)
+                snap = ensure_live_quotes_fresh(root, force=False, owner="king_ops")
                 prices = snap.get("executable_prices_eur") or {}
                 limit = round(float(prices.get(sym) or max(1.0, notional / 2)), 2)
                 meta = MAPPING_TABLE.get(sym) or {}

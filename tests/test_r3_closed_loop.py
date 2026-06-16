@@ -12,6 +12,7 @@ from analytics.r3_closed_loop import (
     resolve_r3_plan_capital_eur,
 )
 from analytics.r3_desktop_view import run_r3_background_refresh
+from tests.r3_order_fixtures import seed_operator_api_complete
 
 
 def test_resolve_r3_investable_full_cash_when_buffer_zero(tmp_path: Path) -> None:
@@ -28,7 +29,7 @@ def test_resolve_r3_investable_full_cash_when_buffer_zero(tmp_path: Path) -> Non
 def test_fixed_preview_overrides_live_t212_cash(tmp_path: Path) -> None:
     from datetime import datetime, timezone
 
-    (tmp_path / "control").mkdir()
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "control/prediction_operations.json").write_text(
         json.dumps(
@@ -130,7 +131,7 @@ def test_plan_capital_from_live_depot(tmp_path: Path) -> None:
 def test_load_account_from_r3_bond(tmp_path: Path) -> None:
     from datetime import datetime, timezone
 
-    (tmp_path / "control").mkdir()
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "control/prediction_operations.json").write_text(
         json.dumps({"budget": {"cash_buffer_pct": 5.0, "use_full_free_cash": False}}),
@@ -158,8 +159,83 @@ def test_load_account_from_r3_bond(tmp_path: Path) -> None:
     assert account.get("investable_eur") == 456.0
 
 
-def test_engine_rebalance_uses_r3_cash_not_broker_sync(tmp_path: Path) -> None:
+def test_untrusted_t212_blocks_stale_capital(tmp_path: Path) -> None:
     (tmp_path / "control").mkdir()
+    (tmp_path / "evidence").mkdir()
+    (tmp_path / "control/prediction_operations.json").write_text(
+        json.dumps({"budget": {"cash_buffer_pct": 0.0, "use_full_free_cash": True}}),
+        encoding="utf-8",
+    )
+    (tmp_path / "evidence/r3_t212_api_bond_latest.json").write_text(
+        json.dumps(
+            {
+                "bonded": True,
+                "connected": False,
+                "credentials_configured": True,
+                "broker_status": "CONNECTION_FAILED_RETRY_AVAILABLE",
+                "cash_eur": None,
+                "last_sync_utc": None,
+            }
+        ),
+        encoding="utf-8",
+    )
+    (tmp_path / "evidence/pilot_investment_plan_latest.json").write_text(
+        json.dumps({"investable_eur": 678.52, "allocations": []}),
+        encoding="utf-8",
+    )
+    account = load_r3_account_for_engine(tmp_path)
+    assert account.get("t212_trusted") is False
+    assert account.get("investable_eur") is None
+    assert account.get("ok") is False
+
+
+def test_readonly_cache_not_used_without_live_bond(tmp_path: Path) -> None:
+    from datetime import datetime, timezone
+
+    (tmp_path / "control").mkdir()
+    (tmp_path / "evidence").mkdir()
+    (tmp_path / "control/prediction_operations.json").write_text(
+        json.dumps({"budget": {"cash_buffer_pct": 0.0, "use_full_free_cash": True}}),
+        encoding="utf-8",
+    )
+    (tmp_path / "evidence/r3_t212_api_bond_latest.json").write_text(
+        json.dumps(
+            {
+                "bonded": True,
+                "connected": False,
+                "credentials_configured": True,
+                "broker_status": "CONNECTION_FAILED_RETRY_AVAILABLE",
+                "cash_eur": None,
+            }
+        ),
+        encoding="utf-8",
+    )
+    stale_sync = "2020-01-01T00:00:00+00:00"
+    cache_dir = tmp_path / "live_pilot" / "manual_execution" / "readonly_real_account_state"
+    cache_dir.mkdir(parents=True)
+    (cache_dir / "latest_sync.json").write_text(
+        json.dumps(
+            {
+                "cash_eur": 678.52,
+                "cash_breakdown": {"planning_cash_eur": 678.52, "available_to_trade_eur": 678.52},
+                "credentials_configured": True,
+                "synced_at_utc": stale_sync,
+                "status": "CACHED_READONLY_DATA",
+                "environment": "LIVE_READ_ONLY",
+            }
+        ),
+        encoding="utf-8",
+    )
+    account = load_r3_account_for_engine(tmp_path)
+    assert account.get("cash_eur") is None
+    assert account.get("investable_eur") is None
+    assert account.get("cash_source") != "readonly_cache_fallback"
+
+
+def test_engine_rebalance_uses_r3_cash_not_broker_sync(tmp_path: Path) -> None:
+    from datetime import datetime, timezone
+
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "control/alpha_model_background_engine_policy.json").write_text("{}", encoding="utf-8")
     (tmp_path / "control/prediction_readiness.json").write_text(
@@ -170,14 +246,17 @@ def test_engine_rebalance_uses_r3_cash_not_broker_sync(tmp_path: Path) -> None:
         json.dumps({"budget": {"cash_buffer_pct": 5.0, "use_full_free_cash": False}}),
         encoding="utf-8",
     )
+    fresh_sync = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     (tmp_path / "evidence/r3_t212_api_bond_latest.json").write_text(
         json.dumps(
             {
                 "bonded": True,
                 "connected": True,
                 "credentials_configured": True,
+                "broker_status": "LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE",
+                "last_sync_utc": fresh_sync,
                 "cash_eur": 600.0,
-                "cash_breakdown": {"planning_cash_eur": 570.0},
+                "cash_breakdown": {"planning_cash_eur": 570.0, "available_to_trade_eur": 570.0},
             }
         ),
         encoding="utf-8",
@@ -206,6 +285,9 @@ def test_engine_rebalance_uses_r3_cash_not_broker_sync(tmp_path: Path) -> None:
     ), patch(
         "analytics.r3_freigabe.refresh_freigabe_evidence",
         return_value={"package_ready": True, "freigabe_ready": True, "headline_de": "OK"},
+    ), patch(
+        "analytics.r3_internet_requirement.require_internet_for",
+        return_value={"allowed": True, "internet_ok": True},
     ), patch(
         "analytics.live_trading_operations.sync_broker_and_quotes",
     ) as mock_sync, patch(

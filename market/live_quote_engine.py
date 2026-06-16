@@ -172,7 +172,7 @@ def _quotes_from_batch(batch: Dict[str, Any]) -> Dict[str, Dict[str, Any]]:
     return out
 
 
-def refresh_live_quotes(root: Path, *, force: bool = False) -> Dict[str, Any]:
+def refresh_live_quotes(root: Path, *, force: bool = False, owner: str = "") -> Dict[str, Any]:
     """Fetch live quotes via yfinance + FX; always writes snapshot when online."""
     root = Path(root)
     if not force:
@@ -183,6 +183,15 @@ def refresh_live_quotes(root: Path, *, force: bool = False) -> Dict[str, Any]:
                 cached["freshness"] = fresh
                 cached["refresh_skipped"] = True
                 return cached
+
+    from analytics.r3_live_quote_access_gate import (
+        access_denied_snapshot,
+        check_live_quote_refresh_allowed,
+    )
+
+    gate = check_live_quote_refresh_allowed(root, owner=owner, operation="refresh")
+    if not gate.get("allowed"):
+        return access_denied_snapshot(root, gate=gate)
 
     from aa_refresh_guard import end_quote_refresh, try_begin_quote_refresh
 
@@ -228,8 +237,11 @@ def _merge_champion_quote_chain(root: Path, batch: Dict[str, Any]) -> Dict[str, 
         merge_t212_yahoo_prices,
     )
 
+    from paper.p16d.quote_plausibility import load_anchor_prices_for_sanitize
+
     yahoo_raw = dict(batch.get("executable_prices_eur") or {})
     yahoo_raw.update({k: v for k, v in (batch.get("prices_eur") or {}).items() if k not in yahoo_raw})
+    anchor_eur = load_anchor_prices_for_sanitize(root, CHAMPION_EXECUTABLE_FILL)
     t212_held = fetch_held_position_prices_eur(root, symbols=CHAMPION_EXECUTABLE_FILL)
     t212_sources = {s: PRICE_SOURCE_T212_HELD for s in t212_held}
     merged, sources, audit = merge_t212_yahoo_prices(
@@ -238,6 +250,7 @@ def _merge_champion_quote_chain(root: Path, batch: Dict[str, Any]) -> Dict[str, 
         t212_sources=t212_sources,
         yahoo_prices=yahoo_raw,
         yahoo_valid=_yahoo_valid_by_symbol(batch),
+        anchor_prices_eur=anchor_eur,
     )
     coverage = champion_quote_coverage(merged)
     provider = "T212_FIRST_YAHOO_VALIDATED"
@@ -266,12 +279,14 @@ def _refresh_live_quotes_impl(root: Path) -> Dict[str, Any]:
     now = _utc_now()
     chain = _merge_champion_quote_chain(root, batch)
     exec_prices = dict(chain.get("executable_prices_eur") or {})
-    from paper.p16d.quote_plausibility import sanitize_executable_prices
+    from paper.p16d.quote_plausibility import load_anchor_prices_for_sanitize, sanitize_executable_prices
 
+    anchor_eur = load_anchor_prices_for_sanitize(root, CHAMPION_EXECUTABLE_FILL)
     sanitized = sanitize_executable_prices(
         exec_prices,
         price_source_by_symbol=chain.get("price_source_by_symbol"),
         for_orders=True,
+        anchor_prices_eur=anchor_eur,
     )
     exec_prices = sanitized["executable_prices_eur"]
     snapshot = {
@@ -323,6 +338,7 @@ def ensure_live_quotes_fresh_bounded(
     *,
     force: bool = False,
     timeout_s: float = 45.0,
+    owner: str = "",
 ) -> Dict[str, Any]:
     """Like ensure_live_quotes_fresh but never blocks longer than timeout_s."""
     from aa_refresh_guard import run_with_timeout
@@ -336,7 +352,7 @@ def ensure_live_quotes_fresh_bounded(
         if fresh["status"] == "FRESH" and fresh.get("calculation_allowed"):
             return cached
     result = run_with_timeout(
-        lambda: refresh_live_quotes(root, force=True),
+        lambda: refresh_live_quotes(root, force=True, owner=owner),
         timeout_s=timeout_s,
         default=None,
     )
@@ -348,7 +364,7 @@ def ensure_live_quotes_fresh_bounded(
         stale["refresh_timed_out"] = True
         stale["freshness"] = classify_freshness(stale)
         return stale
-    return refresh_live_quotes(root, force=False)
+    return refresh_live_quotes(root, force=False, owner=owner)
 
 
 def _synthetic_snapshot(root: Path) -> Dict[str, Any]:
@@ -393,7 +409,7 @@ def _synthetic_snapshot(root: Path) -> Dict[str, Any]:
     return snap
 
 
-def ensure_live_quotes_fresh(root: Path, *, force: bool = False) -> Dict[str, Any]:
+def ensure_live_quotes_fresh(root: Path, *, force: bool = False, owner: str = "") -> Dict[str, Any]:
     """Return fresh snapshot; fetch when missing or stale."""
     root = Path(root)
     if os.environ.get("AA_OFFLINE_COCKPIT_TEST", "").strip() == "1":
@@ -405,7 +421,7 @@ def ensure_live_quotes_fresh(root: Path, *, force: bool = False) -> Dict[str, An
             cached["freshness"] = fresh
             if fresh["status"] == "FRESH" and fresh.get("calculation_allowed"):
                 return cached
-    return refresh_live_quotes(root, force=True)
+    return refresh_live_quotes(root, force=True, owner=owner)
 
 
 def merge_snapshot_into_state(state: Dict[str, Any], snapshot: Dict[str, Any]) -> None:

@@ -11,8 +11,12 @@
     "Keine Ubuntu-Duplikate (Dateien, Terminal, System-Panels)",
     "Ergebnis-Artefakte: prediction_readiness, T212-Portfolio, Lern-Ledger",
     "Active Alpha Model: nur Plan/Signal — keine Order-Ausführung",
-    "Orders ausschließlich über R3 mit GUI-Bestätigung — fail-closed"
+    "Orders ausschließlich über R3 mit GUI-Bestätigung — fail-closed",
+    "Fall-Wächter-Panel (r3-fall-watch): read-only Intraday — kein Order-Trigger",
+    "T212 untrusted: Trust-Gate-Meldung in Prognose/Alerts — Orders blockiert"
   ],
+  "monitoring_governance_ref": "control/r3_monitoring_governance.json",
+  "fall_watch_policy_ref": "control/r3_fall_watch_policy.json",
   "broker_de": "Trading212",
   "engine_ref_de": "analytics/alpha_model_background_engine.py — Plan/Monitor im Hintergrund; Orders nur R3",
   "order_execution_policy_ref": "control/r3_order_execution_policy.json",

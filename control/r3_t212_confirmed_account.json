@@ -1,0 +1,10 @@
+{
+  "account_fingerprint": "d5a2115c795daf11",
+  "account_label": "T212 LIVE READ ONLY",
+  "approval_ref": "EXTERNAL_REVIEW_APPROVAL_T212_NEW_ACCOUNT_20260614.md",
+  "confirmed_at_utc": "2026-06-14T19:32:27+00:00",
+  "connection_label": "T212 LIVE READ ONLY · #d5a2115c",
+  "credentials_fingerprint": "791b825266061d20",
+  "environment": "LIVE_READ_ONLY",
+  "schema_version": 1
+}

@@ -11,33 +11,28 @@
     "spread-remote-status",
     "warnings"
   ],
-  "executed": [
-    {
-      "cmd": "h1-status",
-      "exit_code": 0,
-      "ok": true,
-      "stdout_tail": "ics_strategy\": {\n      \"sharpe_0rf\": 0.782267724738531,\n      \"cagr\": 0.1449496479478598,\n      \"max_drawdown\": -0.22945094905846275,\n      \"n_days\": 1866,\n      \"daily_hit_rate\": 0.5466237942122186\n    },\n    \"evaluated_at_utc\": \"2026-06-09T20:25:28+00:00\",\n    \"seal_required\": false,\n    \"seal_policy_de\": \"H1-Seal optional — COMPLETE Backtest reicht für operative Gates\"\n  },\n  \"sealed\": false\n}\n"
-    },
-    {
-      "cmd": "launch-status",
-      "exit_code": 0,
-      "ok": true,
-      "stdout_tail": "erung\",\n      \"done\": true\n    },\n    {\n      \"id\": \"launch\",\n      \"label_de\": \"Welt-Start\",\n      \"done\": true\n    }\n  ],\n  \"hub_url\": \"http://127.0.0.1:17890/\",\n  \"preview_url\": \"http://127.0.0.1:17890/\",\n  \"king_local_surface\": true,\n  \"preview\": {\n    \"ok\": true,\n    \"passed\": 9,\n    \"total\": 10,\n    \"detail_de\": \"Preview 9/10 · 3.8h frisch\"\n  },\n  \"join_url\": \"http://127.0.0.1:17890/join\"\n}\n"
-    }
-  ],
+  "executed": [],
   "fast_mode": true,
-  "headline_de": "Orchestrator-Dispatch: 2/2 OK",
+  "headline_de": "Orchestrator-Dispatch: 0/0 OK",
   "last_cmd_utc": {
-    "h1-status": "2026-06-09T21:16:18+00:00",
-    "launch-status": "2026-06-09T21:16:18+00:00"
+    "h1-status": "2026-06-15T12:45:21+00:00",
+    "launch-status": "2026-06-15T12:38:12+00:00"
   },
   "ok": true,
-  "ran_at_utc": "2026-06-09T21:16:40+00:00",
+  "ran_at_utc": "2026-06-15T12:46:41+00:00",
   "schema_version": 1,
   "skipped": [
     {
+      "cmd": "h1-status",
+      "reason_de": "Cooldown 5min (1min seit letztem Lauf)"
+    },
+    {
       "cmd": "h1-finish",
       "reason_de": "nicht in dispatch_allowlist"
+    },
+    {
+      "cmd": "launch-status",
+      "reason_de": "Cooldown 10min (8min seit letztem Lauf)"
     }
   ]
 }

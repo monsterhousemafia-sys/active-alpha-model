@@ -34,7 +34,7 @@ def test_untrusted_auth_expired() -> None:
     )
     assert doc["trusted"] is False
     assert doc["orders_allowed"] is False
-    assert "API-Key" in doc["message_de"]
+    assert doc["message_de"] == "API prüfen"
 
 
 def test_untrusted_stale_sync() -> None:
@@ -72,7 +72,9 @@ def test_sync_age_seconds() -> None:
 
 
 def test_order_gate_blocks_untrusted(tmp_path) -> None:
-    (tmp_path / "control").mkdir()
+    from tests.r3_order_fixtures import seed_operator_api_complete
+
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "live_pilot/manual_execution/readonly_real_account_state").mkdir(parents=True)
     import json

@@ -89,29 +89,48 @@ def check_order_execution_allowed(
 
     policy = load_order_execution_policy(root)
     src = str(source or "").strip() or "UNKNOWN"
+    try:
+        from analytics.r3_t212_operator_api import operator_api_gate_block
+
+        block = operator_api_gate_block(
+            root,
+            allowed=False,
+            source=src,
+            operation=operation,
+            error="OPERATOR_API_SETUP_REQUIRED",
+            policy_ref=str(_POLICY_REL).replace("\\", "/"),
+        )
+        if block:
+            return block
+    except Exception:
+        pass
     if is_r3_order_source(src, policy):
         try:
             from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
 
             trust = assess_t212_trust_from_root(root, persist=False)
             if not trust.get("orders_allowed", True):
+                from analytics.r3_operator_surface_text import OPERATOR_API_ENTER, operator_status_de
+
                 return {
                     "allowed": False,
                     "source": src,
                     "operation": operation,
                     "error": "T212_UNTRUSTED",
-                    "message_de": trust.get("message_de")
-                    or "T212 nicht vertrauenswürdig — Orders blockiert (fail-closed).",
+                    "message_de": operator_status_de(str(trust.get("reason_code") or ""))
+                    or OPERATOR_API_ENTER,
                     "t212_trust": trust,
                     "policy_ref": str(_POLICY_REL).replace("\\", "/"),
                 }
         except Exception as exc:
+            from analytics.r3_operator_surface_text import OPERATOR_SYNC_WAIT
+
             return {
                 "allowed": False,
                 "source": src,
                 "operation": operation,
                 "error": "T212_TRUST_GATE_ERROR",
-                "message_de": f"T212 Trust Gate — {str(exc)[:80]}",
+                "message_de": OPERATOR_SYNC_WAIT,
                 "policy_ref": str(_POLICY_REL).replace("\\", "/"),
             }
         return {

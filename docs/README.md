@@ -26,9 +26,14 @@ Resolve any legacy basename via `aa_doc_paths.doc_path("CODEX_V5R_…")`.
 
 Review ZIP binaries stay in **repo root** (gitignored); sidecars live here.
 
-## `docs/phases/<PHASE>/`
+## `docs/` — architecture & phases
 
-Historical and active **CODEX phase reports** (preflight, report, audit):
+| Path | Content |
+|------|---------|
+| `R3_EXEC_MIRROR_ARCHITECTURE.md` | R3 Exec Mirror — Schichten, T212 Operator-API, Gates, Surface-Version |
+| `phases/<PHASE>/` | Historical and active **CODEX phase reports** |
+
+Historical phase reports (preflight, report, audit):
 
 - `P9A`, `V0`, `V0R`, `V1`, `V1R`, `V1R2`, `V1R3`, `V2`, `V2R`, `V3`, `V4`, `V4R`, `V4R2`, `V4R3`, `V5`, `V5R`, `G0`, `G1`, `G2`
 - `P10`–`P18` (research → interactive desktop → UX; see `docs/phases/P16G_*`, `P17_*`, `P18_*`)

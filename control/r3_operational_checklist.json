@@ -8,6 +8,7 @@
     "control/r3_closed_loop_policy.json",
     "control/r3_operational_independence.json",
     "control/series_readiness_policy.json",
+    "control/r3_monitoring_governance.json",
     "AGENTS.md Safety-Invarianten"
   ],
   "verify_all_de": "bash tools/king_ops.sh series-ready && bash tools/king_ops.sh r3-sync --repair",
@@ -43,6 +44,21 @@
           "label_de": "Live-Submit nur nach GUI-Bestätigung + Gates",
           "verify_de": "analytics/r3_mirror_state.resolve_submission_mode",
           "evidence_ref": "evidence/r3_freigabe_latest.json",
+          "fail_closed": true
+        },
+        {
+          "id": "t212_trust_gate",
+          "label_de": "T212 Trust Gate — Orders nur bei trusted Live-Sync",
+          "policy_ref": "control/t212_trust_policy.json",
+          "evidence_ref": "evidence/t212_trust_latest.json",
+          "verify_de": "bash tools/king_ops.sh t212-trust-report",
+          "fail_closed": true
+        },
+        {
+          "id": "project_security_lock",
+          "label_de": "Projekt-Security-Lock (Safety-Flags, Secrets, Hooks)",
+          "verify_de": "bash tools/project_security_lockdown.sh",
+          "evidence_ref": "control/project_security_lock.json",
           "fail_closed": true
         }
       ]
@@ -167,6 +183,13 @@
           "id": "poll_refresh",
           "label_de": "Live-Poll /api/r3/mirror ohne Seitenabbruch",
           "verify_de": "r3PollMirror · r3PatchMirrorDisplays"
+        },
+        {
+          "id": "fall_watch_panel",
+          "label_de": "Fall-Wächter-Panel in /r3 (read-only)",
+          "policy_ref": "control/r3_fall_watch_policy.json",
+          "evidence_ref": "evidence/prognosis_fall_watch_latest.json",
+          "verify_de": "GET /api/r3/mirror/panel — id=r3-fall-watch"
         },
         {
           "id": "upgrade_confirm",

@@ -6,12 +6,17 @@ from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
+from analytics.r3_operator_surface_text import operator_status_de
 from analytics.r3_t212_api_bond import (
     build_r3_t212_api_bond,
+    ensure_r3_t212_api_bond,
     load_bond_policy,
     render_r3_t212_bond_confirmation,
     sync_r3_t212_api_bond,
 )
+
+
+from tests.r3_order_fixtures import seed_operator_api_complete
 
 
 def _broker_ok() -> dict:
@@ -25,6 +30,45 @@ def _broker_ok() -> dict:
     }
 
 
+def test_ensure_api_bond_runs_bootstrap_and_confirm(tmp_path: Path) -> None:
+    from integrations.trading212.t212_session_credential_store import clear_session_credentials
+
+    clear_session_credentials()
+    seed_operator_api_complete(tmp_path)
+    (tmp_path / ".env").write_text(
+        "TRADING212_API_KEY=test-key\nTRADING212_API_SECRET=test-secret\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "evidence").mkdir()
+    (tmp_path / "control/r3_t212_api_bond_policy.json").write_text("{}", encoding="utf-8")
+    broker = _broker_ok()
+    broker["account_summary"] = {"currency": "EUR", "totalValue": 675.0}
+    with patch(
+        "integrations.trading212.t212_startup_bootstrap.bootstrap_trading212_credentials",
+        return_value={"migration": {"migrated": True}, "session_restore": {"restored": True}},
+    ), patch(
+        "analytics.r3_t212_api_bond.sync_r3_t212_api_bond",
+        return_value={
+            "bonded": True,
+            "connected": True,
+            "t212_trusted": True,
+            "credentials_configured": True,
+            "account_fingerprint": "abc123",
+            "confirmation_de": "T212 API verbunden",
+            "investable_eur": 640.0,
+        },
+    ), patch(
+        "analytics.r3_t212_account_identity.confirm_t212_account",
+        return_value={"ok": True},
+    ):
+        doc = ensure_r3_t212_api_bond(tmp_path, persist=False)
+    assert doc.get("setup_ok") is True
+    step_ids = [s.get("step") for s in doc.get("steps") or []]
+    assert "credentials_bootstrap" in step_ids
+    assert "api_bond_sync" in step_ids
+    assert "account_confirm" in step_ids
+
+
 def test_bond_policy_loads() -> None:
     root = Path(__file__).resolve().parents[1]
     policy = load_bond_policy(root)
@@ -34,20 +78,28 @@ def test_bond_policy_loads() -> None:
 
 
 def test_build_bond_persists_lock(tmp_path: Path) -> None:
-    (tmp_path / "control").mkdir()
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "control/r3_t212_api_bond_policy.json").write_text("{}", encoding="utf-8")
-    with patch("analytics.r3_t212_api_bond._broker_snapshot", return_value=_broker_ok()):
+    broker = _broker_ok()
+    broker["account_summary"] = {"currency": "EUR", "totalValue": 675.0}
+    with patch("analytics.r3_t212_api_bond._broker_snapshot", return_value=broker):
         doc = build_r3_t212_api_bond(tmp_path, persist=True)
     assert doc.get("bonded") is True
     assert doc.get("connected") is True
-    assert "verbunden" in str(doc.get("confirmation_de") or "").lower()
+    assert doc.get("account_fingerprint")
+    assert doc.get("account_label")
+    assert doc.get("connection_label")
+    assert doc.get("t212_trusted") is True
+    assert str(doc.get("confirmation_de") or "") == ""
     assert (tmp_path / "control/r3_t212_api_bond.json").is_file()
     assert (tmp_path / "evidence/r3_t212_api_bond_latest.json").is_file()
+    lock = json.loads((tmp_path / "control/r3_t212_api_bond.json").read_text(encoding="utf-8"))
+    assert lock.get("account_fingerprint") == doc.get("account_fingerprint")
 
 
 def test_bond_warns_on_expired_credentials_cache(tmp_path: Path) -> None:
-    (tmp_path / "control").mkdir()
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "control/r3_t212_api_bond_policy.json").write_text("{}", encoding="utf-8")
     with patch(
@@ -65,11 +117,11 @@ def test_bond_warns_on_expired_credentials_cache(tmp_path: Path) -> None:
     assert doc.get("state") == "fail"
     assert doc.get("t212_trusted") is False
     assert doc.get("t212_orders_blocked") is True
-    assert "API-Key" in str(doc.get("confirmation_de") or "")
+    assert "API prüfen" in str(doc.get("confirmation_de") or "")
 
 
 def test_bond_persists_after_transient_error(tmp_path: Path) -> None:
-    (tmp_path / "control").mkdir()
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     (tmp_path / "control/r3_t212_api_bond_policy.json").write_text(
         json.dumps({"bond_mode": "persistent"}),
@@ -91,16 +143,16 @@ def test_bond_persists_after_transient_error(tmp_path: Path) -> None:
         doc = build_r3_t212_api_bond(tmp_path, persist=True)
     assert doc.get("bonded") is True
     assert doc.get("t212_trusted") is False
-    assert "nicht vertrauenswürdig" in str(doc.get("confirmation_de") or "").lower()
+    assert operator_status_de("CONNECTION_FAILED_RETRY_AVAILABLE") in str(doc.get("confirmation_de") or "")
 
 
 def test_render_confirmation_on_desktop(tmp_path: Path) -> None:
-    (tmp_path / "control").mkdir()
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "control/r3_t212_api_bond_policy.json").write_text("{}", encoding="utf-8")
     with patch("analytics.r3_t212_api_bond._broker_snapshot", return_value=_broker_ok()):
-        html_out = render_r3_t212_bond_confirmation(tmp_path)
-    assert 'id="r3-t212-bond"' in html_out
-    assert "Trading212" in html_out
+        doc = build_r3_t212_api_bond(tmp_path, persist=True)
+        html_out = render_r3_t212_bond_confirmation(tmp_path, bond=doc)
+    assert html_out == ""
 
 
 def test_desktop_includes_bond_line(tmp_path: Path, monkeypatch) -> None:

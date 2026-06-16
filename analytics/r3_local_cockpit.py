@@ -88,16 +88,20 @@ def run_native_cockpit_app(
         return 1
 
     try:
+        from analytics.r3_ubuntu_stability import apply_ubuntu_qt_env, resolve_fullscreen
         from analytics.r3_session_browser import _hub_url, wait_hub_page
         from analytics.stack_integrity import ensure_hub_reliable
 
+        for key, val in apply_ubuntu_qt_env().items():
+            if val:
+                os.environ[key] = val
+
         cfg = _session_cfg(root)
         if fullscreen is None:
-            fullscreen = bool(cfg.get("start_fullscreen", True))
-        if os.environ.get("R3_NATIVE_SHELL") == "1" or os.environ.get("R3_SESSION") == "1":
-            fullscreen = True
+            fullscreen = resolve_fullscreen(cfg)
         wm_class = str(cfg.get("wm_class") or "R3")[:64]
         wait_sec = clamp_wait_sec(cfg.get("startup_delay_sec"), default=60.0)
+        fast_wait = min(wait_sec, 12.0)
 
         try:
             port = int(ensure_hub_reliable(root, port=port))
@@ -185,7 +189,12 @@ def run_native_cockpit_app(
 
         def _load_target(retry: int = 0) -> None:
             try:
-                if wait_hub_page(url, timeout=min(wait_sec, 90.0)):
+                from analytics.r3_runtime import is_surface_page_ready
+
+                if is_surface_page_ready(int(hub_port[0]), path=path.split("#", 1)[0]):
+                    view.setUrl(QUrl(url))
+                    return
+                if wait_hub_page(url, timeout=min(fast_wait if retry == 0 else wait_sec, 90.0)):
                     view.setUrl(QUrl(url))
                     return
                 if retry < 1:
@@ -214,7 +223,7 @@ def run_native_cockpit_app(
                 _LOG.warning("load_finished handler: %s", exc)
 
         view.loadFinished.connect(_on_load_finished)
-        QTimer.singleShot(120, _load_target)
+        QTimer.singleShot(50, _load_target)
         try:
             return int(app.exec())
         finally:
@@ -263,7 +272,9 @@ def launch_native_cockpit(
             f"sys.exit(run_native_cockpit_app(Path({root_s!r}), hub_path={path!r}, port={int(port)}))"
         ),
     ]
-    env = os.environ.copy()
+    from analytics.r3_ubuntu_stability import apply_ubuntu_qt_env
+
+    env = apply_ubuntu_qt_env(os.environ.copy())
     env["AA_PROJECT_ROOT"] = str(root)
     env["AA_LINUX_NATIVE_APP"] = "1"
     env["R3_SESSION"] = "1"

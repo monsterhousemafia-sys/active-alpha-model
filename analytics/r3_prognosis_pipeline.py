@@ -114,6 +114,23 @@ def run_prognosis_automation(root: Path, *, persist: bool = True) -> Dict[str, A
     policy = load_automation_policy(root)
     steps: List[Dict[str, Any]] = []
 
+    try:
+        from analytics.r3_t212_operator_api import operator_api_gate_block
+        from analytics.r3_operator_surface_text import OPERATOR_API_ENTER
+
+        block = operator_api_gate_block(
+            root,
+            headline_de=OPERATOR_API_ENTER,
+            steps=[{"step": "operator_api_setup", "ok": False}],
+        )
+        if block:
+            doc = {"schema_version": 1, "updated_at_utc": _utc_now(), **block}
+            if persist:
+                atomic_write_json(root / _EVIDENCE_REL, doc)
+            return doc
+    except Exception:
+        pass
+
     from analytics.r3_t212_sync_coordinator import record_t212_sync, resolve_t212_sync_force
 
     try:

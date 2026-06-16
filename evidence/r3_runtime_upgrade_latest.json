@@ -1,11 +1,11 @@
 {
-  "applied_label_de": "Flüssig — bestätigt",
-  "applied_profile_id": "fluid_v2",
+  "applied_label_de": "Flüssig — 15s Poll, Soft-Update, schneller Start",
+  "applied_profile_id": "fluid_v3",
   "candidates_found": 0,
   "dismissed_ids": [],
-  "headline_de": "Laufzeitprofil aktiv: Flüssig — bestätigt",
+  "headline_de": "Laufzeitprofil aktiv: Flüssig — 15s Poll, Soft-Update, schneller Start",
   "history": [],
   "pending": null,
   "schema_version": 1,
-  "updated_at_utc": "2026-06-09T21:46:36+00:00"
+  "updated_at_utc": "2026-06-16T08:43:38+00:00"
 }

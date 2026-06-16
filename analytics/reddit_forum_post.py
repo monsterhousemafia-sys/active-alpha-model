@@ -12,6 +12,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from aa_safe_io import atomic_write_json
 
 _FORUM_REL = Path("evidence/community_spread_forum_de.txt")
+_FORUM_ANONYM_REL = Path("evidence/community_spread_forum_anonym_en.txt")
 _ACK_REL = Path("evidence/forum_post_ack.json")
 _PREPARE_REL = Path("evidence/reddit_post_prepare_latest.json")
 _DEFAULT_SUBS = ("selfhosted", "linux")
@@ -22,9 +23,11 @@ def _utc_now() -> str:
 
 
 def parse_forum_draft(root: Path) -> Dict[str, Any]:
-    """Title + Body aus community_spread_forum_de.txt."""
+    """Title + Body aus Forum-Entwurf (anonym wenn Policy aktiv)."""
     root = Path(root)
-    path = root / _FORUM_REL
+    from analytics.spread_anonym_policy import is_anonym_enforced
+
+    path = root / (_FORUM_ANONYM_REL if is_anonym_enforced(root) else _FORUM_REL)
     if not path.is_file():
         return {"ok": False, "detail_de": "Forum-Entwurf fehlt"}
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -77,6 +80,10 @@ def _submit_url(subreddit: str, title: str) -> str:
 def open_reddit_submit(root: Path, *, subreddits: Optional[List[str]] = None) -> Dict[str, Any]:
     """Body in Zwischenablage, Submit-Seiten in Firefox öffnen."""
     root = Path(root)
+    from analytics.spread_anonym_policy import is_anonym_enforced, reddit_profile_block
+
+    if is_anonym_enforced(root):
+        return reddit_profile_block(root)
     draft = parse_forum_draft(root)
     if not draft.get("ok"):
         return draft

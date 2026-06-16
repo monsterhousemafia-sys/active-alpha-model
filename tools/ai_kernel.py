@@ -333,7 +333,7 @@ def main() -> int:
             "monday-prep", "h1-watch", "h1-benchmark", "h1-connect", "h1-distribute", "h1-workers", "world-spread", "weg-b", "king-distribute", "king-pulse", "king-ops", "king-status", "king-maintain", "king-h1-seal", "king-tune", "h1-dispatch", "legion", "worker-rewards", "visibility", "show-setup",
             "refresh", "trading-day", "circle", "gui-preview", "preview-share", "preview-export", "preview-export-lite", "preview-spread", "preview-hardware", "spread-tick", "spread-plan", "spread-timers", "spread-autonomous", "spread-prelaunch", "spread-soft-launch-done", "spread-intensify", "spread-tunnel-token", "spread-tunnel-auto", "spread-tunnel-secure", "spread-tunnel-paste", "spread-tunnel-audit", "vault-open", "vault-manage", "vault-status", "cloudflare-login-plan", "cloudflare-login-complete", "launch-setup", "launch-status", "launch-progress", "spread-secure", "spread-remote", "spread-remote-status", "server-bootstrap", "server-watchdog", "h1-finish", "runtime-install", "runtime-status", "runtime-watch", "runtime-h1-prep", "runtime-query", "kernel-boundary", "mandate", "cognitive-succession", "cognitive-kernel", "cognitive-status", "cognitive-scheduler", "cognitive-observe",             "lean-on", "lean-turbo", "lean-max", "lean-off", "lean-status", "h1-force",
             "sovereignty", "operator-mandate", "succession-finish",
-            "chat", "agent-home", "chamber-resources", "entfaltung-handoff", "post-reboot-kill", "self-uninstall", "local-runtime", "human-interface", "llm-setup", "llm-health", "advisor-key", "advisor-key-store", "advisor-key-setup", "advisor-key-test", "advisor-key-migrate", "gemini-key", "gemini-key-store", "gemini-key-test", "cursor-bridge", "king-serve", "kernel-bond", "king-trading", "king-forschung", "stufe-a", "stufe_a", "king-stufe-a", "freigabe", "r3", "r3-desktop", "r3-desktop-update", "r3-desktop-migrate", "r3-chat-migrate", "r3-takeover", "r3-native", "finish-r3", "ulwo-launch", "r3-preserve", "r3-migration-check", "r3-migration-feasibility", "r3-ops-gates", "r3-ki-import", "r3-build", "build-kernel",
+            "chat", "agent-home", "chamber-resources", "entfaltung-handoff", "post-reboot-kill", "self-uninstall", "local-runtime", "human-interface", "llm-setup", "llm-health", "advisor-key", "advisor-key-store", "advisor-key-setup", "advisor-key-test", "advisor-key-migrate", "gemini-key", "gemini-key-store", "gemini-key-test", "cursor-bridge", "king-serve", "kernel-bond", "king-trading", "king-forschung", "stufe-a", "stufe_a", "king-stufe-a", "stufe-b", "stufe_b", "king-stufe-b", "price-crosscheck", "system-update", "system_update", "update-system", "freigabe", "r3", "r3-desktop", "r3-desktop-update", "r3-desktop-migrate", "r3-chat-migrate", "r3-takeover", "r3-native", "finish-r3", "ulwo-launch", "r3-preserve", "r3-migration-check", "r3-migration-feasibility", "r3-ops-gates", "r3-ki-import", "r3-build", "build-kernel",
         ),
     )
     p.add_argument(
@@ -763,6 +763,36 @@ def main() -> int:
         print(json.dumps(doc, indent=2, ensure_ascii=False))
         _kernel_log(r, "stufe-a", str(doc.get("headline_de") or "—"))
         return 0 if doc.get("ok") or doc.get("skipped") else 1
+    if a.cmd in ("stufe-b", "stufe_b", "king-stufe-b", "price-crosscheck"):
+        from analytics.king_stufe_b import run_stufe_b_tick
+        from analytics.secret_redaction import safe_public_doc
+
+        force = "--force" in sys.argv[1:]
+        doc = safe_public_doc(run_stufe_b_tick(r, force=force, persist=True))
+        print(json.dumps(doc, indent=2, ensure_ascii=False))
+        _kernel_log(r, "stufe-b", str(doc.get("headline_de") or "—"))
+        return 0 if doc.get("ok") or doc.get("skipped") else 1
+    if a.cmd in ("system-update", "system_update", "update-system"):
+        from aa_config_env import load_aa_env
+        from analytics.secret_redaction import safe_public_doc
+        from analytics.system_update import run_system_update
+
+        force_prices = "--force-prices" in sys.argv[1:]
+        no_signal = "--no-signal" in sys.argv[1:]
+        env = load_aa_env(r)
+        doc = safe_public_doc(
+            run_system_update(
+                r,
+                env,
+                force_prices=force_prices,
+                refresh_signal=not no_signal,
+                persist=True,
+                log_print=False,
+            )
+        )
+        print(json.dumps(doc, indent=2, ensure_ascii=False))
+        _kernel_log(r, "system-update", str(doc.get("headline_de") or "—"))
+        return 0 if doc.get("ok") else 1
     if a.cmd == "freigabe":
         from analytics.r3_freigabe import prepare_freigabe
         from analytics.secret_redaction import safe_public_doc

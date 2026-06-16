@@ -3,7 +3,7 @@
   "h1": {
     "banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
     "detail_de": null,
-    "evaluated_at_utc": "2026-06-09T20:25:28+00:00",
+    "evaluated_at_utc": "2026-06-15T12:35:21+00:00",
     "gate_blockers": [],
     "metrics_strategy": {
       "cagr": 0.1449496479478598,
@@ -21,9 +21,9 @@
     "seal_required": false,
     "sealed": false,
     "status": "COMPLETE",
-    "updated_at_utc": "2026-06-09T21:16:18+00:00"
+    "updated_at_utc": "2026-06-15T12:38:12+00:00"
   },
-  "headline_de": "Bereit — öffentlicher Zugang freigegeben",
+  "headline_de": "Validierung abgeschlossen — Seal optional",
   "hub_url": "http://127.0.0.1:17890/",
   "join_url": "http://127.0.0.1:17890/join",
   "king_local_surface": true,
@@ -34,12 +34,12 @@
       "label_de": "Grundstein"
     },
     {
-      "done": true,
+      "done": false,
       "id": "preview",
       "label_de": "Systemcheck"
     },
     {
-      "done": true,
+      "done": false,
       "id": "remote",
       "label_de": "Welt-Zugang"
     },
@@ -49,25 +49,25 @@
       "label_de": "Validierung"
     },
     {
-      "done": true,
+      "done": false,
       "id": "launch",
       "label_de": "Welt-Start"
     }
   ],
-  "overall_pct": 100,
-  "phase": "ready",
+  "overall_pct": 92,
+  "phase": "h1_done",
   "preview": {
-    "detail_de": "Preview 9/10 · 3.8h frisch",
-    "ok": true,
+    "detail_de": "Preview 9/10 oder veraltet (139.2h)",
+    "ok": false,
     "passed": 9,
     "total": 10
   },
   "preview_url": "http://127.0.0.1:17890/",
-  "public_launch_ready": true,
+  "public_launch_ready": false,
   "remote": {
     "public_base_url": "http://127.0.0.1:17890",
-    "public_base_url_remote_de": "https://can-tribal-ward-polished.trycloudflare.com",
-    "remote_ready": true,
+    "public_base_url_remote_de": "https://pricing-syndicate-evans-bet.trycloudflare.com",
+    "remote_ready": false,
     "stable": false,
     "tunnel_token_set": false
   },
@@ -84,8 +84,8 @@
       "detail_de": "ULWO unter /download · Mitmachen unter /join",
       "id": "remote",
       "label_de": "Worker-Einladung",
-      "ok": true,
-      "value_de": "Bereit"
+      "ok": false,
+      "value_de": "Aus"
     },
     {
       "detail_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
@@ -95,12 +95,12 @@
       "value_de": "Abgeschlossen"
     },
     {
-      "detail_de": "Preview 9/10 · 3.8h frisch",
+      "detail_de": "Preview 9/10 oder veraltet (139.2h)",
       "id": "preview",
       "label_de": "Systemcheck",
-      "ok": true,
+      "ok": false,
       "value_de": "9/10 OK"
     }
   ],
-  "updated_at_utc": "2026-06-09T21:16:40+00:00"
+  "updated_at_utc": "2026-06-15T12:38:28+00:00"
 }

@@ -47,7 +47,7 @@ def main() -> int:
     session = us_equity_regular_session_open_now()
     print(f"US regular session open: {session.get('open')} — {session.get('reason_de', 'OK')}")
 
-    snap = ensure_live_quotes_fresh(root, force=False)
+    snap = ensure_live_quotes_fresh(root, force=False, owner="king_ops")
     prices = snap.get("executable_prices_eur") or {}
     ticker = "INTC_US_EQ"
     limit = round(float(prices.get("INTC") or 94.0), 2)

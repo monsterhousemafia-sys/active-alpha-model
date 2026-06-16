@@ -4,10 +4,12 @@ Status: PENDING (kein forum_post_ack.json)
 
 Nach anonymem Post in r/selfhosted + r/linux:
 
+Option A — Env:
 AA_FORUM_POST_URL='https://reddit.com/r/selfhosted/comments/DEIN_POST_ID/titel/' \
   bash tools/king_ops.sh forum-ack
 
-Optional zweiter Post:
-AA_FORUM_POST_URL='...' AA_FORUM_POST_URLS='url1,url2' — siehe analytics/reddit_forum_post.py
+Option B — Datei (Schleife liest automatisch):
+echo 'https://reddit.com/r/selfhosted/comments/...' > evidence/forum_post_url.txt
+bash tools/king_ops.sh spread-finish-anonym once
 
 Erfolg: evidence/forum_post_ack.json erzeugt.

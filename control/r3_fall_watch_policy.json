@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Fall-Wächter — read-only Intraday-Überwachung (kein Order-Trigger)",
+  "module": "analytics.prognosis_fall_watch",
+  "evidence_ref": "evidence/prognosis_fall_watch_latest.json",
+  "r3_panel_id": "r3-fall-watch",
+  "thresholds": {
+    "bad_day_portfolio_pct": -0.01,
+    "underperform_spy_bps": 50,
+    "postmortem_policy_ref": "control/r3_daily_postmortem_policy.json"
+  },
+  "confirmed_fall_requires": [
+    "portfolio_return_pct < bad_day_portfolio_pct",
+    "OR delta_vs_spy < -underperform_spy_bps"
+  ],
+  "orders_impact": "NONE",
+  "auto_execute": false,
+  "bash_entry_de": "bash tools/prognosis_fall_watch.sh once|loop|status",
+  "ops_kernel_step": "fall_watch",
+  "governance_de": [
+    "Nur Anzeige und Evidence — blockiert keine Orders direkt",
+    "Bestätigter Fall erscheint im R3-Alert-Banner (read-only)",
+    "T212 Trust Gate bleibt separater Order-Blocker"
+  ]
+}

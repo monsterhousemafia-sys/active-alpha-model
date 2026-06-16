@@ -1,0 +1,196 @@
+{
+  "as_of": "2026-06-09",
+  "criteria_de": [
+    "Uptrend-Anteil ≥60%: 15/15",
+    "Pullback-im-Uptrend heute ≥3: 3",
+    "gewichtetes mom_63 > 0.0: 0.2618"
+  ],
+  "governance_de": "Read-only — kein Order-Impact, kein Champion-Wechsel",
+  "headline_de": "✓ Swing-Theorie sichtbar — 3 Pullbacks im Uptrend, 15/15 Uptrends",
+  "metrics": {
+    "binom_swing_setup_p": 0.1509,
+    "n_continuation_today": 8,
+    "n_picks": 15,
+    "n_pullback_in_uptrend_today": 3,
+    "n_swing_setup": 10,
+    "n_uptrend": 15,
+    "portfolio_intraday_pct": -0.036,
+    "ret5d_mom63_alignment_pct": 81.8,
+    "weighted_mom_63": 0.2618,
+    "weighted_rev_5": 0.0049
+  },
+  "ok": true,
+  "picks": [
+    {
+      "manifest_today": "pullback_in_uptrend",
+      "mom_63": 0.1771,
+      "ret1d_pct": -3.449,
+      "ret5d_pct": 1.765,
+      "rev_5": -0.0023,
+      "swing_setup": true,
+      "ticker": "MUR",
+      "uptrend": true,
+      "weight_pct": 0.01
+    },
+    {
+      "manifest_today": "pullback_in_uptrend",
+      "mom_63": 0.404,
+      "ret1d_pct": -1.106,
+      "ret5d_pct": -7.343,
+      "rev_5": -0.0137,
+      "swing_setup": true,
+      "ticker": "EPAM",
+      "uptrend": true,
+      "weight_pct": 9.38
+    },
+    {
+      "manifest_today": "pullback_in_uptrend",
+      "mom_63": 0.1644,
+      "ret1d_pct": -0.012,
+      "ret5d_pct": 2.706,
+      "rev_5": 0.0275,
+      "swing_setup": true,
+      "ticker": "GM",
+      "uptrend": true,
+      "weight_pct": 7.59
+    },
+    {
+      "manifest_today": null,
+      "mom_63": 0.2054,
+      "ret1d_pct": null,
+      "ret5d_pct": null,
+      "rev_5": -0.053,
+      "swing_setup": true,
+      "ticker": "DNR",
+      "uptrend": true,
+      "weight_pct": 5.27
+    },
+    {
+      "manifest_today": null,
+      "mom_63": 0.1328,
+      "ret1d_pct": null,
+      "ret5d_pct": null,
+      "rev_5": -0.0287,
+      "swing_setup": true,
+      "ticker": "BHI",
+      "uptrend": true,
+      "weight_pct": 2.81
+    },
+    {
+      "manifest_today": null,
+      "mom_63": 0.2573,
+      "ret1d_pct": null,
+      "ret5d_pct": null,
+      "rev_5": -0.0274,
+      "swing_setup": true,
+      "ticker": "COV",
+      "uptrend": true,
+      "weight_pct": 2.55
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.2059,
+      "ret1d_pct": 0.312,
+      "ret5d_pct": 0.587,
+      "rev_5": -0.0153,
+      "swing_setup": true,
+      "ticker": "PFE",
+      "uptrend": true,
+      "weight_pct": 13.07
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.1735,
+      "ret1d_pct": 0.656,
+      "ret5d_pct": 3.174,
+      "rev_5": -0.0131,
+      "swing_setup": true,
+      "ticker": "GHC",
+      "uptrend": true,
+      "weight_pct": 7.45
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.1178,
+      "ret1d_pct": 1.704,
+      "ret5d_pct": 0.909,
+      "rev_5": -0.0286,
+      "swing_setup": true,
+      "ticker": "AME",
+      "uptrend": true,
+      "weight_pct": 2.59
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.1358,
+      "ret1d_pct": 2.244,
+      "ret5d_pct": 1.321,
+      "rev_5": -0.0092,
+      "swing_setup": true,
+      "ticker": "APD",
+      "uptrend": true,
+      "weight_pct": 5.39
+    },
+    {
+      "manifest_today": null,
+      "mom_63": 0.6985,
+      "ret1d_pct": null,
+      "ret5d_pct": null,
+      "rev_5": 0.0425,
+      "swing_setup": false,
+      "ticker": "GR",
+      "uptrend": true,
+      "weight_pct": 6.24
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.154,
+      "ret1d_pct": 0.517,
+      "ret5d_pct": 2.991,
+      "rev_5": 0.0072,
+      "swing_setup": false,
+      "ticker": "NWSA",
+      "uptrend": true,
+      "weight_pct": 5.33
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.3271,
+      "ret1d_pct": 0.746,
+      "ret5d_pct": 0.545,
+      "rev_5": 0.038,
+      "swing_setup": false,
+      "ticker": "OMC",
+      "uptrend": true,
+      "weight_pct": 14.85
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.1452,
+      "ret1d_pct": 1.123,
+      "ret5d_pct": 0.073,
+      "rev_5": 0.0472,
+      "swing_setup": false,
+      "ticker": "TDY",
+      "uptrend": true,
+      "weight_pct": 6.93
+    },
+    {
+      "manifest_today": "continuation",
+      "mom_63": 0.2813,
+      "ret1d_pct": 2.398,
+      "ret5d_pct": -3.493,
+      "rev_5": 0.0059,
+      "swing_setup": false,
+      "ticker": "CHTR",
+      "uptrend": true,
+      "weight_pct": 10.54
+    }
+  ],
+  "policy_ref": "control/swing_trading_theory_policy.json",
+  "schema_version": 1,
+  "shows_today": true,
+  "signal_date": "2026-06-09",
+  "theory_de": "Swing-Mapping: mom_63>0 + trend_50 (Uptrend) und rev_5<0 oder Tagesminus (Pullback) = mehr-Tage-Swing-Einstieg. Ergänzt h=1-Day-Alpha, ersetzt es nicht.",
+  "updated_at_utc": "2026-06-10T08:31:47+00:00"
+}

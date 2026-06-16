@@ -36,7 +36,10 @@
     "watch": "bash tools/king_ops.sh watch-bg",
     "distribute": "bash tools/king_ops.sh distribute",
     "agent": "bash tools/king_ops.sh agent",
-    "marktanalyse": "bash tools/marktanalyse_bash.sh start"
+    "marktanalyse": "bash tools/marktanalyse_bash.sh start",
+    "fall_watch": "bash tools/prognosis_fall_watch.sh once",
+    "t212_trust": "bash tools/king_ops.sh t212-trust-report",
+    "security_lock": "bash tools/project_security_lockdown.sh"
   },
   "rules_de": [
     "Schicht 1: king_ops status vor jeder Entscheidung",
@@ -44,6 +47,7 @@
     "Schicht 2: Seal nur bei pass_full_seal in Evaluation",
     "Schicht 3: König wählt king_ops — keine Shell-Prosa",
     "Schicht 4: Cursor nur Bridge request_de",
+    "Monitoring: Fall-Wächter + T212 Trust — read-only (control/r3_monitoring_governance.json)",
     "Matrix: control/king_responsibility_matrix_de.md"
   ],
   "evidence_outputs": [

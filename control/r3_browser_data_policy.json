@@ -8,10 +8,13 @@
     "AA_PRICE_DATA_SOURCE": "internet"
   },
   "sources_de": [
-    "yfinance — Tages-OHLCV für Signal/Prognose",
+    "yfinance — Tages-OHLCV für Signal/Prognose (primär, price_cache)",
+    "Stooq — read-only Cross-Check letzter Schlusskurs (Stufe B)",
     "yfinance — Live-Quotes und FX",
+    "T212 — Live-Quotes optional zur Beobachtung (Orders weiter T212-first)",
     "Sektor-Referenz — yfinance (bei vollem Ingest)"
   ],
+  "price_crosscheck_ref": "control/price_data_sources_policy.json",
   "session_autostart_ingest": true,
   "fast_ingest_on_hub_open": true,
   "ingest_timeout_s": 120,

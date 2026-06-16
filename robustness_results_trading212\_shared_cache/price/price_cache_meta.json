@@ -1,6 +1,9 @@
 {
   "schema_version": 1,
   "fingerprint": "a1731ed972b88dba50392188",
-  "created_at_utc": "2026-06-09T20:41:26.471768+00:00",
-  "tickers_loaded": 646
+  "created_at_utc": "2026-06-14T20:17:40.412725+00:00",
+  "tickers_loaded": 798,
+  "data_source": "fictive",
+  "fictive_through": "2026-06-12",
+  "fictive_seed": 42
 }

@@ -9,6 +9,7 @@ from typing import Any, Dict, List
 from aa_safe_io import atomic_write_json
 
 _EVIDENCE_REL = Path("evidence/r3_freigabe_latest.json")
+_PREP_COALESCE_SEC = 45.0
 
 FREIGABE_GOVERNANCE_NOTE_DE = (
     "Ehrlich: Gewinn „vollständig erwirtschaften“ ohne jeden Klick geht nur mit externer "
@@ -51,22 +52,47 @@ def package_ready(root: Path, *, refresh_orders: bool = False) -> Dict[str, Any]
     buys = [r for r in (orders.get("stocks") or []) if str(r.get("side") or "").upper() == "BUY"]
     notional = round(sum(float(r.get("notional_eur") or 0) for r in buys), 2)
     t212_ok = True
-    trust_msg = ""
+    trust_code = ""
     try:
         from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
 
         trust = assess_t212_trust_from_root(root, persist=False)
         t212_ok = bool(trust.get("orders_allowed"))
-        trust_msg = str(trust.get("message_de") or "")
+        trust_code = str(trust.get("reason_code") or "")
     except Exception:
         t212_ok = False
-        trust_msg = "T212 Trust Gate nicht erreichbar"
 
-    ready = bool(pkg.get("active")) and bool(buys) and notional > 0 and t212_ok
+    account_ok = True
+    try:
+        from analytics.r3_t212_account_identity import assess_account_confirmation
+
+        acct = assess_account_confirmation(root)
+        account_ok = not bool(acct.get("needs_confirmation"))
+    except Exception:
+        account_ok = False
+
+    needs_api = False
+    try:
+        from analytics.r3_t212_operator_api import needs_operator_api_setup
+
+        needs_api = needs_operator_api_setup(root)
+    except Exception:
+        needs_api = False
+
+    ready = (
+        bool(pkg.get("active"))
+        and bool(buys)
+        and notional > 0
+        and t212_ok
+        and account_ok
+        and not needs_api
+    )
+    from analytics.r3_operator_surface_text import freigabe_blocked_de
+
     headline = (
         f"Paket bereit — {notional:.0f} € · {len(buys)} Zeilen"
         if ready
-        else (trust_msg if not t212_ok else "Kein aktives Paket")
+        else freigabe_blocked_de(reason_code=trust_code or None, needs_api=needs_api)
     )
     return {
         "ready": ready,
@@ -76,6 +102,7 @@ def package_ready(root: Path, *, refresh_orders: bool = False) -> Dict[str, Any]
         "buy_count": len(buys),
         "notional_eur": notional,
         "headline_de": headline,
+        "account_confirmed": account_ok,
         "governance_note_de": freigabe_governance_note_de(),
     }
 
@@ -96,6 +123,7 @@ def _persist_prep(root: Path, *, prep_steps: List[Dict[str, Any]], status: Dict[
         "updated_at_utc": _utc_now(),
         "package_ready": ready,
         "freigabe_ready": ready,
+        "auto_prepared": True,
         "headline_de": status.get("headline_de"),
         "governance_note_de": status.get("governance_note_de") or freigabe_governance_note_de(),
         "buy_count": status.get("buy_count") or 0,
@@ -108,24 +136,58 @@ def _persist_prep(root: Path, *, prep_steps: List[Dict[str, Any]], status: Dict[
     return doc
 
 
-def auto_prepare_freigabe_for_desktop(root: Path) -> Dict[str, Any]:
+def auto_prepare_freigabe_for_desktop(root: Path, *, force: bool = False) -> Dict[str, Any]:
     """T212-Bond, Live-Kurse, Order-Oberfläche — vor Submit/desktop."""
     root = Path(root)
+    existing = _load_json(root / _EVIDENCE_REL)
+    if not force and existing.get("auto_prepared") and existing.get("updated_at_utc"):
+        try:
+            ts = datetime.fromisoformat(str(existing["updated_at_utc"]).replace("Z", "+00:00"))
+            if ts.tzinfo is None:
+                ts = ts.replace(tzinfo=timezone.utc)
+            age = (datetime.now(timezone.utc) - ts).total_seconds()
+            if age < _PREP_COALESCE_SEC:
+                status = package_ready(root, refresh_orders=False)
+                return {
+                    **existing,
+                    **status,
+                    "skipped": True,
+                    "coalesced": True,
+                    "coalesce_age_s": round(age, 1),
+                    "message_de": str(status.get("headline_de") or existing.get("headline_de") or "")[:160],
+                }
+        except (TypeError, ValueError):
+            pass
     prep_steps: List[Dict[str, Any]] = []
 
     try:
-        from analytics.r3_t212_api_bond import sync_r3_t212_api_bond
+        from analytics.r3_t212_api_bond import ensure_r3_t212_api_bond
 
-        bond = sync_r3_t212_api_bond(root, force=False, persist=True)
+        bond = ensure_r3_t212_api_bond(root, persist=True)
         prep_steps.append(
             {
                 "step": "t212_bond",
-                "ok": bool(bond.get("bonded")) and bool(bond.get("connected")),
-                "headline_de": str(bond.get("confirmation_de") or "")[:120],
+                "ok": bool(bond.get("setup_ok")),
+                "trusted": bool(bond.get("t212_trusted")),
+                "headline_de": str(bond.get("headline_de") or bond.get("confirmation_de") or "")[:120],
             }
         )
     except Exception as exc:
         prep_steps.append({"step": "t212_bond", "ok": False, "error": str(exc)[:80]})
+
+    try:
+        from analytics.r3_t212_account_identity import assess_account_confirmation
+
+        acct = assess_account_confirmation(root)
+        prep_steps.append(
+            {
+                "step": "t212_account",
+                "ok": not bool(acct.get("needs_confirmation")),
+                "headline_de": str(acct.get("message_de") or "")[:120],
+            }
+        )
+    except Exception as exc:
+        prep_steps.append({"step": "t212_account", "ok": False, "error": str(exc)[:80]})
 
     try:
         from analytics.live_trading_operations import sync_broker_and_quotes

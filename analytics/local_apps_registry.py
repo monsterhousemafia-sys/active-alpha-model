@@ -57,6 +57,7 @@ _EXEC_MIRROR_GET = frozenset(
         "/api/h1/asset",
         "/api/h1/artifacts",
         "/api/r3/mirror",
+        "/api/r3/t212",
         "/api/r3/operator-readiness",
         "/api/r3/freigabe",
         "/api/system/status",
@@ -67,6 +68,8 @@ _EXEC_MIRROR_POST = frozenset(
     {
         "/api/session/start",
         "/api/session/end",
+        "/api/r3/start",
+        "/api/r3/t212/credentials",
         "/api/r3/order",
         "/api/worker/register",
         "/api/worker/contribute",

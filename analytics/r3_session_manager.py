@@ -30,7 +30,7 @@ def load_login_config(root: Path) -> Dict[str, Any]:
         except (json.JSONDecodeError, OSError):
             pass
     return {
-        "post_login_path": "/desktop",
+        "post_login_path": "/r3",
         "login_path": "/login",
         "session_ttl_hours": 12,
         "require_login_before_desktop": True,
@@ -97,7 +97,7 @@ def mark_session_started(root: Path, *, user: Optional[str] = None) -> Dict[str,
         "user": user,
         "hostname": hostname,
         "started_at_utc": _utc_now(),
-        "post_login_path": str(cfg.get("post_login_path") or "/desktop"),
+        "post_login_path": str(cfg.get("post_login_path") or "/r3"),
         "graphical": bool(os.environ.get("DISPLAY") or os.environ.get("WAYLAND_DISPLAY")),
         "headline_de": f"R3-Sitzung · {user}@{hostname}",
     }
@@ -121,7 +121,7 @@ def resolve_hub_entry_path(root: Path) -> str:
     """Login oder Desktop — je nach aktiver R3-Sitzung."""
     cfg = load_login_config(root)
     if is_r3_session_active(root):
-        return str(cfg.get("post_login_path") or "/desktop")
+        return str(cfg.get("post_login_path") or "/r3")
     return str(cfg.get("login_path") or "/login")
 
 

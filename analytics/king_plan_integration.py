@@ -329,6 +329,15 @@ def rebuild_investment_plan_with_king(
     warnings: List[str] = []
     errors: List[str] = []
 
+    try:
+        from analytics.r3_t212_operator_api import operator_api_gate_block
+
+        block = operator_api_gate_block(root, pipeline_run_id=run_id)
+        if block:
+            return block
+    except Exception:
+        pass
+
     broker = sync_t212_realtime_for_plan(root, force=force_t212_sync, owner="king_plan")
     for err in broker.get("sync_errors") or []:
         warnings.append(str(err))
@@ -339,19 +348,23 @@ def rebuild_investment_plan_with_king(
 
         trust = assess_t212_trust_from_root(root, persist=True)
         if not trust.get("plan_capital_allowed", True):
+            from analytics.r3_operator_surface_text import operator_status_de
+
             return {
                 "ok": False,
                 "pipeline_run_id": run_id,
-                "error_de": trust.get("message_de") or "T212 nicht vertrauenswürdig — Plan-Skalierung blockiert",
+                "error_de": operator_status_de(str(trust.get("reason_code") or "")),
                 "t212_trust_reason": trust.get("reason_code"),
                 "broker_source": broker.get("source"),
                 "sync_errors": broker.get("sync_errors") or [],
             }
-    except Exception as exc:
+    except Exception:
+        from analytics.r3_operator_surface_text import OPERATOR_SYNC_WAIT
+
         return {
             "ok": False,
             "pipeline_run_id": run_id,
-            "error_de": f"T212 Trust Gate — {str(exc)[:80]}",
+            "error_de": OPERATOR_SYNC_WAIT,
         }
 
     planning = broker.get("r3_planning_cash_eur")

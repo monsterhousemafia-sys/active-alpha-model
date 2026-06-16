@@ -1,9 +1,11 @@
 {
+  "changes": 1,
   "code": 0,
-  "component": "cognitive-kernel",
-  "event": "succession_v2",
+  "component": "evidence-watch",
+  "event": "state_change",
+  "h1_status": "COMPLETE",
   "level": "info",
   "ok": true,
   "schema_version": 1,
-  "ts_utc": "2026-06-09T21:17:13+00:00"
+  "ts_utc": "2026-06-16T09:01:43+00:00"
 }

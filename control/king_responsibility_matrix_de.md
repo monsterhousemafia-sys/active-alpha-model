@@ -117,6 +117,23 @@ Schicht 4 Cursor: Notfall-Fallback (selten) — kein Standard-Bau
 
 ---
 
+## Monitoring-Governance (read-only, fail-closed)
+
+| Komponente | Policy | Evidence | Wirkung |
+|------------|--------|----------|---------|
+| **T212 Trust Gate** | `control/t212_trust_policy.json` | `evidence/t212_trust_latest.json` | Blockiert Orders/Plan-Skalierung ohne Live-Sync |
+| **Fall-Wächter** | `control/r3_fall_watch_policy.json` | `evidence/prognosis_fall_watch_latest.json` | R3-Panel `r3-fall-watch` — **kein** Order-Trigger |
+| **Security-Lock** | `control/project_security_lock.json` | `evidence/project_security_lock_latest.json` | Safety-Flags, Hooks, Secret-Rechte |
+| **SSoT** | `control/r3_monitoring_governance.json` | — | Kein Champion-Wechsel über Monitoring |
+
+```bash
+bash tools/king_ops.sh t212-trust-report
+bash tools/prognosis_fall_watch.sh status
+bash tools/project_security_lockdown.sh
+```
+
+---
+
 ## Verbotene Quer-Eingriffe
 
 | Von | Nicht tun |

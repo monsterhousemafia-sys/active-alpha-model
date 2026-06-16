@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "generated_at_utc": "2026-06-10T08:30:00+00:00",
+  "headline_de": "R3 Monitoring-Governance — Trust, Fall-Wächter, Security (fail-closed)",
+  "champion_note_de": "Kein Champion-Wechsel — Monitoring ändert keine Signal-Gewichte oder Promotion.",
+  "invariants": {
+    "auto_research_enabled": false,
+    "auto_promote_paper_enabled": false,
+    "auto_promote_signal_enabled": false,
+    "auto_execute_real_money_enabled": false,
+    "orders_require_gui_confirmation": true,
+    "champion_change_requires_external_approval": true
+  },
+  "components": [
+    {
+      "id": "live_quote_access_gate",
+      "policy_ref": "control/r3_live_quote_access_policy.json",
+      "evidence_ref": "evidence/r3_live_quote_access_latest.json",
+      "module": "analytics.r3_live_quote_access_gate",
+      "blocks_unauthorized_refresh": true,
+      "read_cached_snapshot_allowed": true,
+      "bash_de": "bash tools/king_ops.sh r3-quotes --force"
+    },
+    {
+      "id": "t212_trust_gate",
+      "policy_ref": "control/t212_trust_policy.json",
+      "evidence_ref": "evidence/t212_trust_latest.json",
+      "quantified_ref": "evidence/t212_trust_quantified_latest.json",
+      "module": "integrations.trading212.t212_trust_gate",
+      "blocks_orders_when_untrusted": true,
+      "blocks_plan_scaling_when_untrusted": true,
+      "bash_de": "bash tools/king_ops.sh t212-trust-report"
+    },
+    {
+      "id": "fall_watch",
+      "policy_ref": "control/r3_fall_watch_policy.json",
+      "evidence_ref": "evidence/prognosis_fall_watch_latest.json",
+      "module": "analytics.prognosis_fall_watch",
+      "r3_ui_ref": "analytics/r3_mirror_view._render_fall_watch_section",
+      "orders_impact": "NONE",
+      "bash_de": "bash tools/prognosis_fall_watch.sh loop"
+    },
+    {
+      "id": "project_security_lock",
+      "policy_ref": "control/project_security_lock.json",
+      "evidence_ref": "evidence/project_security_lock_latest.json",
+      "module": "tools.project_security_lockdown",
+      "bash_de": "bash tools/project_security_lockdown.sh"
+    },
+    {
+      "id": "swing_trading_theory",
+      "policy_ref": "control/swing_trading_theory_policy.json",
+      "evidence_ref": "evidence/swing_trading_theory_latest.json",
+      "module": "analytics.swing_trading_theory_check",
+      "orders_impact": "NONE",
+      "bash_de": "bash tools/king_ops.sh swing-theory",
+      "note_de": "Tagescheck: Uptrend + Pullback im Plan-Portfolio — read-only"
+    },
+    {
+      "id": "forschungsprojekt",
+      "policy_ref": "control/king_32b_forschungsprojekt.json",
+      "evidence_ref": "evidence/king_32b_forschung_latest.json",
+      "bash_de": "bash tools/king_ops.sh king-forschung",
+      "note_de": "Forschung read-only bis externe operative Phase — kein auto_research"
+    }
+  ],
+  "ops_kernel_ref": "control/r3_ops_kernel_policy.json",
+  "strategic_governance_ref": "control/strategic_governance.json",
+  "rules_de": [
+    "T212 untrusted → Orders und Plan-Skalierung blockiert (Trust Gate)",
+    "Fall-Wächter → nur R3-Anzeige + Evidence, kein Auto-Order",
+    "Security-Lock → Safety-Flags, Hooks, Secret-Rechte vor Developer-Release",
+    "Governance-Champion und Signal-Profil nur via EXTERNAL_REVIEW — nicht via Monitoring"
+  ]
+}

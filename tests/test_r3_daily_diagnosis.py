@@ -7,6 +7,7 @@ import pandas as pd
 from aa_r3_daily_diagnosis import (
     build_refinement_hints,
     compute_live_market_regime,
+    enrich_snapshot_market_regime,
     load_stored_signal_diagnosis,
     verify_r3_diagnosis_against_daily_data,
     write_r3_diagnosis_manifest,
@@ -75,6 +76,32 @@ def test_build_refinement_hints_regime_drift():
     )
     assert any("Regime-Drift" in h for h in hints)
     assert any("Preis-Stand" in h for h in hints)
+
+
+def test_enrich_snapshot_market_regime_fills_missing_ret63(tmp_path: Path):
+    import active_alpha_model as aam
+    from aa_portfolio import determine_risk_on
+
+    out = tmp_path / "model_out"
+    out.mkdir()
+    closes = [100 + i * 0.4 for i in range(250)]
+    _write_price_panel(out, benchmark="SPY", closes=closes)
+    cfg = aam.BacktestConfig(benchmark="SPY")
+    latest = pd.bdate_range("2024-01-01", periods=len(closes))[-1]
+    snap = pd.DataFrame(
+        {
+            "date": [latest],
+            "ticker": ["AAA"],
+            "market_trend_200": [1.0],
+            "market_ret_63": [float("nan")],
+        }
+    )
+    mt = float(snap["market_trend_200"].iloc[0])
+    assert determine_risk_on(mt, -1.0, cfg) is False
+    enriched = enrich_snapshot_market_regime(snap, cfg, out, as_of=latest)
+    mr = float(enriched["market_ret_63"].iloc[0])
+    assert mr > -0.07
+    assert determine_risk_on(mt, mr, cfg) is True
 
 
 def test_verify_r3_diagnosis_against_daily_data(tmp_path: Path, monkeypatch):

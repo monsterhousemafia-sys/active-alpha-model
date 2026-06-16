@@ -1,28 +1,313 @@
 {
-  "api_query_de": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/analytics/runtime_api_server.py --query h1.status",
-  "errors": [],
-  "headline_de": "Linux Runtime installiert — Slices, Limits, API, Watch",
-  "installed": [
-    "aa-runtime.slice",
-    "aa-h1.slice",
-    "aa-hub.slice",
-    "aa-tunnel.slice",
-    "aa-agent.slice",
-    "active-alpha-preview-hub.service",
-    "active-alpha-remote-tunnel.service",
-    "active-alpha-preview-worker.service",
-    "active-alpha-runtime-api.service",
-    "active-alpha-evidence-watch.service",
-    "active-alpha-evidence-watch.timer",
-    "active-alpha-spread-tick.service",
-    "active-alpha-spread-tick.timer",
-    "active-alpha-tunnel-stable.service",
-    "active-alpha-tunnel-stable.timer",
-    "active-alpha-h1-resume.service",
-    "active-alpha-h1-resume.timer"
+  "cognitive_kernel": {
+    "headline_de": "Cognitive Kernel v2 aktiv — Nachfolger des alten Steuerungsmodells",
+    "installed_at_utc": "2026-06-14T17:41:29+00:00",
+    "manifest": {
+      "components": [
+        "aa_linux_runtime",
+        "aa_scheduler",
+        "ebpf_observer",
+        "runtime_api",
+        "agent_mandate",
+        "kernel_boundary_policy",
+        "operator_sovereignty",
+        "alpha_model_interface_kernel"
+      ],
+      "installed_at_utc": "2026-06-14T17:41:25+00:00",
+      "kernel_generation": 2,
+      "linux_mainline_de": "Unverändert — Nachfolge nur auf Control-Plane-Ebene",
+      "name_de": "Cognitive Kernel v2",
+      "schema_version": 2,
+      "successor_de": "Ersetzt ad-hoc Hub/H1-Governance als einheitliche Steuerungsschicht",
+      "systemd_units": [
+        "active-alpha-cognitive-scheduler.timer",
+        "active-alpha-cognitive-observe.timer"
+      ]
+    },
+    "observer": {
+      "ebpf": {
+        "available": false,
+        "mode": "bpftrace"
+      },
+      "fd_pressure": [],
+      "headline_de": "Kernel-Observer OK (proc/bpftrace)",
+      "observed_at_utc": "2026-06-14T17:41:29+00:00",
+      "ok": true,
+      "processes": {
+        "mode": "proc",
+        "samples": [
+          {
+            "cmd": "/bin/bash -O extglob -c snap=$(command cat <&3) && builtin shopt -s extglob && builtin eval -- \"$snap\" && { builtin set +u 2>/dev/null || true; builtin eval \"${__CURSOR_SANDBOX_ENV_RESTORE:-}\" 2>/dev/",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "pid": "18256"
+          },
+          {
+            "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/ai_kernel.py runtime-install",
+            "cpu": "21.0",
+            "mem": "0.5",
+            "pid": "18452"
+          },
+          {
+            "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/preview_hub.py --daemon --port 17890",
+            "cpu": "1.4",
+            "mem": "0.0",
+            "pid": "19272"
+          },
+          {
+            "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/analytics/runtime_api_server.py --serve",
+            "cpu": "0.5",
+            "mem": "0.0",
+            "pid": "19276"
+          },
+          {
+            "cmd": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/run_remote_tunnel.py",
+            "cpu": "0.9",
+            "mem": "0.0",
+            "pid": "19324"
+          },
+          {
+            "cmd": "/bin/bash -lc while true; do /home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/tools/preview_federation_worker.py --join http://127.0.0.1:17890 --no-preview --onc",
+            "cpu": "0.0",
+            "mem": "0.0",
+            "pid": "19335"
+          },
+          {
+            "cmd": "/home/machinax7/active_alpha_model/tools/bin/cloudflared tunnel --url http://127.0.0.1:17890 --no-autoupdate",
+            "cpu": "1.3",
+            "mem": "0.0",
+            "pid": "19418"
+          }
+        ]
+      },
+      "schema_version": 1
+    },
+    "ok": true,
+    "runtime": {
+      "api_query_de": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/analytics/runtime_api_server.py --query h1.status",
+      "errors": [],
+      "headline_de": "Linux Runtime installiert — Slices, Limits, API, Watch",
+      "installed": [
+        "aa-runtime.slice",
+        "aa-h1.slice",
+        "aa-hub.slice",
+        "aa-tunnel.slice",
+        "aa-agent.slice",
+        "active-alpha-preview-hub.service",
+        "active-alpha-remote-tunnel.service",
+        "active-alpha-preview-worker.service",
+        "active-alpha-runtime-api.service",
+        "active-alpha-evidence-watch.service",
+        "active-alpha-evidence-watch.timer",
+        "active-alpha-spread-tick.service",
+        "active-alpha-spread-tick.timer",
+        "active-alpha-tunnel-stable.service",
+        "active-alpha-tunnel-stable.timer",
+        "active-alpha-h1-resume.service",
+        "active-alpha-h1-resume.timer"
+      ],
+      "installed_at_utc": "2026-06-14T17:41:25+00:00",
+      "journal_de": "journalctl --user -t aa-hub -t aa-runtime-api -t aa-evidence-watch -f",
+      "schema_version": 1,
+      "unit_dir": "/home/machinax7/.config/systemd/user"
+    },
+    "scheduler": {
+      "actions": [
+        {
+          "action": "hub_ensure",
+          "port": 17890
+        },
+        {
+          "action": "orchestrator_dispatch",
+          "detail": {
+            "allowlist": [
+              "cognitive-status",
+              "h1-status",
+              "launch-status",
+              "lean-max",
+              "lean-on",
+              "lean-turbo",
+              "learn",
+              "r3-preserve",
+              "spread-remote-status",
+              "warnings"
+            ],
+            "executed": [],
+            "fast_mode": true,
+            "headline_de": "Orchestrator-Dispatch: 0/0 OK",
+            "last_cmd_utc": {
+              "h1-status": "2026-06-14T17:36:33+00:00",
+              "launch-status": "2026-06-14T17:36:33+00:00"
+            },
+            "ok": true,
+            "ran_at_utc": "2026-06-14T17:41:26+00:00",
+            "schema_version": 1,
+            "skipped": [
+              {
+                "cmd": "h1-status",
+                "reason_de": "Cooldown 5min (5min seit letztem Lauf)"
+              },
+              {
+                "cmd": "h1-finish",
+                "reason_de": "nicht in dispatch_allowlist"
+              },
+              {
+                "cmd": "launch-status",
+                "reason_de": "Cooldown 10min (5min seit letztem Lauf)"
+              }
+            ]
+          }
+        },
+        {
+          "action": "r3_background_refresh",
+          "ok": false,
+          "steps": [
+            {
+              "id": "internet",
+              "ok": true
+            },
+            {
+              "id": "quotes",
+              "ok": true,
+              "price_latest": null,
+              "quote_status": null,
+              "skipped": true
+            },
+            {
+              "cash_eur": null,
+              "detail_de": "✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur w",
+              "id": "t212_sync",
+              "ok": true
+            },
+            {
+              "id": "t212_trust",
+              "ok": false,
+              "reason": "CONNECTION_FAILED_RETRY_AVAILABLE"
+            },
+            {
+              "buys": 0,
+              "cash_eur": null,
+              "id": "prognosis",
+              "ok": false,
+              "positions_count": null,
+              "skipped": false,
+              "trusted": false
+            },
+            {
+              "active": false,
+              "functions_active": 0,
+              "id": "rebalance",
+              "ok": true,
+              "rebalance_due": true
+            },
+            {
+              "bad_day": false,
+              "id": "postmortem",
+              "ok": true,
+              "summary_de": "Plan-Portfolio +nan % · SPY +nan % · Delta +nan %",
+              "voice_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 118 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p Tagesbilanz: Plan-Portfolio +nan % · SPY +nan % · Delta +nan %."
+            },
+            {
+              "id": "engine",
+              "ok": false,
+              "signal_date": "2026-06-09",
+              "steps_ok": 5
+            }
+          ]
+        }
+      ],
+      "headline_de": "Scheduler: 3 Aktion(en)",
+      "ok": true,
+      "ran_at_utc": "2026-06-14T17:41:29+00:00",
+      "schema_version": 1
+    },
+    "schema_version": 2
+  },
+  "federation_systemd": {
+    "api_query_de": "/home/machinax7/active_alpha_model/.venv/bin/python3 /home/machinax7/active_alpha_model/analytics/runtime_api_server.py --query h1.status",
+    "errors": [],
+    "headline_de": "Linux Runtime installiert — Slices, Limits, API, Watch",
+    "installed": [
+      "aa-runtime.slice",
+      "aa-h1.slice",
+      "aa-hub.slice",
+      "aa-tunnel.slice",
+      "aa-agent.slice",
+      "active-alpha-preview-hub.service",
+      "active-alpha-remote-tunnel.service",
+      "active-alpha-preview-worker.service",
+      "active-alpha-runtime-api.service",
+      "active-alpha-evidence-watch.service",
+      "active-alpha-evidence-watch.timer",
+      "active-alpha-spread-tick.service",
+      "active-alpha-spread-tick.timer",
+      "active-alpha-tunnel-stable.service",
+      "active-alpha-tunnel-stable.timer",
+      "active-alpha-h1-resume.service",
+      "active-alpha-h1-resume.timer"
+    ],
+    "installed_at_utc": "2026-06-14T17:41:51+00:00",
+    "journal_de": "journalctl --user -t aa-hub -t aa-runtime-api -t aa-evidence-watch -f",
+    "schema_version": 1,
+    "unit_dir": "/home/machinax7/.config/systemd/user"
+  },
+  "headline_de": "Cognitive Kernel v2 + Federation systemd (Hub/Tunnel/Worker)",
+  "hub": {
+    "method": "hub_runtime.ensure_running",
+    "ok": true,
+    "port": 17890
+  },
+  "installed_at_utc": "2026-06-14T17:41:51+00:00",
+  "kernel_supremacy": {
+    "authoritative": true,
+    "kernel_name_de": "Cognitive Kernel v2",
+    "legacy_blocked": true,
+    "linux_mainline_de": "Ubuntu bleibt — nur Userspace-Steuerung ist autoritativ.",
+    "schema_version": 1,
+    "sole_orchestrator": "active-alpha-cognitive-scheduler.timer",
+    "sole_status_spine": "preview_system_status",
+    "supersedes_de": [
+      "Legacy daily timers",
+      "stable-server / server-bootstrap",
+      "Parallele Hub-Systemd-Könige"
+    ],
+    "supremacy_de": "Der einzig wahre Steuerungskernel — R3 Bau-Kernel, aa_scheduler, Preview Hub."
+  },
+  "legacy_skipped_de": "stable-server/bootstrap nicht reaktiviert — Hub/Tunnel/Worker via aa_linux_runtime",
+  "messages_de": [
+    "Cognitive Kernel v2 aktiv — Nachfolger des alten Steuerungsmodells",
+    "Hub :17890",
+    "Linux Runtime installiert — Slices, Limits, API, Watch"
   ],
-  "installed_at_utc": "2026-06-09T21:16:17+00:00",
-  "journal_de": "journalctl --user -t aa-hub -t aa-runtime-api -t aa-evidence-watch -f",
+  "ok": true,
   "schema_version": 1,
-  "unit_dir": "/home/machinax7/.config/systemd/user"
+  "timer_catalog": {
+    "control_plane": "v2",
+    "generated_at_utc": "2026-06-14T17:41:29+00:00",
+    "schema_version": 3,
+    "source": "linux_runtime_unified",
+    "timers": [
+      {
+        "command": "ai_kernel cognitive-scheduler",
+        "id": "cognitive-scheduler",
+        "label_de": "Cognitive Scheduler v2",
+        "plane": "v2",
+        "schedule_de": "alle 5 min — H1, Hub, Prioritäten"
+      },
+      {
+        "command": "ai_kernel cognitive-observe",
+        "id": "cognitive-observe",
+        "label_de": "Kernel Observer",
+        "plane": "v2",
+        "schedule_de": "alle 10 min — ebpf_observer"
+      },
+      {
+        "command": "tools/linux_boot_services.sh",
+        "id": "boot",
+        "label_de": "Boot-Services",
+        "plane": "v2",
+        "schedule_de": "3 min nach Anmeldung/Boot"
+      }
+    ]
+  }
 }

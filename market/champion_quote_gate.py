@@ -65,7 +65,9 @@ def require_champion_quote_coverage(
     elif refresh_if_stale:
         from market.live_quote_engine import ensure_live_quotes_fresh_bounded
 
-        snap = ensure_live_quotes_fresh_bounded(root, force=True, timeout_s=45.0)
+        snap = ensure_live_quotes_fresh_bounded(
+            root, force=True, timeout_s=45.0, owner="champion_quote_gate"
+        )
     else:
         from market.live_quote_engine import load_live_quote_snapshot
 

@@ -7,13 +7,13 @@
     "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
     "model": "qwen2.5-coder:32b",
     "next_growth_de": [
-      "python3 tools/ai_kernel.py evolve",
-      "H1-Seal prüfen"
+      "python3 tools/ai_kernel.py learn",
+      "/beitrag forschung <Idee>"
     ],
     "ollama_ok": true,
-    "phase": "forschung_reif",
-    "phase_de": "Learn/Evolve + Forschungszweig + öffentliches Lernen",
-    "phase_kpi_de": "Stufe-A KPI — wachstum=True reif=True",
+    "phase": "wachstum",
+    "phase_de": "trade_decisions + Gas/Sell + king-trading aktiv",
+    "phase_kpi_de": "Stufe-A KPI — wachstum=True reif=False",
     "wants_to_grow_de": "32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence."
   },
   "growth_commands_de": [
@@ -41,10 +41,12 @@
   ],
   "schema_version": 1,
   "stufe_a_kpis": {
-    "blockers": [],
+    "blockers": [
+      "prognosis_fresh"
+    ],
     "checks": [
       {
-        "detail_de": "signal=2026-06-09 ok=True",
+        "detail_de": "signal=2026-06-12 ok=True",
         "id": "prediction_ready",
         "pass": true
       },
@@ -60,10 +62,10 @@
         "value": 0.782267724738531
       },
       {
-        "age_s": 7.65948,
-        "detail_de": "age_s=7.7 max=900.0",
+        "age_s": 61503.406549,
+        "detail_de": "age_s=61503.4 max=900.0",
         "id": "prognosis_fresh",
-        "pass": true
+        "pass": false
       },
       {
         "detail_de": "score=63.0 min=40.0",
@@ -71,10 +73,10 @@
         "pass": true
       }
     ],
-    "evaluated_at_utc": "2026-06-09T21:16:53+00:00",
-    "forschung_reif_ok": true,
-    "ok": true,
+    "evaluated_at_utc": "2026-06-15T12:38:32+00:00",
+    "forschung_reif_ok": false,
+    "ok": false,
     "wachstum_ok": true
   },
-  "updated_at_utc": "2026-06-09T21:17:08+00:00"
+  "updated_at_utc": "2026-06-15T12:38:45+00:00"
 }

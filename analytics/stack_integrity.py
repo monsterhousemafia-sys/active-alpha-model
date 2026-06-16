@@ -27,7 +27,7 @@ from analytics.r3_runtime import (
 
 _EVIDENCE_REL = Path("evidence/stack_integrity_latest.json")
 _HUB_ATTEMPTS = 2
-_MIRROR_RETRY_SEC = 3.0
+_MIRROR_RETRY_SEC = 18.0
 
 
 def _utc_now() -> str:
@@ -194,8 +194,15 @@ def ensure_mirror_ready(
         if is_mirror_api_ready(int(port)):
             return True
         time.sleep(0.25)
+    live_prep = True
     try:
-        warm_surface_cache(root, port=int(port), fast=True, block=True, live_prep=True)
+        from analytics.r3_hw_software_bond import resolve_r3_runtime_tuning
+
+        live_prep = bool((resolve_r3_runtime_tuning(root).get("cache") or {}).get("warm_live_prep", True))
+    except Exception:
+        live_prep = True
+    try:
+        warm_surface_cache(root, port=int(port), fast=True, block=True, live_prep=live_prep)
     except Exception:
         pass
     return is_mirror_api_ready(int(port))
@@ -246,6 +253,22 @@ def repair_stack(
     prepare_session(root)
     steps.append({"step": "prepare_session", "ok": True})
 
+    hw_doc: Dict[str, Any] = {}
+    try:
+        from analytics.r3_hw_software_bond import sync_r3_hw_software_bond
+
+        hw_doc = sync_r3_hw_software_bond(root, persist=True)
+        steps.append(
+            {
+                "step": "hw_software_bond",
+                "ok": True,
+                "pressure_class": hw_doc.get("pressure_class"),
+                "headline_de": hw_doc.get("headline_de"),
+            }
+        )
+    except Exception as exc:
+        steps.append({"step": "hw_software_bond", "ok": False, "error_de": str(exc)[:120]})
+
     hub_port = 0
     try:
         hub_port = ensure_hub_reliable(root, port=int(port))
@@ -282,18 +305,29 @@ def repair_stack(
     except Exception as exc:
         steps.append({"step": "align_r3_surface", "ok": False, "error_de": str(exc)[:120]})
 
+    path = surface_path or default_surface_path(root)
     mirror_ok = ensure_mirror_ready(root, port=int(hub_port), warm=not bool(align_doc.get("ok")))
     steps.append({"step": "ensure_mirror", "ok": mirror_ok})
 
-    surface_ok = False
-    if mirror_ok:
-        surface_ok = ensure_surface_ready(root, port=int(hub_port), warm=True)
+    surface_ok = ensure_surface_ready(
+        root,
+        port=int(hub_port),
+        path=path,
+        warm=not mirror_ok,
+    )
     steps.append({"step": "ensure_surface", "ok": surface_ok})
 
     launch_doc: Dict[str, Any] = {}
     has_display = _has_display()
-    path = surface_path or default_surface_path(root)
-    if launch_cockpit_window and has_display and mirror_ok:
+    if launch_cockpit_window and has_display and (mirror_ok or surface_ok):
+        try:
+            from analytics.desktop_shell_cache import warm_desktop_cache
+
+            warm_desktop_cache(root, port=int(hub_port), fast=True, block=True, live_prep=False)
+            steps.append({"step": "warm_surface_cache", "ok": True})
+        except Exception as exc:
+            steps.append({"step": "warm_surface_cache", "ok": False, "error_de": str(exc)[:80]})
+    if launch_cockpit_window and has_display and (mirror_ok or surface_ok):
         launch_doc = launch_cockpit(
             root,
             surface_path=path,

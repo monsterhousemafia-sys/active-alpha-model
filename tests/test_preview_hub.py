@@ -48,9 +48,8 @@ def test_desktop_shell_page_fast(tmp_path: Path, monkeypatch) -> None:
     )
     body = render_desktop_shell_page(tmp_path, port=17890)
     text = body.decode("utf-8")
-    assert "r3-desktop" in text
     assert "r3-mirror-results" in text
-    assert "Active Alpha" in text
+    assert "R3" in text
     assert "r3-freigabe-btn" in text
     assert 'class="r3-stock-btn' not in text
     assert "Einzelaktien" not in text

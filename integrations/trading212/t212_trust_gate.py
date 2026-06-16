@@ -110,15 +110,9 @@ def assess_t212_trust(broker: Dict[str, Any], *, root: Optional[Path] = None) ->
 
     display_ok = trusted or (age is not None and age <= max_display and broker.get("cash_eur") is not None)
 
-    when = str(sync_utc or "")[:19].replace("T", " ")
-    if trusted:
-        msg = f"✓ T212 live — Sync {when or '—'}"
-    elif code == "CREDENTIALS_EXPIRED_SHOWING_CACHED_DATA":
-        msg = f"✗ T212 API-Key prüfen — Stand {when or '—'} (Cache)"
-    elif code == "STALE_SYNC":
-        msg = f"✗ Kontostand veraltet — Stand {when or '—'} · «Aktualisieren»"
-    else:
-        msg = f"✗ T212 nicht vertrauenswürdig — {reason}"
+    from analytics.r3_operator_surface_text import operator_status_de
+
+    msg = operator_status_de(code if not trusted else "OK")
 
     doc = {
         "schema_version": 1,
@@ -145,6 +139,19 @@ def assess_t212_trust(broker: Dict[str, Any], *, root: Optional[Path] = None) ->
 
 def assess_t212_trust_from_root(root: Path, *, persist: bool = True) -> Dict[str, Any]:
     root = Path(root)
+    try:
+        from analytics.r3_t212_operator_api import needs_operator_api_setup
+
+        if needs_operator_api_setup(root):
+            return assess_t212_trust(
+                {
+                    "status": "NOT_CONFIGURED_SETUP_AVAILABLE_IN_GUI",
+                    "credentials_configured": False,
+                },
+                root=root if persist else None,
+            )
+    except Exception:
+        pass
     broker: Dict[str, Any] = {}
     try:
         from integrations.trading212.t212_readonly_connection_service import load_cached_broker_status
@@ -165,4 +172,12 @@ def assess_t212_trust_from_root(root: Path, *, persist: bool = True) -> Dict[str
                 "positions_count": bond.get("positions_count"),
                 "last_error": bond.get("message_de"),
             }
+    if not broker.get("credentials_configured"):
+        try:
+            from analytics.r3_t212_account_identity import credentials_fingerprint
+
+            if credentials_fingerprint(root):
+                broker = {**broker, "credentials_configured": True}
+        except Exception:
+            pass
     return assess_t212_trust(broker, root=root if persist else None)

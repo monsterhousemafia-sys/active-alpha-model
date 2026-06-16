@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "headline_de": "Prognose-Selbstkalibrierung — Fakten vs. Überzeugung",
+  "evidence_path": "evidence/prediction_self_calibration_latest.json",
+  "include_sources": [
+    "control/prediction_readiness.json",
+    "model_output_sp500_pit_t212/r3_daily_diagnosis.json",
+    "evidence/r3_daily_postmortem_latest.json",
+    "evidence/price_crosscheck_latest.json",
+    "control/h1_governance_status.json",
+    "control/operational_refinement_state.json"
+  ],
+  "thresholds": {
+    "min_h1_daily_hit_rate_inform": 0.52,
+    "regime_match_required": true
+  },
+  "safety_de": "Read-only — misst Treffer/Drift, ändert keine Signalgewichte"
+}

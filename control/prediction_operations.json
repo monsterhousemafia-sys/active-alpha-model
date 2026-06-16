@@ -66,11 +66,11 @@
   "strategic_model": {
     "effective_orders_profile": "r3_w075_production",
     "manifest_ref": "control/strategic_governance.json",
-    "note_de": "Governance-Champion R0_LEGACY_ENSEMBLE (M9-freigegeben) ist die autorisierte Produktionsidentität. Live-Signal DAILY_ALPHA_H1 über Profil daily_alpha_h1 ist experimentell bis H1-Seal. Orders nutzen r3_w075_production solange H1 unsealed. Validierter Fallback: R3_w075_q065_noexit.",
+    "note_de": "Governance-Champion R0_LEGACY_ENSEMBLE (M9-freigegeben) ist die autorisierte Produktionsidentität. Live-Signal DAILY_ALPHA_H1 über Profil daily_alpha_h1 ist experimentell bis H1-Seal. Orders nutzen r3_w075_production solange H1 unsealed. Validierter Fallback: R3_w075_q065_noexit. Monitoring (T212 Trust, Fall-Wächter, Security-Lock) ist read-only/fail-closed — kein Champion-Wechsel, kein auto_execute.",
     "production_fallback_variant": "R3_w075_q065_noexit",
     "tier_1_governance_champion": "R0_LEGACY_ENSEMBLE",
     "tier_2_live_signal_profile": "daily_alpha_h1",
     "tier_2_live_signal_variant": "DAILY_ALPHA_H1"
   },
-  "updated_at_utc": "2026-06-09T18:44:48+00:00"
+  "updated_at_utc": "2026-06-14T20:15:09+00:00"
 }

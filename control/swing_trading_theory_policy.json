@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Swing-Trading-Theorie — Tages-Evidenz (read-only)",
+  "module": "analytics.swing_trading_theory_check",
+  "evidence_ref": "evidence/swing_trading_theory_latest.json",
+  "theory_de": "Medium-Term-Uptrend (mom_63_21>0, trend_50) + Pullback (rev_5<0 oder Tagesminus) = Swing-Einstiegszone",
+  "horizon_note_de": "Champion R3: 5d Rebalance / h=10 (Swing-Charakter). Live-Signal daily_alpha_h1: h=1 — ergänzend, nicht identisch.",
+  "min_uptrend_share": 0.6,
+  "min_pullback_in_uptrend_today": 3,
+  "min_weighted_mom_63": 0.0,
+  "orders_impact": "NONE",
+  "ops_kernel_step": "swing_theory",
+  "bash_de": "bash tools/king_ops.sh swing-theory"
+}

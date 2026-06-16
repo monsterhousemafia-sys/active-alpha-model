@@ -1,207 +1,224 @@
 {
   "auto_refresh_seconds": 60,
   "champion_quote_coverage": {
-    "coverage_ok": false,
-    "coverage_ratio": 0.3571,
-    "covered_count": 5,
-    "missing_symbols": [
-      "STX",
-      "WDC",
-      "SNDK",
-      "CIEN",
-      "AMD",
-      "CAT",
-      "MU",
-      "VRT",
-      "TXN"
-    ],
+    "coverage_ok": true,
+    "coverage_ratio": 1.0,
+    "covered_count": 14,
+    "missing_symbols": [],
     "required_count": 14
   },
-  "data_quality_gate": "PARTIAL_CHAMPION_QUOTES",
+  "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
   "executable_prices_eur": {
-    "GOOG": 313.8518,
-    "GOOGL": 315.5584,
-    "INTC": 93.4911,
-    "ON": 101.3571,
-    "OXY": 48.9893
+    "AMD": 473.8306,
+    "CAT": 807.9849,
+    "CIEN": 394.6699,
+    "GOOG": 318.3726,
+    "GOOGL": 320.1759,
+    "INTC": 109.8795,
+    "MU": 925.9955,
+    "ON": 107.4148,
+    "OXY": 47.0414,
+    "SNDK": 1814.0114,
+    "STX": 858.6286,
+    "TXN": 269.2177,
+    "VRT": 268.7733,
+    "WDC": 557.3605
   },
-  "forward_batch_generated_at_utc": "2026-06-09T21:47:24+00:00",
+  "forward_batch_generated_at_utc": "2026-06-15T17:41:06+00:00",
   "freshness": {
-    "age_seconds": 0.7,
-    "calculation_allowed": false,
-    "data_quality_gate": "PARTIAL_CHAMPION_QUOTES",
-    "executable_symbol_count": 5,
+    "age_seconds": 1.1,
+    "calculation_allowed": true,
+    "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
+    "executable_symbol_count": 14,
     "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
-    "generated_at_utc": "2026-06-09T21:47:26+00:00",
+    "generated_at_utc": "2026-06-15T17:41:12+00:00",
     "max_age_seconds": 120,
-    "reason": "Champion-Kurse unvollständig (5/14) — fehlend: STX, WDC, SNDK, CIEN, AMD",
-    "status": "STALE"
+    "reason": "Live-Preise aktuell — Berechnung freigegeben.",
+    "status": "FRESH"
   },
   "fx_runtime_gate": "PASS_READ_ONLY_FX_OBSERVATION",
-  "generated_at_utc": "2026-06-09T21:47:26+00:00",
+  "generated_at_utc": "2026-06-15T17:41:12+00:00",
   "incident_count": 0,
   "max_age_seconds": 120,
   "price_sanitization": {
     "adjustments": {},
+    "anchor_used": true,
     "blocked_symbols": {},
     "executable_prices_eur": {
-      "GOOG": 313.8518,
-      "GOOGL": 315.5584,
-      "INTC": 93.4911,
-      "ON": 101.3571,
-      "OXY": 48.9893
+      "AMD": 473.8306,
+      "CAT": 807.9849,
+      "CIEN": 394.6699,
+      "GOOG": 318.3726,
+      "GOOGL": 320.1759,
+      "INTC": 109.8795,
+      "MU": 925.9955,
+      "ON": 107.4148,
+      "OXY": 47.0414,
+      "SNDK": 1814.0114,
+      "STX": 858.6286,
+      "TXN": 269.2177,
+      "VRT": 268.7733,
+      "WDC": 557.3605
     },
     "had_adjustments": false,
     "had_blocks": false
   },
   "price_source_by_symbol": {
+    "AMD": "YAHOO_VALIDATED",
+    "CAT": "YAHOO_VALIDATED",
+    "CIEN": "YAHOO_VALIDATED",
     "GOOG": "YAHOO_VALIDATED",
     "GOOGL": "YAHOO_VALIDATED",
     "INTC": "YAHOO_VALIDATED",
+    "MU": "YAHOO_VALIDATED",
     "ON": "YAHOO_VALIDATED",
-    "OXY": "YAHOO_VALIDATED"
+    "OXY": "YAHOO_VALIDATED",
+    "SNDK": "YAHOO_VALIDATED",
+    "STX": "YAHOO_VALIDATED",
+    "TXN": "YAHOO_VALIDATED",
+    "VRT": "YAHOO_VALIDATED",
+    "WDC": "YAHOO_VALIDATED"
   },
-  "provider": "T212_FIRST_YAHOO_VALIDATED",
+  "provider": "YAHOO_VALIDATED_ONLY",
   "quote_merge_audit": {
-    "blocked": {
-      "AMD": "ABOVE_CAP_BLOCKED",
-      "CAT": "ABOVE_CAP_BLOCKED",
-      "CIEN": "ABOVE_CAP_BLOCKED",
-      "MU": "ABOVE_CAP_BLOCKED",
-      "SNDK": "ABOVE_CAP_BLOCKED",
-      "STX": "ABOVE_CAP_BLOCKED",
-      "TXN": "ABOVE_CAP_BLOCKED",
-      "VRT": "ABOVE_CAP_BLOCKED",
-      "WDC": "ABOVE_CAP_BLOCKED"
-    },
+    "blocked": {},
     "used": {
+      "AMD": "OK",
+      "CAT": "OK",
+      "CIEN": "OK",
       "GOOG": "OK",
       "GOOGL": "OK",
       "INTC": "OK",
+      "MU": "OK",
       "ON": "OK",
-      "OXY": "OK"
+      "OXY": "OK",
+      "SNDK": "OK",
+      "STX": "OK",
+      "TXN": "OK",
+      "VRT": "OK",
+      "WDC": "OK"
     }
   },
   "quotes_by_symbol": {
     "AMD": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 411.929978953369,
+      "market_event_time_utc": "2026-06-15T17:41:10+00:00",
+      "price_eur": 473.83058042359926,
       "quote_currency": "USD",
-      "raw_price": 475.5050048828125
+      "raw_price": 549.8150024414062
     },
     "CAT": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 792.4046075391965,
+      "market_event_time_utc": "2026-06-15T17:41:11+00:00",
+      "price_eur": 807.9849119903774,
       "quote_currency": "USD",
-      "raw_price": 914.7000122070312
+      "raw_price": 937.5549926757812
     },
     "CIEN": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 380.6002325663052,
+      "market_event_time_utc": "2026-06-15T17:41:09+00:00",
+      "price_eur": 394.66993006447,
       "quote_currency": "USD",
-      "raw_price": 439.3399963378906
+      "raw_price": 457.9599914550781
     },
     "GOOG": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 313.85182923932643,
+      "market_event_time_utc": "2026-06-15T17:41:10+00:00",
+      "price_eur": 318.37261868976026,
       "quote_currency": "USD",
-      "raw_price": 362.2900085449219
+      "raw_price": 369.427490234375
     },
     "GOOGL": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 315.55844126874626,
+      "market_event_time_utc": "2026-06-15T17:41:10+00:00",
+      "price_eur": 320.17593418083874,
       "quote_currency": "USD",
-      "raw_price": 364.260009765625
+      "raw_price": 371.5199890136719
     },
     "INTC": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 93.49109287574639,
+      "market_event_time_utc": "2026-06-15T17:41:09+00:00",
+      "price_eur": 109.87950262497094,
       "quote_currency": "USD",
-      "raw_price": 107.91999816894531
+      "raw_price": 127.5
     },
     "MU": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 810.7615063521996,
+      "market_event_time_utc": "2026-06-15T17:41:09+00:00",
+      "price_eur": 925.9954957055922,
       "quote_currency": "USD",
-      "raw_price": 935.8900146484375
+      "raw_price": 1074.489990234375
     },
     "ON": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 101.35709833258635,
+      "market_event_time_utc": "2026-06-15T17:41:11+00:00",
+      "price_eur": 107.41475404008825,
       "quote_currency": "USD",
-      "raw_price": 117.0
+      "raw_price": 124.63999938964844
     },
     "OXY": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 48.989263533148964,
+      "market_event_time_utc": "2026-06-15T17:41:07+00:00",
+      "price_eur": 47.0413533347949,
       "quote_currency": "USD",
-      "raw_price": 56.54999923706055
+      "raw_price": 54.584999084472656
     },
     "SNDK": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 1426.397612374345,
+      "market_event_time_utc": "2026-06-15T17:41:08+00:00",
+      "price_eur": 1814.0114055917602,
       "quote_currency": "USD",
-      "raw_price": 1646.5400390625
+      "raw_price": 2104.909912109375
     },
     "STX": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 732.8984594031349,
+      "market_event_time_utc": "2026-06-15T17:41:08+00:00",
+      "price_eur": 858.6286028242554,
       "quote_currency": "USD",
-      "raw_price": 846.010009765625
+      "raw_price": 996.3200073242188
     },
     "TXN": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 250.04016911659917,
+      "market_event_time_utc": "2026-06-15T17:41:12+00:00",
+      "price_eur": 269.2177210555114,
       "quote_currency": "USD",
-      "raw_price": 288.6300048828125
+      "raw_price": 312.3900146484375
     },
     "VRT": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 250.81116235647914,
+      "market_event_time_utc": "2026-06-15T17:41:11+00:00",
+      "price_eur": 268.7732765197473,
       "quote_currency": "USD",
-      "raw_price": 289.5199890136719
+      "raw_price": 311.8742980957031
     },
     "VUSD": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_OBSERVATION_NOT_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 1.6100949735939503,
+      "market_event_time_utc": "2026-06-15T17:41:07+00:00",
+      "price_eur": 1.6604384458065033,
       "quote_currency": "GBP",
-      "raw_price": 139.0050048828125
+      "raw_price": 143.5
     },
     "WDC": {
       "conversion_valid": true,
       "data_quality_gate": "PASS_FOR_VALIDATED_FORWARD_PERFORMANCE",
-      "market_event_time_utc": "2026-06-09T21:47:24+00:00",
-      "price_eur": 448.50080324188343,
+      "market_event_time_utc": "2026-06-15T17:41:07+00:00",
+      "price_eur": 557.3605368990721,
       "quote_currency": "USD",
-      "raw_price": 517.719970703125
+      "raw_price": 646.739990234375
     }
   },
   "refresh_skipped": false,

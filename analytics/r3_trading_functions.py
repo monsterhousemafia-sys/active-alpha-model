@@ -77,10 +77,18 @@ def _collect_context(root: Path) -> Dict[str, Any]:
         or 0
     )
     r3_investable = None
+    t212_trusted = False
+    try:
+        from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
+
+        t212_trusted = bool(assess_t212_trust_from_root(root, persist=False).get("trusted"))
+    except Exception:
+        t212_trusted = False
     try:
         from analytics.r3_closed_loop import resolve_r3_investable_for_trading
 
-        r3_investable = resolve_r3_investable_for_trading(root)
+        if t212_trusted:
+            r3_investable = resolve_r3_investable_for_trading(root)
     except Exception:
         pass
     scaling = reeval.get("scaling") or {}
@@ -89,33 +97,28 @@ def _collect_context(root: Path) -> Dict[str, Any]:
         live_cap = _load_json(root / "evidence/r3_live_capital_latest.json")
     except Exception:
         live_cap = {}
-    if live_cap.get("ok"):
+    if t212_trusted and live_cap.get("ok"):
         if live_cap.get("investable_eur") is not None:
             r3_investable = float(live_cap["investable_eur"])
         if live_cap.get("planning_cash_eur") is not None:
             broker = {**broker, **(live_cap.get("broker") or {})}
             positions_count = int(live_cap.get("positions_count") or positions_count)
 
-    investable = float(
-        r3_investable
-        or plan.get("investable_eur")
-        or scaling.get("investable_eur")
-        or reeval.get("deployable_eur")
-        or broker.get("cash_eur")
-        or 0
-    )
+    if t212_trusted:
+        investable = float(
+            r3_investable
+            or plan.get("investable_eur")
+            or scaling.get("investable_eur")
+            or reeval.get("deployable_eur")
+            or broker.get("cash_eur")
+            or 0
+        )
+    else:
+        investable = 0.0
     cash_weight = float(exposure.get("cash_weight_pct") or human.get("cash_weight_pct") or 0)
 
     sells = [a for a in actions if str(a.get("action_code") or "").upper() in _SELL_CODES]
     buys = [a for a in actions if str(a.get("action_code") or "").upper() in _BUY_CODES]
-
-    t212_trusted = False
-    try:
-        from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
-
-        t212_trusted = bool(assess_t212_trust_from_root(root, persist=False).get("trusted"))
-    except Exception:
-        t212_trusted = False
 
     return {
         "reeval": reeval,
@@ -233,6 +236,16 @@ def build_r3_trading_functions(root: Path, *, persist: bool = True) -> Dict[str,
         from analytics.r3_stock_orders import refresh_stock_order_evidence
 
         orders_doc = refresh_stock_order_evidence(root, persist=persist)
+        try:
+            from analytics.r3_mirror_capital import gate_orders_doc_for_display, resolve_mirror_account
+
+            mirror_acct = resolve_mirror_account(root)
+            orders_doc = gate_orders_doc_for_display(
+                orders_doc,
+                t212_trusted=bool(mirror_acct.get("t212_trusted")),
+            )
+        except Exception:
+            pass
         stocks = list(orders_doc.get("stocks") or [])
         stock_groups = dict(orders_doc.get("stock_groups") or {})
         initial_package = dict(orders_doc.get("initial_package") or {})
@@ -279,10 +292,16 @@ def render_r3_trading_functions_html(
 
     try:
         from analytics.r3_stock_orders import load_stock_orders, refresh_stock_order_evidence
+        from analytics.r3_mirror_capital import gate_orders_doc_for_display, resolve_mirror_account
 
+        mirror_acct = resolve_mirror_account(root)
         orders = load_stock_orders(root)
         if not orders.get("stocks"):
             orders = refresh_stock_order_evidence(root, persist=False)
+        orders = gate_orders_doc_for_display(
+            orders,
+            t212_trusted=bool(mirror_acct.get("t212_trusted")),
+        )
         data = {
             **data,
             "stocks": orders.get("stocks") or data.get("stocks") or [],
@@ -292,25 +311,32 @@ def render_r3_trading_functions_html(
     except Exception:
         pass
 
-    from analytics.r3_freigabe import freigabe_governance_note_de
+    from analytics.r3_freigabe import package_ready
+    from analytics.r3_operator_surface_text import freigabe_blocked_de
+    from analytics.r3_t212_operator_api import needs_operator_api_setup
 
-    pkg = data.get("initial_package") or {}
-    pkg_active = bool(pkg.get("active"))
-    buys = [r for r in (data.get("stocks") or []) if str(r.get("side") or "").upper() == "BUY"]
-    notional = float(pkg.get("notional_eur") or 0)
-    ready = pkg_active and bool(buys) and notional > 0
-    governance_note = html.escape(freigabe_governance_note_de())
-    governance_hint = (
-        f'<p class="r3-freigabe-hint" id="r3-freigabe-governance" '
-        f'aria-label="Governance-Hinweis">{governance_note}</p>'
-    )
+    freigabe = package_ready(root, refresh_orders=False)
+    pkg = data.get("initial_package") or freigabe.get("initial_package") or {}
+    notional = float(freigabe.get("notional_eur") or pkg.get("notional_eur") or 0)
+    ready = bool(freigabe.get("ready"))
+    governance_hint = ""
     if ready:
         btn_label = f"Gewinn starten — {notional:.0f} € → T212"
         btn_class = "r3-freigabe-btn ready"
         btn_onclick = ' onclick="r3FreigabeSubmit()"'
         btn_disabled = ""
     else:
-        btn_label = "T212"
+        trust_code = None
+        try:
+            from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
+
+            trust_code = assess_t212_trust_from_root(root, persist=False).get("reason_code")
+        except Exception:
+            trust_code = None
+        btn_label = freigabe_blocked_de(
+            reason_code=str(trust_code or "") or None,
+            needs_api=needs_operator_api_setup(root),
+        )
         btn_class = "r3-freigabe-btn blocked"
         btn_onclick = ""
         btn_disabled = " disabled"
@@ -383,7 +409,7 @@ def render_r3_trading_functions_html(
             "</div>"
         )
 
-    toast = '<p class="r3-order-toast" id="r3-order-toast" aria-live="polite"></p>'
+    toast = "" if exec_only else '<p class="r3-order-toast" id="r3-order-toast" aria-live="polite"></p>'
     return (
         f'<section class="r3-trading-functions" id="r3-trading-functions">'
         f"{freigabe_html}{stocks_html}{toast}"
@@ -493,7 +519,11 @@ async function r3PostOrder(body) {
     });
     const j = await r.json();
     r3OrderToast(j.message_de || j.error || (j.ok ? 'OK' : 'Fehler'), !!j.ok);
-    if (j.ok) setTimeout(() => location.reload(), 1800);
+    if (j.ok) {
+      if (typeof r3RefreshUiPreferSoft === 'function') setTimeout(() => r3RefreshUiPreferSoft(), 600);
+      else setTimeout(() => location.reload(), 1200);
+      return j;
+    }
     return j;
   } catch (e) {
     r3OrderToast('Verbindung fehlgeschlagen', false);
@@ -518,11 +548,13 @@ async function r3RefreshOrderSurface() {
     await fetch('/api/r3/freigabe?prepare=1&auto=desktop', { cache: 'no-store' });
     const btn = document.getElementById('r3-freigabe-btn');
     if (btn && btn.classList.contains('blocked')) {
-      location.reload();
+      if (typeof r3RefreshUiPreferSoft === 'function') r3RefreshUiPreferSoft();
+      else location.reload();
     }
   } catch (e) { /* silent */ }
 }
 document.addEventListener('DOMContentLoaded', () => {
+  if (window.R3_EXEC_ONLY) return;
   const btn = document.getElementById('r3-freigabe-btn');
   if (btn && btn.classList.contains('blocked')) {
     r3RefreshOrderSurface();

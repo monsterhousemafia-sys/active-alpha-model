@@ -26,6 +26,8 @@ def test_manifest_loads() -> None:
 def test_exec_mirror_route_allowlist() -> None:
     assert exec_mirror_route_allowed("GET", "/r3") is True
     assert exec_mirror_route_allowed("GET", "/api/r3/freigabe") is True
+    assert exec_mirror_route_allowed("GET", "/api/r3/t212") is True
+    assert exec_mirror_route_allowed("POST", "/api/r3/start") is True
     assert exec_mirror_route_allowed("GET", "/api/r3/operator-readiness") is True
     assert exec_mirror_route_allowed("GET", "/api/system/status") is True
     assert exec_mirror_route_allowed("POST", "/api/r3/order") is True

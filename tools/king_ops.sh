@@ -146,6 +146,16 @@ print(json.dumps({'ok': doc.get('ok'), 'steps': doc.get('steps_ok')}, ensure_asc
     king_init
     king_run stufe-a "$@"
     ;;
+  stufe-b|stufe_b|king-stufe-b|price-crosscheck)
+    source "$ROOT/tools/king_common.sh"
+    king_init
+    king_run stufe-b "$@"
+    ;;
+  system-update|system_update|update-system)
+    source "$ROOT/tools/king_common.sh"
+    king_init
+    king_run system-update "$@"
+    ;;
   gemini-key|gemini_key)
     source "$ROOT/tools/king_common.sh"
     king_init
@@ -180,11 +190,20 @@ print(json.dumps({'ok': verified.get('ok'), 'mirror': applied.get('https_mirror'
     king_init
     "$KING_PY" -c "
 from pathlib import Path
-from analytics.r3_t212_api_bond import sync_r3_t212_api_bond
+from analytics.r3_t212_api_bond import ensure_r3_t212_api_bond
+from analytics.r3_t212_operator_api import resolve_operator_api_state
 import json
-doc = sync_r3_t212_api_bond(Path('$KING_ROOT'), force=True, persist=True)
-print(doc.get('confirmation_de') or doc.get('message_de') or 'T212 bond OK')
-print(json.dumps({'bonded': doc.get('bonded'), 'connected': doc.get('connected')}, ensure_ascii=False))
+doc = ensure_r3_t212_api_bond(Path('$KING_ROOT'), persist=True)
+doc = {**doc, **resolve_operator_api_state(Path('$KING_ROOT'))}
+print(doc.get('headline_de') or doc.get('message_de') or doc.get('confirmation_de') or 'OK')
+print(json.dumps({
+    'needs_api_setup': doc.get('needs_api_setup'),
+    'operator_api_ready': doc.get('operator_api_ready'),
+    'setup_ok': doc.get('setup_ok'),
+    'bonded': doc.get('bonded'),
+    'connected': doc.get('connected'),
+    'trusted': doc.get('t212_trusted'),
+}, ensure_ascii=False))
 "
     ;;
   t212-trust|t212-gate)
@@ -203,6 +222,77 @@ print(json.dumps({
     'sync_age_s': doc.get('sync_age_s'),
 }, ensure_ascii=False))
 sys.exit(0 if doc.get('trusted') else 1)
+"
+    ;;
+  t212-trust-report|t212-zahlen)
+    source "$ROOT/tools/king_common.sh"
+    king_init
+    "$KING_PY" -c "
+from pathlib import Path
+from analytics.t212_trust_quantified import build_t212_trust_quantified
+import json, sys
+doc = build_t212_trust_quantified(Path('$KING_ROOT'), persist=True)
+print(doc.get('verdict_de') or doc.get('message_de') or 'T212 Trust Report')
+for line in doc.get('blockers_de') or []:
+    print(' ·', line)
+print(json.dumps({
+    'trusted': doc.get('trusted'),
+    'criteria_passed': sum(1 for c in doc.get('criteria', []) if c.get('passed')),
+    'criteria_total': len(doc.get('criteria') or []),
+    'measurements': doc.get('measurements'),
+}, ensure_ascii=False, indent=2))
+sys.exit(0 if doc.get('trusted') else 1)
+"
+    ;;
+  swing-theory|swing-theorie|swing)
+    source "$ROOT/tools/king_common.sh"
+    king_init
+    "$KING_PY" -c "
+from pathlib import Path
+from analytics.swing_trading_theory_check import run_swing_trading_theory_check
+import json, sys
+doc = run_swing_trading_theory_check(Path('$KING_ROOT'), persist=True)
+print(doc.get('headline_de') or 'Swing-Theorie')
+print(json.dumps({'shows_today': doc.get('shows_today'), 'metrics': doc.get('metrics')}, ensure_ascii=False, indent=2))
+sys.exit(0 if doc.get('shows_today') else 2)
+"
+    ;;
+  fall-watch|fall-wächter|prognosis-fall)
+    SUB="${1:-once}"
+    shift || true
+    case "$SUB" in
+      loop|watch)
+        exec bash "$ROOT/tools/prognosis_fall_watch.sh" loop
+        ;;
+      status|stand)
+        exec bash "$ROOT/tools/prognosis_fall_watch.sh" status
+        ;;
+      *)
+        exec bash "$ROOT/tools/prognosis_fall_watch.sh" once
+        ;;
+    esac
+    ;;
+  forschung-start|forschung)
+    source "$ROOT/tools/king_common.sh"
+    king_init
+    "$KING_PY" -c "
+from pathlib import Path
+from analytics.r3_forschungszweig import build_forschungszweig_status
+from analytics.king_32b_forschung import build_king_32b_forschung_status
+from analytics.t212_trust_quantified import build_t212_trust_quantified
+import json
+root = Path('$KING_ROOT')
+king = build_king_32b_forschung_status(root, persist=True)
+fz = build_forschungszweig_status(root)
+t212 = build_t212_trust_quantified(root, persist=True)
+print(fz.get('headline_de') or king.get('headline_de') or 'Forschungsprojekt')
+print('T212:', t212.get('verdict_de'))
+print(json.dumps({
+    'is_forschungsprojekt': king.get('is_forschungsprojekt'),
+    'phase': (king.get('growth') or {}).get('phase_de'),
+    't212_trusted': t212.get('trusted'),
+    't212_blockers': len(t212.get('blockers_de') or []),
+}, ensure_ascii=False))
 "
     ;;
   t212-sync|t212-learn|t212-lernen)
@@ -263,7 +353,7 @@ print(json.dumps({
     'notional_eur': doc.get('notional_eur'),
     'cta_de': doc.get('cta_de'),
 }, ensure_ascii=False))
-sys.exit(0 if doc.get('package_ready') else 1)
+sys.exit(0 if doc.get('ok') else 1)
 "
     ;;
   t212-watch|r3-t212-watch|t212-24-7)
@@ -597,11 +687,12 @@ print(json.dumps(doc, ensure_ascii=False, indent=2))
     exec "$ROOT/.venv/bin/python3" -c "
 from pathlib import Path
 from analytics.reddit_forum_post import open_reddit_submit
+from analytics.spread_anonym_policy import is_anonym_enforced, reddit_profile_block
 import json, os, sys
 r = Path(os.environ.get('AA_PROJECT_ROOT', '$ROOT'))
-doc = open_reddit_submit(r)
+doc = reddit_profile_block(r) if is_anonym_enforced(r) else open_reddit_submit(r)
 print(json.dumps(doc, ensure_ascii=False, indent=2))
-sys.exit(0 if doc.get('ok') else 1)
+sys.exit(2 if doc.get('blocked') else (0 if doc.get('ok') else 1))
 "
     ;;
   forum-ack|forum-post-ack|reddit-ack)
@@ -760,10 +851,12 @@ sys.exit(0 if doc.get('done') else 1)
     exec "$ROOT/.venv/bin/python3" -c "
 from pathlib import Path
 from analytics.spread_completion import run_spread_completion
+from analytics.spread_anonym_policy import is_anonym_enforced
 import json, os, sys
 r = Path(os.environ.get('AA_PROJECT_ROOT', '$ROOT'))
 wait_s = int(os.environ.get('AA_TUNNEL_LOGIN_WAIT_S', '$WAIT'))
-doc = run_spread_completion(r, wait_tunnel_s=wait_s)
+anonym = is_anonym_enforced(r)
+doc = run_spread_completion(r, wait_tunnel_s=wait_s, anonym=anonym)
 print(json.dumps(doc, ensure_ascii=False, indent=2))
 sys.exit(0 if doc.get('done') else 1)
 "
@@ -790,6 +883,37 @@ sys.exit(0 if doc.get('ok') else 1)
     ;;
   spread-internet|internet-spread|oeffentlich)
     exec bash "$ROOT/tools/spread_ops.sh" internet "$@"
+    ;;
+  google-spread|spread-google|google-welt|welt-google)
+    exec "$ROOT/.venv/bin/python3" -c "
+from pathlib import Path
+from analytics.google_world_spread import run_google_world_spread
+import json, os, sys
+r = Path(os.environ.get('AA_PROJECT_ROOT', '$ROOT'))
+doc = run_google_world_spread(r, use_gemini=True, force_export=True)
+print(json.dumps(doc, ensure_ascii=False, indent=2))
+exit_ok = doc.get('spread_ok') or doc.get('copy_ok')
+sys.exit(0 if exit_ok else 1)
+"
+    ;;
+  legitimate-ops|legit-ops|legit-check|ops-legit)
+    REFRESH="${1:-}"
+    shift || true
+    REFRESH_Q="False"
+    [[ "$REFRESH" == "--quotes" || "$REFRESH" == "--force-quotes" ]] && REFRESH_Q="True"
+    exec "$ROOT/.venv/bin/python3" -c "
+from pathlib import Path
+from analytics.legitimate_ops_check import run_legitimate_ops_check
+import json, os, sys
+r = Path(os.environ.get('AA_PROJECT_ROOT', '$ROOT'))
+doc = run_legitimate_ops_check(r, refresh_quotes=${REFRESH_Q}, run_spread=True)
+print(json.dumps(doc, ensure_ascii=False, indent=2))
+print(doc.get('headline_de') or '—')
+for k, p in (doc.get('pillars') or {}).items():
+    mark = '✓' if p.get('ok') else '✗'
+    print(f'  {mark} {k}: {p.get(\"message_de\") or \"—\"}')
+sys.exit(0 if doc.get('ok') else 1)
+"
     ;;
   community-spread|ausbreitung|linux-community)
     exec bash "$ROOT/tools/spread_ops.sh" voll "$@"
@@ -888,7 +1012,7 @@ king_ops.sh — König Bash-Orchestrator
   status              Snapshot (PID, CSV, Seal, hung)
   h1-seal             Benchmark → h1-watch (ein Job)
   h1-prep             NVMe+GPU+Ollama-Prep (kein Benchmark)
-  clean               Safe cleanup (Orphans, Locks)
+  clean               Projekt-Müll + Locks (pycache, Logs, Zips, Pilot-Stale)
   distribute          Spread/Tunnel/Worker (king_distribute.sh)
   pulse               König-Puls (ai_kernel)
   setup               Ideal-32B + Ollama

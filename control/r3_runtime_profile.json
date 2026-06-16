@@ -1,14 +1,14 @@
 {
-  "applied_at_utc": "2026-06-08T07:10:59+00:00",
-  "cache_stale_sec": 240,
-  "confirmed_proposal_id": "fluid_mirror_v2",
-  "label_de": "Flüssig — bestätigt",
-  "mirror_poll_ms": 45000,
-  "mirror_prep_every_n_polls": 6,
+  "applied_at_utc": "2026-06-10T12:00:00+00:00",
+  "cache_stale_sec": 120,
+  "confirmed_proposal_id": "fluid_mirror_v3",
+  "label_de": "Flüssig — 15s Poll, Soft-Update, schneller Start",
+  "mirror_poll_ms": 15000,
+  "mirror_prep_every_n_polls": 3,
   "mirror_reload_on_evidence_change": false,
   "mirror_soft_update": true,
-  "profile_id": "fluid_v2",
+  "profile_id": "fluid_v3",
   "schema_version": 1,
-  "source_de": "Bestätigt: Flüssigerer R3-Spiegel",
+  "source_de": "R3 Echtzeit-Oberfläche — aggressives Mirror-Polling",
   "status": "AUTHORITATIVE"
 }

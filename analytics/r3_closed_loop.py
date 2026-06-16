@@ -183,6 +183,11 @@ def resolve_r3_plan_capital_eur(
     }
 
 
+def resolve_r3_authoritative_capital(root: Path) -> Dict[str, Any]:
+    """Autoritatives Echtgeld-Kapital — nur bei vertrauenswürdigem T212-Live-Sync."""
+    return load_r3_account_for_engine(root)
+
+
 def resolve_r3_investable_for_trading(root: Path) -> Optional[float]:
     """Autoritatives T212-Investierbar aus R3 API-Bond (None wenn nicht verfügbar)."""
     acct = load_r3_account_for_engine(root)
@@ -205,16 +210,33 @@ def load_r3_account_for_engine(root: Path) -> Dict[str, Any]:
     """
     root = Path(root)
     bond = _load_json(root / _BOND_EVIDENCE)
+    try:
+        from analytics.r3_t212_operator_api import operator_api_account_block
+
+        block = operator_api_account_block(root)
+        if block:
+            return block
+    except Exception:
+        pass
+    from analytics.r3_operator_surface_text import operator_status_de
+
     broker: Dict[str, Any] = {}
     source = "r3_t212_api_bond"
 
-    if bond.get("cash_eur") is not None or bond.get("connected"):
+    if bond and (
+        bond.get("cash_eur") is not None
+        or bond.get("connected")
+        or bond.get("bonded")
+        or bond.get("credentials_configured")
+        or bond.get("broker_status")
+    ):
         broker = {
             "cash_eur": bond.get("cash_eur"),
             "cash_breakdown": bond.get("cash_breakdown") or {},
             "positions": bond.get("positions") or [],
             "positions_count": int(bond.get("positions_count") or 0),
             "credentials_configured": bool(bond.get("credentials_configured")),
+            "last_successful_sync_utc": bond.get("last_sync_utc"),
             "last_sync_utc": bond.get("last_sync_utc"),
             "environment": bond.get("environment"),
             "status": bond.get("broker_status"),
@@ -222,11 +244,6 @@ def load_r3_account_for_engine(root: Path) -> Dict[str, Any]:
             "bonded": bool(bond.get("bonded")),
             "source": source,
         }
-
-    if broker.get("cash_eur") is None:
-        cached = _broker_from_readonly_cache(root)
-        if cached.get("cash_eur") is not None:
-            broker = {**cached, "source": "readonly_cache_fallback"}
 
     from execution.confirmed_live.planning_cash import resolve_planning_cash_eur
     from analytics.prediction_operations import resolve_planning_basis_eur
@@ -253,12 +270,17 @@ def load_r3_account_for_engine(root: Path) -> Dict[str, Any]:
     except Exception:
         trust = {"trusted": False, "orders_allowed": False}
 
+    if not trust.get("trusted"):
+        investable = None
+        planning = None
+        plan_capital = {}
+
     ok = investable is not None and bool(trust.get("trusted"))
     pos_n = int(plan_capital.get("positions_count") or broker.get("positions_count") or 0)
     msg = (
         f"R3 · {float(investable):.0f} € investierbar · {pos_n} Pos. live"
         if ok and investable is not None
-        else str(trust.get("message_de") or "R3 Kontostand ausstehend — bash tools/king_ops.sh r3-t212")
+        else str(trust.get("message_de") or operator_status_de(str(trust.get("reason_code") or "")))
     )
     return {
         "ok": ok,

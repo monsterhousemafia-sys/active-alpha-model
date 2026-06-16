@@ -335,8 +335,21 @@ def collect_spread_urls(root: Path) -> Dict[str, Any]:
 
     remote_url = ""
     tunnel = load_tunnel_state(root)
-    if tunnel.get("ok") and str(tunnel.get("public_url") or "").startswith("https://"):
-        remote_url = str(tunnel["public_url"]).strip().rstrip("/")
+    tunnel_live = str(tunnel.get("public_url") or "").strip().rstrip("/")
+    if tunnel.get("running") and tunnel_live.startswith("https://"):
+        remote_url = tunnel_live
+        fed_url = str(cfg.get("public_base_url") or "").strip().rstrip("/")
+        if fed_url != remote_url:
+            from analytics.remote_hub_access import _sync_public_urls
+
+            _sync_public_urls(
+                root,
+                remote_url,
+                mode=str(tunnel.get("mode") or "cloudflared"),
+                stable=bool(tunnel.get("stable")),
+            )
+    elif tunnel.get("ok") and tunnel_live.startswith("https://"):
+        remote_url = tunnel_live
     if not remote_url:
         mirror = _load_json(root / Path("control/r3_https_mirror.json"))
         candidate = str(mirror.get("public_base_url") or "").strip().rstrip("/")
@@ -917,6 +930,8 @@ def broadcast_spread_anonym(root: Path, *, persist: bool = True) -> Dict[str, An
     urls = collect_spread_urls(root)
     remote = str(urls.get("remote_url") or "")
     gate_ok = remote.startswith("https://")
+    from analytics.spread_anonym_policy import redact_spread_urls
+
     doc = {
         "schema_version": 1,
         "ok": gate_ok,
@@ -930,7 +945,7 @@ def broadcast_spread_anonym(root: Path, *, persist: bool = True) -> Dict[str, An
         "reddit_body_ref": _REDDIT_BODY_REL.as_posix(),
         "broadcast_ref": texts.get("broadcast_ref"),
         "whatsapp_ref": texts.get("whatsapp_ref"),
-        "urls": urls,
+        "urls": redact_spread_urls(urls),
         "channels_de": [
             "Reddit anonym: evidence/reddit_post_operator_anonym_de.txt",
             f"Internet: {remote or '—'}/join",
@@ -945,6 +960,10 @@ def broadcast_spread_anonym(root: Path, *, persist: bool = True) -> Dict[str, An
 
 
 def _write_forum_draft(root: Path) -> Path:
+    from analytics.spread_anonym_policy import is_anonym_enforced
+
+    if is_anonym_enforced(root):
+        return _write_forum_draft_anonym(root)
     from analytics.preview_manifest import load_preview_manifest
 
     mf = load_preview_manifest(root)
@@ -1028,6 +1047,10 @@ def _write_forum_draft(root: Path) -> Path:
 def broadcast_spread(root: Path, *, persist: bool = True) -> Dict[str, Any]:
     """Alle Kanäle synchronisieren — Forum, WhatsApp, Broadcast-Text."""
     root = Path(root)
+    from analytics.spread_anonym_policy import is_anonym_enforced
+
+    if is_anonym_enforced(root):
+        return broadcast_spread_anonym(root, persist=persist)
     forum_path = _write_forum_draft(root)
     texts = _write_broadcast_texts(root)
     urls = collect_spread_urls(root)

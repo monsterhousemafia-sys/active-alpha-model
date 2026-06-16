@@ -2,7 +2,7 @@
   "active_signal_variant": "DAILY_ALPHA_H1",
   "authoritative_champion": "R0_LEGACY_ENSEMBLE",
   "authoritative_runtime_resolver": "analytics.strategic_governance.resolve_governance_champion",
-  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "generated_at_utc": "2026-06-14T20:15:09+00:00",
   "note_de": "Abgeleitet aus champion_strategic_decision + prediction_operations — nicht manuell editieren.",
   "operational_champion": "R0_LEGACY_ENSEMBLE",
   "prior_champion": "R3_w075_q065_noexit",

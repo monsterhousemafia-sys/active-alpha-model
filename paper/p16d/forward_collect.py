@@ -83,12 +83,13 @@ def collect_post_baseline_batch(root: Path, identity: Dict[str, Any]) -> Dict[st
         fx_avail = fx_available_for_currency(fx_obs, norm_meta["quote_currency"])
 
         event_time = rec.get("market_event_time_utc") or rec.get("timestamp") or now
+        ingest_time = _utc_now()
         dq = assess_observation(
             symbol=sym,
             raw_price=raw_f,
             quote_currency=norm_meta["quote_currency"],
             event_time_utc=event_time,
-            ingestion_time_utc=now,
+            ingestion_time_utc=ingest_time,
             dq_state=dq_state,
             fx_available=fx_avail,
             identity_action=action,

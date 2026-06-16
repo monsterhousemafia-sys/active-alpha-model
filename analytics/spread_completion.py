@@ -21,10 +21,14 @@ def run_spread_completion(
     root: Path,
     *,
     wait_tunnel_s: int = 0,
-    anonym: bool = False,
+    anonym: bool | None = None,
 ) -> Dict[str, Any]:
     """Letzte Spread-Schritte: reparieren, öffnen, messen — ohne Fakes."""
     root = Path(root)
+    if anonym is None:
+        from analytics.spread_anonym_policy import is_anonym_enforced
+
+        anonym = is_anonym_enforced(root)
     if anonym:
         from analytics.spread_finish_anonym_loop import run_anonym_finish_tick
 

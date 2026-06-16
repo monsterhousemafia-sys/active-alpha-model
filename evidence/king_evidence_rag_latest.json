@@ -1,5 +1,5 @@
 {
-  "char_count": 4277,
+  "char_count": 4326,
   "chunk_count": 13,
   "chunks": [
     {
@@ -15,11 +15,11 @@
     },
     {
       "fields": {
-        "investable_eur": 678.52,
+        "investable_eur": null,
         "ok": false,
         "signal_date": "2026-06-09",
         "summary_de": "Profil daily_alpha_h1 (DAILY_ALPHA_H1): 11 Positionen auf 679 € investierbar (volles T212-Guthaben 679 €). Umstellung zum Tagesende ab 22:15 CET.",
-        "updated_at_utc": "2026-06-09T21:16:46+00:00",
+        "updated_at_utc": "2026-06-14T19:33:29+00:00",
         "worthwhile_buy_count": 0
       },
       "path": "evidence/r3_t212_prognosis_latest.json"
@@ -61,8 +61,8 @@
     {
       "fields": {
         "follow_on_count": 1,
-        "headline_de": "Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX.",
-        "summary_de": "Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX."
+        "headline_de": "Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX.",
+        "summary_de": "Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX."
       },
       "path": "evidence/king_trading_assist_latest.json"
     },
@@ -89,7 +89,7 @@
           "status": "COMPLETE"
         },
         "ok": true,
-        "signal_date": "2026-06-09"
+        "signal_date": "2026-06-12"
       },
       "path": "control/prediction_readiness.json"
     },
@@ -99,12 +99,13 @@
           "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
           "model": "qwen2.5-coder:32b",
           "next_growth_de": [
-            "python3 tools/ai_kernel.py evolve",
-            "H1-Seal prüfen"
+            "python3 tools/ai_kernel.py learn",
+            "/beitrag forschung <Idee>"
           ],
           "ollama_ok": true,
-          "phase": "forschung_reif",
-          "phase_de": "Learn/Evolve + Forschungszweig + öffentliches Lernen",
+          "phase": "wachstum",
+          "phase_de": "trade_decisions + Gas/Sell + king-trading aktiv",
+          "phase_kpi_de": "Stufe-A KPI — wachstum=True reif=False",
           "wants_to_grow_de": "32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence."
         },
         "headline_de": "König 32B — Bestandteil des Forschungsprojekts Active Alpha"
@@ -117,7 +118,7 @@
         "headline_de": "Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading",
         "model": "gpt-4o",
         "provider": "ollama_keyless",
-        "tip_de": "Basierend auf den gegebenen Informationen und der aktuellen Phase, empfehle ich folgende Schritte:\n\n1. **Aktualisierung des Investitionsplans:**\n   - Führe die Befehlszeile aus, um den nächsten Forschungsschritt zu starten:\n     ```bash\n   …"
+        "tip_de": "Basierend auf den gegebenen Informationen und der aktuellen Phase empfehle ich folgende konkrete Schritte:\n\n1. **Aktualisierung des Investitionsplans:**\n   - Führe die Befehlszeile aus, um den nächsten Forschungsschritt zu starten:\n     ```…"
       },
       "path": "evidence/king_cloud_teacher_latest.json"
     },
@@ -134,28 +135,29 @@
     },
     {
       "fields": {
-        "as_of_date": "2026-06-09",
-        "bad_day": true,
-        "benchmark_return_pct": -0.29,
-        "delta_vs_benchmark_pct": -2.25,
-        "portfolio_return_pct": -2.55,
-        "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %"
+        "as_of_date": "2026-06-12",
+        "bad_day": false,
+        "benchmark_return_pct": 0.54,
+        "delta_vs_benchmark_pct": 4.19,
+        "portfolio_return_pct": 4.73,
+        "summary_de": "Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %"
       },
       "path": "evidence/r3_daily_postmortem_latest.json"
     },
     {
       "fields": {
-        "status": "NOT_EVALUABLE",
-        "summary_de": "Kein Broker-Sync — zuerst «Aktualisieren».",
+        "status": "OK",
+        "summary_de": "Regime RISK_OFF · Risk-off. Risk-off aktiv — keine Nachkäufe; Investiert 0.0% / Modell-Ziel 79.5%.",
         "trade_required": false,
-        "urgency": "NONE"
+        "urgency": "NONE",
+        "worthwhile_buys": []
       },
       "path": "evidence/pilot_portfolio_reevaluation_latest.json"
     },
     {
       "fields": {
         "last_sync_utc": null,
-        "message_de": "✗ T212 nicht vertrauenswürdig — T212 API nicht konfiguriert",
+        "message_de": "API eingeben",
         "orders_allowed": false,
         "reason_code": "NOT_CONFIGURED",
         "trusted": false
@@ -201,8 +203,8 @@
       "path": "evidence/public_learning_report_latest.json"
     }
   ],
-  "headline_de": "Evidence-RAG — 13 Quellen, 4277 Zeichen",
-  "rag_text": "[{\"path\":\"evidence/king_network_pulse_latest.json\",\"fields\":{\"phase\":\"build\",\"beat\":9,\"handoff_to\":\"bash\",\"h1_status\":\"COMPLETE\",\"next_action_de\":\"Bridge: /ready — H1 COMPLETE; Seal optional · /predict\",\"headline_de\":\"Takt 9 · build · Schicht cursor → bash · GPU-ON\"}},{\"path\":\"evidence/r3_t212_prognosis_latest.json\",\"fields\":{\"ok\":false,\"signal_date\":\"2026-06-09\",\"investable_eur\":678.52,\"worthwhile_buy_count\":0,\"summary_de\":\"Profil daily_alpha_h1 (DAILY_ALPHA_H1): 11 Positionen auf 679 € investierbar (volles T212-Guthaben 679 €). Umstellung zum Tagesende ab 22:15 CET.\",\"updated_at_utc\":\"2026-06-09T21:16:46+00:00\"}},{\"path\":\"evidence/pilot_investment_plan_latest.json\",\"fields\":{\"investable_eur\":678.52,\"executable\":true,\"signal_date\":\"2026-06-05\",\"top_allocations\":[{\"symbol\":\"MU\",\"target_eur\":56.78},{\"symbol\":\"INTC\",\"target_eur\":65.96},{\"symbol\":\"AMD\",\"target_eur\":68.77},{\"symbol\":\"WDC\",\"target_eur\":69.01},{\"symbol\":\"CIEN\",\"target_eur\":46.99},{\"symbol\":\"STX\",\"target_eur\":73.78}]}},{\"path\":\"evidence/king_trading_assist_latest.json\",\"fields\":{\"summary_de\":\"Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX.\",\"follow_on_count\":1,\"headline_de\":\"Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX.\"}},{\"path\":\"evidence/daily_alpha_h1_evaluation_latest.json\",\"fields\":{\"pass_full_seal\":false,\"metrics_strategy\":{\"annual_vol\":0.19825243917571733,\"cagr\":0.1449496479478598,\"daily_hit_rate\":0.5466237942122186,\"max_drawdown\":-0.22945094905846275,\"n_days\":1866,\"sharpe_0rf\":0.782267724738531,\"total_return\":1.7245777497482102}}},{\"path\":\"control/prediction_readiness.json\",\"fields\":{\"ok\":true,\"signal_date\":\"2026-06-09\",\"blockers\":[],\"h1_backtest_status\":{\"run_dir\":\"validation_runs/20260606T102626Z_DAILY_ALPHA_H1\",\"status\":\"COMPLETE\"}}},{\"path\":\"evidence/king_32b_forschung_latest.json\",\"fields\":{\"growth\":{\"growth_identity_de\":\"Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.\",\"model\":\"qwen2.5-coder:32b\",\"next_growth_de\":[\"python3 tools/ai_kernel.py evolve\",\"H1-Seal prüfen\"],\"ollama_ok\":true,\"phase\":\"forschung_reif\",\"phase_de\":\"Learn/Evolve + Forschungszweig + öffentliches Lernen\",\"wants_to_grow_de\":\"32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence.\"},\"headline_de\":\"König 32B — Bestandteil des Forschungsprojekts Active Alpha\"}},{\"path\":\"evidence/king_cloud_teacher_latest.json\",\"fields\":{\"provider\":\"ollama_keyless\",\"model\":\"gpt-4o\",\"compute_boost\":false,\"headline_de\":\"Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading\",\"tip_de\":\"Basierend auf den gegebenen Informationen und der aktuellen Phase, empfehle ich folgende Schritte:\\n\\n1. **Aktualisierung des Investitionsplans:**\\n   - Führe die Befehlszeile aus, um den nächsten Forschungsschritt zu starten:\\n     ```bash\\n   …\"}},{\"path\":\"evidence/r3_daytrading_data_care_latest.json\",\"fields\":{\"ok\":false,\"steps_ok\":1,\"headline_de\":\"Daytrading-Datenpflege — 1/4 (Blocker prüfen)\",\"t212_trusted\":false,\"orders_allowed\":false,\"updated_at_utc\":\"2026-06-09T20:28:48+00:00\"}},{\"path\":\"evidence/r3_daily_postmortem_latest.json\",\"fields\":{\"bad_day\":true,\"portfolio_return_pct\":-2.55,\"benchmark_return_pct\":-0.29,\"delta_vs_benchmark_pct\":-2.25,\"summary_de\":\"Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %\",\"as_of_date\":\"2026-06-09\"}},{\"path\":\"evidence/pilot_portfolio_reevaluation_latest.json\",\"fields\":{\"status\":\"NOT_EVALUABLE\",\"urgency\":\"NONE\",\"trade_required\":false,\"summary_de\":\"Kein Broker-Sync — zuerst «Aktualisieren».\"}},{\"path\":\"evidence/t212_trust_latest.json\",\"fields\":{\"trusted\":false,\"orders_allowed\":false,\"reason_code\":\"NOT_CONFIGURED\",\"message_de\":\"✗ T212 nicht vertrauenswürdig — T212 API nicht konfiguriert\",\"last_sync_utc\":null}},{\"path\":\"evidence/public_learning_report_latest.json\",\"fields\":{\"quality_score\":{\"components\":[{\"id\":\"data_capture\",\"max\":25,\"ok\":true,\"points\":25},{\"ic_pearson\":0.017102630157397,\"id\":\"prediction_feedback\",\"max\":25,\"points\":13,\"signed_hit_rate\":0.5056850715746422},{\"id\":\"live_learning\",\"max\":25,\"n_mature\":0,\"points\":0},{\"id\":\"governance_safety\",\"max\":25,\"ok\":true,\"points\":25}],\"grade\":\"C\",\"headline_de\":\"Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.\",\"max\":100,\"total\":63}}}]",
+  "headline_de": "Evidence-RAG — 13 Quellen, 4326 Zeichen",
+  "rag_text": "[{\"path\":\"evidence/king_network_pulse_latest.json\",\"fields\":{\"phase\":\"build\",\"beat\":9,\"handoff_to\":\"bash\",\"h1_status\":\"COMPLETE\",\"next_action_de\":\"Bridge: /ready — H1 COMPLETE; Seal optional · /predict\",\"headline_de\":\"Takt 9 · build · Schicht cursor → bash · GPU-ON\"}},{\"path\":\"evidence/r3_t212_prognosis_latest.json\",\"fields\":{\"ok\":false,\"signal_date\":\"2026-06-09\",\"investable_eur\":null,\"worthwhile_buy_count\":0,\"summary_de\":\"Profil daily_alpha_h1 (DAILY_ALPHA_H1): 11 Positionen auf 679 € investierbar (volles T212-Guthaben 679 €). Umstellung zum Tagesende ab 22:15 CET.\",\"updated_at_utc\":\"2026-06-14T19:33:29+00:00\"}},{\"path\":\"evidence/pilot_investment_plan_latest.json\",\"fields\":{\"investable_eur\":678.52,\"executable\":true,\"signal_date\":\"2026-06-05\",\"top_allocations\":[{\"symbol\":\"MU\",\"target_eur\":56.78},{\"symbol\":\"INTC\",\"target_eur\":65.96},{\"symbol\":\"AMD\",\"target_eur\":68.77},{\"symbol\":\"WDC\",\"target_eur\":69.01},{\"symbol\":\"CIEN\",\"target_eur\":46.99},{\"symbol\":\"STX\",\"target_eur\":73.78}]}},{\"path\":\"evidence/king_trading_assist_latest.json\",\"fields\":{\"summary_de\":\"Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX.\",\"follow_on_count\":1,\"headline_de\":\"Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX.\"}},{\"path\":\"evidence/daily_alpha_h1_evaluation_latest.json\",\"fields\":{\"pass_full_seal\":false,\"metrics_strategy\":{\"annual_vol\":0.19825243917571733,\"cagr\":0.1449496479478598,\"daily_hit_rate\":0.5466237942122186,\"max_drawdown\":-0.22945094905846275,\"n_days\":1866,\"sharpe_0rf\":0.782267724738531,\"total_return\":1.7245777497482102}}},{\"path\":\"control/prediction_readiness.json\",\"fields\":{\"ok\":true,\"signal_date\":\"2026-06-12\",\"blockers\":[],\"h1_backtest_status\":{\"run_dir\":\"validation_runs/20260606T102626Z_DAILY_ALPHA_H1\",\"status\":\"COMPLETE\"}}},{\"path\":\"evidence/king_32b_forschung_latest.json\",\"fields\":{\"growth\":{\"growth_identity_de\":\"Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.\",\"model\":\"qwen2.5-coder:32b\",\"next_growth_de\":[\"python3 tools/ai_kernel.py learn\",\"/beitrag forschung <Idee>\"],\"ollama_ok\":true,\"phase\":\"wachstum\",\"phase_de\":\"trade_decisions + Gas/Sell + king-trading aktiv\",\"phase_kpi_de\":\"Stufe-A KPI — wachstum=True reif=False\",\"wants_to_grow_de\":\"32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence.\"},\"headline_de\":\"König 32B — Bestandteil des Forschungsprojekts Active Alpha\"}},{\"path\":\"evidence/king_cloud_teacher_latest.json\",\"fields\":{\"provider\":\"ollama_keyless\",\"model\":\"gpt-4o\",\"compute_boost\":false,\"headline_de\":\"Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading\",\"tip_de\":\"Basierend auf den gegebenen Informationen und der aktuellen Phase empfehle ich folgende konkrete Schritte:\\n\\n1. **Aktualisierung des Investitionsplans:**\\n   - Führe die Befehlszeile aus, um den nächsten Forschungsschritt zu starten:\\n     ```…\"}},{\"path\":\"evidence/r3_daytrading_data_care_latest.json\",\"fields\":{\"ok\":false,\"steps_ok\":1,\"headline_de\":\"Daytrading-Datenpflege — 1/4 (Blocker prüfen)\",\"t212_trusted\":false,\"orders_allowed\":false,\"updated_at_utc\":\"2026-06-09T20:28:48+00:00\"}},{\"path\":\"evidence/r3_daily_postmortem_latest.json\",\"fields\":{\"bad_day\":false,\"portfolio_return_pct\":4.73,\"benchmark_return_pct\":0.54,\"delta_vs_benchmark_pct\":4.19,\"summary_de\":\"Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %\",\"as_of_date\":\"2026-06-12\"}},{\"path\":\"evidence/pilot_portfolio_reevaluation_latest.json\",\"fields\":{\"status\":\"OK\",\"urgency\":\"NONE\",\"trade_required\":false,\"summary_de\":\"Regime RISK_OFF · Risk-off. Risk-off aktiv — keine Nachkäufe; Investiert 0.0% / Modell-Ziel 79.5%.\",\"worthwhile_buys\":[]}},{\"path\":\"evidence/t212_trust_latest.json\",\"fields\":{\"trusted\":false,\"orders_allowed\":false,\"reason_code\":\"NOT_CONFIGURED\",\"message_de\":\"API eingeben\",\"last_sync_utc\":null}},{\"path\":\"evidence/public_learning_report_latest.json\",\"fields\":{\"quality_score\":{\"components\":[{\"id\":\"data_capture\",\"max\":25,\"ok\":true,\"points\":25},{\"ic_pearson\":0.017102630157397,\"id\":\"prediction_feedback\",\"max\":25,\"points\":13,\"signed_hit_rate\":0.5056850715746422},{\"id\":\"live_learning\",\"max\":25,\"n_mature\":0,\"points\":0},{\"id\":\"governance_safety\",\"max\":25,\"ok\":true,\"points\":25}],\"grade\":\"C\",\"headline_de\":\"Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.\",\"max\":100,\"total\":63}}}]",
   "schema_version": 1,
-  "updated_at_utc": "2026-06-09T21:16:52+00:00"
+  "updated_at_utc": "2026-06-15T12:38:30+00:00"
 }

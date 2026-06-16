@@ -1,0 +1,87 @@
+{
+  "checks": [
+    {
+      "id": "promotion_gate",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "id": "operational_safety_flags",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "id": "cursor_hooks",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "id": "git_secrets",
+      "issues": [],
+      "ok": true
+    },
+    {
+      "block_count": 17,
+      "headline_de": "Preflight BLOCK — 17 Datei(en) mit kritischen Leaks",
+      "id": "leak_preflight",
+      "ok": true,
+      "public_mirror_ok": false,
+      "warn_only": true
+    },
+    {
+      "id": "secret_permissions",
+      "ok": true,
+      "paths": [
+        {
+          "mode_after": "0o600",
+          "mode_before": "0o600",
+          "ok": true,
+          "path": "control/server.env"
+        },
+        {
+          "mode_after": "0o600",
+          "mode_before": "0o600",
+          "ok": true,
+          "path": "trading212_zugangsdaten.env"
+        },
+        {
+          "ok": true,
+          "path": "/home/machinax7/active_alpha_model/control/cloudflare_tunnel.token",
+          "skipped": true
+        },
+        {
+          "mode_after": "0o700",
+          "mode_before": "0o700",
+          "ok": true,
+          "path": "control/secrets"
+        },
+        {
+          "ok": true,
+          "path": "/home/machinax7/active_alpha_model/control/.tunnel_secret_paste",
+          "skipped": true
+        }
+      ]
+    },
+    {
+      "fail_closed": true,
+      "id": "t212_trust_gate",
+      "note_de": "Trust Gate aktiv — untrusted blockiert Orders",
+      "ok": true,
+      "trusted": false
+    }
+  ],
+  "fail_closed": true,
+  "headline_de": "Projekt abgesichert — Safety + Secrets OK",
+  "invariants_de": [
+    "auto_execute_real_money_enabled=false",
+    "auto_promote_*=false",
+    "auto_research_enabled=false",
+    "Champion-Wechsel nur mit externer Freigabe",
+    "Secrets chmod 600/700, nicht in Git",
+    ".cursor/hooks.json leer"
+  ],
+  "locked_at_utc": "2026-06-10T08:00:53+00:00",
+  "repair_cmd_de": "bash tools/project_security_lockdown.sh",
+  "schema_version": 1,
+  "status": "LOCKED"
+}

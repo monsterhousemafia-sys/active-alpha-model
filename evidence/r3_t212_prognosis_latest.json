@@ -1,18 +1,19 @@
 {
-  "available_cash_eur": 678.52,
+  "available_cash_eur": null,
   "blockers": [
-    "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 er"
+    "Kurz warten"
   ],
   "broker_de": "Trading212",
   "browser_mode_de": "Lokaler Browser — Oberfläche auf 127.0.0.1, Prognose-Daten direkt aus dem Internet",
+  "capital_basis_de": "Kurz warten",
   "daily_postmortem": {
-    "as_of_date": "2026-06-09",
-    "bad_day": true,
-    "benchmark_return_pct": -0.29,
-    "headline_de": "⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+    "as_of_date": "2026-06-12",
+    "bad_day": false,
+    "benchmark_return_pct": 0.54,
+    "headline_de": "Tagesbilanz — Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %",
     "ok": true,
-    "portfolio_return_pct": -2.55,
-    "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %"
+    "portfolio_return_pct": 4.73,
+    "summary_de": "Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %"
   },
   "data_source_de": "internet",
   "delivery_de": "Präsentiert Handelsergebnisse und führt als einzige Oberfläche T212-Orders aus (GUI-Bestätigung)",
@@ -22,7 +23,7 @@
   "eod_local_time_cet": "22:15",
   "h1_evidence": {
     "detail_de": null,
-    "evaluated_at_utc": "2026-06-09T21:17:08+00:00",
+    "evaluated_at_utc": "2026-06-14T19:33:29+00:00",
     "h1_status": "COMPLETE",
     "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
     "metrics_strategy": {
@@ -40,10 +41,10 @@
     "sealed": false
   },
   "headline_de": "R3 Handelsergebnis · Trading212",
-  "ingest_updated_at_utc": "2026-06-09T21:17:06+00:00",
+  "ingest_updated_at_utc": "2026-06-14T19:32:52+00:00",
   "internet_ok": true,
-  "investable_eur": 678.52,
-  "message_de": "Predict bereit · König: Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX. · Überprüfen Sie die aktuellen Marktbedingungen und technischen Indikatoren von STX, bevor Sie den Nac",
+  "investable_eur": null,
+  "message_de": "Predict bereit · König: Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX. · Überprüfen Sie die aktuellen Marktbedingungen und den Nachkauf von STX.",
   "model_result_at_utc": "2026-06-09T18:48:14+00:00",
   "ok": false,
   "order_gate_ok": false,
@@ -152,11 +153,8 @@
     "functions_active": 0,
     "primary_function_id": null
   },
-  "updated_at_utc": "2026-06-09T21:17:08+00:00",
-  "voice_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen pr Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent.",
-  "warnings_de": [
-    "⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %"
-  ],
+  "updated_at_utc": "2026-06-14T19:33:29+00:00",
+  "voice_warning_de": "Kurz warten Tagesbilanz: Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %.",
   "worthwhile_buy_count": 0,
   "worthwhile_buys": [],
   "worthwhile_sell_count": 0,

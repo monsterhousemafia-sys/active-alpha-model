@@ -1,6 +1,19 @@
 {
-  "event_count": 0,
-  "events": [],
+  "event_count": 1,
+  "events": [
+    {
+      "after": {
+        "mtime_utc": "2026-06-16T09:01:25+00:00",
+        "size": 142
+      },
+      "at_utc": "2026-06-16T09:01:43+00:00",
+      "before": {
+        "mtime_utc": "2026-06-16T08:56:25+00:00",
+        "size": 142
+      },
+      "path": "remote_hub_tunnel.json"
+    }
+  ],
   "h1": {
     "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
     "status": "COMPLETE"
@@ -16,35 +29,35 @@
         "schema_version": 1
       },
       "daily_alpha_h1_evaluation_latest.json": {
-        "mtime_utc": "2026-06-08T06:46:11+00:00",
+        "mtime_utc": "2026-06-15T12:45:31+00:00",
         "size": 1863
       },
       "daily_alpha_h1_pipeline_latest.json": {
-        "mtime_utc": "2026-06-08T06:48:32+00:00",
+        "mtime_utc": "2026-06-16T08:39:49+00:00",
         "size": 296
       },
       "gui_preview_latest.json": {
-        "mtime_utc": "2026-06-08T02:51:38+00:00",
-        "size": 30409
+        "mtime_utc": "2026-06-09T17:28:00+00:00",
+        "size": 33491
       },
       "launch_progress_latest.json": {
-        "mtime_utc": "2026-06-08T06:42:42+00:00",
-        "size": 2395
+        "mtime_utc": "2026-06-15T12:38:28+00:00",
+        "size": 2742
       },
       "launch_readiness_latest.json": {
         "mtime_utc": "2026-06-06T15:12:52+00:00",
         "size": 2495
       },
       "preview_hub.json": {
-        "mtime_utc": "2026-06-08T06:23:04+00:00",
-        "size": 136
+        "mtime_utc": "2026-06-16T08:58:51+00:00",
+        "size": 165
       },
       "remote_hub_tunnel.json": {
-        "mtime_utc": "2026-06-08T06:10:57+00:00",
-        "size": 392
+        "mtime_utc": "2026-06-16T09:01:25+00:00",
+        "size": 142
       }
     },
-    "snapshotted_at_utc": "2026-06-08T06:49:48+00:00"
+    "snapshotted_at_utc": "2026-06-16T09:01:43+00:00"
   },
-  "updated_at_utc": "2026-06-08T06:49:48+00:00"
+  "updated_at_utc": "2026-06-16T09:01:43+00:00"
 }

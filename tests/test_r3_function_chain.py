@@ -50,6 +50,10 @@ def test_ui_exec_button_ready_when_package_active(tmp_path: Path) -> None:
     assert "r3-freigabe-btn ready" not in blocked_html
     assert "r3-freigabe-btn blocked" in blocked_html
 
+    exec_html = render_r3_trading_functions_html(tmp_path, exec_only=True)
+    assert "r3-freigabe-governance" not in exec_html
+    assert "auto_execute_real_money" not in exec_html
+
 
 def test_load_prep_creates_evidence_when_missing(tmp_path: Path) -> None:
     seed_orders_stack(tmp_path)
@@ -97,6 +101,17 @@ def test_submit_initial_package_requires_confirm(tmp_path: Path) -> None:
     out = submit_r3_initial_package(tmp_path, confirmed=False)
     assert out["ok"] is False
     assert out["error"] == "CONFIRMATION_REQUIRED"
+
+
+def test_submit_blocks_when_freigabe_not_ready(tmp_path: Path) -> None:
+    seed_orders_stack(tmp_path)
+    with patch(
+        "analytics.r3_freigabe.package_ready",
+        return_value={"ready": False, "headline_de": "T212-Konto bestätigen"},
+    ):
+        out = submit_r3_initial_package(tmp_path, confirmed=True)
+    assert out["ok"] is False
+    assert out["error"] == "FREIGABE_NOT_READY"
 
 
 @patch("analytics.r3_stock_orders._try_execute_pending_r3_deferred", return_value=None)

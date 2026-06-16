@@ -33,6 +33,7 @@ EVIDENCE_SCORE = Path("evidence/closed_loop_score_latest.json")
 EVIDENCE_REFRESH = Path("evidence/pilot_integrated_refresh_latest.json")
 EVIDENCE_STACK = Path("evidence/stack_integrity_latest.json")
 EVIDENCE_POSTMORTEM = Path("evidence/r3_daily_postmortem_latest.json")
+EVIDENCE_FALL_WATCH = Path("evidence/prognosis_fall_watch_latest.json")
 EVIDENCE_QUOTES = Path("evidence/r3_quote_keepalive_latest.json")
 
 _PREP_LABELS = {"t212_bond": "T212", "live_quotes": "Kurse", "order_surface": "Orders"}
@@ -93,6 +94,17 @@ def resolve_submission_mode(root: Path) -> Dict[str, Any]:
                 live = True
     except Exception:
         reasons.append("Policy-Check fehlgeschlagen")
+    if live:
+        try:
+            from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
+
+            trust = assess_t212_trust_from_root(root, persist=False)
+            if not trust.get("orders_allowed"):
+                live = False
+                reasons.append(str(trust.get("reason_de") or "Sync ausstehend")[:80])
+        except Exception:
+            live = False
+            reasons.append("T212 Trust nicht prüfbar")
     if not gates_checked and not reasons:
         reasons.append("Policy unverifiziert")
     mode_de = (
@@ -130,32 +142,6 @@ def _plan_integration_status_de(plan: Dict[str, Any]) -> str:
     return " · ".join(parts) if parts else "Champion-Basis"
 
 
-def _collect_model_allocations(plan: Dict[str, Any], reeval: Dict[str, Any]) -> tuple[float, List[Dict[str, Any]]]:
-    raw_inv = plan.get("investable_eur")
-    if raw_inv is None:
-        raw_inv = reeval.get("deployable_eur")
-    if raw_inv is None:
-        return 0.0, []
-    plan_total = max(0.0, round(float(raw_inv), 2))
-    rows: List[Dict[str, Any]] = []
-    for alloc in plan.get("allocations") or []:
-        if not isinstance(alloc, dict):
-            continue
-        tgt = round(safe_float(alloc.get("target_eur")), 2)
-        if tgt <= 0:
-            continue
-        pct = round((tgt / plan_total * 100.0), 1) if plan_total > 0 else 0.0
-        rows.append(
-            {
-                "symbol": str(alloc.get("symbol") or "—")[:32],
-                "notional_eur": tgt,
-                "pct": pct,
-            }
-        )
-    rows.sort(key=lambda r: (-float(r.get("notional_eur") or 0), str(r.get("symbol") or "")))
-    return plan_total, rows
-
-
 def _collect_deferred_package_status(root: Path, buy_symbols: set[str]) -> Dict[str, Any]:
     if not buy_symbols:
         return {"active": False, "pending_count": 0, "want_count": 0, "complete": False}
@@ -186,51 +172,6 @@ def _collect_deferred_package_status(root: Path, buy_symbols: set[str]) -> Dict[
         }
     except Exception:
         return {"active": False, "pending_count": 0, "want_count": 0, "complete": False}
-
-
-def _collect_execution_package(orders: Dict[str, Any]) -> Dict[str, Any]:
-    initial_pkg = orders.get("initial_package") or {}
-    buy_lines: List[Dict[str, Any]] = []
-    sell_lines: List[Dict[str, Any]] = []
-    for row in orders.get("stocks") or []:
-        if not isinstance(row, dict):
-            continue
-        side = str(row.get("side") or "").upper()
-        if side not in ("BUY", "SELL"):
-            continue
-        raw = row.get("notional_eur")
-        if raw is None:
-            continue
-        notional = round(float(raw), 2)
-        if notional <= 0:
-            continue
-        entry = {"symbol": str(row.get("symbol") or "—")[:32], "notional_eur": notional, "side": side}
-        if side == "SELL":
-            sell_lines.append(entry)
-        else:
-            buy_lines.append(entry)
-    buy_lines.sort(key=lambda r: (-float(r.get("notional_eur") or 0), str(r.get("symbol") or "")))
-    sell_lines.sort(key=lambda r: (-float(r.get("notional_eur") or 0), str(r.get("symbol") or "")))
-    lines = buy_lines
-    exec_total = round(sum(float(r.get("notional_eur") or 0) for r in buy_lines), 2)
-    sell_total = round(sum(float(r.get("notional_eur") or 0) for r in sell_lines), 2)
-    pkg_notional = initial_pkg.get("notional_eur")
-    if pkg_notional is not None:
-        notional = round(float(pkg_notional), 2)
-    elif lines:
-        notional = exec_total
-    else:
-        notional = 0.0
-    return {
-        "active": bool(initial_pkg.get("active")),
-        "source_de": str(EVIDENCE_ORDERS),
-        "notional_eur": notional,
-        "sell_notional_eur": sell_total if sell_lines else None,
-        "buy_count": len(buy_lines),
-        "sell_count": len(sell_lines),
-        "lines": lines,
-        "sell_lines": sell_lines,
-    }
 
 
 def _resolve_trading_cycle(root: Path, cycle: Dict[str, Any]) -> Dict[str, Any]:
@@ -484,12 +425,15 @@ def _collect_prognosis_mirror(root: Path, prognosis: Dict[str, Any]) -> Dict[str
     if not ww_buys:
         ww_file = _load_json(root / Path("evidence/r3_worthwhile_positions_latest.json"))
         ww_buys = list(ww_file.get("worthwhile_buys") or [])[:12]
+    inv = _as_optional_float(prognosis.get("investable_eur"))
+    if not prognosis.get("t212_trusted"):
+        inv = None
     return {
-        "ok": bool(prognosis.get("ok")),
+        "ok": bool(prognosis.get("ok")) and prognosis.get("t212_trusted") is not False,
         "signal_date": prognosis.get("signal_date"),
         "capital_basis_de": str(prognosis.get("capital_basis_de") or "")[:120],
         "summary_de": str(prognosis.get("summary_de") or "")[:200],
-        "investable_eur": _as_optional_float(prognosis.get("investable_eur")),
+        "investable_eur": inv,
         "positions": int(prognosis.get("positions") or 0),
         "t212_trusted": prognosis.get("t212_trusted"),
         "worthwhile_buy_count": int(prognosis.get("worthwhile_buy_count") or len(ww_buys)),
@@ -520,18 +464,95 @@ def _collect_king_follow_on(king: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def _mirror_alerts(
+    postmortem: Dict[str, Any],
+    fall_watch: Dict[str, Any],
+    *,
+    exec_mode: bool,
+) -> tuple[List[str], Optional[str]]:
+    alerts_de: List[str] = []
+    if exec_mode:
+        if postmortem.get("bad_day") and postmortem.get("headline_de"):
+            alerts_de.append(str(postmortem["headline_de"])[:160])
+        if fall_watch.get("fall_detected") and fall_watch.get("headline_de"):
+            alerts_de.insert(0, str(fall_watch["headline_de"])[:160])
+        voice_warning_de = alerts_de[0] if alerts_de else None
+        return alerts_de, voice_warning_de
+
+    voice_warning_de = str(postmortem.get("voice_warning_de") or "").strip() or None
+    if postmortem.get("stale_sync_warning_de"):
+        alerts_de.append(str(postmortem["stale_sync_warning_de"])[:160])
+    if postmortem.get("bad_day") and postmortem.get("headline_de"):
+        alerts_de.append(str(postmortem["headline_de"])[:160])
+    if fall_watch.get("fall_detected") and fall_watch.get("headline_de"):
+        alerts_de.insert(0, str(fall_watch["headline_de"])[:160])
+    elif fall_watch.get("portfolio_return_pct") is not None and float(fall_watch["portfolio_return_pct"]) < 0:
+        hw = str(fall_watch.get("headline_de") or "")[:160]
+        if hw and hw not in alerts_de:
+            alerts_de.append(hw)
+    if not voice_warning_de and alerts_de:
+        voice_warning_de = alerts_de[0]
+    return alerts_de, voice_warning_de
+
+
+def _trim_exec_mirror_payload(doc: Dict[str, Any]) -> Dict[str, Any]:
+    pm = doc.get("daily_postmortem") or {}
+    fw = doc.get("fall_watch") or {}
+    for key in (
+        "governance_note_de",
+        "prep_rows",
+        "pipeline_layers",
+        "system_metrics",
+        "trading_cycle",
+        "closed_loop",
+        "kreis_score",
+        "local_runtime",
+        "local_growth",
+        "trading_functions",
+        "runtime_profile",
+        "runtime_upgrade",
+        "series_readiness",
+        "operator_readiness",
+        "operator_readiness_ref",
+        "quote_keepalive",
+        "king_follow_on",
+        "prognosis",
+        "cost_risk",
+        "snapshot_health",
+        "broker_summary",
+        "last_batch",
+        "mirror_de",
+    ):
+        doc.pop(key, None)
+    doc["daily_postmortem"] = {"bad_day": bool(pm.get("bad_day"))}
+    doc["fall_watch"] = {"fall_detected": bool(fw.get("fall_detected"))}
+    return doc
+
+
 def build_exec_mirror_state(root: Path, *, refresh_scans: bool = False) -> Dict[str, Any]:
     """Read-only Spiegel — alle Felder aus Evidence, kein erfundener Wert."""
     root = Path(root)
+    from analytics.r3_surface import exec_mirror_mode
+
+    exec_mode = exec_mirror_mode(root)
     try:
-        return _build_exec_mirror_state_impl(root, refresh_scans=bool(refresh_scans))
+        doc = _build_exec_mirror_state_impl(root, refresh_scans=bool(refresh_scans), exec_mode=exec_mode)
+        if exec_mode:
+            doc = _trim_exec_mirror_payload(doc)
+        return doc
     except Exception as exc:
         _LOG.exception("build_exec_mirror_state failed: %s", exc)
         return empty_mirror_state(detail_de=str(exc)[:200])
 
 
-def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False) -> Dict[str, Any]:
+def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False, exec_mode: bool = False) -> Dict[str, Any]:
     from analytics.r3_freigabe import freigabe_governance_note_de, package_ready
+    from analytics.r3_mirror_capital import (
+        collect_execution_package,
+        collect_model_allocations,
+        gate_execution_package,
+        resolve_mirror_account,
+    )
 
     pkg = package_ready(root)
     orders = _load_json(root / EVIDENCE_ORDERS)
@@ -552,7 +573,16 @@ def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False) ->
     quote_snap = snap.get("quote_snapshot") or {}
     health = snap.get("health") if isinstance(snap.get("health"), dict) else {}
     exec_prices = quote_snap.get("executable_prices_eur") or {}
-    plan_total, model_allocations = _collect_model_allocations(plan, reeval)
+    mirror_acct = resolve_mirror_account(root)
+    r3_account = mirror_acct.get("account") or {}
+    t212_trusted = bool(mirror_acct.get("t212_trusted"))
+    trusted_investable = mirror_acct.get("investable_eur")
+    plan_total, model_allocations = collect_model_allocations(
+        plan,
+        reeval,
+        trusted_investable=trusted_investable,
+        t212_trusted=t212_trusted,
+    )
 
     prep_rows: List[Dict[str, Any]] = []
     for step in prep.get("prep_steps") or []:
@@ -563,136 +593,80 @@ def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False) ->
 
     headline = display_headline(str(pkg.get("headline_de") or "Kein aktives Paket"))
     cost = refresh.get("cost_risk") or snap.get("cost_risk") or {}
-    functions_doc = _load_json(root / Path("evidence/r3_trading_functions_latest.json"))
-    if not functions_doc.get("functions"):
-        try:
-            from analytics.r3_trading_functions import build_r3_trading_functions
+    enrichment: Dict[str, Any] = {}
+    if not exec_mode:
+        from analytics.r3_mirror_enrichment import load_mirror_enrichment
 
-            functions_doc = build_r3_trading_functions(root, persist=False)
-        except Exception:
-            functions_doc = functions_doc or {}
-    try:
-        from analytics.r3_runtime_upgrade import (
-            build_upgrade_status,
-            load_runtime_profile,
-            load_upgrade_evidence,
-            scan_runtime_upgrades,
-        )
-
-        runtime_profile = load_runtime_profile(root)
-        if refresh_scans:
-            upgrade_doc = scan_runtime_upgrades(root, persist=True, force=True)
-        else:
-            upgrade_doc = load_upgrade_evidence(root)
-        runtime_upgrade = build_upgrade_status(root)
-        runtime_upgrade["pending"] = upgrade_doc.get("pending")
-        runtime_upgrade["has_pending"] = bool(
-            upgrade_doc.get("pending") and (upgrade_doc.get("pending") or {}).get("status") == "awaiting_confirmation"
-        )
-    except Exception:
-        runtime_profile = {}
-        runtime_upgrade = {}
-    try:
-        from analytics.r3_local_growth import local_confirmation_de, scan_local_growth
-
-        if refresh_scans:
-            stack_ok = bool(_load_json(root / Path("evidence/stack_integrity_latest.json")).get("stack_ok"))
-            local_growth = scan_local_growth(root, persist=True, force=True, fast=stack_ok)
-        else:
-            local_growth = _load_json(root / Path("evidence/r3_local_growth_latest.json"))
-        local_confirm = local_confirmation_de(root)
-    except Exception:
-        local_growth = {}
-        local_confirm = ""
-    try:
-        from analytics.series_readiness import scan_series_readiness
-
-        if refresh_scans:
-            series_readiness = scan_series_readiness(root, persist=True, force=True, fast=True)
-        else:
-            series_readiness = _load_json(root / Path("evidence/series_readiness_latest.json"))
-    except Exception:
-        series_readiness = {}
-    operator_readiness: Dict[str, Any] = {}
-    try:
-        from analytics.r3_operator_readiness import sync_r3_operator_readiness
-
-        if refresh_scans:
-            operator_readiness = sync_r3_operator_readiness(root, persist=True)
-        else:
-            operator_readiness = _load_json(root / Path("evidence/r3_operator_readiness_latest.json"))
-            if not operator_readiness:
-                operator_readiness = sync_r3_operator_readiness(root, persist=True)
-    except Exception:
-        operator_readiness = _load_json(root / Path("evidence/r3_operator_readiness_latest.json"))
+        enrichment = load_mirror_enrichment(root, refresh_scans=refresh_scans)
+    functions_doc = enrichment.get("functions_doc") or {}
+    runtime_profile = enrichment.get("runtime_profile") or {}
+    runtime_upgrade = enrichment.get("runtime_upgrade") or {}
+    local_growth = enrichment.get("local_growth") or {}
+    local_confirm = str(enrichment.get("local_confirm") or "")
+    series_readiness = enrichment.get("series_readiness") or {}
+    operator_readiness = enrichment.get("operator_readiness") or {}
     local_runtime = _load_json(root / Path("control/alpha_model_local_runtime.json"))
     local_first = _load_json(root / Path("evidence/r3_local_first_latest.json"))
     quotes_keep = _load_json(root / EVIDENCE_QUOTES)
     ingest = _load_json(root / Path("evidence/r3_browser_ingest_latest.json"))
-    postmortem = _load_json(root / EVIDENCE_POSTMORTEM)
-    if not postmortem.get("as_of_date"):
-        try:
-            from analytics.r3_daily_postmortem import run_daily_postmortem
-
-            postmortem = run_daily_postmortem(root, persist=True)
-        except Exception:
-            postmortem = postmortem or {}
-    alerts_de: List[str] = []
-    voice_warning_de = str(postmortem.get("voice_warning_de") or "").strip() or None
-    if postmortem.get("stale_sync_warning_de"):
-        alerts_de.append(str(postmortem["stale_sync_warning_de"])[:160])
-    if postmortem.get("bad_day") and postmortem.get("headline_de"):
-        alerts_de.append(str(postmortem["headline_de"])[:160])
-    if not voice_warning_de and alerts_de:
-        voice_warning_de = alerts_de[0]
+    postmortem = (enrichment.get("postmortem") if enrichment else None) or _load_json(root / EVIDENCE_POSTMORTEM)
+    fall_watch = _load_json(root / EVIDENCE_FALL_WATCH)
+    alerts_de, voice_warning_de = _mirror_alerts(postmortem, fall_watch, exec_mode=exec_mode)
 
     cycle_resolved = _resolve_trading_cycle(root, cycle)
     pkg_notional_raw = pkg.get("notional_eur")
     pkg_notional_eur = _as_optional_float(pkg_notional_raw) if pkg_notional_raw is not None else None
-    exec_pkg = _collect_execution_package(orders)
+    exec_pkg = gate_execution_package(
+        collect_execution_package(orders),
+        t212_trusted=t212_trusted,
+    )
     buy_syms = {
         str(r.get("symbol") or "").upper()
         for r in (exec_pkg.get("lines") or [])
         if isinstance(r, dict) and r.get("symbol")
     }
     deferred_status = _collect_deferred_package_status(root, buy_syms)
-    layers = _collect_pipeline_layers(
-        plan=plan,
-        bond=bond,
-        king=king,
-        cycle=cycle_resolved,
-        loop=loop,
-        engine=engine,
-        snap=snap,
-        refresh=refresh,
-        stack=stack,
-        score=score,
-        pkg_ready=bool(pkg.get("ready")),
-        pkg_headline=headline,
-        pkg_notional_eur=pkg_notional_eur,
-        deferred_status=deferred_status,
-    )
-    flow_doc: Dict[str, Any] = {}
-    try:
-        from analytics.r3_flow_orchestrator import build_r3_flow_status
-
-        flow_doc = build_r3_flow_status(root, persist=False, read_only=True)
-    except Exception:
-        flow_doc = _load_json(root / Path("evidence/r3_flow_latest.json"))
     broker_summary = {
-        "cash_eur": _as_optional_float(bond.get("cash_eur")),
-        "investable_eur": _as_optional_float(
-            _first_json(bond.get("investable_eur"), plan.get("investable_eur"))
-        ),
+        "cash_eur": _as_optional_float(r3_account.get("cash_eur") if t212_trusted else bond.get("cash_eur")),
+        "investable_eur": trusted_investable,
         "positions_count": bond.get("positions_count"),
+        "t212_trusted": t212_trusted,
     }
     quote_count = len(exec_prices)
-    system_metrics = _collect_system_metrics(
-        root,
-        broker_summary=broker_summary,
-        quote_count=quote_count,
-        flow_doc=flow_doc,
-    )
+    if exec_mode:
+        layers: List[Dict[str, Any]] = []
+        flow_doc: Dict[str, Any] = {}
+        system_metrics: List[Dict[str, Any]] = []
+    else:
+        layers = _collect_pipeline_layers(
+            plan=plan,
+            bond=bond,
+            king=king,
+            cycle=cycle_resolved,
+            loop=loop,
+            engine=engine,
+            snap=snap,
+            refresh=refresh,
+            stack=stack,
+            score=score,
+            pkg_ready=bool(pkg.get("ready")),
+            pkg_headline=headline,
+            pkg_notional_eur=pkg_notional_eur,
+            deferred_status=deferred_status,
+        )
+        flow_doc = {}
+        try:
+            from analytics.r3_flow_orchestrator import build_r3_flow_status
+
+            flow_doc = build_r3_flow_status(root, persist=False, read_only=True)
+        except Exception:
+            flow_doc = _load_json(root / Path("evidence/r3_flow_latest.json"))
+        system_metrics = _collect_system_metrics(
+            root,
+            broker_summary=broker_summary,
+            quote_count=quote_count,
+            flow_doc=flow_doc,
+        )
 
     return {
         "schema_version": 2,
@@ -704,6 +678,13 @@ def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False) ->
             prep.get("governance_note_de") or pkg.get("governance_note_de") or freigabe_governance_note_de()
         ),
         "notional_eur": round(safe_float(pkg.get("notional_eur")), 2),
+        "investable_eur": trusted_investable,
+        "t212_trusted": t212_trusted,
+        "t212_trust_reason": str(mirror_acct.get("t212_trust_reason") or "")[:80],
+        "credentials_configured": bool(mirror_acct.get("credentials_configured")),
+        "needs_api_setup": bool(mirror_acct.get("needs_api_setup")),
+        "operator_api_ready": bool(mirror_acct.get("operator_api_ready")),
+        "capital_message_de": str(mirror_acct.get("capital_message_de") or "")[:160],
         "buy_count": safe_int(pkg.get("buy_count")),
         "model_output": {
             "title_de": "R3",
@@ -714,8 +695,12 @@ def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False) ->
         },
         "execution_package": {**exec_pkg, "deferred_status": deferred_status},
         "deferred_package": deferred_status,
-        "king_follow_on": _collect_king_follow_on(king),
-        "prognosis": _collect_prognosis_mirror(root, _load_json(root / Path("evidence/r3_t212_prognosis_latest.json"))),
+        "king_follow_on": {} if exec_mode else _collect_king_follow_on(king),
+        "prognosis": (
+            {}
+            if exec_mode
+            else _collect_prognosis_mirror(root, _load_json(root / Path("evidence/r3_t212_prognosis_latest.json")))
+        ),
         "quote_keepalive": {
             "ok": bool(quotes_keep.get("ok")),
             "skipped": quotes_keep.get("skipped"),
@@ -740,21 +725,39 @@ def _build_exec_mirror_state_impl(root: Path, *, refresh_scans: bool = False) ->
             "picks": list(postmortem.get("picks") or [])[:12],
             "source_de": str(EVIDENCE_POSTMORTEM),
         },
+        "fall_watch": {
+            "ok": bool(fall_watch.get("ok")),
+            "fall_detected": bool(fall_watch.get("fall_detected")),
+            "headline_de": str(fall_watch.get("headline_de") or "")[:200],
+            "prior_close_date": fall_watch.get("prior_close_date"),
+            "portfolio_return_pct": fall_watch.get("portfolio_return_pct"),
+            "benchmark_return_pct": fall_watch.get("benchmark_return_pct"),
+            "mu_hat_portfolio_pct": fall_watch.get("mu_hat_portfolio_pct"),
+            "picks": list(fall_watch.get("picks") or [])[:12],
+            "justification": fall_watch.get("justification") or {},
+            "missing_tickers": list(fall_watch.get("missing_tickers") or [])[:6],
+            "updated_at_utc": fall_watch.get("updated_at_utc"),
+            "monitoring_de": str(fall_watch.get("monitoring_de") or "")[:120],
+            "source_de": str(EVIDENCE_FALL_WATCH),
+        },
         "alerts_de": alerts_de,
         "voice_warning_de": voice_warning_de,
         "submission_mode": resolve_submission_mode(root),
         "t212_connected": bool(bond.get("bonded")) and bool(bond.get("connected")),
-        "t212_detail_de": str(bond.get("confirmation_de") or "")[:100],
+        "t212_detail_de": str(
+            bond.get("connection_label") or bond.get("account_label") or bond.get("confirmation_de") or ""
+        )[:100],
+        "t212_account_label": bond.get("account_label"),
+        "t212_account_fingerprint": bond.get("account_fingerprint"),
         "quote_count": len(exec_prices),
         "us_session_open": bool(quote_snap.get("_us_session_open")),
         "prep_rows": prep_rows,
         "pipeline_layers": layers,
         "broker_summary": {
-            "cash_eur": round(safe_float(bond.get("cash_eur")), 2),
-            "investable_eur": round(
-                safe_float(bond.get("investable_eur") or plan.get("investable_eur")), 2
-            ),
+            "cash_eur": broker_summary.get("cash_eur"),
+            "investable_eur": trusted_investable,
             "positions_count": safe_int(bond.get("positions_count")),
+            "t212_trusted": t212_trusted,
         },
         "snapshot_health": {
             "ok": bool(health.get("ok")),

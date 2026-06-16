@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-06-09",
+  "signal_date": "2026-06-09",
+  "profile": "daily_alpha_h1",
+  "n_picks": 15,
+  "portfolio_mu_hat_1d_pct": 0.1,
+  "all_mu_hat_positive": true,
+  "risk_on_in_signal": false,
+  "regime_drift_live_vs_signal": true,
+  "headline_verdict_de": "P(Kurse fallen nächster US-Handelstag) ≈ 49% — Modell erwartet +0.10%/Tag",
+  "methods": {
+    "M1_empirical": {
+      "p_fall": 0.4886,
+      "label_de": "Empirisch: Anteil negativer Tage je Ticker (252d), gewichtet"
+    },
+    "M2_parametric_ticker": {
+      "p_fall": 0.4794,
+      "label_de": "Normal: P(R<0|μ=mu_hat, σ=empirisch/Ticker)"
+    },
+    "M3_parametric_h1": {
+      "p_fall": 0.4682,
+      "sigma_daily_pct": 1.25,
+      "label_de": "Normal: P(R<0|μ=Portfolio-mu_hat, σ=H1-Vol)"
+    },
+    "M4_h1_hit_rate": {
+      "p_fall": 0.4534,
+      "hit_rate": 0.5466,
+      "n_days": 1866,
+      "binom_p_vs_50": 3.1e-05,
+      "label_de": "H1-Backtest: 1 − daily_hit_rate"
+    },
+    "M5_portfolio_history": {
+      "p_fall": 0.4881,
+      "mean_daily_pct": -0.004,
+      "t_p_gt_0": 0.5201,
+      "sign_test_p": 0.7529,
+      "label_de": "Historisches Gewichtungs-Portfolio 1J"
+    }
+  },
+  "combined_p_fall_mean": 0.4755,
+  "combined_p_fall_regime_adjusted": 0.4853,
+  "range_p_fall": [
+    0.4534,
+    0.4886
+  ],
+  "spy_benchmark": {
+    "p_down_empirical": 0.4365,
+    "ret_last1d_pct": -0.29
+  },
+  "yesterday_evidence": {
+    "as_of_date": "2026-06-09",
+    "bad_day": true,
+    "benchmark_return_pct": -0.29,
+    "headline_de": "⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
+    "ok": true,
+    "portfolio_return_pct": -2.55,
+    "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %"
+  },
+  "per_ticker": [
+    {
+      "ticker": "OMC",
+      "weight": 0.1485,
+      "mu_hat": 0.00113,
+      "mu_emp_1d": 0.00061,
+      "sigma_emp_1d": 0.02185,
+      "p_down_empirical": 0.4881,
+      "p_down_parametric": 0.4793,
+      "ret_last1d_pct": 0.75,
+      "ret_last5d_pct": 0.55
+    },
+    {
+      "ticker": "PFE",
+      "weight": 0.1307,
+      "mu_hat": 0.0011,
+      "mu_emp_1d": 0.00076,
+      "sigma_emp_1d": 0.01507,
+      "p_down_empirical": 0.4722,
+      "p_down_parametric": 0.4708,
+      "ret_last1d_pct": 0.31,
+      "ret_last5d_pct": 0.59
+    },
+    {
+      "ticker": "CHTR",
+      "weight": 0.1054,
+      "mu_hat": 0.00103,
+      "mu_emp_1d": -0.00375,
+      "sigma_emp_1d": 0.03068,
+      "p_down_empirical": 0.5159,
+      "p_down_parametric": 0.4865,
+      "ret_last1d_pct": 2.4,
+      "ret_last5d_pct": -3.49
+    },
+    {
+      "ticker": "EPAM",
+      "weight": 0.0938,
+      "mu_hat": 0.00102,
+      "mu_emp_1d": -0.00206,
+      "sigma_emp_1d": 0.02807,
+      "p_down_empirical": 0.4921,
+      "p_down_parametric": 0.4855,
+      "ret_last1d_pct": -1.11,
+      "ret_last5d_pct": -7.34
+    },
+    {
+      "ticker": "GM",
+      "weight": 0.0759,
+      "mu_hat": 0.00089,
+      "mu_emp_1d": 0.00251,
+      "sigma_emp_1d": 0.02169,
+      "p_down_empirical": 0.4722,
+      "p_down_parametric": 0.4837,
+      "ret_last1d_pct": -0.01,
+      "ret_last5d_pct": 2.71
+    },
+    {
+      "ticker": "GHC",
+      "weight": 0.0745,
+      "mu_hat": 0.00085,
+      "mu_emp_1d": 0.00085,
+      "sigma_emp_1d": 0.01673,
+      "p_down_empirical": 0.4921,
+      "p_down_parametric": 0.4797,
+      "ret_last1d_pct": 0.66,
+      "ret_last5d_pct": 3.17
+    },
+    {
+      "ticker": "TDY",
+      "weight": 0.0693,
+      "mu_hat": 0.00099,
+      "mu_emp_1d": 0.00096,
+      "sigma_emp_1d": 0.01552,
+      "p_down_empirical": 0.4722,
+      "p_down_parametric": 0.4745,
+      "ret_last1d_pct": 1.12,
+      "ret_last5d_pct": 0.07
+    },
+    {
+      "ticker": "APD",
+      "weight": 0.0539,
+      "mu_hat": 0.00084,
+      "mu_emp_1d": 0.00027,
+      "sigma_emp_1d": 0.01555,
+      "p_down_empirical": 0.504,
+      "p_down_parametric": 0.4786,
+      "ret_last1d_pct": 2.24,
+      "ret_last5d_pct": 1.32
+    },
+    {
+      "ticker": "NWSA",
+      "weight": 0.0533,
+      "mu_hat": 0.00087,
+      "mu_emp_1d": 6e-05,
+      "sigma_emp_1d": 0.01533,
+      "p_down_empirical": 0.4921,
+      "p_down_parametric": 0.4775,
+      "ret_last1d_pct": 0.52,
+      "ret_last5d_pct": 2.99
+    },
+    {
+      "ticker": "AME",
+      "weight": 0.0259,
+      "mu_hat": 0.00079,
+      "mu_emp_1d": 0.00113,
+      "sigma_emp_1d": 0.01374,
+      "p_down_empirical": 0.4921,
+      "p_down_parametric": 0.4771,
+      "ret_last1d_pct": 1.7,
+      "ret_last5d_pct": 0.91
+    },
+    {
+      "ticker": "MUR",
+      "weight": 0.0001,
+      "mu_hat": 0.00068,
+      "mu_emp_1d": 0.00277,
+      "sigma_emp_1d": 0.02995,
+      "p_down_empirical": 0.4683,
+      "p_down_parametric": 0.4909,
+      "ret_last1d_pct": -3.45,
+      "ret_last5d_pct": 1.77
+    }
+  ],
+  "interpretation_de": "Das Modell prognostiziert für alle 15 Titel positive Tagesrenditen (μ̂_portfolio = +0.10%). Statistisch fällt der Kurs an 49% der vergleichbaren Tage — nicht weil das Modell „Fall“ sagt, sondern weil kurzfristige Returns symmetrisch volatil sind (σ täglich ~1.2%).",
+  "caveats_de": [
+    "Regime-Drift: Live RISK_ON vs. Signal RISK_OFF — erhöht Unsicherheit (+10pp Richtung 50%).",
+    "Horizont h=1 Tag — keine Wochen-/Monatsprognose.",
+    "Keine Anlageberatung; Research-Signal daily_alpha_h1.",
+    "Gestern: Plan-Portfolio -2.55% vs SPY -0.29%."
+  ]
+}

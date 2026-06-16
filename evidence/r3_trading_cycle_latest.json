@@ -32,7 +32,7 @@
       "value_de": "—"
     },
     {
-      "detail_de": "2026-06-09",
+      "detail_de": "2026-06-12",
       "evidence_ref": "evidence/r3_browser_ingest_latest.json",
       "fields_de": [
         "price_latest"
@@ -40,10 +40,10 @@
       "id": "ingest",
       "label_de": "Kurse",
       "ok": true,
-      "value_de": "2026-06-09"
+      "value_de": "2026-06-12"
     },
     {
-      "detail_de": "Signal 2026-06-09",
+      "detail_de": "Signal 2026-06-12",
       "evidence_ref": "evidence/alpha_model_background_engine_latest.json",
       "fields_de": [
         "predict.signal_date",
@@ -52,7 +52,7 @@
       "id": "engine",
       "label_de": "Modell",
       "ok": false,
-      "value_de": "2026-06-09"
+      "value_de": "2026-06-12"
     },
     {
       "detail_de": "11 Zeilen · 0 Pos · 679 € · live",
@@ -99,30 +99,30 @@
     },
     {
       "id": "quotes",
-      "ok": false,
-      "price_latest": "2026-06-09",
-      "quote_status": "STALE",
+      "ok": true,
+      "price_latest": "2026-06-12",
+      "quote_status": "FRESH",
       "skipped": false
     },
     {
       "cash_eur": null,
-      "detail_de": "✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.\nTrading 212 erlaubt nur w",
+      "detail_de": "API eingeben",
       "id": "t212_sync",
       "ok": true
     },
     {
       "id": "t212_trust",
       "ok": false,
-      "reason": "CONNECTION_FAILED_RETRY_AVAILABLE"
+      "reason": "NOT_CONFIGURED"
     },
     {
-      "buys": 0,
+      "buys": null,
       "cash_eur": null,
       "id": "prognosis",
       "ok": false,
       "positions_count": null,
       "skipped": false,
-      "trusted": false
+      "trusted": null
     },
     {
       "active": false,
@@ -132,18 +132,18 @@
       "rebalance_due": true
     },
     {
-      "bad_day": true,
+      "bad_day": false,
       "id": "postmortem",
       "ok": true,
-      "summary_de": "Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %",
-      "voice_warning_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 118 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent."
+      "summary_de": "Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %",
+      "voice_warning_de": "API eingeben Tagesbilanz: Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %."
     },
     {
       "id": "engine",
       "ok": false,
-      "signal_date": "2026-06-09",
+      "signal_date": "2026-06-12",
       "steps_ok": 5
     }
   ],
-  "updated_at_utc": "2026-06-09T21:17:13+00:00"
+  "updated_at_utc": "2026-06-15T12:45:31+00:00"
 }

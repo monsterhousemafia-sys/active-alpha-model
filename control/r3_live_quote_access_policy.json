@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Live-Quotes — nur autorisierte R3/Ops-Consumer dürfen refreshen",
+  "read_cached_snapshot_allowed": true,
+  "refresh_requires_authorized_owner": true,
+  "refresh_requires_internet": true,
+  "allowed_owners": [
+    "king_ops",
+    "keepalive",
+    "r3_quote_keepalive",
+    "ensure",
+    "r3_ops_kernel",
+    "daily_alpha",
+    "r3_browser_ingest",
+    "fall_watch",
+    "pilot_live_trade_gate",
+    "champion_quote_gate",
+    "R3_COCKPIT",
+    "R3_MIRROR",
+    "mirror_poll",
+    "R3_DESKTOP",
+    "R3_ORDER_DESK",
+    "ORDER_WORKFLOW_DIALOG",
+    "LIVE_DASHBOARD_PORTFOLIO",
+    "LIVE_DASHBOARD_REBALANCE",
+    "USER_CLICK"
+  ],
+  "forbidden_owners": [
+    "background",
+    "headless",
+    "scheduler",
+    "session",
+    "aa_scheduler",
+    "sync_r3_flow",
+    "alpha_engine",
+    "DEFERRED_INTENT",
+    "unknown",
+    "UNKNOWN"
+  ],
+  "rules_de": [
+    "load_live_quote_snapshot (Cache lesen) ist immer erlaubt — kein Internet",
+    "refresh_live_quotes / ensure_live_quotes_fresh nur mit autorisiertem owner",
+    "Unbekannter oder leerer owner → fail-closed, kein Yahoo-Fetch",
+    "Internet-Gate bleibt zusätzlich aktiv",
+    "Keine Orders — nur Marktdaten"
+  ],
+  "evidence_ref": "evidence/r3_live_quote_access_latest.json",
+  "safety_de": "fail-closed — unautorisierter Live-Quote-Refresh blockiert"
+}

@@ -57,7 +57,9 @@ def refresh_cockpit_state(root: Path, *, full_remediation: bool = False, force_m
     ensure_marktanalyse_runtime_layout(root)
     quote_snapshot: Dict[str, Any] = {}
     try:
-        quote_snapshot = ensure_live_quotes_fresh(root, force=full_remediation or force_market_prices)
+        quote_snapshot = ensure_live_quotes_fresh(
+            root, force=full_remediation or force_market_prices, owner="R3_COCKPIT"
+        )
     except Exception as exc:
         quote_snapshot = {"freshness": {"status": "ERROR", "calculation_allowed": False, "reason": str(exc)[:200]}}
     try:

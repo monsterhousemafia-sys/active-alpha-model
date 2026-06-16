@@ -164,6 +164,8 @@ evidence/lan_spread_share_de.txt
 evidence/spread_external_worker_de.txt
 evidence/spread_external_worker_handoff_de.txt
 evidence/publish_public_git_preflight_latest.json
+evidence/forum_post_url.txt
+evidence/operator_finish_status_de.txt
 live_pilot/activity/
 control/preview_federation.json
 control/r3_https_mirror.json

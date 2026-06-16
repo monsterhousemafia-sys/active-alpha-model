@@ -63,6 +63,18 @@
   padding: var(--r3-pad-lg) var(--r3-pad-x);
   background: var(--r3-surface);
 }
+.r3-mirror-brand-compact {
+  margin: 0 0 var(--r3-gap); padding-bottom: 0; border-bottom: none;
+}
+.r3-mirror-functional .r3-mirror-title {
+  font-size: 22px;
+}
+.r3-status-msg {
+  margin: 0; font-size: 13px; color: var(--r3-muted); line-height: 1.45;
+}
+.r3-status-msg.fail {
+  color: var(--r3-warn);
+}
 .r3-mirror-brand {
   display: flex; align-items: center; gap: var(--r3-gap);
   margin: 0 0 var(--r3-pad-lg); padding-bottom: var(--r3-pad);
@@ -260,6 +272,53 @@ button.r3-fact-row:focus-visible {
 }
 .r3-mirror-postmortem .r3-postmortem-lead { font-size: 13px; margin: 0 0 4px; }
 .r3-mirror-postmortem .r3-postmortem-hint { font-size: 11px; color: var(--muted); margin: 0; }
+.r3-fall-watch {
+  border: 1px solid var(--r3-border); border-radius: var(--r3-radius-sm);
+  background: linear-gradient(180deg, rgba(28,28,30,.92) 0%, rgba(22,22,24,.98) 100%);
+}
+.r3-fall-head { display: flex; flex-direction: column; gap: 4px; margin-bottom: var(--r3-gap); }
+.r3-fall-title { margin: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.r3-fall-badge {
+  font-size: 10px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 999px;
+}
+.r3-fall-badge.r3-fall-confirmed { background: rgba(255,69,58,.18); color: #ff453a; border: 1px solid rgba(255,69,58,.35); }
+.r3-fall-badge.r3-fall-weak { background: rgba(255,214,10,.12); color: #ffd60a; border: 1px solid rgba(255,214,10,.3); }
+.r3-fall-badge.r3-fall-ok { background: var(--r3-ok-bg); color: var(--r3-ok); border: 1px solid rgba(48,209,88,.25); }
+.r3-fall-badge.r3-fall-wait { background: var(--r3-bg); color: var(--r3-muted); border: 1px solid var(--r3-border); }
+.r3-fall-sub { margin: 0; font-size: 11px; color: var(--r3-muted); }
+.r3-fall-metrics {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--r3-gap);
+  margin-bottom: var(--r3-gap);
+}
+.r3-fall-metric {
+  background: var(--r3-surface); border: 1px solid var(--r3-border); border-radius: 8px;
+  padding: 8px 10px; text-align: center;
+}
+.r3-fall-metric-lbl { display: block; font-size: 10px; color: var(--r3-muted); margin-bottom: 2px; }
+.r3-fall-metric-val { font-size: 15px; font-weight: 800; }
+.r3-fall-metric.r3-fall-confirmed .r3-fall-metric-val { color: #ff453a; }
+.r3-fall-metric.r3-fall-weak .r3-fall-metric-val { color: #ffd60a; }
+.r3-fall-progress {
+  position: relative; height: 8px; border-radius: 999px; background: rgba(255,255,255,.06);
+  margin-bottom: var(--r3-gap); overflow: hidden;
+}
+.r3-fall-progress-bar {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, #ffd60a 0%, #ff453a 100%);
+  transition: width .4s ease;
+}
+.r3-fall-progress-lbl {
+  position: absolute; right: 0; top: 12px; font-size: 9px; color: var(--r3-muted);
+}
+.r3-fall-ticker-head span:last-child, .r3-fall-ret { text-align: right; }
+.r3-fall-ticker-row .r3-fall-ret { font-weight: 700; font-variant-numeric: tabular-nums; }
+.r3-fall-row-down .r3-fall-ret { color: #ff453a; }
+.r3-fall-row-up .r3-fall-ret { color: var(--r3-ok); }
+.r3-fall-reasons {
+  margin: var(--r3-gap) 0 0; padding-left: 18px; font-size: 11px; color: var(--r3-text); line-height: 1.45;
+}
+.r3-fall-hint { margin: 6px 0 0; font-size: 10px; color: var(--r3-muted); }
 .r3-upgrade-banner {
   padding: var(--r3-pad); border-radius: var(--r3-radius);
   background: var(--r3-orange-bg); border: 1px solid var(--r3-orange-border);
@@ -319,6 +378,27 @@ button.r3-fact-row:focus-visible {
 .r3-fn-st { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--r3-muted); }
 .r3-fn-meta { font-size: 11px; color: var(--r3-muted); }
 .r3-fn-ctx { margin: 0 0 var(--r3-gap); font-size: 12px; color: var(--r3-text); }
+
+    
+.r3-t212-setup {
+  padding: var(--r3-pad-lg); background: var(--r3-bg);
+  border: 1px solid var(--r3-border); border-radius: var(--r3-radius);
+}
+.r3-t212-setup-title { margin: 0 0 var(--r3-gap); font-size: 16px; font-weight: 700; }
+.r3-t212-setup-field { display: block; margin: 0 0 var(--r3-gap); }
+.r3-t212-setup-field span { display: block; font-size: 11px; font-weight: 600; color: var(--r3-muted); margin-bottom: 4px; }
+.r3-t212-setup-field input {
+  width: 100%; box-sizing: border-box; padding: 10px 12px;
+  border: 1px solid var(--r3-border); border-radius: var(--r3-radius-sm);
+  background: var(--r3-surface); color: inherit; font-size: 14px;
+}
+.r3-t212-setup-btn {
+  width: 100%; padding: var(--r3-pad); margin-top: var(--r3-gap);
+  border: none; border-radius: var(--r3-radius); font-weight: 700; font-size: 14px;
+  background: linear-gradient(145deg, var(--r3-orange-top), var(--r3-orange-bottom));
+  color: #fff; cursor: pointer;
+}
+.r3-t212-setup-hint { margin: var(--r3-gap) 0 0; font-size: 12px; color: var(--r3-muted); min-height: 1.2em; }
 
     
 .r3-trading-functions {
@@ -404,14 +484,27 @@ button.r3-fact-row:focus-visible {
     <div class="page">
     <div class="r3-viewport-fit">
       <div class="r3-exec-mirror" id="r3-desktop">
-        <section class="r3-mirror-results" id="r3-mirror-results" aria-label="R3" data-updated-at-utc="2026-06-09T21:27:37+00:00"><div class="r3-mirror-brand"><div class="r3-mirror-mark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="R3"><defs><linearGradient id="r3g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff6b35"/><stop offset="100%" stop-color="#e95420"/></linearGradient></defs><rect width="48" height="48" rx="10" fill="url(#r3g)"/><text x="24" y="29" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="700" fill="#ffffff">R3</text></svg></div><h1 class="r3-mirror-title">R3</h1></div><div class="r3-stack"><section class="r3-alerts" id="r3-alerts" aria-live="polite" data-voice-warning="✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.
-Trading 212 erlaubt nur wenige API-Anfragen pr Achtung — schwacher Handelstag. Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %. Schwächste Position: CIEN -7.1 Prozent."><p class="r3-alert-banner r3-alert-bad" role="alert">✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 97 Sekunden warten.
-Trading 212 erlaubt nur wenige API-Anfragen pr</p><p class="r3-alert-banner r3-alert-bad" role="alert">⚠ Schlechter Tag — Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 %</p></section><section class="r3-start-hero" id="r3-start-hero" aria-label="Start"><p class="r3-start-lead">T212 verknüpfen · Zielportfolio laden · Gewinn starten</p><button type="button" class="r3-start-btn" id="r3-start-btn" onclick="r3OneClickStart()">Jetzt starten · 679 €</button><p class="r3-start-hint" id="r3-start-hint">System bereitet 24/7 vor — unten Paket einmal bestätigen, Kreislauf läuft weiter</p></section><section class="r3-panels-stack" id="r3-panels-stack" aria-label="Plan T212 Plus"><section class="r3-panel r3-mirror-model" id="r3-mirror-model" aria-label="R3"><p class="r3-portfolio-total"><span class="r3-label">Plan</span><strong class="r3-hero-amount">678,52 €</strong></p><div class="r3-portfolio-list r3-portfolio-scroll"><div class="r3-portfolio-row r3-portfolio-head"><span class="r3-portfolio-sym">Aktie</span><span class="r3-portfolio-eur">Betrag</span><span class="r3-portfolio-pct">%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">STX</span><span class="r3-portfolio-eur">73,78 €</span><span class="r3-portfolio-pct">10.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">WDC</span><span class="r3-portfolio-eur">69,01 €</span><span class="r3-portfolio-pct">10.2 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">AMD</span><span class="r3-portfolio-eur">68,77 €</span><span class="r3-portfolio-pct">10.1 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">INTC</span><span class="r3-portfolio-eur">65,96 €</span><span class="r3-portfolio-pct">9.7 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">LRCX</span><span class="r3-portfolio-eur">60,57 €</span><span class="r3-portfolio-pct">8.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOGL</span><span class="r3-portfolio-eur">60,20 €</span><span class="r3-portfolio-pct">8.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOG</span><span class="r3-portfolio-eur">57,15 €</span><span class="r3-portfolio-pct">8.4 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">MU</span><span class="r3-portfolio-eur">56,78 €</span><span class="r3-portfolio-pct">8.4 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">ON</span><span class="r3-portfolio-eur">49,31 €</span><span class="r3-portfolio-pct">7.3 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">CIEN</span><span class="r3-portfolio-eur">46,99 €</span><span class="r3-portfolio-pct">6.9 %</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">TXN</span><span class="r3-portfolio-eur">45,52 €</span><span class="r3-portfolio-pct">6.7 %</span></div></div></section><section class="r3-panel r3-mirror-postmortem" id="r3-mirror-postmortem" aria-label="Tagesbilanz"><p class="r3-postmortem-lead"><span class="r3-label">Tagesbilanz</span> Plan-Portfolio -2.55 % · SPY -0.29 % · Delta -2.25 % · schwächste: CIEN -7.09 %</p><p class="r3-postmortem-hint">Details: /erklär-heute im KI-Chat</p></section><section class="r3-panel r3-mirror-prognosis" id="r3-mirror-prognosis" aria-label="Tagesprognose"><p class="r3-portfolio-total"><span class="r3-label">Prognose · 2026-06-09 · 11 Käufe</span><strong class="r3-hero-amount r3-hero-amount-sm">678,52 €</strong></p><p class="r3-prognosis-meta r3-trust-warn"></p><p class="r3-prognosis-meta">Kurse 2026-06-09 · STALE</p><div class="r3-portfolio-list r3-portfolio-scroll"><div class="r3-portfolio-row"><span class="r3-portfolio-sym">STX</span><span class="r3-portfolio-pct">6.2% <span class="r3-king-boost">+0.1%</span></span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">WDC</span><span class="r3-portfolio-pct">5.6%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">AMD</span><span class="r3-portfolio-pct">5.6%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">INTC</span><span class="r3-portfolio-pct">5.4%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">LRCX</span><span class="r3-portfolio-pct">5.0%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOGL</span><span class="r3-portfolio-pct">4.9%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOG</span><span class="r3-portfolio-pct">4.7%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">MU</span><span class="r3-portfolio-pct">4.6%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">ON</span><span class="r3-portfolio-pct">4.0%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">CIEN</span><span class="r3-portfolio-pct">3.8%</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">TXN</span><span class="r3-portfolio-pct">3.7%</span></div></div></section><section class="r3-panel r3-mirror-exec-pkg" id="r3-mirror-exec-pkg" aria-label="T212"><div class="r3-exec-block r3-exec-sell"><p class="r3-portfolio-total"><span class="r3-label">Verkauf</span><strong class="r3-hero-amount r3-hero-amount-sm">—</strong></p><div class="r3-portfolio-list r3-portfolio-scroll r3-exec-pkg-list"><p class="r3-mirror-empty">—</p></div></div><div class="r3-exec-block r3-exec-buy"><p class="r3-portfolio-total"><span class="r3-label">Kauf</span><strong class="r3-hero-amount r3-hero-amount-sm">644,58 €</strong></p><div class="r3-portfolio-list r3-portfolio-scroll r3-exec-pkg-list"><div class="r3-portfolio-row r3-portfolio-head"><span class="r3-portfolio-sym">Aktie</span><span class="r3-portfolio-eur">Betrag</span><span class="r3-portfolio-pct">€</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">STX</span><span class="r3-portfolio-eur">73,78 €</span><span class="r3-portfolio-pct">73,78 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">WDC</span><span class="r3-portfolio-eur">69,01 €</span><span class="r3-portfolio-pct">69,01 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">AMD</span><span class="r3-portfolio-eur">68,77 €</span><span class="r3-portfolio-pct">68,77 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">INTC</span><span class="r3-portfolio-eur">65,96 €</span><span class="r3-portfolio-pct">65,96 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">LRCX</span><span class="r3-portfolio-eur">60,57 €</span><span class="r3-portfolio-pct">60,57 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOGL</span><span class="r3-portfolio-eur">60,20 €</span><span class="r3-portfolio-pct">60,20 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">GOOG</span><span class="r3-portfolio-eur">57,15 €</span><span class="r3-portfolio-pct">57,15 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">MU</span><span class="r3-portfolio-eur">56,78 €</span><span class="r3-portfolio-pct">56,78 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">ON</span><span class="r3-portfolio-eur">49,31 €</span><span class="r3-portfolio-pct">49,31 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">CIEN</span><span class="r3-portfolio-eur">46,99 €</span><span class="r3-portfolio-pct">46,99 €</span></div><div class="r3-portfolio-row"><span class="r3-portfolio-sym">TXN</span><span class="r3-portfolio-eur">45,52 €</span><span class="r3-portfolio-pct">45,52 €</span></div></div></div></section><section class="r3-panel r3-mirror-king" id="r3-mirror-king" aria-label="Follow-on"><p class="r3-portfolio-total"><span class="r3-label">+</span></p><div class="r3-king-list"><div class="r3-king-row"><span class="r3-king-sym">STX</span><span class="r3-king-amt">25,00 €</span></div></div></section></section><div class="r3-status-list r3-status-compact" id="r3-status-list"><div class="r3-mirror-row"><span class="r3-mirror-k">T212</span><span class="r3-mirror-v fail">·</span></div><div class="r3-mirror-row"><span class="r3-mirror-k">Paket</span><span class="r3-mirror-v fail">✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 119 Sekunden warten.
-Trading 212 erlaubt nur wenige API-Anfragen p</span></div><div class="r3-mirror-row"><span class="r3-mirror-k">Kurse</span><span class="r3-mirror-v fail">·</span></div></div></div><p class="r3-mirror-foot">09.06.2026, 23:27 Uhr (CEST)<span class="r3-mirror-live" id="r3-mirror-live"></span></p></section><section class="r3-trading-functions" id="r3-trading-functions"><div class="r3-freigabe-row"><button type="button" class="r3-freigabe-btn blocked" id="r3-freigabe-btn" disabled>T212</button><p class="r3-freigabe-hint" id="r3-freigabe-governance" aria-label="Governance-Hinweis">Ehrlich: Gewinn „vollständig erwirtschaften“ ohne jeden Klick geht nur mit externer Freigabe für auto_execute_real_money. Aktuell: System bereitet 24/7 alles vor — du bestätigst das Paket einmal in R3, danach läuft der Kreislauf weiter.</p></div><div class="r3-einzel-wrap" id="r3-einzel-wrap"><div class="r3-stocks-section r3-stocks-sell" data-side-block="verkauf"><div class="r3-stocks-heading">Verkauf</div><p class="r3-stocks-empty">—</p></div><div class="r3-stocks-section r3-stocks-buy" data-side-block="kauf"><div class="r3-stocks-heading">Kauf</div><div class="r3-stocks-grid"><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="STX" data-side="BUY" onclick="r3OrderStock('STX', 'BUY', 73.78)" title="STX: Alpha LCB 0.0019 · Rang 0.9166 · Gewicht 6.0 %"><span class="r3-stock-sym">STX</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">74 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="WDC" data-side="BUY" onclick="r3OrderStock('WDC', 'BUY', 69.01)" title="WDC: Alpha LCB 0.0019 · Rang 0.9174 · Gewicht 5.6 %"><span class="r3-stock-sym">WDC</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">69 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="AMD" data-side="BUY" onclick="r3OrderStock('AMD', 'BUY', 68.77)" title="AMD: Alpha LCB 0.0021 · Rang 0.9125 · Gewicht 5.6 %"><span class="r3-stock-sym">AMD</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">69 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="INTC" data-side="BUY" onclick="r3OrderStock('INTC', 'BUY', 65.96)" title="INTC: Alpha LCB 0.0022 · Rang 0.9332 · Gewicht 5.4 %"><span class="r3-stock-sym">INTC</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">66 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="LRCX" data-side="BUY" onclick="r3OrderStock('LRCX', 'BUY', 60.57)" title="LRCX: Alpha LCB 0.0018 · Rang 0.8579 · Gewicht 5.0 %"><span class="r3-stock-sym">LRCX</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">61 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="GOOGL" data-side="BUY" onclick="r3OrderStock('GOOGL', 'BUY', 60.20)" title="GOOGL: Alpha LCB 0.0016 · Rang 0.7979 · Gewicht 4.9 %"><span class="r3-stock-sym">GOOGL</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">60 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="GOOG" data-side="BUY" onclick="r3OrderStock('GOOG', 'BUY', 57.15)" title="GOOG: Alpha LCB 0.0016 · Rang 0.7883 · Gewicht 4.7 %"><span class="r3-stock-sym">GOOG</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">57 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="MU" data-side="BUY" onclick="r3OrderStock('MU', 'BUY', 56.78)" title="MU: Alpha LCB 0.0023 · Rang 0.9316 · Gewicht 4.6 %"><span class="r3-stock-sym">MU</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">57 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="ON" data-side="BUY" onclick="r3OrderStock('ON', 'BUY', 49.31)" title="ON: Alpha LCB 0.0018 · Rang 0.8341 · Gewicht 4.0 %"><span class="r3-stock-sym">ON</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">49 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="CIEN" data-side="BUY" onclick="r3OrderStock('CIEN', 'BUY', 46.99)" title="CIEN: Alpha LCB 0.0019 · Rang 0.8451 · Gewicht 3.8 %"><span class="r3-stock-sym">CIEN</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">47 €</span></button><button type="button" class="r3-stock-btn r3-stock-gas r3-stock-new" data-symbol="TXN" data-side="BUY" onclick="r3OrderStock('TXN', 'BUY', 45.52)" title="TXN: Alpha LCB 0.0016 · Rang 0.8200 · Gewicht 3.7 %"><span class="r3-stock-sym">TXN</span><span class="r3-stock-side">Neue Aktie</span><span class="r3-stock-eur">46 €</span></button></div></div></div><p class="r3-order-toast" id="r3-order-toast" aria-live="polite"></p></section>
+        <section class="r3-mirror-results r3-mirror-functional" id="r3-mirror-results" aria-label="R3" data-exec-mode="1" data-updated-at-utc="2026-06-15T12:45:31+00:00"><div class="r3-mirror-brand r3-mirror-brand-compact"><h1 class="r3-mirror-title">R3</h1></div><div class="r3-stack">
+<section class="r3-t212-setup" id="r3-t212-setup" aria-label="T212 API">
+  <h2 class="r3-t212-setup-title">T212 API</h2>
+  <label class="r3-t212-setup-field">
+    <span>Key</span>
+    <input type="password" id="r3-t212-key" autocomplete="off" placeholder="Key" />
+  </label>
+  <label class="r3-t212-setup-field">
+    <span>Secret</span>
+    <input type="password" id="r3-t212-secret" autocomplete="off" placeholder="Secret" />
+  </label>
+  <button type="button" class="r3-t212-setup-btn" id="r3-t212-save-btn" onclick="r3SaveT212Credentials()">
+    Speichern
+  </button>
+  <p class="r3-t212-setup-hint" id="r3-t212-setup-msg"></p>
+</section>
+</div></section><section class="r3-trading-functions" id="r3-trading-functions"><div class="r3-freigabe-row"><button type="button" class="r3-freigabe-btn blocked" id="r3-freigabe-btn" disabled>API eingeben</button></div></section>
       </div>
     </div>
   </div>
-  <script>window.R3_HUB_PORT = 17890;</script>
+  <script>window.R3_HUB_PORT = 17890;window.R3_EXEC_ONLY=true;</script>
   <script>
 function r3OrderToast(msg, ok) {
   const el = document.getElementById('r3-order-toast');
@@ -435,7 +528,11 @@ async function r3PostOrder(body) {
     });
     const j = await r.json();
     r3OrderToast(j.message_de || j.error || (j.ok ? 'OK' : 'Fehler'), !!j.ok);
-    if (j.ok) setTimeout(() => location.reload(), 1800);
+    if (j.ok) {
+      if (typeof r3RefreshUiPreferSoft === 'function') setTimeout(() => r3RefreshUiPreferSoft(), 600);
+      else setTimeout(() => location.reload(), 1200);
+      return j;
+    }
     return j;
   } catch (e) {
     r3OrderToast('Verbindung fehlgeschlagen', false);
@@ -460,16 +557,52 @@ async function r3RefreshOrderSurface() {
     await fetch('/api/r3/freigabe?prepare=1&auto=desktop', { cache: 'no-store' });
     const btn = document.getElementById('r3-freigabe-btn');
     if (btn && btn.classList.contains('blocked')) {
-      location.reload();
+      if (typeof r3RefreshUiPreferSoft === 'function') r3RefreshUiPreferSoft();
+      else location.reload();
     }
   } catch (e) { /* silent */ }
 }
 document.addEventListener('DOMContentLoaded', () => {
+  if (window.R3_EXEC_ONLY) return;
   const btn = document.getElementById('r3-freigabe-btn');
   if (btn && btn.classList.contains('blocked')) {
     r3RefreshOrderSurface();
   }
 });
+</script>
+  <script>
+async function r3SaveT212Credentials() {
+  const keyEl = document.getElementById('r3-t212-key');
+  const secEl = document.getElementById('r3-t212-secret');
+  const msg = document.getElementById('r3-t212-setup-msg');
+  const btn = document.getElementById('r3-t212-save-btn');
+  const key = keyEl ? keyEl.value.trim() : '';
+  const secret = secEl ? secEl.value.trim() : '';
+  if (!key || !secret) {
+    if (msg) msg.textContent = 'API eingeben';
+    return;
+  }
+  if (btn) { btn.disabled = true; btn.textContent = '…'; }
+  try {
+    const r = await fetch('/api/r3/t212/credentials', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ api_key: key, api_secret: secret }),
+      cache: 'no-store',
+    });
+    const j = await r.json();
+    if (msg) msg.textContent = j.message_de || (j.ok ? 'Gespeichert' : 'API eingeben');
+    if (j.ok) {
+      if (keyEl) keyEl.value = '';
+      if (secEl) secEl.value = '';
+      setTimeout(() => { r3RefreshUiPreferSoft(); }, 400);
+      return;
+    }
+  } catch (e) {
+    if (msg) msg.textContent = 'Erneut versuchen';
+  }
+  if (btn) { btn.disabled = false; btn.textContent = 'Speichern'; }
+}
 </script>
   <script>
 function r3EnsureNativeViewport() {
@@ -487,99 +620,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
   <script>
-const R3_MIRROR_POLL_MS = 45000;
-const R3_MIRROR_PREP_EVERY = 6;
-const R3_MIRROR_HARD_RELOAD = false;
+const R3_MIRROR_POLL_MS = 15000;
 const R3_MIRROR_SOFT_UPDATE = true;
-let r3MirrorPollN = 0;
 let r3LastUtc = (document.getElementById('r3-mirror-results') || {}).dataset?.updatedAtUtc || '';
-
-function r3GraphState(ok, partial) {
-  if (ok) return 'ok';
-  if (partial) return 'warn';
-  return 'fail';
-}
-
-function r3SetFactRow(nodeId, value, ok, partial) {
-  if (!nodeId) return;
-  const el = document.querySelector('.r3-fact-row[data-node="' + nodeId + '"]');
-  if (!el) return;
-  const v = el.querySelector('.r3-fact-v');
-  if (v && value != null && value !== '') v.textContent = String(value);
-  const st = r3GraphState(!!ok, !!partial);
-  el.classList.remove('r3-fact-ok', 'r3-fact-warn', 'r3-fact-fail');
-  el.classList.add('r3-fact-' + st);
-}
-
-function r3PatchStatusRow(label, value, ok) {
-  const rows = document.querySelectorAll('#r3-status-list .r3-mirror-row');
-  for (const row of rows) {
-    const k = row.querySelector('.r3-mirror-k');
-    const v = row.querySelector('.r3-mirror-v');
-    if (!k || !v || k.textContent !== label) continue;
-    v.textContent = value;
-    v.className = 'r3-mirror-v' + (ok === true ? ' ok' : ok === false ? ' fail' : '');
-    return;
-  }
-}
-
-let r3LastVoiceWarning = '';
-
-function r3SpeakWarning(text) {
-  const msg = String(text || '').trim();
-  if (!msg || !window.speechSynthesis) return;
-  try {
-    window.speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(msg);
-    u.lang = 'de-DE';
-    u.rate = 0.95;
-    window.speechSynthesis.speak(u);
-  } catch (e) { /* fail-closed */ }
-}
 
 function r3PatchMirrorDisplays(j) {
   if (!j) return;
-  const vw = String(j.voice_warning_de || '').trim();
-  if (vw && vw !== r3LastVoiceWarning) {
-    r3LastVoiceWarning = vw;
-    r3SpeakWarning(vw);
-  }
-  r3PatchStatusRow('T212', j.t212_connected ? '✓' : '·', !!j.t212_connected);
-  const pkg = String(j.headline_de || '—').split(' · ')[0].trim() || '—';
-  r3PatchStatusRow('Paket', pkg, !!j.package_ready);
-  const qc = parseInt(j.quote_count || 0, 10);
-  r3PatchStatusRow('Kurse', qc > 0 ? String(qc) : '·', qc > 0);
   const results = document.getElementById('r3-mirror-results');
   if (results && j.updated_at_utc) results.dataset.updatedAtUtc = String(j.updated_at_utc);
 }
 
-function r3ScrollToTarget(id) {
-  if (!id) return;
-  const el = document.getElementById(id);
-  if (!el) return;
-  el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  document.querySelectorAll('.r3-fact-row.r3-fact-active').forEach((n) => n.classList.remove('r3-fact-active'));
-}
-
-function r3BindGraphNavigation() {
-  document.querySelectorAll('.r3-fact-row[data-scroll]').forEach((btn) => {
-    if (btn.dataset.r3Bound === '1') return;
-    btn.dataset.r3Bound = '1';
-    btn.addEventListener('click', () => {
-      r3ScrollToTarget(btn.getAttribute('data-scroll'));
-      btn.classList.add('r3-fact-active');
-    });
-  });
-}
-
-function r3ReinitMirrorUi() {
-  r3BindUpgradeActions();
-  r3BindGraphNavigation();
-  const btn = document.getElementById('r3-freigabe-btn');
-  if (btn && btn.classList.contains('blocked') && typeof r3RefreshOrderSurface === 'function') {
-    r3RefreshOrderSurface();
-  }
-}
+function r3ReinitMirrorUi() {}
 
 async function r3SoftMirrorRefresh() {
   const r = await fetch('/api/r3/mirror/panel', { cache: 'no-store' });
@@ -597,18 +648,15 @@ async function r3SoftMirrorRefresh() {
   return true;
 }
 
+async function r3RefreshUiPreferSoft() {
+  if (R3_MIRROR_SOFT_UPDATE && await r3SoftMirrorRefresh()) return true;
+  location.reload();
+  return false;
+}
+
 async function r3PollMirror() {
   try {
-    r3MirrorPollN += 1;
-    let freigabeDoc = null;
-    if (r3MirrorPollN % (R3_MIRROR_PREP_EVERY * 2) === 0) {
-      const fr = await fetch('/api/r3/freigabe?prepare=0', { cache: 'no-store' });
-      if (fr.ok) freigabeDoc = await fr.json();
-    }
-    const doScan = false;
-    const doQuoteRefresh = (r3MirrorPollN % R3_MIRROR_PREP_EVERY) === 0;
-    const q = doQuoteRefresh ? '?refresh=1' : (doScan ? '?scan=1' : '');
-    const r = await fetch('/api/r3/mirror' + q, { cache: 'no-store' });
+    const r = await fetch('/api/r3/mirror', { cache: 'no-store' });
     if (!r.ok) return;
     const j = await r.json();
     const utc = (j && j.updated_at_utc) ? String(j.updated_at_utc) : '';
@@ -617,62 +665,37 @@ async function r3PollMirror() {
         r3PatchMirrorDisplays(j);
         return;
       }
-      if (R3_MIRROR_HARD_RELOAD) { location.reload(); return; }
     }
     if (utc) r3LastUtc = utc;
     r3PatchMirrorDisplays(j);
-    if (freigabeDoc && freigabeDoc.package_ready) {
-      const btn = document.getElementById('r3-freigabe-btn');
-      if (btn && btn.classList.contains('blocked')) location.reload();
-    }
-    const liveEl = document.getElementById('r3-mirror-live');
-    if (liveEl) {
-      const t = new Date().toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
-      liveEl.textContent = ' · ' + t;
-    }
   } catch (e) { /* fail-closed */ }
-}
-
-function r3BindUpgradeActions() {
-  const banner = document.getElementById('r3-upgrade-banner');
-  const toast = document.getElementById('r3-upgrade-toast');
-  const applyBtn = document.getElementById('r3-upgrade-apply');
-  const dismissBtn = document.getElementById('r3-upgrade-dismiss');
-  if (!banner || !applyBtn || !dismissBtn) return;
-  const pid = banner.dataset.proposalId || '';
-  const postUpgrade = async (action) => {
-    try {
-      const r = await fetch('/api/r3/upgrade?action=' + encodeURIComponent(action) + '&proposal_id=' + encodeURIComponent(pid), {
-        method: 'POST', cache: 'no-store'
-      });
-      const j = await r.json();
-      if (toast) toast.textContent = (j && j.message_de) ? j.message_de : '';
-      if (j && j.ok) setTimeout(() => location.reload(), 600);
-    } catch (e) {
-      if (toast) toast.textContent = 'Update fehlgeschlagen — bitte erneut versuchen.';
-    }
-  };
-  applyBtn.onclick = () => postUpgrade('confirm');
-  dismissBtn.onclick = () => postUpgrade('dismiss');
 }
 
 async function r3OneClickStart() {
   const btn = document.getElementById('r3-start-btn');
   const hint = document.getElementById('r3-start-hint');
-  if (btn) { btn.disabled = true; btn.textContent = 'Starte…'; }
-  if (hint) hint.textContent = 'T212 · Prognose · Paket…';
+  if (btn) { btn.disabled = true; btn.textContent = '…'; }
+  if (hint) hint.textContent = '';
   try {
     const r = await fetch('/api/r3/start', { method: 'POST', cache: 'no-store' });
-    const j = await r.json();
-    if (hint) hint.textContent = j.headline_de || j.next_de || '';
-    if (j.package_ready) {
-      setTimeout(() => location.reload(), 800);
+    let j = {};
+    try { j = await r.json(); } catch (e) { j = {}; }
+    if (!r.ok) {
+      const msg = j.message_de || j.headline_de || j.next_de || 'Erneut';
+      if (hint) hint.textContent = msg;
+      if (btn) { btn.disabled = false; btn.textContent = 'Erneut'; }
       return;
     }
-    if (btn) { btn.disabled = false; btn.textContent = j.cta_de || 'Erneut starten'; }
+    if (hint) hint.textContent = j.headline_de || j.next_de || '';
+    if (j.package_ready && j.t212_trusted) {
+      if (btn) { btn.disabled = true; btn.textContent = j.cta_de || 'Bereit'; }
+      setTimeout(() => { r3RefreshUiPreferSoft(); }, 800);
+      return;
+    }
+    if (btn) { btn.disabled = false; btn.textContent = j.cta_de || 'Erneut'; }
   } catch (e) {
-    if (hint) hint.textContent = 'Start fehlgeschlagen — erneut versuchen';
-    if (btn) { btn.disabled = false; btn.textContent = 'Jetzt starten'; }
+    if (hint) hint.textContent = 'Erneut';
+    if (btn) { btn.disabled = false; btn.textContent = 'Start'; }
   }
 }
 

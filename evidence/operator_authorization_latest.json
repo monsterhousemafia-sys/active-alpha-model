@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "authorized_by": "Thomas Mang",
+  "authorized_at_utc": "2026-06-09T22:01:54+00:00",
+  "scope_de": "Anonym-Finish — Spread-Schleife, WhatsApp self-send, forum-ack bei URL, Tunnel-Token aus server.env",
+  "excludes_de": [
+    "Kein king_ops reddit-post (Inkognito bleibt Operator)",
+    "Kein Echtgeld-Trading",
+    "Adoption erfordert fremden PC"
+  ],
+  "loop_cmd": "bash tools/king_ops.sh spread-finish-anonym"
+}

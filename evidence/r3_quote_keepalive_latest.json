@@ -1,53 +1,58 @@
 {
   "assess_after": {
-    "headline_de": "Kurse aktualisieren — quotes_stale",
-    "ingest_age_s": 2.7,
+    "headline_de": "Kurse aktualisieren — reeval_not_fresh",
+    "ingest_age_s": 7.1,
     "ingest_ok": true,
     "needs_refresh": true,
     "price_current": true,
-    "price_latest": "2026-06-09",
+    "price_latest": "2026-06-12",
     "quote_age_s": null,
-    "quote_fresh_reeval": null,
-    "quote_status": "STALE",
+    "quote_fresh_reeval": false,
+    "quote_status": "FRESH",
     "reasons": [
-      "quotes_stale"
+      "reeval_not_fresh"
     ],
-    "us_session_open": false
+    "us_session_open": true
   },
   "assess_before": {
-    "headline_de": "Kurse aktualisieren — quotes_stale",
-    "ingest_age_s": 21.9,
+    "headline_de": "Kurse aktualisieren — quotes_stale, reeval_not_fresh",
+    "ingest_age_s": 67.9,
     "ingest_ok": true,
     "needs_refresh": true,
     "price_current": true,
-    "price_latest": "2026-06-09",
+    "price_latest": "2026-06-12",
     "quote_age_s": null,
-    "quote_fresh_reeval": null,
+    "quote_fresh_reeval": false,
     "quote_status": "STALE",
     "reasons": [
-      "quotes_stale"
+      "quotes_stale",
+      "reeval_not_fresh"
     ],
-    "us_session_open": false
+    "us_session_open": true
   },
-  "headline_de": "Kurse aktualisieren — quotes_stale",
-  "message_de": "Kurse aktualisieren — quotes_stale",
+  "headline_de": "Kurse aktualisieren — reeval_not_fresh",
+  "message_de": "Kurse aktualisieren — reeval_not_fresh",
   "ok": false,
-  "owner": "mirror_poll",
-  "price_latest": "2026-06-09",
-  "quote_status": "STALE",
+  "owner": "r3_quote_keepalive",
+  "price_latest": "2026-06-12",
+  "quote_status": "FRESH",
   "schema_version": 1,
   "skipped": false,
   "steps": [
     {
       "ok": true,
-      "price_latest": "2026-06-09",
+      "price_latest": "2026-06-12",
       "step": "ingest"
     },
     {
-      "ok": false,
-      "status": "STALE",
+      "ok": true,
+      "status": "FRESH",
       "step": "live_quotes"
+    },
+    {
+      "ok": false,
+      "step": "reeval"
     }
   ],
-  "updated_at_utc": "2026-06-09T21:47:26+00:00"
+  "updated_at_utc": "2026-06-15T17:41:13+00:00"
 }

@@ -7,7 +7,7 @@
   "experimental_profiles": [
     "daily_alpha_h1"
   ],
-  "generated_at_utc": "2026-06-09T18:44:48+00:00",
+  "generated_at_utc": "2026-06-14T20:15:09+00:00",
   "governance_champion": "R0_LEGACY_ENSEMBLE",
   "h1_backtest_sealed": false,
   "h1_backtest_status": {
@@ -17,11 +17,12 @@
   "m9_approval_ref": "EXTERNAL_REVIEW_APPROVAL_CHAMPION_CHANGE_20260605.md",
   "m9_executed": true,
   "model": "two_tier_champion",
+  "monitoring_governance_ref": "control/r3_monitoring_governance.json",
   "prior_governance_champion": "R3_w075_q065_noexit",
   "production_fallback_profile": "r3_w075_production",
   "production_fallback_variant": "R3_w075_q065_noexit",
   "research_sharpe_leader": "MOM_63_TOP12",
-  "rules_de": "Governance-Champion R0_LEGACY_ENSEMBLE (M9-freigegeben) ist die autorisierte Produktionsidentität. Live-Signal DAILY_ALPHA_H1 über Profil daily_alpha_h1 ist experimentell bis H1-Seal. Orders nutzen r3_w075_production solange H1 unsealed. Validierter Fallback: R3_w075_q065_noexit.",
+  "rules_de": "Governance-Champion R0_LEGACY_ENSEMBLE (M9-freigegeben) ist die autorisierte Produktionsidentität. Live-Signal DAILY_ALPHA_H1 über Profil daily_alpha_h1 ist experimentell bis H1-Seal. Orders nutzen r3_w075_production solange H1 unsealed. Validierter Fallback: R3_w075_q065_noexit. Monitoring (T212 Trust, Fall-Wächter, Security-Lock) ist read-only/fail-closed — kein Champion-Wechsel, kein auto_execute.",
   "schema_version": 1,
   "ssot": {
     "governance_champion": "control/champion_strategic_decision.json",

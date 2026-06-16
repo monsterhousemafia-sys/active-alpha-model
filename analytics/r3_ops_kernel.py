@@ -36,7 +36,7 @@ def load_ops_policy(root: Path) -> Dict[str, Any]:
         "sync_owner_default": SYNC_OWNER_DEFAULT,
         "phases": {
             "pre_us": {"steps": ["quotes", "signal_check", "capital", "prognosis", "top_picks", "gui_light"]},
-            "intraday": {"steps": ["quotes", "cycle_status", "prognosis_if_stale"]},
+            "intraday": {"steps": ["quotes", "fall_watch", "swing_theory", "cycle_status", "prognosis_if_stale"]},
             "eod": {"steps": ["eod_signal", "capital", "prognosis", "postmortem", "learning_capture"]},
             "full": {
                 "steps": [
@@ -291,6 +291,33 @@ def run_ops_step(
                     "ok": pct >= 70,
                     "detail_de": doc.get("headline_de") or f"Kreislauf {pct:.0f}%",
                     "cycle_pct": pct,
+                },
+            )
+
+        if sid == "fall_watch":
+            from analytics.prognosis_fall_watch import run_fall_watch
+
+            doc = run_fall_watch(root, persist=True, fetch_live=True)
+            return normalize_step(
+                sid,
+                {
+                    "ok": bool(doc.get("ok")),
+                    "detail_de": doc.get("headline_de") or "Fall-Wächter",
+                    "fall_detected": doc.get("fall_detected"),
+                    "portfolio_return_pct": doc.get("portfolio_return_pct"),
+                },
+            )
+
+        if sid == "swing_theory":
+            from analytics.swing_trading_theory_check import run_swing_trading_theory_check
+
+            doc = run_swing_trading_theory_check(root, persist=True)
+            return normalize_step(
+                sid,
+                {
+                    "ok": bool(doc.get("ok")),
+                    "detail_de": doc.get("headline_de") or "Swing-Theorie",
+                    "shows_today": doc.get("shows_today"),
                 },
             )
 

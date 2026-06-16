@@ -585,36 +585,30 @@ def make_handler(root: Path, port: int):
                 if path in ("/r3", "/desktop"):
                     _ensure_import_path(root)
                     from analytics.r3_session_manager import is_r3_session_active
+                    from analytics.r3_surface import (
+                        CANONICAL_SURFACE_PATH,
+                        is_exec_mirror_surface,
+                    )
 
                     if not is_r3_session_active(root):
                         self.send_response(302)
                         self.send_header("Location", "/login")
                         self.end_headers()
                         return
-                    if path == "/desktop":
-                        try:
-                            import threading
-
-                            from analytics.r3_browser_data import maybe_fast_ingest_for_hub
-
-                            threading.Thread(
-                                target=maybe_fast_ingest_for_hub,
-                                args=(root,),
-                                name="r3-browser-ingest",
-                                daemon=True,
-                            ).start()
-                        except Exception:
-                            pass
+                    if is_exec_mirror_surface(root) and path == "/desktop":
+                        self.send_response(302)
+                        self.send_header("Location", CANONICAL_SURFACE_PATH)
+                        self.send_header("Cache-Control", "no-store")
+                        self.end_headers()
+                        return
                     from analytics.desktop_shell_cache import get_desktop_html_for_hub, warm_desktop_cache
 
-                    live_prep = path == "/desktop"
                     body = get_desktop_html_for_hub(
-                        root, port=port, fast=True, live_prep=live_prep
+                        root, port=port, fast=True, live_prep=False
                     )
-                    if not live_prep:
-                        warm_desktop_cache(
-                            root, port=port, fast=True, block=False, live_prep=True
-                        )
+                    warm_desktop_cache(
+                        root, port=port, fast=True, block=False, live_prep=True
+                    )
                     self.send_response(200)
                     self.send_header("Content-Type", "text/html; charset=utf-8")
                     self.send_header("Content-Length", str(len(body)))
@@ -878,15 +872,36 @@ def make_handler(root: Path, port: int):
                     return
                 if path == "/api/r3/t212":
                     _ensure_import_path(root)
-                    refresh = str((parse_qs(urlparse(self.path).query).get("sync") or [""])[0]).lower()
+                    q = parse_qs(urlparse(self.path).query)
+                    confirm_acct = str((q.get("confirm_account") or ["0"])[0]).lower() in {
+                        "1",
+                        "true",
+                        "yes",
+                    }
+                    refresh = str((q.get("sync") or [""])[0]).lower()
+                    from analytics.r3_t212_operator_api import resolve_operator_api_state
+
+                    api_state = resolve_operator_api_state(root)
+                    if api_state.get("needs_api_setup") and not confirm_acct:
+                        _json_response(self, 200, api_state)
+                        return
+                    if confirm_acct:
+                        from analytics.r3_t212_account_identity import confirm_t212_account
+
+                        _json_response(self, 200, confirm_t212_account(root))
+                        return
                     if refresh in {"1", "true", "yes"}:
                         from analytics.r3_t212_api_bond import sync_r3_t212_api_bond
 
-                        _json_response(self, 200, sync_r3_t212_api_bond(root, force=True, persist=True))
+                        out = sync_r3_t212_api_bond(root, force=True, persist=True)
+                        out = {**out, **resolve_operator_api_state(root)}
+                        _json_response(self, 200, out)
                     else:
                         from analytics.r3_t212_api_bond import build_r3_t212_api_bond
 
-                        _json_response(self, 200, build_r3_t212_api_bond(root, persist=True))
+                        out = build_r3_t212_api_bond(root, persist=True)
+                        out = {**out, **resolve_operator_api_state(root)}
+                        _json_response(self, 200, out)
                     return
                 if path == "/api/r3/start":
                     _ensure_import_path(root)
@@ -942,38 +957,56 @@ def make_handler(root: Path, port: int):
                 if path == "/api/r3/mirror":
                     _ensure_import_path(root)
                     from analytics.r3_exec_mirror import build_exec_mirror_state
+                    from analytics.r3_surface import exec_mirror_mode
 
+                    exec_lean = exec_mirror_mode(root)
                     q = parse_qs(urlparse(self.path).query)
                     do_scan = str((q.get("scan") or ["0"])[0]).lower() in {"1", "true", "yes"}
                     force_refresh = str((q.get("refresh") or ["0"])[0]).lower() in {"1", "true", "yes"}
-                    try:
-                        from analytics.r3_quote_keepalive import (
-                            load_quote_keepalive_policy,
-                            tick_quote_keepalive,
-                        )
-
-                        qpol = load_quote_keepalive_policy(root)
-                        if force_refresh or qpol.get("refresh_on_mirror_poll", True):
-                            tick_quote_keepalive(
-                                root,
-                                force=force_refresh,
-                                owner="mirror_poll",
-                                persist=True,
-                            )
-                    except Exception:
-                        pass
-                    if do_scan or force_refresh:
+                    if not exec_lean:
                         try:
-                            from analytics.r3_prognosis_pipeline import (
-                                ensure_r3_prognosis_fresh,
-                                load_automation_policy,
+                            from analytics.r3_quote_keepalive import (
+                                load_quote_keepalive_policy,
+                                tick_quote_keepalive,
                             )
 
-                            policy = load_automation_policy(root)
-                            if force_refresh or policy.get("refresh_on_mirror_poll", False):
-                                ensure_r3_prognosis_fresh(root, force=force_refresh, persist=True)
+                            qpol = load_quote_keepalive_policy(root)
+                            keepalive_doc = None
+                            if force_refresh or qpol.get("refresh_on_mirror_poll", False):
+                                keepalive_doc = tick_quote_keepalive(
+                                    root,
+                                    force=force_refresh,
+                                    owner="R3_COCKPIT",
+                                    persist=True,
+                                )
+                                if keepalive_doc and not keepalive_doc.get("skipped"):
+                                    assess = keepalive_doc.get("assess_after") or keepalive_doc.get("assess") or {}
+                                    quote_status = str(
+                                        assess.get("quote_status") or keepalive_doc.get("quote_status") or ""
+                                    ).upper()
+                                    if quote_status == "FRESH" or keepalive_doc.get("ok"):
+                                        try:
+                                            from analytics.pilot_portfolio_reevaluation import (
+                                                run_periodic_reevaluation,
+                                            )
+
+                                            run_periodic_reevaluation(root, force=False)
+                                        except Exception:
+                                            pass
                         except Exception:
                             pass
+                        if do_scan or force_refresh:
+                            try:
+                                from analytics.r3_prognosis_pipeline import (
+                                    ensure_r3_prognosis_fresh,
+                                    load_automation_policy,
+                                )
+
+                                policy = load_automation_policy(root)
+                                if force_refresh or policy.get("refresh_on_mirror_poll", False):
+                                    ensure_r3_prognosis_fresh(root, force=force_refresh, persist=True)
+                            except Exception:
+                                pass
                     _json_response(
                         self,
                         200,
@@ -1348,6 +1381,24 @@ def make_handler(root: Path, port: int):
                 _json_response(self, 200, run_one_click_start(root, persist=True))
                 return
 
+            if path == "/api/r3/t212/credentials":
+                _ensure_import_path(root)
+                from analytics.r3_t212_operator_api import save_t212_credentials_from_web
+
+                try:
+                    payload = json.loads(raw.decode("utf-8") if raw else "{}")
+                except json.JSONDecodeError:
+                    payload = {}
+                if not isinstance(payload, dict):
+                    payload = {}
+                out = save_t212_credentials_from_web(
+                    root,
+                    api_key=str(payload.get("api_key") or ""),
+                    api_secret=str(payload.get("api_secret") or ""),
+                )
+                _json_response(self, 200 if out.get("ok") else 400, out)
+                return
+
             if path == "/api/r3/upgrade":
                 _ensure_import_path(root)
                 from analytics.r3_runtime_upgrade import (
@@ -1631,6 +1682,22 @@ def _hub_daemon_lock(root: Path):
         fh.close()
 
 
+def _start_quote_keepalive_daemon(root: Path) -> None:
+    """Hintergrund-Keepalive — R3-Kurse auch ohne Browser-Fokus (~60s)."""
+
+    def _loop() -> None:
+        while True:
+            time.sleep(60)
+            try:
+                from analytics.r3_quote_keepalive import tick_quote_keepalive
+
+                tick_quote_keepalive(root, force=False, owner="r3_quote_keepalive", persist=True)
+            except Exception:
+                pass
+
+    threading.Thread(target=_loop, name="r3-quote-keepalive", daemon=True).start()
+
+
 def run_server(root: Path, port: int) -> None:
     root = _ensure_import_path(Path(root))
     _kill_foreign_hubs(root, port)
@@ -1649,6 +1716,7 @@ def run_server(root: Path, port: int) -> None:
         _write_meta(root, port, os.getpid())
         public = hub_public_base_url(root, port=port)
         print(f"[preview-hub] bind={bind} local=http://127.0.0.1:{port}/ share={public}/", flush=True)
+        _start_quote_keepalive_daemon(root)
         try:
             server.serve_forever()
         except KeyboardInterrupt:

@@ -87,6 +87,44 @@ def test_anonym_finish_tick_writes_evidence(tmp_path: Path) -> None:
     assert any(r.get("id") == "B_reddit_anonym" for r in doc.get("remaining") or [])
     evidence = tmp_path / "evidence/spread_finish_anonym_loop_latest.json"
     assert evidence.is_file()
+    raw = evidence.read_text(encoding="utf-8")
+    assert "192.168" not in raw
+    assert "/home/" not in raw
+
+
+def test_forum_ack_from_url_file(tmp_path: Path, monkeypatch) -> None:
+    (tmp_path / "control").mkdir(parents=True)
+    (tmp_path / "evidence").mkdir(parents=True)
+    (tmp_path / "evidence/forum_post_url.txt").write_text(
+        "https://reddit.com/r/selfhosted/comments/abc/title/\n", encoding="utf-8"
+    )
+    monkeypatch.delenv("AA_FORUM_POST_URL", raising=False)
+    with patch("analytics.spread_autonomous.resume_autonomous_spread", return_value={"ok": True}), patch(
+        "analytics.community_spread_plan.collect_spread_urls", return_value=_urls()
+    ), patch("analytics.preview_federation.build_share_package", return_value={}), patch(
+        "analytics.remote_hub_access.remote_access_status",
+        return_value={"tunnel_pid_alive": True, "remote_ready": True},
+    ), patch(
+        "analytics.spread_secure_ops.verify_spread_security",
+        return_value={"ok": True, "checks_passed": 6, "checks_total": 6},
+    ), patch(
+        "analytics.tunnel_token_setup.apply_from_server_env",
+        return_value={"ok": False},
+    ), patch(
+        "analytics.reddit_forum_post.complete_reddit_post",
+        return_value={"ok": True, "post_url": "https://reddit.com/r/selfhosted/comments/abc/title/"},
+    ), patch(
+        "analytics.spread_finish_anonym_loop._federation_hostnames",
+        return_value={"ok": True, "remote_compute_workers": 0, "hostnames": ["king"]},
+    ), patch(
+        "analytics.spread_secure_ops.build_spread_facts",
+        return_value={"forum_posted": True, "tunnel_stable": False, "remote_compute_workers": 0},
+    ), patch(
+        "analytics.spread_finish_operator_evidence.sync_operator_evidence",
+        return_value={"finish": "evidence/spread_finish_latest.json"},
+    ):
+        doc = run_anonym_finish_tick(tmp_path, execute_whatsapp=False)
+    assert doc.get("forum_ack", {}).get("ok") is True
 
 
 def test_forum_ack_when_url_set(tmp_path: Path, monkeypatch) -> None:

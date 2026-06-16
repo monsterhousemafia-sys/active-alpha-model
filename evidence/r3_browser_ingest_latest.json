@@ -8,35 +8,35 @@
     },
     {
       "ok": true,
-      "provider": "T212_FIRST_YAHOO_VALIDATED",
-      "skipped": false,
+      "provider": "YAHOO_VALIDATED_ONLY",
+      "skipped": true,
       "step": "live_quotes"
     },
     {
       "fast": true,
       "ok": true,
-      "price_latest": "2026-06-09",
+      "price_latest": "2026-06-12",
       "refreshed": false,
       "step": "ohlcv"
     }
   ],
   "internet_ok": true,
-  "message_de": "R3 Browser: Prognose-Daten aus Internet · Preise 2026-06-09",
+  "message_de": "R3 Browser: Prognose-Daten aus Internet · Preise 2026-06-12",
   "mode_de": "Lokaler Browser — Oberfläche auf 127.0.0.1, Prognose-Daten direkt aus dem Internet",
   "ok": true,
   "price_current": true,
-  "price_latest": "2026-06-09",
+  "price_latest": "2026-06-12",
   "price_source": "internet",
   "providers_de": [
     "yfinance",
     "live_quote_engine"
   ],
   "schema_version": 1,
-  "signal_date": "2026-06-09",
+  "signal_date": "2026-06-12",
   "sources_de": [
     "yfinance — Tages-OHLCV für Signal/Prognose",
     "yfinance — Live-Quotes und FX",
     "Sektor-Referenz — yfinance (bei vollem Ingest)"
   ],
-  "updated_at_utc": "2026-06-09T21:47:24+00:00"
+  "updated_at_utc": "2026-06-15T17:41:06+00:00"
 }

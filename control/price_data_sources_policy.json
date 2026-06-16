@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "tier": "stufe_b",
+  "enabled": true,
+  "headline_de": "Stufe B — operativer Preis-Cross-Check (read-only)",
+  "primary_daily_source": "yfinance_price_cache",
+  "reference_daily_source": "stooq_with_yahoo_chart_fallback",
+  "reference_daily_sources_de": [
+    "Stooq — bevorzugte unabhängige Referenz (CSV)",
+    "Yahoo Chart API — Fallback bei Stooq-Bot-Schutz (eigener HTTP-Pfad vs. price_cache)"
+  ],
+  "live_reference_source": "t212_quotes_optional",
+  "symbols_mode": "spy_plus_champion",
+  "extra_symbols": ["SPY"],
+  "thresholds": {
+    "warn_divergence_pct": 1.0,
+    "fail_divergence_pct": 3.0,
+    "min_reference_coverage_ratio": 0.6,
+    "require_spy_match": true
+  },
+  "fail_closed": {
+    "block_signal_refresh_on_fail": true,
+    "block_signal_refresh_on_warn": false,
+    "block_signal_refresh_on_missing_spy": true
+  },
+  "network": {
+    "reference_fetch_timeout_s": 12,
+    "max_reference_symbols_per_run": 20
+  },
+  "evidence_path": "evidence/price_crosscheck_latest.json",
+  "safety_de": "Nur Abgleich — kein stiller Austausch in price_cache oder Backtests"
+}

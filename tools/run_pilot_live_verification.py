@@ -82,7 +82,7 @@ def verify_market_data(root: Path, *, force: bool) -> Dict[str, Any]:
 
     ensure_marktanalyse_runtime_layout(root)
     try:
-        snap = ensure_live_quotes_fresh(root, force=force)
+        snap = ensure_live_quotes_fresh(root, force=force, owner="king_ops")
         fresh = snap.get("freshness") or {}
         status = str(fresh.get("status") or "UNKNOWN")
         allowed = bool(fresh.get("calculation_allowed"))

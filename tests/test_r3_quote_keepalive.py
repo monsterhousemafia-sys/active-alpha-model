@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from unittest.mock import patch
 
+import pytest
+
 from analytics.r3_quote_keepalive import assess_quote_freshness, tick_quote_keepalive
 
 
@@ -50,3 +52,44 @@ def test_tick_skips_when_fresh(tmp_path: Path) -> None:
         doc = tick_quote_keepalive(tmp_path, persist=False)
     assert doc.get("skipped") is True
     assert doc.get("reason_de") == "fresh"
+
+
+def test_tick_runs_reeval_after_live_quotes(tmp_path: Path) -> None:
+    _policy(tmp_path)
+    (tmp_path / "control/r3_quote_keepalive_policy.json").write_text(
+        json.dumps({"enabled": True, "min_interval_s": 0, "max_stale_ingest_s": 300}),
+        encoding="utf-8",
+    )
+    with patch("analytics.r3_quote_keepalive.assess_quote_freshness") as assess, patch(
+        "analytics.r3_internet_requirement.require_internet_for",
+        return_value={"allowed": True},
+    ), patch(
+        "analytics.r3_browser_data.ingest_prognosis_data_from_internet",
+        return_value={"ok": True, "price_latest": "2026-06-10"},
+    ), patch(
+        "market.live_quote_engine.ensure_live_quotes_fresh",
+        return_value={"freshness": {"status": "FRESH"}},
+    ), patch(
+        "analytics.pilot_portfolio_reevaluation.run_periodic_reevaluation",
+        return_value={"ok": True},
+    ) as reeval:
+        assess.side_effect = [
+            {"needs_refresh": True, "headline_de": "stale"},
+            {"needs_refresh": False, "quote_status": "FRESH", "headline_de": "Kurse frisch"},
+        ]
+        doc = tick_quote_keepalive(tmp_path, persist=False, owner="mirror_poll")
+    assert doc.get("skipped") is False
+    reeval.assert_called_once()
+    assert any(s.get("step") == "reeval" and s.get("ok") for s in doc.get("steps") or [])
+
+
+def test_refresh_on_mirror_poll_policy_default(tmp_path: Path) -> None:
+    (tmp_path / "control").mkdir(parents=True, exist_ok=True)
+    (tmp_path / "control/r3_quote_keepalive_policy.json").write_text(
+        json.dumps({"enabled": True, "refresh_on_mirror_poll": True, "min_interval_s": 0}),
+        encoding="utf-8",
+    )
+    from analytics.r3_quote_keepalive import load_quote_keepalive_policy
+
+    pol = load_quote_keepalive_policy(tmp_path)
+    assert pol.get("refresh_on_mirror_poll") is True

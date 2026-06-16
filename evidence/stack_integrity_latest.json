@@ -1,22 +1,22 @@
 {
   "checks": [
     {
-      "detail_de": "HTTP /api/health",
+      "detail_de": "Hub offline",
       "id": "hub_online",
       "layer": "hub",
-      "ok": true
+      "ok": false
     },
     {
-      "detail_de": "200",
+      "detail_de": "offline",
       "id": "hub_login_route",
       "layer": "hub",
-      "ok": true
+      "ok": false
     },
     {
       "detail_de": "/api/r3/mirror",
       "id": "r3_mirror_api",
       "layer": "r3",
-      "ok": true
+      "ok": false
     },
     {
       "detail_de": "Evidence auf Platte",
@@ -28,7 +28,7 @@
       "detail_de": "/r3",
       "id": "r3_surface_page",
       "layer": "r3",
-      "ok": true,
+      "ok": false,
       "warn_only": true
     },
     {
@@ -41,37 +41,50 @@
   ],
   "desktop_session": true,
   "exec_mirror_only": true,
-  "failures_de": [],
+  "failures_de": [
+    "hub_online: Hub offline",
+    "hub_login_route: offline",
+    "r3_mirror_api: /api/r3/mirror"
+  ],
   "hub": {
     "ensure_cmd_de": "python3 tools/preview_hub.py --ensure",
     "hub_schema_version": 2,
     "layer": "hub",
-    "ok": true,
-    "online": true,
+    "ok": false,
+    "online": false,
     "port": 17890,
     "product": "preview-hub",
-    "route_login_detail": "200",
-    "route_login_ok": true
+    "route_login_detail": "offline",
+    "route_login_ok": false
   },
-  "hub_ok": true,
+  "hub_ok": false,
+  "launch": {
+    "exit_code": 0,
+    "layer": "r3",
+    "message_de": "R3 Cockpit beendet.",
+    "ok": true,
+    "shell": "native",
+    "surface_path": "/r3",
+    "url": "http://127.0.0.1:17890/r3"
+  },
   "port": 17890,
   "r3": {
     "cockpit_running": false,
-    "hub_online": true,
+    "hub_online": false,
     "layer": "r3",
-    "mirror_api_ok": true,
+    "mirror_api_ok": false,
     "mirror_state_ok": true,
-    "ok": true,
+    "ok": false,
     "port": 17890,
     "start_cmd_de": "bash tools/r3_autonomous.sh",
-    "surface_page_ok": true,
+    "surface_page_ok": false,
     "surface_path": "/r3"
   },
-  "r3_ok": true,
+  "r3_ok": false,
   "repair_cmd_de": "bash tools/stack_integrity.sh --repair --launch",
-  "repaired": true,
+  "repaired": false,
   "schema_version": 1,
-  "stack_ok": true,
+  "stack_ok": false,
   "steps": [
     {
       "ok": true,
@@ -82,27 +95,42 @@
       "step": "prepare_session"
     },
     {
+      "headline_de": "HW/SW balanced — Poll 15s · Start 8s",
+      "ok": true,
+      "pressure_class": "balanced",
+      "step": "hw_software_bond"
+    },
+    {
       "ok": true,
       "port": 17890,
       "step": "ensure_hub"
     },
     {
       "ok": true,
-      "profile_id": "fluid_v2",
+      "profile_id": "fluid_v3",
       "step": "align_r3_surface",
       "upgrade_pending": false
     },
     {
-      "ok": false,
+      "ok": true,
       "step": "ensure_mirror"
     },
     {
-      "ok": false,
+      "ok": true,
       "step": "ensure_surface"
+    },
+    {
+      "ok": true,
+      "step": "warm_surface_cache"
+    },
+    {
+      "ok": true,
+      "step": "launch_cockpit"
     }
   ],
-  "updated_at_utc": "2026-06-09T21:47:23+00:00",
+  "updated_at_utc": "2026-06-16T08:45:59+00:00",
   "warnings_de": [
+    "r3_surface_page: /r3",
     "r3_cockpit: Qt-Fenster"
   ]
 }

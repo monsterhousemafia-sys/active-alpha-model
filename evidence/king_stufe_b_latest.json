@@ -1,0 +1,24 @@
+{
+  "block_signal_refresh": false,
+  "blocks": [],
+  "counts": {
+    "fail": 0,
+    "missing_primary": 0,
+    "missing_reference": 0,
+    "pass": 2,
+    "stale_primary": 13,
+    "stale_reference": 0,
+    "warn": 0
+  },
+  "crosscheck_ref": "evidence/price_crosscheck_latest.json",
+  "headline_de": "Stufe B — operativer Preis-Cross-Check (price_cache vs Stooq/Yahoo)",
+  "messages_de": [
+    "[OK] Stufe B — 2/15 Symbole im Toleranzband (yfinance vs Stooq)."
+  ],
+  "ok": true,
+  "reference_coverage_ratio": 1.0,
+  "schema_version": 1,
+  "spy_status": "pass",
+  "updated_at_utc": "2026-06-16T08:41:17+00:00",
+  "verdict": "warn"
+}

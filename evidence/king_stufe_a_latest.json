@@ -1,11 +1,13 @@
 {
-  "growth_phase": "forschung_reif",
-  "headline_de": "Stufe A — Phase forschung_reif · FORSCHUNG_REIF",
+  "growth_phase": "wachstum",
+  "headline_de": "Stufe A — Phase wachstum · 1 KPI-Blocker",
   "kpis": {
-    "blockers": [],
+    "blockers": [
+      "prognosis_fresh"
+    ],
     "checks": [
       {
-        "detail_de": "signal=2026-06-09 ok=True",
+        "detail_de": "signal=2026-06-12 ok=True",
         "id": "prediction_ready",
         "pass": true
       },
@@ -21,10 +23,10 @@
         "value": 0.782267724738531
       },
       {
-        "age_s": 7.65948,
-        "detail_de": "age_s=7.7 max=900.0",
+        "age_s": 61503.406549,
+        "detail_de": "age_s=61503.4 max=900.0",
         "id": "prognosis_fresh",
-        "pass": true
+        "pass": false
       },
       {
         "detail_de": "score=63.0 min=40.0",
@@ -32,14 +34,14 @@
         "pass": true
       }
     ],
-    "evaluated_at_utc": "2026-06-09T21:16:53+00:00",
-    "forschung_reif_ok": true,
-    "ok": true,
+    "evaluated_at_utc": "2026-06-15T12:38:32+00:00",
+    "forschung_reif_ok": false,
+    "ok": false,
     "wachstum_ok": true
   },
   "next_de": [
-    "python3 tools/ai_kernel.py evolve",
-    "H1-Seal prüfen"
+    "python3 tools/ai_kernel.py learn",
+    "/beitrag forschung <Idee>"
   ],
   "ok": true,
   "rag_ref": "evidence/king_evidence_rag_latest.json",
@@ -47,10 +49,12 @@
   "steps": [
     {
       "kpis": {
-        "blockers": [],
+        "blockers": [
+          "prognosis_fresh"
+        ],
         "checks": [
           {
-            "detail_de": "signal=2026-06-09 ok=True",
+            "detail_de": "signal=2026-06-12 ok=True",
             "id": "prediction_ready",
             "pass": true
           },
@@ -66,10 +70,10 @@
             "value": 0.782267724738531
           },
           {
-            "age_s": 6.090048,
-            "detail_de": "age_s=6.1 max=900.0",
+            "age_s": 61501.735205,
+            "detail_de": "age_s=61501.7 max=900.0",
             "id": "prognosis_fresh",
-            "pass": true
+            "pass": false
           },
           {
             "detail_de": "score=63.0 min=40.0",
@@ -77,9 +81,9 @@
             "pass": true
           }
         ],
-        "evaluated_at_utc": "2026-06-09T21:16:52+00:00",
-        "forschung_reif_ok": true,
-        "ok": true,
+        "evaluated_at_utc": "2026-06-15T12:38:30+00:00",
+        "forschung_reif_ok": false,
+        "ok": false,
         "wachstum_ok": true
       },
       "ok": true,
@@ -102,11 +106,6 @@
     },
     {
       "ok": true,
-      "stage": null,
-      "step": "evolve"
-    },
-    {
-      "ok": true,
       "step": "teacher_student",
       "teacher_available": true
     },
@@ -119,5 +118,5 @@
     }
   ],
   "teacher_ref": "evidence/king_teacher_student_latest.json",
-  "updated_at_utc": "2026-06-09T21:17:08+00:00"
+  "updated_at_utc": "2026-06-15T12:38:45+00:00"
 }

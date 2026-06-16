@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "DEVELOPER_READY",
+  "headline_de": "Entwickler-Freigabe — read-only Stack, fail-closed Safety",
+  "released_at_utc": "2026-06-10T07:54:00+00:00",
+  "bootstrap_cmd": "bash tools/developer_bootstrap.sh",
+  "docs_ref": "docs/DEVELOPER_SETUP.md",
+  "evidence_ref": "evidence/developer_release_latest.json",
+  "includes_de": [
+    "R3 Hub + Qt-Cockpit (lokal)",
+    "Stack-Integrität + Ubuntu-Stabilität",
+    "Unit-Tests (safety + r3_ubuntu)",
+    "T212 Trust Gate (erklärt, nicht deaktiviert)"
+  ],
+  "excludes_de": [
+    "auto_execute_real_money",
+    "auto_promote",
+    "Champion-Wechsel",
+    "Operative Backtests ohne Freigabe"
+  ],
+  "t212_trust_ref": "control/t212_trust_policy.json"
+}

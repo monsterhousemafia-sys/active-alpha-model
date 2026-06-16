@@ -123,6 +123,7 @@ class LiveDailySyncReport:
     r3_diagnosis_ok: bool = False
     r3_regime_match: Optional[bool] = None
     r3_diagnosis_path: str = ""
+    price_crosscheck: Dict[str, object] = field(default_factory=dict)
     messages: List[str] = field(default_factory=list)
 
 
@@ -342,6 +343,26 @@ def _sync_live_daily_body(
     quotes_doc = fetch_portfolio_live_quotes(report.portfolio_tickers)
     report.live_quotes = dict(quotes_doc.get("quotes_usd") or {})
 
+    crosscheck_blocked = False
+    try:
+        from analytics.price_crosscheck import crosscheck_blocks_signal_refresh, run_price_crosscheck
+
+        cc = run_price_crosscheck(root, persist=True, fetch_reference=True)
+        report.price_crosscheck = {
+            "verdict": cc.get("verdict"),
+            "ok": cc.get("ok"),
+            "block_signal_refresh": cc.get("block_signal_refresh"),
+            "spy_status": cc.get("spy_status"),
+            "reference_coverage_ratio": cc.get("reference_coverage_ratio"),
+            "evidence_ref": "evidence/price_crosscheck_latest.json",
+        }
+        report.messages.extend(list(cc.get("messages_de") or []))
+        if crosscheck_blocks_signal_refresh(cc):
+            crosscheck_blocked = True
+            refresh_signal = False
+    except Exception as exc:
+        report.messages.append(f"[WARN] Stufe B Preis-Cross-Check: {exc}")
+
     signal_refreshed = False
     signal_date: Optional[str] = None
     if refresh_signal:
@@ -416,6 +437,8 @@ def _sync_live_daily_body(
         "r3_diagnosis_ok": r3_report.ok,
         "r3_regime_match": r3_report.regime_match,
         "r3_diagnosis_path": r3_report.manifest_path,
+        "price_crosscheck": report.price_crosscheck,
+        "price_crosscheck_blocked_signal": crosscheck_blocked,
         "purpose": "continuous_prediction_refinement",
     }
     manifest_path = write_sync_manifest(out_dir, manifest)

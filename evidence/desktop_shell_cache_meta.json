@@ -1,6 +1,9 @@
 {
-  "bytes": 42040,
-  "evidence_max_mtime": 1781041619.0196369,
+  "bytes": 29477,
+  "evidence_max_mtime": 1781597547.5103078,
+  "exec_mirror_only": true,
   "fast": true,
-  "updated_at_utc": "2026-06-09T21:47:23Z"
+  "surface_path": "/r3",
+  "surface_render_version": "exec_mirror_v14",
+  "updated_at_utc": "2026-06-16T08:43:41Z"
 }

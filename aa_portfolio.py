@@ -1871,7 +1871,11 @@ def select_portfolio(snapshot: pd.DataFrame, rmse: float, cfg: BacktestConfig) -
     # In risk-on markets the model stays nearly fully invested and ranks candidates.
     # In risk-off markets it reduces exposure and requires at least some positive evidence.
     mtrend = float(snap["market_trend_200"].dropna().iloc[0]) if snap["market_trend_200"].notna().any() else 0.0
-    mret63 = float(snap["market_ret_63"].dropna().iloc[0]) if snap["market_ret_63"].notna().any() else -1.0
+    if snap["market_ret_63"].notna().any():
+        mret63 = float(snap["market_ret_63"].dropna().iloc[0])
+    else:
+        # Fail-closed default -1.0 erzeugt RISK_OFF trotz trend>=1 — nur wenn ret63 wirklich fehlt.
+        mret63 = -1.0
     risk_on = determine_risk_on(mtrend, mret63, cfg)
     exposure, exposure_controller_diag = compute_target_exposure(snap, risk_on, cfg)
 

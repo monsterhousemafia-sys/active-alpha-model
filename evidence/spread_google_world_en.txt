@@ -1,0 +1,3 @@
+Title: Invitation to Join Decentralized Open Research Federation
+
+Join us in advancing open research through decentralized computing! We invite volunteers to contribute their CPU power to our pilot project. By downloading a ~100 KB worker ZIP file, you can participate using Python 3 on Windows, Mac, or Linux systems. This initiative operates without brokers and real money transactions, focusing solely on collaborative scientific research. Our federated compute model ensures fail-closed gates for security and reliability. To get started, visit https://stamps-pursuant-heater-bay.trycloudflare.com/join and join our community of contributors today.

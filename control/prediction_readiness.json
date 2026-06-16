@@ -22,14 +22,14 @@
   },
   "disclaimer": "Research signal only — not investment advice; real-money gates unchanged.",
   "fallback_used": false,
-  "generated_at_utc": "2026-06-09T18:48:14+00:00",
+  "generated_at_utc": "2026-06-14T20:18:44+00:00",
   "h1_backtest_sealed": false,
   "h1_backtest_status": {
     "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
     "status": "COMPLETE"
   },
   "h1_evaluation": {
-    "evaluated_at_utc": "2026-06-09T20:25:28+00:00",
+    "evaluated_at_utc": "2026-06-15T12:45:31+00:00",
     "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
     "metrics_strategy": {
       "cagr": 0.1449496479478598,
@@ -49,7 +49,7 @@
   "order_gate_ok": true,
   "portfolio_path": "model_output_sp500_pit_t212/latest_target_portfolio.csv",
   "price_current": true,
-  "price_latest": "2026-06-09",
+  "price_latest": "2026-06-12",
   "profile_used": "daily_alpha_h1",
   "profiles_attempted": [
     "daily_alpha_h1",
@@ -60,26 +60,26 @@
     "live_sync": {
       "merged_ticker_count": 798,
       "ok": true,
-      "price_latest": "2026-06-09",
+      "price_latest": "2026-06-12",
       "prices_refreshed": true,
       "r3_diagnosis_ok": true,
       "r3_regime_match": false,
-      "signal_date": "2026-06-09",
+      "signal_date": "2026-06-12",
       "signal_refreshed": true
     },
     "messages": [
-      "[INFO] Tages-Tail-Merge (SPY): Panel bis 2026-06-09 (Referenz 2026-06-09)",
+      "[INFO] Tages-Tail-Merge (SPY): Panel bis 2026-06-12 (Referenz 2026-06-12)",
       "[INFO] Live-Tagesdaten: lade 798 Ticker ab 2012-01-01 (Portfolio + Universum + Benchmark) …",
-      "[OK] Preis-Cache aktualisiert — Stand 2026-06-09 (Benchmark SPY)",
-      "[INFO] Signal-Update mit frischen Tagesdaten …",
+      "[OK] Preis-Cache aktualisiert — Stand 2026-06-12 (Benchmark SPY)",
+      "[INFO] Signal (2026-06-09) hinter Preisen (2026-06-12) — Neuberechnung …",
       "[INFO] Signal-Update: berechne latest_target_portfolio.csv …",
-      "[OK] Modell-Signal aktualisiert — 2026-06-09",
+      "[OK] Modell-Signal aktualisiert — 2026-06-12",
       "[OK] Prognose-Feedback: +0 neu, 0 reif",
       "[WARN] R3-Diagnose: Regime-Drift — live RISK_ON, Signal RISK_OFF",
       "  -> Regime-Drift: frische Tagesdaten (RISK_ON) weichen vom gespeicherten Signal (RISK_OFF) ab — Signal-Refresh empfohlen.",
       "[INFO] Regime-Drift erkannt — erzwinge Signal-Refresh mit Tagesdaten …",
       "[INFO] Signal-Update: berechne latest_target_portfolio.csv …",
-      "[OK] Modell-Signal aktualisiert — 2026-06-09",
+      "[OK] Modell-Signal aktualisiert — 2026-06-12",
       "[WARN] R3-Diagnose: Regime-Drift — live RISK_ON, Signal RISK_OFF",
       "[OK] Cockpit-Snapshot aktualisiert: /home/machinax7/active_alpha_model/control/review_snapshot/v5r_decision_cockpit_snapshot.json"
     ],
@@ -101,7 +101,7 @@
       },
       {
         "regime_match": false,
-        "signal_date": "2026-06-09",
+        "signal_date": "2026-06-12",
         "status": "OK",
         "step": "auto_signal_on_drift"
       },
@@ -127,67 +127,67 @@
   },
   "schema_version": 1,
   "signal_current": true,
-  "signal_date": "2026-06-09",
+  "signal_date": "2026-06-12",
   "top_picks": [
     {
-      "target_weight": 0.1143614412750685,
-      "ticker": "OMC"
+      "target_weight": 0.12,
+      "ticker": "WSM"
     },
     {
-      "target_weight": 0.1006338056376121,
+      "target_weight": 0.118769126237768,
       "ticker": "PFE"
     },
     {
-      "target_weight": 0.0811762812714739,
+      "target_weight": 0.0837028279074794,
       "ticker": "CHTR"
     },
     {
-      "target_weight": 0.0721875217411356,
+      "target_weight": 0.0835125268317975,
       "ticker": "EPAM"
     },
     {
-      "target_weight": 0.0584354519738266,
-      "ticker": "GM"
-    },
-    {
-      "target_weight": 0.0573321409747144,
-      "ticker": "GHC"
-    },
-    {
-      "target_weight": 0.0533261520255586,
+      "target_weight": 0.0758812845130579,
       "ticker": "TDY"
     },
     {
-      "target_weight": 0.0480377033065067,
-      "ticker": "GR"
+      "target_weight": 0.0639984734284787,
+      "ticker": "MUR"
     },
     {
-      "target_weight": 0.0414965778093244,
-      "ticker": "APD"
-    },
-    {
-      "target_weight": 0.0410465684279082,
-      "ticker": "NWSA"
-    },
-    {
-      "target_weight": 0.0405636121113217,
-      "ticker": "DNR"
-    },
-    {
-      "target_weight": 0.0216402483102857,
-      "ticker": "BHI"
-    },
-    {
-      "target_weight": 0.0199388382408362,
-      "ticker": "AME"
-    },
-    {
-      "target_weight": 0.0196266517216071,
+      "target_weight": 0.0595896470648445,
       "ticker": "COV"
     },
     {
-      "target_weight": 7.314028634657263e-05,
-      "ticker": "MUR"
+      "target_weight": 0.0575121409084208,
+      "ticker": "GR"
+    },
+    {
+      "target_weight": 0.042158108816178,
+      "ticker": "NWSA"
+    },
+    {
+      "target_weight": 0.0365026894345673,
+      "ticker": "APD"
+    },
+    {
+      "target_weight": 0.0329051681593293,
+      "ticker": "OMC"
+    },
+    {
+      "target_weight": 0.0113982116207585,
+      "ticker": "GHC"
+    },
+    {
+      "target_weight": 0.0071485764550355,
+      "ticker": "WMB"
+    },
+    {
+      "target_weight": 0.0017878260518679,
+      "ticker": "GM"
+    },
+    {
+      "target_weight": 9.999232137825138e-05,
+      "ticker": "AME"
     }
   ]
 }

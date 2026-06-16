@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 from analytics.r3_trading_functions import (
@@ -12,6 +13,27 @@ from analytics.r3_trading_functions import (
     load_functions_policy,
     render_r3_trading_functions_html,
 )
+
+
+def _seed_t212_trust(tmp_path: Path, *, cash: float = 500.0) -> None:
+    sync_utc = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+    bond = {
+        "bonded": True,
+        "connected": True,
+        "credentials_configured": True,
+        "broker_status": "LIVE_READONLY_ACCOUNT_MONITORING_ACTIVE",
+        "last_sync_utc": sync_utc,
+        "cash_eur": cash,
+        "investable_eur": cash,
+        "account_fingerprint": "testfn01",
+    }
+    (tmp_path / "evidence").mkdir(parents=True, exist_ok=True)
+    (tmp_path / "evidence/r3_t212_api_bond_latest.json").write_text(json.dumps(bond), encoding="utf-8")
+    from analytics.r3_t212_account_identity import confirm_t212_account
+    from analytics.r3_t212_operator_api import mark_operator_api_setup_complete
+
+    confirm_t212_account(tmp_path, bond=bond)
+    mark_operator_api_setup_complete(tmp_path)
 
 
 def _write_reeval(tmp_path: Path, *, positions: int = 0, buys: bool = True, sells: bool = False) -> None:
@@ -60,6 +82,7 @@ def test_initial_order_when_flat(tmp_path: Path) -> None:
         encoding="utf-8",
     )
     _write_reeval(tmp_path, positions=0, buys=True, sells=False)
+    _seed_t212_trust(tmp_path, cash=500.0)
     policy = load_functions_policy(tmp_path)
     from analytics.r3_trading_functions import _collect_context
 
@@ -78,6 +101,7 @@ def test_sell_notice(tmp_path: Path) -> None:
     )
     (tmp_path / "evidence").mkdir(exist_ok=True)
     _write_reeval(tmp_path, positions=3, buys=False, sells=True)
+    _seed_t212_trust(tmp_path)
     policy = load_functions_policy(tmp_path)
     from analytics.r3_trading_functions import _collect_context
 
@@ -100,6 +124,7 @@ def test_rebalance_when_due_with_sells_only(tmp_path: Path) -> None:
         json.dumps({"rebalance_status": {"is_due": True}}),
         encoding="utf-8",
     )
+    _seed_t212_trust(tmp_path)
     policy = load_functions_policy(tmp_path)
     from analytics.r3_trading_functions import _collect_context
 
@@ -133,6 +158,7 @@ def test_rebalance_when_due_with_low_drift(tmp_path: Path) -> None:
         json.dumps({"rebalance_status": {"is_due": True}}),
         encoding="utf-8",
     )
+    _seed_t212_trust(tmp_path)
     policy = load_functions_policy(tmp_path)
     from analytics.r3_trading_functions import _collect_context
 
@@ -154,6 +180,7 @@ def test_rebalance_when_positions_and_drift(tmp_path: Path) -> None:
         json.dumps({"rebalance_status": {"is_due": True}}),
         encoding="utf-8",
     )
+    _seed_t212_trust(tmp_path)
     policy = load_functions_policy(tmp_path)
     from analytics.r3_trading_functions import _collect_context
 
@@ -163,25 +190,23 @@ def test_rebalance_when_positions_and_drift(tmp_path: Path) -> None:
 
 
 def test_build_and_render(tmp_path: Path) -> None:
+    from tests.r3_order_fixtures import seed_orders_stack
+
     (tmp_path / "control").mkdir(parents=True, exist_ok=True)
     (tmp_path / "control/r3_trading_functions_policy.json").write_text("{}", encoding="utf-8")
     (tmp_path / "control/prediction_readiness.json").write_text(
         json.dumps({"ok": True, "order_gate_ok": True}),
         encoding="utf-8",
     )
-    (tmp_path / "evidence").mkdir(exist_ok=True)
-    (tmp_path / "evidence/pilot_investment_plan_latest.json").write_text(
-        json.dumps({"investable_eur": 500.0}),
-        encoding="utf-8",
-    )
-    _write_reeval(tmp_path, positions=0)
+    seed_orders_stack(tmp_path, ref=500.0)
+    _seed_t212_trust(tmp_path, cash=500.0)
     doc = build_r3_trading_functions(tmp_path, persist=True)
     assert len(doc.get("functions") or []) == 3
     assert (tmp_path / "evidence/r3_trading_functions_latest.json").is_file()
     html_out = render_r3_trading_functions_html(tmp_path)
     assert "r3-trading-functions" in html_out
-    assert "r3-freigabe-btn" in html_out
-    assert "T212" in html_out
+    assert "r3-freigabe-btn ready" in html_out
+    assert "Gewinn starten" in html_out
 
 
 def test_desktop_exec_only_hides_einzelaktien(tmp_path: Path) -> None:
@@ -193,6 +218,7 @@ def test_desktop_exec_only_hides_einzelaktien(tmp_path: Path) -> None:
         encoding="utf-8",
     )
     _write_reeval(tmp_path, positions=0)
+    _seed_t212_trust(tmp_path, cash=500.0)
     reeval = json.loads(
         (tmp_path / "evidence/pilot_portfolio_reevaluation_latest.json").read_text(encoding="utf-8")
     )
@@ -218,3 +244,30 @@ def test_desktop_exec_only_hides_einzelaktien(tmp_path: Path) -> None:
     assert 'class="r3-stock-btn' in full
     assert "r3-einzel-wrap" in full
     assert "r3-freigabe-btn" in slim
+
+
+def test_freigabe_button_blocked_without_trust(tmp_path: Path) -> None:
+    (tmp_path / "control").mkdir(parents=True)
+    (tmp_path / "control/r3_trading_functions_policy.json").write_text("{}", encoding="utf-8")
+    (tmp_path / "control/prediction_readiness.json").write_text(
+        json.dumps({"ok": True, "order_gate_ok": True}),
+        encoding="utf-8",
+    )
+    (tmp_path / "evidence").mkdir(exist_ok=True)
+    _write_reeval(tmp_path, positions=0, buys=True, sells=False)
+    (tmp_path / "evidence/pilot_investment_plan_latest.json").write_text(
+        json.dumps({"investable_eur": 500.0}),
+        encoding="utf-8",
+    )
+    (tmp_path / "evidence/r3_stock_orders_latest.json").write_text(
+        json.dumps(
+            {
+                "stocks": [{"symbol": "SPY", "side": "BUY", "notional_eur": 500.0}],
+                "initial_package": {"active": True, "notional_eur": 500.0},
+            }
+        ),
+        encoding="utf-8",
+    )
+    html_out = render_r3_trading_functions_html(tmp_path, exec_only=True)
+    assert "r3-freigabe-btn ready" not in html_out
+    assert "r3-freigabe-btn blocked" in html_out

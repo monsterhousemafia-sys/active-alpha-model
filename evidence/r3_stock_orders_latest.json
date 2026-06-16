@@ -2,9 +2,9 @@
   "buy_count": 11,
   "initial_package": {
     "active": false,
-    "budget_eur": 644.59,
+    "budget_eur": null,
     "label_de": "Gesamtpaket kaufen",
-    "notional_eur": 644.58,
+    "notional_eur": 654.04,
     "order_count": 11
   },
   "new_buy_count": 11,
@@ -327,5 +327,5 @@
       "target_weight_pct": 3.72
     }
   ],
-  "updated_at_utc": "2026-06-09T21:27:37+00:00"
+  "updated_at_utc": "2026-06-15T12:45:31+00:00"
 }

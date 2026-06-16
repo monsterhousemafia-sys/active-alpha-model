@@ -8,18 +8,21 @@
     "capital": "analytics.r3_live_capital.compute_worthwhile_positions",
     "prognosis": "analytics.r3_prognosis_pipeline.ensure_r3_prognosis_fresh",
     "quotes": "analytics.r3_quote_keepalive.tick_quote_keepalive",
+    "fall_watch": "analytics.prognosis_fall_watch.run_fall_watch",
+    "swing_theory": "analytics.swing_trading_theory_check.run_swing_trading_theory_check",
     "cycle": "analytics.r3_trading_cycle.run_trading_cycle",
     "surface": "analytics.r3_full_refresh.run_r3_full_refresh",
     "reeval_policy": "analytics.pilot_portfolio_reevaluation.load_policy"
   },
+  "monitoring_governance_ref": "control/r3_monitoring_governance.json",
   "phases": {
     "pre_us": {
       "steps": ["quotes", "signal_check", "capital", "prognosis", "top_picks", "gui_light"],
       "description_de": "Vor US-Open: Kurse, Signal, Kapital, Freigabe vorbereiten"
     },
     "intraday": {
-      "steps": ["quotes", "cycle_status", "prognosis_if_stale"],
-      "description_de": "Handelstag: Kurse, Kreislauf-Status, stale Prognose"
+      "steps": ["quotes", "fall_watch", "swing_theory", "cycle_status", "prognosis_if_stale"],
+      "description_de": "Handelstag: Kurse, Fall-Wächter, Swing-Theorie, Kreislauf, stale Prognose"
     },
     "eod": {
       "steps": ["eod_signal", "capital", "prognosis", "postmortem", "learning_capture"],

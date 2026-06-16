@@ -1,0 +1,18 @@
+{
+  "commands_de": [
+    "bash tools/r3_cockpit.sh",
+    "bash tools/stack_integrity.sh --repair --launch",
+    "docs/DEVELOPER_SETUP.md"
+  ],
+  "headline_de": "Developer-Release bereit — Stack OK",
+  "hub_port": 17890,
+  "r3_cockpit": true,
+  "released_for": "developers",
+  "safety_de": "Fail-closed — auto_execute und auto_promote bleiben aus",
+  "schema_version": 1,
+  "stack_ok": true,
+  "t212_message_de": "✗ T212 nicht vertrauenswürdig — ✓ Trading212 Bond gehalten · LIVE_READ_ONLY · ⏱ Bitte 113 Sekunden warten.\nTrading 212 erlaubt nur wenige API-Anfragen p",
+  "t212_reason_code": "CONNECTION_FAILED_RETRY_AVAILABLE",
+  "t212_trusted": false,
+  "updated_at_utc": "2026-06-10T07:54:06+00:00"
+}

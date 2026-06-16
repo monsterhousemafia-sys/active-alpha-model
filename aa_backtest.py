@@ -1793,6 +1793,10 @@ def run_latest_signal(features: pd.DataFrame, cfg: BacktestConfig, dashboard: Op
             candidates=len(snapshot),
         )
     pred, rmse = fit_predict(train, snapshot, FEATURE_COLUMNS, cfg)
+    from aa_r3_daily_diagnosis import enrich_snapshot_market_regime
+
+    out_dir = Path(str(getattr(cfg, "out_dir", "model_output_sp500_pit_t212") or "model_output_sp500_pit_t212"))
+    pred = enrich_snapshot_market_regime(pred, cfg, out_dir, as_of=latest_date)
     _, ranked = select_portfolio(pred, rmse, cfg)
     if dashboard is not None:
         dashboard.advance_phase(

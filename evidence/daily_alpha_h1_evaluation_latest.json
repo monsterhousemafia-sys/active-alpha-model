@@ -15,7 +15,7 @@
     "schema_version": 1,
     "slippage_bps_per_side": 2.0
   },
-  "evaluated_at_utc": "2026-06-09T21:17:08+00:00",
+  "evaluated_at_utc": "2026-06-15T12:45:31+00:00",
   "max_drawdown_not_worse": true,
   "max_drawdown_not_worse_after_cost_stress": true,
   "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",

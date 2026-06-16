@@ -8,8 +8,16 @@ from pathlib import Path
 from tests.test_r3_stock_orders import _write_flat_context
 
 
+def seed_operator_api_complete(tmp_path: Path) -> None:
+    (tmp_path / "control").mkdir(parents=True, exist_ok=True)
+    from analytics.r3_t212_operator_api import mark_operator_api_setup_complete
+
+    mark_operator_api_setup_complete(tmp_path)
+
+
 def seed_orders_stack(tmp_path: Path, *, ref: float = 640.93) -> None:
     """Evidence-Stack für Initial-Paket + technische Vorbereitung."""
+    seed_operator_api_complete(tmp_path)
     _write_flat_context(tmp_path)
     half = round(ref / 2, 2)
     (tmp_path / "evidence/r3_stock_orders_latest.json").write_text(
@@ -66,9 +74,7 @@ def seed_orders_stack(tmp_path: Path, *, ref: float = 640.93) -> None:
         encoding="utf-8",
     )
     sync_utc = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-    (tmp_path / "evidence/r3_t212_api_bond_latest.json").write_text(
-        json.dumps(
-            {
+    bond_doc = {
                 "bonded": True,
                 "connected": True,
                 "credentials_configured": True,
@@ -76,10 +82,16 @@ def seed_orders_stack(tmp_path: Path, *, ref: float = 640.93) -> None:
                 "last_sync_utc": sync_utc,
                 "cash_eur": 674.66,
                 "investable_eur": ref,
+                "account_fingerprint": "testacctseed01",
+                "account_label": "T212 LIVE READ ONLY · 675 EUR",
+                "connection_label": "T212 LIVE · #testacct",
+                "environment": "LIVE_READ_ONLY",
             }
-        ),
-        encoding="utf-8",
-    )
+    bond_path = tmp_path / "evidence/r3_t212_api_bond_latest.json"
+    bond_path.write_text(json.dumps(bond_doc), encoding="utf-8")
+    from analytics.r3_t212_account_identity import confirm_t212_account
+
+    confirm_t212_account(tmp_path, bond=bond_doc)
     (tmp_path / "evidence/pilot_trading_day_warnings_latest.json").write_text(
         json.dumps(
             {

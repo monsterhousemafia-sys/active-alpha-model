@@ -107,7 +107,9 @@ def ingest_prognosis_data_from_internet(
         try:
             from market.live_quote_engine import refresh_live_quotes
 
-            quotes = refresh_live_quotes(root, force=bool(force and not fast))
+            quotes = refresh_live_quotes(
+                root, force=bool(force and not fast), owner="r3_browser_ingest"
+            )
             steps.append(
                 {
                     "step": "live_quotes",

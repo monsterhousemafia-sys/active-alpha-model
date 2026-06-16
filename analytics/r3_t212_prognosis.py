@@ -121,9 +121,22 @@ def _enrich_from_live_capital(
 ) -> Dict[str, Any]:
     cap = live_capital or {}
     basis = cap.get("capital_basis") or cap
-    if cap.get("ok") or basis.get("investable_eur") is not None:
-        if basis.get("investable_eur") is not None:
-            doc["investable_eur"] = basis.get("investable_eur")
+    trusted = bool(cap.get("trusted")) if cap.get("trusted") is not None else None
+    trust: Dict[str, Any] = {}
+    try:
+        from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
+
+        trust = assess_t212_trust_from_root(root, persist=False)
+    except Exception:
+        trust = {}
+    if trusted is not None:
+        trust = {**trust, "trusted": trusted}
+    doc["t212_trusted"] = bool(trust.get("trusted"))
+    doc["t212_orders_blocked"] = not bool(trust.get("orders_allowed", trust.get("trusted")))
+    doc["t212_trust_reason"] = trust.get("reason_code")
+
+    if cap.get("ok") and doc.get("t212_trusted") and basis.get("investable_eur") is not None:
+        doc["investable_eur"] = basis.get("investable_eur")
         if basis.get("planning_cash_eur") is not None:
             doc["available_cash_eur"] = basis.get("planning_cash_eur")
         elif basis.get("cash_eur") is not None:
@@ -133,18 +146,13 @@ def _enrich_from_live_capital(
             f"{float(doc.get('investable_eur') or 0):.0f} € investierbar"
         )
         doc["last_sync_utc"] = basis.get("last_sync_utc") or cap.get("last_sync_utc")
-    trust: Dict[str, Any] = {}
-    try:
-        from integrations.trading212.t212_trust_gate import assess_t212_trust_from_root
+    else:
+        doc["investable_eur"] = None
+        doc["available_cash_eur"] = None
+        doc["capital_basis_de"] = str(
+            trust.get("message_de") or "Kein verifiziertes T212-Guthaben — Einzahlung + Sync nötig"
+        )[:120]
 
-        trust = assess_t212_trust_from_root(root, persist=False)
-    except Exception:
-        trust = {}
-    if cap.get("trusted") is not None:
-        trust = {**trust, "trusted": cap.get("trusted")}
-    doc["t212_trusted"] = bool(trust.get("trusted"))
-    doc["t212_orders_blocked"] = not bool(trust.get("orders_allowed", trust.get("trusted")))
-    doc["t212_trust_reason"] = trust.get("reason_code")
     if not doc.get("t212_trusted"):
         doc["ok"] = False
         doc["order_gate_ok"] = False
@@ -257,8 +265,8 @@ def build_r3_t212_daily_prognosis(
         ),
         "positions": len(picks),
         "top_picks": picks,
-        "investable_eur": plan.get("investable_eur"),
-        "available_cash_eur": plan.get("available_cash_eur"),
+        "investable_eur": None,
+        "available_cash_eur": None,
         "summary_de": summary,
         "eod_local_time_cet": (
             (plan.get("prediction_meta") or {}).get("eod_local_time_cet") or "22:15"

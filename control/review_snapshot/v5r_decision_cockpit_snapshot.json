@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at_utc": "2026-06-09T18:48:14+00:00",
+  "generated_at_utc": "2026-06-16T08:41:12+00:00",
   "mode": "READ_ONLY_REVIEW_SNAPSHOT",
   "build_status": "MANUAL_READ_ONLY_REVIEW_ONLY",
   "operational_authorization": "NONE",
@@ -27,7 +27,7 @@
   ],
   "cockpit_data": {
     "schema_version": 4,
-    "generated_at_utc": "2026-06-09T18:48:14+00:00",
+    "generated_at_utc": "2026-06-16T08:41:12+00:00",
     "mode": "READ_ONLY_DECISION_COCKPIT",
     "authorization_status": {
       "schema_version": 1,
@@ -68,7 +68,7 @@
       ],
       "g1_execution_authorized": true,
       "resolution_required": "NONE",
-      "generated_at_utc": "2026-06-09T18:48:14+00:00"
+      "generated_at_utc": "2026-06-16T08:41:12+00:00"
     },
     "banners": [
       "NO LIVE TRADING",
@@ -156,7 +156,7 @@
         "status": "OK",
         "lines_de": [
           "Produktiv-Champion: R0_LEGACY_ENSEMBLE",
-          "Letztes Signal-Datum: 2026-06-09 (latest_target_portfolio.csv)",
+          "Letztes Signal-Datum: 2026-06-12 (latest_target_portfolio.csv)",
           "Auto-Promotion: DISABLED",
           "Phase-E-Entscheidung: M9_R0_GOVERNANCE_WITH_H1_EXPERIMENTAL_SIGNAL \u2014 R0_LEGACY_ENSEMBLE",
           "",
@@ -192,7 +192,7 @@
           "\u2026 (gek\u00fcrzt \u2014 vollst\u00e4ndig in control/champion_decision_charter.md)"
         ],
         "authoritative_champion": "R0_LEGACY_ENSEMBLE",
-        "last_signal_date": "2026-06-09",
+        "last_signal_date": "2026-06-12",
         "last_signal_source": "latest_target_portfolio.csv",
         "charter_ref": "control/champion_decision_charter.md",
         "strategic_decision": "M9_R0_GOVERNANCE_WITH_H1_EXPERIMENTAL_SIGNAL"
@@ -201,36 +201,26 @@
         "status": "WARN",
         "lines_de": [
           "Rebalance-Vorcheck (read-only, keine T212-POSTs)",
-          "Planning-Cash: 678.52 EUR",
+          "Planning-Cash: 0.00 EUR",
           "Roh-Summe BUY (vor Welle): 470.00 EUR",
-          "Skaliert (nach Welle): 469.95 EUR",
-          "Scale-Faktor: 1.0",
+          "Skaliert (nach Welle): 0.00 EUR",
+          "Scale-Faktor: 0.0",
           "Quote-Coverage (geplante K\u00e4ufe): 0/15 Kurse",
-          "Geplante BUY-Orders: 15",
-          "Hinweis: Nur 0/15 Live-Kurse f\u00fcr geplante K\u00e4ufe \u2014 Rebalance blockiert. Fehlend: OMC, PFE, CHTR, EPAM, GM, GHC, TDY, GR (+7). Bitte \u00abAktualisieren\u00bb (F5) oder US-Session warten.",
+          "Geplante BUY-Orders: 0",
+          "Blockiert (kein Live-BUY): SPY",
+          "Hinweis: Nur 0/15 Live-Kurse f\u00fcr geplante K\u00e4ufe \u2014 Rebalance blockiert. Fehlend: TDY, WSM, GM, EPAM, AME, BHI, APD, MUR (+7). Bitte \u00abAktualisieren\u00bb (F5) oder US-Session warten.",
           "",
-          "Top-Positionen (nach Skalierung):",
-          "  OMC: 31.33 EUR",
-          "  PFE: 31.33 EUR",
-          "  CHTR: 31.33 EUR",
-          "  EPAM: 31.33 EUR",
-          "  GM: 31.33 EUR",
-          "  GHC: 31.33 EUR",
-          "  TDY: 31.33 EUR",
-          "  GR: 31.33 EUR",
-          "  APD: 31.33 EUR",
-          "  NWSA: 31.33 EUR",
-          "  DNR: 31.33 EUR",
-          "  BHI: 31.33 EUR",
-          "  \u2026 +3 weitere"
+          "Top-Positionen (nach Skalierung):"
         ],
-        "planning_cash_eur": 678.52,
+        "planning_cash_eur": 0.0,
         "cash_cap_ok": true,
         "quote_coverage_ok": false,
         "quote_coverage_label_de": "0/15 Kurse",
-        "blocked_symbols": [],
-        "planned_buy_count": 15,
-        "scale_factor": 1.0
+        "blocked_symbols": [
+          "SPY"
+        ],
+        "planned_buy_count": 0,
+        "scale_factor": 0.0
       },
       "h4_pointer_drift": {
         "status": "FAIL",
@@ -280,7 +270,7 @@
       "authoritative_champion": "R0_LEGACY_ENSEMBLE",
       "pointer_drift_active": true,
       "failsafe_banner_de": "FAILSAFE: Challenger-Pointer weicht von R0_LEGACY_ENSEMBLE ab \u2014 keine Promotion / kein Champion-Wechsel.",
-      "last_signal_date": "2026-06-09"
+      "last_signal_date": "2026-06-12"
     },
     "executive_overview": {
       "active_champion": "UNKNOWN",

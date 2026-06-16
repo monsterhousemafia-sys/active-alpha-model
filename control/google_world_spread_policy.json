@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "headline_de": "Weltweite Ausbreitung — Google Cloud (Gemini) + Internet-Tunnel",
+  "google_role_de": "Gemini API (generativelanguage.googleapis.com) erzeugt globale Outreach-Texte",
+  "tunnel_role_de": "Cloudflare Quick-Tunnel liefert weltweiten /join — kein GCP-Hosting",
+  "gemini_required_for_ai_copy": true,
+  "languages": ["en", "de"],
+  "evidence_ref": "evidence/google_world_spread_latest.json",
+  "operator_de": [
+    "Gemini-Key: bash tools/setup_gemini_key.sh",
+    "Welt-Spread: bash tools/king_ops.sh google-spread",
+    "Stabile URL: bash tools/setup_cloudflare_tunnel_token.sh"
+  ],
+  "safety_de": "Kein Echtgeld · kein Broker · Spread nur Worker-ZIP + Join-Link"
+}

@@ -73,6 +73,21 @@ Lookup-Reihenfolge: `sector_reference.csv` (PIT) → `sector_yfinance_cache.json
 | `aa_pipeline_orchestration.py` | Pipeline JSON/YAML/Pending |
 | `aa_safe_io.py` | Atomare Writes |
 
+## R3 Exec Mirror (Daytrading-Oberfläche)
+
+Architekturplan: [`docs/R3_EXEC_MIRROR_ARCHITECTURE.md`](docs/R3_EXEC_MIRROR_ARCHITECTURE.md) · Surface-Version: `exec_mirror_v14` (`analytics/r3_surface.py`).
+
+| Modul | Rolle |
+|-------|--------|
+| `analytics/r3_t212_operator_api.py` | Domain SSoT — Operator-Zugangsdaten, Gates, Persistenz |
+| `analytics/r3_t212_setup_ui.py` | Nur UI — T212-Formular auf `/r3` |
+| `analytics/r3_t212_api_bond.py` | T212 Bond-Sync, Evidence, Bond-Lock |
+| `analytics/r3_mirror_state.py` / `r3_mirror_view.py` | State → HTML (Exec-Spiegel) |
+| `analytics/r3_mirror_capital.py` | Kapital/Trust für Mirror |
+| `tools/preview_hub.py` | HTTP-Hub (`/r3`, `/api/r3/*`) |
+
+Marker: `control/r3_t212_operator_setup.json` (`web_setup_complete`) — stille `.env` allein reicht nicht.
+
 ## Erlaubte Unit-Tests (ohne operative Jobs)
 
 ```text

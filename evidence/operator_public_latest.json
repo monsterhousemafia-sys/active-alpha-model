@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "published_at_utc": "2026-06-09T21:16:13+00:00",
+  "published_at_utc": "2026-06-14T17:41:48+00:00",
   "agent_name": "Auto",
   "product_name": "Alpha Model",
   "tagline_de": "Ein Kern. Ein Cockpit. Alles über Alpha Model bedienen.",
@@ -40,7 +40,7 @@
     "python3 tools/ai_kernel.py trading-day"
   ],
   "visibility": {
-    "generated_at_local": "2026-06-09 23:15",
+    "generated_at_local": "2026-06-14 19:41",
     "headline_de": "Kreis-Score 0/6 grün (0%) · Entscheiden: Warnungen 3× kritisch",
     "scope_lines_de": [
       "✓ A App-Ebene (autonom)",
@@ -72,24 +72,24 @@
       }
     ],
     "systemd_next_de": [
-      "⏱ Wed: 2026-06-10 06:05:00",
-      "⏱ Wed: 2026-06-10 09:00:00",
-      "⏱ Wed: 2026-06-10 18:00:00",
-      "⏱ -: - Mon",
-      "⏱ -: - Mon",
-      "⏱ -: - Mon"
+      "⏱ Sun: 2026-06-14 19:41:33",
+      "⏱ Sun: 2026-06-14 19:41:41",
+      "⏱ Sun: 2026-06-14 19:41:50",
+      "⏱ Sun: 2026-06-14 19:42:02",
+      "⏱ Sun: 2026-06-14 19:52:32",
+      "⏱ Sun: 2026-06-14 22:05:00"
     ],
     "operator_actions_de": [
-      "2026-06-08 10:48:29 [A] Auto: kernel_boundary_audit → OK",
-      "2026-06-08 14:53:44 [A] Auto: kernel_boundary_audit → OK",
-      "2026-06-08 14:55:33 [A] Auto: kernel_boundary_audit → OK",
       "2026-06-08 14:56:44 [A] Auto: kernel_boundary_audit → OK",
       "2026-06-08 17:04:18 [B] Auto: headless_refresh_snapshot → OK",
       "2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE",
       "2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE",
       "2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE",
       "2026-06-09 17:51:16 [B] Auto: headless_refresh_snapshot → OK",
-      "2026-06-09 21:15:28 [A] Auto: kernel_boundary_audit → OK"
+      "2026-06-09 21:15:28 [A] Auto: kernel_boundary_audit → OK",
+      "2026-06-09 21:17:13 [A] Auto: kernel_boundary_audit → OK",
+      "2026-06-14 17:41:01 [A] Auto: kernel_boundary_audit → OK",
+      "2026-06-14 17:41:29 [A] Auto: kernel_boundary_audit → OK"
     ],
     "h1_status_de": "H1: COMPLETE (validation_runs/20260606T102626Z_DAILY_ALPHA_H1)",
     "h1_banner_de": "H1-Seal optional — COMPLETE Backtest reicht für operative Gates",
@@ -184,7 +184,7 @@
     ],
     "evolution_platform_de": "R3 ist die Oberfläche — Kernel, Hub und Evidence zeigen jeden Schritt messbar."
   },
-  "visibility_text_de": "Kreis-Score 0/6 grün (0%) · Entscheiden: Warnungen 3× kritisch\nH1: COMPLETE (validation_runs/20260606T102626Z_DAILY_ALPHA_H1)\n✓ A App-Ebene (autonom)\n✓ B User-Services (autonom)\n✓ C Wartung (autonom)\n✓ D System (mit Freigabe) (mit Freigabe)\n⏱ Cognitive Scheduler v2: alle 5 min — H1, Hub, Prioritäten (ai_kernel cognitive-scheduler)\n⏱ Kernel Observer: alle 10 min — ebpf_observer (ai_kernel cognitive-observe)\n⏱ Boot-Services: 3 min nach Anmeldung/Boot (tools/linux_boot_services.sh)\n⏱ Wed: 2026-06-10 06:05:00\n⏱ Wed: 2026-06-10 09:00:00\n⏱ Wed: 2026-06-10 18:00:00\n⏱ -: - Mon\n⏱ -: - Mon\n⏱ -: - Mon\n— Letzte Operator-Aktionen —\n2026-06-08 10:48:29 [A] Auto: kernel_boundary_audit → OK\n2026-06-08 14:53:44 [A] Auto: kernel_boundary_audit → OK\n2026-06-08 14:55:33 [A] Auto: kernel_boundary_audit → OK\n2026-06-08 14:56:44 [A] Auto: kernel_boundary_audit → OK\n2026-06-08 17:04:18 [B] Auto: headless_refresh_snapshot → OK\n2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE\n2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE\n2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE\n2026-06-09 17:51:16 [B] Auto: headless_refresh_snapshot → OK\n2026-06-09 21:15:28 [A] Auto: kernel_boundary_audit → OK",
+  "visibility_text_de": "Kreis-Score 0/6 grün (0%) · Entscheiden: Warnungen 3× kritisch\nH1: COMPLETE (validation_runs/20260606T102626Z_DAILY_ALPHA_H1)\n✓ A App-Ebene (autonom)\n✓ B User-Services (autonom)\n✓ C Wartung (autonom)\n✓ D System (mit Freigabe) (mit Freigabe)\n⏱ Cognitive Scheduler v2: alle 5 min — H1, Hub, Prioritäten (ai_kernel cognitive-scheduler)\n⏱ Kernel Observer: alle 10 min — ebpf_observer (ai_kernel cognitive-observe)\n⏱ Boot-Services: 3 min nach Anmeldung/Boot (tools/linux_boot_services.sh)\n⏱ Sun: 2026-06-14 19:41:33\n⏱ Sun: 2026-06-14 19:41:41\n⏱ Sun: 2026-06-14 19:41:50\n⏱ Sun: 2026-06-14 19:42:02\n⏱ Sun: 2026-06-14 19:52:32\n⏱ Sun: 2026-06-14 22:05:00\n— Letzte Operator-Aktionen —\n2026-06-08 14:56:44 [A] Auto: kernel_boundary_audit → OK\n2026-06-08 17:04:18 [B] Auto: headless_refresh_snapshot → OK\n2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE\n2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE\n2026-06-09 17:25:56 [B] Auto: h1_watch → COMPLETE\n2026-06-09 17:51:16 [B] Auto: headless_refresh_snapshot → OK\n2026-06-09 21:15:28 [A] Auto: kernel_boundary_audit → OK\n2026-06-09 21:17:13 [A] Auto: kernel_boundary_audit → OK\n2026-06-14 17:41:01 [A] Auto: kernel_boundary_audit → OK\n2026-06-14 17:41:29 [A] Auto: kernel_boundary_audit → OK",
   "circle_score": {
     "schema_version": 1,
     "generated_at_utc": "2026-06-09T17:52:34+00:00",
@@ -266,16 +266,16 @@
   "trading_day_next_step_de": "② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen",
   "system_status": {
     "schema_version": 1,
-    "updated_at_utc": "2026-06-09T21:16:13+00:00",
+    "updated_at_utc": "2026-06-14T17:41:48+00:00",
     "headline_de": "Der einzig wahre Steuerungskernel — R3 Bau-Kernel, aa_scheduler, Preview Hub.",
-    "composite_pct": 98,
-    "phase": "ready",
+    "composite_pct": 95,
+    "phase": "h1_done",
     "tiles": [
       {
         "id": "r3_operator",
         "label_de": "R3 Betrieb",
-        "value_de": "100%",
-        "detail_de": "Stabil · 100% flüssig · 6/6 Kanäle · SR 100% · Wachstum 100%",
+        "value_de": "86%",
+        "detail_de": "Stabil · 100% flüssig · 6/6 Kanäle · SR 86% · Wachstum 100%",
         "ok": false,
         "status_class": "warn"
       },
@@ -314,8 +314,8 @@
       {
         "id": "launch",
         "label_de": "Launch",
-        "value_de": "100%",
-        "detail_de": "Bereit — öffentlicher Zugang freigegeben",
+        "value_de": "92%",
+        "detail_de": "Validierung abgeschlossen — Seal optional",
         "ok": true,
         "status_class": "ok"
       },
@@ -339,8 +339,8 @@
       {
         "id": "remote",
         "label_de": "Worker-Einladung",
-        "value_de": "Bereit",
-        "ok": true,
+        "value_de": "Aus",
+        "ok": false,
         "detail_de": "ULWO unter /download · Mitmachen unter /join"
       },
       {
@@ -354,8 +354,8 @@
         "id": "preview",
         "label_de": "Systemcheck",
         "value_de": "9/10 OK",
-        "ok": true,
-        "detail_de": "Preview 9/10 · 3.8h frisch"
+        "ok": false,
+        "detail_de": "Preview 9/10 oder veraltet (120.2h)"
       }
     ],
     "blockers_de": [],
@@ -380,18 +380,18 @@
     },
     "operator": {
       "headline_de": "Kreis-Score 0/6 grün (0%) · Entscheiden: Warnungen 3× kritisch",
-      "last_action_de": "2026-06-09 21:15:28 [A] Auto: kernel_boundary_audit → OK",
+      "last_action_de": "2026-06-14 17:41:29 [A] Auto: kernel_boundary_audit → OK",
       "circle_headline_de": "Kreis-Score 0/6 grün (0%)",
       "chat_next_de": null,
       "cockpit_next_step_de": "② Rebalance bestätigen — 3 kritische Warnung(en) zuerst prüfen"
     },
     "r3_operator_readiness": {
       "schema_version": 1,
-      "updated_at_utc": "2026-06-09T21:15:50+00:00",
-      "operational_pct": 100,
+      "updated_at_utc": "2026-06-14T17:41:38+00:00",
+      "operational_pct": 86,
       "operational_ok": false,
-      "series_readiness_pct": 100,
-      "series_ready": true,
+      "series_readiness_pct": 86,
+      "series_ready": false,
       "growth_pct": 100,
       "checklist_ok": true,
       "checklist_de": "36/37",
@@ -404,13 +404,13 @@
       "kreis_pct": 0,
       "kreis_de": "—",
       "infra_pct": 100,
-      "headline_de": "Serienreife 100% — lokales R3 betriebsbereit",
+      "headline_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
       "surface_de": "http://127.0.0.1:17890/desktop",
       "r3_mirror_policy_de": "Keine Prozent-Anzeige auf /r3 — nur Operator/Desktop",
       "evidence_ref": "evidence/r3_operator_readiness_latest.json",
       "next_de": "bash tools/king_ops.sh series-ready --repair"
     },
-    "launch_overall_pct": 100,
+    "launch_overall_pct": 92,
     "milestones": [
       {
         "id": "setup",
@@ -420,12 +420,12 @@
       {
         "id": "preview",
         "label_de": "Systemcheck",
-        "done": true
+        "done": false
       },
       {
         "id": "remote",
         "label_de": "Welt-Zugang",
-        "done": true
+        "done": false
       },
       {
         "id": "h1",
@@ -435,7 +435,7 @@
       {
         "id": "launch",
         "label_de": "Welt-Start",
-        "done": true
+        "done": false
       }
     ],
     "kernel_supremacy_de": "Der einzig wahre Steuerungskernel — R3 Bau-Kernel, aa_scheduler, Preview Hub.",
@@ -469,7 +469,7 @@
       },
       "power": {
         "schema_version": 1,
-        "updated_at_utc": "2026-06-09T21:16:13+00:00",
+        "updated_at_utc": "2026-06-14T17:41:48+00:00",
         "name_de": "R3 Power",
         "headline_de": "Ein Werkzeug — Trading-ML, lokale KI, R3 Desktop",
         "tagline_de": "R3 KI lokal = Gespräch · Cockpit = System · Cursor IDE = optional",
@@ -517,12 +517,12 @@
     },
     "dev_trail": {
       "schema_version": 1,
-      "updated_at_utc": "2026-06-09T21:16:13+00:00",
+      "updated_at_utc": "2026-06-14T17:41:48+00:00",
       "mission_de": "R3-OS in der Pilot-Zentrale — Spenden und Mitwirkende finanzieren den Ausbau.",
       "continuity_de": "Gespräch lokal gesichert — Cursor nicht nötig",
       "kernel_roles": {
         "schema_version": 1,
-        "checked_at_utc": "2026-06-09T21:16:13+00:00",
+        "checked_at_utc": "2026-06-14T17:41:48+00:00",
         "r3_kernel": {
           "title_de": "R3 Kern",
           "definition_de": "Hub + Evidence + Ollama auf dem Desktop — Sprache lokal über R3 KI.",
@@ -575,7 +575,7 @@
       },
       "build_channel": {
         "schema_version": 1,
-        "checked_at_utc": "2026-06-09T21:16:13+00:00",
+        "checked_at_utc": "2026-06-14T17:41:48+00:00",
         "name_de": "Alpha Model Coding-Kernel",
         "headline_de": null,
         "replaces_de": null,
@@ -674,7 +674,7 @@
     },
     "pilot_board": {
       "schema_version": 1,
-      "updated_at_utc": "2026-06-09T21:16:12+00:00",
+      "updated_at_utc": "2026-06-14T17:41:47+00:00",
       "title_de": "Pilot-Zentrale",
       "tagline_de": "Ein Chat · sichtbar bauen · getestet · König gibt frei",
       "is_king": true,
@@ -774,10 +774,10 @@
     "forschungszweig": {
       "schema_version": 2,
       "branch_id": "forschungszweig_finanzierung",
-      "updated_at_utc": "2026-06-09T21:16:12+00:00",
+      "updated_at_utc": "2026-06-14T17:41:47+00:00",
       "king_32b_forschung": {
         "schema_version": 1,
-        "updated_at_utc": "2026-06-09T21:16:12+00:00",
+        "updated_at_utc": "2026-06-14T17:41:47+00:00",
         "component_id": "king_32b_forschung",
         "is_forschungsprojekt": true,
         "forschungszweig_branch_id": "forschungszweig_finanzierung",
@@ -869,7 +869,7 @@
   },
   "runtime_profile": {
     "schema_version": 1,
-    "checked_at_utc": "2026-06-09T21:16:13+00:00",
+    "checked_at_utc": "2026-06-14T17:41:48+00:00",
     "control_plane": "v2",
     "config_control_plane": "cognitive_kernel_v2",
     "cognitive_v2_active": true,

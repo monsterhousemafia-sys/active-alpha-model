@@ -84,7 +84,9 @@ def test_execute_live_rebalance_allowed_for_r3_click(tmp_path: Path, monkeypatch
 
 
 def test_walkforward_rebalance_blocked_without_r3(tmp_path: Path) -> None:
-    (tmp_path / "control").mkdir()
+    from tests.r3_order_fixtures import seed_operator_api_complete
+
+    seed_operator_api_complete(tmp_path)
     (tmp_path / "evidence").mkdir()
     from execution.confirmed_live.us_equity_deferred_intents import (
         process_deferred_intents_if_due,

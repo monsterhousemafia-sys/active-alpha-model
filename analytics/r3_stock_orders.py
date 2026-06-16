@@ -1149,14 +1149,17 @@ def submit_r3_initial_package(root: Path, *, confirmed: bool = False) -> Dict[st
     from analytics.r3_freigabe import auto_prepare_freigabe_for_desktop
 
     auto_prepare_freigabe_for_desktop(root)
-    doc = refresh_stock_order_evidence(root)
-    package = doc.get("initial_package") or build_initial_package(root)
-    if not package.get("active"):
+    from analytics.r3_freigabe import package_ready
+
+    freigabe = package_ready(root, refresh_orders=False)
+    if not freigabe.get("ready"):
         return {
             "ok": False,
-            "error": "INITIAL_NOT_ACTIVE",
-            "message_de": "Initial Bestellung ist gerade nicht aktiv.",
+            "error": "FREIGABE_NOT_READY",
+            "message_de": str(freigabe.get("headline_de") or "Paket nicht freigegeben")[:160],
         }
+    doc = refresh_stock_order_evidence(root)
+    package = doc.get("initial_package") or freigabe.get("initial_package") or build_initial_package(root)
 
     buys = [r for r in (doc.get("stocks") or []) if str(r.get("side") or "").upper() == "BUY"]
     if not buys:

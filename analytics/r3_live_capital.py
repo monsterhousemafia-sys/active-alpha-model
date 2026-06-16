@@ -24,6 +24,14 @@ def sync_live_capital_basis(root: Path, *, force: bool = True, sync_owner: str =
     T212 live lesen — nur trusted Cash/Positionen als Berechnungsbasis (fail-closed).
     """
     root = Path(root)
+    try:
+        from analytics.r3_t212_operator_api import operator_api_gate_block
+
+        block = operator_api_gate_block(root)
+        if block:
+            return block
+    except Exception:
+        pass
     broker: Dict[str, Any] = {"sync_errors": []}
     try:
         from analytics.king_plan_integration import sync_t212_realtime_for_plan
@@ -38,9 +46,11 @@ def sync_live_capital_basis(root: Path, *, force: bool = True, sync_owner: str =
 
         trust = assess_t212_trust_from_root(root, persist=True)
     except Exception as exc:
+        from analytics.r3_operator_surface_text import OPERATOR_SYNC_WAIT
+
         return {
             "ok": False,
-            "message_de": f"T212 Trust Gate — {str(exc)[:80]}",
+            "message_de": OPERATOR_SYNC_WAIT,
             "sync_errors": broker.get("sync_errors") or [],
         }
 
@@ -49,10 +59,12 @@ def sync_live_capital_basis(root: Path, *, force: bool = True, sync_owner: str =
     cash = broker.get("cash_eur")
 
     if not trust.get("trusted"):
+        from analytics.r3_operator_surface_text import operator_status_de
+
         return {
             "ok": False,
             "trusted": False,
-            "message_de": trust.get("message_de") or "T212 nicht vertrauenswürdig — kein Live-Kontostand",
+            "message_de": operator_status_de(str(trust.get("reason_code") or "")),
             "t212_trust_reason": trust.get("reason_code"),
             "last_sync_utc": broker.get("last_sync_utc"),
             "cash_eur": cash,

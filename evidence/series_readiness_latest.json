@@ -1,9 +1,11 @@
 {
   "blockers_de": [
-    "Lokal-first Runtime"
+    "Lokal-first Runtime",
+    "Stack-Integrität",
+    "R3 lokales Wachstum"
   ],
-  "confirmation_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
-  "critical_ok": 6,
+  "confirmation_de": "Serienreife 57% — Blocker: Lokal-first Runtime, Stack-Integrität",
+  "critical_ok": 4,
   "critical_total": 7,
   "gates": [
     {
@@ -28,21 +30,21 @@
       "tier": "critical"
     },
     {
-      "detail_de": "OK",
+      "detail_de": "hub_online: Hub offline, hub_login_route: offline",
       "id": "stack_integrity",
       "label_de": "Stack-Integrität",
-      "ok": true,
+      "ok": false,
       "tier": "critical"
     },
     {
-      "detail_de": "100% · 4/4 Meilensteine",
+      "detail_de": "90% · 3/4 Meilensteine",
       "id": "r3_growth",
       "label_de": "R3 lokales Wachstum",
-      "ok": true,
+      "ok": false,
       "tier": "critical"
     },
     {
-      "detail_de": "Stack + Mirror OK",
+      "detail_de": "Kern lokal bereit",
       "id": "mirror_operational",
       "label_de": "Mirror operativ",
       "ok": true,
@@ -63,7 +65,7 @@
       "tier": "warn"
     },
     {
-      "detail_de": "Profil: Flüssig — bestätigt",
+      "detail_de": "Profil: Flüssig — 15s Poll, Soft-Update, schneller Start",
       "id": "pending_upgrade",
       "label_de": "R3-Upgrade offen",
       "ok": true,
@@ -77,15 +79,15 @@
       "tier": "warn"
     }
   ],
-  "headline_de": "Serienreife 86% — Blocker: Lokal-first Runtime",
+  "headline_de": "Serienreife 57% — Blocker: Lokal-first Runtime, Stack-Integrität",
   "local_surface_de": "http://127.0.0.1:17890/r3",
   "next_de": "Beheben: Lokal-first Runtime — bash tools/king_ops.sh series-ready --repair",
   "policy_ref": "control/series_readiness_policy.json",
-  "readiness_pct": 86,
+  "readiness_pct": 57,
   "schema_version": 1,
   "scope_de": "Lokales R3-Produkt — kein Public-Launch-Gate",
   "series_ready": false,
-  "updated_at_utc": "2026-06-09T21:47:20+00:00",
+  "updated_at_utc": "2026-06-16T08:43:39+00:00",
   "warnings_de": [],
   "warnings_open": 0
 }

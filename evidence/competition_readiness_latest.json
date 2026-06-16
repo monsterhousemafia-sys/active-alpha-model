@@ -23,10 +23,10 @@
       "schema_version": 1,
       "slippage_bps_per_side": 2.0
     },
-    "evaluated_at_utc": "2026-06-07T20:36:17+00:00",
+    "evaluated_at_utc": "2026-06-10T08:26:40+00:00",
     "max_drawdown_not_worse": true,
     "max_drawdown_not_worse_after_cost_stress": true,
-    "message_de": "Benchmark returns fehlen — Backtest noch nicht vollständig.",
+    "message_de": "H1 COMPLETE — mom_1-Benchmark optional (control/h1_seal_policy.json). Strategie Sharpe 0.782 — pass_full_seal informativ.",
     "metrics_benchmark": {},
     "metrics_benchmark_cost_stress": {},
     "metrics_strategy": {
@@ -66,7 +66,7 @@
     "slippage_bps_per_side": 2.0
   },
   "evolution_stage": "sportwagen",
-  "generated_at_utc": "2026-06-07T20:46:07+00:00",
+  "generated_at_utc": "2026-06-10T08:27:59+00:00",
   "h1_backtest": {
     "run_dir": "validation_runs/20260606T102626Z_DAILY_ALPHA_H1",
     "status": "COMPLETE"
@@ -78,14 +78,14 @@
   "order_gate_ok": true,
   "prediction_readiness_ok": true,
   "price_current": true,
-  "price_latest": "2026-06-05",
-  "price_stale_days": null,
+  "price_latest": "2026-06-09",
+  "price_stale_days": 1,
   "ready_for_live_session": false,
   "schema_version": 2,
   "shadow_informative_only": true,
-  "shadow_overlap_model_vs_benchmark": 0.0,
-  "shadow_overlap_model_vs_live": 0.6666666666666666,
-  "signal_date": "2026-06-05",
+  "shadow_overlap_model_vs_benchmark": 0.4666666666666667,
+  "shadow_overlap_model_vs_live": 0.0,
+  "signal_date": "2026-06-09",
   "strategic_governance": {
     "active_signal_variant": "DAILY_ALPHA_H1",
     "coherence_ok": true,

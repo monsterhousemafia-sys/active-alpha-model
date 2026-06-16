@@ -57,7 +57,8 @@
     "native_shell_only": true,
     "shell": "native",
     "start_fullscreen": true,
-    "startup_delay_sec": 28,
+    "start_fullscreen_wayland": false,
+    "startup_delay_sec": 8,
     "wm_class": "R3"
   },
   "survives_de": [

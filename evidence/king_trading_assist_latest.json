@@ -6,7 +6,7 @@
     "active_functions": [],
     "blockers": [],
     "cycle_closed": false,
-    "cycle_stages_ok": 6,
+    "cycle_stages_ok": 5,
     "engine_ok": false,
     "evidence_rag": [
       {
@@ -14,19 +14,19 @@
           "beat": 9,
           "h1_status": "COMPLETE",
           "handoff_to": "bash",
-          "headline_de": "Takt 9 · build · Schicht koenig → bash · GPU-ON",
-          "next_action_de": "König 32B autonom: /bau /ready — H1 COMPLETE; Seal optional · /predict · bash tools/king_ops.sh r3-bau",
+          "headline_de": "Takt 9 · build · Schicht cursor → bash · GPU-ON",
+          "next_action_de": "Bridge: /ready — H1 COMPLETE; Seal optional · /predict",
           "phase": "build"
         },
         "path": "evidence/king_network_pulse_latest.json"
       },
       {
         "fields": {
-          "investable_eur": 678.52,
+          "investable_eur": null,
           "ok": false,
           "signal_date": "2026-06-09",
           "summary_de": "Profil daily_alpha_h1 (DAILY_ALPHA_H1): 11 Positionen auf 679 € investierbar (volles T212-Guthaben 679 €). Umstellung zum Tagesende ab 22:15 CET.",
-          "updated_at_utc": "2026-06-09T20:24:50+00:00",
+          "updated_at_utc": "2026-06-14T19:33:29+00:00",
           "worthwhile_buy_count": 0
         },
         "path": "evidence/r3_t212_prognosis_latest.json"
@@ -67,9 +67,9 @@
       },
       {
         "fields": {
-          "follow_on_count": 0,
-          "headline_de": "Modell-Plan ist Ausführung — König 32B liefert Follow-on-Vorschläge",
-          "summary_de": "Modell-Plan ist Ausführung — König 32B liefert Follow-on-Vorschläge"
+          "follow_on_count": 1,
+          "headline_de": "Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX.",
+          "summary_de": "Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX."
         },
         "path": "evidence/king_trading_assist_latest.json"
       },
@@ -96,9 +96,117 @@
             "status": "COMPLETE"
           },
           "ok": true,
-          "signal_date": "2026-06-09"
+          "signal_date": "2026-06-12"
         },
         "path": "control/prediction_readiness.json"
+      },
+      {
+        "fields": {
+          "growth": {
+            "growth_identity_de": "Es will wachsen — durch messbare Lernschritte, nicht durch Scope-Drift.",
+            "model": "qwen2.5-coder:32b",
+            "next_growth_de": [
+              "python3 tools/ai_kernel.py learn",
+              "/beitrag forschung <Idee>"
+            ],
+            "ollama_ok": true,
+            "phase": "wachstum",
+            "phase_de": "trade_decisions + Gas/Sell + king-trading aktiv",
+            "phase_kpi_de": "Stufe-A KPI — wachstum=True reif=False",
+            "wants_to_grow_de": "32B ist Forschungs-Bestandteil — wächst mit Learn, H1 und Gas/Sell-Evidence."
+          },
+          "headline_de": "König 32B — Bestandteil des Forschungsprojekts Active Alpha"
+        },
+        "path": "evidence/king_32b_forschung_latest.json"
+      },
+      {
+        "fields": {
+          "compute_boost": false,
+          "headline_de": "Berater gpt-4o (lokal · qwen2.5:14b) · Fallback Trading",
+          "model": "gpt-4o",
+          "provider": "ollama_keyless",
+          "tip_de": "Basierend auf den gegebenen Informationen und der aktuellen Phase empfehle ich folgende konkrete Schritte:\n\n1. **Aktualisierung des Investitionsplans:**\n   - Führe die Befehlszeile aus, um den nächsten Forschungsschritt zu starten:\n     ```…"
+        },
+        "path": "evidence/king_cloud_teacher_latest.json"
+      },
+      {
+        "fields": {
+          "headline_de": "Daytrading-Datenpflege — 1/4 (Blocker prüfen)",
+          "ok": false,
+          "orders_allowed": false,
+          "steps_ok": 1,
+          "t212_trusted": false,
+          "updated_at_utc": "2026-06-09T20:28:48+00:00"
+        },
+        "path": "evidence/r3_daytrading_data_care_latest.json"
+      },
+      {
+        "fields": {
+          "as_of_date": "2026-06-12",
+          "bad_day": false,
+          "benchmark_return_pct": 0.54,
+          "delta_vs_benchmark_pct": 4.19,
+          "portfolio_return_pct": 4.73,
+          "summary_de": "Plan-Portfolio +4.73 % · SPY +0.54 % · Delta +4.19 %"
+        },
+        "path": "evidence/r3_daily_postmortem_latest.json"
+      },
+      {
+        "fields": {
+          "status": "NOT_EVALUABLE",
+          "summary_de": "Kein Broker-Sync — zuerst «Aktualisieren».",
+          "trade_required": false,
+          "urgency": "NONE"
+        },
+        "path": "evidence/pilot_portfolio_reevaluation_latest.json"
+      },
+      {
+        "fields": {
+          "last_sync_utc": null,
+          "message_de": "API eingeben",
+          "orders_allowed": false,
+          "reason_code": "NOT_CONFIGURED",
+          "trusted": false
+        },
+        "path": "evidence/t212_trust_latest.json"
+      },
+      {
+        "fields": {
+          "quality_score": {
+            "components": [
+              {
+                "id": "data_capture",
+                "max": 25,
+                "ok": true,
+                "points": 25
+              },
+              {
+                "ic_pearson": 0.017102630157397,
+                "id": "prediction_feedback",
+                "max": 25,
+                "points": 13,
+                "signed_hit_rate": 0.5056850715746422
+              },
+              {
+                "id": "live_learning",
+                "max": 25,
+                "n_mature": 0,
+                "points": 0
+              },
+              {
+                "id": "governance_safety",
+                "max": 25,
+                "ok": true,
+                "points": 25
+              }
+            ],
+            "grade": "C",
+            "headline_de": "Lernqualität 63/100 (Note C) — IC 0.0171, Hit 50.6%, Live reif 0.",
+            "max": 100,
+            "total": 63
+          }
+        },
+        "path": "evidence/public_learning_report_latest.json"
       }
     ],
     "h1_status": "COMPLETE",
@@ -182,7 +290,7 @@
     "prediction_ok": true,
     "primary_function": null,
     "rebalance_due": false,
-    "signal_date": "2026-06-09",
+    "signal_date": "2026-06-12",
     "stock_summary": {
       "new_buys": [
         {
@@ -235,29 +343,29 @@
     {
       "hint_eur": 25.0,
       "priority": 9.0,
-      "reason_de": "STX hat eine hohe Gewichtung im Modell-Plan und zeigt bisher starke positive Trends. Ein Nachkauf könnte die Position stärken.",
+      "reason_de": "Das Modell empfiehlt einen Nachkauf für STX aufgrund der aktuellen Marktbedingungen.",
       "symbol": "STX",
       "worth_follow_on": true
     }
   ],
-  "headline_de": "Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX.",
+  "headline_de": "Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX.",
   "king_model_de": "König 32B — Follow-on-Beratung",
   "model": "qwen2.5-coder:32b",
   "ok": true,
-  "operator_hint_de": "Überprüfen Sie die aktuellen Marktbedingungen und technischen Indikatoren von STX, bevor Sie den Nachkauf tätigen.",
+  "operator_hint_de": "Überprüfen Sie die aktuellen Marktbedingungen und den Nachkauf von STX.",
   "plan_buy_count": 11,
   "plan_executable_buy_count": 11,
   "policy_ref": "control/king_trading_assist_policy.json",
   "primary_action_de": "Nachkauf von STX",
   "risks_de": [
-    "Marktvolatilität kann zu Verlusten führen",
-    "Die Aktie könnte bereits überbewertet sein"
+    "Marktvolatilität",
+    "Änderung der Marktprognose"
   ],
   "role_de": "Trading mit Evidence-Kontext",
   "schema_version": 2,
   "sell_count": 0,
   "skipped": false,
-  "summary_de": "Auf Basis des aktuellen Modell-Plans und der aktuellen Marktbedingungen lohnt sich ein Nachkauf für STX.",
+  "summary_de": "Auf Basis des aktuellen Modell-Plans und der Marktbedingungen lohnt sich ein Nachkauf für STX.",
   "trade_decisions": [],
-  "updated_at_utc": "2026-06-09T20:25:11+00:00"
+  "updated_at_utc": "2026-06-15T11:51:18+00:00"
 }

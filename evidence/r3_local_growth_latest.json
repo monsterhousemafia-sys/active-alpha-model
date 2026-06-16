@@ -1,21 +1,21 @@
 {
   "capabilities": [
     {
-      "detail_de": "127.0.0.1:17890 (stack)",
+      "detail_de": "127.0.0.1:17890",
       "id": "hub_local",
       "label_de": "Hub lokal",
       "ok": true,
       "weight": 15
     },
     {
-      "detail_de": "/api/r3/mirror (stack)",
+      "detail_de": "/api/r3/mirror",
       "id": "mirror_api",
       "label_de": "Mirror-API",
       "ok": true,
       "weight": 15
     },
     {
-      "detail_de": "/r3 (stack)",
+      "detail_de": "/r3 (cache)",
       "id": "surface_r3",
       "label_de": "Oberfläche /r3",
       "ok": true,
@@ -36,7 +36,7 @@
       "weight": 10
     },
     {
-      "detail_de": "Flüssig — bestätigt",
+      "detail_de": "Flüssig — 15s Poll, Soft-Update, schneller Start",
       "id": "runtime_profile",
       "label_de": "Laufzeitprofil",
       "ok": true,
@@ -50,10 +50,10 @@
       "weight": 10
     },
     {
-      "detail_de": "OK",
+      "detail_de": "prüfen",
       "id": "stack_integrity",
       "label_de": "Stack-Integrität",
-      "ok": true,
+      "ok": false,
       "weight": 10
     },
     {
@@ -64,13 +64,13 @@
       "weight": 5
     }
   ],
-  "capabilities_ok": 9,
+  "capabilities_ok": 8,
   "capabilities_total": 9,
   "confirmation_de": "Alles lokal · http://127.0.0.1:17890/r3 — wächst mit der Zeit · Spiegel optional",
-  "growth_pct": 100,
-  "headline_de": "R3 lokal 100% — 4/4 Meilensteine",
-  "linux_potential_headline_de": "Linux 88% — 8/9 Dimensionen",
-  "linux_potential_pct": 88,
+  "growth_pct": 90,
+  "headline_de": "R3 lokal 90% — 3/4 Meilensteine",
+  "linux_potential_headline_de": "Linux 74% — 7/9 Dimensionen",
+  "linux_potential_pct": 74,
   "local_only": true,
   "local_primary_url": "http://127.0.0.1:17890/r3",
   "milestones": [
@@ -109,15 +109,15 @@
       ],
       "id": "operational_loop",
       "label_de": "Geschlossener Kreis",
-      "ok": true
+      "ok": false
     }
   ],
-  "milestones_ok": 4,
+  "milestones_ok": 3,
   "milestones_total": 4,
-  "next_growth_de": "R3 lokal vollständig — neue Upgrades erscheinen im Katalog mit Bestätigung",
+  "next_growth_de": "Lokal ausbauen: Stack-Integrität",
   "policy_ref": "control/r3_local_growth.json",
-  "runtime_profile_id": "fluid_v2",
+  "runtime_profile_id": "fluid_v3",
   "schema_version": 1,
-  "updated_at_utc": "2026-06-09T21:47:20+00:00",
+  "updated_at_utc": "2026-06-16T08:43:39+00:00",
   "upgrade_pending": false
 }

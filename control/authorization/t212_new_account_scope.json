@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "AUTHORITATIVE",
+  "approval_ref": "EXTERNAL_REVIEW_APPROVAL_T212_NEW_ACCOUNT_20260614.md",
+  "approved_at_utc": "2026-06-14T12:00:00+00:00",
+  "scope_de": "Neues T212-Konto — Zielportfolio-Umschichtung nur mit R3-Bestätigung",
+  "broker": "Trading212",
+  "portfolio_artifact": "model_output_sp500_pit_t212/latest_target_portfolio.csv",
+  "confirmed_execution_allowed": true,
+  "auto_execute_real_money_allowed": false,
+  "max_capital_eur": 500.0,
+  "max_capital_ref": "execution/confirmed_live/confirmed_execution_mode_controller.py",
+  "champion_locked": "R0_LEGACY_ENSEMBLE",
+  "account_confirm_required": true,
+  "account_confirm_api_de": "GET /api/r3/t212?confirm_account=1",
+  "safety_de": "fail-closed bei Konto-Wechsel ohne Operator-Bestätigung"
+}

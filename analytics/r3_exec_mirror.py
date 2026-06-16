@@ -1,10 +1,14 @@
 """R3 Exec Mirror — öffentliche API.
 
-Architektur (3 Schichten):
+Architektur: docs/R3_EXEC_MIRROR_ARCHITECTURE.md
+
+Schichten:
   1. State   analytics.r3_mirror_state   — Evidence → dict
   2. View    analytics.r3_mirror_view    — dict → HTML
   3. Hub     GET /r3, GET /api/r3/mirror — preview_hub (HTTP, hub_runtime)
-  4. R3      Qt-Cockpit lädt Hub-URL — stack_integrity / r3_cockpit_lock
+  4. Operator analytics.r3_t212_operator_api — T212-Zugangsdaten, Gates (Domain SSoT)
+  5. Bond    analytics.r3_t212_api_bond  — Live-Sync, Bond-Lock
+  Qt-Cockpit lädt Hub-URL — stack_integrity / r3_cockpit_lock
 """
 from __future__ import annotations
 

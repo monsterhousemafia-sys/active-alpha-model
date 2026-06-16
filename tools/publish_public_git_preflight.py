@@ -49,14 +49,17 @@ def _utc_now() -> str:
 
 def _git_tracked_and_candidates(root: Path) -> list[Path]:
     paths: list[Path] = []
-    status = subprocess.run(
-        ["git", "status", "--porcelain", "-uall"],
-        cwd=root,
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    if status.returncode == 0:
+    try:
+        status = subprocess.run(
+            ["git", "status", "--porcelain", "-uall"],
+            cwd=root,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+    except OSError:
+        status = None
+    if status is not None and status.returncode == 0:
         for line in status.stdout.splitlines():
             if len(line) < 4:
                 continue

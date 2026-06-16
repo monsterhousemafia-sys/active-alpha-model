@@ -11,6 +11,10 @@ DRY=0
 
 echo "[clean] Safe cleanup (dry_run=$DRY)"
 
+"$KING_PY" "$KING_ROOT/tools/cleanup_project_junk.py" $([ "$DRY" -eq 1 ] && echo --dry-run) --aggressive
+"$KING_PY" "$KING_ROOT/tools/prune_pilot_operational_junk.py" $([ "$DRY" -eq 1 ] && echo --dry-run)
+"$KING_PY" "$KING_ROOT/tools/r0_migration_prune_validation_junk.py" $([ "$DRY" -eq 1 ] && echo --dry-run)
+
 removed=0
 freed=0
 while IFS= read -r -d '' f; do
