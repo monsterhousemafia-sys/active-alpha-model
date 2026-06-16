@@ -1,7 +1,7 @@
 {
-  "credential_profile": "NONE",
-  "fetch_error": null,
-  "fetch_status": "SKIPPED",
-  "generated_at_utc": "2026-06-15T17:41:12+00:00",
+  "credential_profile": "MONITORING_READONLY",
+  "fetch_error": "HTTP 401",
+  "fetch_status": "ERROR",
+  "generated_at_utc": "2026-06-16T11:57:09+00:00",
   "prices_eur_by_symbol": {}
 }
